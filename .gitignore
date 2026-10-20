@@ -218,3 +218,50 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================================
+# OpenArm + MuJoCo + pi0 project-specific rules
+# ==========================================
+
+# 1. Secrets and local environment settings
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 2. Downloaded datasets and processed data
+data/raw/
+data/processed/
+datasets/
+
+# 3. Pretrained model weights and checkpoints
+checkpoints/
+weights/
+pretrained_models/
+models/checkpoints/
+
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.msgpack
+
+# PyTorch / Hugging Face binary model weights
+pytorch_model.bin
+model-*.bin
+
+# 4. Training outputs and experiment logs
+runs/
+wandb/
+tensorboard/
+outputs/
+logs/
+mujoco_logs/
+simulation_outputs/
+
+# 5. Generated videos
+results/videos/
+
+# 6. Temporary and operating-system files
+.DS_Store
+Thumbs.db
