@@ -1,0 +1,13 @@
+# Upstream OpenPI and its client use the same immutable revision.
+# Install from GitHub; do not use a neighboring checkout or editable install.
+openpi @ git+https://github.com/Physical-Intelligence/openpi.git@215abfb217dbac7d5f1273282331b9b1866c0479
+openpi-client @ git+https://github.com/Physical-Intelligence/openpi.git@215abfb217dbac7d5f1273282331b9b1866c0479#subdirectory=packages/openpi-client
+lerobot @ git+https://github.com/huggingface/lerobot.git@0cf864870cf29f4738d3ade893e6fd13fbd7cdb5
+
+# Match the compatibility overrides in upstream pyproject.toml.
+ml-dtypes==0.4.1
+tensorstore==0.1.74
+
+# OpenPI requires NumPy <2; newer Arrow wheels can require NumPy >=2 at runtime.
+numpy==1.26.4
+pyarrow==21.0.0

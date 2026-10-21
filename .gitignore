@@ -232,13 +232,27 @@ __marimo__/
 # 2. Downloaded datasets and processed data
 data/raw/
 data/processed/
+data/interim/
+data/lerobot/
 datasets/
+
+# Dataset payloads stored outside the standard generated directories
+/data/**/*.parquet
+/data/**/*.arrow
+/data/**/*.h5
+/data/**/*.hdf5
+/data/**/*.npy
+/data/**/*.npz
+/data/**/*.tfrecord*
 
 # 3. Pretrained model weights and checkpoints
 checkpoints/
 weights/
 pretrained_models/
 models/checkpoints/
+
+# Generated normalization assets; keep recipes and configuration in configs/
+/assets/
 
 *.safetensors
 *.ckpt
@@ -259,9 +273,25 @@ logs/
 mujoco_logs/
 simulation_outputs/
 
+# Project-local download and compilation caches
+/.cache/
+/.hf_cache/
+/.uv-cache/
+
 # 5. Generated videos
 results/videos/
+/results/**/*.npy
+/results/**/*.npz
+/results/**/*.mp4
+/results/**/*.avi
+/results/**/*.webm
+
+# Keep result reports and small JSON/CSV metrics versioned.
+# Do not ignore *.lock globally: dependency lockfiles belong in Git.
 
 # 6. Temporary and operating-system files
 .DS_Store
 Thumbs.db
+*.download-part
+*.partial
+*.crdownload
