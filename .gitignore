@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.uv-cache/
+
+codex/
+
+*.mp4
+*.tar.gz
+
+# Local credentials and build caches
+.env
+.env.*
+!.env.example
+.ruff_cache/

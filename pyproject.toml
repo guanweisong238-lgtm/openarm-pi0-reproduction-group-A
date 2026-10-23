@@ -1,0 +1,16 @@
+[project]
+name = "openarm-a1"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "openarm-mujoco",
+    "pillow>=12.3.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "openarm_mujoco",
+]
+
+[tool.uv.sources]
+openarm-mujoco = { workspace = true, editable = true }
