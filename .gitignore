@@ -16,3 +16,6 @@ codex/
 .env.*
 !.env.example
 .ruff_cache/
+
+# A2接口检查生成的三路样张和验收结果，可由脚本重新生成。
+/outputs/a2_interface/

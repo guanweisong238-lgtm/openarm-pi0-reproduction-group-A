@@ -1,4 +1,18 @@
 # OpenArm v2 A1 仿真环境（WSL + uv）
+
+## A2 模型接口适配（2026-10-23）
+
+新增 `OpenArmPolicyEnv`，提供右臂优先的16维状态/动作、顶部和双腕RGB、名义30Hz步进及限幅反馈。
+配置、字段、运行方式和验收范围见 [A2模型接口说明](docs/a2_model_interface.md)。
+原生 `OpenArmEnv` 的20Hz入口继续可用；调用新包装器时左右臂顺序已经转换，不要在A3重复交换。
+
+```bash
+uv run --locked python -m scripts.check_policy_interface --no-render
+MUJOCO_GL=egl uv run --locked python -m scripts.check_policy_interface
+```
+
+顶部相机为可配置的初始位姿，仍需与公开数据对齐；当前没有完成抓方块场景或成功率评估。
+
 ## 一、 系统与依赖环境规格
 
 * **操作系统**：Windows 11 + WSL2 (Ubuntu 22.04 LTS)

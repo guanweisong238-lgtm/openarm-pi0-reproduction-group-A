@@ -1,0 +1,19 @@
+{
+  "control_hz": 30.0,
+  "width": 960,
+  "height": 600,
+  "prompt": "Pick up the cube.",
+  "ceiling_position": [
+    0.35,
+    0.0,
+    1.6
+  ],
+  "ceiling_quaternion": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "ceiling_fovy": 60.0,
+  "cell_visual_alpha": 0.2
+}
