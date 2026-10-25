@@ -1,0 +1,61 @@
+{
+  "renderer": "egl",
+  "rows": [
+    {
+      "episode_id": 3,
+      "split": "validation",
+      "initialization": "script_ready_start",
+      "initial_state_exact": true,
+      "initial_state_max_error_rad": 0.0,
+      "initial_qpos_max_error": 0.0,
+      "cameras": {
+        "ceiling": {
+          "exact": true,
+          "mae_255": 0.0,
+          "max_error": 0.0,
+          "changed_pixel_fraction": 0.0
+        },
+        "wrist_left": {
+          "exact": true,
+          "mae_255": 0.0,
+          "max_error": 0.0,
+          "changed_pixel_fraction": 0.0
+        },
+        "wrist_right": {
+          "exact": true,
+          "mae_255": 0.0,
+          "max_error": 0.0,
+          "changed_pixel_fraction": 0.0
+        }
+      }
+    },
+    {
+      "episode_id": 6,
+      "split": "validation",
+      "initialization": "human_warm_start",
+      "initial_state_exact": true,
+      "initial_state_max_error_rad": 0.0,
+      "initial_qpos_max_error": 0.0,
+      "cameras": {
+        "ceiling": {
+          "exact": true,
+          "mae_255": 0.0,
+          "max_error": 0.0,
+          "changed_pixel_fraction": 0.0
+        },
+        "wrist_left": {
+          "exact": true,
+          "mae_255": 0.0,
+          "max_error": 0.0,
+          "changed_pixel_fraction": 0.0
+        },
+        "wrist_right": {
+          "exact": true,
+          "mae_255": 0.0,
+          "max_error": 0.0,
+          "changed_pixel_fraction": 0.0
+        }
+      }
+    }
+  ]
+}

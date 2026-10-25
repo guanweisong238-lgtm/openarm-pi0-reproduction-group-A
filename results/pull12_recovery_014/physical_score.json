@@ -1,0 +1,30 @@
+[
+  {
+    "trial": "logs/a2_pi0/success_live_20261025-022111-378811/trial_01_episode_12",
+    "episode_id": 12,
+    "split": "train",
+    "noise_seed": 42,
+    "action_chunk": 4,
+    "noise_mode": "resample",
+    "criterion": "bilateral >.01N for5 steps, contact pulling, opening>=.08m held30 steps",
+    "replay_max_qpos_error": 0.0,
+    "replay_max_contact_force_error": 0.0,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "peak_open_mm": -0.0,
+    "first_success_step": null,
+    "judge": {
+      "opening": -0.0,
+      "grasp_streak": 0,
+      "grasped": false,
+      "open_streak": 0,
+      "opened": false,
+      "closed_streak": 0,
+      "pulling_contact": false,
+      "pull_success": false,
+      "success": false
+    },
+    "evidence_valid": true,
+    "model_pull_success": false
+  }
+]

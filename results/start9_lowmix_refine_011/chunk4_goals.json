@@ -1,0 +1,398 @@
+[
+  {
+    "seed": 42,
+    "action_chunk": 4,
+    "rows": [
+      {
+        "step": 1,
+        "reobserve": true,
+        "goal_error": {
+          "position_mm": 0.38305133237440203,
+          "attitude_deg": 0.19105140485012836
+        },
+        "actual_error": {
+          "position_mm": 0.19856572864159225,
+          "attitude_deg": 0.08644137371274829
+        },
+        "max_joint_goal_error_rad": 0.0033259151646919394,
+        "clip_max_rad": 0.0
+      },
+      {
+        "step": 2,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.6214544879695836,
+          "attitude_deg": 0.3393786625738148
+        },
+        "actual_error": {
+          "position_mm": 0.32518777472358706,
+          "attitude_deg": 0.20266575594082412
+        },
+        "max_joint_goal_error_rad": 0.0041465401311789885,
+        "clip_max_rad": 1.2281566858291626e-08
+      },
+      {
+        "step": 3,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.8042219143545479,
+          "attitude_deg": 0.4433946464502416
+        },
+        "actual_error": {
+          "position_mm": 0.4453869733991905,
+          "attitude_deg": 0.3693600827465801
+        },
+        "max_joint_goal_error_rad": 0.005417127400997757,
+        "clip_max_rad": 1.444500684738159e-08
+      },
+      {
+        "step": 4,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.9410113794854708,
+          "attitude_deg": 0.661284225726645
+        },
+        "actual_error": {
+          "position_mm": 0.7222849502637889,
+          "attitude_deg": 0.6086743882005468
+        },
+        "max_joint_goal_error_rad": 0.009112288308160021,
+        "clip_max_rad": 1.4763176441192626e-08
+      },
+      {
+        "step": 5,
+        "reobserve": true,
+        "goal_error": {
+          "position_mm": 1.8606664003326878,
+          "attitude_deg": 1.3937798745663939
+        },
+        "actual_error": {
+          "position_mm": 1.4238963587803088,
+          "attitude_deg": 1.195690384367767
+        },
+        "max_joint_goal_error_rad": 0.019856560967368875,
+        "clip_max_rad": 1.0577082633972168e-08
+      },
+      {
+        "step": 6,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 2.2897141526002183,
+          "attitude_deg": 1.6441754222950644
+        },
+        "actual_error": {
+          "position_mm": 1.9728591729019327,
+          "attitude_deg": 1.6501553091197958
+        },
+        "max_joint_goal_error_rad": 0.023121151896126957,
+        "clip_max_rad": 2.5465160608291624e-08
+      },
+      {
+        "step": 7,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 2.5245929350765155,
+          "attitude_deg": 1.7755517784597972
+        },
+        "actual_error": {
+          "position_mm": 2.287264934803702,
+          "attitude_deg": 1.7316170627492264
+        },
+        "max_joint_goal_error_rad": 0.024787103407441613,
+        "clip_max_rad": 2.9337584972381592e-08
+      },
+      {
+        "step": 8,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 3.132252171998188,
+          "attitude_deg": 2.1932188857012047
+        },
+        "actual_error": {
+          "position_mm": 2.7905676740900445,
+          "attitude_deg": 2.005404763437916
+        },
+        "max_joint_goal_error_rad": 0.0305378370237106,
+        "clip_max_rad": 2.4040520191192627e-08
+      },
+      {
+        "step": 9,
+        "reobserve": true,
+        "goal_error": {
+          "position_mm": 4.397671921995076,
+          "attitude_deg": 2.491109376317053
+        },
+        "actual_error": {
+          "position_mm": 3.66732560206161,
+          "attitude_deg": 2.3632046924570056
+        },
+        "max_joint_goal_error_rad": 0.03205968245935509,
+        "clip_max_rad": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 7,
+    "action_chunk": 4,
+    "rows": [
+      {
+        "step": 1,
+        "reobserve": true,
+        "goal_error": {
+          "position_mm": 0.21404820288141888,
+          "attitude_deg": 0.4232921381746295
+        },
+        "actual_error": {
+          "position_mm": 0.13291882069977204,
+          "attitude_deg": 0.2866417261501585
+        },
+        "max_joint_goal_error_rad": 0.006707355364478751,
+        "clip_max_rad": 0.0
+      },
+      {
+        "step": 2,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.11121950746139234,
+          "attitude_deg": 0.3178110019215386
+        },
+        "actual_error": {
+          "position_mm": 0.08634989295941745,
+          "attitude_deg": 0.38857416939270817
+        },
+        "max_joint_goal_error_rad": 0.005214662299412698,
+        "clip_max_rad": 5.554646253585815e-09
+      },
+      {
+        "step": 3,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.16453787579741375,
+          "attitude_deg": 0.21472971752746098
+        },
+        "actual_error": {
+          "position_mm": 0.11028745868528592,
+          "attitude_deg": 0.26545378123214813
+        },
+        "max_joint_goal_error_rad": 0.0036374140884261053,
+        "clip_max_rad": 2.1300554275512693e-08
+      },
+      {
+        "step": 4,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.35596931596719367,
+          "attitude_deg": 0.12481740163677478
+        },
+        "actual_error": {
+          "position_mm": 0.18865984396452695,
+          "attitude_deg": 0.08654947872826022
+        },
+        "max_joint_goal_error_rad": 0.0017497066195223399,
+        "clip_max_rad": 2.9032349586486814e-08
+      },
+      {
+        "step": 5,
+        "reobserve": true,
+        "goal_error": {
+          "position_mm": 0.5071199766741528,
+          "attitude_deg": 0.26597157907989405
+        },
+        "actual_error": {
+          "position_mm": 0.2762627504336031,
+          "attitude_deg": 0.13884325623020893
+        },
+        "max_joint_goal_error_rad": 0.0029358740480471823,
+        "clip_max_rad": 2.9646187613658433e-08
+      },
+      {
+        "step": 6,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.49762204250615155,
+          "attitude_deg": 0.2568533245165328
+        },
+        "actual_error": {
+          "position_mm": 0.3011728856390454,
+          "attitude_deg": 0.24025504357641309
+        },
+        "max_joint_goal_error_rad": 0.0034679259448608946,
+        "clip_max_rad": 1.9850685785464762e-08
+      },
+      {
+        "step": 7,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.5689175232130609,
+          "attitude_deg": 0.3204978424857489
+        },
+        "actual_error": {
+          "position_mm": 0.4535972547966207,
+          "attitude_deg": 0.3231567734281963
+        },
+        "max_joint_goal_error_rad": 0.005112896837797809,
+        "clip_max_rad": 3.1066179275512695e-08
+      },
+      {
+        "step": 8,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.5577574726307565,
+          "attitude_deg": 0.2922755885457872
+        },
+        "actual_error": {
+          "position_mm": 0.6187670142485512,
+          "attitude_deg": 0.32358427067068557
+        },
+        "max_joint_goal_error_rad": 0.004639288367572547,
+        "clip_max_rad": 3.8797974586486816e-08
+      },
+      {
+        "step": 9,
+        "reobserve": true,
+        "goal_error": {
+          "position_mm": 1.7143395729550397,
+          "attitude_deg": 0.6318639478887813
+        },
+        "actual_error": {
+          "position_mm": 1.0898209398321403,
+          "attitude_deg": 0.506407291545597
+        },
+        "max_joint_goal_error_rad": 0.009506292344014788,
+        "clip_max_rad": 9.784221649169921e-09
+      }
+    ]
+  },
+  {
+    "seed": 99,
+    "action_chunk": 4,
+    "rows": [
+      {
+        "step": 1,
+        "reobserve": true,
+        "goal_error": {
+          "position_mm": 0.7598384080911738,
+          "attitude_deg": 0.3221550687141819
+        },
+        "actual_error": {
+          "position_mm": 0.21779622756364894,
+          "attitude_deg": 0.1283905516154222
+        },
+        "max_joint_goal_error_rad": 0.0036977439516356903,
+        "clip_max_rad": 0.0006862785024502882
+      },
+      {
+        "step": 2,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.6629996674018389,
+          "attitude_deg": 0.2606169290462557
+        },
+        "actual_error": {
+          "position_mm": 0.35833644618916716,
+          "attitude_deg": 0.18065679911068797
+        },
+        "max_joint_goal_error_rad": 0.003562776792265465,
+        "clip_max_rad": 0.0006738082804179646
+      },
+      {
+        "step": 3,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.6776512338081462,
+          "attitude_deg": 0.22586895582558697
+        },
+        "actual_error": {
+          "position_mm": 0.47772035115957956,
+          "attitude_deg": 0.17815782240361627
+        },
+        "max_joint_goal_error_rad": 0.0033099869012442884,
+        "clip_max_rad": 0.0005705198055069305
+      },
+      {
+        "step": 4,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.4859461039960362,
+          "attitude_deg": 0.19294891312517298
+        },
+        "actual_error": {
+          "position_mm": 0.5601332827268343,
+          "attitude_deg": 0.21518406125482573
+        },
+        "max_joint_goal_error_rad": 0.0022731259631812994,
+        "clip_max_rad": 0.0004354818225971169
+      },
+      {
+        "step": 5,
+        "reobserve": true,
+        "goal_error": {
+          "position_mm": 0.8847866372652371,
+          "attitude_deg": 0.2768184623776625
+        },
+        "actual_error": {
+          "position_mm": 0.7660836066760192,
+          "attitude_deg": 0.2607599383354799
+        },
+        "max_joint_goal_error_rad": 0.004566544711659515,
+        "clip_max_rad": 0.0006362193485398571
+      },
+      {
+        "step": 6,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.8224756640230448,
+          "attitude_deg": 0.27695383493202785
+        },
+        "actual_error": {
+          "position_mm": 0.8698666905929932,
+          "attitude_deg": 0.28260031772232835
+        },
+        "max_joint_goal_error_rad": 0.004853910944294437,
+        "clip_max_rad": 0.0005608063915174544
+      },
+      {
+        "step": 7,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.9303078966419078,
+          "attitude_deg": 0.3202037463823387
+        },
+        "actual_error": {
+          "position_mm": 0.904584630037223,
+          "attitude_deg": 0.3067619604278566
+        },
+        "max_joint_goal_error_rad": 0.005592942396378864,
+        "clip_max_rad": 0.0003945751816164522
+      },
+      {
+        "step": 8,
+        "reobserve": false,
+        "goal_error": {
+          "position_mm": 0.9751836568924314,
+          "attitude_deg": 0.3389200538977362
+        },
+        "actual_error": {
+          "position_mm": 0.908183020336921,
+          "attitude_deg": 0.321982247417444
+        },
+        "max_joint_goal_error_rad": 0.00589119314622355,
+        "clip_max_rad": 0.00017141736972059451
+      },
+      {
+        "step": 9,
+        "reobserve": true,
+        "goal_error": {
+          "position_mm": 1.899294601972639,
+          "attitude_deg": 0.7125383588774356
+        },
+        "actual_error": {
+          "position_mm": 1.3541967268159718,
+          "attitude_deg": 0.5139614969589443
+        },
+        "max_joint_goal_error_rad": 0.011738181116799695,
+        "clip_max_rad": 0.0003529890176021677
+      }
+    ]
+  }
+]

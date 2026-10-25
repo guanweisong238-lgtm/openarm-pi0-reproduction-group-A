@@ -1,0 +1,162 @@
+[
+  {
+    "summary": {
+      "checkpoint": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_uniform500_control_002/500",
+      "episode_id": 12,
+      "split": "train",
+      "initialization": "script_ready_start",
+      "noise_seed": 42,
+      "steps": 360,
+      "seconds": 12.0,
+      "peak_open_mm": -0.0,
+      "final_open_mm": -0.0,
+      "judge": {
+        "opening": -0.0,
+        "grasp_streak": 0,
+        "grasped": false,
+        "open_streak": 0,
+        "opened": false,
+        "closed_streak": 0,
+        "pulling_contact": false,
+        "success": false
+      },
+      "termination": "timeout",
+      "teacher_actions_executed": 0,
+      "intermediate_states_injected": 0,
+      "action_chunk": 4,
+      "contact_scope": "entire handle assembly, excluding panel and wrist",
+      "simulation_paused_during_inference": true,
+      "closed_loop_tested": true,
+      "fully_executed": true
+    },
+    "initial_qpos_exact": true,
+    "first_action_position_mm": 64.42514298004542,
+    "first_action_right7_abs_error_rad": [
+      0.006305461018396574,
+      0.4148047130109507,
+      0.03394279082676638,
+      0.3142662553692315,
+      0.04575953675169986,
+      0.14126716000473805,
+      0.39543927806776064
+    ],
+    "first_chunk_right7_mae_rad": 0.26923157791610514,
+    "peak_contact_counts": [
+      0,
+      0
+    ],
+    "state_deviation": [
+      {
+        "steps": 1,
+        "max_qpos_error_rad": 0.228392377905144,
+        "right7_rms_rad": 0.12419077817478896,
+        "tip_position_mm": 18.61919376225861
+      },
+      {
+        "steps": 4,
+        "max_qpos_error_rad": 0.44809170986447855,
+        "right7_rms_rad": 0.2825851370630327,
+        "tip_position_mm": 100.57696011692258
+      },
+      {
+        "steps": 30,
+        "max_qpos_error_rad": 0.9083230479319659,
+        "right7_rms_rad": 0.43075494060686736,
+        "tip_position_mm": 125.12353665515782
+      },
+      {
+        "steps": 120,
+        "max_qpos_error_rad": 0.7273013867391664,
+        "right7_rms_rad": 0.4088037883993943,
+        "tip_position_mm": 304.05054728244846
+      },
+      {
+        "steps": 360,
+        "max_qpos_error_rad": 0.5727695590695262,
+        "right7_rms_rad": 0.3280038575128938,
+        "tip_position_mm": 199.17415962548145
+      }
+    ],
+    "separate_teacher_replay_4step_max_qpos_error": 0.0
+  },
+  {
+    "summary": {
+      "checkpoint": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_uniform500_control_002/500",
+      "episode_id": 8,
+      "split": "train",
+      "initialization": "human_warm_start",
+      "noise_seed": 42,
+      "steps": 360,
+      "seconds": 12.0,
+      "peak_open_mm": -0.0,
+      "final_open_mm": -0.0,
+      "judge": {
+        "opening": -0.0,
+        "grasp_streak": 0,
+        "grasped": false,
+        "open_streak": 0,
+        "opened": false,
+        "closed_streak": 0,
+        "pulling_contact": false,
+        "success": false
+      },
+      "termination": "timeout",
+      "teacher_actions_executed": 0,
+      "intermediate_states_injected": 0,
+      "action_chunk": 4,
+      "contact_scope": "entire handle assembly, excluding panel and wrist",
+      "simulation_paused_during_inference": true,
+      "closed_loop_tested": true,
+      "fully_executed": true
+    },
+    "initial_qpos_exact": true,
+    "first_action_position_mm": 16.371634554678984,
+    "first_action_right7_abs_error_rad": [
+      0.014707395786997049,
+      0.0001627415936050619,
+      0.014633352610750605,
+      0.015429389457674691,
+      0.00917576556433164,
+      0.004902695072545926,
+      0.09039843621583626
+    ],
+    "first_chunk_right7_mae_rad": 0.026610795012840267,
+    "peak_contact_counts": [
+      0,
+      0
+    ],
+    "state_deviation": [
+      {
+        "steps": 1,
+        "max_qpos_error_rad": 0.042427081717421766,
+        "right7_rms_rad": 0.01671072421940773,
+        "tip_position_mm": 7.192627365673726
+      },
+      {
+        "steps": 4,
+        "max_qpos_error_rad": 0.09071629130024245,
+        "right7_rms_rad": 0.037179326588093094,
+        "tip_position_mm": 18.41815558406989
+      },
+      {
+        "steps": 30,
+        "max_qpos_error_rad": 0.6134952798076614,
+        "right7_rms_rad": 0.30582116325955944,
+        "tip_position_mm": 212.2431683965608
+      },
+      {
+        "steps": 120,
+        "max_qpos_error_rad": 1.044892570585424,
+        "right7_rms_rad": 0.4789197449938863,
+        "tip_position_mm": 188.64670649929502
+      },
+      {
+        "steps": 360,
+        "max_qpos_error_rad": 1.0571956516087633,
+        "right7_rms_rad": 0.5353555062023083,
+        "tip_position_mm": 222.89531367185674
+      }
+    ],
+    "separate_teacher_replay_4step_max_qpos_error": 0.0
+  }
+]

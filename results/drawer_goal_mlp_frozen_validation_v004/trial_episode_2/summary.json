@@ -1,0 +1,28 @@
+{
+  "model_type": "MLP_joint_goal_feedback",
+  "is_pi0": false,
+  "checkpoint": "results/drawer_goal_mlp_v002/model.pt",
+  "episode_id": 2,
+  "split": "validation",
+  "noise_seed": 42,
+  "noise_mode": "deterministic",
+  "action_chunk": 4,
+  "state_representation": "right_position_velocity8",
+  "teacher_actions_executed": 0,
+  "intermediate_states_injected": 0,
+  "judge": {
+    "opening": 0.09023806454188824,
+    "grasp_streak": 34,
+    "grasped": true,
+    "open_streak": 30,
+    "opened": true,
+    "closed_streak": 0,
+    "pulling_contact": true,
+    "pull_success": true,
+    "success": true
+  },
+  "steps": 182,
+  "peak_open_mm": 91.89132315614346,
+  "gripper_closed_target": 0.0,
+  "control": "learned goal, generic joint feedback kp0.5 kd0.03 maxdelta0.08; gripper learned binary mode, slew0.007rad/step"
+}

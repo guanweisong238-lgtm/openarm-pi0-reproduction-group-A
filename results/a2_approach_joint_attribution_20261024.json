@@ -1,0 +1,114 @@
+{
+  "scope": "approach 0-149, three noise seeds, training trajectory only",
+  "gripper_point": "right control site + R*[0,0,-0.16], world XYZ",
+  "per_joint_mae_rad": {
+    "right_joint1": 0.006354766634897031,
+    "right_joint2": 0.018116970291224426,
+    "right_joint3": 0.0016432064457023833,
+    "right_joint4": 0.00562342528383987,
+    "right_joint5": 0.0011492632749761913,
+    "right_joint6": 0.0010693247746462145,
+    "right_joint7": 0.015787458845114292,
+    "right_gripper": 0.0007056891202456282
+  },
+  "per_joint_mae_by_seed_rad": {
+    "42": {
+      "right_joint1": 0.0068818047747544586,
+      "right_joint2": 0.021193475216347034,
+      "right_joint3": 0.002107488618014181,
+      "right_joint4": 0.007821427491573558,
+      "right_joint5": 0.0015197791542006355,
+      "right_joint6": 0.0010936711800280908,
+      "right_joint7": 0.02363110766098929,
+      "right_gripper": 0.000708555316969406
+    },
+    "7": {
+      "right_joint1": 0.006785125347243477,
+      "right_joint2": 0.012224188753154909,
+      "right_joint3": 0.001581084649312855,
+      "right_joint4": 0.00480151202580837,
+      "right_joint5": 0.0008325574261084602,
+      "right_joint6": 0.001092610986256601,
+      "right_joint7": 0.009705403026517241,
+      "right_gripper": 0.0007226179371766226
+    },
+    "99": {
+      "right_joint1": 0.005397369782693156,
+      "right_joint2": 0.020933246904171338,
+      "right_joint3": 0.0012410460697801142,
+      "right_joint4": 0.004247336334137682,
+      "right_joint5": 0.0010954532446194778,
+      "right_joint6": 0.001021692157653952,
+      "right_joint7": 0.014025865847836346,
+      "right_gripper": 0.0006858941065908561
+    }
+  },
+  "sensitivity_mm_per_rad": {
+    "right_joint1": 361.30756562176833,
+    "right_joint2": 214.42618742117503,
+    "right_joint3": 325.0586106871035,
+    "right_joint4": 328.33715639368705,
+    "right_joint5": 122.37136082487899,
+    "right_joint6": 137.7210173492602,
+    "right_joint7": 159.99999333334154,
+    "right_gripper": 0.0
+  },
+  "approximate_position_contribution_mm": {
+    "right_joint1": 2.296025262949083,
+    "right_joint2": 3.884752867169949,
+    "right_joint3": 0.5341384043121101,
+    "right_joint4": 1.8463794668883453,
+    "right_joint5": 0.14063691090489364,
+    "right_joint6": 0.14726849584104507,
+    "right_joint7": 2.5259933099686904,
+    "right_gripper": 0.0
+  },
+  "approximate_total_mm": 11.375194718034116,
+  "measured_position_error_mm": 4.218429683864421,
+  "ranked_contribution": [
+    {
+      "joint": "right_joint2",
+      "mm": 3.885,
+      "share": 0.342
+    },
+    {
+      "joint": "right_joint7",
+      "mm": 2.526,
+      "share": 0.222
+    },
+    {
+      "joint": "right_joint1",
+      "mm": 2.296,
+      "share": 0.202
+    },
+    {
+      "joint": "right_joint4",
+      "mm": 1.846,
+      "share": 0.162
+    },
+    {
+      "joint": "right_joint3",
+      "mm": 0.534,
+      "share": 0.047
+    },
+    {
+      "joint": "right_joint6",
+      "mm": 0.147,
+      "share": 0.013
+    },
+    {
+      "joint": "right_joint5",
+      "mm": 0.141,
+      "share": 0.012
+    },
+    {
+      "joint": "right_gripper",
+      "mm": 0.0,
+      "share": 0.0
+    }
+  ],
+  "static_joints_mae_rad": {
+    "left_arm_max": 8.236314402249234e-10,
+    "padding_max": null
+  }
+}

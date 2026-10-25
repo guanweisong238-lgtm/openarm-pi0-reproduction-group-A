@@ -1,0 +1,133 @@
+{
+  "records": [
+    {
+      "frame": 0,
+      "cycle": 0,
+      "input": "demo_images+demo_state",
+      "mae_first4": 0.020088359597654634,
+      "mae_full16": 0.04748486270015803,
+      "right3_pred": 0.21006606546860118
+    },
+    {
+      "frame": 0,
+      "cycle": 0,
+      "input": "demo_images+sim_state",
+      "mae_first4": 0.021396353824099726,
+      "mae_full16": 0.04901508123018139,
+      "right3_pred": 0.20151078641582415
+    },
+    {
+      "frame": 0,
+      "cycle": 0,
+      "input": "sim_images+demo_state",
+      "mae_first4": 0.01573157349408028,
+      "mae_full16": 0.04522542794045454,
+      "right3_pred": 0.18200475017549256
+    },
+    {
+      "frame": 0,
+      "cycle": 0,
+      "input": "sim_images+sim_state_saved",
+      "mae_first4": 0.018533155314982667,
+      "mae_full16": 0.04679682501199628,
+      "right3_pred": 0.17242283763638228
+    },
+    {
+      "frame": 8,
+      "cycle": 2,
+      "input": "demo_images+demo_state",
+      "mae_first4": 0.011711951980060713,
+      "mae_full16": 0.03291723542682284,
+      "right3_pred": 0.02715419932022828
+    },
+    {
+      "frame": 8,
+      "cycle": 2,
+      "input": "demo_images+sim_state",
+      "mae_first4": 0.041036506134499065,
+      "mae_full16": 0.05745962825869642,
+      "right3_pred": 0.1335268725142924
+    },
+    {
+      "frame": 8,
+      "cycle": 2,
+      "input": "sim_images+demo_state",
+      "mae_first4": 0.014989563745328375,
+      "mae_full16": 0.046989557868714685,
+      "right3_pred": 0.020676630894554238
+    },
+    {
+      "frame": 8,
+      "cycle": 2,
+      "input": "sim_images+sim_state_saved",
+      "mae_first4": 0.043723189312119035,
+      "mae_full16": 0.07213210844842112,
+      "right3_pred": 0.12459271681774953
+    },
+    {
+      "frame": 16,
+      "cycle": 4,
+      "input": "demo_images+demo_state",
+      "mae_first4": 0.010625648316570889,
+      "mae_full16": 0.024149254732646185,
+      "right3_pred": -0.13947819297343178
+    },
+    {
+      "frame": 16,
+      "cycle": 4,
+      "input": "demo_images+sim_state",
+      "mae_first4": 0.06781678140632866,
+      "mae_full16": 0.07423429677657409,
+      "right3_pred": 0.07797255689372384
+    },
+    {
+      "frame": 16,
+      "cycle": 4,
+      "input": "sim_images+demo_state",
+      "mae_first4": 0.01410391865870008,
+      "mae_full16": 0.03463781026758733,
+      "right3_pred": -0.13791379908949541
+    },
+    {
+      "frame": 16,
+      "cycle": 4,
+      "input": "sim_images+sim_state_saved",
+      "mae_first4": 0.07159420563519035,
+      "mae_full16": 0.0872669091349831,
+      "right3_pred": 0.07495529329921768
+    },
+    {
+      "frame": 36,
+      "cycle": 9,
+      "input": "demo_images+demo_state",
+      "mae_first4": 0.006896118743092479,
+      "mae_full16": 0.016937473051516737,
+      "right3_pred": -0.36504423611350734
+    },
+    {
+      "frame": 36,
+      "cycle": 9,
+      "input": "demo_images+sim_state",
+      "mae_first4": 0.11208991862244748,
+      "mae_full16": 0.12032194446281673,
+      "right3_pred": -0.007384684398554414
+    },
+    {
+      "frame": 36,
+      "cycle": 9,
+      "input": "sim_images+demo_state",
+      "mae_first4": 0.00830485853721407,
+      "mae_full16": 0.019230398051517317,
+      "right3_pred": -0.3705196147072847
+    },
+    {
+      "frame": 36,
+      "cycle": 9,
+      "input": "sim_images+sim_state_saved",
+      "mae_first4": 0.11196171195863852,
+      "mae_full16": 0.11678631960442756,
+      "right3_pred": -0.01936207507244228
+    }
+  ],
+  "limitation": "固定时间索引的单轨迹诊断，不用于估计泛化成功率"
+}

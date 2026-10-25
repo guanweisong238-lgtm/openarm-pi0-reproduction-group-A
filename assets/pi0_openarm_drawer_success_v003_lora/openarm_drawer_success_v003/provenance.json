@@ -1,0 +1,38 @@
+{
+  "manifest": "data/processed/openarm_drawer_success_v003/manifest.json",
+  "manifest_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2",
+  "train_episode_ids": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "validation_episode_ids": [
+    2,
+    3,
+    6
+  ],
+  "train_frames": 8632,
+  "normalization": "mean_std",
+  "std_floor": 1e-06,
+  "weighting": "each original training frame once; validation and padded tail frames excluded",
+  "near_constant_dims": {
+    "state": [
+      8,
+      10,
+      11
+    ],
+    "actions": [
+      8,
+      10,
+      11,
+      15
+    ]
+  }
+}

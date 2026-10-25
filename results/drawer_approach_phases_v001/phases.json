@@ -1,0 +1,474 @@
+{
+  "manifest_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2",
+  "definition": "first bilateral contact sustained >=5 frames, force>.01N each; stop max20 contact frames or 2mm opening; preserve original horizon labels",
+  "episodes": [
+    {
+      "episode_id": 0,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_000",
+      "split": "train",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/diverse_rgb/approach_side_neg",
+      "source_episode_sha256": "5e1bf46cd40955a1c3b22bc17a8ce82b008558ed2d72b3126c1b3048b4861ab3",
+      "episode_sha256": "5e1bf46cd40955a1c3b22bc17a8ce82b008558ed2d72b3126c1b3048b4861ab3",
+      "action_sha256": "dc4fac359e8666ae99e1b52c741789fe0c40f0f4f16c0ad7283e0af3a058122c",
+      "condition_group": "55590e4ea6fc9fbeb792601d9c5c8509081475161f34fa8046f74e19ff073183",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 175,
+      "first_open2mm_frame": 208,
+      "phase_end_exclusive": 195,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          175
+        ],
+        "grasp": [
+          175,
+          195
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_000_events.npz"
+    },
+    {
+      "episode_id": 1,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_001",
+      "split": "train",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/diverse_rgb/approach_side_pos",
+      "source_episode_sha256": "9f466453a7824f4ab41e557b1e7bac5d260b10e83e4a5356614dc5905366cee0",
+      "episode_sha256": "9f466453a7824f4ab41e557b1e7bac5d260b10e83e4a5356614dc5905366cee0",
+      "action_sha256": "e4b9594a6811294d6c3ef5d6fb906d0e5c17a395ebd72c04b56574fe57463f80",
+      "condition_group": "bea174b05777c4f1e39294d3f7718faa7e7f84e2e106961e2bf321e5e2288459",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 175,
+      "first_open2mm_frame": 208,
+      "phase_end_exclusive": 195,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          175
+        ],
+        "grasp": [
+          175,
+          195
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_001_events.npz"
+    },
+    {
+      "episode_id": 2,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_002",
+      "split": "validation",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/diverse_rgb/cabinet_y_pos005",
+      "source_episode_sha256": "fe3032cce6d87e362fc349a5e22cf5caffd49fb17adba19038c96588b8db0bf9",
+      "episode_sha256": "fe3032cce6d87e362fc349a5e22cf5caffd49fb17adba19038c96588b8db0bf9",
+      "action_sha256": "89959537693e4beac48eaeb31975bf0c4575fd41a6496b4364612470eecde2b6",
+      "condition_group": "3c15da2fc73de2011a32f4267766c5d57f2db566ade3dd810dba02bd838b37f1",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 175,
+      "first_open2mm_frame": 208,
+      "phase_end_exclusive": 195,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          175
+        ],
+        "grasp": [
+          175,
+          195
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_002_events.npz"
+    },
+    {
+      "episode_id": 3,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_003",
+      "split": "validation",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/diverse_rgb/initial_seed108",
+      "source_episode_sha256": "d88b7a78aeff03b7bc480addfc90af6c41091a2265fbb5f345752c7efd52ade4",
+      "episode_sha256": "d88b7a78aeff03b7bc480addfc90af6c41091a2265fbb5f345752c7efd52ade4",
+      "action_sha256": "83199d10c5dedbea492df1fa024bf6eb04a17ac9fb0156a760835bdfd8750845",
+      "condition_group": "53fd720fce6315652167f18db371153d82a7204a9cd91570f4177b9a5e0dfa6a",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 175,
+      "first_open2mm_frame": 208,
+      "phase_end_exclusive": 195,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          175
+        ],
+        "grasp": [
+          175,
+          195
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_003_events.npz"
+    },
+    {
+      "episode_id": 4,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_004",
+      "split": "train",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/pilot_rgb/pitch12",
+      "source_episode_sha256": "24015854dcb2261d3aa4a5ee7491de2ef72695de5287bbbfee892143a4f927a4",
+      "episode_sha256": "24015854dcb2261d3aa4a5ee7491de2ef72695de5287bbbfee892143a4f927a4",
+      "action_sha256": "6b3c1182544857a2e9ca5f27f83ff814dd4b8fb3a927f718c61bb3972bba0999",
+      "condition_group": "9a4a9712a37e671dfc6929e61ef9d3e40b97afa01d6c1c3d5037e93b32fdd650",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 175,
+      "first_open2mm_frame": 208,
+      "phase_end_exclusive": 195,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          175
+        ],
+        "grasp": [
+          175,
+          195
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_004_events.npz"
+    },
+    {
+      "episode_id": 5,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_005",
+      "split": "train",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/pilot_rgb/pitch18",
+      "source_episode_sha256": "84c106731ce078775e3ec16b3d65829ee4e6dbaf9460e59833b25c33a53830ea",
+      "episode_sha256": "84c106731ce078775e3ec16b3d65829ee4e6dbaf9460e59833b25c33a53830ea",
+      "action_sha256": "360c3f499c07198c48325d586b47f201faaac879d8bb3cfba3e1f451a6766e80",
+      "condition_group": "9a4a9712a37e671dfc6929e61ef9d3e40b97afa01d6c1c3d5037e93b32fdd650",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 175,
+      "first_open2mm_frame": 208,
+      "phase_end_exclusive": 195,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          175
+        ],
+        "grasp": [
+          175,
+          195
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_005_events.npz"
+    },
+    {
+      "episode_id": 6,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_006",
+      "split": "validation",
+      "frames": 1144,
+      "source_path": "data/drawer_human/session_20261024_152741/episode_002",
+      "source_episode_sha256": "356eba21a02f98a07d5321b706a1739c20ac82f9c9a967177096628846d6dc27",
+      "episode_sha256": "356eba21a02f98a07d5321b706a1739c20ac82f9c9a967177096628846d6dc27",
+      "action_sha256": "a05bd95969fca23baf25e7dfb6dfd546cdd6d994aff5e2ff8bf14a88923f1b34",
+      "condition_group": "2f33e78bcc3916dfd3b0f46e3f6b28e8f950aa6fcdd2af649ff3cb31b9bccb7a",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 532,
+      "first_open2mm_frame": 532,
+      "phase_end_exclusive": 537,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          532
+        ],
+        "grasp": [
+          532,
+          537
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_006_events.npz"
+    },
+    {
+      "episode_id": 7,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_007",
+      "split": "train",
+      "frames": 1738,
+      "source_path": "data/drawer_human/session_20261024_154326/episode_001",
+      "source_episode_sha256": "775e884d4b0e4f56596912dadb8f2d5a21206473533588b382dfb12242585a0b",
+      "episode_sha256": "775e884d4b0e4f56596912dadb8f2d5a21206473533588b382dfb12242585a0b",
+      "action_sha256": "5fc060c6fe961f8d3c19cfd13f551d48ecb8131fa090ef3383c21bcfa2ce374c",
+      "condition_group": "b4b21c32c92954bba7d55c9fc681d9f97f166e86a2e1c17e90291391a04a0ef8",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "handle_assembly: drawer_handle + drawer_handle_stem1 + drawer_handle_stem2",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 548,
+      "first_open2mm_frame": 1073,
+      "phase_end_exclusive": 568,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          548
+        ],
+        "grasp": [
+          548,
+          568
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_007_events.npz"
+    },
+    {
+      "episode_id": 8,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_008",
+      "split": "train",
+      "frames": 1149,
+      "source_path": "data/drawer_human/session_20261024_154326/episode_003",
+      "source_episode_sha256": "0326662637b9eb3e049a64e7d71f45da6db3a46a4ac71970d638b9b02926bf9c",
+      "episode_sha256": "0326662637b9eb3e049a64e7d71f45da6db3a46a4ac71970d638b9b02926bf9c",
+      "action_sha256": "c06c19199d87b39737fff2dfdc9d41ae8e4d1ed0e6a626c91b28f391d2944f1c",
+      "condition_group": "4d4ab80922a35b6abaf81c20510fd3b3f7015e46ac0ea53750745890b04b68ac",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "handle_assembly: drawer_handle + drawer_handle_stem1 + drawer_handle_stem2",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 332,
+      "first_open2mm_frame": 332,
+      "phase_end_exclusive": 337,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          332
+        ],
+        "grasp": [
+          332,
+          337
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_008_events.npz"
+    },
+    {
+      "episode_id": 9,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_009",
+      "split": "train",
+      "frames": 1185,
+      "source_path": "data/drawer_human/session_20261024_154326/episode_004",
+      "source_episode_sha256": "564dda01bc8e00a60358952564f4916ec8bf83fc837ea3debf19781cde79fc43",
+      "episode_sha256": "564dda01bc8e00a60358952564f4916ec8bf83fc837ea3debf19781cde79fc43",
+      "action_sha256": "4242bcf68d071c8c2e842222bedd95cef81b7e8cb17bc9a6df30f42ad944b6c5",
+      "condition_group": "e2a34d1f4cef7e1fe850ee0b128c275a98df9ad1eb3f333372b6c7c9a3086783",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "handle_assembly: drawer_handle + drawer_handle_stem1 + drawer_handle_stem2",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 539,
+      "first_open2mm_frame": 777,
+      "phase_end_exclusive": 559,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          539
+        ],
+        "grasp": [
+          539,
+          559
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_009_events.npz"
+    },
+    {
+      "episode_id": 10,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_010",
+      "split": "train",
+      "frames": 1257,
+      "source_path": "data/drawer_human/session_20261024_154326/episode_006",
+      "source_episode_sha256": "f49f4799c0ba37e567808bca66c9404cceb09926970e76139ce36499812709ef",
+      "episode_sha256": "f49f4799c0ba37e567808bca66c9404cceb09926970e76139ce36499812709ef",
+      "action_sha256": "fc4f97f2eb8344561ce2d7b167f5471f8cd299123e15e66b50914b8fe14522a7",
+      "condition_group": "c3ead288e9f139ece890d7e315ed354422415c93633474fd5b8ff9324213eea6",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "handle_assembly: drawer_handle + drawer_handle_stem1 + drawer_handle_stem2",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 549,
+      "first_open2mm_frame": 549,
+      "phase_end_exclusive": 554,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          549
+        ],
+        "grasp": [
+          549,
+          554
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_010_events.npz"
+    },
+    {
+      "episode_id": 11,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_011",
+      "split": "train",
+      "frames": 993,
+      "source_path": "data/drawer_human/session_20261024_154326/episode_008",
+      "source_episode_sha256": "b364e150812768961d25c8c6e49a171a909a1a890cd5f40df008a58a4a3c4ed8",
+      "episode_sha256": "b364e150812768961d25c8c6e49a171a909a1a890cd5f40df008a58a4a3c4ed8",
+      "action_sha256": "7751fa27cfb664b5bad1246cbd5975652d6cd06bba2b6a19592b1846f7fe29d2",
+      "condition_group": "18c1becc370f858abf9a21b69b423077141c1086f8aec6e8dc295a749e3c3594",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "handle_assembly: drawer_handle + drawer_handle_stem1 + drawer_handle_stem2",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 454,
+      "first_open2mm_frame": 454,
+      "phase_end_exclusive": 459,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          454
+        ],
+        "grasp": [
+          454,
+          459
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_011_events.npz"
+    },
+    {
+      "episode_id": 12,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_012",
+      "split": "train",
+      "frames": 462,
+      "source_path": "data/drawer_trial/contact_roundtrip_rgb_001",
+      "source_episode_sha256": "3162d2d2817fdbda8ae5f30c93856321157ae5b1e1b7cd4695c99528a6a1ed87",
+      "episode_sha256": "3162d2d2817fdbda8ae5f30c93856321157ae5b1e1b7cd4695c99528a6a1ed87",
+      "action_sha256": "5e43a3ddaf39c751e32bc42d1d19ed6d8a54dfd937989a2f1f1a7ea7b0a5a0e7",
+      "condition_group": "9a4a9712a37e671dfc6929e61ef9d3e40b97afa01d6c1c3d5037e93b32fdd650",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)",
+      "first_stable_contact_frame": 175,
+      "first_open2mm_frame": 208,
+      "phase_end_exclusive": 195,
+      "phase_ranges": {
+        "start": [
+          0,
+          9
+        ],
+        "approach": [
+          9,
+          175
+        ],
+        "grasp": [
+          175,
+          195
+        ]
+      },
+      "replay_max_qpos_error": 0.0,
+      "contact_scope": "whole handle assembly, bar and stems",
+      "event_arrays": "episode_012_events.npz"
+    }
+  ]
+}

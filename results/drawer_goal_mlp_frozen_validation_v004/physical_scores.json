@@ -1,0 +1,62 @@
+[
+  {
+    "trial": "results/drawer_goal_mlp_frozen_validation_v004/trial_episode_2",
+    "episode_id": 2,
+    "split": "validation",
+    "noise_seed": 42,
+    "action_chunk": 4,
+    "noise_mode": "deterministic",
+    "criterion": "bilateral >.01N for5 steps, contact pulling, opening>=.08m held30 steps",
+    "replay_max_qpos_error": 0.0,
+    "replay_max_contact_force_error": 0.0,
+    "replay_max_qvel_error": 0.0,
+    "velocity_sensor_evidence_required": false,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "peak_open_mm": 91.89132315614346,
+    "first_success_step": 182,
+    "judge": {
+      "opening": 0.09023806454188824,
+      "grasp_streak": 34,
+      "grasped": true,
+      "open_streak": 30,
+      "opened": true,
+      "closed_streak": 0,
+      "pulling_contact": true,
+      "pull_success": true,
+      "success": true
+    },
+    "evidence_valid": true,
+    "model_pull_success": true
+  },
+  {
+    "trial": "results/drawer_goal_mlp_frozen_validation_v004/trial_episode_6",
+    "episode_id": 6,
+    "split": "validation",
+    "noise_seed": 42,
+    "action_chunk": 4,
+    "noise_mode": "deterministic",
+    "criterion": "bilateral >.01N for5 steps, contact pulling, opening>=.08m held30 steps",
+    "replay_max_qpos_error": 0.0,
+    "replay_max_contact_force_error": 0.0,
+    "replay_max_qvel_error": 0.0,
+    "velocity_sensor_evidence_required": false,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "peak_open_mm": 93.30788830000266,
+    "first_success_step": 122,
+    "judge": {
+      "opening": 0.09172987418244605,
+      "grasp_streak": 0,
+      "grasped": true,
+      "open_streak": 30,
+      "opened": true,
+      "closed_streak": 0,
+      "pulling_contact": true,
+      "pull_success": true,
+      "success": true
+    },
+    "evidence_valid": true,
+    "model_pull_success": true
+  }
+]

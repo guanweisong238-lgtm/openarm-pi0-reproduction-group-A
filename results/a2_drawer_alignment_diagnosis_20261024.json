@@ -1,0 +1,330 @@
+{
+  "scope": "same-training-trajectory diagnosis, no independent validation",
+  "coordinate_frame": "MuJoCo world XYZ; grip point = right control site + R*[0,0,-0.16]",
+  "offline_fk": {
+    "approach": {
+      "first_action_mean_signed_xyz_mm": [
+        -0.10905644188731264,
+        -2.0908430665661393,
+        -6.7283595130578435
+      ],
+      "first_action_rmse_xyz_mm": [
+        6.642796755288379,
+        7.780456461190508,
+        9.303919801968728
+      ]
+    },
+    "grasp": {
+      "first_action_mean_signed_xyz_mm": [
+        -1.491414217798848,
+        -0.09122010747802416,
+        -3.97991011841411
+      ],
+      "first_action_rmse_xyz_mm": [
+        1.7751894614058767,
+        1.9511615559619908,
+        4.151963376868482
+      ]
+    }
+  },
+  "closed_loop_snapshots": [
+    {
+      "step": 4,
+      "time_s": 0.13333333333333333,
+      "actual_tip_xyz_m": [
+        0.2532731874304817,
+        -0.22848793823785166,
+        0.5216491982667179
+      ],
+      "tip_minus_handle_xyz_mm": [
+        -154.7268125695183,
+        51.51206176214837,
+        16.649198266717846
+      ],
+      "commanded_tip_xyz_m": [
+        0.2678555591006872,
+        -0.23488916461910217,
+        0.5295699622676424
+      ],
+      "actual_minus_commanded_xyz_mm": [
+        -14.582371670205486,
+        6.401226381250513,
+        -7.920764000924563
+      ]
+    },
+    {
+      "step": 30,
+      "time_s": 1.0,
+      "actual_tip_xyz_m": [
+        0.28578138807011333,
+        -0.3047491023399244,
+        0.5329075124798912
+      ],
+      "tip_minus_handle_xyz_mm": [
+        -122.2186119298867,
+        -24.749102339924388,
+        27.907512479891206
+      ],
+      "commanded_tip_xyz_m": [
+        0.2855570512980766,
+        -0.3063102055882886,
+        0.53175497047726
+      ],
+      "actual_minus_commanded_xyz_mm": [
+        0.224336772036704,
+        1.5611032483641707,
+        1.1525420026312627
+      ]
+    },
+    {
+      "step": 60,
+      "time_s": 2.0,
+      "actual_tip_xyz_m": [
+        0.26797220286933965,
+        -0.3011192743804595,
+        0.4568396136634387
+      ],
+      "tip_minus_handle_xyz_mm": [
+        -140.0277971306604,
+        -21.119274380459462,
+        -48.16038633656128
+      ],
+      "commanded_tip_xyz_m": [
+        0.26982623698813335,
+        -0.29138927493110195,
+        0.4526705490110049
+      ],
+      "actual_minus_commanded_xyz_mm": [
+        -1.8540341187937015,
+        -9.72999944935754,
+        4.169064652433829
+      ]
+    },
+    {
+      "step": 150,
+      "time_s": 5.0,
+      "actual_tip_xyz_m": [
+        0.29433710876138586,
+        -0.2939510783087621,
+        0.43548954230719483
+      ],
+      "tip_minus_handle_xyz_mm": [
+        -113.66289123861418,
+        -13.951078308762078,
+        -69.51045769280518
+      ],
+      "commanded_tip_xyz_m": [
+        0.29203484645009425,
+        -0.28694491664677324,
+        0.42435213535817873
+      ],
+      "actual_minus_commanded_xyz_mm": [
+        2.302262311291603,
+        -7.006161661988863,
+        11.137406949016103
+      ]
+    },
+    {
+      "step": 360,
+      "time_s": 12.0,
+      "actual_tip_xyz_m": [
+        0.3779029420010158,
+        -0.25555724954192127,
+        0.4383684495768308
+      ],
+      "tip_minus_handle_xyz_mm": [
+        -30.097057998984212,
+        24.442750458078756,
+        -66.6315504231692
+      ],
+      "commanded_tip_xyz_m": [
+        0.377425955530328,
+        -0.2564621076035305,
+        0.438483025771428
+      ],
+      "actual_minus_commanded_xyz_mm": [
+        0.4769864706878346,
+        0.9048580616092261,
+        -0.11457619459720458
+      ]
+    },
+    {
+      "step": 720,
+      "time_s": 24.0,
+      "actual_tip_xyz_m": [
+        0.377557652717626,
+        -0.26956881507013786,
+        0.44883629595841007
+      ],
+      "tip_minus_handle_xyz_mm": [
+        -30.44234728237405,
+        10.43118492986217,
+        -56.16370404158994
+      ],
+      "commanded_tip_xyz_m": [
+        0.37796083226094535,
+        -0.27076323242951844,
+        0.4513599174995648
+      ],
+      "actual_minus_commanded_xyz_mm": [
+        -0.40317954331936523,
+        1.194417359380584,
+        -2.523621541154708
+      ]
+    }
+  ],
+  "closest_approach": {
+    "step": 717,
+    "time_s": 23.9,
+    "distance_mm": 63.94096773759547,
+    "tip_minus_handle_xyz_mm": [
+      -30.814066616251967,
+      10.547137085489988,
+      -55.02452683203457
+    ]
+  },
+  "right_arm_clipped_frames": [
+    0,
+    25,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "initial_offline_vs_live_block_max_rad": 0.0970321759897057,
+  "teacher_grasp_tip_mean_xyz_m": [
+    0.4077447690885031,
+    -0.2797201347232459,
+    0.5050869497507295
+  ],
+  "paired_image_ablation": [
+    {
+      "frame": 0,
+      "repeat_max_rad": 0.0,
+      "decoded_reproduction_max_rad": 0.0,
+      "raw_vs_decoded_right_arm_mae_rad": 0.02084507110430383,
+      "decoded_first_target_error_xyz_mm": [
+        14.011134015723792,
+        3.576089309907715,
+        9.39718433799408
+      ],
+      "raw_first_target_error_xyz_mm": [
+        13.023361059000704,
+        -0.8380424500358807,
+        3.9017289874918593
+      ],
+      "raw_reproduces_initial_live_max_rad": 0.0
+    },
+    {
+      "frame": 4,
+      "repeat_max_rad": 0.0,
+      "decoded_reproduction_max_rad": 0.0,
+      "raw_vs_decoded_right_arm_mae_rad": 0.025759793623367687,
+      "decoded_first_target_error_xyz_mm": [
+        -3.63660744238814,
+        2.434952475100338,
+        -15.71130414552857
+      ],
+      "raw_first_target_error_xyz_mm": [
+        -4.014731820887269,
+        -1.0414746068629355,
+        -20.00323647396951
+      ]
+    },
+    {
+      "frame": 30,
+      "repeat_max_rad": 0.0,
+      "decoded_reproduction_max_rad": 0.0,
+      "raw_vs_decoded_right_arm_mae_rad": 0.004290203990695792,
+      "decoded_first_target_error_xyz_mm": [
+        2.3105212573484857,
+        -23.83061576268386,
+        -3.4967216895623876
+      ],
+      "raw_first_target_error_xyz_mm": [
+        1.4735989571245112,
+        -21.23240811898752,
+        -2.3059976825705597
+      ]
+    },
+    {
+      "frame": 60,
+      "repeat_max_rad": 0.0,
+      "decoded_reproduction_max_rad": 0.0,
+      "raw_vs_decoded_right_arm_mae_rad": 0.006326853458534493,
+      "decoded_first_target_error_xyz_mm": [
+        -3.227428327415627,
+        1.9582870091466864,
+        -12.82171498811624
+      ],
+      "raw_first_target_error_xyz_mm": [
+        -3.7649682556092356,
+        0.8937731589813147,
+        -13.651414048331034
+      ]
+    },
+    {
+      "frame": 120,
+      "repeat_max_rad": 0.0,
+      "decoded_reproduction_max_rad": 0.0,
+      "raw_vs_decoded_right_arm_mae_rad": 0.004179068381718709,
+      "decoded_first_target_error_xyz_mm": [
+        -1.0291234836196095,
+        2.513750068200482,
+        -7.206196911681229
+      ],
+      "raw_first_target_error_xyz_mm": [
+        -1.657045321696471,
+        2.488524223246469,
+        -8.242441583281135
+      ]
+    },
+    {
+      "frame": 150,
+      "repeat_max_rad": 0.0,
+      "decoded_reproduction_max_rad": 0.0,
+      "raw_vs_decoded_right_arm_mae_rad": 0.0009587015122880265,
+      "decoded_first_target_error_xyz_mm": [
+        -0.687273226914975,
+        2.694030234203504,
+        -6.474951881552393
+      ],
+      "raw_first_target_error_xyz_mm": [
+        -0.798656911286999,
+        3.3622043061226625,
+        -7.0526048467237645
+      ]
+    },
+    {
+      "frame": 174,
+      "repeat_max_rad": 0.0,
+      "decoded_reproduction_max_rad": 0.0,
+      "raw_vs_decoded_right_arm_mae_rad": 0.0034099147551554508,
+      "decoded_first_target_error_xyz_mm": [
+        -2.478050712714175,
+        -1.4617314876978482,
+        -3.648212679327578
+      ],
+      "raw_first_target_error_xyz_mm": [
+        -3.0408726027371658,
+        -0.8749524112632301,
+        -3.648914093197675
+      ]
+    }
+  ],
+  "image_pixel_difference_initial_mae_uint8": {
+    "ceiling": 1.3352777777777778,
+    "wrist_left": 1.3263324652777777,
+    "wrist_right": 1.5799652777777777
+  },
+  "interpretation": {
+    "direct_cause": "Policy target is below the handle; late physical tracking closely follows that target.",
+    "supported_factors": [
+      "Residual downward error on teacher observations",
+      "Closed-loop trajectory divergence without successful correction",
+      "Confirmed output sensitivity to lossy training videos versus raw render input"
+    ],
+    "limitation": "No matched-image closed-loop intervention or retraining was run; relative causal contributions remain unmeasured."
+  }
+}

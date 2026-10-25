@@ -1,0 +1,70 @@
+{
+  "trial_directory": "logs/a2_pi0/success_live_20261024-231237-067321/trial_03_episode_12",
+  "episode_id": 12,
+  "seed": 99,
+  "scope": "first nine physical control steps only; not approach/grasp/task success",
+  "teacher_actions_executed": 0,
+  "intermediate_states_injected": 0,
+  "frames": 9,
+  "position_gate_mm": 5.0,
+  "attitude_gate_deg": 2.0,
+  "values": [
+    {
+      "after_control_step": 1,
+      "position_mm": 0.21779622756364894,
+      "attitude_deg": 0.1283905516154222,
+      "max_right_joint_error_rad": 0.0016987720216434798
+    },
+    {
+      "after_control_step": 2,
+      "position_mm": 0.35833644618916716,
+      "attitude_deg": 0.18065679911068797,
+      "max_right_joint_error_rad": 0.0026287700078635456
+    },
+    {
+      "after_control_step": 3,
+      "position_mm": 0.47772035115957956,
+      "attitude_deg": 0.17815782240361627,
+      "max_right_joint_error_rad": 0.0030008826534791977
+    },
+    {
+      "after_control_step": 4,
+      "position_mm": 0.5601332827268343,
+      "attitude_deg": 0.21518406125482573,
+      "max_right_joint_error_rad": 0.0026837412538551764
+    },
+    {
+      "after_control_step": 5,
+      "position_mm": 0.7660836066760192,
+      "attitude_deg": 0.2607599383354799,
+      "max_right_joint_error_rad": 0.0034481708395041055
+    },
+    {
+      "after_control_step": 6,
+      "position_mm": 0.8698666905929932,
+      "attitude_deg": 0.28260031772232835,
+      "max_right_joint_error_rad": 0.004196511392136837
+    },
+    {
+      "after_control_step": 7,
+      "position_mm": 0.904584630037223,
+      "attitude_deg": 0.3067619604278566,
+      "max_right_joint_error_rad": 0.004907097312245257
+    },
+    {
+      "after_control_step": 8,
+      "position_mm": 0.908183020336921,
+      "attitude_deg": 0.321982247417444,
+      "max_right_joint_error_rad": 0.005400482702135889
+    },
+    {
+      "after_control_step": 9,
+      "position_mm": 1.3541967268159718,
+      "attitude_deg": 0.5139614969589443,
+      "max_right_joint_error_rad": 0.00838870017727733
+    }
+  ],
+  "worst_position_mm": 1.3541967268159718,
+  "worst_attitude_deg": 0.5139614969589443,
+  "passed": true
+}

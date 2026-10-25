@@ -1,0 +1,52 @@
+[
+  {
+    "path": "data/drawer_expansion/diverse_rgb/approach_side_neg",
+    "frames": 462,
+    "raw_reader_and_adapter_passed": true
+  },
+  {
+    "path": "data/drawer_expansion/diverse_rgb/approach_side_pos",
+    "frames": 462,
+    "raw_reader_and_adapter_passed": true
+  },
+  {
+    "path": "data/drawer_expansion/diverse_rgb/cabinet_y_pos005",
+    "frames": 462,
+    "raw_reader_and_adapter_passed": true
+  },
+  {
+    "path": "data/drawer_expansion/diverse_rgb/initial_seed108",
+    "frames": 462,
+    "raw_reader_and_adapter_passed": true
+  },
+  {
+    "path": "data/drawer_expansion/pilot_rgb/pitch12",
+    "frames": 462,
+    "raw_reader_and_adapter_passed": true
+  },
+  {
+    "path": "data/drawer_expansion/pilot_rgb/pitch18",
+    "frames": 462,
+    "raw_reader_and_adapter_passed": true
+  },
+  {
+    "path": "data/drawer_human/session_20261024_152741/episode_002",
+    "frames": 1144,
+    "raw_reader_and_adapter_passed": true
+  },
+  {
+    "path": "data/drawer_human/session_20261024_154326/episode_001",
+    "frames": 1738,
+    "raw_reader_and_adapter_passed": true
+  },
+  {
+    "path": "data/drawer_trial/contact_roundtrip_rgb_001",
+    "frames": 462,
+    "raw_reader_and_adapter_passed": true
+  },
+  {
+    "path": "data/drawer_human/session_20261024_154326/episode_003",
+    "frames": 1149,
+    "raw_reader_and_adapter_passed": true
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "episode_id": 0,
+    "initialization": "script_ready_start",
+    "updates": 188,
+    "frame0": 0,
+    "first15": 4,
+    "first75": 30
+  },
+  {
+    "episode_id": 1,
+    "initialization": "script_ready_start",
+    "updates": 220,
+    "frame0": 2,
+    "first15": 5,
+    "first75": 35
+  },
+  {
+    "episode_id": 4,
+    "initialization": "script_ready_start",
+    "updates": 189,
+    "frame0": 1,
+    "first15": 5,
+    "first75": 28
+  },
+  {
+    "episode_id": 5,
+    "initialization": "script_ready_start",
+    "updates": 189,
+    "frame0": 1,
+    "first15": 7,
+    "first75": 34
+  },
+  {
+    "episode_id": 7,
+    "initialization": "human_warm_start",
+    "updates": 212,
+    "frame0": 0,
+    "first15": 3,
+    "first75": 8
+  },
+  {
+    "episode_id": 8,
+    "initialization": "human_warm_start",
+    "updates": 213,
+    "frame0": 1,
+    "first15": 4,
+    "first75": 18
+  },
+  {
+    "episode_id": 9,
+    "initialization": "human_warm_start",
+    "updates": 185,
+    "frame0": 0,
+    "first15": 1,
+    "first75": 7
+  },
+  {
+    "episode_id": 10,
+    "initialization": "human_warm_start",
+    "updates": 219,
+    "frame0": 0,
+    "first15": 1,
+    "first75": 9
+  },
+  {
+    "episode_id": 11,
+    "initialization": "human_warm_start",
+    "updates": 173,
+    "frame0": 0,
+    "first15": 1,
+    "first75": 16
+  },
+  {
+    "episode_id": 12,
+    "initialization": "script_ready_start",
+    "updates": 212,
+    "frame0": 0,
+    "first15": 6,
+    "first75": 35
+  }
+]

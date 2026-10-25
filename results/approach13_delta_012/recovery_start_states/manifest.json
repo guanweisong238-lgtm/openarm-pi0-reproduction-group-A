@@ -1,0 +1,68 @@
+[
+  {
+    "path": "results/approach13_delta_012/recovery_start_states/episode12_after_step11.npz",
+    "episode_id": 12,
+    "after_control_step": 11,
+    "source_trial": "logs/a2_pi0/success_live_20261024-234423-249381/trial_01_episode_12",
+    "manifest_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2",
+    "mujoco_version": "3.8.1",
+    "restoration_verified": true,
+    "train_ready": false,
+    "scope": "recovery initial state only, no expert action labels"
+  },
+  {
+    "path": "results/approach13_delta_012/recovery_start_states/episode12_after_step12.npz",
+    "episode_id": 12,
+    "after_control_step": 12,
+    "source_trial": "logs/a2_pi0/success_live_20261024-234423-249381/trial_01_episode_12",
+    "manifest_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2",
+    "mujoco_version": "3.8.1",
+    "restoration_verified": true,
+    "train_ready": false,
+    "scope": "recovery initial state only, no expert action labels"
+  },
+  {
+    "path": "results/approach13_delta_012/recovery_start_states/episode12_after_step15.npz",
+    "episode_id": 12,
+    "after_control_step": 15,
+    "source_trial": "logs/a2_pi0/success_live_20261024-234423-249381/trial_01_episode_12",
+    "manifest_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2",
+    "mujoco_version": "3.8.1",
+    "restoration_verified": true,
+    "train_ready": false,
+    "scope": "recovery initial state only, no expert action labels"
+  },
+  {
+    "path": "results/approach13_delta_012/recovery_start_states/episode8_after_step2.npz",
+    "episode_id": 8,
+    "after_control_step": 2,
+    "source_trial": "logs/a2_pi0/success_live_20261024-234540-696743/trial_01_episode_8",
+    "manifest_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2",
+    "mujoco_version": "3.8.1",
+    "restoration_verified": true,
+    "train_ready": false,
+    "scope": "recovery initial state only, no expert action labels"
+  },
+  {
+    "path": "results/approach13_delta_012/recovery_start_states/episode8_after_step3.npz",
+    "episode_id": 8,
+    "after_control_step": 3,
+    "source_trial": "logs/a2_pi0/success_live_20261024-234540-696743/trial_01_episode_8",
+    "manifest_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2",
+    "mujoco_version": "3.8.1",
+    "restoration_verified": true,
+    "train_ready": false,
+    "scope": "recovery initial state only, no expert action labels"
+  },
+  {
+    "path": "results/approach13_delta_012/recovery_start_states/episode8_after_step9.npz",
+    "episode_id": 8,
+    "after_control_step": 9,
+    "source_trial": "logs/a2_pi0/success_live_20261024-234540-696743/trial_01_episode_8",
+    "manifest_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2",
+    "mujoco_version": "3.8.1",
+    "restoration_verified": true,
+    "train_ready": false,
+    "scope": "recovery initial state only, no expert action labels"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "task": "open",
+  "seconds": 24,
+  "noise_mode": "fixed",
+  "seed": 42,
+  "action_chunk": 4,
+  "gripper_mode": "continuous",
+  "model_variant": "Pi0 backbone deterministic endpoint, H4, right8, position+actual velocity",
+  "validated_ready_episode_ids": [
+    12,
+    2
+  ],
+  "known_failed_warm_episode_ids": [
+    6
+  ]
+}

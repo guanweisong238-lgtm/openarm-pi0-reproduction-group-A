@@ -1,0 +1,29 @@
+{
+  "experiment": "overfit_ep0_5000_001",
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_lora/overfit_ep0_5000_001/5000",
+  "episode0_mae_1000_step_baseline": 0.0288699,
+  "episode0_mae_5000_steps": 0.00908731573490601,
+  "trends_report": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/action_trends_20261024-000800-307265/summary.json",
+  "episode_evaluation_report": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/action_eval_20261024-000910-186580/summary.json",
+  "first_frame_motion": [
+    {
+      "seed": 42,
+      "right3_predicted_delta": -0.25812317667202356,
+      "right3_true_delta": -0.28060096502304077,
+      "active_displacement_ratio": 0.870077917571604
+    },
+    {
+      "seed": 0,
+      "right3_predicted_delta": -0.26613713858451093,
+      "right3_true_delta": -0.28060096502304077,
+      "active_displacement_ratio": 0.9307423575626506
+    },
+    {
+      "seed": 1,
+      "right3_predicted_delta": -0.2395718752000928,
+      "right3_true_delta": -0.28060096502304077,
+      "active_displacement_ratio": 0.854950852401738
+    }
+  ],
+  "task_success_verified": false
+}

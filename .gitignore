@@ -228,14 +228,28 @@ __marimo__/
 !.env.example
 *.pem
 *.key
+/.aws/
 
 # 2. Downloaded datasets and processed data
 data/raw/
 data/processed/
 datasets/
 
+# 数据目录默认忽略下载、转换产物及内嵌元数据/缓存。
+# 保留顶层说明和单独维护的小型来源清单。
+/data/*
+!/data/*.md
+!/data/manifests/
+
+# 资产默认忽略，仅保留复现所需的小型归一化统计和来源记录。
+/assets/**
+!/assets/**/
+!/assets/**/norm_stats.json
+!/assets/**/provenance.json
+
 # 3. Pretrained model weights and checkpoints
-checkpoints/
+/checkpoints/*
+!/checkpoints/README.md
 weights/
 pretrained_models/
 models/checkpoints/
@@ -259,9 +273,36 @@ logs/
 mujoco_logs/
 simulation_outputs/
 
+# 项目内模型下载、Hugging Face、JAX 编译及依赖缓存。
+/.cache/
+/.hf_cache/
+/.uv-cache/
+
 # 5. Generated videos
 results/videos/
+/results/**/*.npy
+/results/**/*.npz
+/results/**/*.mp4
+/results/**/*.avi
+/results/**/*.webm
+/results/**/*.mkv
+/results/**/*.mov
+
+# 清理归档保留配置/协议/统计；参数与优化器内部文件不进入Git。
+/results/**/metadata/**/params/
+/results/**/metadata/**/optimizer/
+
+# 保留 results/ 下的小型 Markdown、JSON 和 CSV 报告。
+# 不全局忽略 *.lock，uv.lock 等依赖锁文件需要纳入版本管理。
 
 # 6. Temporary and operating-system files
 .DS_Store
 Thumbs.db
+*.download-part
+*.partial
+*.crdownload
+*.orbax-checkpoint-tmp-*
+MUJOCO_LOG.TXT
+*.swp
+*.swo
+*~

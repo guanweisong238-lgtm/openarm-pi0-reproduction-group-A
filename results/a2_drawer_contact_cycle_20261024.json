@@ -1,0 +1,1844 @@
+{
+  "date": "2026-10-24",
+  "source_repository": "https://github.com/Manas-arumalla/openarm-control",
+  "source_commit": "14ea59faad6706b9add5d7f8d386e43239a6360f",
+  "controller": "scripts/a2_pi0/contact_drawer_controller.py",
+  "collector": "scripts/a2_pi0/collect_drawer_trial.py",
+  "replay": "scripts/a2_pi0/replay_drawer_trial.py",
+  "selected_roundtrip": "data/drawer_trial/contact_roundtrip_001/episode.npz",
+  "scene_change": {
+    "drawer_offset_x_m": 0.1,
+    "handle_diameter_m": 0.014,
+    "handle_geometry_changed": false,
+    "friction_changed": false,
+    "robot_limits_changed": false
+  },
+  "runs": {
+    "contact_force_stop_001": {
+      "source_repository": "https://github.com/Manas-arumalla/openarm-control",
+      "source_commit": "14ea59faad6706b9add5d7f8d386e43239a6360f",
+      "license": "Apache-2.0",
+      "mujoco_version": "3.8.1",
+      "source_scene": "v2/openarm_mujoco_v2/articulated_scene.xml",
+      "scene_sha256": "0783748a1a4cd4b797bf8dd78c699519afb32a6137a3b67bb870fa3859626c27",
+      "mode": "contact",
+      "fps": 30,
+      "frames": 339,
+      "seconds": 11.300000000000443,
+      "expert": "contact",
+      "grasp_diagnostics": [
+        {
+          "stage": "aligned_open",
+          "time": 4.999999999999671,
+          "tool_error_m": 0.00026065707688130587,
+          "finger_contact_counts": [
+            0,
+            0
+          ],
+          "finger_normal_forces": [
+            0.0,
+            0.0
+          ],
+          "drawer_open_m": -0.0
+        },
+        {
+          "stage": "closed",
+          "time": 6.299999999999528,
+          "tool_error_m": 0.0004472567108357789,
+          "finger_contact_counts": [
+            1,
+            1
+          ],
+          "finger_normal_forces": [
+            13.350109857035351,
+            12.645674694622919
+          ],
+          "drawer_open_m": -8.891593862791424e-05
+        },
+        {
+          "stage": "planning_stop",
+          "requested_delta": 0.03666666666666667,
+          "reason": "夹持点IK不满足要求：位置误差0.002724m"
+        },
+        {
+          "stage": "pulled",
+          "time": 10.300000000000109,
+          "tool_error_m": 0.002582089422258018,
+          "finger_contact_counts": [
+            1,
+            1
+          ],
+          "finger_normal_forces": [
+            5.011168192853438,
+            15.867171940300961
+          ],
+          "drawer_open_m": 0.03547710194454311
+        }
+      ],
+      "scene_overrides": {
+        "drawer_handle_radius_m": null
+      },
+      "image_shape": null,
+      "wrist_view": "source",
+      "shadow_map_size": 1024,
+      "camera_local_poses": {
+        "camera_ceiling": {
+          "position": [
+            0.3,
+            0.0,
+            1.3
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fovy_degrees": 60.0
+        },
+        "camera_wrist_left": {
+          "position": [
+            -0.001,
+            -0.02,
+            0.096
+          ],
+          "quaternion_wxyz": [
+            0.18897643153649496,
+            0.6813854406956662,
+            0.7064344654030927,
+            -0.030856694935649825
+          ],
+          "fovy_degrees": 45.0
+        },
+        "camera_wrist_right": {
+          "position": [
+            -0.001,
+            0.02,
+            0.096
+          ],
+          "quaternion_wxyz": [
+            0.030856000786248935,
+            -0.7064319625298489,
+            -0.6813880355697528,
+            -0.18897654487818938
+          ],
+          "fovy_degrees": 45.0
+        }
+      },
+      "camera_mapping": {
+        "ceiling": "camera_ceiling",
+        "wrist_left": "camera_wrist_left",
+        "wrist_right": "camera_wrist_right"
+      },
+      "actuator_order": [
+        "right_joint1_ctrl",
+        "right_joint2_ctrl",
+        "right_joint3_ctrl",
+        "right_joint4_ctrl",
+        "right_joint5_ctrl",
+        "right_joint6_ctrl",
+        "right_joint7_ctrl",
+        "right_finger1_ctrl",
+        "left_joint1_ctrl",
+        "left_joint2_ctrl",
+        "left_joint3_ctrl",
+        "left_joint4_ctrl",
+        "left_joint5_ctrl",
+        "left_joint6_ctrl",
+        "left_joint7_ctrl",
+        "left_finger1_ctrl"
+      ],
+      "action_representation": "16D absolute joint position targets, radians, right then left",
+      "gravity_compensation": "qfrc_bias on 14 arm DOFs, recomputed each physical substep",
+      "initialization": "ready keyframe; upstream _park sets left arm qpos/qvel to zero before recording",
+      "upstream_returned_success": false,
+      "final_open_m": 0.03529812934981683,
+      "peak_open_m": 0.03547710194454311,
+      "success_8cm_held_1s": false,
+      "weld_frames": 0,
+      "clipped_frames": 80,
+      "replay_max_qpos_error": 0.0,
+      "replay_verified": true,
+      "stages": [
+        {
+          "first_frame": 0,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 60,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 75,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 135,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 150,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.22916666666666666,
+          "weld_active": false
+        },
+        {
+          "first_frame": 153,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.20833333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 156,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.1875,
+          "weld_active": false
+        },
+        {
+          "first_frame": 159,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.16666666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 162,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.14583333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 165,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.125,
+          "weld_active": false
+        },
+        {
+          "first_frame": 168,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.10416666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 171,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 174,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 189,
+          "frames": 90,
+          "duration": 3.0,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 279,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 309,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        }
+      ],
+      "exported_lerobot": false,
+      "ready_for_current_cell_training": false,
+      "limitations": [
+        "单条示教，无独立验证集",
+        "上游pedestal场景，与当前CELL不同",
+        "回放需复现机械臂重力补偿；无抓取绑定"
+      ],
+      "contact_metrics": {
+        "active_grasp_weld_frames": 0,
+        "bilateral_contact_frames_after_closure": 150,
+        "frames_after_closure": 150,
+        "last_second_bilateral_contact_frames": 30,
+        "last_second_min_finger_normal_forces_N": [
+          4.67789910493361,
+          14.778936902137481
+        ]
+      },
+      "prompt": "Open the drawer."
+    },
+    "contact_force_stop_rgb_001": {
+      "source_repository": "https://github.com/Manas-arumalla/openarm-control",
+      "source_commit": "14ea59faad6706b9add5d7f8d386e43239a6360f",
+      "license": "Apache-2.0",
+      "mujoco_version": "3.8.1",
+      "source_scene": "v2/openarm_mujoco_v2/articulated_scene.xml",
+      "scene_sha256": "0783748a1a4cd4b797bf8dd78c699519afb32a6137a3b67bb870fa3859626c27",
+      "mode": "contact",
+      "fps": 30,
+      "frames": 339,
+      "seconds": 11.300000000000443,
+      "expert": "contact",
+      "grasp_diagnostics": [
+        {
+          "stage": "aligned_open",
+          "time": 4.999999999999671,
+          "tool_error_m": 0.00026065707688130587,
+          "finger_contact_counts": [
+            0,
+            0
+          ],
+          "finger_normal_forces": [
+            0.0,
+            0.0
+          ],
+          "drawer_open_m": -0.0
+        },
+        {
+          "stage": "closed",
+          "time": 6.299999999999528,
+          "tool_error_m": 0.0004472567108357789,
+          "finger_contact_counts": [
+            1,
+            1
+          ],
+          "finger_normal_forces": [
+            13.350109857035351,
+            12.645674694622919
+          ],
+          "drawer_open_m": -8.891593862791424e-05
+        },
+        {
+          "stage": "planning_stop",
+          "requested_delta": 0.03666666666666667,
+          "reason": "夹持点IK不满足要求：位置误差0.002724m"
+        },
+        {
+          "stage": "pulled",
+          "time": 10.300000000000109,
+          "tool_error_m": 0.002582089422258018,
+          "finger_contact_counts": [
+            1,
+            1
+          ],
+          "finger_normal_forces": [
+            5.011168192853438,
+            15.867171940300961
+          ],
+          "drawer_open_m": 0.03547710194454311
+        }
+      ],
+      "scene_overrides": {
+        "drawer_handle_radius_m": null
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "wrist_view": "side",
+      "shadow_map_size": 1024,
+      "camera_local_poses": {
+        "camera_ceiling": {
+          "position": [
+            0.3,
+            0.0,
+            1.3
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fovy_degrees": 60.0
+        },
+        "camera_wrist_left": {
+          "position": [
+            0.07,
+            0.1,
+            -0.04
+          ],
+          "quaternion_wxyz": [
+            0.8981251585873399,
+            -0.3209161257587186,
+            0.28310901604465966,
+            0.10115989706748625
+          ],
+          "fovy_degrees": 85.0
+        },
+        "camera_wrist_right": {
+          "position": [
+            0.07,
+            0.1,
+            -0.04
+          ],
+          "quaternion_wxyz": [
+            0.8981251585873399,
+            -0.3209161257587186,
+            0.28310901604465966,
+            0.10115989706748625
+          ],
+          "fovy_degrees": 85.0
+        }
+      },
+      "camera_mapping": {
+        "ceiling": "camera_ceiling",
+        "wrist_left": "camera_wrist_left",
+        "wrist_right": "camera_wrist_right"
+      },
+      "actuator_order": [
+        "right_joint1_ctrl",
+        "right_joint2_ctrl",
+        "right_joint3_ctrl",
+        "right_joint4_ctrl",
+        "right_joint5_ctrl",
+        "right_joint6_ctrl",
+        "right_joint7_ctrl",
+        "right_finger1_ctrl",
+        "left_joint1_ctrl",
+        "left_joint2_ctrl",
+        "left_joint3_ctrl",
+        "left_joint4_ctrl",
+        "left_joint5_ctrl",
+        "left_joint6_ctrl",
+        "left_joint7_ctrl",
+        "left_finger1_ctrl"
+      ],
+      "action_representation": "16D absolute joint position targets, radians, right then left",
+      "gravity_compensation": "qfrc_bias on 14 arm DOFs, recomputed each physical substep",
+      "initialization": "ready keyframe; upstream _park sets left arm qpos/qvel to zero before recording",
+      "upstream_returned_success": false,
+      "final_open_m": 0.03529812934981683,
+      "peak_open_m": 0.03547710194454311,
+      "success_8cm_held_1s": false,
+      "weld_frames": 0,
+      "clipped_frames": 80,
+      "replay_max_qpos_error": 0.0,
+      "replay_verified": true,
+      "stages": [
+        {
+          "first_frame": 0,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 60,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 75,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 135,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 150,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.22916666666666666,
+          "weld_active": false
+        },
+        {
+          "first_frame": 153,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.20833333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 156,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.1875,
+          "weld_active": false
+        },
+        {
+          "first_frame": 159,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.16666666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 162,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.14583333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 165,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.125,
+          "weld_active": false
+        },
+        {
+          "first_frame": 168,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.10416666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 171,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 174,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 189,
+          "frames": 90,
+          "duration": 3.0,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 279,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 309,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        }
+      ],
+      "exported_lerobot": true,
+      "ready_for_current_cell_training": false,
+      "limitations": [
+        "单条示教，无独立验证集",
+        "上游pedestal场景，与当前CELL不同",
+        "回放需复现机械臂重力补偿；无抓取绑定"
+      ],
+      "lerobot_frames_verified": 339,
+      "lerobot_path": "data/drawer_trial/contact_force_stop_rgb_001/lerobot_v21",
+      "contact_metrics": {
+        "active_grasp_weld_frames": 0,
+        "bilateral_contact_frames_after_closure": 150,
+        "frames_after_closure": 150,
+        "last_second_bilateral_contact_frames": 30,
+        "last_second_min_finger_normal_forces_N": [
+          4.67789910493361,
+          14.778936902137481
+        ]
+      },
+      "prompt": "Open the drawer."
+    },
+    "contact_reachable_002": {
+      "source_repository": "https://github.com/Manas-arumalla/openarm-control",
+      "source_commit": "14ea59faad6706b9add5d7f8d386e43239a6360f",
+      "license": "Apache-2.0",
+      "mujoco_version": "3.8.1",
+      "source_scene": "v2/openarm_mujoco_v2/articulated_scene.xml",
+      "scene_sha256": "0783748a1a4cd4b797bf8dd78c699519afb32a6137a3b67bb870fa3859626c27",
+      "mode": "contact",
+      "fps": 30,
+      "frames": 342,
+      "seconds": 11.400000000000476,
+      "expert": "contact",
+      "grasp_diagnostics": [
+        {
+          "stage": "aligned_open",
+          "time": 4.999999999999671,
+          "tool_error_m": 0.000538692112856157,
+          "finger_contact_counts": [
+            0,
+            0
+          ],
+          "finger_normal_forces": [
+            0.0,
+            0.0
+          ],
+          "drawer_open_m": -0.0
+        },
+        {
+          "stage": "closed",
+          "time": 6.399999999999517,
+          "tool_error_m": 0.0009066058657337346,
+          "finger_contact_counts": [
+            5,
+            2
+          ],
+          "finger_normal_forces": [
+            11.459415770751068,
+            11.14943598258619
+          ],
+          "drawer_open_m": -0.000434049630303758
+        },
+        {
+          "stage": "pulled",
+          "time": 10.400000000000142,
+          "tool_error_m": 0.00951515589111589,
+          "finger_contact_counts": [
+            1,
+            1
+          ],
+          "finger_normal_forces": [
+            19.690331063366052,
+            17.969057894015293
+          ],
+          "drawer_open_m": 0.0903378908956184
+        }
+      ],
+      "expert_parameters": {
+        "pitch_degrees": 15.0,
+        "open_gripper_target": -0.25,
+        "grasp_point_local_m": [
+          0.0,
+          0.0,
+          -0.16
+        ],
+        "bilateral_force_stop_N": 1.0,
+        "nominal_pull_m": 0.1,
+        "free_pitch": false,
+        "base_elbow_clearance_m": 0.006
+      },
+      "scene_overrides": {
+        "drawer_handle_radius_m": null,
+        "drawer_offset_x_m": 0.1
+      },
+      "image_shape": null,
+      "wrist_view": "source",
+      "shadow_map_size": 1024,
+      "camera_local_poses": {
+        "camera_ceiling": {
+          "position": [
+            0.3,
+            0.0,
+            1.3
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fovy_degrees": 60.0
+        },
+        "camera_wrist_left": {
+          "position": [
+            -0.001,
+            -0.02,
+            0.096
+          ],
+          "quaternion_wxyz": [
+            0.18897643153649496,
+            0.6813854406956662,
+            0.7064344654030927,
+            -0.030856694935649825
+          ],
+          "fovy_degrees": 45.0
+        },
+        "camera_wrist_right": {
+          "position": [
+            -0.001,
+            0.02,
+            0.096
+          ],
+          "quaternion_wxyz": [
+            0.030856000786248935,
+            -0.7064319625298489,
+            -0.6813880355697528,
+            -0.18897654487818938
+          ],
+          "fovy_degrees": 45.0
+        }
+      },
+      "camera_mapping": {
+        "ceiling": "camera_ceiling",
+        "wrist_left": "camera_wrist_left",
+        "wrist_right": "camera_wrist_right"
+      },
+      "actuator_order": [
+        "right_joint1_ctrl",
+        "right_joint2_ctrl",
+        "right_joint3_ctrl",
+        "right_joint4_ctrl",
+        "right_joint5_ctrl",
+        "right_joint6_ctrl",
+        "right_joint7_ctrl",
+        "right_finger1_ctrl",
+        "left_joint1_ctrl",
+        "left_joint2_ctrl",
+        "left_joint3_ctrl",
+        "left_joint4_ctrl",
+        "left_joint5_ctrl",
+        "left_joint6_ctrl",
+        "left_joint7_ctrl",
+        "left_finger1_ctrl"
+      ],
+      "action_representation": "16D absolute joint position targets, radians, right then left",
+      "gravity_compensation": "qfrc_bias on 14 arm DOFs, recomputed each physical substep",
+      "initialization": "ready keyframe; upstream _park sets left arm qpos/qvel to zero before recording",
+      "upstream_returned_success": true,
+      "final_open_m": 0.08628086248048773,
+      "peak_open_m": 0.09311419157841785,
+      "success_8cm_held_1s": true,
+      "weld_frames": 0,
+      "clipped_frames": 42,
+      "replay_max_qpos_error": 0.0,
+      "replay_verified": true,
+      "stages": [
+        {
+          "first_frame": 0,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 60,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 75,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 135,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 150,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.22916666666666666,
+          "weld_active": false
+        },
+        {
+          "first_frame": 153,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.20833333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 156,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.1875,
+          "weld_active": false
+        },
+        {
+          "first_frame": 159,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.16666666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 162,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.14583333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 165,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.125,
+          "weld_active": false
+        },
+        {
+          "first_frame": 168,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.10416666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 171,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 174,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 177,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 192,
+          "frames": 90,
+          "duration": 3.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 282,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 312,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        }
+      ],
+      "exported_lerobot": false,
+      "ready_for_current_cell_training": false,
+      "limitations": [
+        "单条示教，无独立验证集",
+        "上游pedestal场景，与当前CELL不同",
+        "回放需复现机械臂重力补偿；无抓取绑定"
+      ],
+      "contact_metrics": {
+        "active_grasp_weld_frames": 0,
+        "bilateral_contact_frames_after_closure": 148,
+        "frames_after_closure": 150,
+        "last_second_bilateral_contact_frames": 30,
+        "last_second_min_finger_normal_forces_N": [
+          13.776942055057336,
+          12.337865390616281
+        ]
+      },
+      "prompt": "Open the drawer."
+    },
+    "contact_reachable_rgb_001": {
+      "source_repository": "https://github.com/Manas-arumalla/openarm-control",
+      "source_commit": "14ea59faad6706b9add5d7f8d386e43239a6360f",
+      "license": "Apache-2.0",
+      "mujoco_version": "3.8.1",
+      "source_scene": "v2/openarm_mujoco_v2/articulated_scene.xml",
+      "scene_sha256": "0783748a1a4cd4b797bf8dd78c699519afb32a6137a3b67bb870fa3859626c27",
+      "mode": "contact",
+      "fps": 30,
+      "frames": 342,
+      "seconds": 11.400000000000476,
+      "expert": "contact",
+      "grasp_diagnostics": [
+        {
+          "stage": "aligned_open",
+          "time": 4.999999999999671,
+          "tool_error_m": 0.000538692112856157,
+          "finger_contact_counts": [
+            0,
+            0
+          ],
+          "finger_normal_forces": [
+            0.0,
+            0.0
+          ],
+          "drawer_open_m": -0.0
+        },
+        {
+          "stage": "closed",
+          "time": 6.399999999999517,
+          "tool_error_m": 0.0009066058657337346,
+          "finger_contact_counts": [
+            5,
+            2
+          ],
+          "finger_normal_forces": [
+            11.459415770751068,
+            11.14943598258619
+          ],
+          "drawer_open_m": -0.000434049630303758
+        },
+        {
+          "stage": "pulled",
+          "time": 10.400000000000142,
+          "tool_error_m": 0.00951515589111589,
+          "finger_contact_counts": [
+            1,
+            1
+          ],
+          "finger_normal_forces": [
+            19.690331063366052,
+            17.969057894015293
+          ],
+          "drawer_open_m": 0.0903378908956184
+        }
+      ],
+      "expert_parameters": {
+        "pitch_degrees": 15.0,
+        "open_gripper_target": -0.25,
+        "grasp_point_local_m": [
+          0.0,
+          0.0,
+          -0.16
+        ],
+        "bilateral_force_stop_N": 1.0,
+        "nominal_pull_m": 0.1,
+        "free_pitch": false,
+        "base_elbow_clearance_m": 0.006
+      },
+      "scene_overrides": {
+        "drawer_handle_radius_m": null,
+        "drawer_offset_x_m": 0.1
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "wrist_view": "side",
+      "shadow_map_size": 1024,
+      "camera_local_poses": {
+        "camera_ceiling": {
+          "position": [
+            0.3,
+            0.0,
+            1.3
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fovy_degrees": 60.0
+        },
+        "camera_wrist_left": {
+          "position": [
+            0.07,
+            0.1,
+            -0.04
+          ],
+          "quaternion_wxyz": [
+            0.8981251585873399,
+            -0.3209161257587186,
+            0.28310901604465966,
+            0.10115989706748625
+          ],
+          "fovy_degrees": 85.0
+        },
+        "camera_wrist_right": {
+          "position": [
+            0.07,
+            0.1,
+            -0.04
+          ],
+          "quaternion_wxyz": [
+            0.8981251585873399,
+            -0.3209161257587186,
+            0.28310901604465966,
+            0.10115989706748625
+          ],
+          "fovy_degrees": 85.0
+        }
+      },
+      "camera_mapping": {
+        "ceiling": "camera_ceiling",
+        "wrist_left": "camera_wrist_left",
+        "wrist_right": "camera_wrist_right"
+      },
+      "actuator_order": [
+        "right_joint1_ctrl",
+        "right_joint2_ctrl",
+        "right_joint3_ctrl",
+        "right_joint4_ctrl",
+        "right_joint5_ctrl",
+        "right_joint6_ctrl",
+        "right_joint7_ctrl",
+        "right_finger1_ctrl",
+        "left_joint1_ctrl",
+        "left_joint2_ctrl",
+        "left_joint3_ctrl",
+        "left_joint4_ctrl",
+        "left_joint5_ctrl",
+        "left_joint6_ctrl",
+        "left_joint7_ctrl",
+        "left_finger1_ctrl"
+      ],
+      "action_representation": "16D absolute joint position targets, radians, right then left",
+      "gravity_compensation": "qfrc_bias on 14 arm DOFs, recomputed each physical substep",
+      "initialization": "ready keyframe; upstream _park sets left arm qpos/qvel to zero before recording",
+      "upstream_returned_success": true,
+      "final_open_m": 0.08628086248048773,
+      "peak_open_m": 0.09311419157841785,
+      "success_8cm_held_1s": true,
+      "weld_frames": 0,
+      "clipped_frames": 42,
+      "replay_max_qpos_error": 0.0,
+      "replay_verified": true,
+      "stages": [
+        {
+          "first_frame": 0,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 60,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 75,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 135,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 150,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.22916666666666666,
+          "weld_active": false
+        },
+        {
+          "first_frame": 153,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.20833333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 156,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.1875,
+          "weld_active": false
+        },
+        {
+          "first_frame": 159,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.16666666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 162,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.14583333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 165,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.125,
+          "weld_active": false
+        },
+        {
+          "first_frame": 168,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.10416666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 171,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 174,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 177,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 192,
+          "frames": 90,
+          "duration": 3.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 282,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 312,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        }
+      ],
+      "exported_lerobot": true,
+      "ready_for_current_cell_training": false,
+      "limitations": [
+        "单条示教，无独立验证集",
+        "上游pedestal场景，与当前CELL不同",
+        "回放需复现机械臂重力补偿；无抓取绑定"
+      ],
+      "lerobot_frames_verified": 342,
+      "lerobot_path": "data/drawer_trial/contact_reachable_rgb_001/lerobot_v21",
+      "contact_metrics": {
+        "active_grasp_weld_frames": 0,
+        "bilateral_contact_frames_after_closure": 148,
+        "frames_after_closure": 150,
+        "last_second_bilateral_contact_frames": 30,
+        "last_second_min_finger_normal_forces_N": [
+          13.776942055057336,
+          12.337865390616281
+        ]
+      },
+      "prompt": "Open the drawer."
+    },
+    "contact_roundtrip_001": {
+      "source_repository": "https://github.com/Manas-arumalla/openarm-control",
+      "source_commit": "14ea59faad6706b9add5d7f8d386e43239a6360f",
+      "license": "Apache-2.0",
+      "mujoco_version": "3.8.1",
+      "source_scene": "v2/openarm_mujoco_v2/articulated_scene.xml",
+      "scene_sha256": "0783748a1a4cd4b797bf8dd78c699519afb32a6137a3b67bb870fa3859626c27",
+      "mode": "contact",
+      "fps": 30,
+      "frames": 462,
+      "seconds": 15.400000000001812,
+      "expert": "contact",
+      "grasp_diagnostics": [
+        {
+          "stage": "aligned_open",
+          "time": 4.999999999999671,
+          "tool_error_m": 0.000538692112856157,
+          "finger_contact_counts": [
+            0,
+            0
+          ],
+          "finger_normal_forces": [
+            0.0,
+            0.0
+          ],
+          "drawer_open_m": -0.0
+        },
+        {
+          "stage": "closed",
+          "time": 6.399999999999517,
+          "tool_error_m": 0.0009066058657337346,
+          "finger_contact_counts": [
+            5,
+            2
+          ],
+          "finger_normal_forces": [
+            11.459415770751068,
+            11.14943598258619
+          ],
+          "drawer_open_m": -0.000434049630303758
+        },
+        {
+          "stage": "pulled",
+          "time": 10.400000000000142,
+          "tool_error_m": 0.00951515589111589,
+          "finger_contact_counts": [
+            1,
+            1
+          ],
+          "finger_normal_forces": [
+            19.690331063366052,
+            17.969057894015293
+          ],
+          "drawer_open_m": 0.0903378908956184
+        },
+        {
+          "stage": "returned",
+          "time": 14.400000000001478,
+          "tool_error_m": 0.003907728096709381,
+          "finger_contact_counts": [
+            5,
+            5
+          ],
+          "finger_normal_forces": [
+            6.588030743562629,
+            6.803205611841746
+          ],
+          "drawer_open_m": -0.0006260301785044354
+        }
+      ],
+      "expert_parameters": {
+        "pitch_degrees": 15.0,
+        "open_gripper_target": -0.25,
+        "grasp_point_local_m": [
+          0.0,
+          0.0,
+          -0.16
+        ],
+        "bilateral_force_stop_N": 1.0,
+        "nominal_pull_m": 0.1,
+        "free_pitch": false,
+        "return_drawer": true,
+        "base_elbow_clearance_m": 0.006
+      },
+      "scene_overrides": {
+        "drawer_handle_radius_m": null,
+        "drawer_offset_x_m": 0.1
+      },
+      "image_shape": null,
+      "wrist_view": "source",
+      "shadow_map_size": 1024,
+      "camera_local_poses": {
+        "camera_ceiling": {
+          "position": [
+            0.3,
+            0.0,
+            1.3
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fovy_degrees": 60.0
+        },
+        "camera_wrist_left": {
+          "position": [
+            -0.001,
+            -0.02,
+            0.096
+          ],
+          "quaternion_wxyz": [
+            0.18897643153649496,
+            0.6813854406956662,
+            0.7064344654030927,
+            -0.030856694935649825
+          ],
+          "fovy_degrees": 45.0
+        },
+        "camera_wrist_right": {
+          "position": [
+            -0.001,
+            0.02,
+            0.096
+          ],
+          "quaternion_wxyz": [
+            0.030856000786248935,
+            -0.7064319625298489,
+            -0.6813880355697528,
+            -0.18897654487818938
+          ],
+          "fovy_degrees": 45.0
+        }
+      },
+      "camera_mapping": {
+        "ceiling": "camera_ceiling",
+        "wrist_left": "camera_wrist_left",
+        "wrist_right": "camera_wrist_right"
+      },
+      "actuator_order": [
+        "right_joint1_ctrl",
+        "right_joint2_ctrl",
+        "right_joint3_ctrl",
+        "right_joint4_ctrl",
+        "right_joint5_ctrl",
+        "right_joint6_ctrl",
+        "right_joint7_ctrl",
+        "right_finger1_ctrl",
+        "left_joint1_ctrl",
+        "left_joint2_ctrl",
+        "left_joint3_ctrl",
+        "left_joint4_ctrl",
+        "left_joint5_ctrl",
+        "left_joint6_ctrl",
+        "left_joint7_ctrl",
+        "left_finger1_ctrl"
+      ],
+      "action_representation": "16D absolute joint position targets, radians, right then left",
+      "gravity_compensation": "qfrc_bias on 14 arm DOFs, recomputed each physical substep",
+      "initialization": "ready keyframe; upstream _park sets left arm qpos/qvel to zero before recording",
+      "expert_returned_success": true,
+      "upstream_returned_success": null,
+      "final_open_m": -0.00047831198110475075,
+      "peak_open_m": 0.09311419157841785,
+      "success_8cm_held_1s": false,
+      "opened_8cm_held_1s_during_episode": true,
+      "final_closed_5mm_held_1s": true,
+      "success_open_then_close": true,
+      "weld_frames": 0,
+      "clipped_frames": 27,
+      "replay_max_qpos_error": 0.0,
+      "replay_verified": true,
+      "stages": [
+        {
+          "first_frame": 0,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 60,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 75,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 135,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 150,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.22916666666666666,
+          "weld_active": false
+        },
+        {
+          "first_frame": 153,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.20833333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 156,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.1875,
+          "weld_active": false
+        },
+        {
+          "first_frame": 159,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.16666666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 162,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.14583333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 165,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.125,
+          "weld_active": false
+        },
+        {
+          "first_frame": 168,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.10416666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 171,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 174,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 177,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 192,
+          "frames": 90,
+          "duration": 3.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 282,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 312,
+          "frames": 90,
+          "duration": 3.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 402,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 432,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        }
+      ],
+      "exported_lerobot": false,
+      "ready_for_current_cell_training": false,
+      "limitations": [
+        "单条示教，无独立验证集",
+        "上游pedestal场景，与当前CELL不同",
+        "回放需复现机械臂重力补偿；无抓取绑定"
+      ],
+      "contact_metrics": {
+        "active_grasp_weld_frames": 0,
+        "bilateral_contact_frames_after_closure": 234,
+        "frames_after_closure": 270,
+        "last_second_bilateral_contact_frames": 26,
+        "last_second_min_finger_normal_forces_N": [
+          0.0,
+          0.0
+        ]
+      },
+      "prompt": "Open the drawer, then close it."
+    },
+    "contact_roundtrip_rgb_001": {
+      "source_repository": "https://github.com/Manas-arumalla/openarm-control",
+      "source_commit": "14ea59faad6706b9add5d7f8d386e43239a6360f",
+      "license": "Apache-2.0",
+      "mujoco_version": "3.8.1",
+      "prompt": "Open the drawer, then close it.",
+      "source_scene": "v2/openarm_mujoco_v2/articulated_scene.xml",
+      "scene_sha256": "0783748a1a4cd4b797bf8dd78c699519afb32a6137a3b67bb870fa3859626c27",
+      "mode": "contact",
+      "fps": 30,
+      "frames": 462,
+      "seconds": 15.400000000001812,
+      "expert": "contact",
+      "grasp_diagnostics": [
+        {
+          "stage": "aligned_open",
+          "time": 4.999999999999671,
+          "tool_error_m": 0.000538692112856157,
+          "finger_contact_counts": [
+            0,
+            0
+          ],
+          "finger_normal_forces": [
+            0.0,
+            0.0
+          ],
+          "drawer_open_m": -0.0
+        },
+        {
+          "stage": "closed",
+          "time": 6.399999999999517,
+          "tool_error_m": 0.0009066058657337346,
+          "finger_contact_counts": [
+            5,
+            2
+          ],
+          "finger_normal_forces": [
+            11.459415770751068,
+            11.14943598258619
+          ],
+          "drawer_open_m": -0.000434049630303758
+        },
+        {
+          "stage": "pulled",
+          "time": 10.400000000000142,
+          "tool_error_m": 0.00951515589111589,
+          "finger_contact_counts": [
+            1,
+            1
+          ],
+          "finger_normal_forces": [
+            19.690331063366052,
+            17.969057894015293
+          ],
+          "drawer_open_m": 0.0903378908956184
+        },
+        {
+          "stage": "returned",
+          "time": 14.400000000001478,
+          "tool_error_m": 0.003907728096709381,
+          "finger_contact_counts": [
+            5,
+            5
+          ],
+          "finger_normal_forces": [
+            6.588030743562629,
+            6.803205611841746
+          ],
+          "drawer_open_m": -0.0006260301785044354
+        }
+      ],
+      "expert_parameters": {
+        "pitch_degrees": 15.0,
+        "open_gripper_target": -0.25,
+        "grasp_point_local_m": [
+          0.0,
+          0.0,
+          -0.16
+        ],
+        "bilateral_force_stop_N": 1.0,
+        "nominal_pull_m": 0.1,
+        "free_pitch": false,
+        "return_drawer": true,
+        "base_elbow_clearance_m": 0.006
+      },
+      "scene_overrides": {
+        "drawer_handle_radius_m": null,
+        "drawer_offset_x_m": 0.1
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "wrist_view": "side",
+      "shadow_map_size": 1024,
+      "camera_local_poses": {
+        "camera_ceiling": {
+          "position": [
+            0.3,
+            0.0,
+            1.3
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fovy_degrees": 60.0
+        },
+        "camera_wrist_left": {
+          "position": [
+            0.07,
+            0.1,
+            -0.04
+          ],
+          "quaternion_wxyz": [
+            0.8981251585873399,
+            -0.3209161257587186,
+            0.28310901604465966,
+            0.10115989706748625
+          ],
+          "fovy_degrees": 85.0
+        },
+        "camera_wrist_right": {
+          "position": [
+            0.07,
+            0.1,
+            -0.04
+          ],
+          "quaternion_wxyz": [
+            0.8981251585873399,
+            -0.3209161257587186,
+            0.28310901604465966,
+            0.10115989706748625
+          ],
+          "fovy_degrees": 85.0
+        }
+      },
+      "camera_mapping": {
+        "ceiling": "camera_ceiling",
+        "wrist_left": "camera_wrist_left",
+        "wrist_right": "camera_wrist_right"
+      },
+      "actuator_order": [
+        "right_joint1_ctrl",
+        "right_joint2_ctrl",
+        "right_joint3_ctrl",
+        "right_joint4_ctrl",
+        "right_joint5_ctrl",
+        "right_joint6_ctrl",
+        "right_joint7_ctrl",
+        "right_finger1_ctrl",
+        "left_joint1_ctrl",
+        "left_joint2_ctrl",
+        "left_joint3_ctrl",
+        "left_joint4_ctrl",
+        "left_joint5_ctrl",
+        "left_joint6_ctrl",
+        "left_joint7_ctrl",
+        "left_finger1_ctrl"
+      ],
+      "action_representation": "16D absolute joint position targets, radians, right then left",
+      "gravity_compensation": "qfrc_bias on 14 arm DOFs, recomputed each physical substep",
+      "initialization": "ready keyframe; upstream _park sets left arm qpos/qvel to zero before recording",
+      "expert_returned_success": true,
+      "upstream_returned_success": null,
+      "final_open_m": -0.00047831198110475075,
+      "peak_open_m": 0.09311419157841785,
+      "success_8cm_held_1s": false,
+      "opened_8cm_held_1s_during_episode": true,
+      "final_closed_5mm_held_1s": true,
+      "success_open_then_close": true,
+      "weld_frames": 0,
+      "clipped_frames": 27,
+      "replay_max_qpos_error": 0.0,
+      "replay_verified": true,
+      "stages": [
+        {
+          "first_frame": 0,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 60,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 75,
+          "frames": 60,
+          "duration": 2.0,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 135,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.25,
+          "weld_active": false
+        },
+        {
+          "first_frame": 150,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.22916666666666666,
+          "weld_active": false
+        },
+        {
+          "first_frame": 153,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.20833333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 156,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.1875,
+          "weld_active": false
+        },
+        {
+          "first_frame": 159,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.16666666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 162,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.14583333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 165,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.125,
+          "weld_active": false
+        },
+        {
+          "first_frame": 168,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.10416666666666669,
+          "weld_active": false
+        },
+        {
+          "first_frame": 171,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.08333333333333334,
+          "weld_active": false
+        },
+        {
+          "first_frame": 174,
+          "frames": 3,
+          "duration": 0.1,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 177,
+          "frames": 15,
+          "duration": 0.5,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 192,
+          "frames": 90,
+          "duration": 3.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 282,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 312,
+          "frames": 90,
+          "duration": 3.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 402,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        },
+        {
+          "first_frame": 432,
+          "frames": 30,
+          "duration": 1.0,
+          "gripper_target": -0.0625,
+          "weld_active": false
+        }
+      ],
+      "exported_lerobot": true,
+      "ready_for_current_cell_training": false,
+      "limitations": [
+        "仅一条试采轨迹，无独立验证集",
+        "上游 pedestal 场景，与当前 CELL 场景不同",
+        "回放需使用记录的重力补偿协议；此模式没有抓取绑定"
+      ],
+      "lerobot_frames_verified": 462,
+      "lerobot_path": "data/drawer_trial/contact_roundtrip_rgb_001/lerobot_v21",
+      "contact_metrics": {
+        "active_grasp_weld_frames": 0,
+        "bilateral_contact_frames_after_closure": 234,
+        "frames_after_closure": 270,
+        "last_second_bilateral_contact_frames": 26,
+        "last_second_min_finger_normal_forces_N": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "roundtrip_rgb_ready": true,
+  "training_started": false,
+  "generalization_evaluated": false,
+  "selected_roundtrip_rgb": "data/drawer_trial/contact_roundtrip_rgb_001/lerobot_v21",
+  "preview": "data/drawer_trial/contact_roundtrip_rgb_001/preview.mp4",
+  "preview_verified": {
+    "frames": 462,
+    "fps": 30.0
+  },
+  "open_close_task_success": true
+}

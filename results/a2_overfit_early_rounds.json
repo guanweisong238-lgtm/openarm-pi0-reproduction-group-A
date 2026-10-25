@@ -1,0 +1,168 @@
+{
+  "source_run": "/home/song03/scientific_research/openarm-a1/outputs/a2_interface/closed_loop_20261023-231031-310130",
+  "alignment": "states[0]为动作前状态；states[1:]为每个目标执行后的状态；跟随误差采用states[1:]-applied_actions",
+  "rounds": [
+    {
+      "cycle": 0,
+      "elapsed_seconds": 0.0,
+      "reference_frame": 0,
+      "nearest_demo_frame_by_arm_mae": 0,
+      "prediction_mae": 0.018533155314982667,
+      "actual_state_mae": 0.011526023037731647,
+      "arm_target_tracking_mae": 0.01048051551172404,
+      "arm_clipped_steps": 0,
+      "right_joint3": {
+        "actual_before": 0.20214255154132843,
+        "demo_before": 0.21018370985984802,
+        "predicted_target": 0.17242283763638228,
+        "demo_target": 0.18506701290607452
+      }
+    },
+    {
+      "cycle": 1,
+      "elapsed_seconds": 0.13333333333333333,
+      "reference_frame": 4,
+      "nearest_demo_frame_by_arm_mae": 3,
+      "prediction_mae": 0.028057852478374577,
+      "actual_state_mae": 0.021879753097891808,
+      "arm_target_tracking_mae": 0.009332684069179939,
+      "arm_clipped_steps": 0,
+      "right_joint3": {
+        "actual_before": 0.1687036156654358,
+        "demo_before": 0.12301789969205856,
+        "predicted_target": 0.14648812027924962,
+        "demo_target": 0.09609444439411163
+      }
+    },
+    {
+      "cycle": 2,
+      "elapsed_seconds": 0.26666666666666666,
+      "reference_frame": 8,
+      "nearest_demo_frame_by_arm_mae": 4,
+      "prediction_mae": 0.043723189312119035,
+      "actual_state_mae": 0.0380827859044075,
+      "arm_target_tracking_mae": 0.009714924743034242,
+      "arm_clipped_steps": 0,
+      "right_joint3": {
+        "actual_before": 0.1434856504201889,
+        "demo_before": 0.03567409887909889,
+        "predicted_target": 0.12459271681774953,
+        "demo_target": 0.027191128581762314
+      }
+    },
+    {
+      "cycle": 3,
+      "elapsed_seconds": 0.4,
+      "reference_frame": 12,
+      "nearest_demo_frame_by_arm_mae": 6,
+      "prediction_mae": 0.05645706016532429,
+      "actual_state_mae": 0.054550208151340485,
+      "arm_target_tracking_mae": 0.009192909615686267,
+      "arm_clipped_steps": 0,
+      "right_joint3": {
+        "actual_before": 0.11809446662664413,
+        "demo_before": -0.04750682786107063,
+        "predicted_target": 0.09997031815817681,
+        "demo_target": -0.036746907979249954
+      }
+    },
+    {
+      "cycle": 4,
+      "elapsed_seconds": 0.5333333333333333,
+      "reference_frame": 16,
+      "nearest_demo_frame_by_arm_mae": 7,
+      "prediction_mae": 0.07159420563519035,
+      "actual_state_mae": 0.06896963715553284,
+      "arm_target_tracking_mae": 0.008651883375813421,
+      "arm_clipped_steps": 0,
+      "right_joint3": {
+        "actual_before": 0.09069304913282394,
+        "demo_before": -0.12083379179239273,
+        "predicted_target": 0.07495529329921768,
+        "demo_target": -0.11721784621477127
+      }
+    },
+    {
+      "cycle": 5,
+      "elapsed_seconds": 0.6666666666666666,
+      "reference_frame": 20,
+      "nearest_demo_frame_by_arm_mae": 9,
+      "prediction_mae": 0.08569490458691997,
+      "actual_state_mae": 0.08114024996757507,
+      "arm_target_tracking_mae": 0.00871182085797988,
+      "arm_clipped_steps": 0,
+      "right_joint3": {
+        "actual_before": 0.0663125142455101,
+        "demo_before": -0.18739593029022217,
+        "predicted_target": 0.05275892734246812,
+        "demo_target": -0.19777406752109528
+      }
+    },
+    {
+      "cycle": 6,
+      "elapsed_seconds": 0.8,
+      "reference_frame": 24,
+      "nearest_demo_frame_by_arm_mae": 10,
+      "prediction_mae": 0.09492607257952676,
+      "actual_state_mae": 0.09251776337623596,
+      "arm_target_tracking_mae": 0.008479708313952516,
+      "arm_clipped_steps": 0,
+      "right_joint3": {
+        "actual_before": 0.041368529200553894,
+        "demo_before": -0.24690817296504974,
+        "predicted_target": 0.031126293166160474,
+        "demo_target": -0.25268784165382385
+      }
+    },
+    {
+      "cycle": 7,
+      "elapsed_seconds": 0.9333333333333333,
+      "reference_frame": 28,
+      "nearest_demo_frame_by_arm_mae": 11,
+      "prediction_mae": 0.10276426351270482,
+      "actual_state_mae": 0.10179854929447174,
+      "arm_target_tracking_mae": 0.008622934553348751,
+      "arm_clipped_steps": 0,
+      "right_joint3": {
+        "actual_before": 0.0209348127245903,
+        "demo_before": -0.3000912070274353,
+        "predicted_target": 0.015323470572959463,
+        "demo_target": -0.29076334834098816
+      }
+    },
+    {
+      "cycle": 8,
+      "elapsed_seconds": 1.0666666666666667,
+      "reference_frame": 32,
+      "nearest_demo_frame_by_arm_mae": 12,
+      "prediction_mae": 0.10816621389235466,
+      "actual_state_mae": 0.10757303237915039,
+      "arm_target_tracking_mae": 0.008893500369686084,
+      "arm_clipped_steps": 0,
+      "right_joint3": {
+        "actual_before": 0.006985252723097801,
+        "demo_before": -0.3367070257663727,
+        "predicted_target": 0.0006817215654924824,
+        "demo_target": -0.3315506875514984
+      }
+    },
+    {
+      "cycle": 9,
+      "elapsed_seconds": 1.2,
+      "reference_frame": 36,
+      "nearest_demo_frame_by_arm_mae": 14,
+      "prediction_mae": 0.11196171195863852,
+      "actual_state_mae": 0.11021306365728378,
+      "arm_target_tracking_mae": 0.008673064299140967,
+      "arm_clipped_steps": 0,
+      "right_joint3": {
+        "actual_before": -0.009491884149610996,
+        "demo_before": -0.3701912760734558,
+        "predicted_target": -0.01936207507244228,
+        "demo_target": -0.3697224259376526
+      }
+    }
+  ],
+  "input_ablation_report": "results/a2_overfit_early_input_ablation.json",
+  "conclusion": "前10轮无手臂限幅，跟随误差约0.009rad但预测/状态偏差增长；输入替换显示状态偏移影响强于剩余图像差异。对照输入组合并非真实轨迹，仅作诊断。"
+}

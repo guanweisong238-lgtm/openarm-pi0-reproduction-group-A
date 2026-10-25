@@ -1,0 +1,22 @@
+{
+  "checkpoint": "checkpoints/pi0_openarm_drawer_approach_v001/pull12_fit_013b/2000",
+  "reset_teacher_frame": 76,
+  "teacher_prefix_actions_before_policy": 76,
+  "teacher_actions_during_policy": 0,
+  "scope": "teacher intermediate state counterfactual; not original-start autonomous performance",
+  "model_pull_success_from_full_initial_state": false,
+  "diagnostic_judge": {
+    "opening": -0.0,
+    "grasp_streak": 0,
+    "grasped": false,
+    "open_streak": 0,
+    "opened": false,
+    "closed_streak": 0,
+    "pulling_contact": false,
+    "pull_success": false,
+    "success": false
+  },
+  "steps": 360,
+  "peak_open_mm": -0.0,
+  "replay_max_qpos_error": 0.0
+}

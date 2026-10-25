@@ -1,0 +1,44 @@
+{
+  "source_report": "logs/a2_pi0/action_trends_20261023-232137-301989/summary.json",
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_lora/overfit_ep0_001/1000",
+  "episode": 0,
+  "frame_count": 13,
+  "seed_count": 3,
+  "inference_calls": 39,
+  "inputs": "原始示教图像、状态和任务文字，不输入动作标签",
+  "first_frame": [
+    {
+      "seed": 42,
+      "right_joint3_pred_first": 0.21006606546860118,
+      "right_joint3_pred_last": 0.16655817474909856,
+      "right_joint3_true_first": 0.18506701290607452,
+      "right_joint3_true_last": -0.09553395211696625,
+      "right_joint3_displacement_ratio": 0.15505253417760018,
+      "all_dimensions_mae": 0.04748486270015803,
+      "active_displacement_ratio": 0.30641501011322364
+    },
+    {
+      "seed": 0,
+      "right_joint3_pred_first": 0.18966272749949198,
+      "right_joint3_pred_last": 0.016118175791221323,
+      "right_joint3_true_first": 0.18506701290607452,
+      "right_joint3_true_last": -0.09553395211696625,
+      "right_joint3_displacement_ratio": 0.6184745362298398,
+      "all_dimensions_mae": 0.02617292665294195,
+      "active_displacement_ratio": 0.5634278802857351
+    },
+    {
+      "seed": 1,
+      "right_joint3_pred_first": 0.18832314839825387,
+      "right_joint3_pred_last": 0.11685028475801146,
+      "right_joint3_true_first": 0.18506701290607452,
+      "right_joint3_true_last": -0.09553395211696625,
+      "right_joint3_displacement_ratio": 0.25471353469640995,
+      "all_dimensions_mae": 0.03577502703237153,
+      "active_displacement_ratio": 0.29412913598419943
+    }
+  ],
+  "conclusion": "正确示教输入下仍存在运动幅度不足及采样敏感性，优先改善动作趋势拟合；不将更换种子视为修复",
+  "training_performed": false,
+  "simulation_actions_executed": 0
+}

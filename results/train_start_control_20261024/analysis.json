@@ -1,0 +1,162 @@
+[
+  {
+    "summary": {
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000",
+      "episode_id": 12,
+      "split": "train",
+      "initialization": "script_ready_start",
+      "noise_seed": 42,
+      "steps": 360,
+      "seconds": 12.0,
+      "peak_open_mm": -0.0,
+      "final_open_mm": -0.0,
+      "judge": {
+        "opening": -0.0,
+        "grasp_streak": 0,
+        "grasped": false,
+        "open_streak": 0,
+        "opened": false,
+        "closed_streak": 0,
+        "pulling_contact": false,
+        "success": false
+      },
+      "termination": "timeout",
+      "teacher_actions_executed": 0,
+      "intermediate_states_injected": 0,
+      "action_chunk": 4,
+      "contact_scope": "entire handle assembly, excluding panel and wrist",
+      "simulation_paused_during_inference": true,
+      "closed_loop_tested": true,
+      "fully_executed": true
+    },
+    "initial_qpos_exact": true,
+    "first_action_position_mm": 58.75495151502121,
+    "first_action_right7_abs_error_rad": [
+      0.01032368904240133,
+      0.4770084376738306,
+      0.04030449540960718,
+      0.3032861067645021,
+      0.05033091532418932,
+      0.13565487964026135,
+      0.41270108015076035
+    ],
+    "first_chunk_right7_mae_rad": 0.2715509541688783,
+    "peak_contact_counts": [
+      0,
+      0
+    ],
+    "state_deviation": [
+      {
+        "steps": 1,
+        "max_qpos_error_rad": 0.23332987658819038,
+        "right7_rms_rad": 0.12748473422912524,
+        "tip_position_mm": 19.71925771757015
+      },
+      {
+        "steps": 4,
+        "max_qpos_error_rad": 0.4968572104495488,
+        "right7_rms_rad": 0.2926458348659525,
+        "tip_position_mm": 93.29392987880009
+      },
+      {
+        "steps": 30,
+        "max_qpos_error_rad": 0.9149802456060384,
+        "right7_rms_rad": 0.44004351813609294,
+        "tip_position_mm": 115.16290698588841
+      },
+      {
+        "steps": 120,
+        "max_qpos_error_rad": 0.5898323511897727,
+        "right7_rms_rad": 0.34883972321488277,
+        "tip_position_mm": 285.787518069811
+      },
+      {
+        "steps": 360,
+        "max_qpos_error_rad": 0.5764825185693102,
+        "right7_rms_rad": 0.31050052663817956,
+        "tip_position_mm": 183.99693421686482
+      }
+    ],
+    "separate_teacher_replay_4step_max_qpos_error": 0.0
+  },
+  {
+    "summary": {
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000",
+      "episode_id": 8,
+      "split": "train",
+      "initialization": "human_warm_start",
+      "noise_seed": 42,
+      "steps": 360,
+      "seconds": 12.0,
+      "peak_open_mm": -0.0,
+      "final_open_mm": -0.0,
+      "judge": {
+        "opening": -0.0,
+        "grasp_streak": 0,
+        "grasped": false,
+        "open_streak": 0,
+        "opened": false,
+        "closed_streak": 0,
+        "pulling_contact": false,
+        "success": false
+      },
+      "termination": "timeout",
+      "teacher_actions_executed": 0,
+      "intermediate_states_injected": 0,
+      "action_chunk": 4,
+      "contact_scope": "entire handle assembly, excluding panel and wrist",
+      "simulation_paused_during_inference": true,
+      "closed_loop_tested": true,
+      "fully_executed": true
+    },
+    "initial_qpos_exact": true,
+    "first_action_position_mm": 17.602237393580815,
+    "first_action_right7_abs_error_rad": [
+      0.018424256709201517,
+      0.0030001596604396913,
+      0.015549869372685321,
+      0.015106443910477108,
+      0.010537452798690117,
+      0.0018806979532122181,
+      0.08998248917769164
+    ],
+    "first_chunk_right7_mae_rad": 0.027720932266153353,
+    "peak_contact_counts": [
+      0,
+      0
+    ],
+    "state_deviation": [
+      {
+        "steps": 1,
+        "max_qpos_error_rad": 0.041615862424925376,
+        "right7_rms_rad": 0.016611719712711685,
+        "tip_position_mm": 7.765211240556916
+      },
+      {
+        "steps": 4,
+        "max_qpos_error_rad": 0.09085388161819169,
+        "right7_rms_rad": 0.037668199211081,
+        "tip_position_mm": 20.25613363621249
+      },
+      {
+        "steps": 30,
+        "max_qpos_error_rad": 0.565332196216298,
+        "right7_rms_rad": 0.2938091930208254,
+        "tip_position_mm": 216.360478845793
+      },
+      {
+        "steps": 120,
+        "max_qpos_error_rad": 1.040884171064656,
+        "right7_rms_rad": 0.4740431632824948,
+        "tip_position_mm": 183.7478711052078
+      },
+      {
+        "steps": 360,
+        "max_qpos_error_rad": 1.0546790655432523,
+        "right7_rms_rad": 0.5328913656235764,
+        "tip_position_mm": 222.3921617488719
+      }
+    ],
+    "separate_teacher_replay_4step_max_qpos_error": 0.0
+  }
+]

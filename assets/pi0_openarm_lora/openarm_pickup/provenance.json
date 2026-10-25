@@ -1,0 +1,58 @@
+{
+  "dataset": "data/processed/openarm_pickup_v21",
+  "train_episode_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "frames": 4548,
+  "normalization": "mean_std",
+  "action_representation": "original values, no delta conversion",
+  "dimension_order": [
+    "right_joint1.pos",
+    "right_joint2.pos",
+    "right_joint3.pos",
+    "right_joint4.pos",
+    "right_joint5.pos",
+    "right_joint6.pos",
+    "right_joint7.pos",
+    "right_gripper.pos",
+    "left_joint1.pos",
+    "left_joint2.pos",
+    "left_joint3.pos",
+    "left_joint4.pos",
+    "left_joint5.pos",
+    "left_joint6.pos",
+    "left_joint7.pos",
+    "left_gripper.pos"
+  ],
+  "std_floor": 1e-06,
+  "near_constant_dimensions": {
+    "state": [],
+    "actions": [
+      15
+    ]
+  },
+  "weighting": "each original training frame counted once"
+}

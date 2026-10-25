@@ -1,0 +1,19 @@
+{
+  "verified_at": "2026-10-25T10:41:48.398747",
+  "retained_checkpoint_count": 4,
+  "retained_checkpoint_files_size_and_mtime_unchanged": true,
+  "deleted_paths_absent": true,
+  "feedback_training_prepare_only": {
+    "exit_code": 0,
+    "result": "FEEDBACK_INPUT_PASS train=1080 query_holdout=120; correlated interpolation holdout, not task generalization"
+  },
+  "live_prepare_only": {
+    "exit_code": 0,
+    "result": "INITIAL_STATE_PASS 12 script_ready_start; PASS checkpoint assets, selected initializations, success and unilateral-failure judge"
+  },
+  "git_diff_check": "passed",
+  "full_model_inference_rerun": false,
+  "reason": "本次仅整理文档与删除旧权重/缓存；保留模型参数未修改，无需重训",
+  "local_document_links_checked": 83,
+  "broken_local_document_links": []
+}

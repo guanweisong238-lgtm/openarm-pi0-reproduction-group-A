@@ -1,0 +1,47 @@
+{
+  "scope": "near observations, not exact identity; possible history dependence",
+  "examples": [
+    {
+      "pull_frame": 249,
+      "push_frame": 342,
+      "opening_diff_mm": 0.14388379052011901,
+      "right7_state_rms_rad": 0.028063166865367424,
+      "gripper_state_diff_rad": 0.005451298475172173,
+      "action_delta_cosine": -0.5016817430149721,
+      "first_action_difference_rad": 0.014603169338793888,
+      "image_mae_255": {
+        "ceiling": 1.379509548611111,
+        "wrist_left": 0.06432725694444444,
+        "wrist_right": 7.872196180555555
+      }
+    },
+    {
+      "pull_frame": 248,
+      "push_frame": 343,
+      "opening_diff_mm": 0.198362959417428,
+      "right7_state_rms_rad": 0.028842643968636138,
+      "gripper_state_diff_rad": 0.004951659802852018,
+      "action_delta_cosine": -0.5517825362476731,
+      "first_action_difference_rad": 0.015007435146958315,
+      "image_mae_255": {
+        "ceiling": 1.4296918402777778,
+        "wrist_left": 0.055047743055555556,
+        "wrist_right": 8.207443576388888
+      }
+    },
+    {
+      "pull_frame": 247,
+      "push_frame": 344,
+      "opening_diff_mm": 0.30293116462058733,
+      "right7_state_rms_rad": 0.029321419182688165,
+      "gripper_state_diff_rad": 0.005298045253916417,
+      "action_delta_cosine": -0.5632432341732154,
+      "first_action_difference_rad": 0.015451157055005868,
+      "image_mae_255": {
+        "ceiling": 1.4420052083333332,
+        "wrist_left": 0.078125,
+        "wrist_right": 8.523919270833334
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "lora": {
+    "state_proj": {
+      "delta_l2": 0.0,
+      "max_abs_delta": 0.0
+    },
+    "action_in_proj": {
+      "delta_l2": 0.0,
+      "max_abs_delta": 0.0
+    },
+    "action_out_proj": {
+      "delta_l2": 0.0,
+      "max_abs_delta": 0.0
+    }
+  },
+  "io": {
+    "state_proj": {
+      "delta_l2": 0.028632549607547065,
+      "max_abs_delta": 0.0006565302610397339
+    },
+    "action_in_proj": {
+      "delta_l2": 0.019972650732029012,
+      "max_abs_delta": 0.0003860741853713989
+    },
+    "action_out_proj": {
+      "delta_l2": 0.023197991456761546,
+      "max_abs_delta": 0.0005350448191165924
+    }
+  }
+}

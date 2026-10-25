@@ -1,0 +1,112 @@
+{
+  "identity": "0af172500674893527bad12c46dc6af651b0640f156199aa6d76bb40364b1d9f",
+  "episodes": [
+    {
+      "episode_id": "recovery12_step11",
+      "parent_episode_id": 12,
+      "split": "train",
+      "path": "data/drawer_recovery/v001/episode12_step11",
+      "frames": 75,
+      "source_frames": 342,
+      "episode_sha256": "b19b14e82801096a3aa9e747d87fd61489cb114c2db6c0a506ece04bba0cfb1d"
+    },
+    {
+      "episode_id": "recovery12_step12",
+      "parent_episode_id": 12,
+      "split": "train",
+      "path": "data/drawer_recovery/v001/episode12_step12",
+      "frames": 75,
+      "source_frames": 342,
+      "episode_sha256": "d995caf9d3624227eb22c70644180dbca83d77f90399260a2ef10727f3b17424"
+    },
+    {
+      "episode_id": "recovery12_step15",
+      "parent_episode_id": 12,
+      "split": "train",
+      "path": "data/drawer_recovery/v001/episode12_step15",
+      "frames": 75,
+      "source_frames": 342,
+      "episode_sha256": "5858e790ba9002fe9c98b7b988d4a725c1903766373beada7e03ecd6ebe8fbcd"
+    }
+  ],
+  "fields": [
+    {
+      "path": [
+        "state"
+      ],
+      "file": "field_00.npy",
+      "dtype": "float32"
+    },
+    {
+      "path": [
+        "image",
+        "base_0_rgb"
+      ],
+      "file": "field_01.npy",
+      "dtype": "uint8"
+    },
+    {
+      "path": [
+        "image",
+        "left_wrist_0_rgb"
+      ],
+      "file": "field_02.npy",
+      "dtype": "uint8"
+    },
+    {
+      "path": [
+        "image",
+        "right_wrist_0_rgb"
+      ],
+      "file": "field_03.npy",
+      "dtype": "uint8"
+    },
+    {
+      "path": [
+        "image_mask",
+        "base_0_rgb"
+      ],
+      "file": "field_04.npy",
+      "dtype": "bool"
+    },
+    {
+      "path": [
+        "image_mask",
+        "left_wrist_0_rgb"
+      ],
+      "file": "field_05.npy",
+      "dtype": "bool"
+    },
+    {
+      "path": [
+        "image_mask",
+        "right_wrist_0_rgb"
+      ],
+      "file": "field_06.npy",
+      "dtype": "bool"
+    },
+    {
+      "path": [
+        "actions"
+      ],
+      "file": "field_07.npy",
+      "dtype": "float32"
+    },
+    {
+      "path": [
+        "tokenized_prompt"
+      ],
+      "file": "field_08.npy",
+      "dtype": "int32"
+    },
+    {
+      "path": [
+        "tokenized_prompt_mask"
+      ],
+      "file": "field_09.npy",
+      "dtype": "bool"
+    }
+  ],
+  "frames": 225,
+  "normalization": "frozen original v003 train-only absolute statistics; runtime delta conversion follows main trainer"
+}

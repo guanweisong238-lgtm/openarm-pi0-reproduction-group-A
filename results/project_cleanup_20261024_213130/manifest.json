@@ -1,0 +1,149 @@
+{
+  "status": "completed",
+  "time": "2026-10-24T21:31:30.111267+08:00",
+  "root": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A",
+  "deleted": [
+    {
+      "path": "checkpoints/pi0_openarm_lora/overfit_ep0_5000_001/5000",
+      "reason": "早期pickup拟合，当前已转为13条抽屉数据",
+      "allocated_bytes": 5560520704,
+      "file_count": 30,
+      "archived_files": [
+        "config.txt",
+        "assets/openarm_pickup/norm_stats.json"
+      ],
+      "status": "deleted"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_lora/overfit_roundtrip_001/2000",
+      "reason": "早期有损单轨迹模型，已有无损基线与多轨迹模型",
+      "allocated_bytes": 5560111104,
+      "file_count": 30,
+      "archived_files": [
+        "config.txt",
+        "assets/openarm_drawer_roundtrip/norm_stats.json"
+      ],
+      "status": "deleted"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_lora_lossless/overfit_roundtrip_lossless_001/2000",
+      "reason": "旧单轨迹初版，保留后续3500基线及key147版本",
+      "allocated_bytes": 5560209408,
+      "file_count": 31,
+      "archived_files": [
+        "input_protocol.json",
+        "config.txt",
+        "assets/openarm_drawer_roundtrip/norm_stats.json"
+      ],
+      "status": "deleted"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_lora_lossless/stage_fit_right8_lr3e6_004/4500",
+      "reason": "旧版right8分支，保留后续key147版本及评估记录",
+      "allocated_bytes": 5560066048,
+      "file_count": 31,
+      "archived_files": [
+        "input_protocol.json",
+        "config.txt",
+        "assets/openarm_drawer_roundtrip/norm_stats.json"
+      ],
+      "status": "deleted"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_smoke_001/20",
+      "reason": "20步流程短测，正式2000步模型已保存",
+      "allocated_bytes": 5560156160,
+      "file_count": 33,
+      "archived_files": [
+        "dataset_manifest.json",
+        "input_protocol.json",
+        "config.txt",
+        "assets/openarm_drawer_success_v003/norm_stats.json"
+      ],
+      "status": "deleted"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/1000",
+      "reason": "正式训练中间检查点，保留最终2000步",
+      "allocated_bytes": 5560193024,
+      "file_count": 33,
+      "archived_files": [
+        "dataset_manifest.json",
+        "input_protocol.json",
+        "config.txt",
+        "assets/openarm_drawer_success_v003/norm_stats.json"
+      ],
+      "status": "deleted"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_uniform500_control_002/500",
+      "reason": "已完成的uniform对照分支，保留报告与early60公共起点",
+      "allocated_bytes": 5560324096,
+      "file_count": 34,
+      "archived_files": [
+        "dataset_manifest.json",
+        "input_protocol.json",
+        "config.txt",
+        "assets/openarm_drawer_success_v003/norm_stats.json"
+      ],
+      "status": "deleted"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_v001/start9_pair_001_lora/200",
+      "reason": "已完成的LoRA-only消融分支，保留指标及参数更新证据",
+      "allocated_bytes": 5561147392,
+      "file_count": 33,
+      "archived_files": [
+        "dataset_manifest.json",
+        "input_protocol.json",
+        "config.txt",
+        "assets/openarm_drawer_success_v003/norm_stats.json"
+      ],
+      "status": "deleted"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_v001/start9_pair_001_io/200",
+      "reason": "已完成的IO消融分支，保留指标及参数更新证据",
+      "allocated_bytes": 5562015744,
+      "file_count": 34,
+      "archived_files": [
+        "dataset_manifest.json",
+        "input_protocol.json",
+        "config.txt",
+        "assets/openarm_drawer_success_v003/norm_stats.json"
+      ],
+      "status": "deleted"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_v001/start9_cleanup_002_io_mask_right8/200",
+      "reason": "未采用的right8分支，保留其评估及训练曲线",
+      "allocated_bytes": 5561995264,
+      "file_count": 33,
+      "archived_files": [
+        "dataset_manifest.json",
+        "input_protocol.json",
+        "config.txt",
+        "assets/openarm_drawer_success_v003/norm_stats.json"
+      ],
+      "status": "deleted"
+    }
+  ],
+  "kept": [
+    "checkpoints/pi0_openarm_drawer_lora_lossless/stage_fit_lossless_002/3500",
+    "checkpoints/pi0_openarm_drawer_lora_lossless/stage_fit_right8_key147_005/4500",
+    "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_delta_004_io_mask/600",
+    "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_delta_refine_005_io_mask/1200",
+    "checkpoints/pi0_openarm_drawer_start_fit_v001/start9_cleanup_002_io_mask/200",
+    "checkpoints/pi0_openarm_drawer_start_fit_v001/start9_refine_003_io_mask/600",
+    "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_early60_500_003/500",
+    "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000"
+  ],
+  "before_free_bytes": 13848383488,
+  "before_checkpoint_allocated_bytes": 100095385600,
+  "note": "归档仅含配置、协议和统计，不包含权重备份。数据、日志、结果、环境、底座权重和现用缓存保留。",
+  "completed_time": "2026-10-24T21:31:43.853323+08:00",
+  "after_free_bytes": 69455679488,
+  "after_checkpoint_allocated_bytes": 44488646656,
+  "freed_allocated_bytes": 55606738944,
+  "retained_file_sizes_verified": true
+}

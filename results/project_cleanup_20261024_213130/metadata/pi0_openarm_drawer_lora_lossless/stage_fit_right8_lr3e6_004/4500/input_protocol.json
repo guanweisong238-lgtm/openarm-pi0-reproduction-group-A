@@ -1,0 +1,25 @@
+{
+  "dataset": "data/drawer_trial/contact_roundtrip_rgb_001/lerobot_v21",
+  "train_episode_ids": [
+    0
+  ],
+  "frames": 462,
+  "normalization": "mean_std",
+  "std_floor": 1e-06,
+  "weighting": "each original frame once",
+  "validation_episode_ids": [],
+  "source_report_sha256": "2ef91ee54af5a0b8ef51c452430881ddb1b2b0821aa8cd3a43becd0819c44c55",
+  "image_source": "original_npz_uint8_rgb",
+  "source_episode_sha256": "3162d2d2817fdbda8ae5f30c93856321157ae5b1e1b7cd4695c99528a6a1ed87",
+  "resumed_from": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_lora_lossless/stage_fit_lossless_002/3500",
+  "stage_mixture": {
+    "approach": 0.5,
+    "grasp": 0.2,
+    "rest": 0.3
+  },
+  "lr": 3e-06,
+  "newly_trained_steps": 1000,
+  "loss": "32d_flow_unchanged",
+  "sampling_seed": 123,
+  "loss_dims": "right8"
+}

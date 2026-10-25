@@ -1,0 +1,56 @@
+{
+  "source_checkpoint": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000",
+  "train_steps_each": 500,
+  "optimizer": "fresh in both arms",
+  "learning_rate": {
+    "peak": 3e-06,
+    "warmup": 50,
+    "end": 3e-07,
+    "schedule": "cosine"
+  },
+  "seed": 42,
+  "objective": "all32",
+  "early_window_frames": 75,
+  "early_mixture_probabilities": [
+    0.0,
+    0.6
+  ],
+  "evaluation": {
+    "dense_frames": [
+      0,
+      1,
+      4,
+      8,
+      15,
+      30,
+      45,
+      60,
+      74
+    ],
+    "legacy_four_anchors_preserved": true,
+    "seeds": [
+      42,
+      7,
+      99
+    ],
+    "at_steps": [
+      0,
+      500
+    ]
+  },
+  "short_closed_loop": {
+    "episode_ids": [
+      12,
+      8
+    ],
+    "seed": 42,
+    "action_chunk": 4,
+    "seconds": 12
+  },
+  "control_run": "logs/a2_pi0/drawer_success_20261024-170454-891158",
+  "policy": "train split only; validation fixed, no gradient or normalization changes",
+  "early_run": "logs/a2_pi0/drawer_success_20261024-171400-933179",
+  "control_closed_loop_run": "logs/a2_pi0/success_live_20261024-172316-402307",
+  "early_closed_loop_run": "logs/a2_pi0/success_live_20261024-172607-839553",
+  "completed": true
+}

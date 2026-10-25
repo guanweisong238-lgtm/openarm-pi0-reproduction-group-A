@@ -1,0 +1,65 @@
+{
+  "note": "Audit candidates only; not a training split or authorization to overwrite existing datasets.",
+  "episodes": [
+    {
+      "path": "data/drawer_expansion/diverse_rgb/approach_side_neg",
+      "frames": 462,
+      "warmup_frames": 0,
+      "action_sha256": "dc4fac359e8666ae99e1b52c741789fe0c40f0f4f16c0ad7283e0af3a058122c"
+    },
+    {
+      "path": "data/drawer_expansion/diverse_rgb/approach_side_pos",
+      "frames": 462,
+      "warmup_frames": 0,
+      "action_sha256": "e4b9594a6811294d6c3ef5d6fb906d0e5c17a395ebd72c04b56574fe57463f80"
+    },
+    {
+      "path": "data/drawer_expansion/diverse_rgb/cabinet_y_pos005",
+      "frames": 462,
+      "warmup_frames": 0,
+      "action_sha256": "89959537693e4beac48eaeb31975bf0c4575fd41a6496b4364612470eecde2b6"
+    },
+    {
+      "path": "data/drawer_expansion/diverse_rgb/initial_seed108",
+      "frames": 462,
+      "warmup_frames": 0,
+      "action_sha256": "83199d10c5dedbea492df1fa024bf6eb04a17ac9fb0156a760835bdfd8750845"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_rgb/pitch12",
+      "frames": 462,
+      "warmup_frames": 0,
+      "action_sha256": "6b3c1182544857a2e9ca5f27f83ff814dd4b8fb3a927f718c61bb3972bba0999"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_rgb/pitch18",
+      "frames": 462,
+      "warmup_frames": 0,
+      "action_sha256": "360c3f499c07198c48325d586b47f201faaac879d8bb3cfba3e1f451a6766e80"
+    },
+    {
+      "path": "data/drawer_human/session_20261024_152741/episode_002",
+      "frames": 1144,
+      "warmup_frames": 75,
+      "action_sha256": "a05bd95969fca23baf25e7dfb6dfd546cdd6d994aff5e2ff8bf14a88923f1b34"
+    },
+    {
+      "path": "data/drawer_human/session_20261024_154326/episode_001",
+      "frames": 1738,
+      "warmup_frames": 75,
+      "action_sha256": "5fc060c6fe961f8d3c19cfd13f551d48ecb8131fa090ef3383c21bcfa2ce374c"
+    },
+    {
+      "path": "data/drawer_human/session_20261024_154326/episode_003",
+      "frames": 1149,
+      "warmup_frames": 75,
+      "action_sha256": "c06c19199d87b39737fff2dfdc9d41ae8e4d1ed0e6a626c91b28f391d2944f1c"
+    },
+    {
+      "path": "data/drawer_trial/contact_roundtrip_rgb_001",
+      "frames": 462,
+      "warmup_frames": 0,
+      "action_sha256": "5e43a3ddaf39c751e32bc42d1d19ed6d8a54dfd937989a2f1f1a7ea7b0a5a0e7"
+    }
+  ]
+}

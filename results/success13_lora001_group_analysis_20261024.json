@@ -1,0 +1,150 @@
+{
+  "scope": "fixed 4 anchors per episode and 3 inference-noise seeds; no closed-loop tested",
+  "by_step": [
+    {
+      "step": 0,
+      "groups": {
+        "train/script_ready_start": {
+          "right_arm_mae_rad": 0.23923799660580863,
+          "right_gripper_mae_rad": 0.08235478104037254,
+          "first_action_position_mm": 77.66427670440643,
+          "first_action_attitude_deg": 41.39513234449605
+        },
+        "train/human_warm_start": {
+          "right_arm_mae_rad": 0.12516664252864343,
+          "right_gripper_mae_rad": 0.10532022407159945,
+          "first_action_position_mm": 62.642863934731764,
+          "first_action_attitude_deg": 11.492935191248879
+        },
+        "validation/script_ready_start": {
+          "right_arm_mae_rad": 0.23981279649033063,
+          "right_gripper_mae_rad": 0.08322981472120401,
+          "first_action_position_mm": 77.86231875420668,
+          "first_action_attitude_deg": 41.668077230217314
+        },
+        "validation/human_warm_start": {
+          "right_arm_mae_rad": 0.12384822047329293,
+          "right_gripper_mae_rad": 0.10030498877767036,
+          "first_action_position_mm": 61.51451469656528,
+          "first_action_attitude_deg": 11.566417369582888
+        }
+      }
+    },
+    {
+      "step": 500,
+      "groups": {
+        "train/script_ready_start": {
+          "right_arm_mae_rad": 0.09400341130458403,
+          "right_gripper_mae_rad": 0.07797340746496384,
+          "first_action_position_mm": 23.940621252400636,
+          "first_action_attitude_deg": 16.408926690469183
+        },
+        "train/human_warm_start": {
+          "right_arm_mae_rad": 0.0319265697218166,
+          "right_gripper_mae_rad": 0.02287881443444386,
+          "first_action_position_mm": 17.084645436496363,
+          "first_action_attitude_deg": 4.8969329324207145
+        },
+        "validation/script_ready_start": {
+          "right_arm_mae_rad": 0.09634871737073564,
+          "right_gripper_mae_rad": 0.07642866514938283,
+          "first_action_position_mm": 25.52184616523591,
+          "first_action_attitude_deg": 17.37959418067425
+        },
+        "validation/human_warm_start": {
+          "right_arm_mae_rad": 0.029070573024217634,
+          "right_gripper_mae_rad": 0.027133489815332496,
+          "first_action_position_mm": 15.503745062745564,
+          "first_action_attitude_deg": 4.850399953969074
+        }
+      }
+    },
+    {
+      "step": 1000,
+      "groups": {
+        "train/script_ready_start": {
+          "right_arm_mae_rad": 0.08570846538281976,
+          "right_gripper_mae_rad": 0.07053073000531106,
+          "first_action_position_mm": 26.63077679125098,
+          "first_action_attitude_deg": 12.214195730022844
+        },
+        "train/human_warm_start": {
+          "right_arm_mae_rad": 0.027174335697671786,
+          "right_gripper_mae_rad": 0.024063765317020203,
+          "first_action_position_mm": 15.200559236233099,
+          "first_action_attitude_deg": 3.974717450393614
+        },
+        "validation/script_ready_start": {
+          "right_arm_mae_rad": 0.08756003575109249,
+          "right_gripper_mae_rad": 0.0686152354682439,
+          "first_action_position_mm": 25.215144759328634,
+          "first_action_attitude_deg": 12.953926763844018
+        },
+        "validation/human_warm_start": {
+          "right_arm_mae_rad": 0.024845128129534978,
+          "right_gripper_mae_rad": 0.02809444100727101,
+          "first_action_position_mm": 14.563475072111254,
+          "first_action_attitude_deg": 3.827053165853826
+        }
+      }
+    },
+    {
+      "step": 1500,
+      "groups": {
+        "train/script_ready_start": {
+          "right_arm_mae_rad": 0.07197573479104,
+          "right_gripper_mae_rad": 0.0664005191041147,
+          "first_action_position_mm": 24.342327080729206,
+          "first_action_attitude_deg": 8.390954277497631
+        },
+        "train/human_warm_start": {
+          "right_arm_mae_rad": 0.022026556894935084,
+          "right_gripper_mae_rad": 0.02015040457555525,
+          "first_action_position_mm": 11.28961831316429,
+          "first_action_attitude_deg": 3.114198547622565
+        },
+        "validation/script_ready_start": {
+          "right_arm_mae_rad": 0.07358777475448881,
+          "right_gripper_mae_rad": 0.06522241136555328,
+          "first_action_position_mm": 22.705171025724137,
+          "first_action_attitude_deg": 8.910142766565743
+        },
+        "validation/human_warm_start": {
+          "right_arm_mae_rad": 0.020581776678151274,
+          "right_gripper_mae_rad": 0.025411491513483056,
+          "first_action_position_mm": 10.064659574907862,
+          "first_action_attitude_deg": 2.8439379822360578
+        }
+      }
+    },
+    {
+      "step": 2000,
+      "groups": {
+        "train/script_ready_start": {
+          "right_arm_mae_rad": 0.07185977908489717,
+          "right_gripper_mae_rad": 0.06734340830571797,
+          "first_action_position_mm": 22.9611863413668,
+          "first_action_attitude_deg": 8.20772721163889
+        },
+        "train/human_warm_start": {
+          "right_arm_mae_rad": 0.021418362261952307,
+          "right_gripper_mae_rad": 0.019633921387693397,
+          "first_action_position_mm": 10.920620089049347,
+          "first_action_attitude_deg": 3.009124844098282
+        },
+        "validation/script_ready_start": {
+          "right_arm_mae_rad": 0.0736388788696072,
+          "right_gripper_mae_rad": 0.06607778348224815,
+          "first_action_position_mm": 20.929058954240446,
+          "first_action_attitude_deg": 8.75162072581154
+        },
+        "validation/human_warm_start": {
+          "right_arm_mae_rad": 0.02009690538505086,
+          "right_gripper_mae_rad": 0.024832629006274403,
+          "first_action_position_mm": 9.715668804796373,
+          "first_action_attitude_deg": 2.7515704361084476
+        }
+      }
+    }
+  ]
+}

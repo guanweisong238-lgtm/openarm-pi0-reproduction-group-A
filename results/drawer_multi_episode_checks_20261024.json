@@ -1,0 +1,13 @@
+{
+  "train": {
+    "episodes": 5,
+    "frames": 2310,
+    "boundary_and_adapter_checks": 20
+  },
+  "validation": {
+    "episodes": 2,
+    "frames": 924,
+    "boundary_and_adapter_checks": 8
+  },
+  "existing_training_entry_unchanged": true
+}

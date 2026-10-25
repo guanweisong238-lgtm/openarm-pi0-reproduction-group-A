@@ -1,0 +1,189 @@
+{
+  "checkpoint": "checkpoints/pi0_openarm_drawer_approach_v001/approach13_delta_012/1200",
+  "episode_id": 12,
+  "local_frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "results": [
+    {
+      "precision": "bfloat16",
+      "denoise_steps": 10,
+      "mean_position_mm": 1.3676185219776078,
+      "worst_position_mm": 2.7835173970517255,
+      "worst_attitude_deg": 2.191219417534021,
+      "values": [
+        {
+          "local": 0,
+          "seed": 42,
+          "position_mm": 0.8398319467279639,
+          "attitude_deg": 0.3983971707334752
+        },
+        {
+          "local": 0,
+          "seed": 7,
+          "position_mm": 0.5857890040542144,
+          "attitude_deg": 0.7273417137943213
+        },
+        {
+          "local": 0,
+          "seed": 99,
+          "position_mm": 1.6106392957043458,
+          "attitude_deg": 0.7032001034697802
+        },
+        {
+          "local": 1,
+          "seed": 42,
+          "position_mm": 1.3440089322406046,
+          "attitude_deg": 0.654354136781908
+        },
+        {
+          "local": 1,
+          "seed": 7,
+          "position_mm": 0.5153218301201297,
+          "attitude_deg": 0.6241635443760499
+        },
+        {
+          "local": 1,
+          "seed": 99,
+          "position_mm": 1.2326576105111677,
+          "attitude_deg": 0.5610522984646305
+        },
+        {
+          "local": 2,
+          "seed": 42,
+          "position_mm": 0.8234936821579684,
+          "attitude_deg": 0.5200633412256994
+        },
+        {
+          "local": 2,
+          "seed": 7,
+          "position_mm": 0.7141096437244719,
+          "attitude_deg": 0.6301814897562389
+        },
+        {
+          "local": 2,
+          "seed": 99,
+          "position_mm": 1.9807993337063725,
+          "attitude_deg": 0.8426815163746476
+        },
+        {
+          "local": 3,
+          "seed": 42,
+          "position_mm": 1.1896974684496575,
+          "attitude_deg": 0.8209201413061813
+        },
+        {
+          "local": 3,
+          "seed": 7,
+          "position_mm": 0.32215464845519415,
+          "attitude_deg": 0.44306912533241966
+        },
+        {
+          "local": 3,
+          "seed": 99,
+          "position_mm": 1.6938696984582908,
+          "attitude_deg": 0.7251149432549455
+        },
+        {
+          "local": 4,
+          "seed": 42,
+          "position_mm": 1.509710296835722,
+          "attitude_deg": 1.0893183257494086
+        },
+        {
+          "local": 4,
+          "seed": 7,
+          "position_mm": 0.7334012130667344,
+          "attitude_deg": 0.43893056515427603
+        },
+        {
+          "local": 4,
+          "seed": 99,
+          "position_mm": 1.8867429585270168,
+          "attitude_deg": 0.7513723769159875
+        },
+        {
+          "local": 5,
+          "seed": 42,
+          "position_mm": 1.3950896242410338,
+          "attitude_deg": 1.2556861067966674
+        },
+        {
+          "local": 5,
+          "seed": 7,
+          "position_mm": 0.7789711696712542,
+          "attitude_deg": 0.3784734298216946
+        },
+        {
+          "local": 5,
+          "seed": 99,
+          "position_mm": 2.302294813275252,
+          "attitude_deg": 0.8403562207761633
+        },
+        {
+          "local": 6,
+          "seed": 42,
+          "position_mm": 1.6870907564866098,
+          "attitude_deg": 1.4922686894951345
+        },
+        {
+          "local": 6,
+          "seed": 7,
+          "position_mm": 0.7611990217405776,
+          "attitude_deg": 0.29932882580715614
+        },
+        {
+          "local": 6,
+          "seed": 99,
+          "position_mm": 2.4618901711963415,
+          "attitude_deg": 0.9002548967475692
+        },
+        {
+          "local": 7,
+          "seed": 42,
+          "position_mm": 2.2972609103519717,
+          "attitude_deg": 1.9079767206785436
+        },
+        {
+          "local": 7,
+          "seed": 7,
+          "position_mm": 0.6979407253013231,
+          "attitude_deg": 0.2106903967832199
+        },
+        {
+          "local": 7,
+          "seed": 99,
+          "position_mm": 2.1512527038092237,
+          "attitude_deg": 0.8486350895103144
+        },
+        {
+          "local": 8,
+          "seed": 42,
+          "position_mm": 2.7835173970517255,
+          "attitude_deg": 2.191219417534021
+        },
+        {
+          "local": 8,
+          "seed": 7,
+          "position_mm": 0.72523304989351,
+          "attitude_deg": 0.09862268268358534
+        },
+        {
+          "local": 8,
+          "seed": 99,
+          "position_mm": 1.90173218763674,
+          "attitude_deg": 0.7419534688965181
+        }
+      ],
+      "fit_gate": false
+    }
+  ]
+}

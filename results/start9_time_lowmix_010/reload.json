@@ -1,0 +1,349 @@
+{
+  "checkpoint": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_time_lowmix_010_io_mask/300",
+  "results": [
+    {
+      "precision": "native",
+      "denoise_steps": 10,
+      "mean_position_mm": 0.7387438484060483,
+      "worst_position_mm": 2.447718230114302,
+      "worst_attitude_deg": 1.4014222875865687,
+      "values": [
+        {
+          "local": 0,
+          "seed": 42,
+          "position_mm": 0.5914613635965447,
+          "attitude_deg": 0.23106100119937792
+        },
+        {
+          "local": 0,
+          "seed": 7,
+          "position_mm": 0.2509661042041469,
+          "attitude_deg": 0.49782912798528023
+        },
+        {
+          "local": 0,
+          "seed": 99,
+          "position_mm": 0.6604221269784745,
+          "attitude_deg": 0.3726967073461138
+        },
+        {
+          "local": 1,
+          "seed": 42,
+          "position_mm": 0.8035411597882592,
+          "attitude_deg": 0.456704186262091
+        },
+        {
+          "local": 1,
+          "seed": 7,
+          "position_mm": 0.4235930683021306,
+          "attitude_deg": 0.2510840704098998
+        },
+        {
+          "local": 1,
+          "seed": 99,
+          "position_mm": 0.5886456666384644,
+          "attitude_deg": 0.19333328660417096
+        },
+        {
+          "local": 2,
+          "seed": 42,
+          "position_mm": 0.6540147809895072,
+          "attitude_deg": 0.37917464072737617
+        },
+        {
+          "local": 2,
+          "seed": 7,
+          "position_mm": 0.22243461793198838,
+          "attitude_deg": 0.30908299473148787
+        },
+        {
+          "local": 2,
+          "seed": 99,
+          "position_mm": 0.6895450390152926,
+          "attitude_deg": 0.29061000064684056
+        },
+        {
+          "local": 3,
+          "seed": 42,
+          "position_mm": 1.0261986837181147,
+          "attitude_deg": 0.434022406787613
+        },
+        {
+          "local": 3,
+          "seed": 7,
+          "position_mm": 0.4682628652778247,
+          "attitude_deg": 0.3662548133828913
+        },
+        {
+          "local": 3,
+          "seed": 99,
+          "position_mm": 0.4012897107478678,
+          "attitude_deg": 0.29471380479211307
+        },
+        {
+          "local": 4,
+          "seed": 42,
+          "position_mm": 1.0448857848502149,
+          "attitude_deg": 0.6967394961691302
+        },
+        {
+          "local": 4,
+          "seed": 7,
+          "position_mm": 0.40490313255498667,
+          "attitude_deg": 0.21974018593935896
+        },
+        {
+          "local": 4,
+          "seed": 99,
+          "position_mm": 0.6371902438658801,
+          "attitude_deg": 0.28264000451705684
+        },
+        {
+          "local": 5,
+          "seed": 42,
+          "position_mm": 1.0763376071047326,
+          "attitude_deg": 0.7859776084163178
+        },
+        {
+          "local": 5,
+          "seed": 7,
+          "position_mm": 0.38569427307957865,
+          "attitude_deg": 0.16010387368628026
+        },
+        {
+          "local": 5,
+          "seed": 99,
+          "position_mm": 0.5739016743623219,
+          "attitude_deg": 0.21365010962033787
+        },
+        {
+          "local": 6,
+          "seed": 42,
+          "position_mm": 1.2149422524280287,
+          "attitude_deg": 0.9304965807126853
+        },
+        {
+          "local": 6,
+          "seed": 7,
+          "position_mm": 0.3248828215952413,
+          "attitude_deg": 0.11230776740200879
+        },
+        {
+          "local": 6,
+          "seed": 99,
+          "position_mm": 0.709999532285291,
+          "attitude_deg": 0.25047332850081233
+        },
+        {
+          "local": 7,
+          "seed": 42,
+          "position_mm": 1.7863589710788945,
+          "attitude_deg": 1.1190907284369243
+        },
+        {
+          "local": 7,
+          "seed": 7,
+          "position_mm": 0.7376012990840167,
+          "attitude_deg": 0.19856220622988915
+        },
+        {
+          "local": 7,
+          "seed": 99,
+          "position_mm": 0.41385850945134445,
+          "attitude_deg": 0.2128776359726891
+        },
+        {
+          "local": 8,
+          "seed": 42,
+          "position_mm": 2.447718230114302,
+          "attitude_deg": 1.4014222875865687
+        },
+        {
+          "local": 8,
+          "seed": 7,
+          "position_mm": 1.1592690652482713,
+          "attitude_deg": 0.3257896083729753
+        },
+        {
+          "local": 8,
+          "seed": 99,
+          "position_mm": 0.24816532267158672,
+          "attitude_deg": 0.01853647336696674
+        }
+      ],
+      "fit_gate": false
+    },
+    {
+      "precision": "bfloat16",
+      "denoise_steps": 10,
+      "mean_position_mm": 0.7443766889847324,
+      "worst_position_mm": 2.4890312219744,
+      "worst_attitude_deg": 1.4063168636858943,
+      "values": [
+        {
+          "local": 0,
+          "seed": 42,
+          "position_mm": 0.5549265495380131,
+          "attitude_deg": 0.22054694922473728
+        },
+        {
+          "local": 0,
+          "seed": 7,
+          "position_mm": 0.23533605614447262,
+          "attitude_deg": 0.5219937220417596
+        },
+        {
+          "local": 0,
+          "seed": 99,
+          "position_mm": 0.7086578982921065,
+          "attitude_deg": 0.3898500908315848
+        },
+        {
+          "local": 1,
+          "seed": 42,
+          "position_mm": 0.7967278101884218,
+          "attitude_deg": 0.44967880730644355
+        },
+        {
+          "local": 1,
+          "seed": 7,
+          "position_mm": 0.3488080259578475,
+          "attitude_deg": 0.24312845194751365
+        },
+        {
+          "local": 1,
+          "seed": 99,
+          "position_mm": 0.5746493952141504,
+          "attitude_deg": 0.19136296889887253
+        },
+        {
+          "local": 2,
+          "seed": 42,
+          "position_mm": 0.6868278132287603,
+          "attitude_deg": 0.376843940286592
+        },
+        {
+          "local": 2,
+          "seed": 7,
+          "position_mm": 0.2331512563402847,
+          "attitude_deg": 0.328823195285006
+        },
+        {
+          "local": 2,
+          "seed": 99,
+          "position_mm": 0.7185672297645876,
+          "attitude_deg": 0.30587170979838746
+        },
+        {
+          "local": 3,
+          "seed": 42,
+          "position_mm": 1.0683128878666155,
+          "attitude_deg": 0.45801887705802385
+        },
+        {
+          "local": 3,
+          "seed": 7,
+          "position_mm": 0.5104396955196296,
+          "attitude_deg": 0.3359113335100527
+        },
+        {
+          "local": 3,
+          "seed": 99,
+          "position_mm": 0.434751729269107,
+          "attitude_deg": 0.30720817291124686
+        },
+        {
+          "local": 4,
+          "seed": 42,
+          "position_mm": 1.0877456897225348,
+          "attitude_deg": 0.6783631130951906
+        },
+        {
+          "local": 4,
+          "seed": 7,
+          "position_mm": 0.3731559399728282,
+          "attitude_deg": 0.23779131038395845
+        },
+        {
+          "local": 4,
+          "seed": 99,
+          "position_mm": 0.6268159073833771,
+          "attitude_deg": 0.28271839938303694
+        },
+        {
+          "local": 5,
+          "seed": 42,
+          "position_mm": 1.087409881828375,
+          "attitude_deg": 0.7904557718326108
+        },
+        {
+          "local": 5,
+          "seed": 7,
+          "position_mm": 0.3858288447412825,
+          "attitude_deg": 0.144115942758803
+        },
+        {
+          "local": 5,
+          "seed": 99,
+          "position_mm": 0.531900361533838,
+          "attitude_deg": 0.18739536818870817
+        },
+        {
+          "local": 6,
+          "seed": 42,
+          "position_mm": 1.2669367846848434,
+          "attitude_deg": 0.9716491955219291
+        },
+        {
+          "local": 6,
+          "seed": 7,
+          "position_mm": 0.31243438477893815,
+          "attitude_deg": 0.10647630870330561
+        },
+        {
+          "local": 6,
+          "seed": 99,
+          "position_mm": 0.6707350311681419,
+          "attitude_deg": 0.2373411862930935
+        },
+        {
+          "local": 7,
+          "seed": 42,
+          "position_mm": 1.7464435689237374,
+          "attitude_deg": 1.089446484959351
+        },
+        {
+          "local": 7,
+          "seed": 7,
+          "position_mm": 0.7152930797945678,
+          "attitude_deg": 0.19604107879102606
+        },
+        {
+          "local": 7,
+          "seed": 99,
+          "position_mm": 0.4840706749037627,
+          "attitude_deg": 0.2421505331306358
+        },
+        {
+          "local": 8,
+          "seed": 42,
+          "position_mm": 2.4890312219744,
+          "attitude_deg": 1.4063168636858943
+        },
+        {
+          "local": 8,
+          "seed": 7,
+          "position_mm": 1.2140958381982088,
+          "attitude_deg": 0.34917620424161044
+        },
+        {
+          "local": 8,
+          "seed": 99,
+          "position_mm": 0.23511704565494407,
+          "attitude_deg": 0.030996010629149796
+        }
+      ],
+      "fit_gate": false
+    }
+  ]
+}

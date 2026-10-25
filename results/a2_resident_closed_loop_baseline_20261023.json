@@ -1,0 +1,66 @@
+{
+  "execution_type": "model_closed_loop_smoke",
+  "scene_path": "/home/song03/scientific_research/openarm-a1/openarm_mujoco/v2/cell/demo.xml",
+  "requested_cycles": 5,
+  "steps_per_cycle": 4,
+  "completed": true,
+  "executed_steps": 20,
+  "physics_paused_during_inference": true,
+  "inference_mode": "resident_process",
+  "warmup_calls": 1,
+  "rounds": [
+    {
+      "cycle": 0,
+      "observation_timestamp": 7.000000000000672,
+      "inference_directory": "/home/song03/scientific_research/openarm-a1/outputs/a2_interface/closed_loop_20261023-214655-876425/cycle_000",
+      "executed_steps": 4,
+      "inference_seconds": 0.18717904399818508,
+      "request_seconds": 0.22195133799687028,
+      "end_timestamp": 7.133000000000717,
+      "clipped_steps": 0
+    },
+    {
+      "cycle": 1,
+      "observation_timestamp": 7.133000000000717,
+      "inference_directory": "/home/song03/scientific_research/openarm-a1/outputs/a2_interface/closed_loop_20261023-214655-876425/cycle_001",
+      "executed_steps": 4,
+      "inference_seconds": 0.18574824999814155,
+      "request_seconds": 0.20066183200106025,
+      "end_timestamp": 7.2670000000007615,
+      "clipped_steps": 4
+    },
+    {
+      "cycle": 2,
+      "observation_timestamp": 7.2670000000007615,
+      "inference_directory": "/home/song03/scientific_research/openarm-a1/outputs/a2_interface/closed_loop_20261023-214655-876425/cycle_002",
+      "executed_steps": 4,
+      "inference_seconds": 0.18734946600307012,
+      "request_seconds": 0.22560030600288883,
+      "end_timestamp": 7.400000000000806,
+      "clipped_steps": 0
+    },
+    {
+      "cycle": 3,
+      "observation_timestamp": 7.400000000000806,
+      "inference_directory": "/home/song03/scientific_research/openarm-a1/outputs/a2_interface/closed_loop_20261023-214655-876425/cycle_003",
+      "executed_steps": 4,
+      "inference_seconds": 0.18878493199736113,
+      "request_seconds": 0.20113217199832434,
+      "end_timestamp": 7.53300000000085,
+      "clipped_steps": 0
+    },
+    {
+      "cycle": 4,
+      "observation_timestamp": 7.53300000000085,
+      "inference_directory": "/home/song03/scientific_research/openarm-a1/outputs/a2_interface/closed_loop_20261023-214655-876425/cycle_004",
+      "executed_steps": 4,
+      "inference_seconds": 0.18808498900034465,
+      "request_seconds": 0.20124578299873974,
+      "end_timestamp": 7.667000000000895,
+      "clipped_steps": 0
+    }
+  ],
+  "task_success_verified": false,
+  "source_report": "/home/song03/scientific_research/openarm-a1/outputs/a2_interface/closed_loop_20261023-214655-876425/report.json",
+  "baseline_checkpoint": "checkpoints/pi0_openarm_lora/smoke_001/10"
+}

@@ -1,0 +1,64 @@
+{
+  "time": "2026-10-24T14:51:45.589435+08:00",
+  "kept": [
+    "pi0_openarm_drawer_lora/overfit_roundtrip_001/2000",
+    "pi0_openarm_drawer_lora_lossless/overfit_roundtrip_lossless_001/2000",
+    "pi0_openarm_drawer_lora_lossless/stage_fit_lossless_002/3500",
+    "pi0_openarm_drawer_lora_lossless/stage_fit_right8_key147_005/4500",
+    "pi0_openarm_drawer_lora_lossless/stage_fit_right8_lr3e6_004/4500",
+    "pi0_openarm_lora/overfit_ep0_5000_001/5000"
+  ],
+  "deleted": [
+    {
+      "path": "pi0_openarm_drawer_lora/overfit_roundtrip_001/1000",
+      "allocated_bytes": 5559779328
+    },
+    {
+      "path": "pi0_openarm_drawer_lora_lossless/overfit_roundtrip_lossless_001/1000",
+      "allocated_bytes": 5559787520
+    },
+    {
+      "path": "pi0_openarm_drawer_lora_lossless/stage_fit_right8_003/4000",
+      "allocated_bytes": 5560045568
+    },
+    {
+      "path": "pi0_openarm_drawer_lora_lossless/stage_fit_right8_key147_005/4000",
+      "allocated_bytes": 5560086528
+    },
+    {
+      "path": "pi0_openarm_drawer_lora_lossless/stage_fit_right8_lr3e6_004/4000",
+      "allocated_bytes": 5560090624
+    },
+    {
+      "path": "pi0_openarm_lora/lora_001/1000",
+      "allocated_bytes": 5559709696
+    },
+    {
+      "path": "pi0_openarm_lora/lora_001/500",
+      "allocated_bytes": 5559427072
+    },
+    {
+      "path": "pi0_openarm_lora/lora_preflight_20261023/2",
+      "allocated_bytes": 5562073088
+    },
+    {
+      "path": "pi0_openarm_lora/overfit_ep0_001/1000",
+      "allocated_bytes": 5560012800
+    },
+    {
+      "path": "pi0_openarm_lora/overfit_ep0_001/500",
+      "allocated_bytes": 5559730176
+    },
+    {
+      "path": "pi0_openarm_lora/overfit_ep0_5000_001/2500",
+      "allocated_bytes": 5560111104
+    },
+    {
+      "path": "pi0_openarm_lora/smoke_001/10",
+      "allocated_bytes": 5560266752
+    }
+  ],
+  "note": "Only checkpoint directories deleted; logs, results, data and base weights retained. Archived metadata is not a weight backup.",
+  "status": "completed",
+  "freed_allocated_bytes": 66721120256
+}

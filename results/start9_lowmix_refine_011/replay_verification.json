@@ -1,0 +1,142 @@
+[
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231237-067321/trial_01_episode_12",
+    "seed": 42,
+    "chunk": 4,
+    "noise_mode": "fixed",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": false,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231237-067321/trial_02_episode_12",
+    "seed": 7,
+    "chunk": 4,
+    "noise_mode": "fixed",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": false,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231237-067321/trial_03_episode_12",
+    "seed": 99,
+    "chunk": 4,
+    "noise_mode": "fixed",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": false,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231426-115959/trial_01_episode_12",
+    "seed": 42,
+    "chunk": 1,
+    "noise_mode": "fixed",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": false,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231426-115959/trial_02_episode_12",
+    "seed": 7,
+    "chunk": 1,
+    "noise_mode": "fixed",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": false,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231426-115959/trial_03_episode_12",
+    "seed": 99,
+    "chunk": 1,
+    "noise_mode": "fixed",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": false,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231622-307349/trial_01_episode_12",
+    "seed": 42,
+    "chunk": 4,
+    "noise_mode": "resample",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": true,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231622-307349/trial_02_episode_12",
+    "seed": 7,
+    "chunk": 4,
+    "noise_mode": "resample",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": true,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231622-307349/trial_03_episode_12",
+    "seed": 99,
+    "chunk": 4,
+    "noise_mode": "resample",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": true,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231758-875644/trial_01_episode_12",
+    "seed": 0,
+    "chunk": 4,
+    "noise_mode": "resample",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": true,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231758-875644/trial_02_episode_12",
+    "seed": 1,
+    "chunk": 4,
+    "noise_mode": "resample",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": true,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231758-875644/trial_03_episode_12",
+    "seed": 2,
+    "chunk": 4,
+    "noise_mode": "resample",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": true,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231758-875644/trial_04_episode_12",
+    "seed": 3,
+    "chunk": 4,
+    "noise_mode": "resample",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": true,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  },
+  {
+    "trial": "logs/a2_pi0/success_live_20261024-231758-875644/trial_05_episode_12",
+    "seed": 4,
+    "chunk": 4,
+    "noise_mode": "resample",
+    "replay_max_qpos_error": 0.0,
+    "noise_sequence_verified": true,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0
+  }
+]

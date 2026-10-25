@@ -1,0 +1,23 @@
+{
+  "episode": "data/drawer_expansion/pilot_rgb/pitch12",
+  "frames": 462,
+  "numeric_rgb_state_action_qpos_equal": true,
+  "all_action_windows_verified": true,
+  "cameras": [
+    {
+      "camera": "ceiling",
+      "mean_brightness": 166.10504418252467,
+      "nonzero_fraction": 1.0
+    },
+    {
+      "camera": "wrist_left",
+      "mean_brightness": 94.6371328801407,
+      "nonzero_fraction": 1.0
+    },
+    {
+      "camera": "wrist_right",
+      "mean_brightness": 134.560885491823,
+      "nonzero_fraction": 1.0
+    }
+  ]
+}

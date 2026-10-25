@@ -1,0 +1,13 @@
+{
+  "model_type": "kernel_ridge_state_feedback",
+  "is_pi0": false,
+  "input": "actual right8 positions+right8 velocities",
+  "target": "4 future right8 servo targets, right7 residual and absolute gripper",
+  "images_used": false,
+  "training_manifest": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/data/drawer_recovery/continuous_v003/manifest.json",
+  "training_manifest_sha256": "2d8afe8874bc1f9b5fea1516f5be657681422276c2e9fed63ef3b8f95a1924b8",
+  "training_frames": 891,
+  "ridge": 0.0001,
+  "train_joint_mae_rad": 0.0003169904229525768,
+  "scope": "fixed cabinet control baseline; no runtime teacher/trajectory index/clock"
+}

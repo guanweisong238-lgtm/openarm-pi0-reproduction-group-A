@@ -1,0 +1,23 @@
+[
+  {
+    "path": "results/pull12_fit_013b/recovery_start_states/episode12_after_step40.npz",
+    "episode_id": 12,
+    "after_control_step": 40,
+    "source_trial": "logs/a2_pi0/success_live_20261025-014527-216339/trial_01_episode_12",
+    "train_ready": false
+  },
+  {
+    "path": "results/pull12_fit_013b/recovery_start_states/episode12_after_step60.npz",
+    "episode_id": 12,
+    "after_control_step": 60,
+    "source_trial": "logs/a2_pi0/success_live_20261025-014527-216339/trial_01_episode_12",
+    "train_ready": false
+  },
+  {
+    "path": "results/pull12_fit_013b/recovery_start_states/episode12_after_step120.npz",
+    "episode_id": 12,
+    "after_control_step": 120,
+    "source_trial": "logs/a2_pi0/success_live_20261025-014527-216339/trial_01_episode_12",
+    "train_ready": false
+  }
+]

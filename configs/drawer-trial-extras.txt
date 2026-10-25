@@ -1,0 +1,6 @@
+# OpenArm Control 的包初始化会导入 PRM；额外依赖放入 .cache/drawer-deps。
+# 已有 A2 环境提供 MuJoCo 3.8.1、NumPy 1.26.4、SciPy、NetworkX、OpenCV、LeRobot。
+# 使用 --no-deps 安装，避免修改现有训练环境。
+scikit-learn==1.5.2
+joblib==1.4.2
+threadpoolctl==3.5.0

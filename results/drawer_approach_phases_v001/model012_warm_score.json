@@ -1,0 +1,2045 @@
+{
+  "episode_id": 8,
+  "split": "train",
+  "initialization": "human_warm_start",
+  "seed": 42,
+  "frames": 337,
+  "expected_frames": 337,
+  "action_chunk": 4,
+  "noise_mode": "resample",
+  "longest_bilateral_frames": 0,
+  "first_stable_bilateral_step": null,
+  "minimum_distance_to_reference_contact_mm": 116.69670174438154,
+  "final_distance_to_reference_contact_mm": 280.58983397515976,
+  "final_attitude_to_reference_contact_deg": 64.38084497481333,
+  "replay_max_qpos_error": 0.0,
+  "completed": true,
+  "passed": false,
+  "task_success_verified": false,
+  "scope": "first stable bilateral handle contact only; not secure grasp/pull/roundtrip success",
+  "trial_directory": "logs/a2_pi0/success_live_20261024-234540-696743/trial_01_episode_8",
+  "trajectory": [
+    {
+      "step": 1,
+      "distance_to_reference_contact_mm": 116.95654104113812,
+      "attitude_to_reference_contact_deg": 0.36125575627339535,
+      "bilateral": false
+    },
+    {
+      "step": 2,
+      "distance_to_reference_contact_mm": 116.98028567330063,
+      "attitude_to_reference_contact_deg": 0.6796393387268153,
+      "bilateral": false
+    },
+    {
+      "step": 3,
+      "distance_to_reference_contact_mm": 116.94244388275375,
+      "attitude_to_reference_contact_deg": 1.021482968962068,
+      "bilateral": false
+    },
+    {
+      "step": 4,
+      "distance_to_reference_contact_mm": 116.74098289721911,
+      "attitude_to_reference_contact_deg": 1.1996708537890173,
+      "bilateral": false
+    },
+    {
+      "step": 5,
+      "distance_to_reference_contact_mm": 116.70110018205978,
+      "attitude_to_reference_contact_deg": 1.3448761328129053,
+      "bilateral": false
+    },
+    {
+      "step": 6,
+      "distance_to_reference_contact_mm": 116.75943477581203,
+      "attitude_to_reference_contact_deg": 1.6379390767569262,
+      "bilateral": false
+    },
+    {
+      "step": 7,
+      "distance_to_reference_contact_mm": 116.73158883316047,
+      "attitude_to_reference_contact_deg": 1.7367679622091248,
+      "bilateral": false
+    },
+    {
+      "step": 8,
+      "distance_to_reference_contact_mm": 116.69670174438154,
+      "attitude_to_reference_contact_deg": 1.7551622479162614,
+      "bilateral": false
+    },
+    {
+      "step": 9,
+      "distance_to_reference_contact_mm": 118.36814330658623,
+      "attitude_to_reference_contact_deg": 2.1457990321480684,
+      "bilateral": false
+    },
+    {
+      "step": 10,
+      "distance_to_reference_contact_mm": 121.3582388723332,
+      "attitude_to_reference_contact_deg": 2.1211301463041203,
+      "bilateral": false
+    },
+    {
+      "step": 11,
+      "distance_to_reference_contact_mm": 122.9637989171697,
+      "attitude_to_reference_contact_deg": 1.8664251432308805,
+      "bilateral": false
+    },
+    {
+      "step": 12,
+      "distance_to_reference_contact_mm": 122.84035987756286,
+      "attitude_to_reference_contact_deg": 1.7411934697965175,
+      "bilateral": false
+    },
+    {
+      "step": 13,
+      "distance_to_reference_contact_mm": 122.64804427750757,
+      "attitude_to_reference_contact_deg": 2.149438049589769,
+      "bilateral": false
+    },
+    {
+      "step": 14,
+      "distance_to_reference_contact_mm": 123.34160948896199,
+      "attitude_to_reference_contact_deg": 2.4225248224347355,
+      "bilateral": false
+    },
+    {
+      "step": 15,
+      "distance_to_reference_contact_mm": 123.71847801468056,
+      "attitude_to_reference_contact_deg": 2.534057740280937,
+      "bilateral": false
+    },
+    {
+      "step": 16,
+      "distance_to_reference_contact_mm": 123.3299985788384,
+      "attitude_to_reference_contact_deg": 2.6273920960084953,
+      "bilateral": false
+    },
+    {
+      "step": 17,
+      "distance_to_reference_contact_mm": 123.33912282026328,
+      "attitude_to_reference_contact_deg": 3.089431259073697,
+      "bilateral": false
+    },
+    {
+      "step": 18,
+      "distance_to_reference_contact_mm": 125.22651654989875,
+      "attitude_to_reference_contact_deg": 3.2717101762231517,
+      "bilateral": false
+    },
+    {
+      "step": 19,
+      "distance_to_reference_contact_mm": 126.78599506435923,
+      "attitude_to_reference_contact_deg": 3.3075127359469803,
+      "bilateral": false
+    },
+    {
+      "step": 20,
+      "distance_to_reference_contact_mm": 126.99194326563845,
+      "attitude_to_reference_contact_deg": 3.2915284907208453,
+      "bilateral": false
+    },
+    {
+      "step": 21,
+      "distance_to_reference_contact_mm": 128.73188126911788,
+      "attitude_to_reference_contact_deg": 3.8724960042880747,
+      "bilateral": false
+    },
+    {
+      "step": 22,
+      "distance_to_reference_contact_mm": 132.733085833179,
+      "attitude_to_reference_contact_deg": 4.066315847808485,
+      "bilateral": false
+    },
+    {
+      "step": 23,
+      "distance_to_reference_contact_mm": 135.25546921583606,
+      "attitude_to_reference_contact_deg": 4.064030210817012,
+      "bilateral": false
+    },
+    {
+      "step": 24,
+      "distance_to_reference_contact_mm": 135.26717734749943,
+      "attitude_to_reference_contact_deg": 4.004715531819604,
+      "bilateral": false
+    },
+    {
+      "step": 25,
+      "distance_to_reference_contact_mm": 136.69520220952623,
+      "attitude_to_reference_contact_deg": 4.828097334135316,
+      "bilateral": false
+    },
+    {
+      "step": 26,
+      "distance_to_reference_contact_mm": 140.9029781642444,
+      "attitude_to_reference_contact_deg": 5.365051795851503,
+      "bilateral": false
+    },
+    {
+      "step": 27,
+      "distance_to_reference_contact_mm": 144.30911606250356,
+      "attitude_to_reference_contact_deg": 5.64056797657824,
+      "bilateral": false
+    },
+    {
+      "step": 28,
+      "distance_to_reference_contact_mm": 144.61271115581482,
+      "attitude_to_reference_contact_deg": 5.593326643668349,
+      "bilateral": false
+    },
+    {
+      "step": 29,
+      "distance_to_reference_contact_mm": 144.99467768548965,
+      "attitude_to_reference_contact_deg": 6.116208355495241,
+      "bilateral": false
+    },
+    {
+      "step": 30,
+      "distance_to_reference_contact_mm": 148.0888949813304,
+      "attitude_to_reference_contact_deg": 6.516443803000826,
+      "bilateral": false
+    },
+    {
+      "step": 31,
+      "distance_to_reference_contact_mm": 150.7186631603951,
+      "attitude_to_reference_contact_deg": 6.7689084398444335,
+      "bilateral": false
+    },
+    {
+      "step": 32,
+      "distance_to_reference_contact_mm": 151.19941220098335,
+      "attitude_to_reference_contact_deg": 6.8476447190593515,
+      "bilateral": false
+    },
+    {
+      "step": 33,
+      "distance_to_reference_contact_mm": 151.7683908545451,
+      "attitude_to_reference_contact_deg": 7.909261701322914,
+      "bilateral": false
+    },
+    {
+      "step": 34,
+      "distance_to_reference_contact_mm": 155.23141077499022,
+      "attitude_to_reference_contact_deg": 9.03952638452274,
+      "bilateral": false
+    },
+    {
+      "step": 35,
+      "distance_to_reference_contact_mm": 157.3151472838721,
+      "attitude_to_reference_contact_deg": 9.509833971435228,
+      "bilateral": false
+    },
+    {
+      "step": 36,
+      "distance_to_reference_contact_mm": 157.18628341288309,
+      "attitude_to_reference_contact_deg": 9.48245134277305,
+      "bilateral": false
+    },
+    {
+      "step": 37,
+      "distance_to_reference_contact_mm": 158.7804475499236,
+      "attitude_to_reference_contact_deg": 10.483170145643355,
+      "bilateral": false
+    },
+    {
+      "step": 38,
+      "distance_to_reference_contact_mm": 163.1545392794474,
+      "attitude_to_reference_contact_deg": 11.302960164564535,
+      "bilateral": false
+    },
+    {
+      "step": 39,
+      "distance_to_reference_contact_mm": 165.83852183984814,
+      "attitude_to_reference_contact_deg": 11.671547545766844,
+      "bilateral": false
+    },
+    {
+      "step": 40,
+      "distance_to_reference_contact_mm": 164.8557142655821,
+      "attitude_to_reference_contact_deg": 11.545606086127615,
+      "bilateral": false
+    },
+    {
+      "step": 41,
+      "distance_to_reference_contact_mm": 167.42063333418508,
+      "attitude_to_reference_contact_deg": 13.170585674470605,
+      "bilateral": false
+    },
+    {
+      "step": 42,
+      "distance_to_reference_contact_mm": 176.63727356767453,
+      "attitude_to_reference_contact_deg": 14.949994853023092,
+      "bilateral": false
+    },
+    {
+      "step": 43,
+      "distance_to_reference_contact_mm": 183.77131596691163,
+      "attitude_to_reference_contact_deg": 15.918644044201898,
+      "bilateral": false
+    },
+    {
+      "step": 44,
+      "distance_to_reference_contact_mm": 184.79360130590908,
+      "attitude_to_reference_contact_deg": 15.978698037859948,
+      "bilateral": false
+    },
+    {
+      "step": 45,
+      "distance_to_reference_contact_mm": 188.34491849426232,
+      "attitude_to_reference_contact_deg": 18.091174730540317,
+      "bilateral": false
+    },
+    {
+      "step": 46,
+      "distance_to_reference_contact_mm": 197.2741257512405,
+      "attitude_to_reference_contact_deg": 20.386474548119367,
+      "bilateral": false
+    },
+    {
+      "step": 47,
+      "distance_to_reference_contact_mm": 201.39250025741703,
+      "attitude_to_reference_contact_deg": 21.403400859386124,
+      "bilateral": false
+    },
+    {
+      "step": 48,
+      "distance_to_reference_contact_mm": 200.713028955204,
+      "attitude_to_reference_contact_deg": 21.72798278048013,
+      "bilateral": false
+    },
+    {
+      "step": 49,
+      "distance_to_reference_contact_mm": 200.33916059143934,
+      "attitude_to_reference_contact_deg": 23.21741947611045,
+      "bilateral": false
+    },
+    {
+      "step": 50,
+      "distance_to_reference_contact_mm": 201.68912630376943,
+      "attitude_to_reference_contact_deg": 24.523405431106067,
+      "bilateral": false
+    },
+    {
+      "step": 51,
+      "distance_to_reference_contact_mm": 203.369553846173,
+      "attitude_to_reference_contact_deg": 25.262704633107102,
+      "bilateral": false
+    },
+    {
+      "step": 52,
+      "distance_to_reference_contact_mm": 204.2061077073211,
+      "attitude_to_reference_contact_deg": 25.423330712452987,
+      "bilateral": false
+    },
+    {
+      "step": 53,
+      "distance_to_reference_contact_mm": 207.10539375627323,
+      "attitude_to_reference_contact_deg": 27.535071383651342,
+      "bilateral": false
+    },
+    {
+      "step": 54,
+      "distance_to_reference_contact_mm": 210.9949133223378,
+      "attitude_to_reference_contact_deg": 29.098140624005442,
+      "bilateral": false
+    },
+    {
+      "step": 55,
+      "distance_to_reference_contact_mm": 212.62002290001024,
+      "attitude_to_reference_contact_deg": 29.369799934289,
+      "bilateral": false
+    },
+    {
+      "step": 56,
+      "distance_to_reference_contact_mm": 211.74910587140798,
+      "attitude_to_reference_contact_deg": 28.84371321867751,
+      "bilateral": false
+    },
+    {
+      "step": 57,
+      "distance_to_reference_contact_mm": 212.21262383695432,
+      "attitude_to_reference_contact_deg": 29.859033314732105,
+      "bilateral": false
+    },
+    {
+      "step": 58,
+      "distance_to_reference_contact_mm": 216.38993080859748,
+      "attitude_to_reference_contact_deg": 31.854788864133422,
+      "bilateral": false
+    },
+    {
+      "step": 59,
+      "distance_to_reference_contact_mm": 219.8166665390495,
+      "attitude_to_reference_contact_deg": 33.22675069197819,
+      "bilateral": false
+    },
+    {
+      "step": 60,
+      "distance_to_reference_contact_mm": 220.57178123944135,
+      "attitude_to_reference_contact_deg": 33.783144035439236,
+      "bilateral": false
+    },
+    {
+      "step": 61,
+      "distance_to_reference_contact_mm": 223.62494886194057,
+      "attitude_to_reference_contact_deg": 35.581837718067504,
+      "bilateral": false
+    },
+    {
+      "step": 62,
+      "distance_to_reference_contact_mm": 228.14311728405198,
+      "attitude_to_reference_contact_deg": 37.3100846710572,
+      "bilateral": false
+    },
+    {
+      "step": 63,
+      "distance_to_reference_contact_mm": 231.43075880844165,
+      "attitude_to_reference_contact_deg": 38.43386934366554,
+      "bilateral": false
+    },
+    {
+      "step": 64,
+      "distance_to_reference_contact_mm": 232.06012707369996,
+      "attitude_to_reference_contact_deg": 38.73689312021491,
+      "bilateral": false
+    },
+    {
+      "step": 65,
+      "distance_to_reference_contact_mm": 237.14597783227987,
+      "attitude_to_reference_contact_deg": 41.120724171001825,
+      "bilateral": false
+    },
+    {
+      "step": 66,
+      "distance_to_reference_contact_mm": 244.55092826168422,
+      "attitude_to_reference_contact_deg": 43.61805081434745,
+      "bilateral": false
+    },
+    {
+      "step": 67,
+      "distance_to_reference_contact_mm": 249.16039360587192,
+      "attitude_to_reference_contact_deg": 45.09714471292018,
+      "bilateral": false
+    },
+    {
+      "step": 68,
+      "distance_to_reference_contact_mm": 249.80675197608633,
+      "attitude_to_reference_contact_deg": 45.49298955044139,
+      "bilateral": false
+    },
+    {
+      "step": 69,
+      "distance_to_reference_contact_mm": 257.8303482613371,
+      "attitude_to_reference_contact_deg": 49.12209339418207,
+      "bilateral": false
+    },
+    {
+      "step": 70,
+      "distance_to_reference_contact_mm": 267.1383766720115,
+      "attitude_to_reference_contact_deg": 52.209151228956834,
+      "bilateral": false
+    },
+    {
+      "step": 71,
+      "distance_to_reference_contact_mm": 272.38178141698245,
+      "attitude_to_reference_contact_deg": 53.8273825076293,
+      "bilateral": false
+    },
+    {
+      "step": 72,
+      "distance_to_reference_contact_mm": 273.07464911041717,
+      "attitude_to_reference_contact_deg": 54.19029574520336,
+      "bilateral": false
+    },
+    {
+      "step": 73,
+      "distance_to_reference_contact_mm": 279.6998732958152,
+      "attitude_to_reference_contact_deg": 56.333288407369714,
+      "bilateral": false
+    },
+    {
+      "step": 74,
+      "distance_to_reference_contact_mm": 289.37065959149334,
+      "attitude_to_reference_contact_deg": 58.80321547102171,
+      "bilateral": false
+    },
+    {
+      "step": 75,
+      "distance_to_reference_contact_mm": 295.74198532680714,
+      "attitude_to_reference_contact_deg": 60.454913000104874,
+      "bilateral": false
+    },
+    {
+      "step": 76,
+      "distance_to_reference_contact_mm": 295.9685420454696,
+      "attitude_to_reference_contact_deg": 60.7321007806755,
+      "bilateral": false
+    },
+    {
+      "step": 77,
+      "distance_to_reference_contact_mm": 296.8396001431714,
+      "attitude_to_reference_contact_deg": 60.73787430935715,
+      "bilateral": false
+    },
+    {
+      "step": 78,
+      "distance_to_reference_contact_mm": 302.4955439126157,
+      "attitude_to_reference_contact_deg": 61.772943795017795,
+      "bilateral": false
+    },
+    {
+      "step": 79,
+      "distance_to_reference_contact_mm": 306.76735947295407,
+      "attitude_to_reference_contact_deg": 62.67535488691815,
+      "bilateral": false
+    },
+    {
+      "step": 80,
+      "distance_to_reference_contact_mm": 306.7603707402011,
+      "attitude_to_reference_contact_deg": 62.71516956202893,
+      "bilateral": false
+    },
+    {
+      "step": 81,
+      "distance_to_reference_contact_mm": 310.31384583046145,
+      "attitude_to_reference_contact_deg": 63.13966722313474,
+      "bilateral": false
+    },
+    {
+      "step": 82,
+      "distance_to_reference_contact_mm": 319.6495455999926,
+      "attitude_to_reference_contact_deg": 64.91127448629464,
+      "bilateral": false
+    },
+    {
+      "step": 83,
+      "distance_to_reference_contact_mm": 325.0091392536442,
+      "attitude_to_reference_contact_deg": 66.05185398833942,
+      "bilateral": false
+    },
+    {
+      "step": 84,
+      "distance_to_reference_contact_mm": 323.9175873739875,
+      "attitude_to_reference_contact_deg": 65.89489066954336,
+      "bilateral": false
+    },
+    {
+      "step": 85,
+      "distance_to_reference_contact_mm": 331.81135296319354,
+      "attitude_to_reference_contact_deg": 66.85304262354212,
+      "bilateral": false
+    },
+    {
+      "step": 86,
+      "distance_to_reference_contact_mm": 351.07128324410417,
+      "attitude_to_reference_contact_deg": 70.55068485340712,
+      "bilateral": false
+    },
+    {
+      "step": 87,
+      "distance_to_reference_contact_mm": 363.8423303232164,
+      "attitude_to_reference_contact_deg": 73.29436714446427,
+      "bilateral": false
+    },
+    {
+      "step": 88,
+      "distance_to_reference_contact_mm": 361.6236513420573,
+      "attitude_to_reference_contact_deg": 72.95612343342921,
+      "bilateral": false
+    },
+    {
+      "step": 89,
+      "distance_to_reference_contact_mm": 360.48771053606794,
+      "attitude_to_reference_contact_deg": 72.34136603578325,
+      "bilateral": false
+    },
+    {
+      "step": 90,
+      "distance_to_reference_contact_mm": 370.189816758708,
+      "attitude_to_reference_contact_deg": 74.10848231732872,
+      "bilateral": false
+    },
+    {
+      "step": 91,
+      "distance_to_reference_contact_mm": 379.09156983724887,
+      "attitude_to_reference_contact_deg": 75.97138866879692,
+      "bilateral": false
+    },
+    {
+      "step": 92,
+      "distance_to_reference_contact_mm": 380.5648020160058,
+      "attitude_to_reference_contact_deg": 76.34394186011781,
+      "bilateral": false
+    },
+    {
+      "step": 93,
+      "distance_to_reference_contact_mm": 389.2947178551337,
+      "attitude_to_reference_contact_deg": 77.51246784992014,
+      "bilateral": false
+    },
+    {
+      "step": 94,
+      "distance_to_reference_contact_mm": 408.6013671971765,
+      "attitude_to_reference_contact_deg": 81.34508415922811,
+      "bilateral": false
+    },
+    {
+      "step": 95,
+      "distance_to_reference_contact_mm": 418.7414752049012,
+      "attitude_to_reference_contact_deg": 83.64982473851028,
+      "bilateral": false
+    },
+    {
+      "step": 96,
+      "distance_to_reference_contact_mm": 414.40157061422593,
+      "attitude_to_reference_contact_deg": 82.88793007461473,
+      "bilateral": false
+    },
+    {
+      "step": 97,
+      "distance_to_reference_contact_mm": 415.26149585346366,
+      "attitude_to_reference_contact_deg": 82.45958595491543,
+      "bilateral": false
+    },
+    {
+      "step": 98,
+      "distance_to_reference_contact_mm": 431.3538459742742,
+      "attitude_to_reference_contact_deg": 85.58032742289728,
+      "bilateral": false
+    },
+    {
+      "step": 99,
+      "distance_to_reference_contact_mm": 442.76672995992914,
+      "attitude_to_reference_contact_deg": 88.28008119861107,
+      "bilateral": false
+    },
+    {
+      "step": 100,
+      "distance_to_reference_contact_mm": 440.15489130321095,
+      "attitude_to_reference_contact_deg": 87.78665870881227,
+      "bilateral": false
+    },
+    {
+      "step": 101,
+      "distance_to_reference_contact_mm": 436.41523446012116,
+      "attitude_to_reference_contact_deg": 86.96666628053949,
+      "bilateral": false
+    },
+    {
+      "step": 102,
+      "distance_to_reference_contact_mm": 435.1353471789352,
+      "attitude_to_reference_contact_deg": 86.62762291577732,
+      "bilateral": false
+    },
+    {
+      "step": 103,
+      "distance_to_reference_contact_mm": 435.85014936548964,
+      "attitude_to_reference_contact_deg": 86.73642387325633,
+      "bilateral": false
+    },
+    {
+      "step": 104,
+      "distance_to_reference_contact_mm": 437.076988708146,
+      "attitude_to_reference_contact_deg": 86.98375919921541,
+      "bilateral": false
+    },
+    {
+      "step": 105,
+      "distance_to_reference_contact_mm": 437.76663534201975,
+      "attitude_to_reference_contact_deg": 87.14033131741527,
+      "bilateral": false
+    },
+    {
+      "step": 106,
+      "distance_to_reference_contact_mm": 437.8069264472111,
+      "attitude_to_reference_contact_deg": 87.15997588887515,
+      "bilateral": false
+    },
+    {
+      "step": 107,
+      "distance_to_reference_contact_mm": 437.7436194365357,
+      "attitude_to_reference_contact_deg": 87.1490520355972,
+      "bilateral": false
+    },
+    {
+      "step": 108,
+      "distance_to_reference_contact_mm": 437.50062643290204,
+      "attitude_to_reference_contact_deg": 87.0848081310856,
+      "bilateral": false
+    },
+    {
+      "step": 109,
+      "distance_to_reference_contact_mm": 438.1900606119843,
+      "attitude_to_reference_contact_deg": 87.17772574845765,
+      "bilateral": false
+    },
+    {
+      "step": 110,
+      "distance_to_reference_contact_mm": 438.75237736852404,
+      "attitude_to_reference_contact_deg": 87.30291087844986,
+      "bilateral": false
+    },
+    {
+      "step": 111,
+      "distance_to_reference_contact_mm": 438.783915030237,
+      "attitude_to_reference_contact_deg": 87.32283095910064,
+      "bilateral": false
+    },
+    {
+      "step": 112,
+      "distance_to_reference_contact_mm": 438.6035110906223,
+      "attitude_to_reference_contact_deg": 87.28634170651637,
+      "bilateral": false
+    },
+    {
+      "step": 113,
+      "distance_to_reference_contact_mm": 437.32919281388916,
+      "attitude_to_reference_contact_deg": 87.06564736488868,
+      "bilateral": false
+    },
+    {
+      "step": 114,
+      "distance_to_reference_contact_mm": 436.20184785749615,
+      "attitude_to_reference_contact_deg": 86.80428470349344,
+      "bilateral": false
+    },
+    {
+      "step": 115,
+      "distance_to_reference_contact_mm": 436.04096891818887,
+      "attitude_to_reference_contact_deg": 86.7592742794965,
+      "bilateral": false
+    },
+    {
+      "step": 116,
+      "distance_to_reference_contact_mm": 436.07300798701317,
+      "attitude_to_reference_contact_deg": 86.77192072496115,
+      "bilateral": false
+    },
+    {
+      "step": 117,
+      "distance_to_reference_contact_mm": 436.15903567558354,
+      "attitude_to_reference_contact_deg": 86.79551942545417,
+      "bilateral": false
+    },
+    {
+      "step": 118,
+      "distance_to_reference_contact_mm": 436.0906054848739,
+      "attitude_to_reference_contact_deg": 86.7692967004501,
+      "bilateral": false
+    },
+    {
+      "step": 119,
+      "distance_to_reference_contact_mm": 436.0860318563124,
+      "attitude_to_reference_contact_deg": 86.75770655391453,
+      "bilateral": false
+    },
+    {
+      "step": 120,
+      "distance_to_reference_contact_mm": 436.27335844677265,
+      "attitude_to_reference_contact_deg": 86.79642884572904,
+      "bilateral": false
+    },
+    {
+      "step": 121,
+      "distance_to_reference_contact_mm": 436.303670843246,
+      "attitude_to_reference_contact_deg": 86.81954617497777,
+      "bilateral": false
+    },
+    {
+      "step": 122,
+      "distance_to_reference_contact_mm": 436.25251329560786,
+      "attitude_to_reference_contact_deg": 86.82390945217134,
+      "bilateral": false
+    },
+    {
+      "step": 123,
+      "distance_to_reference_contact_mm": 436.2909674410326,
+      "attitude_to_reference_contact_deg": 86.83962878495747,
+      "bilateral": false
+    },
+    {
+      "step": 124,
+      "distance_to_reference_contact_mm": 436.28723034707195,
+      "attitude_to_reference_contact_deg": 86.82836593675373,
+      "bilateral": false
+    },
+    {
+      "step": 125,
+      "distance_to_reference_contact_mm": 436.38186203477665,
+      "attitude_to_reference_contact_deg": 86.83484973518428,
+      "bilateral": false
+    },
+    {
+      "step": 126,
+      "distance_to_reference_contact_mm": 436.35713860563163,
+      "attitude_to_reference_contact_deg": 86.81985150713574,
+      "bilateral": false
+    },
+    {
+      "step": 127,
+      "distance_to_reference_contact_mm": 436.30729452642447,
+      "attitude_to_reference_contact_deg": 86.80156084685298,
+      "bilateral": false
+    },
+    {
+      "step": 128,
+      "distance_to_reference_contact_mm": 436.3565428089898,
+      "attitude_to_reference_contact_deg": 86.8158076649982,
+      "bilateral": false
+    },
+    {
+      "step": 129,
+      "distance_to_reference_contact_mm": 436.4724083025764,
+      "attitude_to_reference_contact_deg": 86.85379415088124,
+      "bilateral": false
+    },
+    {
+      "step": 130,
+      "distance_to_reference_contact_mm": 436.4041062052092,
+      "attitude_to_reference_contact_deg": 86.8288655183559,
+      "bilateral": false
+    },
+    {
+      "step": 131,
+      "distance_to_reference_contact_mm": 436.34792339722867,
+      "attitude_to_reference_contact_deg": 86.80863808336677,
+      "bilateral": false
+    },
+    {
+      "step": 132,
+      "distance_to_reference_contact_mm": 436.3590841237858,
+      "attitude_to_reference_contact_deg": 86.81334370383155,
+      "bilateral": false
+    },
+    {
+      "step": 133,
+      "distance_to_reference_contact_mm": 437.2633478167044,
+      "attitude_to_reference_contact_deg": 86.98268733463587,
+      "bilateral": false
+    },
+    {
+      "step": 134,
+      "distance_to_reference_contact_mm": 438.0285377926405,
+      "attitude_to_reference_contact_deg": 87.16576386358942,
+      "bilateral": false
+    },
+    {
+      "step": 135,
+      "distance_to_reference_contact_mm": 438.22648361940423,
+      "attitude_to_reference_contact_deg": 87.22059305941629,
+      "bilateral": false
+    },
+    {
+      "step": 136,
+      "distance_to_reference_contact_mm": 438.19331169790297,
+      "attitude_to_reference_contact_deg": 87.20339812988169,
+      "bilateral": false
+    },
+    {
+      "step": 137,
+      "distance_to_reference_contact_mm": 439.08711018272356,
+      "attitude_to_reference_contact_deg": 87.3710119413155,
+      "bilateral": false
+    },
+    {
+      "step": 138,
+      "distance_to_reference_contact_mm": 439.9885729023542,
+      "attitude_to_reference_contact_deg": 87.59797086040804,
+      "bilateral": false
+    },
+    {
+      "step": 139,
+      "distance_to_reference_contact_mm": 440.20681646156413,
+      "attitude_to_reference_contact_deg": 87.66293325424155,
+      "bilateral": false
+    },
+    {
+      "step": 140,
+      "distance_to_reference_contact_mm": 440.27933304004574,
+      "attitude_to_reference_contact_deg": 87.6902103114495,
+      "bilateral": false
+    },
+    {
+      "step": 141,
+      "distance_to_reference_contact_mm": 438.576705652055,
+      "attitude_to_reference_contact_deg": 87.38580639785562,
+      "bilateral": false
+    },
+    {
+      "step": 142,
+      "distance_to_reference_contact_mm": 437.17666416482365,
+      "attitude_to_reference_contact_deg": 87.03935144311748,
+      "bilateral": false
+    },
+    {
+      "step": 143,
+      "distance_to_reference_contact_mm": 437.85450218994174,
+      "attitude_to_reference_contact_deg": 87.11334072138918,
+      "bilateral": false
+    },
+    {
+      "step": 144,
+      "distance_to_reference_contact_mm": 439.43568508946055,
+      "attitude_to_reference_contact_deg": 87.4144133557535,
+      "bilateral": false
+    },
+    {
+      "step": 145,
+      "distance_to_reference_contact_mm": 440.34740014587067,
+      "attitude_to_reference_contact_deg": 87.59793530004288,
+      "bilateral": false
+    },
+    {
+      "step": 146,
+      "distance_to_reference_contact_mm": 440.50230908479176,
+      "attitude_to_reference_contact_deg": 87.64444049435625,
+      "bilateral": false
+    },
+    {
+      "step": 147,
+      "distance_to_reference_contact_mm": 440.49589901144947,
+      "attitude_to_reference_contact_deg": 87.64755997307289,
+      "bilateral": false
+    },
+    {
+      "step": 148,
+      "distance_to_reference_contact_mm": 440.4633352990059,
+      "attitude_to_reference_contact_deg": 87.63928977138401,
+      "bilateral": false
+    },
+    {
+      "step": 149,
+      "distance_to_reference_contact_mm": 435.6824283018991,
+      "attitude_to_reference_contact_deg": 86.79835290646062,
+      "bilateral": false
+    },
+    {
+      "step": 150,
+      "distance_to_reference_contact_mm": 431.0399456990638,
+      "attitude_to_reference_contact_deg": 85.8101658361262,
+      "bilateral": false
+    },
+    {
+      "step": 151,
+      "distance_to_reference_contact_mm": 430.7932175297569,
+      "attitude_to_reference_contact_deg": 85.7260111063898,
+      "bilateral": false
+    },
+    {
+      "step": 152,
+      "distance_to_reference_contact_mm": 431.82989953217754,
+      "attitude_to_reference_contact_deg": 85.94487255651642,
+      "bilateral": false
+    },
+    {
+      "step": 153,
+      "distance_to_reference_contact_mm": 432.19148210361743,
+      "attitude_to_reference_contact_deg": 86.04854043683704,
+      "bilateral": false
+    },
+    {
+      "step": 154,
+      "distance_to_reference_contact_mm": 431.953071728867,
+      "attitude_to_reference_contact_deg": 85.99000103958595,
+      "bilateral": false
+    },
+    {
+      "step": 155,
+      "distance_to_reference_contact_mm": 432.0519569899419,
+      "attitude_to_reference_contact_deg": 85.98789776710225,
+      "bilateral": false
+    },
+    {
+      "step": 156,
+      "distance_to_reference_contact_mm": 432.86387467539544,
+      "attitude_to_reference_contact_deg": 86.14643719372587,
+      "bilateral": false
+    },
+    {
+      "step": 157,
+      "distance_to_reference_contact_mm": 434.68171313087504,
+      "attitude_to_reference_contact_deg": 86.49974886968347,
+      "bilateral": false
+    },
+    {
+      "step": 158,
+      "distance_to_reference_contact_mm": 435.5170296252269,
+      "attitude_to_reference_contact_deg": 86.67737056326067,
+      "bilateral": false
+    },
+    {
+      "step": 159,
+      "distance_to_reference_contact_mm": 435.29679463935634,
+      "attitude_to_reference_contact_deg": 86.62629938608296,
+      "bilateral": false
+    },
+    {
+      "step": 160,
+      "distance_to_reference_contact_mm": 434.844611945027,
+      "attitude_to_reference_contact_deg": 86.5353614453762,
+      "bilateral": false
+    },
+    {
+      "step": 161,
+      "distance_to_reference_contact_mm": 435.7095172897244,
+      "attitude_to_reference_contact_deg": 86.66238605190912,
+      "bilateral": false
+    },
+    {
+      "step": 162,
+      "distance_to_reference_contact_mm": 436.7130595461924,
+      "attitude_to_reference_contact_deg": 86.89143589658006,
+      "bilateral": false
+    },
+    {
+      "step": 163,
+      "distance_to_reference_contact_mm": 436.9204339069705,
+      "attitude_to_reference_contact_deg": 86.95439090310809,
+      "bilateral": false
+    },
+    {
+      "step": 164,
+      "distance_to_reference_contact_mm": 436.8870268839209,
+      "attitude_to_reference_contact_deg": 86.94849875551631,
+      "bilateral": false
+    },
+    {
+      "step": 165,
+      "distance_to_reference_contact_mm": 439.0113519745412,
+      "attitude_to_reference_contact_deg": 87.28464421819777,
+      "bilateral": false
+    },
+    {
+      "step": 166,
+      "distance_to_reference_contact_mm": 440.7578895970719,
+      "attitude_to_reference_contact_deg": 87.65768811715266,
+      "bilateral": false
+    },
+    {
+      "step": 167,
+      "distance_to_reference_contact_mm": 440.69308743176765,
+      "attitude_to_reference_contact_deg": 87.64870644412534,
+      "bilateral": false
+    },
+    {
+      "step": 168,
+      "distance_to_reference_contact_mm": 440.29159366580654,
+      "attitude_to_reference_contact_deg": 87.57065889662329,
+      "bilateral": false
+    },
+    {
+      "step": 169,
+      "distance_to_reference_contact_mm": 440.90281645169966,
+      "attitude_to_reference_contact_deg": 87.67750886908249,
+      "bilateral": false
+    },
+    {
+      "step": 170,
+      "distance_to_reference_contact_mm": 441.4183945763373,
+      "attitude_to_reference_contact_deg": 87.79643853642965,
+      "bilateral": false
+    },
+    {
+      "step": 171,
+      "distance_to_reference_contact_mm": 441.5069326198142,
+      "attitude_to_reference_contact_deg": 87.81915382702093,
+      "bilateral": false
+    },
+    {
+      "step": 172,
+      "distance_to_reference_contact_mm": 441.40839729007587,
+      "attitude_to_reference_contact_deg": 87.78611329550984,
+      "bilateral": false
+    },
+    {
+      "step": 173,
+      "distance_to_reference_contact_mm": 441.26063502830766,
+      "attitude_to_reference_contact_deg": 87.75877359236779,
+      "bilateral": false
+    },
+    {
+      "step": 174,
+      "distance_to_reference_contact_mm": 441.22014628456304,
+      "attitude_to_reference_contact_deg": 87.76446461728511,
+      "bilateral": false
+    },
+    {
+      "step": 175,
+      "distance_to_reference_contact_mm": 441.2362839770435,
+      "attitude_to_reference_contact_deg": 87.77826318200687,
+      "bilateral": false
+    },
+    {
+      "step": 176,
+      "distance_to_reference_contact_mm": 441.1705720759012,
+      "attitude_to_reference_contact_deg": 87.76400767481009,
+      "bilateral": false
+    },
+    {
+      "step": 177,
+      "distance_to_reference_contact_mm": 436.9678957779521,
+      "attitude_to_reference_contact_deg": 87.02866511653473,
+      "bilateral": false
+    },
+    {
+      "step": 178,
+      "distance_to_reference_contact_mm": 433.51102051438374,
+      "attitude_to_reference_contact_deg": 86.2576614457105,
+      "bilateral": false
+    },
+    {
+      "step": 179,
+      "distance_to_reference_contact_mm": 433.4774726123938,
+      "attitude_to_reference_contact_deg": 86.21732300729865,
+      "bilateral": false
+    },
+    {
+      "step": 180,
+      "distance_to_reference_contact_mm": 434.2416606742549,
+      "attitude_to_reference_contact_deg": 86.38328197750333,
+      "bilateral": false
+    },
+    {
+      "step": 181,
+      "distance_to_reference_contact_mm": 433.9936467797613,
+      "attitude_to_reference_contact_deg": 86.40529250313641,
+      "bilateral": false
+    },
+    {
+      "step": 182,
+      "distance_to_reference_contact_mm": 433.0174021822824,
+      "attitude_to_reference_contact_deg": 86.19610781475083,
+      "bilateral": false
+    },
+    {
+      "step": 183,
+      "distance_to_reference_contact_mm": 432.4589817901111,
+      "attitude_to_reference_contact_deg": 86.06659931739111,
+      "bilateral": false
+    },
+    {
+      "step": 184,
+      "distance_to_reference_contact_mm": 432.1339425930409,
+      "attitude_to_reference_contact_deg": 86.00777177387486,
+      "bilateral": false
+    },
+    {
+      "step": 185,
+      "distance_to_reference_contact_mm": 431.4750313546894,
+      "attitude_to_reference_contact_deg": 85.91071799969644,
+      "bilateral": false
+    },
+    {
+      "step": 186,
+      "distance_to_reference_contact_mm": 431.130869508704,
+      "attitude_to_reference_contact_deg": 85.84442399934059,
+      "bilateral": false
+    },
+    {
+      "step": 187,
+      "distance_to_reference_contact_mm": 431.3998921484803,
+      "attitude_to_reference_contact_deg": 85.90316510049436,
+      "bilateral": false
+    },
+    {
+      "step": 188,
+      "distance_to_reference_contact_mm": 431.7298097292811,
+      "attitude_to_reference_contact_deg": 85.96565238340108,
+      "bilateral": false
+    },
+    {
+      "step": 189,
+      "distance_to_reference_contact_mm": 429.5798486368954,
+      "attitude_to_reference_contact_deg": 85.59083115144864,
+      "bilateral": false
+    },
+    {
+      "step": 190,
+      "distance_to_reference_contact_mm": 427.62403583285425,
+      "attitude_to_reference_contact_deg": 85.18754010932,
+      "bilateral": false
+    },
+    {
+      "step": 191,
+      "distance_to_reference_contact_mm": 427.42928904117866,
+      "attitude_to_reference_contact_deg": 85.14706770051906,
+      "bilateral": false
+    },
+    {
+      "step": 192,
+      "distance_to_reference_contact_mm": 427.6063100970199,
+      "attitude_to_reference_contact_deg": 85.19602335068461,
+      "bilateral": false
+    },
+    {
+      "step": 193,
+      "distance_to_reference_contact_mm": 427.44626892790103,
+      "attitude_to_reference_contact_deg": 85.1788126231428,
+      "bilateral": false
+    },
+    {
+      "step": 194,
+      "distance_to_reference_contact_mm": 427.1611467878185,
+      "attitude_to_reference_contact_deg": 85.1099430236201,
+      "bilateral": false
+    },
+    {
+      "step": 195,
+      "distance_to_reference_contact_mm": 427.0652843994314,
+      "attitude_to_reference_contact_deg": 85.0806294552802,
+      "bilateral": false
+    },
+    {
+      "step": 196,
+      "distance_to_reference_contact_mm": 427.06869961747236,
+      "attitude_to_reference_contact_deg": 85.08336507057267,
+      "bilateral": false
+    },
+    {
+      "step": 197,
+      "distance_to_reference_contact_mm": 426.8153576780322,
+      "attitude_to_reference_contact_deg": 85.09462411827984,
+      "bilateral": false
+    },
+    {
+      "step": 198,
+      "distance_to_reference_contact_mm": 426.5391819486764,
+      "attitude_to_reference_contact_deg": 85.05772561345395,
+      "bilateral": false
+    },
+    {
+      "step": 199,
+      "distance_to_reference_contact_mm": 426.49372873818345,
+      "attitude_to_reference_contact_deg": 85.06281095352571,
+      "bilateral": false
+    },
+    {
+      "step": 200,
+      "distance_to_reference_contact_mm": 427.05390022903674,
+      "attitude_to_reference_contact_deg": 85.03055434588767,
+      "bilateral": false
+    },
+    {
+      "step": 201,
+      "distance_to_reference_contact_mm": 426.05864202527374,
+      "attitude_to_reference_contact_deg": 84.76586663054174,
+      "bilateral": false
+    },
+    {
+      "step": 202,
+      "distance_to_reference_contact_mm": 425.02646767583946,
+      "attitude_to_reference_contact_deg": 84.74426921274554,
+      "bilateral": false
+    },
+    {
+      "step": 203,
+      "distance_to_reference_contact_mm": 425.02301670509587,
+      "attitude_to_reference_contact_deg": 84.77760208366443,
+      "bilateral": false
+    },
+    {
+      "step": 204,
+      "distance_to_reference_contact_mm": 425.0695441971514,
+      "attitude_to_reference_contact_deg": 84.76736417388845,
+      "bilateral": false
+    },
+    {
+      "step": 205,
+      "distance_to_reference_contact_mm": 424.5588978588736,
+      "attitude_to_reference_contact_deg": 84.67496881294484,
+      "bilateral": false
+    },
+    {
+      "step": 206,
+      "distance_to_reference_contact_mm": 424.322700678805,
+      "attitude_to_reference_contact_deg": 84.6261264886912,
+      "bilateral": false
+    },
+    {
+      "step": 207,
+      "distance_to_reference_contact_mm": 424.5993396917254,
+      "attitude_to_reference_contact_deg": 84.67981033145527,
+      "bilateral": false
+    },
+    {
+      "step": 208,
+      "distance_to_reference_contact_mm": 425.00427551305467,
+      "attitude_to_reference_contact_deg": 84.74818077712567,
+      "bilateral": false
+    },
+    {
+      "step": 209,
+      "distance_to_reference_contact_mm": 424.8495378192108,
+      "attitude_to_reference_contact_deg": 84.71543648045919,
+      "bilateral": false
+    },
+    {
+      "step": 210,
+      "distance_to_reference_contact_mm": 424.262327917075,
+      "attitude_to_reference_contact_deg": 84.5870834659824,
+      "bilateral": false
+    },
+    {
+      "step": 211,
+      "distance_to_reference_contact_mm": 423.7988496787936,
+      "attitude_to_reference_contact_deg": 84.48870908240055,
+      "bilateral": false
+    },
+    {
+      "step": 212,
+      "distance_to_reference_contact_mm": 423.4376799525371,
+      "attitude_to_reference_contact_deg": 84.43114288457025,
+      "bilateral": false
+    },
+    {
+      "step": 213,
+      "distance_to_reference_contact_mm": 423.392738416598,
+      "attitude_to_reference_contact_deg": 84.43306326008663,
+      "bilateral": false
+    },
+    {
+      "step": 214,
+      "distance_to_reference_contact_mm": 423.42758731459384,
+      "attitude_to_reference_contact_deg": 84.44801218144217,
+      "bilateral": false
+    },
+    {
+      "step": 215,
+      "distance_to_reference_contact_mm": 423.41553155825187,
+      "attitude_to_reference_contact_deg": 84.44209742032344,
+      "bilateral": false
+    },
+    {
+      "step": 216,
+      "distance_to_reference_contact_mm": 423.39419149063013,
+      "attitude_to_reference_contact_deg": 84.43264283218849,
+      "bilateral": false
+    },
+    {
+      "step": 217,
+      "distance_to_reference_contact_mm": 422.0219191506344,
+      "attitude_to_reference_contact_deg": 84.20726803188174,
+      "bilateral": false
+    },
+    {
+      "step": 218,
+      "distance_to_reference_contact_mm": 421.0365762541147,
+      "attitude_to_reference_contact_deg": 84.00637954562055,
+      "bilateral": false
+    },
+    {
+      "step": 219,
+      "distance_to_reference_contact_mm": 421.1778002965791,
+      "attitude_to_reference_contact_deg": 84.02985446378864,
+      "bilateral": false
+    },
+    {
+      "step": 220,
+      "distance_to_reference_contact_mm": 421.65028174679617,
+      "attitude_to_reference_contact_deg": 84.11588021393514,
+      "bilateral": false
+    },
+    {
+      "step": 221,
+      "distance_to_reference_contact_mm": 419.89765780810245,
+      "attitude_to_reference_contact_deg": 83.85457202971074,
+      "bilateral": false
+    },
+    {
+      "step": 222,
+      "distance_to_reference_contact_mm": 417.89983758019105,
+      "attitude_to_reference_contact_deg": 83.4269610966713,
+      "bilateral": false
+    },
+    {
+      "step": 223,
+      "distance_to_reference_contact_mm": 417.78703370857994,
+      "attitude_to_reference_contact_deg": 83.37919367837023,
+      "bilateral": false
+    },
+    {
+      "step": 224,
+      "distance_to_reference_contact_mm": 418.33386263767756,
+      "attitude_to_reference_contact_deg": 83.48537425693155,
+      "bilateral": false
+    },
+    {
+      "step": 225,
+      "distance_to_reference_contact_mm": 417.34146100022974,
+      "attitude_to_reference_contact_deg": 83.37290405506785,
+      "bilateral": false
+    },
+    {
+      "step": 226,
+      "distance_to_reference_contact_mm": 416.15042600126185,
+      "attitude_to_reference_contact_deg": 83.13603482368639,
+      "bilateral": false
+    },
+    {
+      "step": 227,
+      "distance_to_reference_contact_mm": 415.9825828783375,
+      "attitude_to_reference_contact_deg": 83.10315216146948,
+      "bilateral": false
+    },
+    {
+      "step": 228,
+      "distance_to_reference_contact_mm": 415.9552471011144,
+      "attitude_to_reference_contact_deg": 83.09569731929041,
+      "bilateral": false
+    },
+    {
+      "step": 229,
+      "distance_to_reference_contact_mm": 414.4066088784781,
+      "attitude_to_reference_contact_deg": 82.9002151379815,
+      "bilateral": false
+    },
+    {
+      "step": 230,
+      "distance_to_reference_contact_mm": 413.1655889224984,
+      "attitude_to_reference_contact_deg": 82.66958769673579,
+      "bilateral": false
+    },
+    {
+      "step": 231,
+      "distance_to_reference_contact_mm": 413.0076498099013,
+      "attitude_to_reference_contact_deg": 82.65408834501555,
+      "bilateral": false
+    },
+    {
+      "step": 232,
+      "distance_to_reference_contact_mm": 413.12306004344293,
+      "attitude_to_reference_contact_deg": 82.7070909977152,
+      "bilateral": false
+    },
+    {
+      "step": 233,
+      "distance_to_reference_contact_mm": 413.6338386106123,
+      "attitude_to_reference_contact_deg": 82.77640275607648,
+      "bilateral": false
+    },
+    {
+      "step": 234,
+      "distance_to_reference_contact_mm": 413.9445505668845,
+      "attitude_to_reference_contact_deg": 82.82671399663629,
+      "bilateral": false
+    },
+    {
+      "step": 235,
+      "distance_to_reference_contact_mm": 413.8385620115418,
+      "attitude_to_reference_contact_deg": 82.80663767340403,
+      "bilateral": false
+    },
+    {
+      "step": 236,
+      "distance_to_reference_contact_mm": 413.42163818761435,
+      "attitude_to_reference_contact_deg": 82.72487999696119,
+      "bilateral": false
+    },
+    {
+      "step": 237,
+      "distance_to_reference_contact_mm": 411.8536620970798,
+      "attitude_to_reference_contact_deg": 82.45064831356034,
+      "bilateral": false
+    },
+    {
+      "step": 238,
+      "distance_to_reference_contact_mm": 410.85808265456023,
+      "attitude_to_reference_contact_deg": 82.21447413106523,
+      "bilateral": false
+    },
+    {
+      "step": 239,
+      "distance_to_reference_contact_mm": 410.77714244274125,
+      "attitude_to_reference_contact_deg": 82.17354557802554,
+      "bilateral": false
+    },
+    {
+      "step": 240,
+      "distance_to_reference_contact_mm": 410.88275673097604,
+      "attitude_to_reference_contact_deg": 82.18929343665842,
+      "bilateral": false
+    },
+    {
+      "step": 241,
+      "distance_to_reference_contact_mm": 409.6634342740131,
+      "attitude_to_reference_contact_deg": 82.02892944645058,
+      "bilateral": false
+    },
+    {
+      "step": 242,
+      "distance_to_reference_contact_mm": 408.5961666562484,
+      "attitude_to_reference_contact_deg": 81.79629222886234,
+      "bilateral": false
+    },
+    {
+      "step": 243,
+      "distance_to_reference_contact_mm": 408.45234778948765,
+      "attitude_to_reference_contact_deg": 81.74742089841631,
+      "bilateral": false
+    },
+    {
+      "step": 244,
+      "distance_to_reference_contact_mm": 408.61522109289103,
+      "attitude_to_reference_contact_deg": 81.78054377043684,
+      "bilateral": false
+    },
+    {
+      "step": 245,
+      "distance_to_reference_contact_mm": 403.9603536799941,
+      "attitude_to_reference_contact_deg": 81.11599594687974,
+      "bilateral": false
+    },
+    {
+      "step": 246,
+      "distance_to_reference_contact_mm": 399.46956456655334,
+      "attitude_to_reference_contact_deg": 80.17455429906869,
+      "bilateral": false
+    },
+    {
+      "step": 247,
+      "distance_to_reference_contact_mm": 399.7970143403814,
+      "attitude_to_reference_contact_deg": 80.16802528677201,
+      "bilateral": false
+    },
+    {
+      "step": 248,
+      "distance_to_reference_contact_mm": 401.2443609817057,
+      "attitude_to_reference_contact_deg": 80.45209521482624,
+      "bilateral": false
+    },
+    {
+      "step": 249,
+      "distance_to_reference_contact_mm": 401.64016849800606,
+      "attitude_to_reference_contact_deg": 80.60229506524105,
+      "bilateral": false
+    },
+    {
+      "step": 250,
+      "distance_to_reference_contact_mm": 401.1762274502409,
+      "attitude_to_reference_contact_deg": 80.53797551500294,
+      "bilateral": false
+    },
+    {
+      "step": 251,
+      "distance_to_reference_contact_mm": 401.0169793997984,
+      "attitude_to_reference_contact_deg": 80.50982842270159,
+      "bilateral": false
+    },
+    {
+      "step": 252,
+      "distance_to_reference_contact_mm": 400.95276947618845,
+      "attitude_to_reference_contact_deg": 80.48870833220542,
+      "bilateral": false
+    },
+    {
+      "step": 253,
+      "distance_to_reference_contact_mm": 399.9578213545953,
+      "attitude_to_reference_contact_deg": 80.32495414260181,
+      "bilateral": false
+    },
+    {
+      "step": 254,
+      "distance_to_reference_contact_mm": 399.3367883026766,
+      "attitude_to_reference_contact_deg": 80.20432074267296,
+      "bilateral": false
+    },
+    {
+      "step": 255,
+      "distance_to_reference_contact_mm": 399.373635701116,
+      "attitude_to_reference_contact_deg": 80.21752397156575,
+      "bilateral": false
+    },
+    {
+      "step": 256,
+      "distance_to_reference_contact_mm": 399.45264471271986,
+      "attitude_to_reference_contact_deg": 80.23554721051208,
+      "bilateral": false
+    },
+    {
+      "step": 257,
+      "distance_to_reference_contact_mm": 397.8797042067441,
+      "attitude_to_reference_contact_deg": 80.05367977983867,
+      "bilateral": false
+    },
+    {
+      "step": 258,
+      "distance_to_reference_contact_mm": 396.4298294889569,
+      "attitude_to_reference_contact_deg": 79.79470137220055,
+      "bilateral": false
+    },
+    {
+      "step": 259,
+      "distance_to_reference_contact_mm": 396.4108235624317,
+      "attitude_to_reference_contact_deg": 79.79965412944452,
+      "bilateral": false
+    },
+    {
+      "step": 260,
+      "distance_to_reference_contact_mm": 396.69381315644716,
+      "attitude_to_reference_contact_deg": 79.88034275891832,
+      "bilateral": false
+    },
+    {
+      "step": 261,
+      "distance_to_reference_contact_mm": 394.28454502728465,
+      "attitude_to_reference_contact_deg": 79.53577525520814,
+      "bilateral": false
+    },
+    {
+      "step": 262,
+      "distance_to_reference_contact_mm": 391.9410569729283,
+      "attitude_to_reference_contact_deg": 79.050038410696,
+      "bilateral": false
+    },
+    {
+      "step": 263,
+      "distance_to_reference_contact_mm": 391.624608688267,
+      "attitude_to_reference_contact_deg": 78.95747450197828,
+      "bilateral": false
+    },
+    {
+      "step": 264,
+      "distance_to_reference_contact_mm": 391.83156348866123,
+      "attitude_to_reference_contact_deg": 78.9832522369385,
+      "bilateral": false
+    },
+    {
+      "step": 265,
+      "distance_to_reference_contact_mm": 387.58510398555586,
+      "attitude_to_reference_contact_deg": 78.39687203799694,
+      "bilateral": false
+    },
+    {
+      "step": 266,
+      "distance_to_reference_contact_mm": 383.9282235570072,
+      "attitude_to_reference_contact_deg": 77.6372846799158,
+      "bilateral": false
+    },
+    {
+      "step": 267,
+      "distance_to_reference_contact_mm": 383.8855923850477,
+      "attitude_to_reference_contact_deg": 77.54221044328276,
+      "bilateral": false
+    },
+    {
+      "step": 268,
+      "distance_to_reference_contact_mm": 384.8542160452604,
+      "attitude_to_reference_contact_deg": 77.73460493354085,
+      "bilateral": false
+    },
+    {
+      "step": 269,
+      "distance_to_reference_contact_mm": 381.8605811806114,
+      "attitude_to_reference_contact_deg": 77.4259097079451,
+      "bilateral": false
+    },
+    {
+      "step": 270,
+      "distance_to_reference_contact_mm": 378.4087322014941,
+      "attitude_to_reference_contact_deg": 76.73974249830867,
+      "bilateral": false
+    },
+    {
+      "step": 271,
+      "distance_to_reference_contact_mm": 378.42508959731595,
+      "attitude_to_reference_contact_deg": 76.67341800279992,
+      "bilateral": false
+    },
+    {
+      "step": 272,
+      "distance_to_reference_contact_mm": 379.19711904892216,
+      "attitude_to_reference_contact_deg": 76.8234945358296,
+      "bilateral": false
+    },
+    {
+      "step": 273,
+      "distance_to_reference_contact_mm": 376.5283470641788,
+      "attitude_to_reference_contact_deg": 76.54650674360627,
+      "bilateral": false
+    },
+    {
+      "step": 274,
+      "distance_to_reference_contact_mm": 373.8918124125424,
+      "attitude_to_reference_contact_deg": 76.00106079274558,
+      "bilateral": false
+    },
+    {
+      "step": 275,
+      "distance_to_reference_contact_mm": 373.79732309019323,
+      "attitude_to_reference_contact_deg": 75.92831222362244,
+      "bilateral": false
+    },
+    {
+      "step": 276,
+      "distance_to_reference_contact_mm": 374.35056102728777,
+      "attitude_to_reference_contact_deg": 76.0400307880369,
+      "bilateral": false
+    },
+    {
+      "step": 277,
+      "distance_to_reference_contact_mm": 367.4535524343275,
+      "attitude_to_reference_contact_deg": 75.23043939706503,
+      "bilateral": false
+    },
+    {
+      "step": 278,
+      "distance_to_reference_contact_mm": 361.39045795475204,
+      "attitude_to_reference_contact_deg": 74.01201836672541,
+      "bilateral": false
+    },
+    {
+      "step": 279,
+      "distance_to_reference_contact_mm": 361.13763035546566,
+      "attitude_to_reference_contact_deg": 73.82796338469919,
+      "bilateral": false
+    },
+    {
+      "step": 280,
+      "distance_to_reference_contact_mm": 362.399191960161,
+      "attitude_to_reference_contact_deg": 74.10797555943125,
+      "bilateral": false
+    },
+    {
+      "step": 281,
+      "distance_to_reference_contact_mm": 362.1334142264871,
+      "attitude_to_reference_contact_deg": 74.2428384299029,
+      "bilateral": false
+    },
+    {
+      "step": 282,
+      "distance_to_reference_contact_mm": 360.9711513795533,
+      "attitude_to_reference_contact_deg": 74.02212998462917,
+      "bilateral": false
+    },
+    {
+      "step": 283,
+      "distance_to_reference_contact_mm": 360.44918503749557,
+      "attitude_to_reference_contact_deg": 73.90798552834846,
+      "bilateral": false
+    },
+    {
+      "step": 284,
+      "distance_to_reference_contact_mm": 359.85204181833694,
+      "attitude_to_reference_contact_deg": 73.82795535094733,
+      "bilateral": false
+    },
+    {
+      "step": 285,
+      "distance_to_reference_contact_mm": 355.1344700789162,
+      "attitude_to_reference_contact_deg": 73.25586042119588,
+      "bilateral": false
+    },
+    {
+      "step": 286,
+      "distance_to_reference_contact_mm": 351.78208374222027,
+      "attitude_to_reference_contact_deg": 72.59429538448317,
+      "bilateral": false
+    },
+    {
+      "step": 287,
+      "distance_to_reference_contact_mm": 352.107165162475,
+      "attitude_to_reference_contact_deg": 72.61793831382978,
+      "bilateral": false
+    },
+    {
+      "step": 288,
+      "distance_to_reference_contact_mm": 353.1330781423781,
+      "attitude_to_reference_contact_deg": 72.84902548026825,
+      "bilateral": false
+    },
+    {
+      "step": 289,
+      "distance_to_reference_contact_mm": 351.2217943674318,
+      "attitude_to_reference_contact_deg": 72.7190358591781,
+      "bilateral": false
+    },
+    {
+      "step": 290,
+      "distance_to_reference_contact_mm": 350.0831343047317,
+      "attitude_to_reference_contact_deg": 72.37853238964202,
+      "bilateral": false
+    },
+    {
+      "step": 291,
+      "distance_to_reference_contact_mm": 351.5060864248302,
+      "attitude_to_reference_contact_deg": 72.5074523337909,
+      "bilateral": false
+    },
+    {
+      "step": 292,
+      "distance_to_reference_contact_mm": 353.0950126932045,
+      "attitude_to_reference_contact_deg": 72.79902917041183,
+      "bilateral": false
+    },
+    {
+      "step": 293,
+      "distance_to_reference_contact_mm": 349.28547517689327,
+      "attitude_to_reference_contact_deg": 72.46351313172165,
+      "bilateral": false
+    },
+    {
+      "step": 294,
+      "distance_to_reference_contact_mm": 344.7749116184883,
+      "attitude_to_reference_contact_deg": 71.6098340312081,
+      "bilateral": false
+    },
+    {
+      "step": 295,
+      "distance_to_reference_contact_mm": 344.22542832215254,
+      "attitude_to_reference_contact_deg": 71.41787548723123,
+      "bilateral": false
+    },
+    {
+      "step": 296,
+      "distance_to_reference_contact_mm": 344.70454769719504,
+      "attitude_to_reference_contact_deg": 71.53181525111677,
+      "bilateral": false
+    },
+    {
+      "step": 297,
+      "distance_to_reference_contact_mm": 341.78422346155793,
+      "attitude_to_reference_contact_deg": 71.43353840954565,
+      "bilateral": false
+    },
+    {
+      "step": 298,
+      "distance_to_reference_contact_mm": 338.99994139338867,
+      "attitude_to_reference_contact_deg": 70.91532925231697,
+      "bilateral": false
+    },
+    {
+      "step": 299,
+      "distance_to_reference_contact_mm": 338.82915914205864,
+      "attitude_to_reference_contact_deg": 70.80107105120852,
+      "bilateral": false
+    },
+    {
+      "step": 300,
+      "distance_to_reference_contact_mm": 338.9340936885963,
+      "attitude_to_reference_contact_deg": 70.83997361761477,
+      "bilateral": false
+    },
+    {
+      "step": 301,
+      "distance_to_reference_contact_mm": 335.32934238174636,
+      "attitude_to_reference_contact_deg": 70.5209553627629,
+      "bilateral": false
+    },
+    {
+      "step": 302,
+      "distance_to_reference_contact_mm": 332.43790664470197,
+      "attitude_to_reference_contact_deg": 69.91596673567591,
+      "bilateral": false
+    },
+    {
+      "step": 303,
+      "distance_to_reference_contact_mm": 332.3697069751397,
+      "attitude_to_reference_contact_deg": 69.77909090385647,
+      "bilateral": false
+    },
+    {
+      "step": 304,
+      "distance_to_reference_contact_mm": 332.9633317155715,
+      "attitude_to_reference_contact_deg": 69.90118563158236,
+      "bilateral": false
+    },
+    {
+      "step": 305,
+      "distance_to_reference_contact_mm": 330.9183672440135,
+      "attitude_to_reference_contact_deg": 69.94949170126178,
+      "bilateral": false
+    },
+    {
+      "step": 306,
+      "distance_to_reference_contact_mm": 328.8875008367654,
+      "attitude_to_reference_contact_deg": 69.667421026116,
+      "bilateral": false
+    },
+    {
+      "step": 307,
+      "distance_to_reference_contact_mm": 329.18662809098885,
+      "attitude_to_reference_contact_deg": 69.69868918377351,
+      "bilateral": false
+    },
+    {
+      "step": 308,
+      "distance_to_reference_contact_mm": 329.7419669508034,
+      "attitude_to_reference_contact_deg": 69.8483071660427,
+      "bilateral": false
+    },
+    {
+      "step": 309,
+      "distance_to_reference_contact_mm": 324.3850198149964,
+      "attitude_to_reference_contact_deg": 69.29030965372077,
+      "bilateral": false
+    },
+    {
+      "step": 310,
+      "distance_to_reference_contact_mm": 319.9264183003325,
+      "attitude_to_reference_contact_deg": 68.30272817424627,
+      "bilateral": false
+    },
+    {
+      "step": 311,
+      "distance_to_reference_contact_mm": 319.9534601098691,
+      "attitude_to_reference_contact_deg": 68.07703649126935,
+      "bilateral": false
+    },
+    {
+      "step": 312,
+      "distance_to_reference_contact_mm": 321.2202303057546,
+      "attitude_to_reference_contact_deg": 68.31701995560134,
+      "bilateral": false
+    },
+    {
+      "step": 313,
+      "distance_to_reference_contact_mm": 317.6376300729881,
+      "attitude_to_reference_contact_deg": 68.24566673410106,
+      "bilateral": false
+    },
+    {
+      "step": 314,
+      "distance_to_reference_contact_mm": 314.3456467370517,
+      "attitude_to_reference_contact_deg": 67.57031803698973,
+      "bilateral": false
+    },
+    {
+      "step": 315,
+      "distance_to_reference_contact_mm": 314.34616333736807,
+      "attitude_to_reference_contact_deg": 67.37258293230438,
+      "bilateral": false
+    },
+    {
+      "step": 316,
+      "distance_to_reference_contact_mm": 315.2909928634425,
+      "attitude_to_reference_contact_deg": 67.55795717205345,
+      "bilateral": false
+    },
+    {
+      "step": 317,
+      "distance_to_reference_contact_mm": 312.2096132009993,
+      "attitude_to_reference_contact_deg": 67.53635876931588,
+      "bilateral": false
+    },
+    {
+      "step": 318,
+      "distance_to_reference_contact_mm": 308.9983100407578,
+      "attitude_to_reference_contact_deg": 66.89305863344424,
+      "bilateral": false
+    },
+    {
+      "step": 319,
+      "distance_to_reference_contact_mm": 309.0327439625061,
+      "attitude_to_reference_contact_deg": 66.72341253883287,
+      "bilateral": false
+    },
+    {
+      "step": 320,
+      "distance_to_reference_contact_mm": 309.70644666917644,
+      "attitude_to_reference_contact_deg": 66.86086102826194,
+      "bilateral": false
+    },
+    {
+      "step": 321,
+      "distance_to_reference_contact_mm": 303.578043191235,
+      "attitude_to_reference_contact_deg": 66.55180264077339,
+      "bilateral": false
+    },
+    {
+      "step": 322,
+      "distance_to_reference_contact_mm": 298.7160448116525,
+      "attitude_to_reference_contact_deg": 65.5019366434605,
+      "bilateral": false
+    },
+    {
+      "step": 323,
+      "distance_to_reference_contact_mm": 299.05388020257317,
+      "attitude_to_reference_contact_deg": 65.2885358384129,
+      "bilateral": false
+    },
+    {
+      "step": 324,
+      "distance_to_reference_contact_mm": 300.6265815958937,
+      "attitude_to_reference_contact_deg": 65.6542933927371,
+      "bilateral": false
+    },
+    {
+      "step": 325,
+      "distance_to_reference_contact_mm": 296.7366497151177,
+      "attitude_to_reference_contact_deg": 65.83283883386889,
+      "bilateral": false
+    },
+    {
+      "step": 326,
+      "distance_to_reference_contact_mm": 293.5971905763158,
+      "attitude_to_reference_contact_deg": 65.07022942182282,
+      "bilateral": false
+    },
+    {
+      "step": 327,
+      "distance_to_reference_contact_mm": 294.05020701399263,
+      "attitude_to_reference_contact_deg": 64.78741804282117,
+      "bilateral": false
+    },
+    {
+      "step": 328,
+      "distance_to_reference_contact_mm": 295.31904877900934,
+      "attitude_to_reference_contact_deg": 65.07890505040231,
+      "bilateral": false
+    },
+    {
+      "step": 329,
+      "distance_to_reference_contact_mm": 289.9258882732303,
+      "attitude_to_reference_contact_deg": 65.29031928693612,
+      "bilateral": false
+    },
+    {
+      "step": 330,
+      "distance_to_reference_contact_mm": 285.59105557457167,
+      "attitude_to_reference_contact_deg": 64.21520669928489,
+      "bilateral": false
+    },
+    {
+      "step": 331,
+      "distance_to_reference_contact_mm": 286.2294261405969,
+      "attitude_to_reference_contact_deg": 63.76579266659824,
+      "bilateral": false
+    },
+    {
+      "step": 332,
+      "distance_to_reference_contact_mm": 287.9201949668099,
+      "attitude_to_reference_contact_deg": 64.15582250729949,
+      "bilateral": false
+    },
+    {
+      "step": 333,
+      "distance_to_reference_contact_mm": 285.4646321722589,
+      "attitude_to_reference_contact_deg": 64.7678439642085,
+      "bilateral": false
+    },
+    {
+      "step": 334,
+      "distance_to_reference_contact_mm": 283.1232527995228,
+      "attitude_to_reference_contact_deg": 64.19244310343839,
+      "bilateral": false
+    },
+    {
+      "step": 335,
+      "distance_to_reference_contact_mm": 283.0786161745237,
+      "attitude_to_reference_contact_deg": 63.84814850002473,
+      "bilateral": false
+    },
+    {
+      "step": 336,
+      "distance_to_reference_contact_mm": 283.56177244702224,
+      "attitude_to_reference_contact_deg": 63.96194281518801,
+      "bilateral": false
+    },
+    {
+      "step": 337,
+      "distance_to_reference_contact_mm": 280.58983397515976,
+      "attitude_to_reference_contact_deg": 64.38084497481333,
+      "bilateral": false
+    }
+  ]
+}

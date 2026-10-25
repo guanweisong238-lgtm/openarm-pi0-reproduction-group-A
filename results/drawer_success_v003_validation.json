@@ -1,0 +1,16 @@
+{
+  "splits": {
+    "train": {
+      "episodes": 10,
+      "frames": 8632,
+      "transformed_observations_checked": 20
+    },
+    "validation": {
+      "episodes": 3,
+      "frames": 2068,
+      "transformed_observations_checked": 6
+    }
+  },
+  "train_only_stats_verified": true,
+  "data_version": "openarm_drawer_success_v003"
+}

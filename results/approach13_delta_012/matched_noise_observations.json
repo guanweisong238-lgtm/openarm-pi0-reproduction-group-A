@@ -1,0 +1,2964 @@
+[
+  {
+    "episode_id": 12,
+    "precision": "bfloat16",
+    "noise": "exact recorded inference noise, matched by call index",
+    "rows": [
+      {
+        "inference_index": 0,
+        "local_frame": 0,
+        "teacher_observation_goal_error": {
+          "position_mm": 0.8419872891102074,
+          "attitude_deg": 0.39581826030192313
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 0.7914995140094524,
+          "attitude_deg": 0.4070722221059266
+        },
+        "first_action_difference_rad": [
+          0.00012875274244017465,
+          0.0014557841540101535,
+          1.1111422423271122e-05,
+          -7.848456227277367e-05,
+          0.00012063815599505645,
+          -2.5156434197870503e-05,
+          -0.00010081152328711429,
+          0.0011433772151265287
+        ]
+      },
+      {
+        "inference_index": 1,
+        "local_frame": 4,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.0090530046470803,
+          "attitude_deg": 0.5167856896017525
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 1.0225540784524387,
+          "attitude_deg": 1.1759325631144584
+        },
+        "first_action_difference_rad": [
+          -0.004698340022312508,
+          0.026429033161198046,
+          -0.005683581552997807,
+          -0.003291342523223495,
+          -0.002808190507743724,
+          0.0014317744345039296,
+          0.0126259978551303,
+          -0.0012035549632910536
+        ]
+      },
+      {
+        "inference_index": 2,
+        "local_frame": 8,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.6107387299314926,
+          "attitude_deg": 0.3801372462860907
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 2.584003017838926,
+          "attitude_deg": 0.9826473806857452
+        },
+        "first_action_difference_rad": [
+          0.0018301041466829426,
+          0.01435476156317872,
+          -0.0035177357317759395,
+          -0.005189205292357224,
+          -0.0014567768863595898,
+          0.0007360347454509197,
+          0.011085513532594016,
+          0.0035805760157909816
+        ]
+      },
+      {
+        "inference_index": 3,
+        "local_frame": 12,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.0488616784128375,
+          "attitude_deg": 1.5911174379998316
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 7.902310680367576,
+          "attitude_deg": 1.8176159380880113
+        },
+        "first_action_difference_rad": [
+          0.009787347839290916,
+          0.010878334286485991,
+          0.0027726691826929772,
+          -0.01184930898311265,
+          -0.0004734263114696269,
+          0.0007816635314809028,
+          0.011058343817361371,
+          -0.0008123996002214473
+        ]
+      },
+      {
+        "inference_index": 4,
+        "local_frame": 16,
+        "teacher_observation_goal_error": {
+          "position_mm": 3.687227316635339,
+          "attitude_deg": 2.2771242061423345
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 18.702133503639125,
+          "attitude_deg": 9.340353239939734
+        },
+        "first_action_difference_rad": [
+          0.0448739726922166,
+          -0.09147369654249982,
+          0.019474650989363518,
+          -0.007272279177849006,
+          0.011432608711557268,
+          0.0011029206685689852,
+          -0.02232963531744675,
+          0.0022867544302530574
+        ]
+      },
+      {
+        "inference_index": 5,
+        "local_frame": 20,
+        "teacher_observation_goal_error": {
+          "position_mm": 10.329245107154263,
+          "attitude_deg": 4.269409922116402
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 34.789324157701074,
+          "attitude_deg": 20.727170616463408
+        },
+        "first_action_difference_rad": [
+          0.08451064201682135,
+          -0.2420175178197448,
+          0.04258821254222572,
+          0.005161764696241189,
+          0.023688590735154058,
+          -0.0031850480116291102,
+          -0.06753551927071039,
+          0.0020460434375948744
+        ]
+      },
+      {
+        "inference_index": 6,
+        "local_frame": 24,
+        "teacher_observation_goal_error": {
+          "position_mm": 13.339458189103619,
+          "attitude_deg": 5.936865044903235
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 59.200842564586786,
+          "attitude_deg": 36.776399081299054
+        },
+        "first_action_difference_rad": [
+          0.15312539736519803,
+          -0.44628674320949746,
+          0.0784365556244423,
+          0.019788994378825864,
+          0.055156533996117085,
+          -0.005401655478593503,
+          -0.16158661064825403,
+          0.01059128367696166
+        ]
+      },
+      {
+        "inference_index": 7,
+        "local_frame": 28,
+        "teacher_observation_goal_error": {
+          "position_mm": 7.2983749219731155,
+          "attitude_deg": 4.383853589313654
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 80.46604350321832,
+          "attitude_deg": 54.29030929381756
+        },
+        "first_action_difference_rad": [
+          0.2500233757633374,
+          -0.7160572178707156,
+          0.12377293558538266,
+          0.03968378906677206,
+          0.09457154948339586,
+          -0.01388900507760793,
+          -0.29382239964285745,
+          0.020580789872277683
+        ]
+      },
+      {
+        "inference_index": 8,
+        "local_frame": 32,
+        "teacher_observation_goal_error": {
+          "position_mm": 8.813577663558156,
+          "attitude_deg": 5.529021885617793
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 92.88390829267561,
+          "attitude_deg": 70.63459153851784
+        },
+        "first_action_difference_rad": [
+          0.3164839645446763,
+          -0.9524624527260177,
+          0.1641788326162576,
+          0.05786454646143002,
+          0.1285102303327592,
+          -0.011189495136055827,
+          -0.3824161042056179,
+          0.006619552298100989
+        ]
+      },
+      {
+        "inference_index": 9,
+        "local_frame": 36,
+        "teacher_observation_goal_error": {
+          "position_mm": 11.81930778329899,
+          "attitude_deg": 7.63119871925358
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 102.06394383456087,
+          "attitude_deg": 87.67959052979
+        },
+        "first_action_difference_rad": [
+          0.40390300033584026,
+          -1.180936825221634,
+          0.20298675704035263,
+          0.07843316901551978,
+          0.16719814650325726,
+          -0.01818270441351366,
+          -0.4698240559501564,
+          0.006138130312784595
+        ]
+      },
+      {
+        "inference_index": 10,
+        "local_frame": 40,
+        "teacher_observation_goal_error": {
+          "position_mm": 12.572200892042765,
+          "attitude_deg": 6.834402741174885
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 102.02887867639222,
+          "attitude_deg": 101.73143939453293
+        },
+        "first_action_difference_rad": [
+          0.4855152975635742,
+          -1.4236515700432484,
+          0.24731462002581256,
+          0.10871696065997605,
+          0.2100401716105973,
+          -0.012420243020062616,
+          -0.5978787743565436,
+          0.0014442659559493476
+        ]
+      },
+      {
+        "inference_index": 11,
+        "local_frame": 44,
+        "teacher_observation_goal_error": {
+          "position_mm": 9.150983601078977,
+          "attitude_deg": 5.718430069418073
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 92.40593860178437,
+          "attitude_deg": 111.34697732152912
+        },
+        "first_action_difference_rad": [
+          0.5533130842783127,
+          -1.5976744641215492,
+          0.2789095757444268,
+          0.11485781374342885,
+          0.2410944164378297,
+          -0.015105339289337993,
+          -0.6923513955940659,
+          0.006980618787088333
+        ]
+      },
+      {
+        "inference_index": 12,
+        "local_frame": 48,
+        "teacher_observation_goal_error": {
+          "position_mm": 11.040514691600517,
+          "attitude_deg": 4.934525772067057
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 81.32219418605649,
+          "attitude_deg": 117.39703303526944
+        },
+        "first_action_difference_rad": [
+          0.6128478044142329,
+          -1.713823883997056,
+          0.2937690867661251,
+          0.11207744219527238,
+          0.2654094121402846,
+          -0.01828861738415566,
+          -0.757391821537478,
+          -0.008758683189887928
+        ]
+      },
+      {
+        "inference_index": 13,
+        "local_frame": 52,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.014032769213176,
+          "attitude_deg": 2.4197368256793585
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 75.52925174295092,
+          "attitude_deg": 121.3812921742544
+        },
+        "first_action_difference_rad": [
+          0.6410195834423192,
+          -1.8065283244986923,
+          0.31081185518546844,
+          0.0863432478323034,
+          0.27810984162629504,
+          -0.03332508964026648,
+          -0.7973829833031765,
+          0.0006920441038923975
+        ]
+      },
+      {
+        "inference_index": 14,
+        "local_frame": 56,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.66687204759261,
+          "attitude_deg": 2.0034401557416426
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 80.48990044131904,
+          "attitude_deg": 123.37025705038462
+        },
+        "first_action_difference_rad": [
+          0.6642862424978258,
+          -1.8544859688662847,
+          0.31507076337955053,
+          0.10009824778904308,
+          0.28922848240801846,
+          -0.03337390798436979,
+          -0.8317354256422946,
+          0.08093907128132602
+        ]
+      },
+      {
+        "inference_index": 15,
+        "local_frame": 60,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.233245770971908,
+          "attitude_deg": 0.9045171673868568
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 77.53704251282079,
+          "attitude_deg": 120.42293367113344
+        },
+        "first_action_difference_rad": [
+          0.6701097346974896,
+          -1.822786947876339,
+          0.30974581757347686,
+          0.060438953658078054,
+          0.2818077745719578,
+          -0.03938814980697869,
+          -0.8215336167649858,
+          -0.007161152031581991
+        ]
+      },
+      {
+        "inference_index": 16,
+        "local_frame": 64,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.698782814902354,
+          "attitude_deg": 1.4157461862154164
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 78.77447125458355,
+          "attitude_deg": 118.26457754733715
+        },
+        "first_action_difference_rad": [
+          0.6697551583157304,
+          -1.7785183157286533,
+          0.30257263025683134,
+          0.06537354552502483,
+          0.2742787008485019,
+          -0.031658091154438406,
+          -0.831213387943312,
+          -0.01077181692145529
+        ]
+      },
+      {
+        "inference_index": 17,
+        "local_frame": 68,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.471585141044851,
+          "attitude_deg": 1.3553684260414103
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 76.50696528179694,
+          "attitude_deg": 116.15780434260405
+        },
+        "first_action_difference_rad": [
+          0.6652794002484307,
+          -1.7394520057971654,
+          0.29497838687361283,
+          0.07020573500474092,
+          0.2942571507200282,
+          -0.030800676261603765,
+          -0.8251884595905052,
+          -0.00982965905175398
+        ]
+      },
+      {
+        "inference_index": 18,
+        "local_frame": 72,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.3404536361951056,
+          "attitude_deg": 0.7538119952658362
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 79.70389710034821,
+          "attitude_deg": 114.74122841724787
+        },
+        "first_action_difference_rad": [
+          0.662548407693264,
+          -1.6983791502437102,
+          0.2904591327850333,
+          0.05453020636777972,
+          0.29261714588492627,
+          -0.0313133375176704,
+          -0.7950047797509634,
+          -0.020420942728715585
+        ]
+      },
+      {
+        "inference_index": 19,
+        "local_frame": 76,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.5914067257568525,
+          "attitude_deg": 1.3243678614440382
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 85.52141271234767,
+          "attitude_deg": 113.74848764012124
+        },
+        "first_action_difference_rad": [
+          0.6702904332765474,
+          -1.6742352316292273,
+          0.2794124092783475,
+          0.0632984052596075,
+          0.2931442221478566,
+          -0.03357363846162709,
+          -0.8084992452822017,
+          -0.04271867897831322
+        ]
+      },
+      {
+        "inference_index": 20,
+        "local_frame": 80,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.770960262346739,
+          "attitude_deg": 0.6741970220216873
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 87.65022410418993,
+          "attitude_deg": 112.4238401667009
+        },
+        "first_action_difference_rad": [
+          0.6808222807771709,
+          -1.6436636616198037,
+          0.2809898264115596,
+          0.03593458780287184,
+          0.2903430898747683,
+          -0.04145835648872176,
+          -0.8148218113709881,
+          -0.007973551631803466
+        ]
+      },
+      {
+        "inference_index": 21,
+        "local_frame": 84,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.362492774428639,
+          "attitude_deg": 2.3645320154267626
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 88.90626390720558,
+          "attitude_deg": 110.71565805686544
+        },
+        "first_action_difference_rad": [
+          0.6817182808321639,
+          -1.5933747429782683,
+          0.2501950913257773,
+          0.0614620678236415,
+          0.29395189036324854,
+          -0.0522889072298951,
+          -0.8646737925979204,
+          -0.002828354163734087
+        ]
+      },
+      {
+        "inference_index": 22,
+        "local_frame": 88,
+        "teacher_observation_goal_error": {
+          "position_mm": 8.496494506435821,
+          "attitude_deg": 5.343686644499519
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 93.05355702387143,
+          "attitude_deg": 114.82859832577627
+        },
+        "first_action_difference_rad": [
+          0.7269600958957086,
+          -1.5703939508652882,
+          0.17995559549694573,
+          0.06293817801522472,
+          0.28960776945779254,
+          -0.13931037641694632,
+          -0.9987627579711769,
+          -0.004453153364177009
+        ]
+      },
+      {
+        "inference_index": 23,
+        "local_frame": 92,
+        "teacher_observation_goal_error": {
+          "position_mm": 9.070195642572271,
+          "attitude_deg": 1.2787486042000502
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 99.388025283508,
+          "attitude_deg": 114.02446159494022
+        },
+        "first_action_difference_rad": [
+          0.7682637382330952,
+          -1.553702625269607,
+          0.15908653040905102,
+          0.08938084906094135,
+          0.3097989047636711,
+          -0.2197521726963807,
+          -1.1033831111506127,
+          -0.0020460434375948466
+        ]
+      },
+      {
+        "inference_index": 24,
+        "local_frame": 96,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.553311989447921,
+          "attitude_deg": 1.2055635210198243
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 109.9304449620875,
+          "attitude_deg": 113.74711032373575
+        },
+        "first_action_difference_rad": [
+          0.8220943741538483,
+          -1.5311706062333406,
+          0.1648949177990035,
+          0.016917936518372922,
+          0.30949892721982897,
+          -0.23364634199410061,
+          -1.091153002651379,
+          -0.007341685276075649
+        ]
+      },
+      {
+        "inference_index": 25,
+        "local_frame": 100,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.826593900677649,
+          "attitude_deg": 2.7338280975788556
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 117.38275356155864,
+          "attitude_deg": 109.6871626413817
+        },
+        "first_action_difference_rad": [
+          0.8788678048656366,
+          -1.4870908367425753,
+          0.1960748893470034,
+          -0.08173832010490822,
+          0.2959170477254347,
+          -0.1869630472267435,
+          -1.0235636477310424,
+          0.05403961785177008
+        ]
+      },
+      {
+        "inference_index": 26,
+        "local_frame": 104,
+        "teacher_observation_goal_error": {
+          "position_mm": 9.508576571004383,
+          "attitude_deg": 3.5045280012423934
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 128.03876673242146,
+          "attitude_deg": 109.84761051614251
+        },
+        "first_action_difference_rad": [
+          0.9576000720292541,
+          -1.465928377782611,
+          0.22768612546179845,
+          -0.16559063231379145,
+          0.3002504746904291,
+          -0.12785168368153044,
+          -1.0199121922226373,
+          0.0014292215189081747
+        ]
+      },
+      {
+        "inference_index": 27,
+        "local_frame": 108,
+        "teacher_observation_goal_error": {
+          "position_mm": 15.55339462067188,
+          "attitude_deg": 4.023402656580448
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 141.8623598253721,
+          "attitude_deg": 109.8481115727054
+        },
+        "first_action_difference_rad": [
+          1.0729014874804226,
+          -1.5065360870418072,
+          0.36222102473943985,
+          -0.2691209512469699,
+          0.2993259976777338,
+          -0.012136437983863768,
+          -1.047415931964452,
+          0.008680640172737009
+        ]
+      },
+      {
+        "inference_index": 28,
+        "local_frame": 112,
+        "teacher_observation_goal_error": {
+          "position_mm": 27.568598372221356,
+          "attitude_deg": 4.5669882419261825
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 160.03274205530292,
+          "attitude_deg": 108.29960657671937
+        },
+        "first_action_difference_rad": [
+          1.132201940239716,
+          -1.4606498345271912,
+          0.30362737098038195,
+          -0.3369060653895315,
+          0.28893007134640625,
+          -0.00021939388385427971,
+          -0.9761323554708203,
+          0.013660348833353875
+        ]
+      },
+      {
+        "inference_index": 29,
+        "local_frame": 116,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.0891932750437485,
+          "attitude_deg": 1.582435652941603
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 172.60284990719688,
+          "attitude_deg": 106.37472111184175
+        },
+        "first_action_difference_rad": [
+          1.1326063130021053,
+          -1.3973234379949366,
+          0.2975506391030278,
+          -0.44899412987616816,
+          0.25048920576359257,
+          -0.0035245354629661607,
+          -0.950117590068523,
+          0.09708927444498835
+        ]
+      },
+      {
+        "inference_index": 30,
+        "local_frame": 120,
+        "teacher_observation_goal_error": {
+          "position_mm": 7.032893687059314,
+          "attitude_deg": 1.6864982286908397
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 181.50426420782907,
+          "attitude_deg": 103.48958435697543
+        },
+        "first_action_difference_rad": [
+          1.1590858039810985,
+          -1.3343585627259733,
+          0.2758046963053422,
+          -0.5206698825874521,
+          0.21170192400550092,
+          -0.023208673496751042,
+          -0.8813313384513048,
+          0.029908340837783653
+        ]
+      },
+      {
+        "inference_index": 31,
+        "local_frame": 124,
+        "teacher_observation_goal_error": {
+          "position_mm": 8.662648018008733,
+          "attitude_deg": 1.6930290762645723
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 194.06471407284204,
+          "attitude_deg": 102.8256341854583
+        },
+        "first_action_difference_rad": [
+          1.1759920387025393,
+          -1.2777380674632448,
+          0.25705966770865724,
+          -0.5752929901855692,
+          0.18794137317244708,
+          -0.050480035811032664,
+          -0.835367371097611,
+          0.08027711605151588
+        ]
+      },
+      {
+        "inference_index": 32,
+        "local_frame": 128,
+        "teacher_observation_goal_error": {
+          "position_mm": 7.708591499817612,
+          "attitude_deg": 1.4748775997861967
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 196.10904677289895,
+          "attitude_deg": 99.62982359461631
+        },
+        "first_action_difference_rad": [
+          1.1886644511670066,
+          -1.2476086741937813,
+          0.244568140839647,
+          -0.6109304917170277,
+          0.16417702470981732,
+          -0.05868788638117506,
+          -0.8266299976302346,
+          0.11555491049701344
+        ]
+      },
+      {
+        "inference_index": 33,
+        "local_frame": 132,
+        "teacher_observation_goal_error": {
+          "position_mm": 3.0743443708132285,
+          "attitude_deg": 1.0107727446313008
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 205.7080679147286,
+          "attitude_deg": 98.57444282817686
+        },
+        "first_action_difference_rad": [
+          1.195537600855131,
+          -1.2014499786935624,
+          0.2381933612606807,
+          -0.6259611120284785,
+          0.16596411365917496,
+          -0.05760563613968572,
+          -0.8252289733559284,
+          -0.006392945465168887
+        ]
+      },
+      {
+        "inference_index": 34,
+        "local_frame": 136,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.497605976277698,
+          "attitude_deg": 1.3482388456621883
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 213.47087426561473,
+          "attitude_deg": 97.84418687962227
+        },
+        "first_action_difference_rad": [
+          1.2161586830458229,
+          -1.1760747161289407,
+          0.23009856017009328,
+          -0.6379781417074959,
+          0.15124076130978992,
+          -0.0776103001318208,
+          -0.8473848708620879,
+          0.10922261291866668
+        ]
+      },
+      {
+        "inference_index": 35,
+        "local_frame": 140,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.74541733041685,
+          "attitude_deg": 1.1395695217358808
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 221.45206569713216,
+          "attitude_deg": 97.68203781770815
+        },
+        "first_action_difference_rad": [
+          1.2514495581940925,
+          -1.1658623924402507,
+          0.23690081950040726,
+          -0.6423377850434326,
+          0.1718704406681646,
+          -0.0747339851515908,
+          -0.8631071620267041,
+          0.11584216521676771
+        ]
+      },
+      {
+        "inference_index": 36,
+        "local_frame": 144,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.597025130621018,
+          "attitude_deg": 1.374905032336558
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 227.2792542732913,
+          "attitude_deg": 97.10347851370018
+        },
+        "first_action_difference_rad": [
+          1.265023782351914,
+          -1.1598767253260422,
+          0.23474830644202904,
+          -0.6540043772108097,
+          0.17118329222403794,
+          -0.06623139999105532,
+          -0.8963136048430259,
+          0.012697504862721032
+        ]
+      },
+      {
+        "inference_index": 37,
+        "local_frame": 148,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.9925808180895705,
+          "attitude_deg": 0.1952556161352683
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 224.83397268341452,
+          "attitude_deg": 94.27602283144478
+        },
+        "first_action_difference_rad": [
+          1.275097279941806,
+          -1.1006979274354285,
+          0.2278198519917537,
+          -0.6592454350906034,
+          0.16613060477213026,
+          -0.07478527720349848,
+          -0.8683286591880955,
+          -0.01363025995927164
+        ]
+      },
+      {
+        "inference_index": 38,
+        "local_frame": 152,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.126227561817005,
+          "attitude_deg": 0.7578978795603393
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 231.8802185675432,
+          "attitude_deg": 93.32707859014178
+        },
+        "first_action_difference_rad": [
+          1.2671517181311263,
+          -1.0758697278427252,
+          0.22289098137805352,
+          -0.6644740088134555,
+          0.1684211656278265,
+          -0.08662988349033285,
+          -0.8473609422988067,
+          0.11475332408591528
+        ]
+      },
+      {
+        "inference_index": 39,
+        "local_frame": 156,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.6509213263300078,
+          "attitude_deg": 0.504470979575937
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 246.5425003533584,
+          "attitude_deg": 94.67040842396536
+        },
+        "first_action_difference_rad": [
+          1.3061224845106347,
+          -1.0736575033213618,
+          0.22747026455717917,
+          -0.7123727000806488,
+          0.16858498980396952,
+          -0.07284163348053996,
+          -0.8676227285127924,
+          0.05728921625265601
+        ]
+      },
+      {
+        "inference_index": 40,
+        "local_frame": 160,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.4563769639163675,
+          "attitude_deg": 0.165045057510978
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 257.0101519871375,
+          "attitude_deg": 94.57290124935213
+        },
+        "first_action_difference_rad": [
+          1.328607702068282,
+          -1.0736469237453643,
+          0.22186084063758843,
+          -0.7104524018580498,
+          0.16857488992924874,
+          -0.08400429822210165,
+          -0.8997813011192825,
+          0.029378024432083538
+        ]
+      },
+      {
+        "inference_index": 41,
+        "local_frame": 164,
+        "teacher_observation_goal_error": {
+          "position_mm": 22.39870141435985,
+          "attitude_deg": 4.364077949339005
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 263.15169095276167,
+          "attitude_deg": 95.0325441184619
+        },
+        "first_action_difference_rad": [
+          1.3248177133354286,
+          -1.0393137363549574,
+          0.21975098039358898,
+          -0.7217295411808564,
+          0.18395265763627822,
+          -0.09235914520003641,
+          -0.932773367556232,
+          0.07140277875187423
+        ]
+      },
+      {
+        "inference_index": 42,
+        "local_frame": 168,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.553093460610049,
+          "attitude_deg": 0.6020220797855932
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 269.2993536077819,
+          "attitude_deg": 93.99369974998567
+        },
+        "first_action_difference_rad": [
+          1.373894732908104,
+          -1.0600831275069518,
+          0.21576003051576947,
+          -0.7261921479777416,
+          0.17465840834700042,
+          -0.08466111402805154,
+          -0.899352627832656,
+          0.14972223743341195
+        ]
+      },
+      {
+        "inference_index": 43,
+        "local_frame": 172,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.415280815187612,
+          "attitude_deg": 1.4477973508705486
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 273.4026813672994,
+          "attitude_deg": 92.89957245851829
+        },
+        "first_action_difference_rad": [
+          1.3931943200695347,
+          -1.0136044573492222,
+          0.21130666858117997,
+          -0.7538362176098949,
+          0.1711512739278338,
+          -0.09181127796382893,
+          -0.886785061224987,
+          0.11671098145589345
+        ]
+      },
+      {
+        "inference_index": 44,
+        "local_frame": 176,
+        "teacher_observation_goal_error": {
+          "position_mm": 16.436209716446978,
+          "attitude_deg": 2.6460474308749484
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 265.45974882672067,
+          "attitude_deg": 88.81649301331605
+        },
+        "first_action_difference_rad": [
+          1.3846217366518103,
+          -0.941169426324794,
+          0.19851121372160163,
+          -0.7658975936496268,
+          0.16153413495837854,
+          -0.09039058470338046,
+          -0.8650854843042007,
+          0.1680764506236011
+        ]
+      },
+      {
+        "inference_index": 45,
+        "local_frame": 180,
+        "teacher_observation_goal_error": {
+          "position_mm": 15.789188640892537,
+          "attitude_deg": 2.3308241118974586
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 265.1535706106045,
+          "attitude_deg": 88.05385311905432
+        },
+        "first_action_difference_rad": [
+          1.372434153207456,
+          -0.9084431156445569,
+          0.19102186413632272,
+          -0.7823460163557336,
+          0.1593407781399292,
+          -0.09305685467910596,
+          -0.8638808640226252,
+          0.2327901039019756
+        ]
+      },
+      {
+        "inference_index": 46,
+        "local_frame": 184,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.104946215771397,
+          "attitude_deg": 0.8979955181152754
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 272.65618985386817,
+          "attitude_deg": 89.10969608329273
+        },
+        "first_action_difference_rad": [
+          1.3760910293454953,
+          -0.9142082091059556,
+          0.18367238242866402,
+          -0.8215617095078989,
+          0.15612340908885458,
+          -0.08141628027358805,
+          -0.8793387744160721,
+          0.1174923519047176
+        ]
+      },
+      {
+        "inference_index": 47,
+        "local_frame": 188,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.986728386723531,
+          "attitude_deg": 1.3546774865609517
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 270.8412412645975,
+          "attitude_deg": 85.18208565687443
+        },
+        "first_action_difference_rad": [
+          1.3792483478706146,
+          -0.8793791823830417,
+          0.17529856475533623,
+          -0.8379676828756843,
+          0.14602681888325342,
+          -0.07461763424334411,
+          -0.8752895503549456,
+          0.13306804562887148
+        ]
+      },
+      {
+        "inference_index": 48,
+        "local_frame": 192,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.7578143787619718,
+          "attitude_deg": 0.442586081172748
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 272.1876402720527,
+          "attitude_deg": 83.79181691384548
+        },
+        "first_action_difference_rad": [
+          1.377188881309539,
+          -0.8300260411135264,
+          0.15527616831207303,
+          -0.8633262960986186,
+          0.13821483056968442,
+          -0.08020936911243814,
+          -0.8540022235131797,
+          0.14629210578803237
+        ]
+      }
+    ]
+  },
+  {
+    "episode_id": 8,
+    "precision": "bfloat16",
+    "noise": "exact recorded inference noise, matched by call index",
+    "rows": [
+      {
+        "inference_index": 0,
+        "local_frame": 0,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.538034194682325,
+          "attitude_deg": 2.1045259972060855
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 5.663333430178809,
+          "attitude_deg": 2.1547388938054137
+        },
+        "first_action_difference_rad": [
+          -0.00010732235425428907,
+          0.0004043702289097256,
+          4.9954136603247434e-05,
+          0.00016678244086598681,
+          -0.00016879110014045295,
+          0.00021715272785904904,
+          0.0008193596812922088,
+          -0.0007522218520569779
+        ]
+      },
+      {
+        "inference_index": 1,
+        "local_frame": 4,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.4460824833822743,
+          "attitude_deg": 0.738167524687699
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 8.091052931956499,
+          "attitude_deg": 2.671117585352112
+        },
+        "first_action_difference_rad": [
+          0.0008312787774146513,
+          0.002346153564343298,
+          -0.003918144473771812,
+          -0.004458459129170311,
+          -0.0059510610513076045,
+          0.0047374083245571574,
+          0.048157816606807624,
+          -0.00914701772101234
+        ]
+      },
+      {
+        "inference_index": 2,
+        "local_frame": 8,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.690534595374676,
+          "attitude_deg": 0.760877698856748
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 8.926679165042463,
+          "attitude_deg": 3.009663039934897
+        },
+        "first_action_difference_rad": [
+          0.01375862120972833,
+          -0.003401145260159444,
+          -0.006920137823970052,
+          -0.0067603380960692405,
+          -0.005779260103345729,
+          -0.0029326823584230333,
+          0.05491996732976406,
+          -0.005626619453385884
+        ]
+      },
+      {
+        "inference_index": 3,
+        "local_frame": 12,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.0295838869615066,
+          "attitude_deg": 0.8385449115664566
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 9.740460341419883,
+          "attitude_deg": 3.7463851029573063
+        },
+        "first_action_difference_rad": [
+          0.01853639430920974,
+          0.011618474317326863,
+          -0.005218904509559752,
+          -0.04694129396658253,
+          -0.008215200474788409,
+          -0.009682927637641114,
+          0.06819251435890916,
+          -0.016639147367499385
+        ]
+      },
+      {
+        "inference_index": 4,
+        "local_frame": 16,
+        "teacher_observation_goal_error": {
+          "position_mm": 3.4321660870623374,
+          "attitude_deg": 0.77470469354741
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 11.285037717713122,
+          "attitude_deg": 4.0486946177078575
+        },
+        "first_action_difference_rad": [
+          0.02458506534692806,
+          0.012901189641137498,
+          -0.0053957291318692535,
+          -0.05741986786531017,
+          -0.005840949404469775,
+          -0.008851211859000174,
+          0.08975637781300538,
+          -0.0152249702856323
+        ]
+      },
+      {
+        "inference_index": 5,
+        "local_frame": 20,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.81141129564633,
+          "attitude_deg": 0.5726540181739155
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 15.557889073212356,
+          "attitude_deg": 4.46861909380527
+        },
+        "first_action_difference_rad": [
+          0.011958890013425247,
+          0.03221369524447877,
+          -0.013835880965485492,
+          -0.08398200481495355,
+          -0.010172444444985773,
+          -0.02040471011787215,
+          0.12416539347881922,
+          -0.012456793870062821
+        ]
+      },
+      {
+        "inference_index": 6,
+        "local_frame": 24,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.61584262604628,
+          "attitude_deg": 0.4643054149014985
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 23.510501670397105,
+          "attitude_deg": 5.03436887643532
+        },
+        "first_action_difference_rad": [
+          0.00928697939141862,
+          0.0455104440432435,
+          -0.026329118612585245,
+          -0.13675702202940032,
+          -0.016353890051063358,
+          -0.027279784691907283,
+          0.15565476927248179,
+          -0.012516971618227402
+        ]
+      },
+      {
+        "inference_index": 7,
+        "local_frame": 28,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.693250932628213,
+          "attitude_deg": 1.3997067316997072
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 32.10152377114062,
+          "attitude_deg": 6.925452695579212
+        },
+        "first_action_difference_rad": [
+          0.006475348714141512,
+          0.04967984469663822,
+          -0.03924793575339691,
+          -0.1825192997628995,
+          -0.017584531319412955,
+          -0.031306142800215264,
+          0.17988148127716191,
+          -0.003911553630696035
+        ]
+      },
+      {
+        "inference_index": 8,
+        "local_frame": 32,
+        "teacher_observation_goal_error": {
+          "position_mm": 8.208307521384743,
+          "attitude_deg": 1.9519264314952365
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 35.7219742236053,
+          "attitude_deg": 8.70101586964769
+        },
+        "first_action_difference_rad": [
+          0.0003296879517986316,
+          0.04839798630349798,
+          -0.040985805146557475,
+          -0.22429934543968777,
+          -0.02027265676392842,
+          -0.03191055852038882,
+          0.23564664903626686,
+          -0.019738301397973917
+        ]
+      },
+      {
+        "inference_index": 9,
+        "local_frame": 36,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.169530985799047,
+          "attitude_deg": 0.8145306309280426
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 45.729655911705244,
+          "attitude_deg": 11.644071814214488
+        },
+        "first_action_difference_rad": [
+          0.00015434357039354613,
+          0.05016620220692436,
+          -0.05870100160349134,
+          -0.2544427048732132,
+          -0.01840177508095997,
+          -0.04083349015519799,
+          0.2952460887808893,
+          -0.02274718880620169
+        ]
+      },
+      {
+        "inference_index": 10,
+        "local_frame": 40,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.717627669805234,
+          "attitude_deg": 0.20800852685786753
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 58.769546986331264,
+          "attitude_deg": 13.58941039634044
+        },
+        "first_action_difference_rad": [
+          0.0018710021488283525,
+          0.05654521223471737,
+          -0.07847547401336585,
+          -0.3003702988968091,
+          -0.02223427827642044,
+          -0.04969188968368987,
+          0.3482991436416723,
+          -0.01528514803379688
+        ]
+      },
+      {
+        "inference_index": 11,
+        "local_frame": 44,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.892324164789691,
+          "attitude_deg": 1.349904404307936
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 78.38719456188154,
+          "attitude_deg": 19.613509759957655
+        },
+        "first_action_difference_rad": [
+          0.010695092011497938,
+          0.05032580292726098,
+          -0.11987903461792071,
+          -0.3931349907367645,
+          -0.030425918324332057,
+          -0.06250037515550744,
+          0.438312850468107,
+          0.0025876431710758485
+        ]
+      },
+      {
+        "inference_index": 12,
+        "local_frame": 48,
+        "teacher_observation_goal_error": {
+          "position_mm": 8.054423851339411,
+          "attitude_deg": 1.3695705714283228
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 98.92574633592479,
+          "attitude_deg": 24.677110599803473
+        },
+        "first_action_difference_rad": [
+          -0.0004903617223510764,
+          0.04861514297907263,
+          -0.15738840893826367,
+          -0.4577172018835274,
+          -0.040614284274924195,
+          -0.06607819818217553,
+          0.5764786264330739,
+          -0.004738057390643591
+        ]
+      },
+      {
+        "inference_index": 13,
+        "local_frame": 52,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.616417851433634,
+          "attitude_deg": 1.953047816713047
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 107.8295318102657,
+          "attitude_deg": 30.126646304613047
+        },
+        "first_action_difference_rad": [
+          -0.04160944222532368,
+          0.04524242850299003,
+          -0.1862626662965411,
+          -0.4701921650098053,
+          -0.06076214012001557,
+          -0.06413258744786376,
+          0.7144245567291749,
+          -0.01913652391632839
+        ]
+      },
+      {
+        "inference_index": 14,
+        "local_frame": 56,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.400028785122241,
+          "attitude_deg": 0.9474503869706545
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 123.17526849216375,
+          "attitude_deg": 32.00035810987902
+        },
+        "first_action_difference_rad": [
+          -0.055899996958822584,
+          0.0400224795057927,
+          -0.2203334533685336,
+          -0.5146329036792903,
+          -0.07933093435149807,
+          -0.0761504407519541,
+          0.8004985751464987,
+          -0.010170039439809736
+        ]
+      },
+      {
+        "inference_index": 15,
+        "local_frame": 60,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.483757536795183,
+          "attitude_deg": 1.0653037287673348
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 127.69229147925354,
+          "attitude_deg": 37.71889658612822
+        },
+        "first_action_difference_rad": [
+          -0.06907557023432488,
+          0.050264951848984996,
+          -0.25613454283302894,
+          -0.5091569180533377,
+          -0.10468752231372869,
+          -0.08521147941949925,
+          0.9476131745110007,
+          0.0005415997334810019
+        ]
+      },
+      {
+        "inference_index": 16,
+        "local_frame": 64,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.32409236119324,
+          "attitude_deg": 0.5117040808942865
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 149.37637877019765,
+          "attitude_deg": 44.77506054146407
+        },
+        "first_action_difference_rad": [
+          -0.08133435918829977,
+          0.054822209698997204,
+          -0.29459722820722567,
+          -0.5550366711950572,
+          -0.12457859908648206,
+          -0.10079347990357601,
+          1.0958492809712674,
+          -0.0071912409056642534
+        ]
+      },
+      {
+        "inference_index": 17,
+        "local_frame": 68,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.4657258881510766,
+          "attitude_deg": 0.9573137196084752
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 173.38480674430505,
+          "attitude_deg": 53.014757161317995
+        },
+        "first_action_difference_rad": [
+          -0.08010297409377,
+          0.043810506501426386,
+          -0.33500572269972073,
+          -0.6028959650201284,
+          -0.15929200365860985,
+          -0.11952055611386347,
+          1.2910554250761586,
+          -0.007690895455793267
+        ]
+      },
+      {
+        "inference_index": 18,
+        "local_frame": 72,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.8695224593116482,
+          "attitude_deg": 0.6728274471096872
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 195.44432608135648,
+          "attitude_deg": 60.540011824534496
+        },
+        "first_action_difference_rad": [
+          -0.10494264827816534,
+          0.059185057337305,
+          -0.3868739161004827,
+          -0.6243691917193344,
+          -0.17659015498814568,
+          -0.13714150301375927,
+          1.4533302301345543,
+          0.00275148649322704
+        ]
+      },
+      {
+        "inference_index": 19,
+        "local_frame": 76,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.9477754139780923,
+          "attitude_deg": 0.7581900615310597
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 218.9118506458983,
+          "attitude_deg": 67.66391612001698
+        },
+        "first_action_difference_rad": [
+          -0.0931352560051817,
+          0.07463400500266507,
+          -0.43259288870114065,
+          -0.6530235651903933,
+          -0.18970442332926418,
+          -0.14401101133999006,
+          1.5842207799772956,
+          -0.013973461179272617
+        ]
+      },
+      {
+        "inference_index": 20,
+        "local_frame": 80,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.3166286683678807,
+          "attitude_deg": 0.76130236929593
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 232.45871057676607,
+          "attitude_deg": 71.47692126810618
+        },
+        "first_action_difference_rad": [
+          -0.07875056532279512,
+          0.09393189833922505,
+          -0.48415478995312067,
+          -0.6631354636987055,
+          -0.20705507364489795,
+          -0.13513838031341863,
+          1.6224905090736055,
+          -0.031006584741786775
+        ]
+      },
+      {
+        "inference_index": 21,
+        "local_frame": 84,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.900161323619079,
+          "attitude_deg": 0.46154634980739
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 269.17070735412534,
+          "attitude_deg": 80.52422015697627
+        },
+        "first_action_difference_rad": [
+          -0.07442769371243735,
+          0.1594353177282884,
+          -0.590522963011408,
+          -0.7007375146779911,
+          -0.20435958176321134,
+          -0.15699829514146912,
+          1.6796403396445532,
+          -0.021874611457815607
+        ]
+      },
+      {
+        "inference_index": 22,
+        "local_frame": 88,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.1408083275050664,
+          "attitude_deg": 0.5241492895161238
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 288.5315296000928,
+          "attitude_deg": 83.21529874195703
+        },
+        "first_action_difference_rad": [
+          -0.031735786170096716,
+          0.11654718796286774,
+          -0.6714937053223192,
+          -0.6103858099804302,
+          -0.17629958558335712,
+          -0.14093631054738287,
+          1.5779016959599996,
+          -0.0031292429045568504
+        ]
+      },
+      {
+        "inference_index": 23,
+        "local_frame": 92,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.240555676420664,
+          "attitude_deg": 0.7877261210509001
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 320.6025196548021,
+          "attitude_deg": 90.50765079309271
+        },
+        "first_action_difference_rad": [
+          -0.027002586442806988,
+          0.17112636375282142,
+          -0.7887302534991819,
+          -0.6673509437696123,
+          -0.18211201119836962,
+          -0.14818420501566898,
+          1.6225460202234288,
+          -0.002046043437594902
+        ]
+      },
+      {
+        "inference_index": 24,
+        "local_frame": 96,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.0657899830153,
+          "attitude_deg": 1.0134083244411305
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 346.84063937655435,
+          "attitude_deg": 95.23005981288298
+        },
+        "first_action_difference_rad": [
+          -0.01581222095675989,
+          0.1707390676726894,
+          -0.8983160460044882,
+          -0.6341759492944303,
+          -0.16684619576040682,
+          -0.1402360212031013,
+          1.5834757755567361,
+          0.004272620119683379
+        ]
+      },
+      {
+        "inference_index": 25,
+        "local_frame": 100,
+        "teacher_observation_goal_error": {
+          "position_mm": 7.56714442449279,
+          "attitude_deg": 1.4991135701609626
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 360.1085519209705,
+          "attitude_deg": 97.24451608488194
+        },
+        "first_action_difference_rad": [
+          -0.0011423250697152401,
+          0.15703055576196254,
+          -0.9709366027284025,
+          -0.615479972337714,
+          -0.16925773239741448,
+          -0.13691869817708568,
+          1.5482573474605952,
+          0.0024071099265821905
+        ]
+      },
+      {
+        "inference_index": 26,
+        "local_frame": 104,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.73160820241762,
+          "attitude_deg": 1.3314463161045893
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 369.1335387576636,
+          "attitude_deg": 100.07708906499101
+        },
+        "first_action_difference_rad": [
+          -0.004442510662778357,
+          0.1758074766845338,
+          -1.0007251942705013,
+          -0.6458246557179075,
+          -0.17738441605775246,
+          -0.1405448162951085,
+          1.582251229778933,
+          0.0006469107927689621
+        ]
+      },
+      {
+        "inference_index": 27,
+        "local_frame": 108,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.5476771870158825,
+          "attitude_deg": 0.472192300236084
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 370.31655174343274,
+          "attitude_deg": 100.30564582940475
+        },
+        "first_action_difference_rad": [
+          -0.010491452175937069,
+          0.17005238177925625,
+          -1.0002253728076496,
+          -0.6467240826770431,
+          -0.17459283711299434,
+          -0.14030037740325774,
+          1.577909572373071,
+          -0.009508084209999657
+        ]
+      },
+      {
+        "inference_index": 28,
+        "local_frame": 112,
+        "teacher_observation_goal_error": {
+          "position_mm": 16.07133450453036,
+          "attitude_deg": 3.171971227949042
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 350.42210350773604,
+          "attitude_deg": 93.83584586855005
+        },
+        "first_action_difference_rad": [
+          -0.0034351533602701226,
+          0.1631330766684642,
+          -0.9615210704905526,
+          -0.630993488778921,
+          -0.17551898920688203,
+          -0.12867661409587827,
+          1.5272049417941913,
+          -0.0032495984008859558
+        ]
+      },
+      {
+        "inference_index": 29,
+        "local_frame": 116,
+        "teacher_observation_goal_error": {
+          "position_mm": 3.464572942750488,
+          "attitude_deg": 0.7175379870536346
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 360.954684222387,
+          "attitude_deg": 97.92233159411188
+        },
+        "first_action_difference_rad": [
+          -0.019407095089284045,
+          0.1654070914808886,
+          -0.9777575578731506,
+          -0.630396821720858,
+          -0.17671687789371227,
+          -0.13808485198955145,
+          1.5708748643841604,
+          -0.004784130979082091
+        ]
+      },
+      {
+        "inference_index": 30,
+        "local_frame": 120,
+        "teacher_observation_goal_error": {
+          "position_mm": 3.980007437349495,
+          "attitude_deg": 0.8755602545564397
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 368.34097607308144,
+          "attitude_deg": 99.90961364440412
+        },
+        "first_action_difference_rad": [
+          -0.017527775047894066,
+          0.17979562344935274,
+          -1.0061725465154858,
+          -0.6535360903418788,
+          -0.17860553672616453,
+          -0.1417756769576225,
+          1.5831098762150102,
+          -0.01648870299708799
+        ]
+      },
+      {
+        "inference_index": 31,
+        "local_frame": 124,
+        "teacher_observation_goal_error": {
+          "position_mm": 3.234153651091581,
+          "attitude_deg": 0.9255605387444269
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 357.9367290521675,
+          "attitude_deg": 95.06343327775548
+        },
+        "first_action_difference_rad": [
+          -0.018048624501448327,
+          0.15134709195335877,
+          -0.9788892524114418,
+          -0.6175299924009978,
+          -0.17353217779177044,
+          -0.1390761673256249,
+          1.5114289914268024,
+          -0.01528514803379688
+        ]
+      },
+      {
+        "inference_index": 32,
+        "local_frame": 128,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.521533073068993,
+          "attitude_deg": 0.8206285158108666
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 365.2284398917317,
+          "attitude_deg": 99.31472428959424
+        },
+        "first_action_difference_rad": [
+          -0.008163601173429479,
+          0.1762684546168044,
+          -0.9894341057348068,
+          -0.6386914111989588,
+          -0.17456551471160675,
+          -0.1396306347902213,
+          1.567233658638792,
+          -0.014201948566834904
+        ]
+      },
+      {
+        "inference_index": 33,
+        "local_frame": 132,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.582410443660839,
+          "attitude_deg": 1.0149000917423725
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 356.6226573016966,
+          "attitude_deg": 94.67929227521728
+        },
+        "first_action_difference_rad": [
+          -0.01751110111006017,
+          0.1486618372980058,
+          -0.9716487525400269,
+          -0.6170196145679843,
+          -0.1734789332862834,
+          -0.1373772980845408,
+          1.5101331385201602,
+          -0.012216082877404555
+        ]
+      },
+      {
+        "inference_index": 34,
+        "local_frame": 136,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.1658452447856515,
+          "attitude_deg": 0.25395984750596085
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 370.1667615865389,
+          "attitude_deg": 99.98899105105318
+        },
+        "first_action_difference_rad": [
+          -0.0010755538109588486,
+          0.17486182459673216,
+          -0.9975552326782282,
+          -0.6438271951050694,
+          -0.16715886361956822,
+          -0.14148285531844706,
+          1.5558818907332455,
+          -0.010230217187974289
+        ]
+      },
+      {
+        "inference_index": 35,
+        "local_frame": 140,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.4562362151248,
+          "attitude_deg": 1.3360548538723038
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 365.8173120594729,
+          "attitude_deg": 98.39103581615339
+        },
+        "first_action_difference_rad": [
+          -0.010911732562688889,
+          0.1760868085464422,
+          -0.9993247726362602,
+          -0.6377329187376832,
+          -0.1748449519128903,
+          -0.13665801818426504,
+          1.5608505716058292,
+          -0.001444265955949292
+        ]
+      },
+      {
+        "inference_index": 36,
+        "local_frame": 144,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.1123848082123438,
+          "attitude_deg": 0.38157214890285895
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 363.54850095450485,
+          "attitude_deg": 98.39581929263817
+        },
+        "first_action_difference_rad": [
+          0.005271874582012823,
+          0.16970791320955508,
+          -0.9626238292575622,
+          -0.6380693004451241,
+          -0.16572891109091992,
+          -0.1328509874499837,
+          1.5622103354769348,
+          -0.024492343502973746
+        ]
+      },
+      {
+        "inference_index": 37,
+        "local_frame": 148,
+        "teacher_observation_goal_error": {
+          "position_mm": 10.337528164649063,
+          "attitude_deg": 1.3525931765885837
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 363.080826397897,
+          "attitude_deg": 98.75218441492201
+        },
+        "first_action_difference_rad": [
+          0.01244904913933833,
+          0.19296420274914639,
+          -0.9655957724305114,
+          -0.6819866556281096,
+          -0.16675825188709292,
+          -0.13428807433675383,
+          1.5996108210924265,
+          0.011994177431047803
+        ]
+      },
+      {
+        "inference_index": 38,
+        "local_frame": 152,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.132048572075597,
+          "attitude_deg": 0.6236901166600409
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 368.999169340592,
+          "attitude_deg": 99.11969702835279
+        },
+        "first_action_difference_rad": [
+          -0.008034206793654824,
+          0.24453153490332255,
+          -0.9782776474865709,
+          -0.7185537044533314,
+          -0.15687537872086543,
+          -0.129089626720978,
+          1.5942546707280016,
+          0.006318663557278226
+        ]
+      },
+      {
+        "inference_index": 39,
+        "local_frame": 156,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.7545376995786155,
+          "attitude_deg": 1.144416455145625
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 379.42492581334307,
+          "attitude_deg": 98.90481347461576
+        },
+        "first_action_difference_rad": [
+          0.033199772916500184,
+          0.2713125285206399,
+          -0.99468652032833,
+          -0.7476551012094939,
+          -0.15330043987001374,
+          -0.1339403220542179,
+          1.558425938316227,
+          -0.0016849769486075306
+        ]
+      },
+      {
+        "inference_index": 40,
+        "local_frame": 160,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.301626970286652,
+          "attitude_deg": 0.9806619679987825
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 385.85859370170533,
+          "attitude_deg": 99.6860330687287
+        },
+        "first_action_difference_rad": [
+          0.06838966783045666,
+          0.31270302402985994,
+          -0.9876564505288327,
+          -0.7889613235818231,
+          -0.15167576078029588,
+          -0.13075078179454103,
+          1.5758836138823304,
+          -0.00012035549632904985
+        ]
+      },
+      {
+        "inference_index": 41,
+        "local_frame": 164,
+        "teacher_observation_goal_error": {
+          "position_mm": 8.902952175671814,
+          "attitude_deg": 2.3432262739217085
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 391.4779160428347,
+          "attitude_deg": 99.24677992511145
+        },
+        "first_action_difference_rad": [
+          0.10711173634752177,
+          0.2933002156358553,
+          -0.9672379423798187,
+          -0.7825326682387685,
+          -0.147267909417923,
+          -0.12751324588966018,
+          1.5552235087414645,
+          0.002346932178417638
+        ]
+      },
+      {
+        "inference_index": 42,
+        "local_frame": 168,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.723252014250947,
+          "attitude_deg": 0.6524021881820233
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 393.05142253655293,
+          "attitude_deg": 97.1146323633999
+        },
+        "first_action_difference_rad": [
+          0.15569609189670552,
+          0.30632350470173536,
+          -0.9589746350000835,
+          -0.8294931199431839,
+          -0.15751973813288456,
+          -0.13292413587337115,
+          1.54664884305355,
+          -0.0036595593102569657
+        ]
+      },
+      {
+        "inference_index": 43,
+        "local_frame": 172,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.903824659973404,
+          "attitude_deg": 1.6095298579683783
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 406.09725867967205,
+          "attitude_deg": 98.05252176610912
+        },
+        "first_action_difference_rad": [
+          0.19705039943322478,
+          0.3233738859048494,
+          -1.0021982677305417,
+          -0.8748332072459071,
+          -0.16702491437594014,
+          -0.1431667572447617,
+          1.5491141917610354,
+          0.011614305395759084
+        ]
+      },
+      {
+        "inference_index": 44,
+        "local_frame": 176,
+        "teacher_observation_goal_error": {
+          "position_mm": 12.904232911420644,
+          "attitude_deg": 2.2023013258854847
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 405.031326679155,
+          "attitude_deg": 96.74805087389963
+        },
+        "first_action_difference_rad": [
+          0.207131635031876,
+          0.338459913546036,
+          -1.0041203896104194,
+          -0.891890245307619,
+          -0.18182019420456963,
+          -0.1531605123620985,
+          1.5615253921728294,
+          0.011072705662278054
+        ]
+      },
+      {
+        "inference_index": 45,
+        "local_frame": 180,
+        "teacher_observation_goal_error": {
+          "position_mm": 10.875948662235428,
+          "attitude_deg": 1.6286637709720113
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 425.6654902792413,
+          "attitude_deg": 100.75587940364605
+        },
+        "first_action_difference_rad": [
+          0.2103953731808151,
+          0.36287688117910927,
+          -1.0698429613325817,
+          -0.970254114260032,
+          -0.19788184198197967,
+          -0.18077635672919046,
+          1.6084616381334231,
+          0.02953599102101548
+        ]
+      },
+      {
+        "inference_index": 46,
+        "local_frame": 184,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.978268772029883,
+          "attitude_deg": 0.9064526470212891
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 417.05933874301866,
+          "attitude_deg": 96.05382176592354
+        },
+        "first_action_difference_rad": [
+          0.22263736684086882,
+          0.32029030513802303,
+          -1.0411591880003275,
+          -0.9618774422816232,
+          -0.21187315723195033,
+          -0.18252542120388726,
+          1.5606337130055932,
+          -0.003348797657625968
+        ]
+      },
+      {
+        "inference_index": 47,
+        "local_frame": 188,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.758408415379368,
+          "attitude_deg": 1.678040097843309
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 434.3260359130514,
+          "attitude_deg": 99.81375332678002
+        },
+        "first_action_difference_rad": [
+          0.22791139515962813,
+          0.37383277642897017,
+          -1.1049313409610027,
+          -0.9866382101523428,
+          -0.23211379725984216,
+          -0.21171253982501193,
+          1.6042986122727894,
+          0.01127580556233343
+        ]
+      },
+      {
+        "inference_index": 48,
+        "local_frame": 192,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.8277215706649197,
+          "attitude_deg": 1.2163384619852993
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 420.2412263369687,
+          "attitude_deg": 92.7772840595882
+        },
+        "first_action_difference_rad": [
+          0.24477591649302388,
+          0.2867227839515641,
+          -1.0557926975396854,
+          -0.9501998181874258,
+          -0.23924106998138384,
+          -0.21896359097111961,
+          1.527803780027661,
+          0.02003919013879668
+        ]
+      },
+      {
+        "inference_index": 49,
+        "local_frame": 196,
+        "teacher_observation_goal_error": {
+          "position_mm": 7.11562517301067,
+          "attitude_deg": 1.249798786654862
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 428.9014024013519,
+          "attitude_deg": 93.98681264072837
+        },
+        "first_action_difference_rad": [
+          0.25949333214234954,
+          0.2697595595361261,
+          -1.0817406773590892,
+          -1.0039179954912858,
+          -0.26087664050453485,
+          -0.2266617594267868,
+          1.559345652292854,
+          0.0361066488987328
+        ]
+      },
+      {
+        "inference_index": 50,
+        "local_frame": 200,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.4649648263276025,
+          "attitude_deg": 0.8858009723435418
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 450.44147116529837,
+          "attitude_deg": 99.61908972923923
+        },
+        "first_action_difference_rad": [
+          0.2602038692376107,
+          0.2951978184242777,
+          -1.159407012006156,
+          -1.044306543915569,
+          -0.2785371508419696,
+          -0.26569444459122205,
+          1.6174584243634995,
+          -0.0008424884743037653
+        ]
+      },
+      {
+        "inference_index": 51,
+        "local_frame": 204,
+        "teacher_observation_goal_error": {
+          "position_mm": 3.4081455716346123,
+          "attitude_deg": 0.8670751386230406
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 452.8799882505054,
+          "attitude_deg": 99.5812865313421
+        },
+        "first_action_difference_rad": [
+          0.25500081717627804,
+          0.3006927494941601,
+          -1.1680897608816303,
+          -1.035191034660046,
+          -0.28903133162967287,
+          -0.2731876967495199,
+          1.61114171876043,
+          0.014683370552151298
+        ]
+      },
+      {
+        "inference_index": 52,
+        "local_frame": 208,
+        "teacher_observation_goal_error": {
+          "position_mm": 8.18412075969459,
+          "attitude_deg": 1.3514468220749083
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 448.87193101514,
+          "attitude_deg": 97.4986263002321
+        },
+        "first_action_difference_rad": [
+          0.27426771030945135,
+          0.30224610367071836,
+          -1.159633155872095,
+          -1.0759684712249304,
+          -0.29273667097628886,
+          -0.27478943724117677,
+          1.5914112889257959,
+          0.0025274654229113236
+        ]
+      },
+      {
+        "inference_index": 53,
+        "local_frame": 212,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.230928047651612,
+          "attitude_deg": 1.0400030231445359
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 434.96676350127063,
+          "attitude_deg": 91.40411107315676
+        },
+        "first_action_difference_rad": [
+          0.28157306217336053,
+          0.2446114858434706,
+          -1.109936936304879,
+          -1.0067197705555069,
+          -0.297746208671803,
+          -0.28139827990563426,
+          1.529201810593292,
+          0.026839275681391384
+        ]
+      },
+      {
+        "inference_index": 54,
+        "local_frame": 216,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.6830268158855,
+          "attitude_deg": 0.5804184028421736
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 455.5414090014433,
+          "attitude_deg": 98.29502471658137
+        },
+        "first_action_difference_rad": [
+          0.28320442982008126,
+          0.3137674755517202,
+          -1.1892235991999094,
+          -1.0770041932549133,
+          -0.314220355123108,
+          -0.30552060955842575,
+          1.5950685098372237,
+          -0.002309321085814775
+        ]
+      },
+      {
+        "inference_index": 55,
+        "local_frame": 220,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.760280950419287,
+          "attitude_deg": 1.275548074411952
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 444.77269334182466,
+          "attitude_deg": 95.0892136392763
+        },
+        "first_action_difference_rad": [
+          0.26991820951921325,
+          0.30055684090259743,
+          -1.1621259513648812,
+          -1.0567784951674346,
+          -0.310839639800909,
+          -0.30025454066919915,
+          1.5811451086507262,
+          0.003580576015791037
+        ]
+      },
+      {
+        "inference_index": 56,
+        "local_frame": 224,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.393516700316279,
+          "attitude_deg": 1.4680425546130829
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 432.2639601511804,
+          "attitude_deg": 90.10423474012556
+        },
+        "first_action_difference_rad": [
+          0.25963102031917584,
+          0.2604675372364008,
+          -1.130764414591357,
+          -1.028703358594811,
+          -0.30603804523576605,
+          -0.2928921634541642,
+          1.5115798844590869,
+          0.009937320804329602
+        ]
+      },
+      {
+        "inference_index": 57,
+        "local_frame": 228,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.3807963237093235,
+          "attitude_deg": 0.8724605398582235
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 428.74659216778673,
+          "attitude_deg": 90.77639563424111
+        },
+        "first_action_difference_rad": [
+          0.24777879445638562,
+          0.296809229689881,
+          -1.134077540195919,
+          -1.0307227182187366,
+          -0.3117544066598643,
+          -0.28216976072664846,
+          1.5238698810363012,
+          0.0034903093935441665
+        ]
+      },
+      {
+        "inference_index": 58,
+        "local_frame": 232,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.8824063877150843,
+          "attitude_deg": 0.38862071106593266
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 437.4863081660961,
+          "attitude_deg": 92.58560744298264
+        },
+        "first_action_difference_rad": [
+          0.24701190538733359,
+          0.28218560842935336,
+          -1.1450555630573813,
+          -1.055394139791358,
+          -0.3127569387949005,
+          -0.2895239662076548,
+          1.567515370113719,
+          0.008424884743037653
+        ]
+      },
+      {
+        "inference_index": 59,
+        "local_frame": 236,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.147636944405539,
+          "attitude_deg": 1.3140289316303342
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 441.9538252586048,
+          "attitude_deg": 92.83581920347345
+        },
+        "first_action_difference_rad": [
+          0.24925007496068796,
+          0.29017709369476746,
+          -1.1697295265063326,
+          -1.086382010405104,
+          -0.3161920946285386,
+          -0.2983499320547709,
+          1.5682685062492299,
+          0.034795902321523575
+        ]
+      },
+      {
+        "inference_index": 60,
+        "local_frame": 240,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.789583984382945,
+          "attitude_deg": 0.7198396638543879
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 446.76739539043456,
+          "attitude_deg": 95.89106038011994
+        },
+        "first_action_difference_rad": [
+          0.23153420661577806,
+          0.3042533582712525,
+          -1.1862812239993292,
+          -1.0971400753939542,
+          -0.32142151762687776,
+          -0.31013035896600727,
+          1.6286826431517056,
+          0.010320483810221104
+        ]
+      },
+      {
+        "inference_index": 61,
+        "local_frame": 244,
+        "teacher_observation_goal_error": {
+          "position_mm": 8.593007366998876,
+          "attitude_deg": 1.2932607477982234
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 425.2515974911873,
+          "attitude_deg": 90.5487797249571
+        },
+        "first_action_difference_rad": [
+          0.2046725402469264,
+          0.28435275725438486,
+          -1.1412521806951794,
+          -1.0573148342219074,
+          -0.3196606403839588,
+          -0.3016379353107325,
+          1.5875435330138075,
+          0.05312190719226062
+        ]
+      },
+      {
+        "inference_index": 62,
+        "local_frame": 248,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.4203717399291538,
+          "attitude_deg": 0.3585668170323689
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 438.2396294683147,
+          "attitude_deg": 94.31696890612535
+        },
+        "first_action_difference_rad": [
+          0.19240033274268392,
+          0.3107636776200989,
+          -1.178736681572794,
+          -1.1016282799306614,
+          -0.3156427188303883,
+          -0.3197338597337595,
+          1.6101368621348486,
+          -0.004092086875189721
+        ]
+      },
+      {
+        "inference_index": 63,
+        "local_frame": 252,
+        "teacher_observation_goal_error": {
+          "position_mm": 1.2349367049721174,
+          "attitude_deg": 0.2765643140672018
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 430.39948786963515,
+          "attitude_deg": 91.9873669810586
+        },
+        "first_action_difference_rad": [
+          0.18136738065484556,
+          0.2804557294186975,
+          -1.1600112038865544,
+          -1.0705137857024845,
+          -0.31702571970475746,
+          -0.311259188383857,
+          1.6002276586239546,
+          -0.001805332444936636
+        ]
+      },
+      {
+        "inference_index": 64,
+        "local_frame": 256,
+        "teacher_observation_goal_error": {
+          "position_mm": 6.645878735491501,
+          "attitude_deg": 1.2705820574696791
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 418.19654854981377,
+          "attitude_deg": 87.98062259208325
+        },
+        "first_action_difference_rad": [
+          0.17718404746184557,
+          0.2541983419984806,
+          -1.1301146977496432,
+          -1.0502555895288381,
+          -0.31456438795328934,
+          -0.2900223911919174,
+          1.556197566002984,
+          0.03786120636865559
+        ]
+      },
+      {
+        "inference_index": 65,
+        "local_frame": 260,
+        "teacher_observation_goal_error": {
+          "position_mm": 3.434932574872624,
+          "attitude_deg": 0.34428609251058545
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 422.3372566146217,
+          "attitude_deg": 92.11753718358298
+        },
+        "first_action_difference_rad": [
+          0.1564680170054725,
+          0.32332826047979074,
+          -1.1647720583821268,
+          -1.0784805673790725,
+          -0.3195306863848928,
+          -0.296420229494279,
+          1.60513099332484,
+          0.01814359107161323
+        ]
+      },
+      {
+        "inference_index": 66,
+        "local_frame": 264,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.8355690655980315,
+          "attitude_deg": 0.6607982761399972
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 415.2382090114155,
+          "attitude_deg": 90.98837764826
+        },
+        "first_action_difference_rad": [
+          0.12041189304405076,
+          0.31765767630345987,
+          -1.1693740963721577,
+          -1.0706041425390358,
+          -0.32298476645777896,
+          -0.30318709154651424,
+          1.619008298729939,
+          0.012516971618227374
+        ]
+      },
+      {
+        "inference_index": 67,
+        "local_frame": 268,
+        "teacher_observation_goal_error": {
+          "position_mm": 10.23946568481433,
+          "attitude_deg": 1.4873224765967048
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 411.42589675729016,
+          "attitude_deg": 88.16826069313129
+        },
+        "first_action_difference_rad": [
+          0.08989710183406113,
+          0.30191603627992414,
+          -1.173373319608694,
+          -1.1044407935855325,
+          -0.3121836582044557,
+          -0.3147628940256437,
+          1.575514161119849,
+          0.026989720051802724
+        ]
+      },
+      {
+        "inference_index": 68,
+        "local_frame": 272,
+        "teacher_observation_goal_error": {
+          "position_mm": 9.483036831946853,
+          "attitude_deg": 1.814816434478797
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 391.3704032390337,
+          "attitude_deg": 83.90425348882177
+        },
+        "first_action_difference_rad": [
+          0.06384722790148495,
+          0.2806068441039358,
+          -1.123614695085538,
+          -1.0594216932665348,
+          -0.3162321212754229,
+          -0.2992248912666904,
+          1.5598296693886637,
+          0.11296734445806111
+        ]
+      },
+      {
+        "inference_index": 69,
+        "local_frame": 276,
+        "teacher_observation_goal_error": {
+          "position_mm": 7.413518225767993,
+          "attitude_deg": 0.710970569428141
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 402.8265741709761,
+          "attitude_deg": 91.58457769894025
+        },
+        "first_action_difference_rad": [
+          0.010545381021523414,
+          0.33388860619233035,
+          -1.2014126874929605,
+          -1.0882760849242978,
+          -0.322877723914583,
+          -0.3166396815701738,
+          1.679300798322784,
+          0.007883285009556651
+        ]
+      },
+      {
+        "inference_index": 70,
+        "local_frame": 280,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.692253847674134,
+          "attitude_deg": 0.4335956152558911
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 386.56028417494304,
+          "attitude_deg": 86.06556307170449
+        },
+        "first_action_difference_rad": [
+          -0.016155730243658906,
+          0.2993522693214807,
+          -1.1491407181407018,
+          -1.0780057033768382,
+          -0.31182062759900475,
+          -0.30626002451362827,
+          1.6195125067473872,
+          0.042701753986641944
+        ]
+      },
+      {
+        "inference_index": 71,
+        "local_frame": 284,
+        "teacher_observation_goal_error": {
+          "position_mm": 10.531149192510327,
+          "attitude_deg": 2.0929171956981105
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 369.9753995958062,
+          "attitude_deg": 81.83442087636229
+        },
+        "first_action_difference_rad": [
+          -0.051491713762274016,
+          0.3089137941518283,
+          -1.1467550409713096,
+          -1.065539610795236,
+          -0.31561506833122643,
+          -0.2987768454961469,
+          1.5679774428623077,
+          -0.009508084209999629
+        ]
+      },
+      {
+        "inference_index": 72,
+        "local_frame": 288,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.644537600333123,
+          "attitude_deg": 0.9013159542200669
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 363.83133257908355,
+          "attitude_deg": 80.3236336128411
+        },
+        "first_action_difference_rad": [
+          -0.09108558268103467,
+          0.302644944257113,
+          -1.1302763409460228,
+          -1.0622213797990108,
+          -0.3157745322080201,
+          -0.3015685574229411,
+          1.5703749739792343,
+          0.035171543108894504
+        ]
+      },
+      {
+        "inference_index": 73,
+        "local_frame": 292,
+        "teacher_observation_goal_error": {
+          "position_mm": 7.22185475585133,
+          "attitude_deg": 1.0258392774478258
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 363.1587291255246,
+          "attitude_deg": 81.34610397300798
+        },
+        "first_action_difference_rad": [
+          -0.09629905183557336,
+          0.30432358898562434,
+          -1.1479288600573567,
+          -1.05086871397541,
+          -0.31705889050626945,
+          -0.3031146790904899,
+          1.5881344131958635,
+          0.0008424884743037653
+        ]
+      },
+      {
+        "inference_index": 74,
+        "local_frame": 296,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.824337669616448,
+          "attitude_deg": 0.9919796698599301
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 375.9595274739189,
+          "attitude_deg": 84.560772807362
+        },
+        "first_action_difference_rad": [
+          -0.1391652722765362,
+          0.296924269428939,
+          -1.1980565159419154,
+          -1.1008544664294202,
+          -0.3005219066499991,
+          -0.320468878672417,
+          1.5979746624088038,
+          -0.010862083543702133
+        ]
+      },
+      {
+        "inference_index": 75,
+        "local_frame": 300,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.5791418988479573,
+          "attitude_deg": 0.5401712755730134
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 365.946528275032,
+          "attitude_deg": 82.97976682719593
+        },
+        "first_action_difference_rad": [
+          -0.18512544309063844,
+          0.2990764624624372,
+          -1.1859200333426125,
+          -1.1089055967318684,
+          -0.30832401886770655,
+          -0.3181585472511354,
+          1.6066056903317634,
+          -0.005054930845822592
+        ]
+      },
+      {
+        "inference_index": 76,
+        "local_frame": 304,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.06532740724285,
+          "attitude_deg": 0.7929795647377081
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 341.79673615034636,
+          "attitude_deg": 76.25514862792633
+        },
+        "first_action_difference_rad": [
+          -0.20260005614735116,
+          0.25255346922687893,
+          -1.1135735959747497,
+          -1.050828456490292,
+          -0.3015575944777671,
+          -0.2947809918936947,
+          1.5313938298196372,
+          0.03202137903407737
+        ]
+      },
+      {
+        "inference_index": 77,
+        "local_frame": 308,
+        "teacher_observation_goal_error": {
+          "position_mm": 8.706057111516317,
+          "attitude_deg": 1.4488914805802586
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 340.72199670160217,
+          "attitude_deg": 79.65861265271553
+        },
+        "first_action_difference_rad": [
+          -0.25292623338497167,
+          0.32336309145321784,
+          -1.1712213549412405,
+          -1.0853539977883506,
+          -0.313390581732224,
+          -0.3088902923859547,
+          1.6030735064153974,
+          0.042365134707846475
+        ]
+      },
+      {
+        "inference_index": 78,
+        "local_frame": 312,
+        "teacher_observation_goal_error": {
+          "position_mm": 3.6958449666442728,
+          "attitude_deg": 0.48996276958159335
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 322.6466675482288,
+          "attitude_deg": 76.87017691755719
+        },
+        "first_action_difference_rad": [
+          -0.29468568077335483,
+          0.30971315623979334,
+          -1.1434772805248832,
+          -1.0616617589763588,
+          -0.3163622323156272,
+          -0.29938366240379044,
+          1.5892840590476287,
+          0.0825450612625093
+        ]
+      },
+      {
+        "inference_index": 79,
+        "local_frame": 316,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.223240365506517,
+          "attitude_deg": 0.5555633023570095
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 307.1075102588656,
+          "attitude_deg": 74.22366319893406
+        },
+        "first_action_difference_rad": [
+          -0.3390480109903028,
+          0.3077005228936101,
+          -1.135778288614174,
+          -1.0301084550922386,
+          -0.32555930571635683,
+          -0.30477718391008585,
+          1.5801035293847312,
+          0.09432862024793942
+        ]
+      },
+      {
+        "inference_index": 80,
+        "local_frame": 320,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.257406552175378,
+          "attitude_deg": 0.838904291283091
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 315.2527464772124,
+          "attitude_deg": 76.03385524283003
+        },
+        "first_action_difference_rad": [
+          -0.4007944003813198,
+          0.31240175278400867,
+          -1.1743392852430712,
+          -1.0999286410803901,
+          -0.3233379552718638,
+          -0.3167918675445178,
+          1.5999465583808958,
+          0.09648937751797296
+        ]
+      },
+      {
+        "inference_index": 81,
+        "local_frame": 324,
+        "teacher_observation_goal_error": {
+          "position_mm": 4.095679338983069,
+          "attitude_deg": 0.371483875310278
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 283.23212503430744,
+          "attitude_deg": 71.84749096984878
+        },
+        "first_action_difference_rad": [
+          -0.4602669585838016,
+          0.3384268471163712,
+          -1.1348045104205349,
+          -1.0611986192874105,
+          -0.3296864674881106,
+          -0.30363490543882204,
+          1.5790046675711178,
+          0.12603477131213914
+        ]
+      },
+      {
+        "inference_index": 82,
+        "local_frame": 328,
+        "teacher_observation_goal_error": {
+          "position_mm": 3.86359225272567,
+          "attitude_deg": 0.305936705689929
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 268.79160406229903,
+          "attitude_deg": 73.63541236005642
+        },
+        "first_action_difference_rad": [
+          -0.5393255409606643,
+          0.4073023817762524,
+          -1.1891940587257777,
+          -1.0758181313597819,
+          -0.3385650934773732,
+          -0.31004005469184326,
+          1.6146924393916753,
+          0.13334260660487224
+        ]
+      },
+      {
+        "inference_index": 83,
+        "local_frame": 332,
+        "teacher_observation_goal_error": {
+          "position_mm": 2.046674775959334,
+          "attitude_deg": 0.22332678868449196
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 279.7798618685256,
+          "attitude_deg": 68.98113859181059
+        },
+        "first_action_difference_rad": [
+          -0.5806822353726455,
+          0.265289805308928,
+          -1.1225632640549157,
+          -1.0511168471082835,
+          -0.32616956535704555,
+          -0.30397794967223857,
+          1.5477823355721598,
+          0.1940017767547433
+        ]
+      },
+      {
+        "inference_index": 84,
+        "local_frame": 336,
+        "teacher_observation_goal_error": {
+          "position_mm": 5.790905654035826,
+          "attitude_deg": 1.2455625474189054
+        },
+        "actual_observation_goal_error": {
+          "position_mm": 263.78244484173956,
+          "attitude_deg": 69.9833616451234
+        },
+        "first_action_difference_rad": [
+          -0.6496573587344887,
+          0.27569987446919947,
+          -1.1313227446112726,
+          -1.0395935831311685,
+          -0.3162362878682925,
+          -0.30928399893694786,
+          1.6009902062518842,
+          0.14544961731372857
+        ]
+      }
+    ]
+  }
+]

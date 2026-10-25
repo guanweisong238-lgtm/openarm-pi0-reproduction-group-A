@@ -1,0 +1,29 @@
+{
+  "source_report": "/home/song03/scientific_research/openarm-a1/outputs/a2_interface/closed_loop_20261023-220702-969312/report.json",
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_lora/lora_001/1000",
+  "executed_steps": 450,
+  "elapsed_simulation_seconds": 15.000000000003233,
+  "completed_horizon": true,
+  "clipped_steps": 348,
+  "clipped_steps_per_joint": [
+    0,
+    0,
+    4,
+    0,
+    0,
+    90,
+    0,
+    310,
+    0,
+    0,
+    0,
+    65,
+    0,
+    0,
+    0,
+    0
+  ],
+  "task_success": false,
+  "evaluation_method": "final_image_inspection",
+  "observation": "最终顶部图像中橙色方块仍位于黑色托盘外，未完成放入托盘目标"
+}

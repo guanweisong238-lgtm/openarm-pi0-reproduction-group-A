@@ -1,0 +1,122 @@
+[
+  {
+    "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_aug_control_006_io_mask/300",
+    "bytes": 5562036886,
+    "metadata": [
+      {
+        "path": "dataset_manifest.json",
+        "sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+      },
+      {
+        "path": "input_protocol.json",
+        "sha256": "ab7cfa6e968208abc34715ce399b7c9e4ca89a8b339beb7cc7271fda8fcc383f"
+      },
+      {
+        "path": "config.txt",
+        "sha256": "0ca6ea0f22dfdfc45ba905a874fd8ebc1e4fa8bde73a91ec0bb0664ce74af716"
+      },
+      {
+        "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+        "sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+      }
+    ],
+    "weights_backed_up": false,
+    "reason": "completed comparison superseded by retained010/011, or intermediate012/600 superseded by retained012/1200"
+  },
+  {
+    "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_noaug_007_io_mask/300",
+    "bytes": 5562271127,
+    "metadata": [
+      {
+        "path": "dataset_manifest.json",
+        "sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+      },
+      {
+        "path": "input_protocol.json",
+        "sha256": "a311ef4f82e8f3f5b1ec6a81e07c8f59d30408fabe355298d24329c16dcf0a93"
+      },
+      {
+        "path": "config.txt",
+        "sha256": "039ba5680b43b12e8627a5b67b4157e3098182b4c131a6a14e5cf7d195875cdf"
+      },
+      {
+        "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+        "sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+      }
+    ],
+    "weights_backed_up": false,
+    "reason": "completed comparison superseded by retained010/011, or intermediate012/600 superseded by retained012/1200"
+  },
+  {
+    "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_noaug_first4_008_io_mask/300",
+    "bytes": 5562104008,
+    "metadata": [
+      {
+        "path": "dataset_manifest.json",
+        "sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+      },
+      {
+        "path": "input_protocol.json",
+        "sha256": "ca459df6feb6afa1b9e573c7e54fd563f1abe66dead5ef113a6634d62adb1c4f"
+      },
+      {
+        "path": "config.txt",
+        "sha256": "b399d4ec25d81b2010417b4ab5f93cd8599e78c93049f334f203da1e8671ccde"
+      },
+      {
+        "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+        "sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+      }
+    ],
+    "weights_backed_up": false,
+    "reason": "completed comparison superseded by retained010/011, or intermediate012/600 superseded by retained012/1200"
+  },
+  {
+    "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_time_beta_009_io_mask/300",
+    "bytes": 5562147206,
+    "metadata": [
+      {
+        "path": "dataset_manifest.json",
+        "sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+      },
+      {
+        "path": "input_protocol.json",
+        "sha256": "20aa0f6dcf91103dc5ce7861937659baaaf9d0f48997c7b2715824e7c8dfe7e9"
+      },
+      {
+        "path": "config.txt",
+        "sha256": "928fb5891264cc5ae234a76ef02abb7338bdcff19b29b87e5eb20974a795a46c"
+      },
+      {
+        "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+        "sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+      }
+    ],
+    "weights_backed_up": false,
+    "reason": "completed comparison superseded by retained010/011, or intermediate012/600 superseded by retained012/1200"
+  },
+  {
+    "path": "checkpoints/pi0_openarm_drawer_approach_v001/approach13_delta_012/600",
+    "bytes": 5560630377,
+    "metadata": [
+      {
+        "path": "dataset_manifest.json",
+        "sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+      },
+      {
+        "path": "input_protocol.json",
+        "sha256": "52661cac7b642be309261c70a107d479c8ab3bcd55eda74b5f914177c1658f91"
+      },
+      {
+        "path": "config.txt",
+        "sha256": "30addba2eadaa35444938334f46a16f2521bd9b5354f4f72c76632a2a6679f86"
+      },
+      {
+        "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+        "sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+      }
+    ],
+    "weights_backed_up": false,
+    "reason": "completed comparison superseded by retained010/011, or intermediate012/600 superseded by retained012/1200"
+  }
+]

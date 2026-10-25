@@ -1,0 +1,20 @@
+{
+  "velocity_bank_identity": "6a20f3a46f2c84bbfacab0c4fe1b00802689133841fbb51afe99261a717cea3e",
+  "train_episode_ids": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "train_frames": 8632,
+  "velocity_std_floor_rad_per_second": 0.1,
+  "state_definition": "positions16 then actual measured velocities16",
+  "positions_and_actions": "unchanged original train-only delta statistics",
+  "validation_used_for_statistics": false
+}

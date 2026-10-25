@@ -1,0 +1,526 @@
+{
+  "training": {
+    "experiment": "lora_001",
+    "steps": 1000,
+    "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_lora/lora_001/1000",
+    "initial_validation_flow_loss": 0.472746101518472,
+    "final_validation_flow_loss": 0.1722189194212357,
+    "validation_samples": [
+      {
+        "episode": 24,
+        "subset_index": 0
+      },
+      {
+        "episode": 24,
+        "subset_index": 79
+      },
+      {
+        "episode": 25,
+        "subset_index": 158
+      },
+      {
+        "episode": 25,
+        "subset_index": 218
+      },
+      {
+        "episode": 26,
+        "subset_index": 279
+      },
+      {
+        "episode": 26,
+        "subset_index": 341
+      },
+      {
+        "episode": 27,
+        "subset_index": 403
+      },
+      {
+        "episode": 27,
+        "subset_index": 463
+      },
+      {
+        "episode": 28,
+        "subset_index": 524
+      },
+      {
+        "episode": 28,
+        "subset_index": 592
+      },
+      {
+        "episode": 29,
+        "subset_index": 660
+      },
+      {
+        "episode": 29,
+        "subset_index": 758
+      }
+    ],
+    "task_success_verified": false
+  },
+  "training_log": "logs/a2_pi0/lora_20261023-215241-121387",
+  "manifest": {
+    "experiment": "lora_001",
+    "source_sha256": {
+      "scripts/a2_pi0/train_lora.py": "62527c002d2422a64a05388a567d9ca30c9a3b10f430c2480b59523f8fc93751",
+      "scripts/a2_pi0/train_smoke.py": "e5503fae2c4b990c68842db6ec58c0a8787d6bbd025b3022d4a062e81306b090",
+      "scripts/a2_pi0/local_data_loader.py": "432b1fa8aba5983cb7981d2e001e978f26ad3bf6802bb6e7d05e7bb8785658f8",
+      "scripts/a2_pi0/training_config.py": "aff6dc238862fd0e47c48711c14002aa842c71f4c92a9c08145f77f56b51c2f7",
+      "assets/pi0_openarm_lora/openarm_pickup/norm_stats.json": "34acf0537164082465436308889dd85c99e14506a9a94a9e050b76c60b4f4df9",
+      "data/processed/openarm_pickup_v21/meta/info.json": "17def148b43211f25dbc4e2905a826b45756ccf5083ec5e89b060e5c73ee61d8"
+    },
+    "package_versions": {
+      "jax": "0.5.3",
+      "jaxlib": "0.5.3",
+      "flax": "0.10.2",
+      "torch": "2.7.1+cu128",
+      "lerobot": "0.1.0",
+      "datasets": "3.6.0",
+      "numpy": "1.26.4",
+      "orbax-checkpoint": "0.11.13"
+    },
+    "train_episodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "validation_episodes": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "validation_norm_stats_recomputed": false
+  },
+  "action_evaluations": [
+    {
+      "name": "smoke_10",
+      "report": "logs/a2_pi0/action_eval_20261023-220218-843555/summary.json",
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_lora/smoke_001/10",
+      "sample_count": 12,
+      "valid_action_steps": 192,
+      "mae_per_joint": [
+        0.31605392132560256,
+        0.12479618699267098,
+        0.3704170687972239,
+        0.25156469691787564,
+        0.3579356378881151,
+        0.2135481410222508,
+        0.29221567485382965,
+        0.279736697215839,
+        0.15933990266649425,
+        0.06816656467919159,
+        0.11787264863393489,
+        0.36107950674820816,
+        0.18081245501449464,
+        0.18719998062487395,
+        0.20943872944034717,
+        2.10326379171862e-08
+      ],
+      "rmse_per_joint": [
+        0.33812342621395697,
+        0.1810190422430105,
+        0.43930027932497673,
+        0.3474054632937779,
+        0.4185615660063409,
+        0.24117434026833526,
+        0.32785418896623114,
+        0.3742833044713247,
+        0.18342118916257336,
+        0.08762861500827548,
+        0.14488115049124733,
+        0.3925124314423738,
+        0.21105411513217773,
+        0.2294025003860748,
+        0.2511779719880032,
+        2.4362610905564224e-08
+      ],
+      "mae_all": 0.21813611461584936,
+      "mae_arm": 0.22931722254322234,
+      "mae_gripper": 0.13986835912423845,
+      "samples": [
+        {
+          "episode": 24,
+          "subset_index": 0,
+          "valid_action_steps": 16,
+          "mae": 0.16442490535213874,
+          "seconds": 2.831114915003127
+        },
+        {
+          "episode": 24,
+          "subset_index": 79,
+          "valid_action_steps": 16,
+          "mae": 0.2912092744499647,
+          "seconds": 0.2036827070041909
+        },
+        {
+          "episode": 25,
+          "subset_index": 158,
+          "valid_action_steps": 16,
+          "mae": 0.1351192677306083,
+          "seconds": 0.2047694529974251
+        },
+        {
+          "episode": 25,
+          "subset_index": 218,
+          "valid_action_steps": 16,
+          "mae": 0.28270289000506743,
+          "seconds": 0.19977578000543872
+        },
+        {
+          "episode": 26,
+          "subset_index": 279,
+          "valid_action_steps": 16,
+          "mae": 0.13139738197765938,
+          "seconds": 0.2049515539983986
+        },
+        {
+          "episode": 26,
+          "subset_index": 341,
+          "valid_action_steps": 16,
+          "mae": 0.280953200946202,
+          "seconds": 0.20394008199946256
+        },
+        {
+          "episode": 27,
+          "subset_index": 403,
+          "valid_action_steps": 16,
+          "mae": 0.16871858307413956,
+          "seconds": 0.20541340699855937
+        },
+        {
+          "episode": 27,
+          "subset_index": 463,
+          "valid_action_steps": 16,
+          "mae": 0.29568236074362286,
+          "seconds": 0.201512300001923
+        },
+        {
+          "episode": 28,
+          "subset_index": 524,
+          "valid_action_steps": 16,
+          "mae": 0.24610921686574175,
+          "seconds": 0.20488077199843246
+        },
+        {
+          "episode": 28,
+          "subset_index": 592,
+          "valid_action_steps": 16,
+          "mae": 0.2706242113846693,
+          "seconds": 0.20449985600134823
+        },
+        {
+          "episode": 29,
+          "subset_index": 660,
+          "valid_action_steps": 16,
+          "mae": 0.18587974611681837,
+          "seconds": 0.20676983000157634
+        },
+        {
+          "episode": 29,
+          "subset_index": 758,
+          "valid_action_steps": 16,
+          "mae": 0.16481233674356022,
+          "seconds": 0.200088436002261
+        }
+      ],
+      "task_success_verified": false,
+      "limitation": "仅固定12帧抽样的原始位置目标误差，不代表闭环成功率"
+    },
+    {
+      "name": "lora_500",
+      "report": "logs/a2_pi0/action_eval_20261023-220235-148076/summary.json",
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_lora/lora_001/500",
+      "sample_count": 12,
+      "valid_action_steps": 192,
+      "mae_per_joint": [
+        0.19126972607611745,
+        0.12437957432208034,
+        0.4505680369152723,
+        0.21221231512225944,
+        0.34913352940665915,
+        0.2384267427991742,
+        0.2798912024418077,
+        0.1872874443022778,
+        0.061351666724747865,
+        0.0634347788454195,
+        0.08036774998912714,
+        0.1459898948593398,
+        0.10071540668100569,
+        0.11524341513057562,
+        0.0819645229254048,
+        6.853230424825005e-07
+      ],
+      "rmse_per_joint": [
+        0.22974826614635735,
+        0.17922954677906522,
+        0.49813693248753793,
+        0.29867577675873075,
+        0.4197977061875371,
+        0.2727759887945888,
+        0.30638549723974046,
+        0.27019508686606564,
+        0.0790098619351485,
+        0.0940789167022708,
+        0.11156728245885954,
+        0.1906489466792664,
+        0.1404241822937727,
+        0.15591592539442423,
+        0.11662469186683004,
+        7.700244152110049e-07
+      ],
+      "mae_all": 0.16763979324151945,
+      "mae_arm": 0.17821061158849938,
+      "mae_gripper": 0.09364406481266015,
+      "samples": [
+        {
+          "episode": 24,
+          "subset_index": 0,
+          "valid_action_steps": 16,
+          "mae": 0.0943969542559629,
+          "seconds": 2.812152041005902
+        },
+        {
+          "episode": 24,
+          "subset_index": 79,
+          "valid_action_steps": 16,
+          "mae": 0.20798704453551914,
+          "seconds": 0.20566212799894856
+        },
+        {
+          "episode": 25,
+          "subset_index": 158,
+          "valid_action_steps": 16,
+          "mae": 0.09474121442570851,
+          "seconds": 0.20396791800158098
+        },
+        {
+          "episode": 25,
+          "subset_index": 218,
+          "valid_action_steps": 16,
+          "mae": 0.20626856823838263,
+          "seconds": 0.19994673100154614
+        },
+        {
+          "episode": 26,
+          "subset_index": 279,
+          "valid_action_steps": 16,
+          "mae": 0.1315169157104758,
+          "seconds": 0.19971154599625152
+        },
+        {
+          "episode": 26,
+          "subset_index": 341,
+          "valid_action_steps": 16,
+          "mae": 0.18993213545954768,
+          "seconds": 0.20543403899500845
+        },
+        {
+          "episode": 27,
+          "subset_index": 403,
+          "valid_action_steps": 16,
+          "mae": 0.15495942702601456,
+          "seconds": 0.20270736599923111
+        },
+        {
+          "episode": 27,
+          "subset_index": 463,
+          "valid_action_steps": 16,
+          "mae": 0.2486824036427574,
+          "seconds": 0.19907651499670465
+        },
+        {
+          "episode": 28,
+          "subset_index": 524,
+          "valid_action_steps": 16,
+          "mae": 0.1656171941444724,
+          "seconds": 0.20378004299709573
+        },
+        {
+          "episode": 28,
+          "subset_index": 592,
+          "valid_action_steps": 16,
+          "mae": 0.2009969452210182,
+          "seconds": 0.19978314000036335
+        },
+        {
+          "episode": 29,
+          "subset_index": 660,
+          "valid_action_steps": 16,
+          "mae": 0.15285447930318052,
+          "seconds": 0.20181191899609985
+        },
+        {
+          "episode": 29,
+          "subset_index": 758,
+          "valid_action_steps": 16,
+          "mae": 0.16372423693519367,
+          "seconds": 0.20254998500604415
+        }
+      ],
+      "task_success_verified": false,
+      "limitation": "仅固定12帧抽样的原始位置目标误差，不代表闭环成功率"
+    },
+    {
+      "name": "lora_1000",
+      "report": "logs/a2_pi0/action_eval_20261023-220251-526531/summary.json",
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_lora/lora_001/1000",
+      "sample_count": 12,
+      "valid_action_steps": 192,
+      "mae_per_joint": [
+        0.11753195581650006,
+        0.08461547235576779,
+        0.22268697699755421,
+        0.12321478001042978,
+        0.20337670866290336,
+        0.10946178582682635,
+        0.20636333238535928,
+        0.13637224450236549,
+        0.060315121256623694,
+        0.05296078160914119,
+        0.08383850274907978,
+        0.09924430197372162,
+        0.09393734820472316,
+        0.12825475379714038,
+        0.06291281119519213,
+        5.799853332946747e-07
+      ],
+      "rmse_per_joint": [
+        0.16945966066100313,
+        0.12138893629532764,
+        0.2612857985812377,
+        0.18844689890961422,
+        0.259452005547826,
+        0.1525831974303345,
+        0.23132496110774217,
+        0.2080285552191271,
+        0.07631907028029739,
+        0.08147741765122969,
+        0.11131493483075595,
+        0.13228182211367953,
+        0.12828309257472845,
+        0.1794721063284117,
+        0.09009365046222619,
+        6.821312908288205e-07
+      ],
+      "mae_all": 0.11156796608304134,
+      "mae_arm": 0.11776533091721163,
+      "mae_gripper": 0.06818641224384939,
+      "samples": [
+        {
+          "episode": 24,
+          "subset_index": 0,
+          "valid_action_steps": 16,
+          "mae": 0.07876122602537917,
+          "seconds": 2.7688300679947133
+        },
+        {
+          "episode": 24,
+          "subset_index": 79,
+          "valid_action_steps": 16,
+          "mae": 0.12583869916924537,
+          "seconds": 0.20477306799875805
+        },
+        {
+          "episode": 25,
+          "subset_index": 158,
+          "valid_action_steps": 16,
+          "mae": 0.08389904833675044,
+          "seconds": 0.20003646499390015
+        },
+        {
+          "episode": 25,
+          "subset_index": 218,
+          "valid_action_steps": 16,
+          "mae": 0.10636908165325729,
+          "seconds": 0.20082980100414716
+        },
+        {
+          "episode": 26,
+          "subset_index": 279,
+          "valid_action_steps": 16,
+          "mae": 0.11148613051622222,
+          "seconds": 0.2004087269961019
+        },
+        {
+          "episode": 26,
+          "subset_index": 341,
+          "valid_action_steps": 16,
+          "mae": 0.098117326256803,
+          "seconds": 0.20471754699974554
+        },
+        {
+          "episode": 27,
+          "subset_index": 403,
+          "valid_action_steps": 16,
+          "mae": 0.13258681039295034,
+          "seconds": 0.2007667060024687
+        },
+        {
+          "episode": 27,
+          "subset_index": 463,
+          "valid_action_steps": 16,
+          "mae": 0.13965883741125001,
+          "seconds": 0.20556595800007926
+        },
+        {
+          "episode": 28,
+          "subset_index": 524,
+          "valid_action_steps": 16,
+          "mae": 0.1287272101653305,
+          "seconds": 0.20113596000010148
+        },
+        {
+          "episode": 28,
+          "subset_index": 592,
+          "valid_action_steps": 16,
+          "mae": 0.11458159199196313,
+          "seconds": 0.2070279629988363
+        },
+        {
+          "episode": 29,
+          "subset_index": 660,
+          "valid_action_steps": 16,
+          "mae": 0.12940165668607276,
+          "seconds": 0.20560949000355322
+        },
+        {
+          "episode": 29,
+          "subset_index": 758,
+          "valid_action_steps": 16,
+          "mae": 0.08938797439127194,
+          "seconds": 0.20213910099846544
+        }
+      ],
+      "task_success_verified": false,
+      "limitation": "仅固定12帧抽样的原始位置目标误差，不代表闭环成功率"
+    }
+  ],
+  "mae_reduction_relative_to_smoke": 0.488539684134747,
+  "recommended_checkpoint_for_next_simulation_test": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_lora/lora_001/1000",
+  "deployed_to_resident_service": false,
+  "task_success_verified": false,
+  "limitation": "固定12帧的验证抽样，不代表完整验证集或闭环成功率"
+}

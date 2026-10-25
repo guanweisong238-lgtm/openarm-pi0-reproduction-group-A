@@ -1,0 +1,459 @@
+{
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_lora_lossless/stage_fit_lossless_002/3500",
+  "scope": "same-training-trajectory anchors; not validation or closed-loop success",
+  "image_source": "original_npz_uint8_rgb",
+  "denoising_steps": 10,
+  "source_episode_sha256": "3162d2d2817fdbda8ae5f30c93856321157ae5b1e1b7cd4695c99528a6a1ed87",
+  "anchor_frames": {
+    "approach": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      49,
+      99,
+      149
+    ],
+    "grasp": [
+      150,
+      163,
+      177,
+      191
+    ],
+    "pull": [
+      192,
+      221,
+      251,
+      281
+    ],
+    "open_hold": [
+      282,
+      291,
+      301,
+      311
+    ],
+    "push": [
+      312,
+      341,
+      371,
+      401
+    ],
+    "closed_hold": [
+      402,
+      421,
+      441,
+      461
+    ]
+  },
+  "by_seed": {
+    "42": {
+      "approach": {
+        "right_arm_mae_rad": 0.05379455528665474,
+        "right_gripper_mae_rad": 0.02450671631021495,
+        "left_arm_gripper_mae_rad": 1.4551346078831101e-06,
+        "position_error_mm_first_action_mean": 9.25480714098342,
+        "position_error_mm_first_action_worst_frame": 12.870158026423312,
+        "attitude_error_deg_first_action_mean": 2.48231385202814,
+        "attitude_error_deg_first_action_worst_frame": 4.382474810484721,
+        "per_frame_position_mm_first_action": [
+          8.89896016297479,
+          11.272951779037149,
+          12.597602034640168,
+          12.870158026423312,
+          6.9388322034263,
+          3.961247436323665,
+          9.718983050984285,
+          7.779722434057686
+        ],
+        "per_frame_attitude_deg_first_action": [
+          2.659714819781675,
+          2.846537420046127,
+          1.4089916350430012,
+          3.4266609192726967,
+          1.9093975591610246,
+          1.5223431430760574,
+          4.382474810484721,
+          1.7023905093598168
+        ]
+      },
+      "grasp": {
+        "right_arm_mae_rad": 0.004738165074097282,
+        "right_gripper_mae_rad": 0.013275368942392729,
+        "left_arm_gripper_mae_rad": 1.7020483077593853e-06,
+        "position_error_mm_first_action_mean": 6.556872306853215,
+        "position_error_mm_first_action_worst_frame": 8.941608278458588,
+        "attitude_error_deg_first_action_mean": 1.340793157488699,
+        "attitude_error_deg_first_action_worst_frame": 1.8829411828697282,
+        "per_frame_position_mm_first_action": [
+          8.941608278458588,
+          4.8772095088443645,
+          6.234250715389747,
+          6.174420724720162
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.8829411828697282,
+          1.0185777981665047,
+          1.2484702963616343,
+          1.2131833525569293
+        ]
+      },
+      "pull": {
+        "right_arm_mae_rad": 0.010226879636374777,
+        "right_gripper_mae_rad": 0.007774481808374617,
+        "left_arm_gripper_mae_rad": 1.818771643639567e-06,
+        "position_error_mm_first_action_mean": 5.747257547565524,
+        "position_error_mm_first_action_worst_frame": 7.66552048818472,
+        "attitude_error_deg_first_action_mean": 1.1719421336866467,
+        "attitude_error_deg_first_action_worst_frame": 1.510676825729795,
+        "per_frame_position_mm_first_action": [
+          7.66552048818472,
+          5.595077376859575,
+          7.196443338491403,
+          2.5319889867263954
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.510676825729795,
+          1.060217075487818,
+          1.197792129687172,
+          0.9190825038418012
+        ]
+      },
+      "open_hold": {
+        "right_arm_mae_rad": 0.00828249241157027,
+        "right_gripper_mae_rad": 0.0021149719803070363,
+        "left_arm_gripper_mae_rad": 2.778210709054509e-06,
+        "position_error_mm_first_action_mean": 6.349345100393248,
+        "position_error_mm_first_action_worst_frame": 8.563677556568084,
+        "attitude_error_deg_first_action_mean": 1.6082014192517766,
+        "attitude_error_deg_first_action_worst_frame": 2.014272556153536,
+        "per_frame_position_mm_first_action": [
+          8.545505239410026,
+          8.563677556568084,
+          5.828163464393775,
+          2.4600341412011053
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.8996072349287738,
+          2.014272556153536,
+          1.559900341895136,
+          0.9590255440296607
+        ]
+      },
+      "push": {
+        "right_arm_mae_rad": 0.013173628173810131,
+        "right_gripper_mae_rad": 0.0030031905083482188,
+        "left_arm_gripper_mae_rad": 2.998124280128645e-06,
+        "position_error_mm_first_action_mean": 7.388497625563023,
+        "position_error_mm_first_action_worst_frame": 8.078391103167352,
+        "attitude_error_deg_first_action_mean": 1.614345045962942,
+        "attitude_error_deg_first_action_worst_frame": 1.9702766546279813,
+        "per_frame_position_mm_first_action": [
+          7.19908973491006,
+          6.807118670626967,
+          7.469390993547711,
+          8.078391103167352
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.9702766546279813,
+          1.7303406545907436,
+          1.3448618547658016,
+          1.4119010198672426
+        ]
+      },
+      "closed_hold": {
+        "right_arm_mae_rad": 0.004866837086476968,
+        "right_gripper_mae_rad": 0.001483506858451905,
+        "left_arm_gripper_mae_rad": 3.4096617062221136e-06,
+        "position_error_mm_first_action_mean": 5.291141692448784,
+        "position_error_mm_first_action_worst_frame": 6.03415245460417,
+        "attitude_error_deg_first_action_mean": 1.1372941132488854,
+        "attitude_error_deg_first_action_worst_frame": 1.275321822114276,
+        "per_frame_position_mm_first_action": [
+          4.84388735922551,
+          4.373492677176077,
+          6.03415245460417,
+          5.91303427878938
+        ],
+        "per_frame_attitude_deg_first_action": [
+          0.9899685044918216,
+          1.0979625171706855,
+          1.275321822114276,
+          1.185923609218759
+        ]
+      }
+    },
+    "7": {
+      "approach": {
+        "right_arm_mae_rad": 0.027477208389753757,
+        "right_gripper_mae_rad": 0.018694496290147966,
+        "left_arm_gripper_mae_rad": 1.6201162327911681e-06,
+        "position_error_mm_first_action_mean": 15.923011498086195,
+        "position_error_mm_first_action_worst_frame": 25.139808478319644,
+        "attitude_error_deg_first_action_mean": 4.894392422357578,
+        "attitude_error_deg_first_action_worst_frame": 9.37170931933265,
+        "per_frame_position_mm_first_action": [
+          22.89336201753212,
+          12.714632957930567,
+          25.139808478319644,
+          23.26737884231099,
+          8.745156330856592,
+          3.6260232925591676,
+          23.023813254743462,
+          7.973916810437022
+        ],
+        "per_frame_attitude_deg_first_action": [
+          9.37170931933265,
+          5.680495484674124,
+          8.327669687751476,
+          5.65667672325114,
+          2.297503410356923,
+          0.7543396102740385,
+          5.585804631670978,
+          1.4809405115492973
+        ]
+      },
+      "grasp": {
+        "right_arm_mae_rad": 0.0036162792982458694,
+        "right_gripper_mae_rad": 0.008789710946753551,
+        "left_arm_gripper_mae_rad": 2.304026051822752e-06,
+        "position_error_mm_first_action_mean": 7.199415369399572,
+        "position_error_mm_first_action_worst_frame": 9.358918695618755,
+        "attitude_error_deg_first_action_mean": 1.2501013802893874,
+        "attitude_error_deg_first_action_worst_frame": 1.7489351310903427,
+        "per_frame_position_mm_first_action": [
+          9.358918695618755,
+          5.508632452638401,
+          7.148760088531602,
+          6.78135024080953
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.7489351310903427,
+          1.0137175604467765,
+          1.1534896624043522,
+          1.084263167216078
+        ]
+      },
+      "pull": {
+        "right_arm_mae_rad": 0.017032135371774747,
+        "right_gripper_mae_rad": 0.0035980972846047727,
+        "left_arm_gripper_mae_rad": 2.07994906908803e-06,
+        "position_error_mm_first_action_mean": 6.726114848747724,
+        "position_error_mm_first_action_worst_frame": 8.880418224517856,
+        "attitude_error_deg_first_action_mean": 0.9918110736061947,
+        "attitude_error_deg_first_action_worst_frame": 1.4045679665562385,
+        "per_frame_position_mm_first_action": [
+          8.880418224517856,
+          8.116762580474612,
+          7.182182736555352,
+          2.725095853443077
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.4045679665562385,
+          1.0355251504615404,
+          0.6111324170501359,
+          0.9160187603568644
+        ]
+      },
+      "open_hold": {
+        "right_arm_mae_rad": 0.004757030525420966,
+        "right_gripper_mae_rad": 0.005145259310019568,
+        "left_arm_gripper_mae_rad": 3.4295541298373883e-06,
+        "position_error_mm_first_action_mean": 4.462857796252781,
+        "position_error_mm_first_action_worst_frame": 7.209170733299464,
+        "attitude_error_deg_first_action_mean": 0.9183666468495364,
+        "attitude_error_deg_first_action_worst_frame": 1.2349438105917967,
+        "per_frame_position_mm_first_action": [
+          7.209170733299464,
+          6.227191071399148,
+          3.1062455160613123,
+          1.308823864251195
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.0654760606715474,
+          1.2349438105917967,
+          0.6232941701681186,
+          0.749752545966683
+        ]
+      },
+      "push": {
+        "right_arm_mae_rad": 0.0128109685159509,
+        "right_gripper_mae_rad": 0.006846767126043346,
+        "left_arm_gripper_mae_rad": 3.545313290195987e-06,
+        "position_error_mm_first_action_mean": 6.445531016290119,
+        "position_error_mm_first_action_worst_frame": 9.283245580109364,
+        "attitude_error_deg_first_action_mean": 1.016436447750614,
+        "attitude_error_deg_first_action_worst_frame": 1.1950735802014938,
+        "per_frame_position_mm_first_action": [
+          5.438833838004372,
+          3.2213364031872875,
+          9.283245580109364,
+          7.838708243859455
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.1950735802014938,
+          0.736521212280409,
+          1.0954699377278587,
+          1.0386810607926944
+        ]
+      },
+      "closed_hold": {
+        "right_arm_mae_rad": 0.0044891070117926,
+        "right_gripper_mae_rad": 0.005173628912661415,
+        "left_arm_gripper_mae_rad": 3.3494064152697763e-06,
+        "position_error_mm_first_action_mean": 4.991750527732182,
+        "position_error_mm_first_action_worst_frame": 5.687815817788586,
+        "attitude_error_deg_first_action_mean": 0.8297934497620288,
+        "attitude_error_deg_first_action_worst_frame": 0.897069103037525,
+        "per_frame_position_mm_first_action": [
+          4.524955490288678,
+          4.618849571055536,
+          5.687815817788586,
+          5.135381231795929
+        ],
+        "per_frame_attitude_deg_first_action": [
+          0.7235518059327284,
+          0.8645266551869534,
+          0.897069103037525,
+          0.8340262348909087
+        ]
+      }
+    },
+    "99": {
+      "approach": {
+        "right_arm_mae_rad": 0.03783151306106763,
+        "right_gripper_mae_rad": 0.019154671680196047,
+        "left_arm_gripper_mae_rad": 1.1128413843951162e-06,
+        "position_error_mm_first_action_mean": 14.985498438269937,
+        "position_error_mm_first_action_worst_frame": 26.44859186774872,
+        "attitude_error_deg_first_action_mean": 4.16959542824892,
+        "attitude_error_deg_first_action_worst_frame": 7.996586310565416,
+        "per_frame_position_mm_first_action": [
+          18.800939838912257,
+          10.456833181968758,
+          21.735842556339712,
+          26.44859186774872,
+          12.854020361195658,
+          0.6197026494279539,
+          24.293093221883424,
+          4.674963828683008
+        ],
+        "per_frame_attitude_deg_first_action": [
+          4.616000497318914,
+          3.5481906055370183,
+          6.832185963791192,
+          7.996586310565416,
+          4.178226644283988,
+          0.8488462972051857,
+          4.614168276848187,
+          0.7225588304414595
+        ]
+      },
+      "grasp": {
+        "right_arm_mae_rad": 0.005989231099883724,
+        "right_gripper_mae_rad": 0.011633071559664076,
+        "left_arm_gripper_mae_rad": 1.5952353377187864e-06,
+        "position_error_mm_first_action_mean": 4.574323243729117,
+        "position_error_mm_first_action_worst_frame": 5.567146144362571,
+        "attitude_error_deg_first_action_mean": 0.6884799326345713,
+        "attitude_error_deg_first_action_worst_frame": 0.8664424010640945,
+        "per_frame_position_mm_first_action": [
+          5.567146144362571,
+          2.222323452259866,
+          5.340012636794339,
+          5.167810741499689
+        ],
+        "per_frame_attitude_deg_first_action": [
+          0.8664424010640945,
+          0.17723493336656565,
+          0.8614140852446773,
+          0.8488283108629474
+        ]
+      },
+      "pull": {
+        "right_arm_mae_rad": 0.013581053050239822,
+        "right_gripper_mae_rad": 0.0038561551038353414,
+        "left_arm_gripper_mae_rad": 1.617649416996544e-06,
+        "position_error_mm_first_action_mean": 5.577488833269985,
+        "position_error_mm_first_action_worst_frame": 9.090585498993423,
+        "attitude_error_deg_first_action_mean": 1.0866756858947304,
+        "attitude_error_deg_first_action_worst_frame": 1.5020494103660038,
+        "per_frame_position_mm_first_action": [
+          9.090585498993423,
+          7.481505070652187,
+          3.6149155964585193,
+          2.1229491669758094
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.5020494103660038,
+          1.1126592287144612,
+          0.47277613090091053,
+          1.259217973597546
+        ]
+      },
+      "open_hold": {
+        "right_arm_mae_rad": 0.007297265007545568,
+        "right_gripper_mae_rad": 0.004818095793026952,
+        "left_arm_gripper_mae_rad": 3.4183525046908725e-06,
+        "position_error_mm_first_action_mean": 4.54450326453798,
+        "position_error_mm_first_action_worst_frame": 6.296624864202433,
+        "attitude_error_deg_first_action_mean": 1.0006293592573594,
+        "attitude_error_deg_first_action_worst_frame": 1.2636088481081942,
+        "per_frame_position_mm_first_action": [
+          5.681151445313571,
+          6.296624864202433,
+          3.1646133046441003,
+          3.035623443991816
+        ],
+        "per_frame_attitude_deg_first_action": [
+          0.8374921809956439,
+          1.2636088481081942,
+          0.7091919281216867,
+          1.1922244798039123
+        ]
+      },
+      "push": {
+        "right_arm_mae_rad": 0.014042549635170225,
+        "right_gripper_mae_rad": 0.0056851738560377745,
+        "left_arm_gripper_mae_rad": 2.071070951889815e-06,
+        "position_error_mm_first_action_mean": 6.549325826523643,
+        "position_error_mm_first_action_worst_frame": 11.404394670828705,
+        "attitude_error_deg_first_action_mean": 1.1079799297868624,
+        "attitude_error_deg_first_action_worst_frame": 1.5092213605399067,
+        "per_frame_position_mm_first_action": [
+          5.502169004715516,
+          4.6974283018015095,
+          11.404394670828705,
+          4.593311328748842
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.0683653427305997,
+          1.1999291196496868,
+          1.5092213605399067,
+          0.6544038962272561
+        ]
+      },
+      "closed_hold": {
+        "right_arm_mae_rad": 0.007413824659875717,
+        "right_gripper_mae_rad": 0.00514231138546457,
+        "left_arm_gripper_mae_rad": 1.964477810542055e-06,
+        "position_error_mm_first_action_mean": 5.448750513908402,
+        "position_error_mm_first_action_worst_frame": 7.469309031020056,
+        "attitude_error_deg_first_action_mean": 0.9892033855919254,
+        "attitude_error_deg_first_action_worst_frame": 1.3122453500177884,
+        "per_frame_position_mm_first_action": [
+          6.394021429236585,
+          4.758470459485915,
+          3.173201135891049,
+          7.469309031020056
+        ],
+        "per_frame_attitude_deg_first_action": [
+          1.0855763384583834,
+          1.0401498158055393,
+          0.5188420380859908,
+          1.3122453500177884
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model_type": "kernel_ridge_state_feedback",
+  "is_pi0": false,
+  "input": "actual right8 positions+right8 velocities",
+  "target": "4 future right8 servo targets, right7 residual and absolute gripper",
+  "images_used": false,
+  "training_manifest": "data/drawer_feedback_queries/v001/READY.json",
+  "training_manifest_sha256": "590215887408458a911957f31a938c1f8c91224e1d8d6c97378ace472d66ac25",
+  "training_frames": 1200,
+  "ridge": 0.0001,
+  "linear_kernel": true,
+  "train_joint_mae_rad": 0.0010360819005459934,
+  "scope": "fixed cabinet control baseline; no runtime teacher/trajectory index/clock"
+}

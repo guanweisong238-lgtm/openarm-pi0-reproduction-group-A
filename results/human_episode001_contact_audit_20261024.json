@@ -1,0 +1,13 @@
+{
+  "episode": "data/drawer_human/session_20261024_152741/episode_001",
+  "frames": 1438,
+  "replay_max_qpos_error": 0.0,
+  "drawer_contacts": [
+    {
+      "pair": "drawer_handle_stem1 / finger_outer_right_collision_00",
+      "contact_samples": 395,
+      "peak_normal_force_N": 3.741220170802872
+    }
+  ],
+  "note": "Contact samples can exceed frame count; samples below 0.01N excluded."
+}

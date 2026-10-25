@@ -1,0 +1,48 @@
+{
+  "source_report": "/home/song03/scientific_research/openarm-a1/outputs/a2_interface/closed_loop_20261024-085628-930828/report.json",
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_lora/overfit_ep0_5000_001/5000",
+  "completed_horizon": true,
+  "executed_steps": 450,
+  "elapsed_task_simulation_seconds": 15.000000000003233,
+  "clipped_steps": 387,
+  "object_diagnostic": {
+    "reconstruction_max_state_error": 0,
+    "cube_initial_position": [
+      0.4499999999822594,
+      -3.685849308794407e-09,
+      1.0249931689659992
+    ],
+    "cube_final_position": [
+      0.4499999999822594,
+      -3.685849327417841e-09,
+      1.0249931689659988
+    ],
+    "tray_origin": [
+      0.47,
+      0.15,
+      1.005
+    ],
+    "cube_peak_height": 1.0249931689659992,
+    "cube_max_displacement": 4.466439094047329e-16,
+    "cube_within_tray_xy": false,
+    "clipped_steps_per_joint": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      387,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "task_success": false
+}

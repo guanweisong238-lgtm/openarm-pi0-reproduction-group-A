@@ -1,0 +1,32 @@
+[
+  {
+    "module": "state_proj",
+    "parameters": 33792,
+    "currently_trainable": false,
+    "upstream_filter_trainable": true
+  },
+  {
+    "module": "action_in_proj",
+    "parameters": 33792,
+    "currently_trainable": false,
+    "upstream_filter_trainable": true
+  },
+  {
+    "module": "action_out_proj",
+    "parameters": 32800,
+    "currently_trainable": false,
+    "upstream_filter_trainable": true
+  },
+  {
+    "module": "action_time_mlp_in",
+    "parameters": 2098176,
+    "currently_trainable": false,
+    "upstream_filter_trainable": true
+  },
+  {
+    "module": "action_time_mlp_out",
+    "parameters": 1049600,
+    "currently_trainable": false,
+    "upstream_filter_trainable": true
+  }
+]

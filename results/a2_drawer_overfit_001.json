@@ -1,0 +1,189 @@
+{
+  "experiment": "overfit_roundtrip_001",
+  "date": "2026-10-24",
+  "training": {
+    "experiment": "overfit_roundtrip_001",
+    "steps": 2000,
+    "frames": 462,
+    "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_lora/overfit_roundtrip_001/2000",
+    "initial_train_flow_loss": 0.2298122218676976,
+    "final_train_flow_loss": 0.039841419573695885,
+    "independent_validation": false,
+    "closed_loop_tested": true
+  },
+  "training_run": "logs/a2_pi0/drawer_overfit_20261024-095439-329684",
+  "evaluation_directory": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/drawer_eval_20261024-100952-541431",
+  "fit_curve": [
+    {
+      "step": 0,
+      "train_flow_loss": 0.2298122218676976
+    },
+    {
+      "step": 250,
+      "train_flow_loss": 0.0980768236996872
+    },
+    {
+      "step": 500,
+      "train_flow_loss": 0.0740232936417063
+    },
+    {
+      "step": 750,
+      "train_flow_loss": 0.058967967118535726
+    },
+    {
+      "step": 1000,
+      "train_flow_loss": 0.05290829711815431
+    },
+    {
+      "step": 1250,
+      "train_flow_loss": 0.0463777059423072
+    },
+    {
+      "step": 1500,
+      "train_flow_loss": 0.04236759959409634
+    },
+    {
+      "step": 1750,
+      "train_flow_loss": 0.04020633003009217
+    },
+    {
+      "step": 2000,
+      "train_flow_loss": 0.039841419573695885
+    }
+  ],
+  "offline": {
+    "frames": 462,
+    "valid_action_steps": 7272,
+    "mae_all": 0.01098947552113851,
+    "mae_right_arm": 0.024081582421639602,
+    "mae_right_gripper": 0.007236171885465984,
+    "mae_per_joint": [
+      0.025026593376689527,
+      0.030058546427525288,
+      0.013735433504143342,
+      0.02155663267040288,
+      0.012844425378275676,
+      0.014987775625907834,
+      0.05036166996853266,
+      0.007236171885465984,
+      5.701684875927711e-08,
+      8.708062415800873e-07,
+      1.091967351260543e-07,
+      1.439608215813174e-07,
+      1.8449060288182895e-06,
+      7.167922987448622e-07,
+      2.0496085796918305e-05,
+      1.207365014060627e-07
+    ],
+    "rmse_per_joint": [
+      0.04633457083921671,
+      0.08522960460591929,
+      0.026959472225762924,
+      0.03424545896371347,
+      0.025480070214864182,
+      0.026618048560271623,
+      0.09926036475743405,
+      0.014781651963418605,
+      7.457571052910352e-08,
+      1.109309120352669e-06,
+      1.3457974564722183e-07,
+      1.6242600659783262e-07,
+      2.3166253435050787e-06,
+      9.132508994431464e-07,
+      2.4993559154655133e-05,
+      1.5544487309448246e-07
+    ],
+    "phase_metrics": {
+      "approach": {
+        "mae": 0.020860143695388453,
+        "right_arm_mae": 0.04640180575973241,
+        "right_gripper_mae": 0.00891891835066528
+      },
+      "grasp": {
+        "mae": 0.0043334942083116095,
+        "right_arm_mae": 0.0065790346878069235,
+        "right_gripper_mae": 0.023267134975787744
+      },
+      "pull": {
+        "mae": 0.007731831261295972,
+        "right_arm_mae": 0.017065702661724334,
+        "right_gripper_mae": 0.004228791371548676
+      },
+      "open_hold": {
+        "mae": 0.0034196466875434633,
+        "right_arm_mae": 0.007392764101709792,
+        "right_gripper_mae": 0.002940039393765714
+      },
+      "push": {
+        "mae": 0.008256861734516568,
+        "right_arm_mae": 0.018453812266157124,
+        "right_gripper_mae": 0.002909894117089055
+      },
+      "closed_hold": {
+        "mae": 0.0027069817723935938,
+        "right_arm_mae": 0.005522849966225193,
+        "right_gripper_mae": 0.0046304728489722485
+      }
+    },
+    "independent_validation": false
+  },
+  "closed_loop": {
+    "steps": 720,
+    "simulation_seconds": 23.999999999997577,
+    "peak_open_m": -0.0,
+    "final_open_m": -0.0,
+    "opened_8cm_held_1s": false,
+    "final_closed_5mm_held_1s_after_opening": false,
+    "bilateral_grasp_observed": false,
+    "success_open_then_close": false,
+    "active_grasp_weld_frames": 0,
+    "clipped_control_steps": 338,
+    "inference_calls": 180,
+    "mean_inference_seconds": 0.17551959792221572,
+    "mean_warm_inference_seconds": 0.17551382535191543,
+    "simulation_paused_during_inference": true,
+    "action_chunk_executed": 4,
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "policy_observation_keys": [
+      "observation.state",
+      "observation.images.ceiling",
+      "observation.images.wrist_left",
+      "observation.images.wrist_right",
+      "prompt"
+    ],
+    "initialization": "original episode initial integration state only",
+    "independent_validation": false
+  },
+  "independent_validation": false,
+  "task_success_verified": false,
+  "diagnosis": {
+    "minimum_grasp_point_to_handle_m": 0.06394096773759547,
+    "minimum_distance_time_seconds": 23.899999999997632,
+    "right_gripper_at_minimum_distance_rad": -0.21541921257548838,
+    "final_grasp_point_to_handle_m": 0.06472949697605379,
+    "maximum_handle_contacts_per_finger": [
+      0,
+      0
+    ],
+    "clipped_steps_per_dimension": [
+      0,
+      25,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      324
+    ],
+    "interpretation": "未接触把手，首先需改善接近阶段的精度与闭环状态分布；不能仅凭flow损失降低宣称学会任务。"
+  }
+}

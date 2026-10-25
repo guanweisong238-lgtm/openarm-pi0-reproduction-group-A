@@ -1,0 +1,22 @@
+{
+  "manifest_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2",
+  "train_episode_ids": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "representation": "right7_delta",
+  "definition": "action[t+k,:7] - state[t,:7]",
+  "horizon": 16,
+  "valid_chunk_entries": 136912,
+  "padding_excluded": true,
+  "state_statistics": "original full-train state statistics",
+  "other_action_statistics": "original absolute gripper and left statistics"
+}

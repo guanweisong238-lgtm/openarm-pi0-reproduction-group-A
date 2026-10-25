@@ -1,0 +1,10 @@
+{
+  "name": "drawer_expansion_batch002",
+  "output_root": "data/drawer_expansion/diverse_rgb",
+  "episodes": [
+    {"name": "approach_side_neg", "numeric": "data/drawer_expansion/diverse_numeric/approach_side_neg", "seed": 109, "jitter": 0.03, "drawer_y": 0.0, "approach": [-0.10, -0.03, 0.055], "split": "train"},
+    {"name": "approach_side_pos", "numeric": "data/drawer_expansion/diverse_numeric/approach_side_pos", "seed": 110, "jitter": 0.03, "drawer_y": 0.0, "approach": [-0.10, 0.03, 0.055], "split": "train"},
+    {"name": "cabinet_y_pos005", "numeric": "data/drawer_expansion/diverse_numeric/cabinet_y_pos005", "seed": 112, "jitter": 0.03, "drawer_y": 0.005, "approach": [-0.10, 0.0, 0.055], "split": "validation"},
+    {"name": "initial_seed108", "numeric": "data/drawer_expansion/pilot_numeric/initial_seed108", "seed": 108, "jitter": 0.03, "drawer_y": 0.0, "approach": [-0.10, 0.0, 0.055], "split": "validation"}
+  ]
+}

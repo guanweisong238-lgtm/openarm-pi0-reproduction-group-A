@@ -1,0 +1,292 @@
+{
+  "episodes": [
+    {
+      "path": "data/drawer_expansion/pilot_numeric/cabinet095",
+      "frames": 462,
+      "peak_open_mm": 42.87777286657325,
+      "initial_randomization": null,
+      "pitch_degrees": 15.0,
+      "initial_qpos_sha256": "d04154e3fa9248fa014df2aef27a914163b26af352d308cdcc0c4f582268a6d6",
+      "action_sha256": "f082749992fc4030d9bd1ae66f96fa1ce6ed039d48c87896eb09ef287073a741",
+      "bilateral_contact_frames": 263,
+      "problems": [
+        "success_open_then_close is false"
+      ],
+      "status": "rejected"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_numeric/initial_seed102",
+      "frames": 462,
+      "peak_open_mm": 49.275978707729685,
+      "initial_randomization": {
+        "seed": 102,
+        "uniform_half_width_rad": 0.03,
+        "applied_delta_rad": [
+          -0.02040053129974178,
+          0.005156610890413638,
+          0.01943020663097078,
+          -0.012164385794382226,
+          0.011093971292778122,
+          -0.0021669503816410182,
+          0.02348144579234323
+        ],
+        "method": "reset right qpos and ctrl before recording; no intermediate state injection"
+      },
+      "pitch_degrees": 15.0,
+      "initial_qpos_sha256": "2bb2a9ff60cb5b8fee6ce3a3f545205286a5d7066a5c02251d1d1dc721f00394",
+      "action_sha256": "23b2f029c3555998d57de3bd8e6856d8e6cae5ab277fc22f8f11230f35288ac4",
+      "bilateral_contact_frames": 229,
+      "problems": [
+        "success_open_then_close is false"
+      ],
+      "status": "rejected"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_numeric/initial_seed103",
+      "frames": 462,
+      "peak_open_mm": 93.02001915680806,
+      "initial_randomization": {
+        "seed": 103,
+        "uniform_half_width_rad": 0.03,
+        "applied_delta_rad": [
+          -0.011239006036623148,
+          -0.016540906642437143,
+          -0.01907941631434169,
+          0.021610718735605938,
+          0.02145254930282217,
+          -0.023786253985171577,
+          -0.012654609771945623
+        ],
+        "method": "reset right qpos and ctrl before recording; no intermediate state injection"
+      },
+      "pitch_degrees": 15.0,
+      "initial_qpos_sha256": "f0f9618a715540e558201e92da8732eeee5ef648ca3cc7659cf6dc3379520211",
+      "action_sha256": "fb109fe12837b4de0618af985259a85feae417006730ca1e28071a6a31fc9d80",
+      "bilateral_contact_frames": 249,
+      "problems": [],
+      "status": "numeric_only"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_numeric/initial_seed104",
+      "frames": 462,
+      "peak_open_mm": 68.04017731041797,
+      "initial_randomization": {
+        "seed": 104,
+        "uniform_half_width_rad": 0.03,
+        "applied_delta_rad": [
+          0.02031388874217214,
+          0.011528888917640825,
+          -0.017034670306390522,
+          -0.022475286123543485,
+          -0.007495842650671967,
+          -0.00719562621521902,
+          0.014111277693506681
+        ],
+        "sampling": "uniform over intersection of +/-half-width and joint/control limits",
+        "method": "reset right qpos and ctrl before recording; no intermediate state injection"
+      },
+      "pitch_degrees": 15.0,
+      "initial_qpos_sha256": "4f8183996901248787f4dc60e981af0bd3b1e33a21913f3b3f33bfc100b900ba",
+      "action_sha256": "57957e449274d43e72d4f09aac97de680bb884c0bf87c82b32fa13edf75a2224",
+      "bilateral_contact_frames": 274,
+      "problems": [
+        "success_open_then_close is false"
+      ],
+      "status": "rejected"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_numeric/initial_seed105",
+      "frames": 462,
+      "peak_open_mm": 58.5914259073084,
+      "initial_randomization": {
+        "seed": 105,
+        "uniform_half_width_rad": 0.03,
+        "applied_delta_rad": [
+          0.008291720016092671,
+          0.029487586528875488,
+          -0.024196232673202575,
+          0.00040226050618526535,
+          -0.006213662911022676,
+          -0.023768214875825023,
+          0.023002129402246947
+        ],
+        "sampling": "uniform over intersection of +/-half-width and joint/control limits",
+        "method": "reset right qpos and ctrl before recording; no intermediate state injection"
+      },
+      "pitch_degrees": 15.0,
+      "initial_qpos_sha256": "121e73bedb517d79d436464e0105cae42b62a2b5701883773851133bd0bf3962",
+      "action_sha256": "e63a09ce57402c0a8f58365cb2b9769d749d3d871c60fa652d17dfa34f81fd23",
+      "bilateral_contact_frames": 254,
+      "problems": [
+        "success_open_then_close is false"
+      ],
+      "status": "rejected"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_numeric/initial_seed106",
+      "frames": 462,
+      "peak_open_mm": 58.81889091705077,
+      "initial_randomization": {
+        "seed": 106,
+        "uniform_half_width_rad": 0.03,
+        "applied_delta_rad": [
+          0.02894447132780014,
+          -0.02757599082638057,
+          -0.022632798610143848,
+          -0.0021440722123520807,
+          0.027866537676184945,
+          -0.025801459558552096,
+          -0.010463689121930193
+        ],
+        "sampling": "uniform over intersection of +/-half-width and joint/control limits",
+        "method": "reset right qpos and ctrl before recording; no intermediate state injection"
+      },
+      "pitch_degrees": 15.0,
+      "initial_qpos_sha256": "5bf0409e2b70f3a50e1709a99afb5816a5d20b4c1535747fe7ca56afabb68a6a",
+      "action_sha256": "c198e124828cb8e39256a3329fdbb1ed815fa76f2195222ad6e11c055ac2cd52",
+      "bilateral_contact_frames": 263,
+      "problems": [
+        "success_open_then_close is false"
+      ],
+      "status": "rejected"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_numeric/initial_seed107",
+      "frames": 462,
+      "peak_open_mm": 93.21699403913708,
+      "initial_randomization": {
+        "seed": 107,
+        "uniform_half_width_rad": 0.03,
+        "applied_delta_rad": [
+          0.008912155164015466,
+          -0.0013386858406881537,
+          0.00016424291515479417,
+          0.014087033122129736,
+          -0.000529603238089843,
+          -0.027684954456629038,
+          -0.005063795386309352
+        ],
+        "sampling": "uniform over intersection of +/-half-width and joint/control limits",
+        "method": "reset right qpos and ctrl before recording; no intermediate state injection"
+      },
+      "pitch_degrees": 15.0,
+      "initial_qpos_sha256": "dd5f046868546214c47dc9928054a0e901d33d1dd5bc79c477418e447a39839b",
+      "action_sha256": "35e3a156210f6030e19a98978c658bc075da91d593f88d61e2ae689cfea604b2",
+      "bilateral_contact_frames": 246,
+      "problems": [],
+      "status": "numeric_only"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_numeric/initial_seed108",
+      "frames": 462,
+      "peak_open_mm": 93.2465475246957,
+      "initial_randomization": {
+        "seed": 108,
+        "uniform_half_width_rad": 0.03,
+        "applied_delta_rad": [
+          0.021359629039715694,
+          0.00793650931617397,
+          -0.022925666582421553,
+          -0.008962038829391488,
+          -0.01559346657434149,
+          -0.027706051612230605,
+          -0.0014116189434533223
+        ],
+        "sampling": "uniform over intersection of +/-half-width and joint/control limits",
+        "method": "reset right qpos and ctrl before recording; no intermediate state injection"
+      },
+      "pitch_degrees": 15.0,
+      "initial_qpos_sha256": "e348c48a17c3498dfd789ef6c20fbe2401f141ea5e2329ebb17323c8f1e20725",
+      "action_sha256": "83199d10c5dedbea492df1fa024bf6eb04a17ac9fb0156a760835bdfd8750845",
+      "bilateral_contact_frames": 247,
+      "problems": [],
+      "status": "numeric_only"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_numeric/pitch12",
+      "frames": 462,
+      "peak_open_mm": 93.43389903760387,
+      "initial_randomization": null,
+      "pitch_degrees": 12.0,
+      "initial_qpos_sha256": "d04154e3fa9248fa014df2aef27a914163b26af352d308cdcc0c4f582268a6d6",
+      "action_sha256": "6b3c1182544857a2e9ca5f27f83ff814dd4b8fb3a927f718c61bb3972bba0999",
+      "bilateral_contact_frames": 248,
+      "problems": [],
+      "status": "numeric_only"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_numeric/pitch18",
+      "frames": 462,
+      "peak_open_mm": 93.11713436341424,
+      "initial_randomization": null,
+      "pitch_degrees": 18.0,
+      "initial_qpos_sha256": "d04154e3fa9248fa014df2aef27a914163b26af352d308cdcc0c4f582268a6d6",
+      "action_sha256": "360c3f499c07198c48325d586b47f201faaac879d8bb3cfba3e1f451a6766e80",
+      "bilateral_contact_frames": 253,
+      "problems": [],
+      "status": "numeric_only"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_rgb/pitch12",
+      "frames": 462,
+      "peak_open_mm": 93.43389903760387,
+      "initial_randomization": null,
+      "pitch_degrees": 12.0,
+      "initial_qpos_sha256": "d04154e3fa9248fa014df2aef27a914163b26af352d308cdcc0c4f582268a6d6",
+      "action_sha256": "6b3c1182544857a2e9ca5f27f83ff814dd4b8fb3a927f718c61bb3972bba0999",
+      "bilateral_contact_frames": 248,
+      "cameras": {
+        "ceiling": {
+          "mean_brightness": 166.10504418252467
+        },
+        "wrist_left": {
+          "mean_brightness": 94.6371328801407
+        },
+        "wrist_right": {
+          "mean_brightness": 134.560885491823
+        }
+      },
+      "problems": [],
+      "status": "rgb_candidate"
+    },
+    {
+      "path": "data/drawer_expansion/pilot_rgb/pitch18",
+      "frames": 462,
+      "peak_open_mm": 93.11713436341424,
+      "initial_randomization": {
+        "seed": 0,
+        "uniform_half_width_rad": 0.0,
+        "applied_delta_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sampling": "uniform over intersection of +/-half-width and joint/control limits",
+        "method": "reset right qpos and ctrl before recording; no intermediate state injection"
+      },
+      "pitch_degrees": 18.0,
+      "initial_qpos_sha256": "d04154e3fa9248fa014df2aef27a914163b26af352d308cdcc0c4f582268a6d6",
+      "action_sha256": "360c3f499c07198c48325d586b47f201faaac879d8bb3cfba3e1f451a6766e80",
+      "bilateral_contact_frames": 253,
+      "cameras": {
+        "ceiling": {
+          "mean_brightness": 165.94326275214948
+        },
+        "wrist_left": {
+          "mean_brightness": 94.63688358661015
+        },
+        "wrist_right": {
+          "mean_brightness": 136.72118441671176
+        }
+      },
+      "problems": [],
+      "status": "rgb_candidate"
+    }
+  ],
+  "unfinished_directories": [],
+  "note": "RGB candidates are not automatically included in training. Numeric/RGB copies and same-start variants must not be split across train/validation."
+}

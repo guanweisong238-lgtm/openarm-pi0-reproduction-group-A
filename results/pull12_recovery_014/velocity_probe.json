@@ -1,0 +1,40 @@
+{
+  "scope": "CPU kernel-ridge diagnostic, leave-one-correlated-recovery-out; current right7 vs right7+velocity, not policy success or unique causal proof",
+  "rows": [
+    {
+      "held_out": "canonical12",
+      "q_only": 0.001259571976894245,
+      "q_and_velocity": 0.0005275659807023184
+    },
+    {
+      "held_out": "recovery_v001_12_step11",
+      "q_only": 0.0007438371837441366,
+      "q_and_velocity": 0.0003793309849696069
+    },
+    {
+      "held_out": "recovery_v001_12_step12",
+      "q_only": 0.0007239756219535712,
+      "q_and_velocity": 0.00029466744827838634
+    },
+    {
+      "held_out": "recovery_v001_12_step15",
+      "q_only": 0.0008263943670092994,
+      "q_and_velocity": 0.0002645670761091577
+    },
+    {
+      "held_out": "recovery_v002_12_step40",
+      "q_only": 0.007085383820104327,
+      "q_and_velocity": 0.0023083429349164374
+    },
+    {
+      "held_out": "recovery_v002_12_step60",
+      "q_only": 0.012633448508649753,
+      "q_and_velocity": 0.0010265305925177635
+    },
+    {
+      "held_out": "recovery_v002_12_step120",
+      "q_only": 0.03299917604725182,
+      "q_and_velocity": 0.003915279136321117
+    }
+  ]
+}

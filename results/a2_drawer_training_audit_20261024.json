@@ -1,0 +1,523 @@
+{
+  "date": "2026-10-24",
+  "kind": "training_optimization_diagnosis",
+  "controlled_settings": {
+    "training_frames": [
+      0,
+      4,
+      30,
+      60,
+      90,
+      120,
+      150,
+      174
+    ],
+    "steps_per_micro_fit": 120,
+    "optimizer": "fresh AdamW, LR 2.5e-5, clip 1.0",
+    "training_order_seed": 123,
+    "evaluation_noise_seed": 42,
+    "same_checkpoint": true
+  },
+  "reports": {
+    "audit": {
+      "mode": "audit",
+      "frames": [
+        0,
+        4,
+        30,
+        60,
+        90,
+        120,
+        150,
+        174
+      ],
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_lora_lossless/overfit_roundtrip_lossless_001/2000",
+      "scope": "same-training-frame optimization diagnostic; no task success claim",
+      "before": {
+        "right_arm_mae_rad": 0.06658045695729033,
+        "right_gripper_mae_rad": 0.03007507357477072,
+        "right_arm_mae_per_frame_rad": [
+          0.1805687167611645,
+          0.15110406347233107,
+          0.0715943315535502,
+          0.049911115364824545,
+          0.04631698554368609,
+          0.018672343502959824,
+          0.004806054225424771,
+          0.00967004523438166
+        ]
+      },
+      "sampling": {
+        "10_steps_seed42": {
+          "right_arm_mae_rad": 0.06658045695729033,
+          "right_gripper_mae_rad": 0.03007507357477072,
+          "right_arm_mae_per_frame_rad": [
+            0.1805687167611645,
+            0.15110406347233107,
+            0.0715943315535502,
+            0.049911115364824545,
+            0.04631698554368609,
+            0.018672343502959824,
+            0.004806054225424771,
+            0.00967004523438166
+          ]
+        },
+        "50_steps_seed42": {
+          "right_arm_mae_rad": 0.07578764075206272,
+          "right_gripper_mae_rad": 0.029867834592183153,
+          "right_arm_mae_per_frame_rad": [
+            0.20774592176168052,
+            0.17714210349255546,
+            0.07984475799382433,
+            0.05608757666493515,
+            0.04843768983772886,
+            0.020106741033701435,
+            0.005771909456312241,
+            0.011164425775763761
+          ]
+        },
+        "10_steps_seed7": {
+          "right_arm_mae_rad": 0.03166414627806175,
+          "right_gripper_mae_rad": 0.029514569969722695,
+          "right_arm_mae_per_frame_rad": [
+            0.08492486207566478,
+            0.05660438573255988,
+            0.02574879366962492,
+            0.028679152950108013,
+            0.037613894256057594,
+            0.01173063055347462,
+            0.0034944825786580648,
+            0.00451696840834612
+          ]
+        },
+        "10_steps_seed99": {
+          "right_arm_mae_rad": 0.03847163494549079,
+          "right_gripper_mae_rad": 0.02740146335618688,
+          "right_arm_mae_per_frame_rad": [
+            0.09420773250441716,
+            0.06975773636859503,
+            0.03134160446906156,
+            0.00888973178686671,
+            0.07023092701512708,
+            0.015585376242843249,
+            0.010972437254073982,
+            0.00678753392294154
+          ]
+        }
+      },
+      "bf16_reload": {
+        "right_arm_mae_rad": 0.06658045695729033,
+        "right_gripper_mae_rad": 0.03007507357477072,
+        "right_arm_mae_per_frame_rad": [
+          0.1805687167611645,
+          0.15110406347233107,
+          0.0715943315535502,
+          0.049911115364824545,
+          0.04631698554368609,
+          0.018672343502959824,
+          0.004806054225424771,
+          0.00967004523438166
+        ],
+        "max_output_change_rad": 0.0
+      },
+      "flow_loss_breakdown": [
+        {
+          "frame": 0,
+          "all32": 0.21752279996871948,
+          "right_arm": 0.3220232427120209,
+          "right_gripper": 3.84600830078125,
+          "left_arm_gripper": 0.1062476634979248,
+          "padding16": 0.0006610730197280645
+        },
+        {
+          "frame": 4,
+          "all32": 0.0590822771191597,
+          "right_arm": 0.05027591809630394,
+          "right_gripper": 0.027834182605147362,
+          "left_arm_gripper": 0.18755310773849487,
+          "padding16": 0.000652654911391437
+        },
+        {
+          "frame": 30,
+          "all32": 0.012390285730361938,
+          "right_arm": 0.03320998325943947,
+          "right_gripper": 0.009790048003196716,
+          "left_arm_gripper": 0.018887903541326523,
+          "padding16": 0.0001953770697582513
+        },
+        {
+          "frame": 60,
+          "all32": 0.014071553945541382,
+          "right_arm": 0.028554771095514297,
+          "right_gripper": 0.008236982859671116,
+          "left_arm_gripper": 0.029893752187490463,
+          "padding16": 0.0001887061953311786
+        },
+        {
+          "frame": 90,
+          "all32": 0.061922602355480194,
+          "right_arm": 0.2282504141330719,
+          "right_gripper": 0.008611667901277542,
+          "left_arm_gripper": 0.04529304802417755,
+          "padding16": 0.0008008904987946153
+        },
+        {
+          "frame": 120,
+          "all32": 0.026039190590381622,
+          "right_arm": 0.02203013189136982,
+          "right_gripper": 0.06905432045459747,
+          "left_arm_gripper": 0.07551909983158112,
+          "padding16": 0.0003647509147413075
+        },
+        {
+          "frame": 150,
+          "all32": 0.03171004727482796,
+          "right_arm": 0.011048219166696072,
+          "right_gripper": 0.37789449095726013,
+          "left_arm_gripper": 0.06957501173019409,
+          "padding16": 0.0001805853535188362
+        },
+        {
+          "frame": 174,
+          "all32": 0.040623314678668976,
+          "right_arm": 0.03801894560456276,
+          "right_gripper": 0.27883538603782654,
+          "left_arm_gripper": 0.09331513941287994,
+          "padding16": 0.0005285555380396545
+        }
+      ],
+      "frozen_projection_parameters": {
+        "action_in_proj/bias": 1024,
+        "action_in_proj/kernel": 32768,
+        "action_out_proj/bias": 32,
+        "action_out_proj/kernel": 32768,
+        "action_time_mlp_in/bias": 1024,
+        "action_time_mlp_in/kernel": 2097152,
+        "action_time_mlp_out/bias": 1024,
+        "action_time_mlp_out/kernel": 1048576,
+        "state_proj/bias": 1024,
+        "state_proj/kernel": 32768
+      },
+      "all_parameters": 3288036112,
+      "trainable_parameters": 49987584,
+      "report_path": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/drawer_training_audit_audit_20261024-113228-406163/report.json"
+    },
+    "lora_aug": {
+      "mode": "lora_aug",
+      "frames": [
+        0,
+        4,
+        30,
+        60,
+        90,
+        120,
+        150,
+        174
+      ],
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_lora_lossless/overfit_roundtrip_lossless_001/2000",
+      "scope": "same-training-frame optimization diagnostic; no task success claim",
+      "before": {
+        "right_arm_mae_rad": 0.06658045695729033,
+        "right_gripper_mae_rad": 0.03007507357477072,
+        "right_arm_mae_per_frame_rad": [
+          0.1805687167611645,
+          0.15110406347233107,
+          0.0715943315535502,
+          0.049911115364824545,
+          0.04631698554368609,
+          0.018672343502959824,
+          0.004806054225424771,
+          0.00967004523438166
+        ]
+      },
+      "steps": 120,
+      "after": {
+        "right_arm_mae_rad": 0.032657525661880106,
+        "right_gripper_mae_rad": 0.011493757129385686,
+        "right_arm_mae_per_frame_rad": [
+          0.08626952126765149,
+          0.03888227860131572,
+          0.04732104692862431,
+          0.011133049258578668,
+          0.04723084906164491,
+          0.016888284884950814,
+          0.007120988044540517,
+          0.006414187247734413
+        ]
+      },
+      "report_path": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/drawer_training_audit_lora_aug_20261024-113318-895073/report.json"
+    },
+    "lora_noaug": {
+      "mode": "lora_noaug",
+      "frames": [
+        0,
+        4,
+        30,
+        60,
+        90,
+        120,
+        150,
+        174
+      ],
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_lora_lossless/overfit_roundtrip_lossless_001/2000",
+      "scope": "same-training-frame optimization diagnostic; no task success claim",
+      "before": {
+        "right_arm_mae_rad": 0.06658045695729033,
+        "right_gripper_mae_rad": 0.03007507357477072,
+        "right_arm_mae_per_frame_rad": [
+          0.1805687167611645,
+          0.15110406347233107,
+          0.0715943315535502,
+          0.049911115364824545,
+          0.04631698554368609,
+          0.018672343502959824,
+          0.004806054225424771,
+          0.00967004523438166
+        ]
+      },
+      "steps": 120,
+      "after": {
+        "right_arm_mae_rad": 0.03222461816707804,
+        "right_gripper_mae_rad": 0.00897095314921939,
+        "right_arm_mae_per_frame_rad": [
+          0.07465229140275187,
+          0.02790097941000421,
+          0.06570194530761317,
+          0.015284181224824781,
+          0.03934160934880136,
+          0.018301270529473074,
+          0.0087429418692863,
+          0.007871726243869585
+        ]
+      },
+      "report_path": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/drawer_training_audit_lora_noaug_20261024-113507-489167/report.json"
+    },
+    "projections_noaug": {
+      "mode": "projections_noaug",
+      "frames": [
+        0,
+        4,
+        30,
+        60,
+        90,
+        120,
+        150,
+        174
+      ],
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_lora_lossless/overfit_roundtrip_lossless_001/2000",
+      "scope": "same-training-frame optimization diagnostic; no task success claim",
+      "before": {
+        "right_arm_mae_rad": 0.06658045695729033,
+        "right_gripper_mae_rad": 0.03007507357477072,
+        "right_arm_mae_per_frame_rad": [
+          0.1805687167611645,
+          0.15110406347233107,
+          0.0715943315535502,
+          0.049911115364824545,
+          0.04631698554368609,
+          0.018672343502959824,
+          0.004806054225424771,
+          0.00967004523438166
+        ]
+      },
+      "before_after_projection_fp32_cast": {
+        "right_arm_mae_rad": 0.06694287928188841,
+        "right_gripper_mae_rad": 0.030025245880529756,
+        "right_arm_mae_per_frame_rad": [
+          0.18156578357900272,
+          0.1525896688236241,
+          0.07190924415717896,
+          0.049779367046698324,
+          0.04632030578134303,
+          0.018752285474416343,
+          0.004836684024091186,
+          0.009789695368752627
+        ]
+      },
+      "steps": 120,
+      "after": {
+        "right_arm_mae_rad": 0.03459525701187197,
+        "right_gripper_mae_rad": 0.007182236879106739,
+        "right_arm_mae_per_frame_rad": [
+          0.09199219592187335,
+          0.031324808808895106,
+          0.0623051863015753,
+          0.016917695435850665,
+          0.0334112339221597,
+          0.020684661232937076,
+          0.010344232747473325,
+          0.009782041724211253
+        ]
+      },
+      "report_path": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/drawer_training_audit_projections_noaug_20261024-113649-824856/report.json"
+    }
+  },
+  "conclusions": [
+    "Additional targeted updates improve training-frame action fit.",
+    "Disabling augmentation produces little right-arm improvement in this short control.",
+    "Unfreezing FP32 projection layers did not improve right-arm fit over LoRA-only in this short control.",
+    "Increasing denoising from 10 to 50 did not improve this probe.",
+    "Prediction is strongly sensitive to sampling noise; total 32D loss masks group-specific residuals."
+  ],
+  "limitations": [
+    "Only eight known training frames and one short run per training condition.",
+    "These micro-fit parameters were not saved or evaluated in closed-loop; existing full checkpoints remain unchanged.",
+    "Projection arm also changes projection parameter dtype to FP32; its immediate pre-training effect is recorded.",
+    "No claim of independent validation, final root-cause isolation, or task success."
+  ],
+  "new_logger_verification": {
+    "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_lora_lossless/overfit_roundtrip_lossless_001/2000",
+    "additional_training_steps": 0,
+    "image_source": "original_npz_uint8_rgb",
+    "fit": {
+      "step": 2000,
+      "train_flow_loss": 0.04302910138808545,
+      "frame_indices": [
+        0,
+        41,
+        83,
+        125,
+        150,
+        167,
+        174,
+        177,
+        191,
+        192,
+        209,
+        251,
+        281,
+        293,
+        312,
+        335,
+        377,
+        401,
+        419,
+        432,
+        461
+      ],
+      "losses": [
+        0.21767786145210266,
+        0.018113110214471817,
+        0.09625175595283508,
+        0.07529696077108383,
+        0.04953733831644058,
+        0.019148997962474823,
+        0.03762834146618843,
+        0.06640813499689102,
+        0.01480550691485405,
+        0.00795874372124672,
+        0.020958364009857178,
+        0.008639734238386154,
+        0.025031885132193565,
+        0.021467771381139755,
+        0.020575139671564102,
+        0.019096383824944496,
+        0.02791949175298214,
+        0.06364083290100098,
+        0.03421112895011902,
+        0.034543223679065704,
+        0.02470042183995247
+      ],
+      "independent_validation": false,
+      "train_flow_loss_by_group": {
+        "right_arm": 0.053441084921360016,
+        "right_gripper": 0.25041404366493225,
+        "left_arm_gripper": 0.09295833110809326,
+        "padding16": 0.0005476884543895721
+      },
+      "sampled_action_fit": {
+        "num_steps": 10,
+        "noise_seeds": [
+          42,
+          7,
+          99
+        ],
+        "scope": "training anchors only, tail padding excluded; not task success",
+        "by_seed": {
+          "42": {
+            "right_arm_mae_rad": 0.022348647990360244,
+            "right_gripper_mae_rad": 0.017594707436201635,
+            "right_arm_mae_per_frame_rad": [
+              0.1805687164460083,
+              0.041710630324885326,
+              0.051771116694303135,
+              0.012694896949789184,
+              0.004806054225424765,
+              0.007173708365106648,
+              0.009670045234381653,
+              0.010458676671060305,
+              0.00676749775291746,
+              0.013148707319537366,
+              0.012111342115291215,
+              0.01559784071311315,
+              0.011234856914788973,
+              0.008782451975241893,
+              0.007820885042492641,
+              0.02258858736173919,
+              0.013536973278402325,
+              0.005008866215101018,
+              0.007787076004996363,
+              0.00483295033279212,
+              0.004765925907671047
+            ]
+          },
+          "7": {
+            "right_arm_mae_rad": 0.01440074795643498,
+            "right_gripper_mae_rad": 0.014573435865597801,
+            "right_arm_mae_per_frame_rad": [
+              0.08492486207566478,
+              0.01707503782624924,
+              0.05417137285792965,
+              0.006806791200364927,
+              0.003494482578658059,
+              0.0037737307262707682,
+              0.004516968408346121,
+              0.004246677665425376,
+              0.003507781679930685,
+              0.004746945968498664,
+              0.023463007460912417,
+              0.012552351824321838,
+              0.009073833145770276,
+              0.005749427065452147,
+              0.0038819979220646094,
+              0.025309246743849097,
+              0.007642233277492497,
+              0.005551241006637881,
+              0.0036418091788583584,
+              0.004568697061681601,
+              0.003464163225564187
+            ]
+          },
+          "99": {
+            "right_arm_mae_rad": 0.020438532037910687,
+            "right_gripper_mae_rad": 0.013764132614660026,
+            "right_arm_mae_per_frame_rad": [
+              0.09420773250441715,
+              0.030423145185944273,
+              0.08149937084317511,
+              0.012930145143708225,
+              0.01097243725407398,
+              0.006968391543529613,
+              0.006787533922941533,
+              0.008404631440111643,
+              0.006681433605214425,
+              0.013112767554329682,
+              0.020292764404325276,
+              0.01804175287983925,
+              0.00997717520924088,
+              0.007027349430511298,
+              0.008630270495510071,
+              0.025776549024026287,
+              0.01702830320083538,
+              0.011578214403507533,
+              0.008193023900358568,
+              0.010934988011267615,
+              0.009281104859446141
+            ]
+          }
+        }
+      }
+    }
+  },
+  "new_logger_verification_path": "logs/a2_pi0/drawer_overfit_20261024-114031-567557/diagnostic_summary.json"
+}

@@ -1,0 +1,18 @@
+{
+  "scripted_expert": true,
+  "model_success_evidence": false,
+  "judge": {
+    "opening": 0.09289551008023281,
+    "grasp_streak": 43,
+    "grasped": true,
+    "open_streak": 30,
+    "opened": true,
+    "closed_streak": 0,
+    "pulling_contact": true,
+    "pull_success": true,
+    "success": true
+  },
+  "steps": 95,
+  "peak_open_mm": 94.05824801510926,
+  "replay_max_qpos_error": 0.0
+}

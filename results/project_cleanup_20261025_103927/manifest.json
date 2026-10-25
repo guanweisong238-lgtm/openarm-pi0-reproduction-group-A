@@ -1,0 +1,2974 @@
+{
+  "created_at": "2026-10-25T10:39:27.917304",
+  "root": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A",
+  "status": "deleted_and_retained_files_verified",
+  "retained_checkpoints": [
+    "pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000",
+    "pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000",
+    "pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450",
+    "pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000"
+  ],
+  "remove": [
+    {
+      "path": "checkpoints/pi0_openarm_drawer_approach_v001/approach13_delta_012/1200",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5560889344,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+          "bytes": 3887,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1457,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "30addba2eadaa35444938334f46a16f2521bd9b5354f4f72c76632a2a6679f86"
+        },
+        {
+          "path": "dataset_manifest.json",
+          "bytes": 12684,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 27239,
+          "allocated_bytes": 28672,
+          "metadata_sha256": "52661cac7b642be309261c70a107d479c8ab3bcd55eda74b5f914177c1658f91"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "e95010b9013e074e666f5aca6e9f987af77cc6affee797919cb450536d5621fa"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 29630,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d8c0539a19a96179ea1490e3d8cb5140c1b34078fd27d861eccdc277830d784e"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 12639,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "0100265f09c61f50ef96ed4f05b0a4c9a6ffabf437976c21005b1a56e4f825e5"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 9955,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "f32ee1d11aa72c547b5b56d7e513fe321b93ce01f006b66ae19e0356e10b976c"
+        },
+        {
+          "path": "optimizer/d/4acdc31f4110ab75a499641381b6e1bb",
+          "bytes": 1842,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "baef6d02a279634f7a47dc1f236991cc61e96b8e8026b9304e8e00b87db85e4a"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "6be3443510fc7907141caee3fe3d0d103e771bf765b025ad9407bf9836243930"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/121d8d63869e4e35bd2fd393d404d417",
+          "bytes": 55579626,
+          "allocated_bytes": 55582720
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/239782b256e703099661ef7c162037e5",
+          "bytes": 242970903,
+          "allocated_bytes": 242974720
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/24618d54833a044f2b28c19168f0e5dd",
+          "bytes": 183,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fee16a25213733822c80cdd87da4e347e5c784166808e11914442ebf35f057b6"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/265ea28c868990acd82b279299925cf8",
+          "bytes": 894,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c37a5e910126f821cd034c47f24fd007692342ecd7e300d9136110adfd305b1a"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/cc0e9305324ae5092778191ffda6596e",
+          "bytes": 921,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f603f757f7bdd626438fa307c5e879497686e483f4420683ecb818912b904075"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 311,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c019b1d2aeea0077e893b4636ed502a61ce7526cfd939c279c84bf9a0e714abd"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "1862e3f0a52eebb3a1c976874b13191abeafe9d43b3386354c97bf8d73b5e869"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/bcbfd774691f67729842dcd1fed59e1b",
+          "bytes": 2521,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "a69acacfbff2d709eb886913fd550618d3216343aca846aa12f471a663063211"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f7166b2599df1fbba090832a01264c774720b6ee444073ae8738a5461ca8150c"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/03234621eb300d21248073aa73b1d35f",
+          "bytes": 2505,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "905a46cb039311729dc592fa6d67ec4d7284be9c1ffcfbbf0b6f14bf8fe34688"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/08eed869df1b3d6f4b28c61ccced0e82",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/3c5366438e3c2345e42d983d22fe1929",
+          "bytes": 370126150,
+          "allocated_bytes": 370126848
+        },
+        {
+          "path": "params/ocdbt.process_0/d/816d55e25a67105d6d05f39c3d180b02",
+          "bytes": 829842227,
+          "allocated_bytes": 829849600
+        },
+        {
+          "path": "params/ocdbt.process_0/d/8e8f8b3a5352be5d9fc6a5ae2ab590b2",
+          "bytes": 2838152575,
+          "allocated_bytes": 2838159360
+        },
+        {
+          "path": "params/ocdbt.process_0/d/8ef5cf81cf3a73a16a8e903db1c8bed5",
+          "bytes": 148481361,
+          "allocated_bytes": 148484096
+        },
+        {
+          "path": "params/ocdbt.process_0/d/a800a36e4f18f9ac5b7b52f258f9d983",
+          "bytes": 1389,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "49b7da8a041c7b4e7698033eae502c5fcfeb4c50a1480a3c2ff12d33f55971bb"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/ae822b72a9554d77e4f37b2177b24964",
+          "bytes": 1069646297,
+          "allocated_bytes": 1069654016
+        },
+        {
+          "path": "params/ocdbt.process_0/d/bc2fe2f9aa6246ad31bde7c7d876b396",
+          "bytes": 3218,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "b9504c2c3aa0fbdd746ed676da4209ef2a539f90420a65e47a7bb31e6194d03b"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/cfd1db974699ff9fd3df144607f636d5",
+          "bytes": 5817269,
+          "allocated_bytes": 5820416,
+          "metadata_sha256": "3df507e4f2f052575ef39d088620dd00ef1692263769ce2245683c99c7f883e4"
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 493,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fa4c6bc8ad0b354ad1c59b7a8c106090bda6743dab959e81fcf746fe42544816"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.482079"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_approach_v001/pull12_fit_013b/2000",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5560897536,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+          "bytes": 3887,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1469,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "050838503afef4201b9526a474cfcb5b0c6f18c70ab76f619d247c6de9981ce4"
+        },
+        {
+          "path": "dataset_manifest.json",
+          "bytes": 12684,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 21979,
+          "allocated_bytes": 24576,
+          "metadata_sha256": "0a6e0da0c51a689f6cf5c8a225af8db3ec5fcbe20f63d44aed036067fc685e88"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "9384dd4817b7bb88e8cf13a1b1bd6f485c4309c50455e2edcf6790784f8d6e10"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 29630,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d8c0539a19a96179ea1490e3d8cb5140c1b34078fd27d861eccdc277830d784e"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 12639,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "0100265f09c61f50ef96ed4f05b0a4c9a6ffabf437976c21005b1a56e4f825e5"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 9955,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "f32ee1d11aa72c547b5b56d7e513fe321b93ce01f006b66ae19e0356e10b976c"
+        },
+        {
+          "path": "optimizer/d/b10585d40f98c56bc3bf44bf6e9ab433",
+          "bytes": 1844,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "a3883a5ec92a8e27119151a77e874782dc31001c3b1f0aa576d73885cb2bf686"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "5e46d11d3307e4c5923ad7d5fc35584f2d27abbb2c6e986ae074085db8af54cb"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/31cffbc1a2d20cf4475a9f959a8a5785",
+          "bytes": 937,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "aba231ab5d7f517a936cfe58483db0b41c59954acb43be204ef16feb91899182"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/603ac239f099b73538d68232bab83bac",
+          "bytes": 183,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fee16a25213733822c80cdd87da4e347e5c784166808e11914442ebf35f057b6"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/8b6a9b9e6e22f4e7591ddbcb762c6ecb",
+          "bytes": 82552736,
+          "allocated_bytes": 82554880
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/cdf99c81321370dd2d289f7a088a5a48",
+          "bytes": 216013692,
+          "allocated_bytes": 216014848
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/e89ce96949317aea1aeefdefa70b8329",
+          "bytes": 922,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "ab9fdfe8303744738ab27213bce917f7e4243b12a84d837a5e580a300897db83"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/f5927e37a0300de8864f6018977be6af",
+          "bytes": 894,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c37a5e910126f821cd034c47f24fd007692342ecd7e300d9136110adfd305b1a"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 333,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fe7909ecf275b745e93b7b2105f5191ed3afa2fd4bed9a0968eca3b81657bffd"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "32c231e66ea1c3a904114a6e8898261168c23544564c92a3c580571cec3727ad"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/bfe83b42136118ce1637bb59eaad2324",
+          "bytes": 2541,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "7ef7f608aac5f4fab46aa9b501b7431ffea8a4aa5e3831d8faf597d321eab2c7"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "9aefa0662b079047d29e6354a8155a81dbda2e383a0addb45e70232371a9df54"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/134e4b7a75351a0abb7ebd4521200a52",
+          "bytes": 829842232,
+          "allocated_bytes": 829849600
+        },
+        {
+          "path": "params/ocdbt.process_0/d/1b40f79175fcc141b5c3ba6ad626e856",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/42c11515857e3626d0be61efa73f48c1",
+          "bytes": 522550917,
+          "allocated_bytes": 522551296
+        },
+        {
+          "path": "params/ocdbt.process_0/d/468dcdfc7efeafb811702985d462c9f6",
+          "bytes": 1354,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f4bbad65d695bcd97279a5698a040b755739193bfa236c3a73356870a633bdbf"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/65de460011837ee35cb6291c86e0b1fb",
+          "bytes": 113421417,
+          "allocated_bytes": 113422336
+        },
+        {
+          "path": "params/ocdbt.process_0/d/6aecc3baba909fd12b04485b693e432f",
+          "bytes": 946090703,
+          "allocated_bytes": 946098176
+        },
+        {
+          "path": "params/ocdbt.process_0/d/85a7391ea70cbd575a2cd9119192fe0a",
+          "bytes": 774728809,
+          "allocated_bytes": 774733824
+        },
+        {
+          "path": "params/ocdbt.process_0/d/d638674830725a76c1c0aa84b75a116d",
+          "bytes": 183365348,
+          "allocated_bytes": 183365632
+        },
+        {
+          "path": "params/ocdbt.process_0/d/d8004b4e6a33de743daea03f4fc0b0c3",
+          "bytes": 3252,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "1da72c97f5fad585fa6855c0d2b1c5075b0cb6a384d824917f0014b6d5f8f73e"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/dd587cd24d298b89ca4f0f5c868f1a58",
+          "bytes": 1892066878,
+          "allocated_bytes": 1892073472
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 544,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c6cdbc85a3af07554803ed5d300af8dff796b247c0d178bff6f0e0c16de76dee"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.539541"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_approach_v001/pull12_recovery_014/3000",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5560877056,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+          "bytes": 3887,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1456,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "ec0f68fb49a1bed2b078b7fa4932aab527f62110a97932fe270885da02ecdd75"
+        },
+        {
+          "path": "dataset_manifest.json",
+          "bytes": 12684,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 23568,
+          "allocated_bytes": 24576,
+          "metadata_sha256": "bdca7aebde2d30ae90a4687eab9c305210585fd335cfa4fb40295224c535f755"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "b1dfd497ef6eaebcee556b63b0aa20c1a8d871f7c06784b26a48fd7184057bdd"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 29630,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d8c0539a19a96179ea1490e3d8cb5140c1b34078fd27d861eccdc277830d784e"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 12639,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "0100265f09c61f50ef96ed4f05b0a4c9a6ffabf437976c21005b1a56e4f825e5"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 9955,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "f32ee1d11aa72c547b5b56d7e513fe321b93ce01f006b66ae19e0356e10b976c"
+        },
+        {
+          "path": "optimizer/d/9d08832d53b52a3d5363253583b80ef7",
+          "bytes": 1845,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "8546745b33a894c4d7cfff594ab449013899a774fb7c2d43b2f70f1deac7e35d"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "595408e5cbd0a9af852da179f1e1ba128603e302dd2dbc43504bb19e3342c9c5"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/00dddace0c22b47ce7602cd295f2d624",
+          "bytes": 894,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c37a5e910126f821cd034c47f24fd007692342ecd7e300d9136110adfd305b1a"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/913068fd0399dc56fdd77d43f9e49366",
+          "bytes": 922,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "a95587921648cec5fd638f021b8ce16ece0c42541ca43751a35cc30f807095ce"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/b6d083cbc9cadd480b1ebaac75dafd64",
+          "bytes": 183,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fee16a25213733822c80cdd87da4e347e5c784166808e11914442ebf35f057b6"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/e56d2eddcfd3ae85284890f5a28c31ca",
+          "bytes": 242181849,
+          "allocated_bytes": 242184192
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/f05baf094074b21c86066a63ff648005",
+          "bytes": 56348178,
+          "allocated_bytes": 56348672
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 305,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f5a9cb6088139b831b2d2199b8e7438cf9bb994f3fe7cb4c474edf6fbc343093"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "b136873cad43f66cfe143d132b171240e3e25b5b7318efd6345d6aeb0787d186"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/a3d0285c393a02277179e01965dccb45",
+          "bytes": 2562,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "30fee28b21cd8aff028c288bf4ad41a0f197fb238721d84bf225ba897ca5e9a1"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "eed2df0cbcb7083b9fd74fbd9a0c6b8168106626a19ba217b95a7ac2b34ffb3b"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/0289aa3ab256b7031fff4cf744c66d8a",
+          "bytes": 129167675,
+          "allocated_bytes": 129175552
+        },
+        {
+          "path": "params/ocdbt.process_0/d/3c566954b85ee65f9d4f90120c7e4698",
+          "bytes": 1354,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f4bbad65d695bcd97279a5698a040b755739193bfa236c3a73356870a633bdbf"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/420e48df5db1502510945bcb517e915a",
+          "bytes": 3253,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "9a60b3ce31e5a929708a6574d32d1c69737f3111cd04dd5dcbf97eb05439ef85"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/56019dbe92826a7838bc4ec98095898a",
+          "bytes": 656458560,
+          "allocated_bytes": 656465920
+        },
+        {
+          "path": "params/ocdbt.process_0/d/b280424decf51ed4775de68ddf86c57a",
+          "bytes": 466594202,
+          "allocated_bytes": 466599936
+        },
+        {
+          "path": "params/ocdbt.process_0/d/b578fdab84f514d3b747b74bad174ba3",
+          "bytes": 1892125411,
+          "allocated_bytes": 1892130816
+        },
+        {
+          "path": "params/ocdbt.process_0/d/bcda8e9d22631bce63a617b603047d3d",
+          "bytes": 38617189,
+          "allocated_bytes": 38625280
+        },
+        {
+          "path": "params/ocdbt.process_0/d/bdf9a6b15b2a07e55780b9a5910181a6",
+          "bytes": 829842253,
+          "allocated_bytes": 829849600
+        },
+        {
+          "path": "params/ocdbt.process_0/d/cae4b4e29abd49a44272ba6bb23c4dd7",
+          "bytes": 303230781,
+          "allocated_bytes": 303230976
+        },
+        {
+          "path": "params/ocdbt.process_0/d/deaaf7c3a67d2be18e38ef60e2a11728",
+          "bytes": 946032212,
+          "allocated_bytes": 946036736
+        },
+        {
+          "path": "params/ocdbt.process_0/d/e52fd11e9950281ba4f9d97a3604999b",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 590,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "ff3c5d12d8d7b86e74488ff4c26923b6e721caa90a4a34bca5faf03f9610f5b8"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.633449"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_lora_lossless/stage_fit_lossless_002/3500",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5560070144,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_roundtrip/norm_stats.json",
+          "bytes": 3859,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "b0c980072e6c64afaba6b44bcf02c8b0696debb081ed10ee38789a2d70520af8"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1386,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "37eb18f53392ea8ad9d885a7d7c731b9cf953782536a56d792de4560fd50c633"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 840,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "0dbf4308105b2f54ae7782949618952d05524dbe868bd6cecb71c92f4a373291"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "3ed2267512a5ac55f55f3467ec29be4114f0b3bb8de7984a67592bb8e09481a1"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 24539,
+          "allocated_bytes": 24576,
+          "metadata_sha256": "20b31ae2b4475c6aeeb1b58483b0a050556d16a6b75e288aa58ea4373988dfdc"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 9934,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "04064211d28e34319aec4e8200459696bdf6d5d2a0bb56feb275f43b0f73a028"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 7996,
+          "allocated_bytes": 8192,
+          "metadata_sha256": "bec81b9af44161a7b48742527e4d7f4e36d59684b44e365362871fb06d445e4f"
+        },
+        {
+          "path": "optimizer/d/436158a6ca184823040038c565bcd4b6",
+          "bytes": 1209,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "bdc335de174de61ae94465c363371de61d902a82d1f52439ea42eb2c01c6fed4"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "4ae8c61bec9942717056cd7c2e5222a8c60c0079f00685904c0a9b1c05affe3d"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/01d392f5027434ee6fbe8f48ec5edfe9",
+          "bytes": 59634851,
+          "allocated_bytes": 59637760
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/88995e8837af8565319ae92506d007e3",
+          "bytes": 656,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "200793030badd956fad14d4d260eea3a60d2329e54dd5cf6fbc63f62be33fcec"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/ade937af8a33fac74fef452510d20505",
+          "bytes": 625,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "58c8c51f5f6aafc57c4644b199055019f2e143d1a25b04ea6060d550fd667e7f"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/d60c5a33138987223466fec4f9e574d8",
+          "bytes": 238333212,
+          "allocated_bytes": 238338048
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/e85c32cd5e2fea330dff40dd151d652e",
+          "bytes": 183,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fee16a25213733822c80cdd87da4e347e5c784166808e11914442ebf35f057b6"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 301,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "227dbf6a310d445b846b220a1061db8de0e267c588a3ef69109e2c631a858832"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "466ba8f2533c77043eea68150b34b27e78376e6e3df7e0237296b44e3c29c8f3"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/a02989826cca30cb9452cbe6b52551db",
+          "bytes": 2397,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "1096ea3451d0544107184654f4d4ddd5b08caa46bc2a26d705e7ff844c9b89be"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "3f27981bd10e433f349cb833d99d2ae58f3c6e4eb464c80155dbc2399fa2815e"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/09e8ae3a4135ee705e9590f3db45f016",
+          "bytes": 116952029,
+          "allocated_bytes": 116957184
+        },
+        {
+          "path": "params/ocdbt.process_0/d/2ebd353ddf3c1580dfbdbf46fca59299",
+          "bytes": 1336,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "0ccded64b5a44c5ee31a5855ecf7b1e0b9410a0f35e3bc63977929c7c4c92e18"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/467f5ab0625ae98ab94ba0a77c9cb8f9",
+          "bytes": 1892066741,
+          "allocated_bytes": 1892073472
+        },
+        {
+          "path": "params/ocdbt.process_0/d/7c8dfb09d317d9dc2086f3a26ae6fb2e",
+          "bytes": 468519278,
+          "allocated_bytes": 468525056
+        },
+        {
+          "path": "params/ocdbt.process_0/d/86dd3662621ea4f7defe2db268f47183",
+          "bytes": 1008421489,
+          "allocated_bytes": 1008427008
+        },
+        {
+          "path": "params/ocdbt.process_0/d/a0210c4965c64f60409bc4013c7482db",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/d8d1ee444e8cda9d224e5f364cc9aea1",
+          "bytes": 3236,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "da83027b2eca81a501d36936e2ff334b7d9ef87bba95bd534a709d88f5c1146a"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/e0fbe1824b054edf3c30536dbfe2a934",
+          "bytes": 1775930349,
+          "allocated_bytes": 1775935488
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 455,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "9facc7e2d68894631401a92bade6d71099b1991eddf18e640bf0a900fffcd373"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.639153"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_lora_lossless/stage_fit_right8_key147_005/4500",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5560102912,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_roundtrip/norm_stats.json",
+          "bytes": 3859,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "b0c980072e6c64afaba6b44bcf02c8b0696debb081ed10ee38789a2d70520af8"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1391,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "a8384b53d2fd57c69ca29b4aee78aeb8ded0784a7d408ead4b02d6dff2ec48b5"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 1117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "472ae4603fa2d58395685881bbe627af242e98272efe9cd1ae5b80b4b5052042"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f689c19bbbb69e105fedbbc5eaa437a26be43bb44db3186af07116c87478c799"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 24539,
+          "allocated_bytes": 24576,
+          "metadata_sha256": "20b31ae2b4475c6aeeb1b58483b0a050556d16a6b75e288aa58ea4373988dfdc"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 9934,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "04064211d28e34319aec4e8200459696bdf6d5d2a0bb56feb275f43b0f73a028"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 7996,
+          "allocated_bytes": 8192,
+          "metadata_sha256": "bec81b9af44161a7b48742527e4d7f4e36d59684b44e365362871fb06d445e4f"
+        },
+        {
+          "path": "optimizer/d/b89f60cee3a620569710155213174bcd",
+          "bytes": 1198,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "4ac82a6dcca2261f78eb04a9eb3dc21d93a76ac0ec69727be0b6a447e3aa7a1b"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "533c4e293dd42c383530e5a31c9eb5b49ff426628b581bb5b64567e26156c57b"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/0db3711d4c678fdc2902c7e9e62d7acf",
+          "bytes": 239424938,
+          "allocated_bytes": 239427584
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/9e489662ac97759bc11c4cabf6ae731b",
+          "bytes": 183,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fee16a25213733822c80cdd87da4e347e5c784166808e11914442ebf35f057b6"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/a10388e0fc6f43f6122698ee7f5dfe00",
+          "bytes": 58585468,
+          "allocated_bytes": 58589184
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/c0eea8c2f1396e1436b05bed735d66f7",
+          "bytes": 625,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "58c8c51f5f6aafc57c4644b199055019f2e143d1a25b04ea6060d550fd667e7f"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/e79beebcf1e0863cc9984500edc95688",
+          "bytes": 656,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "7b0c2f5c3a47d8e9edfacc952939f569880d64a093e85d15d5652a9d9f5bdd93"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 302,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "9b58cc70aedb11aadef80aab2b120e273f605d2eec04271089974294ac438fff"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "e2184d29f1517dfd64a9f2aecfdfa1fb13fc0fad18ec4cd2ee4444dc115ca32b"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/6b1701e2e6e734bb8aefcce5286d3251",
+          "bytes": 2381,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "eedae7a111431642f691ddd296d738cd8902bcf1f24f9238a324c844348a42bb"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "0923e72e364ca28778b323a540e81ab4313d63c28e9106435eb98ecfb6d854e8"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/02726e097aaf8201b91c329cbd067bb3",
+          "bytes": 2367,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "4a2f77b5bb253df7199ee767f30c857ecc39f63016df774276859cbf7f99e49f"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/12dc86de89ab0687e787abc038795098",
+          "bytes": 3239,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "13ec6c51c96fd95d957cba198daa6eb4e65507d755aefc5b2d07c2f6f8b30a23"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/342d7b1e2fe277dc6380c8a6f12e179d",
+          "bytes": 829842095,
+          "allocated_bytes": 829849600
+        },
+        {
+          "path": "params/ocdbt.process_0/d/6ef7d3f78d1dca88e33c18c2733190e5",
+          "bytes": 1267304773,
+          "allocated_bytes": 1267310592
+        },
+        {
+          "path": "params/ocdbt.process_0/d/85390b7fbc469aba727c9417285f14de",
+          "bytes": 326586310,
+          "allocated_bytes": 326586368
+        },
+        {
+          "path": "params/ocdbt.process_0/d/bc0aaf2998fb74d59e53334b3954273c",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/be1fef8a725bb6124966a17681e3ebce",
+          "bytes": 1336,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "0ccded64b5a44c5ee31a5855ecf7b1e0b9410a0f35e3bc63977929c7c4c92e18"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/fd3b351fb87040830d6fb1bf301706e5",
+          "bytes": 2838152575,
+          "allocated_bytes": 2838159360
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 399,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f4d0ddaa976847120f82c8ba48d8695707eb9fba7c632842e0b16e41487132ed"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.643195"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_delta_004_io_mask/600",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5561790464,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+          "bytes": 3887,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1482,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "04f9952efa34bc65af7b23cce179d835792e9f07db9e32a480dc170b3372f089"
+        },
+        {
+          "path": "dataset_manifest.json",
+          "bytes": 12684,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 5554,
+          "allocated_bytes": 8192,
+          "metadata_sha256": "724e573069f94ec306e766feae2ea83d10f28635b77165cb4dde252dab89a0db"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "1612314d2722b5a08e1872d4baa955a305003be9b4610b240fe75334a752fd44"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 29630,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d8c0539a19a96179ea1490e3d8cb5140c1b34078fd27d861eccdc277830d784e"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 12639,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "0100265f09c61f50ef96ed4f05b0a4c9a6ffabf437976c21005b1a56e4f825e5"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 9955,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "f32ee1d11aa72c547b5b56d7e513fe321b93ce01f006b66ae19e0356e10b976c"
+        },
+        {
+          "path": "optimizer/d/e626cb6c138e20eea793b20bbc0d69e4",
+          "bytes": 1842,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "80a99568d172158706f01d50cd102ccf664c1963d93c6b817c7fa43df4c7379e"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "43ca60eea58f851537b8b6022f24a199e1fe00921f9cd86110ed528f29b6760a"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/510cdc9a872ffd9e8437e40dc0b5b65c",
+          "bytes": 66296270,
+          "allocated_bytes": 66297856
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/596415b96eacb0eca06926a52b22965f",
+          "bytes": 233170021,
+          "allocated_bytes": 233172992
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/5abdf43aa5937f8aa044171cf0d0e284",
+          "bytes": 922,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c7a58070ef9d86a307b01567e8780cc64c2f06b3e6eef20ac74aa445e4608049"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/5de4044781edbe480d3af2bf25db114a",
+          "bytes": 183,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fee16a25213733822c80cdd87da4e347e5c784166808e11914442ebf35f057b6"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/bbd4e35b93088b34112807b80e4640dc",
+          "bytes": 894,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c37a5e910126f821cd034c47f24fd007692342ecd7e300d9136110adfd305b1a"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 303,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "cecc777042292afe19f77bf4aa2816140e336cf5da0097b6ca35e1f1858e2f05"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "6c2cce38939f2dea310a42452b1fb84cb9921a9279e83459e760c122fc90a376"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/d4e7143b203c48658eba98d0743bc938",
+          "bytes": 2547,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "43a40e3f50210f14140d0e9f9315f46c6efbd4b32d86df071957753895bd2392"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "e118f9bb5b0ee3be89215b9ff1c4dee48dbff91b93990a8d7b12d9d208339cf0"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/18891394e6d6392b173324188c0e18d6",
+          "bytes": 1510,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "e5a76d5598855e2a0a9a992e33bf14caf06b8ec42585f103098d177df48793e7"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/2235539ccf096f97f4486d2fedd06a12",
+          "bytes": 829842260,
+          "allocated_bytes": 829849600
+        },
+        {
+          "path": "params/ocdbt.process_0/d/27da8d839251eea197b5e3990afb3a73",
+          "bytes": 774896591,
+          "allocated_bytes": 774901760
+        },
+        {
+          "path": "params/ocdbt.process_0/d/3169809877ca728a8f9cc8a602534949",
+          "bytes": 1354,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f4bbad65d695bcd97279a5698a040b755739193bfa236c3a73356870a633bdbf"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/46f80c38e2a83d1330ea78d842d217dd",
+          "bytes": 335194940,
+          "allocated_bytes": 335196160
+        },
+        {
+          "path": "params/ocdbt.process_0/d/54bbebee28c231509e7f858bb54f1f5f",
+          "bytes": 58783,
+          "allocated_bytes": 61440,
+          "metadata_sha256": "a2d2c1257f7e48989217eb3cf53f34cf3b6272e73f1d0df201eac76c43ca5bee"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/65d1137651a79d57f3134a7efb207dd1",
+          "bytes": 2838152575,
+          "allocated_bytes": 2838159360
+        },
+        {
+          "path": "params/ocdbt.process_0/d/7083316a37ada67db6850cc3f6bbbed8",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/7adc5ec073597a545f375b0746e64fb6",
+          "bytes": 482203956,
+          "allocated_bytes": 482205696
+        },
+        {
+          "path": "params/ocdbt.process_0/d/887428a8dcdd23fc48a384cf414cfc99",
+          "bytes": 1641677,
+          "allocated_bytes": 1642496,
+          "metadata_sha256": "ee6ae1a01835436e10c58791a7187b054bcead92dedfc4e845340da6470cef18"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/addb9161c9b3ef42ef13591eca6a178e",
+          "bytes": 2534,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "1de12fb70d51e5764af5920626f30898a6b5f3bd860fb14ba4d4b04b27564d1a"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/de4f9d8ace89aa50b4a362ade4caf231",
+          "bytes": 3252,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f905ea7fb1578a0d81ffd7ca85b376b3334fe9dcf2b21a428e2dcf9ad7936720"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/eba30dd4042ba6a63f51257eb52ba164",
+          "bytes": 79098,
+          "allocated_bytes": 81920,
+          "metadata_sha256": "96a7f408529039e22fce22614eebd3df78128b5f13792cede723ca292638cee2"
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 603,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c56e251a55a6babfb7845de7f8b3a549b02d107b962f4845c4ed78ec86d5d158"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.703938"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_delta_refine_005_io_mask/1200",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5561970688,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+          "bytes": 3887,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1491,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "e62747894774ddd92b01f4a63e07c6668208607ec7332508a6806aaa282a1228"
+        },
+        {
+          "path": "dataset_manifest.json",
+          "bytes": 12684,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 9759,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "340f47f89a806731c07b4db7da4f51f006054f899fc88ac8e23be8a304206a41"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "261669931fdc21c5b2afd3815240b2cfc0103397a1b2703dfdb625c76706f855"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 29630,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d8c0539a19a96179ea1490e3d8cb5140c1b34078fd27d861eccdc277830d784e"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 12639,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "0100265f09c61f50ef96ed4f05b0a4c9a6ffabf437976c21005b1a56e4f825e5"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 9955,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "f32ee1d11aa72c547b5b56d7e513fe321b93ce01f006b66ae19e0356e10b976c"
+        },
+        {
+          "path": "optimizer/d/6923a06ff82cc9365305dfc4bffd3f31",
+          "bytes": 1850,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "32c0d5dc09e1bef3c6ebb970201f2e06a96e413ae5a51fa77084ed3fe5fdc9d2"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "b3edb8160678953802d71bbc6a4f04a3dff124cd929d4130fae50b2308b94fe7"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/0f39d3f830e5c702117f5a0043d1eac3",
+          "bytes": 61330017,
+          "allocated_bytes": 61333504
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/1c8d4405ada8fa4089e91db59246b12d",
+          "bytes": 894,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c37a5e910126f821cd034c47f24fd007692342ecd7e300d9136110adfd305b1a"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/9bc509f3dfb4caea30552452f47ca0b2",
+          "bytes": 238317188,
+          "allocated_bytes": 238317568
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/b7d4ce842c10d63d98c8a1a283e1e2d2",
+          "bytes": 921,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f603f757f7bdd626438fa307c5e879497686e483f4420683ecb818912b904075"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/ccc2b0f0ab1d96b6c776f928622ce529",
+          "bytes": 183,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fee16a25213733822c80cdd87da4e347e5c784166808e11914442ebf35f057b6"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 302,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "b543f16712b692f0e34d7129696f8d6e79d9bb66b8b1f966ba774bb5655ac17b"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "e615d4fb8743da5c146165695674b4fc42be8d7d39ba7e07ea85528065a1ec74"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/49a2c972bedcdb58968046016288501b",
+          "bytes": 2495,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "38449ad3fe7f2f2fb1a02a14848796da228887aca42a65c3297e9f55326fe857"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "46a5dea52490325aa6c5b2a09fb4498cd76440ead01e5bb6929a1c726c83726d"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/1c6eb360c9e4746ab48ee4101e0894f7",
+          "bytes": 1354,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f4bbad65d695bcd97279a5698a040b755739193bfa236c3a73356870a633bdbf"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/366192ecc8bf6410cf18b93f4ac503b1",
+          "bytes": 3253,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "9559cea5c0ab216136d5fe483ac6f7fdf2c8bfaec3ec55dd292222bf8762b6e4"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/41b7f79449805dd13ee7a0895e462075",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/43929ab1040fae330e37ac40c65c45a1",
+          "bytes": 1182101730,
+          "allocated_bytes": 1182109696
+        },
+        {
+          "path": "params/ocdbt.process_0/d/459e3f8ff488e3ed67406b24ecdb40df",
+          "bytes": 112710361,
+          "allocated_bytes": 112717824
+        },
+        {
+          "path": "params/ocdbt.process_0/d/78014b47d14d8330e0d25d7464ac8f5a",
+          "bytes": 2838152575,
+          "allocated_bytes": 2838159360
+        },
+        {
+          "path": "params/ocdbt.process_0/d/adf85334b3ddae497be7dad1e3c31b49",
+          "bytes": 2479,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "42af98c7ec2c51eaecb3978c4a40feef1af139cb01191531354380b7cc2c38d1"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/bc69c10507efe8a01c7901bb4ea56a67",
+          "bytes": 829842202,
+          "allocated_bytes": 829849600
+        },
+        {
+          "path": "params/ocdbt.process_0/d/bca0ef347d2b6b8d305d0941b654e1b6",
+          "bytes": 299257466,
+          "allocated_bytes": 299261952
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 451,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "e237b78e8a271065fe77c4875db3e30a5b3d3fcc22383b074833feae317af61c"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.764576"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_time_lowmix_010_io_mask/300",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5562023936,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+          "bytes": 3887,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "3a21133495b32a5355840fffb0a9ee3ba7a03e649818edcaf57067ae60e27d6d"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1471,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "068eb407cf6aee90e974984d61a49c2434d485ea16e5ec7565d3c1dac6e07378"
+        },
+        {
+          "path": "dataset_manifest.json",
+          "bytes": 12684,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 3612,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "a43605121952f0f3888299e896cf2ff56531d7164ae4212076378db20edde2d6"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "523e7ce5f17d5211b2ecc60d1e9d89d4f937e08824de001bfe37df0bb153b4d2"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 29630,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d8c0539a19a96179ea1490e3d8cb5140c1b34078fd27d861eccdc277830d784e"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 12639,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "0100265f09c61f50ef96ed4f05b0a4c9a6ffabf437976c21005b1a56e4f825e5"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 9955,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "f32ee1d11aa72c547b5b56d7e513fe321b93ce01f006b66ae19e0356e10b976c"
+        },
+        {
+          "path": "optimizer/d/2cdcb2af94e48d7bbdab08f16d0c338c",
+          "bytes": 1874,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "79bf228d3d78df4dd362d72195e2d4bd950118e10433a8a50620583dc9b8dc51"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "e6ccb4813159baab1057e4277a647df505e16ebd438737ae93e4ec0bda2d6669"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/0077c337bb20977ea5b171d493688e7e",
+          "bytes": 31099,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "4f62bd48e220282dd3f5979add453a1725dc0ec08feeca53c5e72f04335688c5"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/1785474667bf05f50d43ac7b5394ce18",
+          "bytes": 232992994,
+          "allocated_bytes": 232996864
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/af4821a093f84424bfb49de7a95f379e",
+          "bytes": 171,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "8ef1f04474f2f3f27acde8904f4232ad24d3ca84e9f675b970affff2871f5726"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/b356d301300f0d0c108108d5d871ae48",
+          "bytes": 894,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c37a5e910126f821cd034c47f24fd007692342ecd7e300d9136110adfd305b1a"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/b8daf9f99f92a7827c6be0a896ec4da0",
+          "bytes": 66675312,
+          "allocated_bytes": 66678784
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/dbf6729eb8f663b6aef726ebc4b4aa77",
+          "bytes": 917,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "1a3f7cff9ae01c32f173bb4df5b14183ede05037521ed498ded4172bbfc21162"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 345,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "2479ebb44b4dce18f0e43b36ab20f90f136b5c323e632a1056e6353b14be3c14"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "df3633bff07b67e620bc397290a754b4c8691c826a52ddd2bff4b00b191033db"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/5eae56a1d13fafb37e04ecc59f432142",
+          "bytes": 2515,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "a5ad4810819e14c44662cab83dfbfa4c28cd2dcc461db395af68d9e2f6ff6c8d"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "6cd590691818c3edc9be226a22b1125c7055ba377a4025bccab225ccbfae4258"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/32a8260af1dc70461e14cab79fa28557",
+          "bytes": 134491738,
+          "allocated_bytes": 134496256
+        },
+        {
+          "path": "params/ocdbt.process_0/d/41672f5f1a137fb6ae97fd7c92e32754",
+          "bytes": 829842206,
+          "allocated_bytes": 829849600
+        },
+        {
+          "path": "params/ocdbt.process_0/d/6b5779eca8fb1f0dc8ec34707c39c465",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/89aa568248047a6fcb54c3bd78ec22e7",
+          "bytes": 946090677,
+          "allocated_bytes": 946098176
+        },
+        {
+          "path": "params/ocdbt.process_0/d/8b4a442db5178ae4476a9ecc5cad33ca",
+          "bytes": 893166807,
+          "allocated_bytes": 893173760
+        },
+        {
+          "path": "params/ocdbt.process_0/d/9f75031a0d78144867e83f4fb40661a1",
+          "bytes": 1892066857,
+          "allocated_bytes": 1892073472
+        },
+        {
+          "path": "params/ocdbt.process_0/d/a51725cd2ed5e9d297e9656ccb38ca5e",
+          "bytes": 1354,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f4bbad65d695bcd97279a5698a040b755739193bfa236c3a73356870a633bdbf"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/d52fa34ae7b0b74d8a6840c50bbe11b8",
+          "bytes": 566408848,
+          "allocated_bytes": 566415360
+        },
+        {
+          "path": "params/ocdbt.process_0/d/ed905893c0770c49ffa2dacf2b6be3d1",
+          "bytes": 3253,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "ea49f2bdc82dd439127d45f6d9365fb2bd2e51396e1a95c1dd0b544293056d2b"
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 501,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "63ffdebdc1d24b86dec8cc63f85c47f9f582040d437a91d89cff45f680fd246c"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.822829"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_v001/start9_cleanup_002_io_mask/200",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5562265600,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_success_v003/norm_stats.json",
+          "bytes": 3834,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "2d70dffd6f4dc7fc00ce3a99a9b480713ea0a2072c16edd08cf83aa2bde1193e"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1451,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "19345df5f79373c88d71ddd1eab71fe992fcd7d200d25ad1317ac5520e56cf31"
+        },
+        {
+          "path": "dataset_manifest.json",
+          "bytes": 12684,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 2489,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "392ba8e4d5b79d0f92e9a9b02952b32658ebd94a4fe6de3c178d27c1cc9af48d"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c6138ed82fd35f4f8325ed2a7ae2e6d4028effb2465b80eb06d119dbb4194c22"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 29630,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d8c0539a19a96179ea1490e3d8cb5140c1b34078fd27d861eccdc277830d784e"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 12639,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "0100265f09c61f50ef96ed4f05b0a4c9a6ffabf437976c21005b1a56e4f825e5"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 9955,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "f32ee1d11aa72c547b5b56d7e513fe321b93ce01f006b66ae19e0356e10b976c"
+        },
+        {
+          "path": "optimizer/d/0e334e55aaa27cecd9585e2ae2edaf89",
+          "bytes": 1844,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "4a24b0e5bf3ee795d06082cc325f04c639abe95050b27549af01935a3b617129"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "97680cf42bc96d9f1879d42ca1604cd4b471bac41641bd868d86a7c2f5476325"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/98c9867b9f869cca848829e5598448c5",
+          "bytes": 183,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fee16a25213733822c80cdd87da4e347e5c784166808e11914442ebf35f057b6"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/de163f4f05427dfeccf3e628407a4401",
+          "bytes": 67736721,
+          "allocated_bytes": 67739648
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/e1931dc9f04f1478f4041e63f800857d",
+          "bytes": 922,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "86585bf2783cc1b188dcca58a8a57a77e6097732c6c3d547482b6754f84bbae6"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/e2c3fec388a9c9dae337e01a6dceb512",
+          "bytes": 232206655,
+          "allocated_bytes": 232210432
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/fdc268f8bfac67e8c4b73ea8b127a029",
+          "bytes": 894,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c37a5e910126f821cd034c47f24fd007692342ecd7e300d9136110adfd305b1a"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 306,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "1132d3ee2c0613618f340b1007d1c83d52efed4a518eee04bd35a6e20574b67e"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "71a7a77e0acac5750f17282dd7facfaf3e719c04fadd69fbedbf0aedb5c9da4b"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/1e29142aafea3e3f449f64f8d5dd3890",
+          "bytes": 2532,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "b778e77486b6c78a41b3cc242097060da2c01abae045b78397578c9935a7445e"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d05b0aa4db8738cd79a61abe55f594fbc93d0a563ea31b865e56d1514b3ce011"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/18d97b8d78b7727fef48b659d541c0c7",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/2c79992b567c54b659aa319403d1d97f",
+          "bytes": 829842225,
+          "allocated_bytes": 829849600
+        },
+        {
+          "path": "params/ocdbt.process_0/d/34d307c625b2b23584dd2c96ab82a2fb",
+          "bytes": 1892120369,
+          "allocated_bytes": 1892126720
+        },
+        {
+          "path": "params/ocdbt.process_0/d/424403c5be9c40188abd06c6b499fdfd",
+          "bytes": 1354,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f4bbad65d695bcd97279a5698a040b755739193bfa236c3a73356870a633bdbf"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/4a770a94189162a6dc04bbf4319b57eb",
+          "bytes": 567162059,
+          "allocated_bytes": 567169024
+        },
+        {
+          "path": "params/ocdbt.process_0/d/74c5da367b1a4e3911ec34e20acd0b41",
+          "bytes": 946037203,
+          "allocated_bytes": 946044928
+        },
+        {
+          "path": "params/ocdbt.process_0/d/9aa57eceae551c431840fa37edb9226b",
+          "bytes": 175092,
+          "allocated_bytes": 176128,
+          "metadata_sha256": "f1a404eab37220edf1dd25140a0ade4222bd1d77eded705b025ac1f93e2630b7"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/a6854f370e420f188f2575242a5788f7",
+          "bytes": 251837349,
+          "allocated_bytes": 251838464
+        },
+        {
+          "path": "params/ocdbt.process_0/d/b35ff748ec66f0f4843d9ee3522b2c9e",
+          "bytes": 3252,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "1340a05a15a8a073f6b740de0d2b1dbaff5564f7c8c708bf523e5572dcc9d582"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/f727f3e42c04183047b6f60100be1205",
+          "bytes": 774896564,
+          "allocated_bytes": 774901760
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 543,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "590606687e1b5a5ae6d52e53763297b8f1aec398926e1828f9762cc3fda4aa8a"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.882520"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_v001/start9_refine_003_io_mask/600",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5562187776,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_success_v003/norm_stats.json",
+          "bytes": 3834,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "2d70dffd6f4dc7fc00ce3a99a9b480713ea0a2072c16edd08cf83aa2bde1193e"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1450,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "97ee21f3a09e56164628e1cd657940dfc2a131a63c4ea410c7f97293f0ed9cac"
+        },
+        {
+          "path": "dataset_manifest.json",
+          "bytes": 12684,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 5333,
+          "allocated_bytes": 8192,
+          "metadata_sha256": "9d29fedf502643b238a25b8cf20018db41aacc2829e49c4e6258b4e4daaab1fc"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "7199ff243b009b1694a8f96668fd2bb07dd3db18be0f3702715d782129fb1f19"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 29630,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d8c0539a19a96179ea1490e3d8cb5140c1b34078fd27d861eccdc277830d784e"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 12639,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "0100265f09c61f50ef96ed4f05b0a4c9a6ffabf437976c21005b1a56e4f825e5"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 9955,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "f32ee1d11aa72c547b5b56d7e513fe321b93ce01f006b66ae19e0356e10b976c"
+        },
+        {
+          "path": "optimizer/d/0ed4b61912358c5144063ed81cb47f29",
+          "bytes": 1841,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "bcb112a30cea0d8c74a84d7dae022eb2cc71bae1141225c6d3df2b5ccaf6fc75"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "5f1708dababff4d58e36c6285477795b9248a68b459a0905e0c69a4aa1b701b8"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/17d93661508eb5029c5229fc6c971112",
+          "bytes": 70382645,
+          "allocated_bytes": 70385664
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/4a67a0fc2c5ee587298519832bec74ba",
+          "bytes": 229478821,
+          "allocated_bytes": 229482496
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/4b5120410d9756e7bf5b5d324d2df9d0",
+          "bytes": 918,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "27bbfcf2d4eab3bb588d2102789ac1a88059eb192c64961f975bb32bac266977"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/4d2ffffd4a0d2651c686f0210c9fa9ae",
+          "bytes": 171,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "8ef1f04474f2f3f27acde8904f4232ad24d3ca84e9f675b970affff2871f5726"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/a7fb5d6b88a00ff68c2bd17fd88195f2",
+          "bytes": 894,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "c37a5e910126f821cd034c47f24fd007692342ecd7e300d9136110adfd305b1a"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 303,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "2afe5d969aa81913861ba6938da15fd622e8ec15fbae7628460fb1f12d3badef"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "82f611c8eef5cc9be17172201b4ab2e9fff3d20f288c60208516e3f8fba0cca5"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/061ae7c1fc701f540b0111da8c25d0ea",
+          "bytes": 2531,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "ff48d34d62339249e334c48bb4f76326a57c6a066e64835fa52b49578fb93d52"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "93007e6d8f6cd9b28ba246266b7f1001be40eb9fa1717de87b315f059eacbb8b"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/22bdb4a83d119670299395f80ffc10a6",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/51564ee524b61d25bc56bae9a489c8c6",
+          "bytes": 339314388,
+          "allocated_bytes": 339316736
+        },
+        {
+          "path": "params/ocdbt.process_0/d/61e7c589175d90d0a71071a2b3b6f2fb",
+          "bytes": 2838152575,
+          "allocated_bytes": 2838159360
+        },
+        {
+          "path": "params/ocdbt.process_0/d/6e719b82fcf2b8abe4b80c9e1da6e990",
+          "bytes": 656458549,
+          "allocated_bytes": 656465920
+        },
+        {
+          "path": "params/ocdbt.process_0/d/769c7911a81a71e1bb136970bb40ab1c",
+          "bytes": 106809264,
+          "allocated_bytes": 106811392
+        },
+        {
+          "path": "params/ocdbt.process_0/d/8ab9115c278783e4b34e16fb34a9a2d5",
+          "bytes": 483899673,
+          "allocated_bytes": 483905536
+        },
+        {
+          "path": "params/ocdbt.process_0/d/999b787c843ec8a6d6de7c0c8c242d48",
+          "bytes": 1354,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f4bbad65d695bcd97279a5698a040b755739193bfa236c3a73356870a633bdbf"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/b1c2c18fdafab59d0ea583ad1537ac9b",
+          "bytes": 7592149,
+          "allocated_bytes": 7593984,
+          "metadata_sha256": "3da8e55c2636a1b61cad9abfc711ed9a0249644530499c0decc177052fc7ab2c"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/c252950be9cb2a6f5506199b5fb2046f",
+          "bytes": 3252,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "881ac296cbfa6e3d7980a9a35d04f3df6c36e5834d1675ec244b37ff9979747d"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/da337e444885486e6e640e6c35270714",
+          "bytes": 829842242,
+          "allocated_bytes": 829849600
+        },
+        {
+          "path": "params/ocdbt.process_0/d/dcbd145ef1a7551a7b9c77b4e678e072",
+          "bytes": 2517,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "4f405a1bd609d985ba81a24ce4728aec0e26534d368d01a05deac771ea56b748"
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 523,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "af5bea95a22bf7c17f27494247315129f3dd5344059c21a9863aaedcc0fdc095"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.940574"
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_early60_500_003/500",
+      "reason": "已完成且被后续模型替代的历史对照；评估与源码快照保留",
+      "allocated_bytes": 5560143872,
+      "files": [
+        {
+          "path": "assets/openarm_drawer_success_v003/norm_stats.json",
+          "bytes": 3834,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "2d70dffd6f4dc7fc00ce3a99a9b480713ea0a2072c16edd08cf83aa2bde1193e"
+        },
+        {
+          "path": "config.txt",
+          "bytes": 1387,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "acd75669b8a608058caf20136ef217bec52b5ef831ce368a490c26150a2fa468"
+        },
+        {
+          "path": "dataset_manifest.json",
+          "bytes": 12684,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "428d1e96cc772018194b8d6ecc95e8e0ef52a2023794fee6245bb8bb7ef7afd2"
+        },
+        {
+          "path": "input_protocol.json",
+          "bytes": 43096,
+          "allocated_bytes": 45056,
+          "metadata_sha256": "01f1e946736b0e6fdadc625ca80dbc301482f69ef4d0331e2f80c9593e2351f7"
+        },
+        {
+          "path": "optimizer/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "62073dfd1a77df97bcaef637e06098372afa2bc7f5325999db72e8d295d602b7"
+        },
+        {
+          "path": "optimizer/_METADATA",
+          "bytes": 24606,
+          "allocated_bytes": 28672,
+          "metadata_sha256": "c30342ed4eaa1815269c37505c4b930cc29ef6218e888406ab2b1760ded3a7bc"
+        },
+        {
+          "path": "optimizer/_sharding",
+          "bytes": 10115,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "151a5492ea8a056717c77f43fcbcea8404bf3317e0faf3544ceb5a0cce1ff4bf"
+        },
+        {
+          "path": "optimizer/array_metadatas/process_0",
+          "bytes": 8115,
+          "allocated_bytes": 8192,
+          "metadata_sha256": "ab1d111c0b13dad93adc2c85eeccbe494666d693c53157bf152e63bf2f827280"
+        },
+        {
+          "path": "optimizer/d/d678f7bac9c00addd6390a8807396ab2",
+          "bytes": 1214,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "78b7bd50a551ada96be38bee627beaa1632a3f3e1965c1588b730e2cbd06216c"
+        },
+        {
+          "path": "optimizer/manifest.ocdbt",
+          "bytes": 117,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "2be6535d34a9b79b92870eeb877aa2f3b3b7b130b55231f8d6ff60836b04ebfa"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/13559e7556b8c64b935f65dfc42234de",
+          "bytes": 663,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "10c56cdcc475930fa92698099c41f0d9f2f8fd4189a025f04b5d1df7303f4662"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/27e87dc58e21da3bcc7922012cffe1e3",
+          "bytes": 245974282,
+          "allocated_bytes": 245981184
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/6c9ce69e982a0b27f2e59fc33c4389fa",
+          "bytes": 632,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "43370126be0b4885d67a3278597135158ab25c88f10c25b34113406c045e83b1"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/9c9f66dc1c028f5540a4aba0ba5ae7c8",
+          "bytes": 183,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "fee16a25213733822c80cdd87da4e347e5c784166808e11914442ebf35f057b6"
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/d/caa8ed3edd49eb3a809612910751f4cc",
+          "bytes": 51979179,
+          "allocated_bytes": 51982336
+        },
+        {
+          "path": "optimizer/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 305,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "108783ab03b8681705c0d14b35d7b34d0d713f150cb74a3fc5324582f73df26f"
+        },
+        {
+          "path": "params/_CHECKPOINT_METADATA",
+          "bytes": 258,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "4dec26624036bd0728b08d0dc3ff5e75f3e11a68cf041f516274ff8aa6b8019d"
+        },
+        {
+          "path": "params/_METADATA",
+          "bytes": 29185,
+          "allocated_bytes": 32768,
+          "metadata_sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+        },
+        {
+          "path": "params/_sharding",
+          "bytes": 15543,
+          "allocated_bytes": 16384,
+          "metadata_sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+        },
+        {
+          "path": "params/array_metadatas/process_0",
+          "bytes": 12198,
+          "allocated_bytes": 12288,
+          "metadata_sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+        },
+        {
+          "path": "params/d/6119c239cf4e04eb40db2d80b3e02ef2",
+          "bytes": 2455,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "f3c309af7898d60e460d81eae03d55a9315783f85f5381a0d55c8d4db17c483b"
+        },
+        {
+          "path": "params/manifest.ocdbt",
+          "bytes": 118,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "30b1c2881cf5849318fb3d844719690858bb4461d8e22ac41a5ec16bcf5c1f93"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/00a1f0f5e3379b5354c918c52fb1e6b1",
+          "bytes": 221583843,
+          "allocated_bytes": 221589504
+        },
+        {
+          "path": "params/ocdbt.process_0/d/00ffa31c5afcc2f9db28c0ae31ea17ff",
+          "bytes": 829842145,
+          "allocated_bytes": 829849600
+        },
+        {
+          "path": "params/ocdbt.process_0/d/5132832d1b6918c3f34dfbe131007b2c",
+          "bytes": 595790411,
+          "allocated_bytes": 595795968
+        },
+        {
+          "path": "params/ocdbt.process_0/d/738f5bbac6664a4f651662cb09166b57",
+          "bytes": 774728720,
+          "allocated_bytes": 774733824
+        },
+        {
+          "path": "params/ocdbt.process_0/d/79f7ee164caf026445cd98bd17ce33d5",
+          "bytes": 946037125,
+          "allocated_bytes": 946044928
+        },
+        {
+          "path": "params/ocdbt.process_0/d/890ed97dadb65fef42e767a4a4681a24",
+          "bytes": 210,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/91532db64e4692e23534000e981ebe38",
+          "bytes": 3237,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "36d70f874c164a3c0f15b560dea8fd153cb116f61370ff32606f544808179071"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/94bb0dd8802a57313b6418de1b5b7514",
+          "bytes": 1798813,
+          "allocated_bytes": 1802240,
+          "metadata_sha256": "137be1c829d3ae12c925e08b53b0fe8facc4613738331c0d4b8a277afeeb4301"
+        },
+        {
+          "path": "params/ocdbt.process_0/d/96fbb202c204d97156ff53138f9b8531",
+          "bytes": 1892120291,
+          "allocated_bytes": 1892126720
+        },
+        {
+          "path": "params/ocdbt.process_0/d/98f45ca1b662785c4391ddf052dab0b0",
+          "bytes": 1336,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "0ccded64b5a44c5ee31a5855ecf7b1e0b9410a0f35e3bc63977929c7c4c92e18"
+        },
+        {
+          "path": "params/ocdbt.process_0/manifest.ocdbt",
+          "bytes": 544,
+          "allocated_bytes": 4096,
+          "metadata_sha256": "67f645281b8d670b00a1426e249141a2998143958203a6f67633c37d188b66f0"
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:35.999429"
+    },
+    {
+      "path": ".cache/drawer_recovery_inputs",
+      "reason": "可从保留的恢复轨迹和源码重新生成的预处理缓存",
+      "allocated_bytes": 306524160,
+      "files": [
+        {
+          "path": "5eca7d26e59a5d6f2345/field_09.npy",
+          "bytes": 21728,
+          "allocated_bytes": 24576
+        },
+        {
+          "path": "5eca7d26e59a5d6f2345/field_08.npy",
+          "bytes": 86528,
+          "allocated_bytes": 90112
+        },
+        {
+          "path": "5eca7d26e59a5d6f2345/field_02.npy",
+          "bytes": 67737728,
+          "allocated_bytes": 67739648
+        },
+        {
+          "path": "5eca7d26e59a5d6f2345/field_07.npy",
+          "bytes": 921728,
+          "allocated_bytes": 925696
+        },
+        {
+          "path": "5eca7d26e59a5d6f2345/field_00.npy",
+          "bytes": 57728,
+          "allocated_bytes": 61440
+        },
+        {
+          "path": "5eca7d26e59a5d6f2345/field_05.npy",
+          "bytes": 578,
+          "allocated_bytes": 4096
+        },
+        {
+          "path": "5eca7d26e59a5d6f2345/field_04.npy",
+          "bytes": 578,
+          "allocated_bytes": 4096
+        },
+        {
+          "path": "5eca7d26e59a5d6f2345/field_03.npy",
+          "bytes": 67737728,
+          "allocated_bytes": 67739648
+        },
+        {
+          "path": "5eca7d26e59a5d6f2345/READY.json",
+          "bytes": 8999,
+          "allocated_bytes": 12288
+        },
+        {
+          "path": "5eca7d26e59a5d6f2345/field_01.npy",
+          "bytes": 67737728,
+          "allocated_bytes": 67739648
+        },
+        {
+          "path": "5eca7d26e59a5d6f2345/field_06.npy",
+          "bytes": 578,
+          "allocated_bytes": 4096
+        },
+        {
+          "path": "0af172500674893527ba/field_09.npy",
+          "bytes": 10928,
+          "allocated_bytes": 12288
+        },
+        {
+          "path": "0af172500674893527ba/field_08.npy",
+          "bytes": 43328,
+          "allocated_bytes": 45056
+        },
+        {
+          "path": "0af172500674893527ba/field_02.npy",
+          "bytes": 33868928,
+          "allocated_bytes": 33869824
+        },
+        {
+          "path": "0af172500674893527ba/field_07.npy",
+          "bytes": 460928,
+          "allocated_bytes": 462848
+        },
+        {
+          "path": "0af172500674893527ba/field_00.npy",
+          "bytes": 28928,
+          "allocated_bytes": 32768
+        },
+        {
+          "path": "0af172500674893527ba/field_05.npy",
+          "bytes": 353,
+          "allocated_bytes": 4096
+        },
+        {
+          "path": "0af172500674893527ba/field_04.npy",
+          "bytes": 353,
+          "allocated_bytes": 4096
+        },
+        {
+          "path": "0af172500674893527ba/field_03.npy",
+          "bytes": 33868928,
+          "allocated_bytes": 33869824
+        },
+        {
+          "path": "0af172500674893527ba/READY.json",
+          "bytes": 2457,
+          "allocated_bytes": 4096
+        },
+        {
+          "path": "0af172500674893527ba/field_01.npy",
+          "bytes": 33868928,
+          "allocated_bytes": 33869824
+        },
+        {
+          "path": "0af172500674893527ba/field_06.npy",
+          "bytes": 353,
+          "allocated_bytes": 4096
+        }
+      ],
+      "deleted_at": "2026-10-25T10:39:36.017259"
+    }
+  ],
+  "expected_allocated_bytes": 61479743488,
+  "free_bytes_before": 29018066944,
+  "protected_file_stats": [
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/dataset_manifest.json",
+      "size": 12684,
+      "mtime_ns": 1792870374389463308
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/input_protocol.json",
+      "size": 12683,
+      "mtime_ns": 1792870374388463258
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/config.txt",
+      "size": 1460,
+      "mtime_ns": 1792870374361461911
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/deployment_config.json",
+      "size": 328,
+      "mtime_ns": 1792871758826170052
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/validation_report.json",
+      "size": 925,
+      "mtime_ns": 1792871758826170052
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/_sharding",
+      "size": 15543,
+      "mtime_ns": 1792870372833385710
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/manifest.ocdbt",
+      "size": 118,
+      "mtime_ns": 1792870372850386558
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/_METADATA",
+      "size": 29185,
+      "mtime_ns": 1792870372841386109
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/_CHECKPOINT_METADATA",
+      "size": 258,
+      "mtime_ns": 1792870372854386757
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/manifest.ocdbt",
+      "size": 541,
+      "mtime_ns": 1792870372829385510
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/d/709287f1e5d39b248eaac96e20a1cc43",
+      "size": 23434634,
+      "mtime_ns": 1792870369153202199
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/d/dc040625607150f39b7bda2f9ba1d945",
+      "size": 1354,
+      "mtime_ns": 1792870369124200753
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/d/842780c6d45896a4e72108ee9de63c7d",
+      "size": 3253,
+      "mtime_ns": 1792870369129201002
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/d/f17316acafcf6cd64578f4511ffe6421",
+      "size": 64755089,
+      "mtime_ns": 1792870369220205540
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/d/c5fe56ba3d7bdddfce3d3548e55feb8f",
+      "size": 1775930475,
+      "mtime_ns": 1792870371377313101
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/d/991fd2731285a5cb50585b957ec16172",
+      "size": 655308444,
+      "mtime_ns": 1792870369842236556
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/d/d122937e23bffb573a7467f903c4e443",
+      "size": 1892066869,
+      "mtime_ns": 1792870372249356586
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/d/18f6f39517344bd4a0bb2606f47f03d7",
+      "size": 656458556,
+      "mtime_ns": 1792870370394264082
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/d/3e048e5425ea1b86118df1f903111454",
+      "size": 210,
+      "mtime_ns": 1792870369117200404
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/ocdbt.process_0/d/2c00c6a88bedb8e476393e25ba8106f5",
+      "size": 194111689,
+      "mtime_ns": 1792870369429215962
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/array_metadatas/process_0",
+      "size": 12198,
+      "mtime_ns": 1792870369120200553
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/params/d/6658222ab3f235017d70c89a2f98e68c",
+      "size": 2527,
+      "mtime_ns": 1792870372847386408
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/_sharding",
+      "size": 12639,
+      "mtime_ns": 1792870374341460914
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/manifest.ocdbt",
+      "size": 117,
+      "mtime_ns": 1792870374356461662
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/_METADATA",
+      "size": 29630,
+      "mtime_ns": 1792870374350461363
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/_CHECKPOINT_METADATA",
+      "size": 258,
+      "mtime_ns": 1792870374361461911
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/ocdbt.process_0/manifest.ocdbt",
+      "size": 307,
+      "mtime_ns": 1792870374336460665
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/ocdbt.process_0/d/e297a793d9e66e12fb3155b1615ba6ee",
+      "size": 183,
+      "mtime_ns": 1792870373723430094
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/ocdbt.process_0/d/1019c47d41d5f46b712b790eacfb7a57",
+      "size": 894,
+      "mtime_ns": 1792870373731430493
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/ocdbt.process_0/d/0c081475b836ad699d7a91b22248dd18",
+      "size": 264926511,
+      "mtime_ns": 1792870373896438721
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/ocdbt.process_0/d/f34f26a95c8ad0c90e16b4095eb13846",
+      "size": 922,
+      "mtime_ns": 1792870373738430842
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/ocdbt.process_0/d/a70e0b0908983d231a84c5111a053544",
+      "size": 34059359,
+      "mtime_ns": 1792870374281457922
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/array_metadatas/process_0",
+      "size": 9955,
+      "mtime_ns": 1792870373731430493
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/optimizer/d/6b7a9fcc40e6eb5a123b3c566ffa542b",
+      "size": 1639,
+      "mtime_ns": 1792870374352461462
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000/assets/openarm_drawer_success_v003_right7_delta_velocity/norm_stats.json",
+      "size": 5637,
+      "mtime_ns": 1792870374361461911
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/dataset_manifest.json",
+      "size": 12684,
+      "mtime_ns": 1792867401681350609
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/input_protocol.json",
+      "size": 24099,
+      "mtime_ns": 1792867401681350609
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/config.txt",
+      "size": 1459,
+      "mtime_ns": 1792867401646348498
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/_sharding",
+      "size": 15543,
+      "mtime_ns": 1792867400658288897
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/manifest.ocdbt",
+      "size": 118,
+      "mtime_ns": 1792867400680290224
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/_METADATA",
+      "size": 29185,
+      "mtime_ns": 1792867400665289319
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/_CHECKPOINT_METADATA",
+      "size": 258,
+      "mtime_ns": 1792867400684290466
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/ocdbt.process_0/manifest.ocdbt",
+      "size": 493,
+      "mtime_ns": 1792867400655288716
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/ocdbt.process_0/d/805dae6f4dfbb9c56b65eb8f60d19804",
+      "size": 1046501160,
+      "mtime_ns": 1792867398084133540
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/ocdbt.process_0/d/1f2414c6c641305450f794f70e167197",
+      "size": 235550,
+      "mtime_ns": 1792867396982066991
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/ocdbt.process_0/d/6052c7c3b553cb565a7b79103c52dec3",
+      "size": 337323631,
+      "mtime_ns": 1792867397384091268
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/ocdbt.process_0/d/3130ce322f3c7905764cb4e8aa187ea5",
+      "size": 210,
+      "mtime_ns": 1792867396962065783
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/ocdbt.process_0/d/80f83c0c9c402bddda17c94353428b28",
+      "size": 3254,
+      "mtime_ns": 1792867396975066568
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/ocdbt.process_0/d/be80759d8f70606743d76a30e93f9683",
+      "size": 210008190,
+      "mtime_ns": 1792867398602164813
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/ocdbt.process_0/d/9855ca8b324b520978227070bcfdd026",
+      "size": 1892066848,
+      "mtime_ns": 1792867400169259392
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/ocdbt.process_0/d/cde2ad44b102b7512c43af7951ddcdd6",
+      "size": 1354,
+      "mtime_ns": 1792867396970066266
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/ocdbt.process_0/d/82daad12dd1c1e7a3e97e13f6236dc78",
+      "size": 1775930455,
+      "mtime_ns": 1792867399359210508
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/array_metadatas/process_0",
+      "size": 12198,
+      "mtime_ns": 1792867396967066085
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/params/d/d8a3a22b7dd04abc5eece8fdb3e1cc74",
+      "size": 2509,
+      "mtime_ns": 1792867400677290043
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/_sharding",
+      "size": 12639,
+      "mtime_ns": 1792867401628347412
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/manifest.ocdbt",
+      "size": 117,
+      "mtime_ns": 1792867401640348136
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/_METADATA",
+      "size": 29630,
+      "mtime_ns": 1792867401635347834
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/_CHECKPOINT_METADATA",
+      "size": 258,
+      "mtime_ns": 1792867401644348377
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/ocdbt.process_0/manifest.ocdbt",
+      "size": 335,
+      "mtime_ns": 1792867401623347110
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/ocdbt.process_0/d/35fb7e6336de2e8095513925e51b2c84",
+      "size": 69802349,
+      "mtime_ns": 1792867401388332936
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/ocdbt.process_0/d/09906cc4a72c5dcdcd489bedc556702b",
+      "size": 228807370,
+      "mtime_ns": 1792867401493339269
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/ocdbt.process_0/d/83d007e0dbedd94577c2087eda44adc6",
+      "size": 922,
+      "mtime_ns": 1792867401325329135
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/ocdbt.process_0/d/92c1cca0582f07234343ba6f6c1dd76d",
+      "size": 183,
+      "mtime_ns": 1792867401313328412
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/ocdbt.process_0/d/fe6e47daec79fb74713d70e5b98b610d",
+      "size": 937,
+      "mtime_ns": 1792867401335329739
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/ocdbt.process_0/d/f77c350d20c6b3194f936e0c70e0aa36",
+      "size": 894,
+      "mtime_ns": 1792867401319328774
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/array_metadatas/process_0",
+      "size": 9955,
+      "mtime_ns": 1792867401320328834
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/optimizer/d/9fd47ffd5d22919e64134c30508e65c4",
+      "size": 1851,
+      "mtime_ns": 1792867401637347955
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000/assets/openarm_drawer_success_v003_right7_delta_velocity/norm_stats.json",
+      "size": 5637,
+      "mtime_ns": 1792867401646348498
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/dataset_manifest.json",
+      "size": 12684,
+      "mtime_ns": 1792854654151534666
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/input_protocol.json",
+      "size": 5710,
+      "mtime_ns": 1792854654151534666
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/config.txt",
+      "size": 1473,
+      "mtime_ns": 1792854654117533124
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/_sharding",
+      "size": 15543,
+      "mtime_ns": 1792854652867476431
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/manifest.ocdbt",
+      "size": 118,
+      "mtime_ns": 1792854652879476975
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/_METADATA",
+      "size": 29185,
+      "mtime_ns": 1792854652873476703
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/_CHECKPOINT_METADATA",
+      "size": 258,
+      "mtime_ns": 1792854652882477112
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/ocdbt.process_0/manifest.ocdbt",
+      "size": 494,
+      "mtime_ns": 1792854652864476295
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/ocdbt.process_0/d/664202aa2706eb80f17889e37b786cf9",
+      "size": 893166810,
+      "mtime_ns": 1792854648846294045
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/ocdbt.process_0/d/8c62231d6f7d84046bb7155f011aa623",
+      "size": 1892120341,
+      "mtime_ns": 1792854650925388349
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/ocdbt.process_0/d/766bebc19f8c9dc694e25625cf23b3da",
+      "size": 946037179,
+      "mtime_ns": 1792854652451457563
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/ocdbt.process_0/d/e7dc461c910d7e0fb08600bd1e13c48c",
+      "size": 183570968,
+      "mtime_ns": 1792854647866249589
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/ocdbt.process_0/d/b5cd4733ea399e2092a396e7db005ab8",
+      "size": 1354,
+      "mtime_ns": 1792854647606237794
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/ocdbt.process_0/d/40192e7c9ed0a08ad39459b85b86c672",
+      "size": 210,
+      "mtime_ns": 1792854647598237431
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/ocdbt.process_0/d/300974e6fbef7691ecd8cb8ee318bf2e",
+      "size": 3252,
+      "mtime_ns": 1792854647613238112
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/ocdbt.process_0/d/f460d85e0ca353f1e1c86ee4beef661e",
+      "size": 517329842,
+      "mtime_ns": 1792854648217265511
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/ocdbt.process_0/d/ca5e439000f3c584eebb54d6b4e90a46",
+      "size": 829842203,
+      "mtime_ns": 1792854649446321261
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/array_metadatas/process_0",
+      "size": 12198,
+      "mtime_ns": 1792854647602237613
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/params/d/4771b34cf19e4f87097aa245827525a7",
+      "size": 2504,
+      "mtime_ns": 1792854652876476840
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/_sharding",
+      "size": 12639,
+      "mtime_ns": 1792854654101532398
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/manifest.ocdbt",
+      "size": 117,
+      "mtime_ns": 1792854654113532942
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/_METADATA",
+      "size": 29630,
+      "mtime_ns": 1792854654108532715
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/_CHECKPOINT_METADATA",
+      "size": 258,
+      "mtime_ns": 1792854654116533078
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/ocdbt.process_0/manifest.ocdbt",
+      "size": 302,
+      "mtime_ns": 1792854654097532217
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/ocdbt.process_0/d/6bbae4742b9230c350fd70b5a30a7bb3",
+      "size": 183,
+      "mtime_ns": 1792854653732515663
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/ocdbt.process_0/d/4e53aea4a76b51ca2b3a5ba79ece534f",
+      "size": 239195746,
+      "mtime_ns": 1792854653959525958
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/ocdbt.process_0/d/93de94693e1fd31951b5043ec56a4129",
+      "size": 894,
+      "mtime_ns": 1792854653738515935
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/ocdbt.process_0/d/2e9b95ee2038f6364bf29847ae130a19",
+      "size": 922,
+      "mtime_ns": 1792854653744516207
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/ocdbt.process_0/d/e4f3d1dea2d20034e05d7944aaddbe72",
+      "size": 60799386,
+      "mtime_ns": 1792854653770517386
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/array_metadatas/process_0",
+      "size": 9955,
+      "mtime_ns": 1792854653739515980
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/optimizer/d/34069d58af13ff68e48580c966114742",
+      "size": 1846,
+      "mtime_ns": 1792854654110532806
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450/assets/openarm_drawer_success_v003_right7_delta/norm_stats.json",
+      "size": 3887,
+      "mtime_ns": 1792854654117533124
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/dataset_manifest.json",
+      "size": 12684,
+      "mtime_ns": 1792831246303146273
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/input_protocol.json",
+      "size": 7503,
+      "mtime_ns": 1792831246303146273
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/config.txt",
+      "size": 1400,
+      "mtime_ns": 1792831246263144117
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/_sharding",
+      "size": 10363,
+      "mtime_ns": 1792831244903070798
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/manifest.ocdbt",
+      "size": 118,
+      "mtime_ns": 1792831244920071715
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/_METADATA",
+      "size": 29185,
+      "mtime_ns": 1792831244910071176
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/_CHECKPOINT_METADATA",
+      "size": 258,
+      "mtime_ns": 1792831244924071930
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/ocdbt.process_0/manifest.ocdbt",
+      "size": 448,
+      "mtime_ns": 1792831244899070583
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/ocdbt.process_0/d/49bf2805a08f1c2ecf7b02c905237f31",
+      "size": 2389,
+      "mtime_ns": 1792831244896070421
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/ocdbt.process_0/d/cad9dae2fa2ee7a03e3e189df4c43829",
+      "size": 3200,
+      "mtime_ns": 1792831240902855097
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/ocdbt.process_0/d/dd9e7fd7cb40158bf5d573fd885d4e73",
+      "size": 446733713,
+      "mtime_ns": 1792831241388881308
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/ocdbt.process_0/d/1eb7dbf4d3f5a896c5edeff69ceeee56",
+      "size": 210,
+      "mtime_ns": 1792831240896854773
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/ocdbt.process_0/d/31720af891febc6c47d62eeaff26c83d",
+      "size": 1373,
+      "mtime_ns": 1792831240908855420
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/ocdbt.process_0/d/c873a3ca2bd1d37e0539ab7e64a14f85",
+      "size": 829842116,
+      "mtime_ns": 1792831242805957727
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/ocdbt.process_0/d/32f258525ef189db43aae468c0311f15",
+      "size": 2838152575,
+      "mtime_ns": 1792831244311038880
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/ocdbt.process_0/d/1a25d6a97b844b1f5f448acfa0e6e72c",
+      "size": 136522326,
+      "mtime_ns": 1792831241121866908
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/ocdbt.process_0/d/920e7aba9c2a88ab23faa72db304ce29",
+      "size": 1010643760,
+      "mtime_ns": 1792831242050917012
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/array_metadatas/process_0",
+      "size": 12198,
+      "mtime_ns": 1792831240896854773
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/params/d/f5f30c3629bc8c5df60ace65da4807ef",
+      "size": 2403,
+      "mtime_ns": 1792831244916071499
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/_sharding",
+      "size": 7007,
+      "mtime_ns": 1792831246238142769
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/manifest.ocdbt",
+      "size": 117,
+      "mtime_ns": 1792831246256143739
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/_METADATA",
+      "size": 24606,
+      "mtime_ns": 1792831246248143308
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/_CHECKPOINT_METADATA",
+      "size": 258,
+      "mtime_ns": 1792831246262144063
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/ocdbt.process_0/manifest.ocdbt",
+      "size": 310,
+      "mtime_ns": 1792831246233142500
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/ocdbt.process_0/d/064f405e0cf156fa79cde95d51e1f166",
+      "size": 632,
+      "mtime_ns": 1792831245701113820
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/ocdbt.process_0/d/4ca7fcea246c51d5ccca8e1518932445",
+      "size": 82245278,
+      "mtime_ns": 1792831245767117378
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/ocdbt.process_0/d/0c6a27aec6c79f651ebdf51020119444",
+      "size": 215744872,
+      "mtime_ns": 1792831245989129346
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/ocdbt.process_0/d/9965d83742126698925686b9381c7f9c",
+      "size": 183,
+      "mtime_ns": 1792831245692113335
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/ocdbt.process_0/d/5e92eb04c282fdea4ede8a1e13a8d002",
+      "size": 663,
+      "mtime_ns": 1792831245709114251
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/array_metadatas/process_0",
+      "size": 8115,
+      "mtime_ns": 1792831245700113766
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/optimizer/d/e69087bfc281ae364aeefe1942565945",
+      "size": 1210,
+      "mtime_ns": 1792831246252143524
+    },
+    {
+      "path": "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000/assets/openarm_drawer_success_v003/norm_stats.json",
+      "size": 3834,
+      "mtime_ns": 1792831246262144063
+    }
+  ],
+  "weights_backed_up": false,
+  "finished_at": "2026-10-25T10:39:36.020124",
+  "free_bytes_after": 90498342912,
+  "observed_free_bytes_increase": 61480275968
+}

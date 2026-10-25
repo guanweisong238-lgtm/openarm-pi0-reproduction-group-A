@@ -1,0 +1,996 @@
+[
+  {
+    "configuration": "固定噪声，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231237-067321/trial_01_episode_12",
+    "episode_id": 12,
+    "seed": 42,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.19856572864159225,
+        "attitude_deg": 0.08644137371274829,
+        "max_right_joint_error_rad": 0.0015809135654586415
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.32518777472358706,
+        "attitude_deg": 0.20266575594082412,
+        "max_right_joint_error_rad": 0.002847929179755404
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.4453869733991905,
+        "attitude_deg": 0.3693600827465801,
+        "max_right_joint_error_rad": 0.005609760695423738
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.7222849502637889,
+        "attitude_deg": 0.6086743882005468,
+        "max_right_joint_error_rad": 0.009119326584484
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 1.4238963587803088,
+        "attitude_deg": 1.195690384367767,
+        "max_right_joint_error_rad": 0.018076802475070597
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 1.9728591729019327,
+        "attitude_deg": 1.6501553091197958,
+        "max_right_joint_error_rad": 0.02510091548863702
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 2.287264934803702,
+        "attitude_deg": 1.7316170627492264,
+        "max_right_joint_error_rad": 0.02572980275371295
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 2.7905676740900445,
+        "attitude_deg": 2.005404763437916,
+        "max_right_joint_error_rad": 0.029149799308112456
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 3.66732560206161,
+        "attitude_deg": 2.3632046924570056,
+        "max_right_joint_error_rad": 0.03302129731469572
+      }
+    ],
+    "worst_position_mm": 3.66732560206161,
+    "worst_attitude_deg": 2.3632046924570056,
+    "passed": false
+  },
+  {
+    "configuration": "固定噪声，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231237-067321/trial_02_episode_12",
+    "episode_id": 12,
+    "seed": 7,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.13291882069977204,
+        "attitude_deg": 0.2866417261501585,
+        "max_right_joint_error_rad": 0.004617417022056092
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.08634989295941745,
+        "attitude_deg": 0.38857416939270817,
+        "max_right_joint_error_rad": 0.006400461274156832
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.11028745868528592,
+        "attitude_deg": 0.26545378123214813,
+        "max_right_joint_error_rad": 0.004379078543093939
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.18865984396452695,
+        "attitude_deg": 0.08654947872826022,
+        "max_right_joint_error_rad": 0.0011691489002685351
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 0.2762627504336031,
+        "attitude_deg": 0.13884325623020893,
+        "max_right_joint_error_rad": 0.0016828721747090825
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 0.3011728856390454,
+        "attitude_deg": 0.24025504357641309,
+        "max_right_joint_error_rad": 0.0036139907264978177
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 0.4535972547966207,
+        "attitude_deg": 0.3231567734281963,
+        "max_right_joint_error_rad": 0.005201959356779362
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 0.6187670142485512,
+        "attitude_deg": 0.32358427067068557,
+        "max_right_joint_error_rad": 0.005237380322802299
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 1.0898209398321403,
+        "attitude_deg": 0.506407291545597,
+        "max_right_joint_error_rad": 0.00823619741666537
+      }
+    ],
+    "worst_position_mm": 1.0898209398321403,
+    "worst_attitude_deg": 0.506407291545597,
+    "passed": true
+  },
+  {
+    "configuration": "固定噪声，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231237-067321/trial_03_episode_12",
+    "episode_id": 12,
+    "seed": 99,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.21779622756364894,
+        "attitude_deg": 0.1283905516154222,
+        "max_right_joint_error_rad": 0.0016987720216434798
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.35833644618916716,
+        "attitude_deg": 0.18065679911068797,
+        "max_right_joint_error_rad": 0.0026287700078635456
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.47772035115957956,
+        "attitude_deg": 0.17815782240361627,
+        "max_right_joint_error_rad": 0.0030008826534791977
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.5601332827268343,
+        "attitude_deg": 0.21518406125482573,
+        "max_right_joint_error_rad": 0.0026837412538551764
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 0.7660836066760192,
+        "attitude_deg": 0.2607599383354799,
+        "max_right_joint_error_rad": 0.0034481708395041055
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 0.8698666905929932,
+        "attitude_deg": 0.28260031772232835,
+        "max_right_joint_error_rad": 0.004196511392136837
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 0.904584630037223,
+        "attitude_deg": 0.3067619604278566,
+        "max_right_joint_error_rad": 0.004907097312245257
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 0.908183020336921,
+        "attitude_deg": 0.321982247417444,
+        "max_right_joint_error_rad": 0.005400482702135889
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 1.3541967268159718,
+        "attitude_deg": 0.5139614969589443,
+        "max_right_joint_error_rad": 0.00838870017727733
+      }
+    ],
+    "worst_position_mm": 1.3541967268159718,
+    "worst_attitude_deg": 0.5139614969589443,
+    "passed": true
+  },
+  {
+    "configuration": "固定噪声，chunk1",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231426-115959/trial_01_episode_12",
+    "episode_id": 12,
+    "seed": 42,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.19969730394665974,
+        "attitude_deg": 0.0907149350597022,
+        "max_right_joint_error_rad": 0.0016124833980298847
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.37299855763651046,
+        "attitude_deg": 0.34152723380516736,
+        "max_right_joint_error_rad": 0.005512016697410527
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.5867340513181641,
+        "attitude_deg": 0.6658918738398607,
+        "max_right_joint_error_rad": 0.010922640532643246
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.822208163097857,
+        "attitude_deg": 0.9712409582211831,
+        "max_right_joint_error_rad": 0.015709028315944007
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 1.666368371371726,
+        "attitude_deg": 1.6125295513917357,
+        "max_right_joint_error_rad": 0.025045010776907795
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 3.136434504686918,
+        "attitude_deg": 2.598540746859148,
+        "max_right_joint_error_rad": 0.03937116177082656
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 4.717445951048745,
+        "attitude_deg": 3.331667112173704,
+        "max_right_joint_error_rad": 0.04881647398823841
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 5.522561597378669,
+        "attitude_deg": 3.801422487095543,
+        "max_right_joint_error_rad": 0.05539481198420715
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 5.514968246898591,
+        "attitude_deg": 3.7895501834975223,
+        "max_right_joint_error_rad": 0.05513833171711546
+      }
+    ],
+    "worst_position_mm": 5.522561597378669,
+    "worst_attitude_deg": 3.801422487095543,
+    "passed": false
+  },
+  {
+    "configuration": "固定噪声，chunk1",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231426-115959/trial_02_episode_12",
+    "episode_id": 12,
+    "seed": 7,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.13761242485379252,
+        "attitude_deg": 0.2875829277324501,
+        "max_right_joint_error_rad": 0.004622339569458234
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.28456200167297724,
+        "attitude_deg": 0.5887087937789539,
+        "max_right_joint_error_rad": 0.009486478310932078
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.4418041100228632,
+        "attitude_deg": 0.6732319848789556,
+        "max_right_joint_error_rad": 0.010649431516401187
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.6247115296527175,
+        "attitude_deg": 0.7932772103754278,
+        "max_right_joint_error_rad": 0.012088786991094391
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 0.7650590954044771,
+        "attitude_deg": 0.9677081439548826,
+        "max_right_joint_error_rad": 0.014371781337295886
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 0.8691440451119941,
+        "attitude_deg": 1.023021767666176,
+        "max_right_joint_error_rad": 0.014553116075421091
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 0.8755780789195803,
+        "attitude_deg": 1.2825975453231302,
+        "max_right_joint_error_rad": 0.01920935378833244
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 1.0958397641500677,
+        "attitude_deg": 1.658194066249846,
+        "max_right_joint_error_rad": 0.025712660139834753
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 1.5228486170420417,
+        "attitude_deg": 2.1543659617858446,
+        "max_right_joint_error_rad": 0.0336385857597743
+      }
+    ],
+    "worst_position_mm": 1.5228486170420417,
+    "worst_attitude_deg": 2.1543659617858446,
+    "passed": false
+  },
+  {
+    "configuration": "固定噪声，chunk1",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231426-115959/trial_03_episode_12",
+    "episode_id": 12,
+    "seed": 99,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.2303859201014232,
+        "attitude_deg": 0.13777217555193064,
+        "max_right_joint_error_rad": 0.0017534446332039266
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.6009847102846483,
+        "attitude_deg": 0.2623124950323354,
+        "max_right_joint_error_rad": 0.003679732535373015
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.7654930236618379,
+        "attitude_deg": 0.3120059914350103,
+        "max_right_joint_error_rad": 0.004665037080694434
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.9992504037321948,
+        "attitude_deg": 0.43160453474168964,
+        "max_right_joint_error_rad": 0.006299300148455589
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 1.2938398084360954,
+        "attitude_deg": 0.5553097081457942,
+        "max_right_joint_error_rad": 0.007531036603971475
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 1.9166251381516208,
+        "attitude_deg": 0.7429016828488499,
+        "max_right_joint_error_rad": 0.009743543859076276
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 2.5455668054208056,
+        "attitude_deg": 0.9764790916284013,
+        "max_right_joint_error_rad": 0.01149777741830571
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 3.3302016746749397,
+        "attitude_deg": 1.3453380959050434,
+        "max_right_joint_error_rad": 0.01485820517812153
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 4.238660222388867,
+        "attitude_deg": 1.7365516498095894,
+        "max_right_joint_error_rad": 0.01857964587652816
+      }
+    ],
+    "worst_position_mm": 4.238660222388867,
+    "worst_attitude_deg": 1.7365516498095894,
+    "passed": true
+  },
+  {
+    "configuration": "新噪声序列，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231622-307349/trial_01_episode_12",
+    "episode_id": 12,
+    "seed": 42,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.1873459924274151,
+        "attitude_deg": 0.09058813654606211,
+        "max_right_joint_error_rad": 0.0015485407307676002
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.3067359993403631,
+        "attitude_deg": 0.19903505030347157,
+        "max_right_joint_error_rad": 0.0029167022079721328
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.4135439045039609,
+        "attitude_deg": 0.36368437518527486,
+        "max_right_joint_error_rad": 0.005648749845398537
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.677501368193841,
+        "attitude_deg": 0.6084859878469434,
+        "max_right_joint_error_rad": 0.009255228534952753
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 0.7810968186651562,
+        "attitude_deg": 0.6229845011475889,
+        "max_right_joint_error_rad": 0.009349384712570075
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 0.658391789641153,
+        "attitude_deg": 0.4861939487838346,
+        "max_right_joint_error_rad": 0.007158306862244501
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 0.5628072760569597,
+        "attitude_deg": 0.42917004862541513,
+        "max_right_joint_error_rad": 0.006346929418286518
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 0.6021832426124136,
+        "attitude_deg": 0.514102787803149,
+        "max_right_joint_error_rad": 0.0077785483953616286
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 0.5756241752796973,
+        "attitude_deg": 0.5517970201969093,
+        "max_right_joint_error_rad": 0.008300111242609542
+      }
+    ],
+    "worst_position_mm": 0.7810968186651562,
+    "worst_attitude_deg": 0.6229845011475889,
+    "passed": true
+  },
+  {
+    "configuration": "新噪声序列，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231622-307349/trial_02_episode_12",
+    "episode_id": 12,
+    "seed": 7,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.1434225521139062,
+        "attitude_deg": 0.2822708701667465,
+        "max_right_joint_error_rad": 0.0045358151731056395
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.09946708076343097,
+        "attitude_deg": 0.38093446730740116,
+        "max_right_joint_error_rad": 0.006276337429970802
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.11670171366404442,
+        "attitude_deg": 0.2697056315765445,
+        "max_right_joint_error_rad": 0.004452033116814302
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.1845507644929852,
+        "attitude_deg": 0.08182460558522395,
+        "max_right_joint_error_rad": 0.0011175478893656887
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 0.2742677588255988,
+        "attitude_deg": 0.23489772658836092,
+        "max_right_joint_error_rad": 0.0036930475552408026
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 0.30172811383670756,
+        "attitude_deg": 0.4283590912023947,
+        "max_right_joint_error_rad": 0.0071083880797502275
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 0.316977550177409,
+        "attitude_deg": 0.45042388728115174,
+        "max_right_joint_error_rad": 0.00759181473714543
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 0.480513957743522,
+        "attitude_deg": 0.5115498533611802,
+        "max_right_joint_error_rad": 0.008191772327131641
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 1.1725624641006185,
+        "attitude_deg": 1.0555995015260908,
+        "max_right_joint_error_rad": 0.016054512970591794
+      }
+    ],
+    "worst_position_mm": 1.1725624641006185,
+    "worst_attitude_deg": 1.0555995015260908,
+    "passed": true
+  },
+  {
+    "configuration": "新噪声序列，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231622-307349/trial_03_episode_12",
+    "episode_id": 12,
+    "seed": 99,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.23262527668125552,
+        "attitude_deg": 0.13376281051623992,
+        "max_right_joint_error_rad": 0.0017059589997960867
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.3810878087813435,
+        "attitude_deg": 0.18823245470551078,
+        "max_right_joint_error_rad": 0.0026560971105561437
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.49545027876971165,
+        "attitude_deg": 0.18936140331027929,
+        "max_right_joint_error_rad": 0.0030380890953426443
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.5696858404849167,
+        "attitude_deg": 0.2097344161628209,
+        "max_right_joint_error_rad": 0.0027514585389771806
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 0.5663402011347473,
+        "attitude_deg": 0.16917041833535032,
+        "max_right_joint_error_rad": 0.002373462892471867
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 0.5630072786424023,
+        "attitude_deg": 0.277889702926316,
+        "max_right_joint_error_rad": 0.0031210568331898614
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 0.7044880595935898,
+        "attitude_deg": 0.33993202589508076,
+        "max_right_joint_error_rad": 0.004176855494584242
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 0.873695808059759,
+        "attitude_deg": 0.4045283777348798,
+        "max_right_joint_error_rad": 0.005429911092940887
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 1.113885910463586,
+        "attitude_deg": 0.8027619450724035,
+        "max_right_joint_error_rad": 0.011334154559213161
+      }
+    ],
+    "worst_position_mm": 1.113885910463586,
+    "worst_attitude_deg": 0.8027619450724035,
+    "passed": true
+  },
+  {
+    "configuration": "新噪声序列，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231758-875644/trial_01_episode_12",
+    "episode_id": 12,
+    "seed": 0,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.12230664448793113,
+        "attitude_deg": 0.15386590686139417,
+        "max_right_joint_error_rad": 0.0024558525824081023
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.15736028877864325,
+        "attitude_deg": 0.1921558996306489,
+        "max_right_joint_error_rad": 0.003058293923791755
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.19883023176803846,
+        "attitude_deg": 0.035205058112592086,
+        "max_right_joint_error_rad": 0.00036830857970082675
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.22364573887346792,
+        "attitude_deg": 0.17726352079642946,
+        "max_right_joint_error_rad": 0.003340983628823402
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 0.190217933940862,
+        "attitude_deg": 0.5410248357186604,
+        "max_right_joint_error_rad": 0.009327062591841795
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 0.40444390467497243,
+        "attitude_deg": 0.7153954548366157,
+        "max_right_joint_error_rad": 0.012095588597115459
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 0.4859392056611914,
+        "attitude_deg": 0.6493175341972406,
+        "max_right_joint_error_rad": 0.010744471801725552
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 0.6841889306334639,
+        "attitude_deg": 0.6720420581083175,
+        "max_right_joint_error_rad": 0.010494695608513904
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 1.112119935294542,
+        "attitude_deg": 0.7403963529660648,
+        "max_right_joint_error_rad": 0.010635210433559195
+      }
+    ],
+    "worst_position_mm": 1.112119935294542,
+    "worst_attitude_deg": 0.7403963529660648,
+    "passed": true
+  },
+  {
+    "configuration": "新噪声序列，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231758-875644/trial_02_episode_12",
+    "episode_id": 12,
+    "seed": 1,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.22867149512225313,
+        "attitude_deg": 0.31442342094422604,
+        "max_right_joint_error_rad": 0.00502489155921948
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.3391153082652627,
+        "attitude_deg": 0.40798157033056365,
+        "max_right_joint_error_rad": 0.006494182589685593
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.5150516752452733,
+        "attitude_deg": 0.21859725236192737,
+        "max_right_joint_error_rad": 0.002732021822942521
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.565009942401096,
+        "attitude_deg": 0.18383379112488088,
+        "max_right_joint_error_rad": 0.0024437085205670783
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 0.479412688907318,
+        "attitude_deg": 0.46868856592424196,
+        "max_right_joint_error_rad": 0.008136719696242967
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 0.4415459082063785,
+        "attitude_deg": 0.5758695632207385,
+        "max_right_joint_error_rad": 0.010218542134820208
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 0.4623202753585863,
+        "attitude_deg": 0.5000095698374736,
+        "max_right_joint_error_rad": 0.009047793022207262
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 0.35833405235643206,
+        "attitude_deg": 0.6021300779577513,
+        "max_right_joint_error_rad": 0.010529375431593824
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 0.7479416746561685,
+        "attitude_deg": 0.8787475998541924,
+        "max_right_joint_error_rad": 0.014320552114226004
+      }
+    ],
+    "worst_position_mm": 0.7479416746561685,
+    "worst_attitude_deg": 0.8787475998541924,
+    "passed": true
+  },
+  {
+    "configuration": "新噪声序列，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231758-875644/trial_03_episode_12",
+    "episode_id": 12,
+    "seed": 2,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.06811987564977608,
+        "attitude_deg": 0.034722673897521705,
+        "max_right_joint_error_rad": 0.0005008172680986966
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.12637265217478078,
+        "attitude_deg": 0.055207739047850965,
+        "max_right_joint_error_rad": 0.0008063972772286432
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.2155130242767684,
+        "attitude_deg": 0.15680383370098078,
+        "max_right_joint_error_rad": 0.0017881048661032573
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.2954672291167984,
+        "attitude_deg": 0.32171583214937666,
+        "max_right_joint_error_rad": 0.004661106479101562
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 0.5367937330345651,
+        "attitude_deg": 0.30192239137266197,
+        "max_right_joint_error_rad": 0.004715836093267534
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 0.8402293407285899,
+        "attitude_deg": 0.34889597412395956,
+        "max_right_joint_error_rad": 0.005561613466560811
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 0.9068791141929434,
+        "attitude_deg": 0.4765094556665986,
+        "max_right_joint_error_rad": 0.007954686310286174
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 0.7435880519187097,
+        "attitude_deg": 0.603068098877047,
+        "max_right_joint_error_rad": 0.01019650014629958
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 0.5990257057647668,
+        "attitude_deg": 0.6414050057399476,
+        "max_right_joint_error_rad": 0.010629924589396822
+      }
+    ],
+    "worst_position_mm": 0.9068791141929434,
+    "worst_attitude_deg": 0.6414050057399476,
+    "passed": true
+  },
+  {
+    "configuration": "新噪声序列，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231758-875644/trial_04_episode_12",
+    "episode_id": 12,
+    "seed": 3,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.2738028167562682,
+        "attitude_deg": 0.21660856640527779,
+        "max_right_joint_error_rad": 0.0033798180792894428
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.3787765778282427,
+        "attitude_deg": 0.28859518094427655,
+        "max_right_joint_error_rad": 0.004545813797540266
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.4483038017720881,
+        "attitude_deg": 0.2979710866738616,
+        "max_right_joint_error_rad": 0.004574934428081878
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.6012951111270275,
+        "attitude_deg": 0.3519630065513719,
+        "max_right_joint_error_rad": 0.005110171258810414
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 1.0167250872654792,
+        "attitude_deg": 0.4096957736079033,
+        "max_right_joint_error_rad": 0.00441058322689214
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 1.3927558672425655,
+        "attitude_deg": 0.5193886867189167,
+        "max_right_joint_error_rad": 0.005947191461311396
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 1.7207115461991411,
+        "attitude_deg": 0.6838450289788359,
+        "max_right_joint_error_rad": 0.007217545189234897
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 1.9876980128271977,
+        "attitude_deg": 0.9926571706951315,
+        "max_right_joint_error_rad": 0.013175858547984642
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 1.8284807066402347,
+        "attitude_deg": 0.8542212588985132,
+        "max_right_joint_error_rad": 0.01029051914820922
+      }
+    ],
+    "worst_position_mm": 1.9876980128271977,
+    "worst_attitude_deg": 0.9926571706951315,
+    "passed": true
+  },
+  {
+    "configuration": "新噪声序列，chunk4",
+    "trial_directory": "logs/a2_pi0/success_live_20261024-231758-875644/trial_05_episode_12",
+    "episode_id": 12,
+    "seed": 4,
+    "scope": "first nine physical control steps only; not approach/grasp/task success",
+    "teacher_actions_executed": 0,
+    "intermediate_states_injected": 0,
+    "frames": 9,
+    "position_gate_mm": 5.0,
+    "attitude_gate_deg": 2.0,
+    "values": [
+      {
+        "after_control_step": 1,
+        "position_mm": 0.28239816886370417,
+        "attitude_deg": 0.23462035583128552,
+        "max_right_joint_error_rad": 0.0035483776628795205
+      },
+      {
+        "after_control_step": 2,
+        "position_mm": 0.511122064670246,
+        "attitude_deg": 0.3067448593264554,
+        "max_right_joint_error_rad": 0.004387134328397213
+      },
+      {
+        "after_control_step": 3,
+        "position_mm": 0.7957106562615612,
+        "attitude_deg": 0.2036507262870034,
+        "max_right_joint_error_rad": 0.0020225763606857017
+      },
+      {
+        "after_control_step": 4,
+        "position_mm": 0.8072137099048275,
+        "attitude_deg": 0.2170006300242778,
+        "max_right_joint_error_rad": 0.0029961948795644844
+      },
+      {
+        "after_control_step": 5,
+        "position_mm": 0.7538461708065879,
+        "attitude_deg": 0.2648483283521849,
+        "max_right_joint_error_rad": 0.005023858066327325
+      },
+      {
+        "after_control_step": 6,
+        "position_mm": 0.8744701730946494,
+        "attitude_deg": 0.3446928188653951,
+        "max_right_joint_error_rad": 0.006780273354839661
+      },
+      {
+        "after_control_step": 7,
+        "position_mm": 1.052926900230107,
+        "attitude_deg": 0.2547935143675528,
+        "max_right_joint_error_rad": 0.00501668072883632
+      },
+      {
+        "after_control_step": 8,
+        "position_mm": 1.024372893192249,
+        "attitude_deg": 0.2102623725200192,
+        "max_right_joint_error_rad": 0.003951433753941469
+      },
+      {
+        "after_control_step": 9,
+        "position_mm": 1.1518257358885344,
+        "attitude_deg": 0.37675496646430096,
+        "max_right_joint_error_rad": 0.006964055370796807
+      }
+    ],
+    "worst_position_mm": 1.1518257358885344,
+    "worst_attitude_deg": 0.37675496646430096,
+    "passed": true
+  }
+]
