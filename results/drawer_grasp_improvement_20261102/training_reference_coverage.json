@@ -1,0 +1,458 @@
+{
+  "attempts": 48,
+  "accepted_complete_expert_references": 30,
+  "feedback_expert_pilots_passed": 30,
+  "coverage": {
+    "y_above_30mm": {
+      "attempted": 14,
+      "accepted": 6,
+      "scenes": [
+        {
+          "scene": 5,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.08148212734880195,
+            "drawer_offset_y_m": 0.04298458955848656,
+            "drawer_handle_radius_m": 0.005253936997928659
+          }
+        },
+        {
+          "scene": 17,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.11771639453187441,
+            "drawer_offset_y_m": 0.04445519225768522,
+            "drawer_handle_radius_m": 0.012093905463881532
+          }
+        },
+        {
+          "scene": 19,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.0952946103278314,
+            "drawer_offset_y_m": 0.05450178155664775,
+            "drawer_handle_radius_m": 0.006375661724497332
+          }
+        },
+        {
+          "scene": 21,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.1119029690983166,
+            "drawer_offset_y_m": 0.044829426509804406,
+            "drawer_handle_radius_m": 0.006168443673652707
+          }
+        },
+        {
+          "scene": 23,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.08275280283432379,
+            "drawer_offset_y_m": 0.054358622818417156,
+            "drawer_handle_radius_m": 0.011002109725751538
+          }
+        },
+        {
+          "scene": 27,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.08175583265613753,
+            "drawer_offset_y_m": 0.050129285610260456,
+            "drawer_handle_radius_m": 0.008576936484946179
+          }
+        },
+        {
+          "scene": 32,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.08818364066048097,
+            "drawer_offset_y_m": 0.03000281229397133,
+            "drawer_handle_radius_m": 0.004868825821212006
+          }
+        },
+        {
+          "scene": 35,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.10399830916265837,
+            "drawer_offset_y_m": 0.05441712227066021,
+            "drawer_handle_radius_m": 0.004316249595505687
+          }
+        },
+        {
+          "scene": 36,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.09020491608129157,
+            "drawer_offset_y_m": 0.03939877034464979,
+            "drawer_handle_radius_m": 0.005882921455082627
+          }
+        },
+        {
+          "scene": 37,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.10856861538808732,
+            "drawer_offset_y_m": 0.04879039238965691,
+            "drawer_handle_radius_m": 0.006464553874298571
+          }
+        },
+        {
+          "scene": 38,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.1093552586826534,
+            "drawer_offset_y_m": 0.04182635170165227,
+            "drawer_handle_radius_m": 0.013253439148113522
+          }
+        },
+        {
+          "scene": 40,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.11114242076768643,
+            "drawer_offset_y_m": 0.05473804244568586,
+            "drawer_handle_radius_m": 0.011963422627400896
+          }
+        },
+        {
+          "scene": 42,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.1188803926386412,
+            "drawer_offset_y_m": 0.04638334866293931,
+            "drawer_handle_radius_m": 0.012637068912825993
+          }
+        },
+        {
+          "scene": 47,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.11681480367794403,
+            "drawer_offset_y_m": 0.05468341060470056,
+            "drawer_handle_radius_m": 0.013851989602733195
+          }
+        }
+      ]
+    },
+    "y_below_minus30mm": {
+      "attempted": 13,
+      "accepted": 12,
+      "scenes": [
+        {
+          "scene": 0,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.10851675238724859,
+            "drawer_offset_y_m": -0.046743767085606326,
+            "drawer_handle_radius_m": 0.01078076205445255
+          }
+        },
+        {
+          "scene": 3,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.08214256363447722,
+            "drawer_offset_y_m": -0.05278154353471282,
+            "drawer_handle_radius_m": 0.007482410603651828
+          }
+        },
+        {
+          "scene": 14,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.11523950327353943,
+            "drawer_offset_y_m": -0.04500695947849348,
+            "drawer_handle_radius_m": 0.01396454582380564
+          }
+        },
+        {
+          "scene": 18,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.10540925348546375,
+            "drawer_offset_y_m": -0.03114398728826584,
+            "drawer_handle_radius_m": 0.010854043203118797
+          }
+        },
+        {
+          "scene": 22,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.11245569399848859,
+            "drawer_offset_y_m": -0.03125210321843473,
+            "drawer_handle_radius_m": 0.013732272784438854
+          }
+        },
+        {
+          "scene": 25,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.09559869462131007,
+            "drawer_offset_y_m": -0.05450427725277569,
+            "drawer_handle_radius_m": 0.005919833094369876
+          }
+        },
+        {
+          "scene": 28,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.0894047840796768,
+            "drawer_offset_y_m": -0.041748359291051834,
+            "drawer_handle_radius_m": 0.005553617743910392
+          }
+        },
+        {
+          "scene": 29,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.08395542358118166,
+            "drawer_offset_y_m": -0.04294048453396942,
+            "drawer_handle_radius_m": 0.011411618927059344
+          }
+        },
+        {
+          "scene": 30,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.08402483403100253,
+            "drawer_offset_y_m": -0.0392553061930674,
+            "drawer_handle_radius_m": 0.010360837031859669
+          }
+        },
+        {
+          "scene": 33,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.10976809645643718,
+            "drawer_offset_y_m": -0.040547345176555435,
+            "drawer_handle_radius_m": 0.004729350143561886
+          }
+        },
+        {
+          "scene": 34,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.11834038169257854,
+            "drawer_offset_y_m": -0.03166525821634192,
+            "drawer_handle_radius_m": 0.005974334647133928
+          }
+        },
+        {
+          "scene": 44,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.09680547724164194,
+            "drawer_offset_y_m": -0.04018025806850946,
+            "drawer_handle_radius_m": 0.010393992177486888
+          }
+        },
+        {
+          "scene": 46,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.08842321768549383,
+            "drawer_offset_y_m": -0.0542813911940304,
+            "drawer_handle_radius_m": 0.013553752694673724
+          }
+        }
+      ]
+    },
+    "central_y": {
+      "attempted": 21,
+      "accepted": 12,
+      "scenes": [
+        {
+          "scene": 1,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.09959001153571288,
+            "drawer_offset_y_m": -0.01045403817173074,
+            "drawer_handle_radius_m": 0.011155151088928918
+          }
+        },
+        {
+          "scene": 2,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.11709679799459435,
+            "drawer_offset_y_m": -0.02632816372020182,
+            "drawer_handle_radius_m": 0.00578950981881917
+          }
+        },
+        {
+          "scene": 4,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.10543766310583066,
+            "drawer_offset_y_m": 0.00913260490883356,
+            "drawer_handle_radius_m": 0.00680096912953255
+          }
+        },
+        {
+          "scene": 6,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.10480309256528933,
+            "drawer_offset_y_m": 0.0081951921798478,
+            "drawer_handle_radius_m": 0.013391039348447325
+          }
+        },
+        {
+          "scene": 7,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.1104212949163009,
+            "drawer_offset_y_m": -0.019593540529374766,
+            "drawer_handle_radius_m": 0.00902478356054523
+          }
+        },
+        {
+          "scene": 8,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.09871138895219447,
+            "drawer_offset_y_m": -0.015088594519739373,
+            "drawer_handle_radius_m": 0.007915776891824072
+          }
+        },
+        {
+          "scene": 9,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.0944212556027559,
+            "drawer_offset_y_m": 0.02373427925557619,
+            "drawer_handle_radius_m": 0.005501019508271867
+          }
+        },
+        {
+          "scene": 10,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.09326906923324156,
+            "drawer_offset_y_m": 0.027909455964565406,
+            "drawer_handle_radius_m": 0.010138836081579295
+          }
+        },
+        {
+          "scene": 11,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.08440958931915726,
+            "drawer_offset_y_m": 0.0020101454550253,
+            "drawer_handle_radius_m": 0.00616220054150019
+          }
+        },
+        {
+          "scene": 12,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.11896456204896885,
+            "drawer_offset_y_m": 0.026693117379181196,
+            "drawer_handle_radius_m": 0.004432473455906155
+          }
+        },
+        {
+          "scene": 13,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.11077091136900989,
+            "drawer_offset_y_m": -0.023955887252571348,
+            "drawer_handle_radius_m": 0.011219531055448081
+          }
+        },
+        {
+          "scene": 15,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.08938405572042463,
+            "drawer_offset_y_m": 0.019187998073574374,
+            "drawer_handle_radius_m": 0.010008022831963231
+          }
+        },
+        {
+          "scene": 16,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.1062448578212075,
+            "drawer_offset_y_m": -0.022798333845263988,
+            "drawer_handle_radius_m": 0.009119795874440102
+          }
+        },
+        {
+          "scene": 20,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.10986722599719809,
+            "drawer_offset_y_m": 0.005831856588896268,
+            "drawer_handle_radius_m": 0.009409709645826877
+          }
+        },
+        {
+          "scene": 24,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.1076748660774427,
+            "drawer_offset_y_m": -0.0026673210936400266,
+            "drawer_handle_radius_m": 0.011489332038538618
+          }
+        },
+        {
+          "scene": 26,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.09619321410364137,
+            "drawer_offset_y_m": 0.024129539107123628,
+            "drawer_handle_radius_m": 0.01046554704205953
+          }
+        },
+        {
+          "scene": 31,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.09018355106782583,
+            "drawer_offset_y_m": 0.008630563124868741,
+            "drawer_handle_radius_m": 0.005092507511109787
+          }
+        },
+        {
+          "scene": 39,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.08685718282130042,
+            "drawer_offset_y_m": 0.021285761774127242,
+            "drawer_handle_radius_m": 0.007300586087660727
+          }
+        },
+        {
+          "scene": 41,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.10822774548016707,
+            "drawer_offset_y_m": -0.029864696138057468,
+            "drawer_handle_radius_m": 0.006441515606949683
+          }
+        },
+        {
+          "scene": 43,
+          "accepted": false,
+          "profile": {
+            "drawer_offset_x_m": 0.0885853244555837,
+            "drawer_offset_y_m": 0.000521221964549623,
+            "drawer_handle_radius_m": 0.007737531590640761
+          }
+        },
+        {
+          "scene": 45,
+          "accepted": true,
+          "profile": {
+            "drawer_offset_x_m": 0.10965236486741792,
+            "drawer_offset_y_m": 0.0015046667228167873,
+            "drawer_handle_radius_m": 0.010543940554034625
+          }
+        }
+      ]
+    }
+  },
+  "note": "Training-reference coverage audit only. Scripted expert failure does not prove physical infeasibility. Failures retained; final evaluation starts were not filtered."
+}

@@ -1,0 +1,132 @@
+{
+  "verified_at": "2026-11-02T10:50:34.682107+08:00",
+  "files": [
+    {
+      "path": "assets/openarm_drawer_success_v003_right7_delta_velocity/norm_stats.json",
+      "bytes": 5637,
+      "mtime_ns": 1793552261001084417,
+      "sha256": "0fbd1050a051144b73638bb27f94eee7ed8264e01cca82992cc117a1df14f258"
+    },
+    {
+      "path": "input_protocol.json",
+      "bytes": 51711,
+      "mtime_ns": 1793552261029085623,
+      "sha256": "5cf3c5a364fcb9d4978058f7d3e046144bc1db90c3d771dd35481b97feef4cf4"
+    },
+    {
+      "path": "params/_CHECKPOINT_METADATA",
+      "bytes": 258,
+      "mtime_ns": 1793552259955039361,
+      "sha256": "777bc8d3e4c84f9f47f90e35c0fddc00107deeb179d22c671539418cad85894c"
+    },
+    {
+      "path": "params/_METADATA",
+      "bytes": 29185,
+      "mtime_ns": 1793552259950039146,
+      "sha256": "d08438d25e4e43d031efaa3856f355c97dc86b74eec72a299b9a37af262c31e0"
+    },
+    {
+      "path": "params/_sharding",
+      "bytes": 15543,
+      "mtime_ns": 1793552259946038974,
+      "sha256": "65195c2551c5ca4a9c085f0a01df188b4028c037a846ffa8a8ba931f8a827c81"
+    },
+    {
+      "path": "params/array_metadatas/process_0",
+      "bytes": 12198,
+      "mtime_ns": 1793552256696899151,
+      "sha256": "4962c4ac77729a4d645f31579fb8cfde4819cec5330849a1e0ee0009d69f4331"
+    },
+    {
+      "path": "params/d/cb46c303a711ec6d29131daf1dc33dff",
+      "bytes": 2583,
+      "mtime_ns": 1793552259953039275,
+      "sha256": "239c48e5a4f643af80ac39fda5bd666cdc4915b7f668568bd5b106acf630c1b2"
+    },
+    {
+      "path": "params/manifest.ocdbt",
+      "bytes": 118,
+      "mtime_ns": 1793552259953039275,
+      "sha256": "5769720abb749b6340f1a942a95948c10880b2256c238c1e622e49c1f1405884"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/13c167ae939133c0c99cb59bde728a46",
+      "bytes": 210,
+      "mtime_ns": 1793552256695899108,
+      "sha256": "d785886bf151df9c77d7c1aae4fe99cab528cc6ab0b42851cb7b655b6efb8fbe"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/246485b66a35b9b03401f0e915770f40",
+      "bytes": 3254,
+      "mtime_ns": 1793552256701899366,
+      "sha256": "52849c309a30bc92a0bc57171b072440f6b8f8a81fb9311ca82f06db43621add"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/2f68729e2e4c8344d9dc50d6ceea46cf",
+      "bytes": 2838152575,
+      "mtime_ns": 1793552259702028468,
+      "sha256": "5a710a9accdad6b7deb8943a9bce3109d2adba1c3d5d109da367076053a81f17"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/4425430a698aec815735883b2472d119",
+      "bytes": 601953463,
+      "mtime_ns": 1793552257320925991,
+      "sha256": "cf9f61df0bb19ec91cea83cfb8b3d82a23ecee74bce4875d7b71ab2a579275af"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/46e7c2cc475b0097f48c1d30cba83594",
+      "bytes": 656458592,
+      "mtime_ns": 1793552257887950384,
+      "sha256": "fe9260acfd2977ac73934304de8e23c80ad7a0917fd7d597e07e49224aae26f8"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/47b2849a2add8700c363c3c0cc9f513c",
+      "bytes": 829842291,
+      "mtime_ns": 1793552258437974054,
+      "sha256": "04ad314fa28e34bdc4a916e666b2e3a33331c75a887883dedc52fbd124fa08d7"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/481c3413e524cbf4c1885e114fbc3d32",
+      "bytes": 23056421,
+      "mtime_ns": 1793552256740901043,
+      "sha256": "64747ed532ba1051fc22014aa614d4911dac72ff7e233472a4c7c807fc05f336"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/498edc18de8a19dab60f48fd3fb1be09",
+      "bytes": 1354,
+      "mtime_ns": 1793552256700899323,
+      "sha256": "f4bbad65d695bcd97279a5698a040b755739193bfa236c3a73356870a633bdbf"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/8b252b5ef8227f0dcf3b00ccc8d4c59c",
+      "bytes": 232283326,
+      "mtime_ns": 1793552257045914160,
+      "sha256": "1e74f6983d21140dd60f343b3fdc8efbd34467e399e8eaaaf619d4b286931da6"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/c9c73dea541653168c8f632bde75e0f8",
+      "bytes": 80086922,
+      "mtime_ns": 1793552256866906461,
+      "sha256": "52283ae504c512bff23bbd38822ddd29bbda224798920165bb32464fce70d8ee"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/da92fb814d86b21a9ad63e3a80384e1b",
+      "bytes": 2568,
+      "mtime_ns": 1793552259944038888,
+      "sha256": "516780332e49eea1f566f4884d1bcd26a99eab8c30fb13babbd7c99f740bb493"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/fc7809aa5758891682edc9a4e50e9609",
+      "bytes": 230571,
+      "mtime_ns": 1793552256705899538,
+      "sha256": "9afd2688954b687ba8c72538f87d6c27d9ddad14777d5d3135a9d311beb0df1a"
+    },
+    {
+      "path": "params/ocdbt.process_0/manifest.ocdbt",
+      "bytes": 576,
+      "mtime_ns": 1793552259944038888,
+      "sha256": "fa9deceb98dd8824706db549d53813f8ac422c5f657d4b351e5444b19b83a9a7"
+    }
+  ],
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000"
+}

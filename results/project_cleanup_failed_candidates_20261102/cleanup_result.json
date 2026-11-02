@@ -1,0 +1,20 @@
+{
+  "completed_at": "2026-11-02T19:39:11.624711+08:00",
+  "deleted_checkpoints": 8,
+  "deleted_file_bytes": 44487793540,
+  "free_before_bytes": 18999590912,
+  "free_after_bytes": 63488704512,
+  "recommended_inference_files_verified_after": 21,
+  "recommended_checkpoint_unchanged": true,
+  "original_log_unchanged": true,
+  "remaining_complete_checkpoints": [
+    "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000",
+    "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+    "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/4000",
+    "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/6000",
+    "checkpoints/pi0_openarm_drawer_start_fit_delta_v001/start9_lowmix_refine_011_io_mask/450",
+    "checkpoints/pi0_openarm_drawer_success_v003_lora/success13_lora_001/2000",
+    "checkpoints/pi0_openarm_drawer_velocity_v001/pull12_velocity_015/2000"
+  ],
+  "metadata_only_not_restorable_without_retraining": true
+}

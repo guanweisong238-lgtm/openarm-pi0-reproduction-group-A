@@ -1,0 +1,272 @@
+[
+  {
+    "episode_id": 9,
+    "split": "train",
+    "source_trial": "logs/a2_pi0/drawer_eval_isolated_full_20261101/trial_010_episode_009",
+    "source_sha256": "8766a99cfd364bf830ed9d5cf3774fddab3544efc72ff6558f50f84bce2e785c",
+    "first_contact_step": 42,
+    "bilateral_force_steps": 0,
+    "max_bilateral_streak": 0,
+    "closest_step": 608,
+    "closest_tip_minus_handle_mm": [
+      -9.012325451149605,
+      -10.197723935320868,
+      0.3178603725421114
+    ],
+    "closest_distance_mm": 13.613104668476169,
+    "demo_first_bilateral_frame": 539,
+    "demo_bilateral_tip_minus_handle_median_mm": [
+      14.99960672076095,
+      -4.082192756760805,
+      1.3177761794037623
+    ],
+    "right_arm_clipped_steps": 178,
+    "replay_max_errors": {
+      "qpos": 0.0,
+      "qvel": 0.0
+    },
+    "snapshots": [
+      "results/drawer_train_failure_diagnosis_20261101/episode_009/snapshot_0000.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_009/snapshot_0012.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_009/snapshot_0030.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_009/snapshot_0060.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_009/snapshot_0607.npz"
+    ],
+    "geometry_samples": [
+      {
+        "post_action_step": 1,
+        "tip_minus_handle_mm": [
+          -98.37746018829102,
+          -0.763332746487988,
+          53.41416690672995
+        ],
+        "gripper_target": -0.2633695187245413
+      },
+      {
+        "post_action_step": 12,
+        "tip_minus_handle_mm": [
+          -65.45730450709087,
+          1.5843325905496863,
+          38.24273715315274
+        ],
+        "gripper_target": -0.2521706396000471
+      },
+      {
+        "post_action_step": 30,
+        "tip_minus_handle_mm": [
+          -6.2025034994436234,
+          16.708200957748943,
+          -3.0511839913200944
+        ],
+        "gripper_target": -0.2055941350244943
+      },
+      {
+        "post_action_step": 60,
+        "tip_minus_handle_mm": [
+          -61.600833150752266,
+          -5.824967224335953,
+          -2.8296384779783468
+        ],
+        "gripper_target": -0.07478168244798114
+      },
+      {
+        "post_action_step": 608,
+        "tip_minus_handle_mm": [
+          -9.012325451149605,
+          -10.197723935320868,
+          0.3178603725421114
+        ],
+        "gripper_target": -0.222322476510428
+      },
+      {
+        "post_action_step": 720,
+        "tip_minus_handle_mm": [
+          -102.72910225614862,
+          -1.5562060387426246,
+          10.859791147005748
+        ],
+        "gripper_target": -0.08295081176131944
+      }
+    ]
+  },
+  {
+    "episode_id": 10,
+    "split": "train",
+    "source_trial": "logs/a2_pi0/drawer_eval_isolated_full_20261101/trial_011_episode_010",
+    "source_sha256": "c9e4d4d53cab8440bd06480bef6ceb11ff06261f5f1423c64621564be9d515c1",
+    "first_contact_step": null,
+    "bilateral_force_steps": 0,
+    "max_bilateral_streak": 0,
+    "closest_step": 312,
+    "closest_tip_minus_handle_mm": [
+      -18.183184408772647,
+      -13.964101330898037,
+      -1.5506061847239128
+    ],
+    "closest_distance_mm": 22.97887509786162,
+    "demo_first_bilateral_frame": 549,
+    "demo_bilateral_tip_minus_handle_median_mm": [
+      10.39053147867483,
+      1.5502257479875214,
+      0.2260265287792329
+    ],
+    "right_arm_clipped_steps": 48,
+    "replay_max_errors": {
+      "qpos": 0.0,
+      "qvel": 0.0
+    },
+    "snapshots": [
+      "results/drawer_train_failure_diagnosis_20261101/episode_010/snapshot_0000.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_010/snapshot_0012.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_010/snapshot_0030.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_010/snapshot_0060.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_010/snapshot_0311.npz"
+    ],
+    "geometry_samples": [
+      {
+        "post_action_step": 1,
+        "tip_minus_handle_mm": [
+          -95.354382325755,
+          -41.51864887064682,
+          -53.07317630418618
+        ],
+        "gripper_target": -0.22100438768965305
+      },
+      {
+        "post_action_step": 12,
+        "tip_minus_handle_mm": [
+          -89.50154434478863,
+          -28.064204067349774,
+          -37.42662606035502
+        ],
+        "gripper_target": -0.17514312194941714
+      },
+      {
+        "post_action_step": 30,
+        "tip_minus_handle_mm": [
+          -79.45399225270545,
+          -16.252702103260518,
+          -17.31328052847386
+        ],
+        "gripper_target": -0.22822096833436684
+      },
+      {
+        "post_action_step": 60,
+        "tip_minus_handle_mm": [
+          -69.45556472597814,
+          -10.738590211869903,
+          -2.2812348378465908
+        ],
+        "gripper_target": -0.21750825665726362
+      },
+      {
+        "post_action_step": 312,
+        "tip_minus_handle_mm": [
+          -18.183184408772647,
+          -13.964101330898037,
+          -1.5506061847239128
+        ],
+        "gripper_target": -0.21173119283346636
+      },
+      {
+        "post_action_step": 720,
+        "tip_minus_handle_mm": [
+          -101.83042737828352,
+          -4.912103175907845,
+          13.420053117037533
+        ],
+        "gripper_target": -0.09667133834283789
+      }
+    ]
+  },
+  {
+    "episode_id": 11,
+    "split": "train",
+    "source_trial": "logs/a2_pi0/drawer_eval_isolated_full_20261101/trial_012_episode_011",
+    "source_sha256": "ff1a881b22f1fe9d1fa7a811506481a130650e808dc9a15fa2e255ada2581f11",
+    "first_contact_step": 271,
+    "bilateral_force_steps": 0,
+    "max_bilateral_streak": 0,
+    "closest_step": 464,
+    "closest_tip_minus_handle_mm": [
+      -13.35191459116225,
+      0.46307436505088617,
+      3.807357840887926
+    ],
+    "closest_distance_mm": 13.891869379094716,
+    "demo_first_bilateral_frame": 454,
+    "demo_bilateral_tip_minus_handle_median_mm": [
+      9.657794579569167,
+      0.8422717603441265,
+      0.51164520818614
+    ],
+    "right_arm_clipped_steps": 177,
+    "replay_max_errors": {
+      "qpos": 0.0,
+      "qvel": 0.0
+    },
+    "snapshots": [
+      "results/drawer_train_failure_diagnosis_20261101/episode_011/snapshot_0000.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_011/snapshot_0012.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_011/snapshot_0030.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_011/snapshot_0060.npz",
+      "results/drawer_train_failure_diagnosis_20261101/episode_011/snapshot_0463.npz"
+    ],
+    "geometry_samples": [
+      {
+        "post_action_step": 1,
+        "tip_minus_handle_mm": [
+          -99.11349433180655,
+          -0.28470234953026363,
+          -35.26586583327013
+        ],
+        "gripper_target": -0.2522968130622632
+      },
+      {
+        "post_action_step": 12,
+        "tip_minus_handle_mm": [
+          -88.7542016377732,
+          3.463655356826578,
+          -14.927332407293214
+        ],
+        "gripper_target": -0.2367651360699211
+      },
+      {
+        "post_action_step": 30,
+        "tip_minus_handle_mm": [
+          -81.11158233838867,
+          -2.0514406068848356,
+          1.9171494267280487
+        ],
+        "gripper_target": -0.23303518818753122
+      },
+      {
+        "post_action_step": 60,
+        "tip_minus_handle_mm": [
+          -71.70398493694951,
+          -1.8515733687278213,
+          2.6119072857533343
+        ],
+        "gripper_target": -0.2358022920992882
+      },
+      {
+        "post_action_step": 464,
+        "tip_minus_handle_mm": [
+          -13.35191459116225,
+          0.46307436505088617,
+          3.807357840887926
+        ],
+        "gripper_target": -0.10437409010790089
+      },
+      {
+        "post_action_step": 720,
+        "tip_minus_handle_mm": [
+          -35.420423573575555,
+          -26.127890573129974,
+          20.662387801221314
+        ],
+        "gripper_target": -0.09462529490524303
+      }
+    ]
+  }
+]

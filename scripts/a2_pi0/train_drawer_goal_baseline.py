@@ -17,6 +17,8 @@ def main():
     p.add_argument('--steps',type=int,default=20000)
     p.add_argument('--episode-ids',type=int,nargs='+',default=[12])
     p.add_argument('--closed-target',type=float,default=-.0625)
+    p.add_argument('--queries',type=Path,help='Train-only multi-parent feedback query data')
+    p.add_argument('--seconds',type=float,default=40)
     args=p.parse_args()
     if args.output.exists():raise FileExistsError(args.output)
     args.output.mkdir(parents=True);torch.set_num_threads(1);torch.manual_seed(42);rng=np.random.default_rng(42)
@@ -27,9 +29,17 @@ def main():
         xm,xs,ym,ys=[checkpoint[k] for k in ('xm','xs','ym','ys')]
     else:
         oracle=FeedbackOracle()
-        with np.load(ROOT/'data/drawer_feedback_queries/v001/physical_queries.npz') as data:q=data['state'][:,:8].copy()
+        with np.load((args.queries or ROOT/'data/drawer_feedback_queries/v001')/'physical_queries.npz') as data:
+            q=data['state'][:,:8].copy()
+            parents=data['parent_episode_id'].copy() if 'parent_episode_id' in data else np.full(len(q),12)
+        allowed={r['episode_id'] for r in json.loads(MANIFEST.read_text())['episodes'] if r['split']=='train'}
+        if not set(parents.tolist())<=allowed:raise ValueError('Reject held-out query parents')
+        oracles={12:oracle}
+        for parent in sorted(set(parents.tolist())-{12}):
+            oracles[parent]=FeedbackOracle(ROOT/f'data/drawer_recovery/targeted_20261101/episode{parent:03d}_step0030')
         goal=[]
-        for state in q:
+        for state,parent in zip(q,parents):
+            oracle=oracles[int(parent)]
             d=np.mean(((oracle.q-state)/oracle.scale)**2,1);k=int(np.flatnonzero(d<=d.min()+.0004)[-1]);goal.append(oracle.actions[min(k+oracle.lookahead,len(oracle.actions)-1)])
         goal=np.asarray(goal);xm=q.mean(0);xs=np.maximum(q.std(0),.03);ym=goal[:,:7].mean(0);ys=np.maximum(goal[:,:7].std(0),.03)
         x=torch.tensor((q-xm)/xs,dtype=torch.float32);y=torch.tensor((goal[:,:7]-ym)/ys,dtype=torch.float32);closed=torch.tensor(goal[:,7]>-.24,dtype=torch.float32)
@@ -47,7 +57,7 @@ def main():
     rows={r['episode_id']:r for r in json.loads(MANIFEST.read_text())['episodes']};results=[];model.eval()
     for eid in args.episode_ids:
         env=DrawerSimulation(ROOT/rows[eid]['path']);left=env.data.ctrl[env.actuator_ids[8:]].copy();record=[];judge={};grip_command=float(env.data.ctrl[env.actuator_ids[7]])
-        for call in range(300):
+        for call in range(int(np.ceil(args.seconds*30/4))):
             q=env.data.qpos[env.qpos_ids].copy()
             with torch.no_grad():pred=model(torch.tensor((q[:8]-xm)/xs,dtype=torch.float32)).numpy()
             goal=pred[:7]*ys+ym;close_intent=bool(pred[7]>0)

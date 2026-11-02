@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-11-02T15:03:14.177299+08:00",
+  "baseline": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+  "training_scene_seed": 2026110204,
+  "query_seed": 2026110205,
+  "selection_seed": 2026110206,
+  "final_test_seed": 2026110207,
+  "selection_counts": {
+    "near": 8,
+    "expanded": 8
+  },
+  "final_counts": {
+    "near": 70,
+    "expanded": 30
+  },
+  "training": {
+    "scenes": 48,
+    "x_range": [
+      0.08,
+      0.12
+    ],
+    "y_range": [
+      -0.055,
+      0.055
+    ],
+    "radius_range": [
+      0.004,
+      0.014
+    ],
+    "jitter": 0.08,
+    "samples_per_scene": 96,
+    "contact_focus_probability": 0.4,
+    "new_scene_sampling_weight": 2,
+    "rehearsal_sampling_weight": 4
+  },
+  "courses": [
+    {
+      "name": "feedback_endpoint_021_contact_expanded",
+      "lr": 3e-06
+    },
+    {
+      "name": "feedback_endpoint_022_contact_expanded",
+      "lr": 1e-05
+    }
+  ],
+  "steps": 4000,
+  "save_every": 2000,
+  "selection": "Require original train12/10/9/11 all pass; rank by selection16 success, near success; prefer baseline on ties. If selected candidate fails original33, try next ranked candidate. Course022 only if021 provides no eligible selection improvement. Final100 never selects weights.",
+  "exclusions": "Original validation2/3/6, eval100..119, eval200..299, selection300..315, final400..499 never used for gradients or expert labels.",
+  "criterion": "Original strict contact/pulling/80mm for30steps, fixed42/H4/continuous/checkpoint precision/GLFW, isolated per trial, 24s.",
+  "cleanup_report": "results/project_cleanup_20261102/README.md",
+  "diagnosis": "results/drawer_generalization_failure_diagnosis_20261102/README.md"
+}

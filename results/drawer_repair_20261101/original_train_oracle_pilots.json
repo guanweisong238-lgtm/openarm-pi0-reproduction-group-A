@@ -1,0 +1,82 @@
+[
+  {
+    "episode_id": 0,
+    "success": true,
+    "steps": 158,
+    "reference_cutoff": 287,
+    "peak_open_mm": 94.4777521907419,
+    "model_success_evidence": false
+  },
+  {
+    "episode_id": 1,
+    "success": true,
+    "steps": 158,
+    "reference_cutoff": 287,
+    "peak_open_mm": 93.71709546953942,
+    "model_success_evidence": false
+  },
+  {
+    "episode_id": 4,
+    "success": true,
+    "steps": 161,
+    "reference_cutoff": 287,
+    "peak_open_mm": 94.39598964404422,
+    "model_success_evidence": false
+  },
+  {
+    "episode_id": 5,
+    "success": true,
+    "steps": 158,
+    "reference_cutoff": 287,
+    "peak_open_mm": 94.52240160254232,
+    "model_success_evidence": false
+  },
+  {
+    "episode_id": 7,
+    "success": false,
+    "steps": 720,
+    "reference_cutoff": 1371,
+    "peak_open_mm": 1.6893086950103673,
+    "model_success_evidence": false
+  },
+  {
+    "episode_id": 8,
+    "success": false,
+    "steps": 720,
+    "reference_cutoff": 627,
+    "peak_open_mm": 5.246002998963719,
+    "model_success_evidence": false
+  },
+  {
+    "episode_id": 9,
+    "success": false,
+    "steps": 720,
+    "reference_cutoff": 877,
+    "peak_open_mm": 0.20535473699324797,
+    "model_success_evidence": false
+  },
+  {
+    "episode_id": 10,
+    "success": true,
+    "steps": 275,
+    "reference_cutoff": 862,
+    "peak_open_mm": 90.47276551349307,
+    "model_success_evidence": false
+  },
+  {
+    "episode_id": 11,
+    "success": true,
+    "steps": 204,
+    "reference_cutoff": 688,
+    "peak_open_mm": 91.84864355567133,
+    "model_success_evidence": false
+  },
+  {
+    "episode_id": 12,
+    "success": true,
+    "steps": 163,
+    "reference_cutoff": 287,
+    "peak_open_mm": 93.94820071685962,
+    "model_success_evidence": false
+  }
+]

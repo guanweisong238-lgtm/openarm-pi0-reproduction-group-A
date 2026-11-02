@@ -1,0 +1,20 @@
+{
+  "steps": 4000,
+  "unique_queries_with_gradients": 2878,
+  "all_queries_in_declared_training_split": true,
+  "query_holdout_gradient_overlap": 0,
+  "parent_episode_ids": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "no_heldout_parents": true,
+  "training_directory": "logs/a2_pi0/drawer_feedback_20261102-154723-265716"
+}

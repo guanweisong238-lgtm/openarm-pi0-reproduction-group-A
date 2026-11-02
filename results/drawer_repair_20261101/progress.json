@@ -1,0 +1,1083 @@
+{
+  "status": "complete",
+  "target": "33/33 strict open-task completion",
+  "baseline_016": {
+    "train": "6/10",
+    "validation": "0/3",
+    "eval_only": "7/20"
+  },
+  "regression_017": {
+    "success": 0,
+    "trials": 33
+  },
+  "findings": [
+    "New trajectory-indexed labels have substantially smaller immediate residuals than original feedback labels; causal contribution not isolated.",
+    "One-step cached training implementation matches deployment exactly at initial probe (max difference 0).",
+    "State-feedback experts trained only from train9/10/11 recovery references complete all three training starts in numerical pilots.",
+    "Deployment loader forcibly rounds all saved float32 trainable parameters to bfloat16. Native precision loader added. Paired 019 initial-target position differences are 0.14\u20130.27mm; causal contribution to success requires rollouts."
+  ],
+  "training_holdout_policy": "Never train on validation or eval_only states; repeated benchmark selection cannot establish unseen-scene generalization",
+  "iterations": [
+    {
+      "name": "018_parity",
+      "steps": 500,
+      "learning_rate": 1e-06,
+      "data": "v001",
+      "training_path": "cached, exact parity 0",
+      "train_pilot": {
+        "success": 1,
+        "trials": 4,
+        "passed": [
+          9
+        ],
+        "failed": [
+          12,
+          10,
+          11
+        ]
+      },
+      "full_33_evaluation": false
+    },
+    {
+      "name": "019_feedback",
+      "steps": 2000,
+      "learning_rate": 3e-06,
+      "data": "v003_feedback_repair",
+      "training_path": "cached, exact parity 0",
+      "status": "training"
+    }
+  ],
+  "next_data": "independent continuous scene augmentations from train12 only",
+  "target_achieved": true,
+  "data_ready": {
+    "v003_feedback_repair": 2400,
+    "v004_randomized_feedback": 4192,
+    "v005_randomized_rehearsal": 4767,
+    "rehearsal_policy016_train_queries": 575,
+    "heldout_queries": 0
+  },
+  "next_experiment": {
+    "source": "016/2000",
+    "data": "v005_randomized_rehearsal",
+    "training_path": "cached",
+    "deployment_weight_precision": "checkpoint",
+    "cartesian_weight": 0.5,
+    "gripper_weight": 4,
+    "steps": 6000,
+    "learning_rate": 1e-05,
+    "status": "completed",
+    "selected_checkpoint_step": 2000
+  },
+  "precision_control_results": {
+    "017_native": {
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_017/2000",
+      "checkpoint_protocol_sha256": "38ab6243a1375522573cb329bd8037a7c0d3a2955cbe7b6ad29555d79cdb0cdb",
+      "target_achieved": false,
+      "stages": [
+        {
+          "name": "gate_a",
+          "trials": 2,
+          "success": 0,
+          "passed": false,
+          "path": "logs/a2_pi0/repair_screen_017_native/gate_a"
+        }
+      ],
+      "protocol": "docs/drawer-repair-eval-protocol.md"
+    },
+    "019_native": {
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_019_feedback/2000",
+      "checkpoint_protocol_sha256": "e3d4798538f52aa9e55bc78b4c477df840b0a31718381f7bd2ab30eaf0a20af5",
+      "target_achieved": false,
+      "stages": [
+        {
+          "name": "gate_a",
+          "trials": 2,
+          "success": 0,
+          "passed": false,
+          "path": "logs/a2_pi0/repair_screen_019_native/gate_a"
+        }
+      ],
+      "protocol": "docs/drawer-repair-eval-protocol.md"
+    },
+    "016_native": {
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_016/2000",
+      "checkpoint_protocol_sha256": "917e311c4e4981428b639d6ef297de155d582dfa2c5cb3a8f9a6f884903499fa",
+      "target_achieved": false,
+      "stages": [
+        {
+          "name": "gate_a",
+          "trials": 2,
+          "success": 1,
+          "passed": false,
+          "path": "logs/a2_pi0/repair_screen_016_native/gate_a"
+        }
+      ],
+      "protocol": "docs/drawer-repair-eval-protocol.md"
+    }
+  },
+  "current_round": "round020",
+  "current_round_state_file": "results/drawer_repair_20261101/round020.json",
+  "current_training": {
+    "experiment": "feedback_endpoint_020_randomized_rehearsal",
+    "step": 6000,
+    "planned_steps": 6000,
+    "log_directory": "logs/a2_pi0/drawer_feedback_20261102-004233-380521",
+    "last_anchor_evaluation": {
+      "step": 4000,
+      "scope": "held-out feedback queries, not task success",
+      "splits": {
+        "train": {
+          "fixed_loss": 0.14202529195972602,
+          "arm_mae_rad": 0.00901016702730028,
+          "first_position_mm": 4.639091278217573,
+          "worst_position_mm": 14.116492033864528,
+          "anchors": [
+            {
+              "index": 2084,
+              "mse": 0.04493949934840202,
+              "arm_mae_rad": 0.006331931016368614,
+              "gripper_mae_rad": 0.004336478172026457,
+              "first_position_mm": 1.3036175445370979
+            },
+            {
+              "index": 4493,
+              "mse": 0.016522835940122604,
+              "arm_mae_rad": 0.004884145018307958,
+              "gripper_mae_rad": 0.0049268254075606685,
+              "first_position_mm": 1.2766153786331442
+            },
+            {
+              "index": 3716,
+              "mse": 0.0038821278139948845,
+              "arm_mae_rad": 0.002265625508523237,
+              "gripper_mae_rad": 0.0013359724545525947,
+              "first_position_mm": 0.4447352973271509
+            },
+            {
+              "index": 1334,
+              "mse": 0.3269955515861511,
+              "arm_mae_rad": 0.016432270748043647,
+              "gripper_mae_rad": 0.08975557509841384,
+              "first_position_mm": 10.688178392952144
+            },
+            {
+              "index": 3581,
+              "mse": 0.04468049108982086,
+              "arm_mae_rad": 0.0074906569853604955,
+              "gripper_mae_rad": 0.006200798326650769,
+              "first_position_mm": 2.894066417201497
+            },
+            {
+              "index": 2146,
+              "mse": 0.09902603924274445,
+              "arm_mae_rad": 0.008422248202969457,
+              "gripper_mae_rad": 0.011969818371854235,
+              "first_position_mm": 1.8225992102127797
+            },
+            {
+              "index": 1663,
+              "mse": 0.013460065238177776,
+              "arm_mae_rad": 0.003980873264369844,
+              "gripper_mae_rad": 0.0064944439937808796,
+              "first_position_mm": 1.4673471716667563
+            },
+            {
+              "index": 2198,
+              "mse": 0.620720624923706,
+              "arm_mae_rad": 0.024892750429819456,
+              "gripper_mae_rad": 0.0022944400954163086,
+              "first_position_mm": 14.116492033864528
+            },
+            {
+              "index": 2935,
+              "mse": 0.0654219537973404,
+              "arm_mae_rad": 0.006779447887425453,
+              "gripper_mae_rad": 0.0074150342525677315,
+              "first_position_mm": 3.2654312002737886
+            },
+            {
+              "index": 2233,
+              "mse": 0.2785264849662781,
+              "arm_mae_rad": 0.01615454730760382,
+              "gripper_mae_rad": 0.01314493545580182,
+              "first_position_mm": 8.777943628187664
+            },
+            {
+              "index": 2454,
+              "mse": 0.23651492595672607,
+              "arm_mae_rad": 0.012242327413543447,
+              "gripper_mae_rad": 0.0013206378538087593,
+              "first_position_mm": 5.876014242000753
+            },
+            {
+              "index": 4335,
+              "mse": 0.00627275463193655,
+              "arm_mae_rad": 0.0031211986617305783,
+              "gripper_mae_rad": 0.0032438979696633313,
+              "first_position_mm": 0.40765773721481774
+            },
+            {
+              "index": 381,
+              "mse": 0.2138843983411789,
+              "arm_mae_rad": 0.014020004956672591,
+              "gripper_mae_rad": 0.008087883476582944,
+              "first_position_mm": 10.425445384675173
+            },
+            {
+              "index": 757,
+              "mse": 0.020982377231121063,
+              "arm_mae_rad": 0.005790320805639725,
+              "gripper_mae_rad": 0.0073933931824880506,
+              "first_position_mm": 3.3808402076946926
+            },
+            {
+              "index": 4523,
+              "mse": 0.002692636800929904,
+              "arm_mae_rad": 0.0016343284785442405,
+              "gripper_mae_rad": 0.003002333014209199,
+              "first_position_mm": 1.1972678415453963
+            },
+            {
+              "index": 4406,
+              "mse": 0.0040278360247612,
+              "arm_mae_rad": 0.002575447964920371,
+              "gripper_mae_rad": 0.0028641232677685292,
+              "first_position_mm": 1.8566523403153712
+            },
+            {
+              "index": 4089,
+              "mse": 0.0050588976591825485,
+              "arm_mae_rad": 0.0017912848006472208,
+              "gripper_mae_rad": 0.012104175185078076,
+              "first_position_mm": 1.8103970165635028
+            },
+            {
+              "index": 880,
+              "mse": 0.0014375295722857118,
+              "arm_mae_rad": 0.0014879166945091465,
+              "gripper_mae_rad": 0.002060377157212301,
+              "first_position_mm": 1.0143703213859656
+            },
+            {
+              "index": 1855,
+              "mse": 0.048567697405815125,
+              "arm_mae_rad": 0.007403083946661377,
+              "gripper_mae_rad": 0.00278899474299852,
+              "first_position_mm": 4.342923066485765
+            },
+            {
+              "index": 4283,
+              "mse": 0.0029130736365914345,
+              "arm_mae_rad": 0.002020422572126888,
+              "gripper_mae_rad": 0.006961085076811476,
+              "first_position_mm": 1.9275021098739977
+            },
+            {
+              "index": 4646,
+              "mse": 0.009853845462203026,
+              "arm_mae_rad": 0.0033077139955143323,
+              "gripper_mae_rad": 0.0025618700229514194,
+              "first_position_mm": 0.8608659905010606
+            },
+            {
+              "index": 4161,
+              "mse": 0.4723680913448334,
+              "arm_mae_rad": 0.020854109350839898,
+              "gripper_mae_rad": 0.001799720164712304,
+              "first_position_mm": 5.31386246297043
+            },
+            {
+              "index": 2408,
+              "mse": 0.17444008588790894,
+              "arm_mae_rad": 0.010696317182800829,
+              "gripper_mae_rad": 0.004776061489780492,
+              "first_position_mm": 3.3394486197053954
+            },
+            {
+              "index": 517,
+              "mse": 0.034532688558101654,
+              "arm_mae_rad": 0.00600554369068298,
+              "gripper_mae_rad": 0.002390691803151053,
+              "first_position_mm": 7.735069813177019
+            },
+            {
+              "index": 3433,
+              "mse": 0.2965281903743744,
+              "arm_mae_rad": 0.016927680753619077,
+              "gripper_mae_rad": 0.003565972333741299,
+              "first_position_mm": 6.5830023306430965
+            },
+            {
+              "index": 70,
+              "mse": 0.955309271812439,
+              "arm_mae_rad": 0.02754755154633089,
+              "gripper_mae_rad": 0.0029319022030562802,
+              "first_position_mm": 9.394642647533479
+            },
+            {
+              "index": 2609,
+              "mse": 0.014365247450768948,
+              "arm_mae_rad": 0.0038925769863294864,
+              "gripper_mae_rad": 0.004014258726097137,
+              "first_position_mm": 1.592193742068133
+            },
+            {
+              "index": 3546,
+              "mse": 0.06219058856368065,
+              "arm_mae_rad": 0.008826353138696341,
+              "gripper_mae_rad": 0.0017145773192409688,
+              "first_position_mm": 5.496142587614628
+            },
+            {
+              "index": 591,
+              "mse": 0.11596544086933136,
+              "arm_mae_rad": 0.010479527868533104,
+              "gripper_mae_rad": 0.004350450105255088,
+              "first_position_mm": 9.715534255107757
+            },
+            {
+              "index": 458,
+              "mse": 0.08337671309709549,
+              "arm_mae_rad": 0.009327017188032447,
+              "gripper_mae_rad": 0.011351426263510548,
+              "first_position_mm": 10.121822813042757
+            },
+            {
+              "index": 1570,
+              "mse": 0.19051474332809448,
+              "arm_mae_rad": 0.011068382161917396,
+              "gripper_mae_rad": 0.007931404435747066,
+              "first_position_mm": 7.321441579063972
+            },
+            {
+              "index": 3794,
+              "mse": 0.07883663475513458,
+              "arm_mae_rad": 0.0096717383465246,
+              "gripper_mae_rad": 0.0014269589766187848,
+              "first_position_mm": 2.6807975189226396
+            }
+          ]
+        },
+        "validation": {
+          "fixed_loss": 0.4317506503139157,
+          "arm_mae_rad": 0.013280950329501249,
+          "first_position_mm": 4.85281069874803,
+          "worst_position_mm": 16.213155905285824,
+          "anchors": [
+            {
+              "index": 3811,
+              "mse": 0.004716506227850914,
+              "arm_mae_rad": 0.002134094233431299,
+              "gripper_mae_rad": 0.0067225787773500245,
+              "first_position_mm": 1.7687990302295546
+            },
+            {
+              "index": 354,
+              "mse": 0.1812378168106079,
+              "arm_mae_rad": 0.010393760804801854,
+              "gripper_mae_rad": 0.0034936793327495497,
+              "first_position_mm": 7.742876101919783
+            },
+            {
+              "index": 1358,
+              "mse": 1.6546804904937744,
+              "arm_mae_rad": 0.037360133755384606,
+              "gripper_mae_rad": 0.0034766643536008474,
+              "first_position_mm": 13.527534894491103
+            },
+            {
+              "index": 2841,
+              "mse": 1.289517879486084,
+              "arm_mae_rad": 0.02577612142239038,
+              "gripper_mae_rad": 0.0018935458835150076,
+              "first_position_mm": 8.128301238312206
+            },
+            {
+              "index": 2178,
+              "mse": 0.05786798149347305,
+              "arm_mae_rad": 0.007846050912443456,
+              "gripper_mae_rad": 0.011847244408734879,
+              "first_position_mm": 4.4759702794960905
+            },
+            {
+              "index": 4765,
+              "mse": 0.006379920523613691,
+              "arm_mae_rad": 0.0025660106981302286,
+              "gripper_mae_rad": 0.011669770738473455,
+              "first_position_mm": 0.9647224320539632
+            },
+            {
+              "index": 3801,
+              "mse": 0.15197813510894775,
+              "arm_mae_rad": 0.013230756445615718,
+              "gripper_mae_rad": 0.010081644189797394,
+              "first_position_mm": 2.4262169607315855
+            },
+            {
+              "index": 3882,
+              "mse": 0.047837033867836,
+              "arm_mae_rad": 0.007120842217563742,
+              "gripper_mae_rad": 0.012474392849575168,
+              "first_position_mm": 6.636684559403982
+            },
+            {
+              "index": 1463,
+              "mse": 1.746455192565918,
+              "arm_mae_rad": 0.03871597555642687,
+              "gripper_mae_rad": 0.005513249923671068,
+              "first_position_mm": 16.213155905285824
+            },
+            {
+              "index": 2681,
+              "mse": 0.005989613942801952,
+              "arm_mae_rad": 0.002402359160798758,
+              "gripper_mae_rad": 0.0006134446335647747,
+              "first_position_mm": 1.2711578338353402
+            },
+            {
+              "index": 4035,
+              "mse": 2.045210838317871,
+              "arm_mae_rad": 0.03755247417515993,
+              "gripper_mae_rad": 0.005631682626350019,
+              "first_position_mm": 4.823969521812429
+            },
+            {
+              "index": 2767,
+              "mse": 0.024375908076763153,
+              "arm_mae_rad": 0.0027480753508096895,
+              "gripper_mae_rad": 0.03957445224052657,
+              "first_position_mm": 1.8836176470006447
+            },
+            {
+              "index": 3658,
+              "mse": 0.13954930007457733,
+              "arm_mae_rad": 0.013925974896807431,
+              "gripper_mae_rad": 0.005892029253876878,
+              "first_position_mm": 3.4948620390744325
+            },
+            {
+              "index": 3657,
+              "mse": 0.16544632613658905,
+              "arm_mae_rad": 0.011313743503620593,
+              "gripper_mae_rad": 0.004591625727133453,
+              "first_position_mm": 3.2935740570063636
+            },
+            {
+              "index": 3346,
+              "mse": 0.10911037027835846,
+              "arm_mae_rad": 0.00821237395476983,
+              "gripper_mae_rad": 0.03628711534129806,
+              "first_position_mm": 2.882337611999695
+            },
+            {
+              "index": 367,
+              "mse": 0.1263396143913269,
+              "arm_mae_rad": 0.008385689074895336,
+              "gripper_mae_rad": 0.0013339468180711134,
+              "first_position_mm": 7.591184112146392
+            },
+            {
+              "index": 3840,
+              "mse": 0.03451916202902794,
+              "arm_mae_rad": 0.007124588970866147,
+              "gripper_mae_rad": 0.013110780616923515,
+              "first_position_mm": 1.3560730487080392
+            },
+            {
+              "index": 774,
+              "mse": 0.01189558394253254,
+              "arm_mae_rad": 0.0035540050015240676,
+              "gripper_mae_rad": 0.001942583549270932,
+              "first_position_mm": 0.6219805786482085
+            },
+            {
+              "index": 4249,
+              "mse": 0.01726655103266239,
+              "arm_mae_rad": 0.00380185771494916,
+              "gripper_mae_rad": 0.03033569819745288,
+              "first_position_mm": 2.70222417373567
+            },
+            {
+              "index": 2573,
+              "mse": 0.5311686992645264,
+              "arm_mae_rad": 0.022027589803852474,
+              "gripper_mae_rad": 0.013368100726842476,
+              "first_position_mm": 4.757886625184785
+            },
+            {
+              "index": 223,
+              "mse": 0.0981578603386879,
+              "arm_mae_rad": 0.009764630896689216,
+              "gripper_mae_rad": 0.004881172372843176,
+              "first_position_mm": 8.140041322674952
+            },
+            {
+              "index": 2427,
+              "mse": 0.22852823138237,
+              "arm_mae_rad": 0.011372277365819092,
+              "gripper_mae_rad": 0.0054025671629249344,
+              "first_position_mm": 3.1751568923547917
+            },
+            {
+              "index": 2779,
+              "mse": 2.1862826347351074,
+              "arm_mae_rad": 0.03625469655619529,
+              "gripper_mae_rad": 0.004040165937198137,
+              "first_position_mm": 6.181990121968599
+            },
+            {
+              "index": 2565,
+              "mse": 0.47644636034965515,
+              "arm_mae_rad": 0.016110188950686187,
+              "gripper_mae_rad": 0.00541668601448405,
+              "first_position_mm": 5.753149369637517
+            },
+            {
+              "index": 2901,
+              "mse": 0.03800582513213158,
+              "arm_mae_rad": 0.007460691780767186,
+              "gripper_mae_rad": 0.007101591340405458,
+              "first_position_mm": 2.3402659223652207
+            },
+            {
+              "index": 2980,
+              "mse": 0.0031873644329607487,
+              "arm_mae_rad": 0.0019530377007165689,
+              "gripper_mae_rad": 0.007474042163525846,
+              "first_position_mm": 1.5259143471684036
+            },
+            {
+              "index": 4078,
+              "mse": 0.11976296454668045,
+              "arm_mae_rad": 0.010178108445453483,
+              "gripper_mae_rad": 0.011911135517702311,
+              "first_position_mm": 6.416916013395751
+            },
+            {
+              "index": 3341,
+              "mse": 0.0197431817650795,
+              "arm_mae_rad": 0.004018230133155006,
+              "gripper_mae_rad": 0.012803851696238877,
+              "first_position_mm": 4.299380194478615
+            },
+            {
+              "index": 1943,
+              "mse": 1.8778998851776123,
+              "arm_mae_rad": 0.0340607256336493,
+              "gripper_mae_rad": 0.0040655497517467845,
+              "first_position_mm": 9.89682852082037
+            },
+            {
+              "index": 1097,
+              "mse": 0.02584826387465,
+              "arm_mae_rad": 0.005158963910920627,
+              "gripper_mae_rad": 0.009061158648679873,
+              "first_position_mm": 2.187398592273416
+            },
+            {
+              "index": 3763,
+              "mse": 0.3058769404888153,
+              "arm_mae_rad": 0.01333464976187847,
+              "gripper_mae_rad": 0.010337818336738608,
+              "first_position_mm": 3.3570267938307063
+            },
+            {
+              "index": 585,
+              "mse": 0.08473837375640869,
+              "arm_mae_rad": 0.009131731753867974,
+              "gripper_mae_rad": 0.008111465705104074,
+              "first_position_mm": 5.452745617892516
+            }
+          ]
+        }
+      }
+    },
+    "rehearsal_sampling_fraction": 0.37295373665480425,
+    "status": "complete",
+    "final_evaluation": {
+      "step": 6000,
+      "scope": "held-out feedback queries, not task success",
+      "splits": {
+        "train": {
+          "fixed_loss": 0.16383252842388174,
+          "arm_mae_rad": 0.008913117331348579,
+          "first_position_mm": 4.2111333179549,
+          "worst_position_mm": 14.864952202419893,
+          "anchors": [
+            {
+              "index": 2084,
+              "mse": 0.041611723601818085,
+              "arm_mae_rad": 0.0065077440641682265,
+              "gripper_mae_rad": 0.004994653927784962,
+              "first_position_mm": 1.0924717192247182
+            },
+            {
+              "index": 4493,
+              "mse": 0.018471665680408478,
+              "arm_mae_rad": 0.004637793029855906,
+              "gripper_mae_rad": 0.0016579090826957417,
+              "first_position_mm": 1.3936061619915077
+            },
+            {
+              "index": 3716,
+              "mse": 0.0026716762222349644,
+              "arm_mae_rad": 0.001577583741312713,
+              "gripper_mae_rad": 0.0022303781938896802,
+              "first_position_mm": 0.6956552653320125
+            },
+            {
+              "index": 1334,
+              "mse": 0.44738468527793884,
+              "arm_mae_rad": 0.02019336902297338,
+              "gripper_mae_rad": 0.10092520370154903,
+              "first_position_mm": 8.358003195774053
+            },
+            {
+              "index": 3581,
+              "mse": 0.04015611112117767,
+              "arm_mae_rad": 0.00652188392274248,
+              "gripper_mae_rad": 0.002731211763620775,
+              "first_position_mm": 2.5845417834806708
+            },
+            {
+              "index": 2146,
+              "mse": 0.13123632967472076,
+              "arm_mae_rad": 0.010361064790645731,
+              "gripper_mae_rad": 0.0021159508521954445,
+              "first_position_mm": 2.126495739815377
+            },
+            {
+              "index": 1663,
+              "mse": 0.002684199484065175,
+              "arm_mae_rad": 0.0014428657028214469,
+              "gripper_mae_rad": 0.004418473292267272,
+              "first_position_mm": 0.27368360967279615
+            },
+            {
+              "index": 2198,
+              "mse": 0.6913859844207764,
+              "arm_mae_rad": 0.02564587739910706,
+              "gripper_mae_rad": 0.002624354388904515,
+              "first_position_mm": 14.864952202419893
+            },
+            {
+              "index": 2935,
+              "mse": 0.062398605048656464,
+              "arm_mae_rad": 0.006771351157201164,
+              "gripper_mae_rad": 0.0034671091526822795,
+              "first_position_mm": 3.9953517140224233
+            },
+            {
+              "index": 2233,
+              "mse": 0.318893700838089,
+              "arm_mae_rad": 0.017504135004528378,
+              "gripper_mae_rad": 0.009103772310435555,
+              "first_position_mm": 6.975518824472186
+            },
+            {
+              "index": 2454,
+              "mse": 0.27972376346588135,
+              "arm_mae_rad": 0.013490169620059892,
+              "gripper_mae_rad": 0.0030821151770971528,
+              "first_position_mm": 6.905084708949276
+            },
+            {
+              "index": 4335,
+              "mse": 0.002432384993880987,
+              "arm_mae_rad": 0.0017195692094502137,
+              "gripper_mae_rad": 0.002898909855467903,
+              "first_position_mm": 1.2572128106782263
+            },
+            {
+              "index": 381,
+              "mse": 0.22910581529140472,
+              "arm_mae_rad": 0.015565585111645571,
+              "gripper_mae_rad": 0.009069218955585809,
+              "first_position_mm": 10.75931654714107
+            },
+            {
+              "index": 757,
+              "mse": 0.01252477616071701,
+              "arm_mae_rad": 0.004056176127647234,
+              "gripper_mae_rad": 0.0019931344738307946,
+              "first_position_mm": 3.4062942054693033
+            },
+            {
+              "index": 4523,
+              "mse": 0.0011192294768989086,
+              "arm_mae_rad": 0.0008017711825449806,
+              "gripper_mae_rad": 0.004758131025784981,
+              "first_position_mm": 0.6743737744827232
+            },
+            {
+              "index": 4406,
+              "mse": 0.0014877235516905785,
+              "arm_mae_rad": 0.0012665077734789316,
+              "gripper_mae_rad": 0.0037188775861882184,
+              "first_position_mm": 0.31552422956319276
+            },
+            {
+              "index": 4089,
+              "mse": 0.004880954511463642,
+              "arm_mae_rad": 0.0017316840303194276,
+              "gripper_mae_rad": 0.007520079022381717,
+              "first_position_mm": 1.0029023187455455
+            },
+            {
+              "index": 880,
+              "mse": 0.0009087585494853556,
+              "arm_mae_rad": 0.0009591613853620994,
+              "gripper_mae_rad": 0.0015957681383401562,
+              "first_position_mm": 0.5824196728949703
+            },
+            {
+              "index": 1855,
+              "mse": 0.04347842186689377,
+              "arm_mae_rad": 0.006625085008338656,
+              "gripper_mae_rad": 0.00823542437348819,
+              "first_position_mm": 3.99145884170352
+            },
+            {
+              "index": 4283,
+              "mse": 0.0030157724395394325,
+              "arm_mae_rad": 0.002067923089011262,
+              "gripper_mae_rad": 0.0057457601187698125,
+              "first_position_mm": 0.5791864202215704
+            },
+            {
+              "index": 4646,
+              "mse": 0.008314757607877254,
+              "arm_mae_rad": 0.0029242782600727413,
+              "gripper_mae_rad": 0.0023014370809054073,
+              "first_position_mm": 0.7425266031942975
+            },
+            {
+              "index": 4161,
+              "mse": 0.07588041573762894,
+              "arm_mae_rad": 0.007814121885217674,
+              "gripper_mae_rad": 0.0066035216717665185,
+              "first_position_mm": 6.46588683612848
+            },
+            {
+              "index": 2408,
+              "mse": 0.17420798540115356,
+              "arm_mae_rad": 0.010430457878418007,
+              "gripper_mae_rad": 0.0033220695403534117,
+              "first_position_mm": 2.0402636745028904
+            },
+            {
+              "index": 517,
+              "mse": 0.03548077493906021,
+              "arm_mae_rad": 0.00562476462878547,
+              "gripper_mae_rad": 0.0024546380064924198,
+              "first_position_mm": 7.933320336700274
+            },
+            {
+              "index": 3433,
+              "mse": 0.32702258229255676,
+              "arm_mae_rad": 0.01935677066731883,
+              "gripper_mae_rad": 0.004294801114627572,
+              "first_position_mm": 7.0581949733218545
+            },
+            {
+              "index": 70,
+              "mse": 1.632011890411377,
+              "arm_mae_rad": 0.03468384856565004,
+              "gripper_mae_rad": 0.0017768780372809587,
+              "first_position_mm": 9.545089333861856
+            },
+            {
+              "index": 2609,
+              "mse": 0.01241181418299675,
+              "arm_mae_rad": 0.0036008705432551183,
+              "gripper_mae_rad": 0.0069766483192071245,
+              "first_position_mm": 1.3118176011905234
+            },
+            {
+              "index": 3546,
+              "mse": 0.06498301029205322,
+              "arm_mae_rad": 0.008654727612517468,
+              "gripper_mae_rad": 0.0036587622783141316,
+              "first_position_mm": 5.608415789911927
+            },
+            {
+              "index": 591,
+              "mse": 0.1268760859966278,
+              "arm_mae_rad": 0.009614651816883492,
+              "gripper_mae_rad": 0.004275756826039125,
+              "first_position_mm": 8.877591260314894
+            },
+            {
+              "index": 458,
+              "mse": 0.06402648985385895,
+              "arm_mae_rad": 0.008369234261505184,
+              "gripper_mae_rad": 0.009156980620297968,
+              "first_position_mm": 5.545801361114058
+            },
+            {
+              "index": 1570,
+              "mse": 0.30125629901885986,
+              "arm_mae_rad": 0.014700611879853321,
+              "gripper_mae_rad": 0.007693883407339397,
+              "first_position_mm": 6.287339697132976
+            },
+            {
+              "index": 3794,
+              "mse": 0.08459652215242386,
+              "arm_mae_rad": 0.009998116230462381,
+              "gripper_mae_rad": 0.0010016377557960782,
+              "first_position_mm": 1.50596496112773
+            }
+          ]
+        },
+        "validation": {
+          "fixed_loss": 0.3538833290585899,
+          "arm_mae_rad": 0.012464457551146432,
+          "first_position_mm": 4.474682976133509,
+          "worst_position_mm": 14.342237987516196,
+          "anchors": [
+            {
+              "index": 3811,
+              "mse": 0.0038231832440942526,
+              "arm_mae_rad": 0.00199019950770419,
+              "gripper_mae_rad": 0.0024978466874865657,
+              "first_position_mm": 1.927677039395885
+            },
+            {
+              "index": 354,
+              "mse": 0.1689518243074417,
+              "arm_mae_rad": 0.010664894665006256,
+              "gripper_mae_rad": 0.003288726425251,
+              "first_position_mm": 8.594094136017047
+            },
+            {
+              "index": 1358,
+              "mse": 1.3205056190490723,
+              "arm_mae_rad": 0.033974325895786237,
+              "gripper_mae_rad": 0.0076063549754768894,
+              "first_position_mm": 14.342237987516196
+            },
+            {
+              "index": 2841,
+              "mse": 0.7653151750564575,
+              "arm_mae_rad": 0.020656749261400993,
+              "gripper_mae_rad": 0.0098727722358333,
+              "first_position_mm": 7.719225612057081
+            },
+            {
+              "index": 2178,
+              "mse": 0.05816271901130676,
+              "arm_mae_rad": 0.008491188901202849,
+              "gripper_mae_rad": 0.010594580157001758,
+              "first_position_mm": 2.683582199894386
+            },
+            {
+              "index": 4765,
+              "mse": 0.0030300600919872522,
+              "arm_mae_rad": 0.001831718923700578,
+              "gripper_mae_rad": 0.008429598984966924,
+              "first_position_mm": 0.6187638827096786
+            },
+            {
+              "index": 3801,
+              "mse": 0.5111543536186218,
+              "arm_mae_rad": 0.019921555966384643,
+              "gripper_mae_rad": 0.0038298321458457504,
+              "first_position_mm": 4.063926286438985
+            },
+            {
+              "index": 3882,
+              "mse": 0.060577597469091415,
+              "arm_mae_rad": 0.007833401383498029,
+              "gripper_mae_rad": 0.011666220824313237,
+              "first_position_mm": 5.301634864748686
+            },
+            {
+              "index": 1463,
+              "mse": 2.412337303161621,
+              "arm_mae_rad": 0.04599815450869192,
+              "gripper_mae_rad": 0.0060799598363102045,
+              "first_position_mm": 14.324064660680389
+            },
+            {
+              "index": 2681,
+              "mse": 0.006930943112820387,
+              "arm_mae_rad": 0.0023060694962056577,
+              "gripper_mae_rad": 0.00326479526569496,
+              "first_position_mm": 0.7881622536765499
+            },
+            {
+              "index": 4035,
+              "mse": 1.0863276720046997,
+              "arm_mae_rad": 0.028327889068260607,
+              "gripper_mae_rad": 0.00370398190395671,
+              "first_position_mm": 4.6902306072414275
+            },
+            {
+              "index": 2767,
+              "mse": 0.038551248610019684,
+              "arm_mae_rad": 0.003798972762247713,
+              "gripper_mae_rad": 0.053913379194544815,
+              "first_position_mm": 2.424290768891269
+            },
+            {
+              "index": 3658,
+              "mse": 0.1087862104177475,
+              "arm_mae_rad": 0.011631418208886449,
+              "gripper_mae_rad": 0.003262876145003063,
+              "first_position_mm": 3.7484937469381068
+            },
+            {
+              "index": 3657,
+              "mse": 0.11715549975633621,
+              "arm_mae_rad": 0.009559031920788564,
+              "gripper_mae_rad": 0.006313436937671418,
+              "first_position_mm": 4.520546716169869
+            },
+            {
+              "index": 3346,
+              "mse": 0.09147517383098602,
+              "arm_mae_rad": 0.00803555772016754,
+              "gripper_mae_rad": 0.030376695585403374,
+              "first_position_mm": 2.4018856531831663
+            },
+            {
+              "index": 367,
+              "mse": 0.12358341366052628,
+              "arm_mae_rad": 0.008412007696784648,
+              "gripper_mae_rad": 0.0018323360340788408,
+              "first_position_mm": 7.7155474067579695
+            },
+            {
+              "index": 3840,
+              "mse": 0.03317151218652725,
+              "arm_mae_rad": 0.00550714082602603,
+              "gripper_mae_rad": 0.014524199232909457,
+              "first_position_mm": 0.5818034654551462
+            },
+            {
+              "index": 774,
+              "mse": 0.0069559067487716675,
+              "arm_mae_rad": 0.003160504508465276,
+              "gripper_mae_rad": 0.0012251629767464217,
+              "first_position_mm": 0.855708110395405
+            },
+            {
+              "index": 4249,
+              "mse": 0.009318655356764793,
+              "arm_mae_rad": 0.0025201791647657405,
+              "gripper_mae_rad": 0.02448605763663815,
+              "first_position_mm": 1.2970576808607643
+            },
+            {
+              "index": 2573,
+              "mse": 0.42995578050613403,
+              "arm_mae_rad": 0.020224973098969864,
+              "gripper_mae_rad": 0.009394990152154496,
+              "first_position_mm": 4.511650760477468
+            },
+            {
+              "index": 223,
+              "mse": 0.04593043029308319,
+              "arm_mae_rad": 0.006343187392096316,
+              "gripper_mae_rad": 0.004875626205867567,
+              "first_position_mm": 4.903414650662831
+            },
+            {
+              "index": 2427,
+              "mse": 0.22206968069076538,
+              "arm_mae_rad": 0.010452408721562766,
+              "gripper_mae_rad": 0.0019476816153385784,
+              "first_position_mm": 2.050489736929232
+            },
+            {
+              "index": 2779,
+              "mse": 1.4963626861572266,
+              "arm_mae_rad": 0.03187698515567395,
+              "gripper_mae_rad": 0.010813943916241256,
+              "first_position_mm": 6.034401270214485
+            },
+            {
+              "index": 2565,
+              "mse": 0.4386836290359497,
+              "arm_mae_rad": 0.015913900796192124,
+              "gripper_mae_rad": 0.005332334691518156,
+              "first_position_mm": 4.74643014063239
+            },
+            {
+              "index": 2901,
+              "mse": 0.02679557353258133,
+              "arm_mae_rad": 0.00605662209856129,
+              "gripper_mae_rad": 0.0017753757973517775,
+              "first_position_mm": 3.7661983977982887
+            },
+            {
+              "index": 2980,
+              "mse": 0.0033145693596452475,
+              "arm_mae_rad": 0.00156259004242826,
+              "gripper_mae_rad": 0.0029543072484544686,
+              "first_position_mm": 1.6368740209981443
+            },
+            {
+              "index": 4078,
+              "mse": 0.08554289489984512,
+              "arm_mae_rad": 0.007382401776305515,
+              "gripper_mae_rad": 0.010219130363460449,
+              "first_position_mm": 2.6811602017487255
+            },
+            {
+              "index": 3341,
+              "mse": 0.029294732958078384,
+              "arm_mae_rad": 0.004671460465427781,
+              "gripper_mae_rad": 0.01418020281744474,
+              "first_position_mm": 4.828120063434696
+            },
+            {
+              "index": 1943,
+              "mse": 1.2156678438186646,
+              "arm_mae_rad": 0.02898972962581554,
+              "gripper_mae_rad": 0.004372757817259328,
+              "first_position_mm": 11.920961092177345
+            },
+            {
+              "index": 1097,
+              "mse": 0.034889690577983856,
+              "arm_mae_rad": 0.006097840080483167,
+              "gripper_mae_rad": 0.009846172672099904,
+              "first_position_mm": 2.0536347317701535
+            },
+            {
+              "index": 3763,
+              "mse": 0.2940314710140228,
+              "arm_mae_rad": 0.014989758004357309,
+              "gripper_mae_rad": 0.007305490108882831,
+              "first_position_mm": 2.114302792332308
+            },
+            {
+              "index": 585,
+              "mse": 0.07561347633600235,
+              "arm_mae_rad": 0.009679823992837995,
+              "gripper_mae_rad": 0.007774515860065015,
+              "first_position_mm": 3.3432842980682116
+            }
+          ]
+        }
+      }
+    }
+  },
+  "active_exec_session": null,
+  "current_phase": "accepted",
+  "current_candidate": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+  "training_gates_passed": [
+    12,
+    10,
+    9,
+    11
+  ],
+  "full_evaluation_directory": "logs/a2_pi0/repair_screen_020_2000/full_33",
+  "accepted_checkpoint": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+  "final_report": "results/drawer_eval_020_20261102/README.md",
+  "full_evaluation_success": 33,
+  "full_evaluation_trials": 33,
+  "independent_replay_success": 33
+}

@@ -1,0 +1,29 @@
+{
+  "parent_ids": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "allowed_train_ids": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "queries": 7647,
+  "metadata_sha256": "c73222e4e63b33768dec8d8b7752d0ad1514ee5827c6797ddf3e800d8583046e",
+  "heldout_parent_ids_used": false
+}

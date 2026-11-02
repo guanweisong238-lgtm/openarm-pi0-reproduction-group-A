@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "selected_checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+  "selected_training_step": 2000,
+  "planned_curriculum_steps": 6000,
+  "dataset_queries": 4767,
+  "gradient_updates_checked": 2000,
+  "actual_gradient_parent_ids": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "validation_episode_ids_used": [],
+  "eval_only_episode_ids_used": [],
+  "query_holdout_indices_used_for_gradient": [],
+  "all_labels_train_parent_only": true,
+  "metadata_sha256": "d07aa22605f70cd13c6f08902f6993c57d36a0a7060a5fb67bd88a11224cf41c",
+  "normalization_stats_sha256": "fdc5f2fd3be53e6155c94a9709a9001bfa253e0049ce238bb9d8fe1a8dc01bb3"
+}

@@ -1,0 +1,73 @@
+{
+  "completed_at": "2026-11-02T19:28:47.226653+08:00",
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+  "model_upgraded": false,
+  "overall": {
+    "trials": 100,
+    "success": 85,
+    "success_rate": 0.85,
+    "peak_open_mm_median": 100.93039670112792,
+    "peak_open_mm_min": 3.5132438045276224e-14,
+    "peak_open_mm_max": 103.1548826483767,
+    "first_success_step_median": 155,
+    "simulation_seconds_median_on_success": 5.166666666666667,
+    "inference_p50_ms_median": 143.06262624813826,
+    "inference_p95_ms_median": 146.15666247773333,
+    "failure_modes": {
+      "single_finger": 13,
+      "grasp_slip": 2
+    },
+    "wilson95": [
+      0.7671644040916763,
+      0.9069401471634337
+    ]
+  },
+  "groups": {
+    "near": {
+      "trials": 70,
+      "success": 66,
+      "success_rate": 0.9428571428571428,
+      "peak_open_mm_median": 101.10365650924254,
+      "peak_open_mm_min": 45.88458963315726,
+      "peak_open_mm_max": 103.1548826483767,
+      "first_success_step_median": 153.0,
+      "simulation_seconds_median_on_success": 5.1,
+      "inference_p50_ms_median": 143.09391825008788,
+      "inference_p95_ms_median": 146.2443778233137,
+      "failure_modes": {
+        "single_finger": 4
+      },
+      "wilson95": [
+        0.8620804952516177,
+        0.9775562208992887
+      ]
+    },
+    "expanded": {
+      "trials": 30,
+      "success": 19,
+      "success_rate": 0.6333333333333333,
+      "peak_open_mm_median": 100.43503823517172,
+      "peak_open_mm_min": 3.5132438045276224e-14,
+      "peak_open_mm_max": 103.07550501150837,
+      "first_success_step_median": 166,
+      "simulation_seconds_median_on_success": 5.533333333333333,
+      "inference_p50_ms_median": 139.33256225573132,
+      "inference_p95_ms_median": 140.88926202166476,
+      "failure_modes": {
+        "single_finger": 9,
+        "grasp_slip": 2
+      },
+      "wilson95": [
+        0.4551356365479487,
+        0.7812607919389929
+      ]
+    }
+  },
+  "scope": "Unseen100 for unchanged020; final set never selects weights; separate from earlier IDs200..299.",
+  "pooled_inference_ms": {
+    "count": 6795,
+    "p50": 142.88206200581044,
+    "p95": 146.6005521986517
+  },
+  "max_simulation_seconds_on_success": 23.7
+}

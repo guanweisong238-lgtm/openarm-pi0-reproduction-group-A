@@ -1,0 +1,33 @@
+{
+  "name": "drawer_eval_starts_001",
+  "episode_id_start": 100,
+  "note": "eval-only 起点：围绕训练同源基线 drawer_offset_x=0.1 做位置、把手粗细与初始姿态扰动。这些条目永不参与训练，见 docs/drawer-eval-protocol.md 第 8.2 节。",
+  "baseline": {
+    "drawer_offset_x": 0.1,
+    "drawer_offset_y": 0.0,
+    "handle_radius": null,
+    "right_jitter": 0.0
+  },
+  "starts": [
+    {"name": "y_neg030", "drawer_offset_x": 0.1, "drawer_offset_y": -0.03, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "y_neg020", "drawer_offset_x": 0.1, "drawer_offset_y": -0.02, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "y_neg010", "drawer_offset_x": 0.1, "drawer_offset_y": -0.01, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "y_pos010", "drawer_offset_x": 0.1, "drawer_offset_y": 0.01, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "y_pos020", "drawer_offset_x": 0.1, "drawer_offset_y": 0.02, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "y_pos030", "drawer_offset_x": 0.1, "drawer_offset_y": 0.03, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "x_neg010", "drawer_offset_x": 0.09, "drawer_offset_y": 0.0, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "x_neg005", "drawer_offset_x": 0.095, "drawer_offset_y": 0.0, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "x_pos005", "drawer_offset_x": 0.105, "drawer_offset_y": 0.0, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "x_pos010", "drawer_offset_x": 0.11, "drawer_offset_y": 0.0, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "r_005", "drawer_offset_x": 0.1, "drawer_offset_y": 0.0, "handle_radius": 0.005, "right_jitter": 0.0, "seed": null},
+    {"name": "r_009", "drawer_offset_x": 0.1, "drawer_offset_y": 0.0, "handle_radius": 0.009, "right_jitter": 0.0, "seed": null},
+    {"name": "r_012", "drawer_offset_x": 0.1, "drawer_offset_y": 0.0, "handle_radius": 0.012, "right_jitter": 0.0, "seed": null},
+    {"name": "jitter010_seed201", "drawer_offset_x": 0.1, "drawer_offset_y": 0.0, "handle_radius": null, "right_jitter": 0.01, "seed": 201},
+    {"name": "jitter020_seed202", "drawer_offset_x": 0.1, "drawer_offset_y": 0.0, "handle_radius": null, "right_jitter": 0.02, "seed": 202},
+    {"name": "jitter030_seed203", "drawer_offset_x": 0.1, "drawer_offset_y": 0.0, "handle_radius": null, "right_jitter": 0.03, "seed": 203},
+    {"name": "jitter040_seed204", "drawer_offset_x": 0.1, "drawer_offset_y": 0.0, "handle_radius": null, "right_jitter": 0.04, "seed": 204},
+    {"name": "combo_y_pos020_jitter020", "drawer_offset_x": 0.1, "drawer_offset_y": 0.02, "handle_radius": null, "right_jitter": 0.02, "seed": 205},
+    {"name": "combo_x_neg005_y_pos010", "drawer_offset_x": 0.095, "drawer_offset_y": 0.01, "handle_radius": null, "right_jitter": 0.0, "seed": null},
+    {"name": "combo_r009_y_neg020", "drawer_offset_x": 0.1, "drawer_offset_y": -0.02, "handle_radius": 0.009, "right_jitter": 0.0, "seed": null}
+  ]
+}

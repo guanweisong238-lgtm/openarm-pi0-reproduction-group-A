@@ -1,0 +1,9 @@
+{
+  "reason": "021/2000 regressed on original train9/11;016 rehearsal omitted these previous failures. Preserve020 successes on all10 original TRAIN parents.",
+  "made_before_final_test": true,
+  "training_data": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/data/drawer_feedback_queries/v008_expanded_contact_rehearsal020",
+  "lr": 3e-06,
+  "policy020_rehearsal_weight": 12,
+  "original_protocol_retained": true,
+  "final_test_and_selection_criteria_unchanged": true
+}

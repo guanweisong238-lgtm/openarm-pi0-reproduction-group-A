@@ -1,0 +1,52 @@
+[
+  {
+    "step": 0,
+    "groups": {
+      "new_parent_feedback": {
+        "anchors": 12,
+        "position_mm": 12.289805103217569,
+        "gripper_mae_rad": 0.025542408524774577
+      },
+      "rehearsal": {
+        "anchors": 8,
+        "position_mm": 1.5048429882505052,
+        "gripper_mae_rad": 0.008461459996846894
+      },
+      "scene_feedback": {
+        "anchors": 31,
+        "position_mm": 4.534051694065975,
+        "gripper_mae_rad": 0.010081824438743068
+      },
+      "original_feedback": {
+        "anchors": 13,
+        "position_mm": 5.447919939935692,
+        "gripper_mae_rad": 0.005371126498934607
+      }
+    }
+  },
+  {
+    "step": 5500,
+    "groups": {
+      "new_parent_feedback": {
+        "anchors": 12,
+        "position_mm": 7.501080732766377,
+        "gripper_mae_rad": 0.013948619585187373
+      },
+      "rehearsal": {
+        "anchors": 8,
+        "position_mm": 0.8357217493271669,
+        "gripper_mae_rad": 0.007167390601406231
+      },
+      "scene_feedback": {
+        "anchors": 31,
+        "position_mm": 3.4955919786132013,
+        "gripper_mae_rad": 0.008504309036865275
+      },
+      "original_feedback": {
+        "anchors": 13,
+        "position_mm": 5.75606547962465,
+        "gripper_mae_rad": 0.00563979463720689
+      }
+    }
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_019_feedback/2000",
+  "checkpoint_parameter_dtype_element_counts": {
+    "bfloat16": 3237948144,
+    "float32": 50087968
+  },
+  "comparisons": [
+    {
+      "episode_id": 12,
+      "max_right7_difference_rad": 0.0004809582265332679,
+      "gripper_difference_rad": 0.0010302647924900765,
+      "first_target_position_difference_mm": 0.14572839006959784
+    },
+    {
+      "episode_id": 9,
+      "max_right7_difference_rad": 0.001068924959451767,
+      "gripper_difference_rad": 0.0007741420669645227,
+      "first_target_position_difference_mm": 0.13962823998288787
+    },
+    {
+      "episode_id": 10,
+      "max_right7_difference_rad": 0.0007305144001415187,
+      "gripper_difference_rad": 0.0003757877057014025,
+      "first_target_position_difference_mm": 0.2690344601956407
+    },
+    {
+      "episode_id": 11,
+      "max_right7_difference_rad": 0.0008241445797882996,
+      "gripper_difference_rad": 0.00150924793352053,
+      "first_target_position_difference_mm": 0.1979299566992009
+    }
+  ],
+  "scope": "Paired numerical audit only; no task success or causal failure attribution"
+}

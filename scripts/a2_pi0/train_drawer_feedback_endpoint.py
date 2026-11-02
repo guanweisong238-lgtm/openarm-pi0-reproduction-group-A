@@ -18,6 +18,10 @@ def main():
     p.add_argument('--lr',type=float,default=1e-5)
     p.add_argument('--eval-every',type=int,default=250)
     p.add_argument('--prepare-only',action='store_true')
+    p.add_argument('--endpoint-path',choices=['full','cached'],default='full')
+    p.add_argument('--save-every',type=int,default=0)
+    p.add_argument('--cartesian-weight',type=float,default=0.)
+    p.add_argument('--gripper-weight',type=float,default=1.)
     args=p.parse_args();digest=lambda x:hashlib.sha256(Path(x).read_bytes()).hexdigest()
     cache=CachedInputs(args.data);meta=cache.metadata
     assert meta['schema']=='model_ready_feedback_queries_v001' and meta['action_horizon']==4
@@ -30,6 +34,7 @@ def main():
     from openpi.training import optimizer as optimizer_lib
     from openpi.shared import nnx_utils,normalize
     from drawer_training_objective import flow_squared_errors
+    from drawer_endpoint_prediction import endpoint_prediction
     from train_smoke import save_checkpoint
     allowed=nnx_utils.PathRegex(r'.*lora.*|(?:state_proj|action_in_proj|action_out_proj)/.*')
     cfg=get_success_config(args.exp_name,args.steps)
@@ -40,6 +45,9 @@ def main():
     rng=np.random.default_rng(42);order=rng.permutation(len(cache));nval=max(32,len(cache)//10)
     validation=order[:nval];train=order[nval:]
     assert set(train).isdisjoint(validation)
+    parent_ids=sorted({int(cache.rows[cache.locate(int(i))[0]]['parent_episode_id']) for i in train})
+    allowed_parents={r['episode_id'] for r in json.loads(MANIFEST.read_text())['episodes'] if r['split']=='train'}
+    if not set(parent_ids)<=allowed_parents:raise ValueError('监督来源包含非训练起点')
     anchors={'train':train[:32],'validation':validation[:32]}
     stats=normalize.load(VELOCITY_NORM_ROOT);am=np.asarray(stats['actions'].mean);asc=np.asarray(stats['actions'].std)+1e-6
     sm=np.asarray(stats['state'].mean);ssc=np.asarray(stats['state'].std)+1e-6
@@ -53,28 +61,34 @@ def main():
     with np.load(args.data/'physical_queries.npz') as raw:
         for index in sorted(set([0,len(cache)-1,*order[:30].tolist()])):
             obs,target=batch(index)
-            np.testing.assert_allclose(decode(target,index),raw['expert_actions'][index,:4],atol=3e-6,rtol=1e-6)
+            np.testing.assert_allclose(decode(target,index),raw[meta.get('physical_target_field','expert_actions')][index,:4],atol=3e-6,rtol=1e-6)
             assert obs.state.shape==(1,32) and target.shape==(1,4,32)
             assert not obs.state[:,8:16].any() and not obs.state[:,24:32].any()
     print(f'FEEDBACK_INPUT_PASS train={len(train)} query_holdout={len(validation)}; correlated interpolation holdout, not task generalization',flush=True)
+    print(f'GRADIENT_PARENT_EPISODES={parent_ids}',flush=True)
     if args.prepare_only:return
     if jax.default_backend()!='gpu':raise RuntimeError('GPU required')
     output=ROOT/'logs/a2_pi0'/datetime.now().strftime('drawer_feedback_%Y%m%d-%H%M%S-%f');output.mkdir(parents=True)
-    protocol=dict(dataset_version='drawer_feedback_queries_v001',manifest_sha256=digest(MANIFEST),
+    protocol=dict(dataset_version='drawer_feedback_queries_'+args.data.name,manifest_sha256=digest(MANIFEST),
         training_data=str(args.data),training_data_metadata_sha256=digest(args.data/'READY.json'),
         norm_stats_root=str(VELOCITY_NORM_ROOT),norm_stats_sha256=digest(VELOCITY_NORM_ROOT/'norm_stats.json'),
         state_representation='position_velocity16',action_representation='right7_delta',action_horizon=4,
         mask_left_normalized_state=True,right8_loss=True,train_io_projections=True,
         inference_kind='fixed_noise_endpoint',sampling_steps=1,fixed_noise_seed=42,
         recommended_noise_mode='fixed',recommended_action_chunk=4,
+        recommended_weight_precision='checkpoint',
         source_checkpoint=str(args.checkpoint),source_policy_kind='Pi0 backbone, modified deterministic endpoint policy',
-        actual_gradient_parent_episode_ids=[12],physical_validation_episode_ids=[2,3,6],
-        query_holdout_scope='same parent training scene, new perturbations; no claim of task generalization',
+        actual_gradient_parent_episode_ids=parent_ids,physical_validation_episode_ids=[2,3,6],
+        query_holdout_scope='correlated queries from the same training parent scenes; no claim of task generalization',
         train_query_indices=train.tolist(),validation_query_indices=validation.tolist(),
         training_objective='fixed noise42, t1, right8 action MSE, horizon4',teacher_at_runtime=False,
+        endpoint_training_path=args.endpoint_path,
+        cartesian_loss_weight=args.cartesian_weight,gripper_loss_weight=args.gripper_weight,
+        episode_sampling_weights=[dict(episode_id=r['episode_id'],weight=r.get('sampling_weight',1.)) for r in cache.rows],
+        physical_target_field=meta.get('physical_target_field','expert_actions'),supervision_scope=meta.get('scope'),
         closed_loop_tested=False,task_success_verified=False)
     (output/'source').mkdir()
-    for name in (Path(__file__).name,'drawer_training_objective.py','drawer_velocity_config.py','drawer_start_fit_config.py','live_drawer_success.py'):
+    for name in (Path(__file__).name,'drawer_training_objective.py','drawer_endpoint_prediction.py','drawer_velocity_config.py','drawer_start_fit_config.py','live_drawer_success.py'):
         (output/'source'/name).write_bytes((Path(__file__).parent/name).read_bytes())
     (output/'protocol.json').write_text(json.dumps(protocol,indent=2)+'\n');print('RUN_DIRECTORY='+str(output),flush=True)
     params=nnx.state(cfg.model.load(model_lib.restore_params(args.checkpoint/'params')))
@@ -82,9 +96,18 @@ def main():
     graph=nnx.graphdef(nnx.eval_shape(cfg.model.create,jax.random.key(42)))
     tx=optimizer_lib.create_optimizer(cfg.optimizer,cfg.lr_schedule,weight_decay_mask=None);opt=tx.init(params.filter(cfg.trainable_filter))
     @functools.partial(jax.jit,donate_argnums=(0,1))
-    def update(current,state,key,obs,target):
+    def update(current,state,key,obs,target,jacobian):
         model=nnx.merge(graph,current);model.train()
-        def loss(m):return flow_squared_errors(m,key,obs,target,time_sampling='fixed_endpoint')[...,:8].mean()
+        def loss(m):
+            if args.endpoint_path=='cached':
+                diff=endpoint_prediction(m,obs)[...,:8]-target[...,:8]
+                value=(jnp.sum(diff[...,:7]**2,axis=-1)+args.gripper_weight*diff[...,7]**2).mean()/8
+                if args.cartesian_weight:
+                    xyz=jnp.einsum('ij,bhj->bhi',jacobian,diff[...,:7]*jnp.asarray(asc[:7]))
+                    value+=args.cartesian_weight*jnp.mean((xyz/.01)**2)
+                return value
+            error=flow_squared_errors(m,key,obs,target,time_sampling='fixed_endpoint')[...,:8]
+            return (jnp.sum(error[...,:7],axis=-1)+args.gripper_weight*error[...,7]).mean()/8
         value,grads=nnx.value_and_grad(loss,argnums=nnx.DiffState(0,cfg.trainable_filter))(model)
         old=current.filter(cfg.trainable_filter);updates,next_state=tx.update(grads,state,old)
         nnx.update(model,optax.apply_updates(old,updates))
@@ -93,14 +116,28 @@ def main():
     @jax.jit
     def sample(current,obs):return nnx.merge(graph,current).sample_actions(jax.random.key(0),obs,noise=noise,num_steps=1)
     @jax.jit
-    def full_prediction(current,obs,target):return flow_squared_errors(nnx.merge(graph,current),jax.random.key(0),obs,target,time_sampling='fixed_endpoint',return_prediction=True)[1]
+    def full_prediction(current,obs,target):
+        if args.endpoint_path=='cached':return endpoint_prediction(nnx.merge(graph,current),obs)
+        return flow_squared_errors(nnx.merge(graph,current),jax.random.key(0),obs,target,time_sampling='fixed_endpoint',return_prediction=True)[1]
     probe,target=batch(int(train[0]));difference=float(np.max(np.abs(np.asarray(sample(params,probe))-np.asarray(full_prediction(params,probe,target)))))
     protocol['endpoint_full_vs_cached_prediction_max_difference']=difference
-    if difference>.1:raise RuntimeError(f'端点训练/推理数值不一致: {difference}')
+    if difference>(1e-5 if args.endpoint_path=='cached' else .1):raise RuntimeError(f'端点训练/推理数值不一致: {difference}')
     (output/'protocol.json').write_text(json.dumps(protocol,indent=2)+'\n');print('ENDPOINT_NUMERICAL_PARITY',difference,flush=True)
     from drawer_simulation import DrawerSimulation
     import mujoco
     env=DrawerSimulation();scratch=mujoco.MjData(env.model);sid=env.model.site('right_ee_control_point').id
+    jacobians=np.zeros((len(cache),3,7),np.float32)
+    if args.cartesian_weight:
+        if args.endpoint_path!='cached':raise ValueError('Cartesian loss requires cached endpoint path')
+        with np.load(args.data/'physical_queries.npz') as raw:
+            for index,qpos in enumerate(raw['qpos']):
+                scratch.qpos[:]=qpos;mujoco.mj_forward(env.model,scratch)
+                point=scratch.site_xpos[sid]+scratch.site_xmat[sid].reshape(3,3)@np.array([0,0,-.16])
+                jp=np.zeros((3,env.model.nv));jr=np.zeros_like(jp)
+                mujoco.mj_jac(env.model,scratch,jp,jr,point,int(env.model.site_bodyid[sid]))
+                jacobians[index]=jp[:,env.velocity_ids[:7]]
+        np.save(output/'grasp_jacobians.npy',jacobians)
+        print('CARTESIAN_JACOBIANS_READY',len(jacobians),flush=True)
     def pose(action):
         scratch.qpos[:]=env.data.qpos;scratch.qpos[env.qpos_ids[:8]]=action[:8];mujoco.mj_kinematics(env.model,scratch)
         rotation=scratch.site_xmat[sid].reshape(3,3);return scratch.site_xpos[sid]+rotation@np.array([0,0,-.16])
@@ -108,8 +145,11 @@ def main():
         record={'step':step,'scope':'held-out feedback queries, not task success','splits':{}}
         for split,indices in anchors.items():
             rows=[]
-            for index in indices:
+            for position,index in enumerate(indices):
                 obs,target=batch(int(index));pred=np.asarray(sample(params,obs));physical=decode(pred,index);truth=decode(target,index)
+                if args.endpoint_path=='cached' and position==0:
+                    gap=float(np.abs(pred-np.asarray(full_prediction(params,obs,target))).max())
+                    if gap>1e-5:raise RuntimeError(f'训练/部署路径漂移: {gap}')
                 rows.append(dict(index=int(index),mse=float(np.mean((pred[...,:8]-target[...,:8])**2)),
                     arm_mae_rad=float(np.abs(physical[:,:7]-truth[:,:7]).mean()),gripper_mae_rad=float(np.abs(physical[:,7]-truth[:,7]).mean()),
                     first_position_mm=float(np.linalg.norm(pose(physical[0])-pose(truth[0]))*1000)))
@@ -122,14 +162,22 @@ def main():
         return record
     try:
         initial=evaluate(0);started=time.perf_counter();key=jax.random.key(43)
-        schedule=rng.choice(train,args.steps,replace=True)
+        sample_weights=np.concatenate([np.full(r['frames'],r.get('sampling_weight',1.)) for r in cache.rows])
+        if len(sample_weights)!=len(cache) or not np.isfinite(sample_weights).all() or (sample_weights<=0).any():raise ValueError('Invalid sampling weights')
+        probabilities=sample_weights[train]/sample_weights[train].sum()
+        schedule=rng.choice(train,args.steps,replace=True) if np.all(sample_weights==sample_weights[0]) else rng.choice(train,args.steps,replace=True,p=probabilities)
         for step,index in enumerate(schedule,1):
-            key,subkey=jax.random.split(key);params,opt,metrics=update(params,opt,subkey,*jax.device_put(batch(int(index))))
+            key,subkey=jax.random.split(key);params,opt,metrics=update(params,opt,subkey,*jax.device_put(batch(int(index))),jax.device_put(jacobians[int(index)]))
             metrics={k:float(v) for k,v in jax.device_get(metrics).items()}
             if not all(np.isfinite(v) for v in metrics.values()) or metrics['update_norm']==0:raise RuntimeError(metrics)
             with (output/'metrics.jsonl').open('a') as f:f.write(json.dumps(dict(step=step,query_index=int(index),**metrics))+'\n')
             if step==1 or step%100==0:print(f'step={step} loss={metrics["loss"]:.6f} grad_norm={metrics["grad_norm"]:.4f} elapsed={time.perf_counter()-started:.0f}s',flush=True)
             if step%args.eval_every==0 or step==args.steps:final=evaluate(step)
+            if args.save_every and step%args.save_every==0 and step<args.steps:
+                interim=save_checkpoint(cfg,params,opt,cfg.data.create(cfg.assets_dirs,cfg.model),step=step)
+                (interim/'input_protocol.json').write_text(json.dumps(protocol,indent=2)+'\n')
+                (interim/'dataset_manifest.json').write_text(MANIFEST.read_text())
+                print('INTERMEDIATE_CHECKPOINT='+str(interim),flush=True)
         checkpoint=save_checkpoint(cfg,params,opt,cfg.data.create(cfg.assets_dirs,cfg.model),step=args.steps)
         (checkpoint/'input_protocol.json').write_text(json.dumps(protocol,indent=2)+'\n')
         (checkpoint/'dataset_manifest.json').write_text(MANIFEST.read_text())

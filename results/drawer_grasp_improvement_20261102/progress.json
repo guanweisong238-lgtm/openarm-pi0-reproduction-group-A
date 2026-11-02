@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "completed_at": "2026-11-02T19:28:47.226933+08:00",
+  "final_comparison": {
+    "complete": true,
+    "completed_at": "2026-11-02T19:28:47.226653+08:00",
+    "chosen_checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+    "training_improved_selection": false,
+    "results": {
+      "baseline020": {
+        "stage": "baseline020_final100",
+        "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+        "trials": 100,
+        "success": 85,
+        "groups": {
+          "expanded": {
+            "trials": 30,
+            "success": 19
+          },
+          "near": {
+            "trials": 70,
+            "success": 66
+          }
+        },
+        "output": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/grasp_improvement_20261102/baseline020_final100"
+      }
+    },
+    "final_test_used_for_model_selection": false
+  }
+}

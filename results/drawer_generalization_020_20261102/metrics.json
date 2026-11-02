@@ -1,0 +1,71 @@
+{
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+  "completed_at": "2026-11-02T10:51:37.281093+08:00",
+  "trials": 100,
+  "evidence_valid": 100,
+  "frozen_weights_verified": true,
+  "locked_inputs_verified": true,
+  "overall": {
+    "trials": 100,
+    "success": 84,
+    "success_rate": 0.84,
+    "peak_open_mm_median": 100.8518583594851,
+    "peak_open_mm_min": -0.0,
+    "peak_open_mm_max": 102.61257861665814,
+    "first_success_step_median": 153.0,
+    "simulation_seconds_median_on_success": 5.1,
+    "inference_p50_ms_median": 138.74205424872343,
+    "inference_p95_ms_median": 140.04655760054447,
+    "failure_modes": {
+      "single_finger": 14,
+      "grasp_slip": 1,
+      "no_contact": 1
+    },
+    "wilson95": [
+      0.7557973061072976,
+      0.8990471151119521
+    ]
+  },
+  "groups": {
+    "near": {
+      "trials": 70,
+      "success": 66,
+      "success_rate": 0.9428571428571428,
+      "peak_open_mm_median": 100.93127149998747,
+      "peak_open_mm_min": 11.650849663848282,
+      "peak_open_mm_max": 102.52384999229885,
+      "first_success_step_median": 151.5,
+      "simulation_seconds_median_on_success": 5.05,
+      "inference_p50_ms_median": 138.7367080005788,
+      "inference_p95_ms_median": 140.16994195335428,
+      "failure_modes": {
+        "single_finger": 3,
+        "grasp_slip": 1
+      },
+      "wilson95": [
+        0.8620804952516177,
+        0.9775562208992887
+      ]
+    },
+    "expanded": {
+      "trials": 30,
+      "success": 18,
+      "success_rate": 0.6,
+      "peak_open_mm_median": 100.70631214084901,
+      "peak_open_mm_min": -0.0,
+      "peak_open_mm_max": 102.61257861665814,
+      "first_success_step_median": 174.5,
+      "simulation_seconds_median_on_success": 5.816666666666666,
+      "inference_p50_ms_median": 138.74961849978718,
+      "inference_p95_ms_median": 139.8541985772681,
+      "failure_modes": {
+        "no_contact": 1,
+        "single_finger": 11
+      },
+      "wilson95": [
+        0.42320360253322475,
+        0.7540937188319815
+      ]
+    }
+  }
+}

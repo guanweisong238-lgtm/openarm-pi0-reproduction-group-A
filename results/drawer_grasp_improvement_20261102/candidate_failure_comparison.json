@@ -1,0 +1,548 @@
+{
+  "scope": "Read-only paired development-case comparison; final-test trajectories are not read; no training labels or parameter changes.",
+  "comparisons": [
+    {
+      "step": 2000,
+      "episode_id": 300,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 2000,
+      "episode_id": 301,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 2000,
+      "episode_id": 302,
+      "baseline_success": true,
+      "candidate_success": false
+    },
+    {
+      "step": 2000,
+      "episode_id": 303,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 2000,
+      "episode_id": 304,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 2000,
+      "episode_id": 305,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 2000,
+      "episode_id": 306,
+      "baseline_success": true,
+      "candidate_success": false
+    },
+    {
+      "step": 2000,
+      "episode_id": 307,
+      "baseline_success": true,
+      "candidate_success": false
+    },
+    {
+      "step": 2000,
+      "episode_id": 308,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 2000,
+      "episode_id": 309,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 2000,
+      "episode_id": 310,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 2000,
+      "episode_id": 311,
+      "baseline_success": true,
+      "candidate_success": false
+    },
+    {
+      "step": 2000,
+      "episode_id": 312,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 2000,
+      "episode_id": 313,
+      "baseline_success": false,
+      "candidate_success": false
+    },
+    {
+      "step": 2000,
+      "episode_id": 314,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 2000,
+      "episode_id": 315,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 300,
+      "baseline_success": true,
+      "candidate_success": false
+    },
+    {
+      "step": 4000,
+      "episode_id": 301,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 302,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 303,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 304,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 305,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 306,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 307,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 308,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 309,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 310,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 311,
+      "baseline_success": true,
+      "candidate_success": false
+    },
+    {
+      "step": 4000,
+      "episode_id": 312,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 313,
+      "baseline_success": false,
+      "candidate_success": false
+    },
+    {
+      "step": 4000,
+      "episode_id": 314,
+      "baseline_success": true,
+      "candidate_success": true
+    },
+    {
+      "step": 4000,
+      "episode_id": 315,
+      "baseline_success": true,
+      "candidate_success": true
+    }
+  ],
+  "regressions": [
+    {
+      "candidate_step": 2000,
+      "episode_id": 302,
+      "group": "near",
+      "baseline_trial": "logs/a2_pi0/grasp_improvement_20261102/baseline_selection16/trial_003_episode_302",
+      "candidate_trial": "logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_022_contact_expanded_2000_selection16/trial_003_episode_302",
+      "initial_qpos_qvel_and_noise_equal": true,
+      "first_requested_right8_delta_rad": [
+        -0.0007328778850967943,
+        0.0008638934791607156,
+        -0.0018661698765672363,
+        -0.0014475838891516712,
+        -0.00034605558799660763,
+        0.0012341109517830517,
+        0.004126720429922015,
+        0.005360491589554595
+      ],
+      "first_right_arm_action_max_delta_rad": 0.004126720429922015,
+      "grasp_point_world_difference_at30_or_last_mm": 20.981788939549848,
+      "baseline": {
+        "first_contact_step": 85,
+        "first_grasp_step": 94,
+        "max_bilateral_streak": 31,
+        "closest_nominal_grasp_point_first150_mm": 23.705569265806748,
+        "peak_open_mm": 94.16774340597763,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          45,
+          0,
+          0,
+          0
+        ]
+      },
+      "candidate": {
+        "first_contact_step": null,
+        "first_grasp_step": null,
+        "max_bilateral_streak": 0,
+        "closest_nominal_grasp_point_first150_mm": 28.160477092980457,
+        "peak_open_mm": -0.0,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          0,
+          0
+        ]
+      },
+      "raw_sha256": {
+        "baseline": "7720d296947caf1077780a5233153c5b4dc4ba3d2c534244eb2e32741106cb75",
+        "candidate": "a33ec66d12ffe5a2bdaeb325b87e3e57025faefdf84df19b3e651787750a515d"
+      }
+    },
+    {
+      "candidate_step": 2000,
+      "episode_id": 306,
+      "group": "near",
+      "baseline_trial": "logs/a2_pi0/grasp_improvement_20261102/baseline_selection16/trial_007_episode_306",
+      "candidate_trial": "logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_022_contact_expanded_2000_selection16/trial_007_episode_306",
+      "initial_qpos_qvel_and_noise_equal": true,
+      "first_requested_right8_delta_rad": [
+        -0.0004527469545799745,
+        0.0018614690098530673,
+        -0.0011645579674165463,
+        -0.0009444221368448691,
+        -0.0001299865082784457,
+        0.0016203513001425973,
+        0.007169181880298248,
+        0.003151111698048825
+      ],
+      "first_right_arm_action_max_delta_rad": 0.007169181880298248,
+      "grasp_point_world_difference_at30_or_last_mm": 10.561340555258285,
+      "baseline": {
+        "first_contact_step": 85,
+        "first_grasp_step": 178,
+        "max_bilateral_streak": 14,
+        "closest_nominal_grasp_point_first150_mm": 10.756651416556528,
+        "peak_open_mm": 102.64933902852154,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ]
+      },
+      "candidate": {
+        "first_contact_step": 81,
+        "first_grasp_step": null,
+        "max_bilateral_streak": 0,
+        "closest_nominal_grasp_point_first150_mm": 12.953180828834538,
+        "peak_open_mm": 31.589501585869353,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          26,
+          0,
+          0,
+          0
+        ]
+      },
+      "raw_sha256": {
+        "baseline": "bbf32c73cfa4c05a1151ed5c02975478e6d28d8f653e4272c72c5585f470f5b8",
+        "candidate": "24392484b0baff38f316b0d83fbb2efb9253b1cda0f887fdf4edc8597e55f0e2"
+      }
+    },
+    {
+      "candidate_step": 2000,
+      "episode_id": 307,
+      "group": "near",
+      "baseline_trial": "logs/a2_pi0/grasp_improvement_20261102/baseline_selection16/trial_008_episode_307",
+      "candidate_trial": "logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_022_contact_expanded_2000_selection16/trial_008_episode_307",
+      "initial_qpos_qvel_and_noise_equal": true,
+      "first_requested_right8_delta_rad": [
+        -0.0002758442215189394,
+        0.0006605715789103073,
+        -0.001070612069745791,
+        -0.001691795896973991,
+        0.00015076079598896897,
+        0.0007683193459780968,
+        0.0034419616121799113,
+        0.005453784729409383
+      ],
+      "first_right_arm_action_max_delta_rad": 0.0034419616121799113,
+      "grasp_point_world_difference_at30_or_last_mm": 14.539617794100062,
+      "baseline": {
+        "first_contact_step": 81,
+        "first_grasp_step": 98,
+        "max_bilateral_streak": 28,
+        "closest_nominal_grasp_point_first150_mm": 8.04154453453892,
+        "peak_open_mm": 101.20930351157509,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          38,
+          0,
+          0,
+          0
+        ]
+      },
+      "candidate": {
+        "first_contact_step": 78,
+        "first_grasp_step": null,
+        "max_bilateral_streak": 0,
+        "closest_nominal_grasp_point_first150_mm": 9.909149363602875,
+        "peak_open_mm": 2.4878841994233376,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          38,
+          0,
+          0,
+          0
+        ]
+      },
+      "raw_sha256": {
+        "baseline": "b2ac5da45ae481a1035c9ad002ac63d869a24be656b292183800e24851c64f17",
+        "candidate": "981ccdb61b48e063d3fe373d35e0f6fd4b9a506c094c3a87e28d3d6b14051005"
+      }
+    },
+    {
+      "candidate_step": 2000,
+      "episode_id": 311,
+      "group": "expanded",
+      "baseline_trial": "logs/a2_pi0/grasp_improvement_20261102/baseline_selection16/trial_012_episode_311",
+      "candidate_trial": "logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_022_contact_expanded_2000_selection16/trial_012_episode_311",
+      "initial_qpos_qvel_and_noise_equal": true,
+      "first_requested_right8_delta_rad": [
+        -0.00046462449240858295,
+        0.0003446155655280059,
+        -0.0020456488087742253,
+        -0.0017655228974429171,
+        -0.00013198267708069977,
+        0.0008818191117584417,
+        0.003697941394735449,
+        0.006042765624470037
+      ],
+      "first_right_arm_action_max_delta_rad": 0.003697941394735449,
+      "grasp_point_world_difference_at30_or_last_mm": 16.85205019822198,
+      "baseline": {
+        "first_contact_step": 86,
+        "first_grasp_step": 93,
+        "max_bilateral_streak": 54,
+        "closest_nominal_grasp_point_first150_mm": 24.406929904324315,
+        "peak_open_mm": 90.53374308819556,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          38,
+          0,
+          0,
+          0
+        ]
+      },
+      "candidate": {
+        "first_contact_step": 86,
+        "first_grasp_step": 99,
+        "max_bilateral_streak": 27,
+        "closest_nominal_grasp_point_first150_mm": 26.50853220143249,
+        "peak_open_mm": 77.88440132537316,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          46,
+          0,
+          0,
+          0
+        ]
+      },
+      "raw_sha256": {
+        "baseline": "8ddeee77ba7d43f922f8076fe5fed65adc0530e89c78815db362e6057760df07",
+        "candidate": "b2d10ae4807f0981ebd560bb7630d39de05b7e1cbb2d59e76769c2eed564e42b"
+      }
+    },
+    {
+      "candidate_step": 4000,
+      "episode_id": 300,
+      "group": "near",
+      "baseline_trial": "logs/a2_pi0/grasp_improvement_20261102/baseline_selection16/trial_001_episode_300",
+      "candidate_trial": "logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_022_contact_expanded_4000_selection16/trial_001_episode_300",
+      "initial_qpos_qvel_and_noise_equal": true,
+      "first_requested_right8_delta_rad": [
+        -5.238772393068025e-05,
+        0.00029719846978126796,
+        -0.0010805255837810224,
+        -0.0015322217001885186,
+        -8.180170206140147e-05,
+        0.0011911758928079275,
+        0.0025522137686113666,
+        0.001701284883290799
+      ],
+      "first_right_arm_action_max_delta_rad": 0.0025522137686113666,
+      "grasp_point_world_difference_at30_or_last_mm": 6.36295306828057,
+      "baseline": {
+        "first_contact_step": 83,
+        "first_grasp_step": 106,
+        "max_bilateral_streak": 29,
+        "closest_nominal_grasp_point_first150_mm": 12.878413805410034,
+        "peak_open_mm": 100.6918995001766,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          39,
+          0,
+          0,
+          0
+        ]
+      },
+      "candidate": {
+        "first_contact_step": 67,
+        "first_grasp_step": null,
+        "max_bilateral_streak": 0,
+        "closest_nominal_grasp_point_first150_mm": 16.468324257338097,
+        "peak_open_mm": 5.392714905124289,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0
+        ]
+      },
+      "raw_sha256": {
+        "baseline": "a657c06add1829aad614565a0ea76e5044795e6cb07261befb234243363b4ee8",
+        "candidate": "bd52a17ec0f0cbe791ac8d91467af6c1af51b1c45e7de8471af192788a8e7e34"
+      }
+    },
+    {
+      "candidate_step": 4000,
+      "episode_id": 311,
+      "group": "expanded",
+      "baseline_trial": "logs/a2_pi0/grasp_improvement_20261102/baseline_selection16/trial_012_episode_311",
+      "candidate_trial": "logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_022_contact_expanded_4000_selection16/trial_012_episode_311",
+      "initial_qpos_qvel_and_noise_equal": true,
+      "first_requested_right8_delta_rad": [
+        -0.0016337326632780425,
+        -3.7880365683751194e-05,
+        -0.001961720806456957,
+        -0.0012424410129365793,
+        -0.0004142609662700636,
+        0.0013534870119629172,
+        0.002728974924969041,
+        0.002708850793721712
+      ],
+      "first_right_arm_action_max_delta_rad": 0.002728974924969041,
+      "grasp_point_world_difference_at30_or_last_mm": 18.33667752697494,
+      "baseline": {
+        "first_contact_step": 86,
+        "first_grasp_step": 93,
+        "max_bilateral_streak": 54,
+        "closest_nominal_grasp_point_first150_mm": 24.406929904324315,
+        "peak_open_mm": 90.53374308819556,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          38,
+          0,
+          0,
+          0
+        ]
+      },
+      "candidate": {
+        "first_contact_step": 87,
+        "first_grasp_step": 97,
+        "max_bilateral_streak": 19,
+        "closest_nominal_grasp_point_first150_mm": 19.515537957943046,
+        "peak_open_mm": 83.35562058494966,
+        "clipped_steps_first150_per_right_dof": [
+          0,
+          0,
+          0,
+          0,
+          46,
+          0,
+          0,
+          0
+        ]
+      },
+      "raw_sha256": {
+        "baseline": "8ddeee77ba7d43f922f8076fe5fed65adc0530e89c78815db362e6057760df07",
+        "candidate": "cdfe5d6baf802f4d4fbd8fdca7c3b058ca1acc64706c23a176237be3ba8bb6d8"
+      }
+    }
+  ],
+  "caution": "Nominal grasp point is not an actual finger contact point. Output/trajectory differences are observations, not a single-parameter causal ablation."
+}

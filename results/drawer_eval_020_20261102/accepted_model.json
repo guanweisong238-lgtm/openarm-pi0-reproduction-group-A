@@ -1,0 +1,29 @@
+{
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+  "checkpoint_protocol_sha256": "5cf3c5a364fcb9d4978058f7d3e046144bc1db90c3d771dd35481b97feef4cf4",
+  "target_achieved": true,
+  "stages": [
+    {
+      "name": "gate_a",
+      "trials": 2,
+      "success": 2,
+      "passed": true,
+      "path": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/repair_screen_020_2000/gate_a"
+    },
+    {
+      "name": "gate_b",
+      "trials": 2,
+      "success": 2,
+      "passed": true,
+      "path": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/repair_screen_020_2000/gate_b"
+    },
+    {
+      "name": "full_33",
+      "trials": 33,
+      "success": 33,
+      "passed": true,
+      "path": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/repair_screen_020_2000/full_33"
+    }
+  ],
+  "protocol": "docs/drawer-repair-eval-protocol.md"
+}

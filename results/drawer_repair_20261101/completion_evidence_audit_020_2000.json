@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+  "trials": 33,
+  "success": 33,
+  "evidence_valid": 33,
+  "independent_assessor_success": 33,
+  "all_same_checkpoint": true,
+  "all_runtime_sources_match_frozen_snapshot": true,
+  "no_teacher_actions": true,
+  "no_intermediate_state_injections": true,
+  "all_zero_qpos_qvel_contact_force_replay_error": true,
+  "min_longest_bilateral_streak": 5,
+  "min_longest_open_hold_streak": 30,
+  "fixed_noise42_verified": true,
+  "train_gate_full_run_physical_trace_identical": [
+    9,
+    10,
+    11,
+    12
+  ],
+  "pooled_inference_latency_ms": {
+    "count": 1241,
+    "p50": 138.4011689988256,
+    "p95": 139.50926200050162
+  }
+}

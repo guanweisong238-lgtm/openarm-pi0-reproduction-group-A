@@ -53,6 +53,7 @@ def main():
     parser.add_argument('--episode-ids',type=int,nargs='+',help='显式指定清单中的轨迹起点，保留原始split标签')
     parser.add_argument('--auto-next',action='store_true',help='到时后自动完成下一条，最后退出')
     parser.add_argument('--prepare-only',action='store_true')
+    parser.add_argument('--weight-precision',choices=('auto','bfloat16','checkpoint'),default='auto')
     args=parser.parse_args()
     if args.seconds<=0 or args.seed<0 or (args.seeds and min(args.seeds)<0):parser.error('时长/seed不合法')
     if args.phase_diagnostic and args.start_diagnostic:parser.error('请选择一种诊断范围')
@@ -99,7 +100,12 @@ def main():
     from openpi.policies import policy_config
     from drawer_start_fit_config import get_policy_config
     print('LOADING_POLICY',args.checkpoint,flush=True)
-    policy=policy_config.create_trained_policy(get_policy_config(protocol),args.checkpoint,sample_kwargs={'num_steps':int(protocol.get('sampling_steps',10))})
+    weight_precision=protocol.get('recommended_weight_precision','bfloat16') if args.weight_precision=='auto' else args.weight_precision
+    if weight_precision=='checkpoint':
+        from drawer_policy_loader import create_checkpoint_precision_policy
+        policy=create_checkpoint_precision_policy(get_policy_config(protocol),args.checkpoint,{'num_steps':int(protocol.get('sampling_steps',10))})
+    else:
+        policy=policy_config.create_trained_policy(get_policy_config(protocol),args.checkpoint,sample_kwargs={'num_steps':int(protocol.get('sampling_steps',10))})
     policy_diagnostics={}
     if protocol.get('state_representation')=='position_velocity16':
         velocity_kernel=np.asarray(policy._model.state_proj.kernel.value,np.float32)[16:24]
@@ -132,7 +138,7 @@ def main():
             if observed:
                 np.savez_compressed(directory/'closed_loop.npz',**{k:np.asarray([r[k] for r in observed]) for k in observed[0]},
                                     action_blocks=np.asarray(blocks),inference_seconds=np.asarray(times),inference_noise=np.asarray(inference_noises))
-            summary=dict(checkpoint=str(args.checkpoint),task=args.task,policy_diagnostics=policy_diagnostics,episode_id=row['episode_id'],split=row['split'],
+            summary=dict(checkpoint=str(args.checkpoint),weight_precision=weight_precision,task=args.task,policy_diagnostics=policy_diagnostics,episode_id=row['episode_id'],split=row['split'],
                 initialization=row['initialization_group'],noise_seed=trial_seed,steps=len(observed),seconds=len(observed)/30,
                 peak_open_mm=max((r['opening'] for r in observed),default=0)*1000,
                 final_open_mm=state.get('opening',0)*1000,judge=state,termination=reason,

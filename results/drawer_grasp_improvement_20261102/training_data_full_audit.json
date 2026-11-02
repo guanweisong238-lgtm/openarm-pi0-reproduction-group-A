@@ -1,0 +1,24 @@
+{
+  "queries": 7647,
+  "max_action_decode_error_rad": 2.440169253326019e-07,
+  "max_right_state_decode_error_rad": 1.310291133371777e-07,
+  "parent_ids": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "label_sources": {
+    "expert_feedback": 7072,
+    "recorded_policy016": 575
+  },
+  "all_samples_checked": true,
+  "no_heldout_parent_ids": true,
+  "left_normalized_state_masked": true
+}

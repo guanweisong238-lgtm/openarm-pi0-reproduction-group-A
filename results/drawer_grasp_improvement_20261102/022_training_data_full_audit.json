@@ -1,0 +1,39 @@
+{
+  "queries": 7972,
+  "all_samples_checked": true,
+  "max_action_decode_error_rad": 2.440169253326019e-07,
+  "parents": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "labels": {
+    "expert_feedback": 7072,
+    "recorded_policy016": 575,
+    "recorded_policy020": 325
+  },
+  "policy020_rehearsal_parents": [
+    0,
+    1,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "policy020_replay_max_error": 0.0,
+  "policy020_source_checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+  "policy020_rehearsal_weight": 12,
+  "no_heldout_parents": true,
+  "left_state_masked": true
+}

@@ -226,6 +226,7 @@ __marimo__/
 # 1. Secrets and local environment settings
 .env.*
 !.env.example
+!.env.example.*
 *.pem
 *.key
 /.aws/
@@ -259,6 +260,8 @@ models/checkpoints/
 *.pt
 *.pth
 *.msgpack
+*.onnx
+*.gguf
 
 # PyTorch / Hugging Face binary model weights
 pytorch_model.bin
@@ -277,6 +280,9 @@ simulation_outputs/
 /.cache/
 /.hf_cache/
 /.uv-cache/
+/.jax_cache/
+/.jax_compilation_cache/
+/.torch/
 
 # 5. Generated videos
 results/videos/
@@ -287,6 +293,18 @@ results/videos/
 /results/**/*.webm
 /results/**/*.mkv
 /results/**/*.mov
+/results/**/*.h5
+/results/**/*.hdf5
+/results/**/*.pkl
+/results/**/*.pickle
+
+# 结果目录内的权重副本、训练状态和压缩产物；图表和报告继续跟踪。
+/results/**/params/
+/results/**/optimizer/
+/results/**/*.zip
+/results/**/*.tar
+/results/**/*.tar.gz
+/results/**/*.tar.zst
 
 # 清理归档保留配置/协议/统计；参数与优化器内部文件不进入Git。
 /results/**/metadata/**/params/
@@ -306,3 +324,7 @@ MUJOCO_LOG.TXT
 *.swp
 *.swo
 *~
+*.tmp
+*.temp
+/.tmp/
+/tmp/

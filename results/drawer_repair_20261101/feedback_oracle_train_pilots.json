@@ -1,0 +1,56 @@
+[
+  {
+    "parent": 9,
+    "reference": "data/drawer_recovery/targeted_20261101/episode009_step0030",
+    "steps": 102,
+    "peak_open_mm": 84.48010891788613,
+    "judge": {
+      "opening": 0.082938491802285,
+      "grasp_streak": 48,
+      "grasped": true,
+      "open_streak": 30,
+      "opened": true,
+      "closed_streak": 0,
+      "pulling_contact": true,
+      "pull_success": true,
+      "success": true
+    },
+    "model_success_evidence": false
+  },
+  {
+    "parent": 10,
+    "reference": "data/drawer_recovery/targeted_20261101/episode010_step0030",
+    "steps": 145,
+    "peak_open_mm": 84.8112055851253,
+    "judge": {
+      "opening": 0.08326293314456532,
+      "grasp_streak": 48,
+      "grasped": true,
+      "open_streak": 30,
+      "opened": true,
+      "closed_streak": 0,
+      "pulling_contact": true,
+      "pull_success": true,
+      "success": true
+    },
+    "model_success_evidence": false
+  },
+  {
+    "parent": 11,
+    "reference": "data/drawer_recovery/targeted_20261101/episode011_step0030",
+    "steps": 147,
+    "peak_open_mm": 84.70571868625474,
+    "judge": {
+      "opening": 0.08309875434875481,
+      "grasp_streak": 60,
+      "grasped": true,
+      "open_streak": 30,
+      "opened": true,
+      "closed_streak": 0,
+      "pulling_contact": true,
+      "pull_success": true,
+      "success": true
+    },
+    "model_success_evidence": false
+  }
+]

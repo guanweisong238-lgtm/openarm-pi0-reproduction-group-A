@@ -1,0 +1,247 @@
+{
+  "identity": "45865b20503a36b52717bf9f8da37a51c7ec93a1e3e9c1c168de0dd3a4c6c3a4",
+  "split": "train",
+  "episodes": [
+    {
+      "episode_id": 0,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_000",
+      "split": "train",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/diverse_rgb/approach_side_neg",
+      "source_episode_sha256": "5e1bf46cd40955a1c3b22bc17a8ce82b008558ed2d72b3126c1b3048b4861ab3",
+      "episode_sha256": "5e1bf46cd40955a1c3b22bc17a8ce82b008558ed2d72b3126c1b3048b4861ab3",
+      "action_sha256": "dc4fac359e8666ae99e1b52c741789fe0c40f0f4f16c0ad7283e0af3a058122c",
+      "condition_group": "55590e4ea6fc9fbeb792601d9c5c8509081475161f34fa8046f74e19ff073183",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 1,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_001",
+      "split": "train",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/diverse_rgb/approach_side_pos",
+      "source_episode_sha256": "9f466453a7824f4ab41e557b1e7bac5d260b10e83e4a5356614dc5905366cee0",
+      "episode_sha256": "9f466453a7824f4ab41e557b1e7bac5d260b10e83e4a5356614dc5905366cee0",
+      "action_sha256": "e4b9594a6811294d6c3ef5d6fb906d0e5c17a395ebd72c04b56574fe57463f80",
+      "condition_group": "bea174b05777c4f1e39294d3f7718faa7e7f84e2e106961e2bf321e5e2288459",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 4,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_004",
+      "split": "train",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/pilot_rgb/pitch12",
+      "source_episode_sha256": "24015854dcb2261d3aa4a5ee7491de2ef72695de5287bbbfee892143a4f927a4",
+      "episode_sha256": "24015854dcb2261d3aa4a5ee7491de2ef72695de5287bbbfee892143a4f927a4",
+      "action_sha256": "6b3c1182544857a2e9ca5f27f83ff814dd4b8fb3a927f718c61bb3972bba0999",
+      "condition_group": "9a4a9712a37e671dfc6929e61ef9d3e40b97afa01d6c1c3d5037e93b32fdd650",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 5,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_005",
+      "split": "train",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/pilot_rgb/pitch18",
+      "source_episode_sha256": "84c106731ce078775e3ec16b3d65829ee4e6dbaf9460e59833b25c33a53830ea",
+      "episode_sha256": "84c106731ce078775e3ec16b3d65829ee4e6dbaf9460e59833b25c33a53830ea",
+      "action_sha256": "360c3f499c07198c48325d586b47f201faaac879d8bb3cfba3e1f451a6766e80",
+      "condition_group": "9a4a9712a37e671dfc6929e61ef9d3e40b97afa01d6c1c3d5037e93b32fdd650",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 7,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_007",
+      "split": "train",
+      "frames": 1738,
+      "source_path": "data/drawer_human/session_20261024_154326/episode_001",
+      "source_episode_sha256": "775e884d4b0e4f56596912dadb8f2d5a21206473533588b382dfb12242585a0b",
+      "episode_sha256": "775e884d4b0e4f56596912dadb8f2d5a21206473533588b382dfb12242585a0b",
+      "action_sha256": "5fc060c6fe961f8d3c19cfd13f551d48ecb8131fa090ef3383c21bcfa2ce374c",
+      "condition_group": "b4b21c32c92954bba7d55c9fc681d9f97f166e86a2e1c17e90291391a04a0ef8",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "handle_assembly: drawer_handle + drawer_handle_stem1 + drawer_handle_stem2",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 8,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_008",
+      "split": "train",
+      "frames": 1149,
+      "source_path": "data/drawer_human/session_20261024_154326/episode_003",
+      "source_episode_sha256": "0326662637b9eb3e049a64e7d71f45da6db3a46a4ac71970d638b9b02926bf9c",
+      "episode_sha256": "0326662637b9eb3e049a64e7d71f45da6db3a46a4ac71970d638b9b02926bf9c",
+      "action_sha256": "c06c19199d87b39737fff2dfdc9d41ae8e4d1ed0e6a626c91b28f391d2944f1c",
+      "condition_group": "4d4ab80922a35b6abaf81c20510fd3b3f7015e46ac0ea53750745890b04b68ac",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "handle_assembly: drawer_handle + drawer_handle_stem1 + drawer_handle_stem2",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 9,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_009",
+      "split": "train",
+      "frames": 1185,
+      "source_path": "data/drawer_human/session_20261024_154326/episode_004",
+      "source_episode_sha256": "564dda01bc8e00a60358952564f4916ec8bf83fc837ea3debf19781cde79fc43",
+      "episode_sha256": "564dda01bc8e00a60358952564f4916ec8bf83fc837ea3debf19781cde79fc43",
+      "action_sha256": "4242bcf68d071c8c2e842222bedd95cef81b7e8cb17bc9a6df30f42ad944b6c5",
+      "condition_group": "e2a34d1f4cef7e1fe850ee0b128c275a98df9ad1eb3f333372b6c7c9a3086783",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "handle_assembly: drawer_handle + drawer_handle_stem1 + drawer_handle_stem2",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 10,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_010",
+      "split": "train",
+      "frames": 1257,
+      "source_path": "data/drawer_human/session_20261024_154326/episode_006",
+      "source_episode_sha256": "f49f4799c0ba37e567808bca66c9404cceb09926970e76139ce36499812709ef",
+      "episode_sha256": "f49f4799c0ba37e567808bca66c9404cceb09926970e76139ce36499812709ef",
+      "action_sha256": "fc4f97f2eb8344561ce2d7b167f5471f8cd299123e15e66b50914b8fe14522a7",
+      "condition_group": "c3ead288e9f139ece890d7e315ed354422415c93633474fd5b8ff9324213eea6",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "handle_assembly: drawer_handle + drawer_handle_stem1 + drawer_handle_stem2",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 11,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_011",
+      "split": "train",
+      "frames": 993,
+      "source_path": "data/drawer_human/session_20261024_154326/episode_008",
+      "source_episode_sha256": "b364e150812768961d25c8c6e49a171a909a1a890cd5f40df008a58a4a3c4ed8",
+      "episode_sha256": "b364e150812768961d25c8c6e49a171a909a1a890cd5f40df008a58a4a3c4ed8",
+      "action_sha256": "7751fa27cfb664b5bad1246cbd5975652d6cd06bba2b6a19592b1846f7fe29d2",
+      "condition_group": "18c1becc370f858abf9a21b69b423077141c1086f8aec6e8dc295a749e3c3594",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "handle_assembly: drawer_handle + drawer_handle_stem1 + drawer_handle_stem2",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 12,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_012",
+      "split": "train",
+      "frames": 462,
+      "source_path": "data/drawer_trial/contact_roundtrip_rgb_001",
+      "source_episode_sha256": "3162d2d2817fdbda8ae5f30c93856321157ae5b1e1b7cd4695c99528a6a1ed87",
+      "episode_sha256": "3162d2d2817fdbda8ae5f30c93856321157ae5b1e1b7cd4695c99528a6a1ed87",
+      "action_sha256": "5e43a3ddaf39c751e32bc42d1d19ed6d8a54dfd937989a2f1f1a7ea7b0a5a0e7",
+      "condition_group": "9a4a9712a37e671dfc6929e61ef9d3e40b97afa01d6c1c3d5037e93b32fdd650",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    }
+  ],
+  "fields": [
+    {
+      "path": [
+        "state"
+      ],
+      "file": "field_00.npy",
+      "dtype": "float32"
+    },
+    {
+      "path": [
+        "image",
+        "base_0_rgb"
+      ],
+      "file": "field_01.npy",
+      "dtype": "uint8"
+    },
+    {
+      "path": [
+        "image",
+        "left_wrist_0_rgb"
+      ],
+      "file": "field_02.npy",
+      "dtype": "uint8"
+    },
+    {
+      "path": [
+        "image",
+        "right_wrist_0_rgb"
+      ],
+      "file": "field_03.npy",
+      "dtype": "uint8"
+    },
+    {
+      "path": [
+        "image_mask",
+        "base_0_rgb"
+      ],
+      "file": "field_04.npy",
+      "dtype": "bool"
+    },
+    {
+      "path": [
+        "image_mask",
+        "left_wrist_0_rgb"
+      ],
+      "file": "field_05.npy",
+      "dtype": "bool"
+    },
+    {
+      "path": [
+        "image_mask",
+        "right_wrist_0_rgb"
+      ],
+      "file": "field_06.npy",
+      "dtype": "bool"
+    },
+    {
+      "path": [
+        "actions"
+      ],
+      "file": "field_07.npy",
+      "dtype": "float32"
+    },
+    {
+      "path": [
+        "tokenized_prompt"
+      ],
+      "file": "field_08.npy",
+      "dtype": "int32"
+    },
+    {
+      "path": [
+        "tokenized_prompt_mask"
+      ],
+      "file": "field_09.npy",
+      "dtype": "bool"
+    }
+  ],
+  "frames": 8632,
+  "float_inputs": "float32",
+  "images": "uint8; no augmentation cached; training augmentation remains active"
+}

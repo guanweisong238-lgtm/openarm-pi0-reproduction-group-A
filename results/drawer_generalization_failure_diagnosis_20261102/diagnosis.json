@@ -1,0 +1,5506 @@
+{
+  "scope": "Read-only diagnosis of observed test failures; no held-out training snapshots, expert labels, or gradients.",
+  "records": [
+    {
+      "episode_id": 200,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 102.41561949680246,
+      "control_steps": 144,
+      "bilateral_steps": 40,
+      "max_bilateral_streak": 12,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        51,
+        51
+      ],
+      "max_force_N": [
+        21.621003769129356,
+        42.180515018765846
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.014331426919710566,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_001_episode_200",
+      "source_sha256": "1223eb8eba60bf755b9ee2668e21c344116561fbee12e234a9ce984702b0a9f1"
+    },
+    {
+      "episode_id": 201,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.5031427755884,
+      "control_steps": 203,
+      "bilateral_steps": 45,
+      "max_bilateral_streak": 5,
+      "first_contact_step": 90,
+      "contact_steps_per_finger": [
+        66,
+        59
+      ],
+      "max_force_N": [
+        30.24786826060093,
+        13.607114256644355
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        34,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.017794641218031648,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_002_episode_201",
+      "source_sha256": "3e7a71e0f8695d0b60aedf4bb4d2283918d95af461e2be44b06e3c6c9a79aecc"
+    },
+    {
+      "episode_id": 202,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 102.43780388893474,
+      "control_steps": 222,
+      "bilateral_steps": 31,
+      "max_bilateral_streak": 5,
+      "first_contact_step": 97,
+      "contact_steps_per_finger": [
+        65,
+        57
+      ],
+      "max_force_N": [
+        41.923547238796594,
+        24.594979915277257
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        32,
+        15,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.015130722493741589,
+        0.005826789430576351,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_003_episode_202",
+      "source_sha256": "88e306f839550c8d3231508c9c53b010dafa615e265d2eaaeed8880937770ea3"
+    },
+    {
+      "episode_id": 203,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.22180414177106,
+      "control_steps": 172,
+      "bilateral_steps": 33,
+      "max_bilateral_streak": 9,
+      "first_contact_step": 83,
+      "contact_steps_per_finger": [
+        55,
+        46
+      ],
+      "max_force_N": [
+        26.721710406921538,
+        33.1298825691387
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        49,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        27,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01545013506913362,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_004_episode_203",
+      "source_sha256": "2da52b29cd7925eb262ad1f260ddb8c84ff1249033d8ee8d48cb3cd0bbd50dc6"
+    },
+    {
+      "episode_id": 204,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.04232898205404,
+      "control_steps": 203,
+      "bilateral_steps": 49,
+      "max_bilateral_streak": 5,
+      "first_contact_step": 85,
+      "contact_steps_per_finger": [
+        71,
+        81
+      ],
+      "max_force_N": [
+        20.013622628101015,
+        17.513136772896704
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        18,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        18,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.008412927737362574,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_005_episode_204",
+      "source_sha256": "d4907757dce9d8706f001c3f7709d0e4b610a07ba63bccd2485369da982e590d"
+    },
+    {
+      "episode_id": 205,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.51280857155595,
+      "control_steps": 147,
+      "bilateral_steps": 23,
+      "max_bilateral_streak": 11,
+      "first_contact_step": 81,
+      "contact_steps_per_finger": [
+        36,
+        32
+      ],
+      "max_force_N": [
+        10.393195042608113,
+        7.809331680570965
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        41,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        41,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.020087492601498225,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_006_episode_205",
+      "source_sha256": "99019436c5c67e1b5226a22e6b31ec6e20f01e1044e06ef8d5800bc25c701b5c"
+    },
+    {
+      "episode_id": 206,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 98.59690765170738,
+      "control_steps": 445,
+      "bilateral_steps": 62,
+      "max_bilateral_streak": 32,
+      "first_contact_step": 87,
+      "contact_steps_per_finger": [
+        66,
+        68
+      ],
+      "max_force_N": [
+        36.07267251028459,
+        35.11449173450802
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        261,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.013261911048237485,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_007_episode_206",
+      "source_sha256": "fc04ca0b112e27762901ff57b391c4e211fd254ac9a228d4139c078b8ccc8cf2"
+    },
+    {
+      "episode_id": 207,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.94560839662326,
+      "control_steps": 166,
+      "bilateral_steps": 34,
+      "max_bilateral_streak": 18,
+      "first_contact_step": 79,
+      "contact_steps_per_finger": [
+        61,
+        43
+      ],
+      "max_force_N": [
+        11.584688570875178,
+        39.6120412927017
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        37,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.014906321158282942,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_008_episode_207",
+      "source_sha256": "2c57a79f214436db0ba34993f291af45cbf2ae66b9d97c8e9a5fe33471e60522"
+    },
+    {
+      "episode_id": 208,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.89655324065139,
+      "control_steps": 157,
+      "bilateral_steps": 8,
+      "max_bilateral_streak": 5,
+      "first_contact_step": 86,
+      "contact_steps_per_finger": [
+        33,
+        22
+      ],
+      "max_force_N": [
+        10.005044920205917,
+        13.075989619660678
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        34,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.014770232711194708,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_009_episode_208",
+      "source_sha256": "d39ff9b871a98834814ebedade05a87166ffd4b6938320639cf8855d50e76b05"
+    },
+    {
+      "episode_id": 209,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.90603115549565,
+      "control_steps": 180,
+      "bilateral_steps": 41,
+      "max_bilateral_streak": 9,
+      "first_contact_step": 91,
+      "contact_steps_per_finger": [
+        63,
+        53
+      ],
+      "max_force_N": [
+        31.719338190997476,
+        21.4320824531634
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        45,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01365841932219558,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_010_episode_209",
+      "source_sha256": "bcecd07bebce81276ff5f717128dae63dec983f83c746845aa0bbbcc8d3087b4"
+    },
+    {
+      "episode_id": 210,
+      "group": "near",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 93.16457301058294,
+      "control_steps": 720,
+      "bilateral_steps": 5,
+      "max_bilateral_streak": 3,
+      "first_contact_step": 86,
+      "contact_steps_per_finger": [
+        36,
+        40
+      ],
+      "max_force_N": [
+        8.532518415908871,
+        8.754880422642843
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        176,
+        304,
+        220,
+        136,
+        461,
+        231,
+        272,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        31,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.08885214131056118,
+        0.08448651869573606,
+        0.024824048125934972,
+        0.032148785497898125,
+        0.024523338693988705,
+        0.030557074397353223,
+        0.14697083776258757,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_011_episode_210",
+      "source_sha256": "dcb89ed632f9e0913d0066240d3e69bfc6da58ef600c3586ce1124bc4d61cb87",
+      "closest_nominal_grasp_point_step": 68,
+      "closest_nominal_grasp_point_distance_mm": 16.731826112463498,
+      "closest_grasp_point_minus_handle_mm": [
+        -5.1212239373126245,
+        -15.923061854014374,
+        0.4279855544803146
+      ],
+      "closest_gripper_target_rad": -0.2454035519144782,
+      "closest_rotation_world": [
+        [
+          -0.0006219025886339269,
+          0.28332455812736757,
+          -0.9590238829138211
+        ],
+        [
+          -0.999993214740635,
+          -0.003658356636142557,
+          -0.0004323186480864605
+        ],
+        [
+          -0.0036309378762163225,
+          0.9590171068279517,
+          0.2833249108382183
+        ]
+      ]
+    },
+    {
+      "episode_id": 211,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.81832303579473,
+      "control_steps": 143,
+      "bilateral_steps": 17,
+      "max_bilateral_streak": 9,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        44,
+        24
+      ],
+      "max_force_N": [
+        24.116007014826337,
+        15.027008490040906
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.008449634845256071,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_012_episode_211",
+      "source_sha256": "56e32f115a0da3e8c917324fa035e03260b1f7767d6b1950988b1c2c3331dd7d"
+    },
+    {
+      "episode_id": 212,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.74139698974928,
+      "control_steps": 145,
+      "bilateral_steps": 38,
+      "max_bilateral_streak": 11,
+      "first_contact_step": 81,
+      "contact_steps_per_finger": [
+        49,
+        45
+      ],
+      "max_force_N": [
+        8.37393880714401,
+        9.610614579325363
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.004566592034372041,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_013_episode_212",
+      "source_sha256": "78f2138c520527b16091c1e755648839f8e1d9ee53bb212d470c2c14cc5b0eb0"
+    },
+    {
+      "episode_id": 213,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 102.1120676057247,
+      "control_steps": 250,
+      "bilateral_steps": 29,
+      "max_bilateral_streak": 5,
+      "first_contact_step": 89,
+      "contact_steps_per_finger": [
+        58,
+        69
+      ],
+      "max_force_N": [
+        41.20247685364265,
+        24.075337786811716
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        40,
+        32,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01452119241343297,
+        0.014046712905712355,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_014_episode_213",
+      "source_sha256": "1c3180b942dfd44d759c603642bde3b6a84def9abba540440e81492c429ee0c1"
+    },
+    {
+      "episode_id": 214,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 95.0391212409696,
+      "control_steps": 143,
+      "bilateral_steps": 55,
+      "max_bilateral_streak": 18,
+      "first_contact_step": 75,
+      "contact_steps_per_finger": [
+        62,
+        61
+      ],
+      "max_force_N": [
+        43.11994495625174,
+        28.402706810831397
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        47,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        47,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.016812806342999753,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_015_episode_214",
+      "source_sha256": "1130c725efbf2865bcaf3447cb98bad9296b70fb9458b5240fafd09ce9d68407"
+    },
+    {
+      "episode_id": 215,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.85137550211716,
+      "control_steps": 152,
+      "bilateral_steps": 16,
+      "max_bilateral_streak": 7,
+      "first_contact_step": 80,
+      "contact_steps_per_finger": [
+        46,
+        20
+      ],
+      "max_force_N": [
+        35.03197809507982,
+        12.194657230530858
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        26,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        26,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.011872613135354593,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_016_episode_215",
+      "source_sha256": "9ea8110f906bee8f0f68046e4435ccbb1e1b200793027188f81842d11112201d"
+    },
+    {
+      "episode_id": 216,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.13903566734949,
+      "control_steps": 132,
+      "bilateral_steps": 40,
+      "max_bilateral_streak": 17,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        46,
+        45
+      ],
+      "max_force_N": [
+        32.80971385192909,
+        33.4073038639584
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        40,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        40,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.015939879903085874,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_017_episode_216",
+      "source_sha256": "6dc9399bd3ef2119050bd6fa056ef328166ba1601209a6f31829ae10c201552d"
+    },
+    {
+      "episode_id": 217,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.22678411853907,
+      "control_steps": 155,
+      "bilateral_steps": 44,
+      "max_bilateral_streak": 15,
+      "first_contact_step": 82,
+      "contact_steps_per_finger": [
+        56,
+        51
+      ],
+      "max_force_N": [
+        13.09568405378192,
+        23.631069144269397
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        41,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01703626710620698,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_018_episode_217",
+      "source_sha256": "82205799540a0e61d9ef098f864da055cf9ea4325f6b9f4ea43301dfa9ac9113"
+    },
+    {
+      "episode_id": 218,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.04035677362425,
+      "control_steps": 147,
+      "bilateral_steps": 18,
+      "max_bilateral_streak": 14,
+      "first_contact_step": 79,
+      "contact_steps_per_finger": [
+        41,
+        26
+      ],
+      "max_force_N": [
+        14.010125906354611,
+        9.291529936093934
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        23,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        23,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01134107972120213,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_019_episode_218",
+      "source_sha256": "96890633db91acc95376b2687b18d965078903b17d382759ca17c7f0c7761a3d"
+    },
+    {
+      "episode_id": 219,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 89.70918520110901,
+      "control_steps": 155,
+      "bilateral_steps": 49,
+      "max_bilateral_streak": 27,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        55,
+        57
+      ],
+      "max_force_N": [
+        72.76006454347834,
+        49.62297468003629
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.010907938443539544,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_020_episode_219",
+      "source_sha256": "7517e99d7cae4074bb8675032e984dd3cf5e57e5bad3df1ca8da6c16046f0c72"
+    },
+    {
+      "episode_id": 220,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 93.60139059754749,
+      "control_steps": 399,
+      "bilateral_steps": 72,
+      "max_bilateral_streak": 23,
+      "first_contact_step": 74,
+      "contact_steps_per_finger": [
+        78,
+        80
+      ],
+      "max_force_N": [
+        60.46552836071224,
+        67.72359440873035
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        253,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        54,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01154372386091218,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_021_episode_220",
+      "source_sha256": "a126af75732e9736ba8b3f8d233cb2fa3a4d6f970371cdd3fa78bf1a0b114598"
+    },
+    {
+      "episode_id": 221,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.61566282823911,
+      "control_steps": 165,
+      "bilateral_steps": 37,
+      "max_bilateral_streak": 16,
+      "first_contact_step": 87,
+      "contact_steps_per_finger": [
+        53,
+        47
+      ],
+      "max_force_N": [
+        11.363286463722307,
+        18.33710702343345
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.008002807925486577,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_022_episode_221",
+      "source_sha256": "2e1caaea10e222419da19f0cb6713ccd7a23b674a154727d45d2e92ed671efda"
+    },
+    {
+      "episode_id": 222,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 94.68916082846572,
+      "control_steps": 147,
+      "bilateral_steps": 58,
+      "max_bilateral_streak": 28,
+      "first_contact_step": 85,
+      "contact_steps_per_finger": [
+        59,
+        62
+      ],
+      "max_force_N": [
+        28.693840846212204,
+        38.20147620691016
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.012454049475276063,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_023_episode_222",
+      "source_sha256": "7c2791708e10135ea6723e10f40645c426fbef5018db32f2a489967d55349004"
+    },
+    {
+      "episode_id": 223,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.42575110874562,
+      "control_steps": 143,
+      "bilateral_steps": 58,
+      "max_bilateral_streak": 24,
+      "first_contact_step": 77,
+      "contact_steps_per_finger": [
+        61,
+        63
+      ],
+      "max_force_N": [
+        25.63006721349635,
+        24.296037849002275
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009611398763928358,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_024_episode_223",
+      "source_sha256": "1a75ab5aca42e6d31ef3259146c7fd3a752422c258f4222a69eec4b34a6a34ad"
+    },
+    {
+      "episode_id": 224,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.89557224255981,
+      "control_steps": 167,
+      "bilateral_steps": 42,
+      "max_bilateral_streak": 23,
+      "first_contact_step": 87,
+      "contact_steps_per_finger": [
+        53,
+        48
+      ],
+      "max_force_N": [
+        13.006635022230117,
+        13.965157203466937
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        41,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.016851582479547433,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_025_episode_224",
+      "source_sha256": "fb1bdeb903060f74256608b22eed2350f75d2a1960417532efaf00cecdfa308b"
+    },
+    {
+      "episode_id": 225,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.58568953529951,
+      "control_steps": 153,
+      "bilateral_steps": 59,
+      "max_bilateral_streak": 24,
+      "first_contact_step": 81,
+      "contact_steps_per_finger": [
+        63,
+        63
+      ],
+      "max_force_N": [
+        38.53724076599916,
+        24.31282302927353
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        46,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.012701080187048186,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_026_episode_225",
+      "source_sha256": "6ebc9e2009802441a81a94706112056a5ceed436108803c4f8f4b206e6706667"
+    },
+    {
+      "episode_id": 226,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.17567353342814,
+      "control_steps": 151,
+      "bilateral_steps": 38,
+      "max_bilateral_streak": 10,
+      "first_contact_step": 77,
+      "contact_steps_per_finger": [
+        49,
+        49
+      ],
+      "max_force_N": [
+        10.53962906742856,
+        27.157339028750037
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.016944259815413254,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_027_episode_226",
+      "source_sha256": "c86cc4d5f1835a918f8e300664b391f44d5321490bf10abe496e2de54efe1e04"
+    },
+    {
+      "episode_id": 227,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 91.66085485967771,
+      "control_steps": 465,
+      "bilateral_steps": 125,
+      "max_bilateral_streak": 54,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        131,
+        135
+      ],
+      "max_force_N": [
+        56.822627327131855,
+        61.3248263618797
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        299,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.012840282755652632,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_028_episode_227",
+      "source_sha256": "b8874ce45fb22559712413f309460e4786926ce79e5e55571fef80e422522cbd"
+    },
+    {
+      "episode_id": 228,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.15634274568393,
+      "control_steps": 143,
+      "bilateral_steps": 38,
+      "max_bilateral_streak": 8,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        52,
+        46
+      ],
+      "max_force_N": [
+        17.958194197859342,
+        32.39948029632535
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        31,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        31,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.004443755135128846,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_029_episode_228",
+      "source_sha256": "9c8e2b437958903384371c9f8f04853e2ce9439d1eaaa489e6278d426469f228"
+    },
+    {
+      "episode_id": 229,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.69648147030475,
+      "control_steps": 135,
+      "bilateral_steps": 33,
+      "max_bilateral_streak": 9,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        41,
+        42
+      ],
+      "max_force_N": [
+        13.43396154235734,
+        30.4175224370665
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        26,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        26,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01647047437696947,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_030_episode_229",
+      "source_sha256": "d64ef05c98fe2f371274004f2e5b6413e2ba1d467408fa04f62922acdd238242"
+    },
+    {
+      "episode_id": 230,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 98.06124868320221,
+      "control_steps": 150,
+      "bilateral_steps": 65,
+      "max_bilateral_streak": 30,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        66,
+        71
+      ],
+      "max_force_N": [
+        52.63275452620023,
+        53.774656848735155
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.005901968033984462,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_031_episode_230",
+      "source_sha256": "d4700236e5bb3f034c23f9eee60c8f2c1de86b7fc96b86e40311d7c3ef8e803a"
+    },
+    {
+      "episode_id": 231,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.27932347307207,
+      "control_steps": 135,
+      "bilateral_steps": 27,
+      "max_bilateral_streak": 11,
+      "first_contact_step": 77,
+      "contact_steps_per_finger": [
+        49,
+        31
+      ],
+      "max_force_N": [
+        21.717751718070197,
+        16.91792570823884
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        21,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        21,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.010115845569860449,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_032_episode_231",
+      "source_sha256": "472f0e95488085cc9ab737de9b1401eceaef205a4502518bfbee702a3fbb6e84"
+    },
+    {
+      "episode_id": 232,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.6675631662209,
+      "control_steps": 144,
+      "bilateral_steps": 34,
+      "max_bilateral_streak": 18,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        50,
+        45
+      ],
+      "max_force_N": [
+        16.18818582160759,
+        44.02159737738593
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.004675577857449431,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_033_episode_232",
+      "source_sha256": "2d1856cbfcf5f65c996f98e2200059b41fd39d723a8198162c1629f7e2094c14"
+    },
+    {
+      "episode_id": 233,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.1272845400478,
+      "control_steps": 124,
+      "bilateral_steps": 13,
+      "max_bilateral_streak": 5,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        24,
+        26
+      ],
+      "max_force_N": [
+        37.98597521573775,
+        38.78962757434388
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        25,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        25,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01632762362888429,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_034_episode_233",
+      "source_sha256": "84fb7cd1d977ed36ad4f5243fdc1e7454262bfd585bcf83f21d039fa54497ea5"
+    },
+    {
+      "episode_id": 234,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 98.40134023258057,
+      "control_steps": 159,
+      "bilateral_steps": 71,
+      "max_bilateral_streak": 28,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        73,
+        77
+      ],
+      "max_force_N": [
+        27.051702808614934,
+        32.15189077492918
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        51,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.016766452238036633,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_035_episode_234",
+      "source_sha256": "2bf625e501cbaf509dfafdc1630b9794234288751f2a9b302bae648635985335"
+    },
+    {
+      "episode_id": 235,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.63503016921678,
+      "control_steps": 149,
+      "bilateral_steps": 46,
+      "max_bilateral_streak": 12,
+      "first_contact_step": 77,
+      "contact_steps_per_finger": [
+        55,
+        56
+      ],
+      "max_force_N": [
+        25.443692279580954,
+        23.950209519667776
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.02242335147705421,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_036_episode_235",
+      "source_sha256": "d32fbbc7a07564d55313f00cfedda284b9dc3cffa0eb6a2e84c72e421115eb75"
+    },
+    {
+      "episode_id": 236,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 102.11976464647427,
+      "control_steps": 580,
+      "bilateral_steps": 60,
+      "max_bilateral_streak": 24,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        94,
+        91
+      ],
+      "max_force_N": [
+        63.25389755218012,
+        61.747857532827126
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        406,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        50,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.017842093732745257,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_037_episode_236",
+      "source_sha256": "249e02b791ca08f63c8a0ecf50355d8238a220cfdd46424f43921387dd16f5bf"
+    },
+    {
+      "episode_id": 237,
+      "group": "near",
+      "success": false,
+      "failure_mode": "grasp_slip",
+      "peak_open_mm": 11.650849663848282,
+      "control_steps": 720,
+      "bilateral_steps": 26,
+      "max_bilateral_streak": 7,
+      "first_contact_step": 79,
+      "contact_steps_per_finger": [
+        28,
+        135
+      ],
+      "max_force_N": [
+        47.172794284988484,
+        162.4791834814008
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        301,
+        15,
+        268,
+        0,
+        0,
+        414,
+        520,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.14190216302591052,
+        0.015436149431339946,
+        0.037147456778615195,
+        0.0,
+        0.0,
+        0.017875991347466424,
+        0.12059672058234683,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_038_episode_237",
+      "source_sha256": "43a9a78ede27544de85c9beaeb35c1b56a5444d107682e0ec5aa2bd771d15f63",
+      "closest_nominal_grasp_point_step": 180,
+      "closest_nominal_grasp_point_distance_mm": 12.477682687352758,
+      "closest_grasp_point_minus_handle_mm": [
+        11.075445838663377,
+        5.573105459194483,
+        1.4026974947555226
+      ],
+      "closest_gripper_target_rad": -0.1932104183320122,
+      "closest_rotation_world": [
+        [
+          -0.008740075759594124,
+          0.7207254683494713,
+          -0.6931654999696333
+        ],
+        [
+          -0.9871222866480691,
+          -0.1169453134408096,
+          -0.10914845334184947
+        ],
+        [
+          -0.1597285268147292,
+          0.6832851476043262,
+          0.7124662832618328
+        ]
+      ]
+    },
+    {
+      "episode_id": 238,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.49764871962542,
+      "control_steps": 143,
+      "bilateral_steps": 31,
+      "max_bilateral_streak": 10,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        47,
+        44
+      ],
+      "max_force_N": [
+        13.465393269200451,
+        27.604968423165644
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.012621023670653875,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_039_episode_238",
+      "source_sha256": "a0d407a714b30662d58f767f48bbde552c0a1e458769c4abfaaed52f45aca275"
+    },
+    {
+      "episode_id": 239,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.45064201618602,
+      "control_steps": 170,
+      "bilateral_steps": 18,
+      "max_bilateral_streak": 5,
+      "first_contact_step": 85,
+      "contact_steps_per_finger": [
+        51,
+        29
+      ],
+      "max_force_N": [
+        11.697039633862712,
+        9.102881085123993
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        47,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        27,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.008766169071539709,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_040_episode_239",
+      "source_sha256": "161f56716e74c0343b671b1a8feb85566e94574ed3293079ac6f4c69391082b3"
+    },
+    {
+      "episode_id": 240,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 98.45439675217507,
+      "control_steps": 150,
+      "bilateral_steps": 61,
+      "max_bilateral_streak": 24,
+      "first_contact_step": 81,
+      "contact_steps_per_finger": [
+        63,
+        65
+      ],
+      "max_force_N": [
+        36.99028725778624,
+        40.57525367879488
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        48,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        48,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.00988040954738345,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_041_episode_240",
+      "source_sha256": "27677fb9f89482f48284af2b047960c0bf2c03468f432d128f717f60587c247f"
+    },
+    {
+      "episode_id": 241,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 102.52384999229885,
+      "control_steps": 642,
+      "bilateral_steps": 73,
+      "max_bilateral_streak": 14,
+      "first_contact_step": 81,
+      "contact_steps_per_finger": [
+        97,
+        85
+      ],
+      "max_force_N": [
+        64.02288994411028,
+        63.63523567303543
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        436,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        46,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.019532734775173477,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_042_episode_241",
+      "source_sha256": "1a02d70e4e1b0e702525b0c00ac01e532bc23414ee3f3c8263d1d1afe765b9b0"
+    },
+    {
+      "episode_id": 242,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.98048129151839,
+      "control_steps": 153,
+      "bilateral_steps": 37,
+      "max_bilateral_streak": 20,
+      "first_contact_step": 76,
+      "contact_steps_per_finger": [
+        59,
+        45
+      ],
+      "max_force_N": [
+        13.193097425243733,
+        24.693964463629634
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        41,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.012611334099133842,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_043_episode_242",
+      "source_sha256": "8bd1a5695a6a1338489beadad0ac73cf9146ce79fec177200ea52292b05eea57"
+    },
+    {
+      "episode_id": 243,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 102.29533204824028,
+      "control_steps": 139,
+      "bilateral_steps": 16,
+      "max_bilateral_streak": 6,
+      "first_contact_step": 77,
+      "contact_steps_per_finger": [
+        30,
+        29
+      ],
+      "max_force_N": [
+        35.25867610758897,
+        22.68876714696296
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.007277116883667167,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_044_episode_243",
+      "source_sha256": "e319e305706dd570477246aac3d6326aadf4d63103ffedceb52988cae962f823"
+    },
+    {
+      "episode_id": 244,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.60397864077999,
+      "control_steps": 150,
+      "bilateral_steps": 35,
+      "max_bilateral_streak": 17,
+      "first_contact_step": 75,
+      "contact_steps_per_finger": [
+        47,
+        47
+      ],
+      "max_force_N": [
+        11.575167659576818,
+        37.906681922245966
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        34,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        34,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009876544271781862,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_045_episode_244",
+      "source_sha256": "2b6647854d2db006b98af3161850413b871e50aae8c9eaf3bd7098759377d643"
+    },
+    {
+      "episode_id": 245,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.69034917413576,
+      "control_steps": 139,
+      "bilateral_steps": 31,
+      "max_bilateral_streak": 10,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        43,
+        41
+      ],
+      "max_force_N": [
+        14.061522831609278,
+        30.503486623006292
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        31,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        31,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.022424353398632135,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_046_episode_245",
+      "source_sha256": "07cdddc1419cf4244ad9da19b1a84d84b5e67536ec174281876e3e9701949597"
+    },
+    {
+      "episode_id": 246,
+      "group": "near",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 100.41544682032473,
+      "control_steps": 720,
+      "bilateral_steps": 8,
+      "max_bilateral_streak": 3,
+      "first_contact_step": 94,
+      "contact_steps_per_finger": [
+        22,
+        50
+      ],
+      "max_force_N": [
+        11.039413047675687,
+        18.244780955005695
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        40,
+        175,
+        140,
+        13,
+        445,
+        178,
+        156,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        27,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.08719169366767598,
+        0.09204559804838439,
+        0.04125098549856654,
+        0.03302897684557804,
+        0.02401792778833034,
+        0.025694477551864048,
+        0.14726893393674767,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_047_episode_246",
+      "source_sha256": "fa6b8e761b6b89def7f01aacaf92c54e35965006c77baef375aa25fe73a3c97e",
+      "closest_nominal_grasp_point_step": 71,
+      "closest_nominal_grasp_point_distance_mm": 13.214559024202343,
+      "closest_grasp_point_minus_handle_mm": [
+        0.38309307484829525,
+        -13.103805116439382,
+        1.663761211985637
+      ],
+      "closest_gripper_target_rad": -0.24374300748422947,
+      "closest_rotation_world": [
+        [
+          0.01259109217498594,
+          0.271395161994475,
+          -0.9623856453853794
+        ],
+        [
+          -0.9999193930213479,
+          0.004990775329272834,
+          -0.011674742885033895
+        ],
+        [
+          0.0016345817997080458,
+          0.9624550681499917,
+          0.27143612496264147
+        ]
+      ]
+    },
+    {
+      "episode_id": 247,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.90471792658145,
+      "control_steps": 141,
+      "bilateral_steps": 17,
+      "max_bilateral_streak": 13,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        37,
+        31
+      ],
+      "max_force_N": [
+        21.952945191651615,
+        16.145461830075742
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.007257180980389855,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_048_episode_247",
+      "source_sha256": "f20602b89f65d11c07dd100b9128c9d64c01e480fd835ab2da9fa46c5f741faf"
+    },
+    {
+      "episode_id": 248,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.43101691190927,
+      "control_steps": 138,
+      "bilateral_steps": 18,
+      "max_bilateral_streak": 11,
+      "first_contact_step": 74,
+      "contact_steps_per_finger": [
+        41,
+        26
+      ],
+      "max_force_N": [
+        23.18056030862415,
+        13.029097339630503
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        25,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        25,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.012936771506332434,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_049_episode_248",
+      "source_sha256": "3f0561257278f2f15e2a99a8338bb24f3abd54bbae009d2d5efacd216d5901c2"
+    },
+    {
+      "episode_id": 249,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.5364861046842,
+      "control_steps": 140,
+      "bilateral_steps": 37,
+      "max_bilateral_streak": 25,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        50,
+        43
+      ],
+      "max_force_N": [
+        12.23528234109036,
+        27.992266900967785
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        34,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        34,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009112622959114747,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_050_episode_249",
+      "source_sha256": "3091aa0c926ad2c3e9626bf56b799ef86a8fc92c798e6011fe5fbc8779f1e30f"
+    },
+    {
+      "episode_id": 250,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.98132512040257,
+      "control_steps": 144,
+      "bilateral_steps": 48,
+      "max_bilateral_streak": 28,
+      "first_contact_step": 77,
+      "contact_steps_per_finger": [
+        55,
+        54
+      ],
+      "max_force_N": [
+        16.57613399103881,
+        23.112151343048723
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.00675711424412917,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_051_episode_250",
+      "source_sha256": "ea8cae8945abba6bac7425b052a9e074c1241db527d58660295dd3a029946b53"
+    },
+    {
+      "episode_id": 251,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.66886985643862,
+      "control_steps": 151,
+      "bilateral_steps": 20,
+      "max_bilateral_streak": 10,
+      "first_contact_step": 82,
+      "contact_steps_per_finger": [
+        44,
+        29
+      ],
+      "max_force_N": [
+        9.039966411888107,
+        10.056338869662984
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        37,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.012758253135515263,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_052_episode_251",
+      "source_sha256": "eae69039fcd3c92b1b2bc03a7710bdeae258371675d8a4ef9182c8e493f92630"
+    },
+    {
+      "episode_id": 252,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 84.81430231761449,
+      "control_steps": 150,
+      "bilateral_steps": 51,
+      "max_bilateral_streak": 35,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        55,
+        55
+      ],
+      "max_force_N": [
+        40.971380764834855,
+        40.19483122497122
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        54,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        54,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01843597908689354,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_053_episode_252",
+      "source_sha256": "da918a64cf210ee756322c3a145c361ee14b4db7a48c3944aed2ccd3a288c311"
+    },
+    {
+      "episode_id": 253,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.00438085605431,
+      "control_steps": 154,
+      "bilateral_steps": 36,
+      "max_bilateral_streak": 13,
+      "first_contact_step": 81,
+      "contact_steps_per_finger": [
+        54,
+        45
+      ],
+      "max_force_N": [
+        17.359956867423094,
+        16.64751090243842
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        34,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01343491606738656,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_054_episode_253",
+      "source_sha256": "6c00d6824ccefdaec5eca6871aefe85d6e32c824fea105dd9a40b256f9804dce"
+    },
+    {
+      "episode_id": 254,
+      "group": "near",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 100.88334705794117,
+      "control_steps": 720,
+      "bilateral_steps": 12,
+      "max_bilateral_streak": 4,
+      "first_contact_step": 89,
+      "contact_steps_per_finger": [
+        36,
+        24
+      ],
+      "max_force_N": [
+        9.37010750148374,
+        10.377430505907975
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        523,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        25,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01658766883896634,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_055_episode_254",
+      "source_sha256": "29f698393d498007bd5ce36ca9c897cfdc56a80624d27d5cdc0eafcf983c820e",
+      "closest_nominal_grasp_point_step": 76,
+      "closest_nominal_grasp_point_distance_mm": 10.737316858351226,
+      "closest_grasp_point_minus_handle_mm": [
+        -2.966107433437115,
+        -9.779630783847304,
+        3.294085873435715
+      ],
+      "closest_gripper_target_rad": -0.23440177842215582,
+      "closest_rotation_world": [
+        [
+          0.023738472663535293,
+          0.25077824504936774,
+          -0.9677534586482048
+        ],
+        [
+          -0.9997167931106895,
+          0.004329147395753408,
+          -0.023400684932401272
+        ],
+        [
+          -0.001678835335062523,
+          0.968034880721137,
+          0.250809990269791
+        ]
+      ]
+    },
+    {
+      "episode_id": 255,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 96.15752605201534,
+      "control_steps": 154,
+      "bilateral_steps": 66,
+      "max_bilateral_streak": 35,
+      "first_contact_step": 83,
+      "contact_steps_per_finger": [
+        68,
+        69
+      ],
+      "max_force_N": [
+        39.530883654533255,
+        37.34884551909981
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        50,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        46,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.010368930795677578,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_056_episode_255",
+      "source_sha256": "b453eb64adf6af8750d60ede865eb32e4c21e5cae1dc38cebdb641dccd81b930"
+    },
+    {
+      "episode_id": 256,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 96.13882988163245,
+      "control_steps": 147,
+      "bilateral_steps": 62,
+      "max_bilateral_streak": 29,
+      "first_contact_step": 77,
+      "contact_steps_per_finger": [
+        67,
+        65
+      ],
+      "max_force_N": [
+        45.48659830806596,
+        30.00485712259636
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        48,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        48,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01784368000408576,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_057_episode_256",
+      "source_sha256": "f029f42f183f085af3448b5535a5f368488c97ab9be03003f590a3eaf09ff92c"
+    },
+    {
+      "episode_id": 257,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.95651184447931,
+      "control_steps": 147,
+      "bilateral_steps": 36,
+      "max_bilateral_streak": 11,
+      "first_contact_step": 81,
+      "contact_steps_per_finger": [
+        49,
+        41
+      ],
+      "max_force_N": [
+        15.30276442032222,
+        19.199732327296964
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.004310788539965138,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_058_episode_257",
+      "source_sha256": "fa7ea478fc583b4758deeefd4eb9fe897bd2e4195ac1291e90c73df0d331d978"
+    },
+    {
+      "episode_id": 258,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.34274529038342,
+      "control_steps": 147,
+      "bilateral_steps": 25,
+      "max_bilateral_streak": 7,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        44,
+        46
+      ],
+      "max_force_N": [
+        14.576282627519497,
+        25.631502722732947
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.018392550859515966,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_059_episode_258",
+      "source_sha256": "d2c3c13cbde1de64d9f3c146757d08a85382f71dcc2b44dee2a7624361bfb946"
+    },
+    {
+      "episode_id": 259,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.45791183659681,
+      "control_steps": 155,
+      "bilateral_steps": 34,
+      "max_bilateral_streak": 22,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        52,
+        47
+      ],
+      "max_force_N": [
+        10.985304303100483,
+        30.364039854580035
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.013050033298041663,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_060_episode_259",
+      "source_sha256": "6b4984f5193b16afe7007134ee4ead1d19bc947fe3fa6b0b29a10995a1ba0558"
+    },
+    {
+      "episode_id": 260,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 91.85831157999638,
+      "control_steps": 155,
+      "bilateral_steps": 66,
+      "max_bilateral_streak": 58,
+      "first_contact_step": 85,
+      "contact_steps_per_finger": [
+        67,
+        69
+      ],
+      "max_force_N": [
+        38.24712068547983,
+        37.45655017576868
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        47,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01654231175282761,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_061_episode_260",
+      "source_sha256": "3d4f6425ba7b51f472b823decc1f7a56a45dea879375012578df8e2a96ed59bc"
+    },
+    {
+      "episode_id": 261,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.87630728742863,
+      "control_steps": 159,
+      "bilateral_steps": 18,
+      "max_bilateral_streak": 6,
+      "first_contact_step": 87,
+      "contact_steps_per_finger": [
+        51,
+        25
+      ],
+      "max_force_N": [
+        15.080000008753855,
+        13.840978392082395
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009866747805405085,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_062_episode_261",
+      "source_sha256": "921a5055aea9b6664113787b05ffa694ff666c1fc5d36d555924f9e6d2bbcbcf"
+    },
+    {
+      "episode_id": 262,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 88.83068079117555,
+      "control_steps": 143,
+      "bilateral_steps": 54,
+      "max_bilateral_streak": 29,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        56,
+        57
+      ],
+      "max_force_N": [
+        65.75417824564309,
+        54.17234128957559
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        46,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        46,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.015363971918667785,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_063_episode_262",
+      "source_sha256": "0fa1bf16feb242663f1b545588ae7e25350f5f93999b3772f1fa5e5fb7a7b9ab"
+    },
+    {
+      "episode_id": 263,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 99.35946240583945,
+      "control_steps": 157,
+      "bilateral_steps": 66,
+      "max_bilateral_streak": 47,
+      "first_contact_step": 82,
+      "contact_steps_per_finger": [
+        68,
+        73
+      ],
+      "max_force_N": [
+        56.45559221922845,
+        21.58157101234084
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        47,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        40,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.015414592747019285,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_064_episode_263",
+      "source_sha256": "e9fc53bd264cbadc07fa37970cdbfdf59d8b38b928dd05a4978b0f5e8f9fe5fe"
+    },
+    {
+      "episode_id": 264,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 96.52723956403065,
+      "control_steps": 154,
+      "bilateral_steps": 66,
+      "max_bilateral_streak": 35,
+      "first_contact_step": 77,
+      "contact_steps_per_finger": [
+        68,
+        72
+      ],
+      "max_force_N": [
+        26.543836229657686,
+        23.918796055211416
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        48,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.014873363655146132,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_065_episode_264",
+      "source_sha256": "48bafae2c5234905ff4f4374a90dcd3e6ee85c41d2ff861a4f6c779b585327e5"
+    },
+    {
+      "episode_id": 265,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.34446332961807,
+      "control_steps": 156,
+      "bilateral_steps": 41,
+      "max_bilateral_streak": 11,
+      "first_contact_step": 77,
+      "contact_steps_per_finger": [
+        56,
+        51
+      ],
+      "max_force_N": [
+        16.45856459547322,
+        36.52075657904728
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.015808698507483454,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_066_episode_265",
+      "source_sha256": "7fe0c01b029c7381ae87922c950b66b9829551e87554c1846d929dace6c5e72d"
+    },
+    {
+      "episode_id": 266,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 94.38905317021079,
+      "control_steps": 150,
+      "bilateral_steps": 68,
+      "max_bilateral_streak": 32,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        70,
+        75
+      ],
+      "max_force_N": [
+        43.94555575212953,
+        34.0489315447496
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.00815796655899903,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_067_episode_266",
+      "source_sha256": "6892449e8a5ff80ce4d159eb22de8d8d79cc99b61d0638507e8847d0ce66cc2a"
+    },
+    {
+      "episode_id": 267,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.32119920596114,
+      "control_steps": 152,
+      "bilateral_steps": 36,
+      "max_bilateral_streak": 16,
+      "first_contact_step": 82,
+      "contact_steps_per_finger": [
+        54,
+        44
+      ],
+      "max_force_N": [
+        12.354901472597536,
+        22.80925764419356
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        37,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.015606409284412148,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_068_episode_267",
+      "source_sha256": "2ecb2ae2298e79af4acffa3f8d22bcc67534964210c3a3f81b69b6168693b2b9"
+    },
+    {
+      "episode_id": 268,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.90101558070508,
+      "control_steps": 163,
+      "bilateral_steps": 17,
+      "max_bilateral_streak": 11,
+      "first_contact_step": 90,
+      "contact_steps_per_finger": [
+        44,
+        21
+      ],
+      "max_force_N": [
+        12.402153667111836,
+        12.035676971621687
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        26,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.016351594877564546,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_069_episode_268",
+      "source_sha256": "2abca3f579b7f3c826196624dda4f0e7ee55dc47837958d30f0d310dd0f0aaa7"
+    },
+    {
+      "episode_id": 269,
+      "group": "near",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 98.06317799655888,
+      "control_steps": 153,
+      "bilateral_steps": 54,
+      "max_bilateral_streak": 20,
+      "first_contact_step": 78,
+      "contact_steps_per_finger": [
+        59,
+        62
+      ],
+      "max_force_N": [
+        30.713727448458332,
+        25.921611690050938
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.016694137151256783,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_070_episode_269",
+      "source_sha256": "6b44173a7febb6433567f661aa7a6c51317ebe5b0940e19392bb97ba98ae6ce6"
+    },
+    {
+      "episode_id": 270,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "no_contact",
+      "peak_open_mm": -0.0,
+      "control_steps": 720,
+      "bilateral_steps": 0,
+      "max_bilateral_streak": 0,
+      "first_contact_step": null,
+      "contact_steps_per_finger": [
+        0,
+        0
+      ],
+      "max_force_N": [
+        0.0,
+        0.0
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        605,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        35,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0162286435357355,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_071_episode_270",
+      "source_sha256": "151ecca55521080bfd9c5173639d1e0c7ec12958e27428e1816e06d355450538",
+      "closest_nominal_grasp_point_step": 79,
+      "closest_nominal_grasp_point_distance_mm": 46.47176883636358,
+      "closest_grasp_point_minus_handle_mm": [
+        -17.66639833524597,
+        -41.98866916232458,
+        9.191046219973241
+      ],
+      "closest_gripper_target_rad": -0.17293809818641004,
+      "closest_rotation_world": [
+        [
+          0.019420758584686115,
+          0.24691230300032557,
+          -0.9688432013298496
+        ],
+        [
+          -0.9998063545122828,
+          0.007874408755545292,
+          -0.018034610159659736
+        ],
+        [
+          0.00317610025906756,
+          0.9690058350256858,
+          0.2470174165384262
+        ]
+      ]
+    },
+    {
+      "episode_id": 271,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 19.836717362954598,
+      "control_steps": 720,
+      "bilateral_steps": 3,
+      "max_bilateral_streak": 2,
+      "first_contact_step": 90,
+      "contact_steps_per_finger": [
+        3,
+        13
+      ],
+      "max_force_N": [
+        8.625398035991532,
+        8.671194130119703
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        498,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01561928991632544,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_072_episode_271",
+      "source_sha256": "615f1463e0916d10381c571e63c53b782a98c4ee59822890f2a997783084f63a",
+      "closest_nominal_grasp_point_step": 73,
+      "closest_nominal_grasp_point_distance_mm": 28.061808177859874,
+      "closest_grasp_point_minus_handle_mm": [
+        -7.369640749768425,
+        -26.906977412131273,
+        3.0278771397488358
+      ],
+      "closest_gripper_target_rad": -0.23832226468734505,
+      "closest_rotation_world": [
+        [
+          0.006498381307024903,
+          0.2763624933768624,
+          -0.9610314996371931
+        ],
+        [
+          -0.9999779000593538,
+          0.0031450222950276108,
+          -0.005857322566564405
+        ],
+        [
+          0.0014037212235745167,
+          0.9610483240135679,
+          0.27637682333625413
+        ]
+      ]
+    },
+    {
+      "episode_id": 272,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.88038235237262,
+      "control_steps": 421,
+      "bilateral_steps": 8,
+      "max_bilateral_streak": 5,
+      "first_contact_step": 86,
+      "contact_steps_per_finger": [
+        14,
+        38
+      ],
+      "max_force_N": [
+        10.310008342838298,
+        54.78281104253677
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        218,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.010400575004340551,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_073_episode_272",
+      "source_sha256": "e08e21f18153fc48328efeb406c02bc6f2e61111abe007d23e8609580fdcfdac"
+    },
+    {
+      "episode_id": 273,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.767290489177,
+      "control_steps": 156,
+      "bilateral_steps": 47,
+      "max_bilateral_streak": 17,
+      "first_contact_step": 94,
+      "contact_steps_per_finger": [
+        57,
+        52
+      ],
+      "max_force_N": [
+        24.038251519787778,
+        21.38132522618138
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        37,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.025593388331129008,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_074_episode_273",
+      "source_sha256": "8b0e53766d68a107fc91164fbbe5ef90b787a46c182a3bbd38cffaf7dddb50a3"
+    },
+    {
+      "episode_id": 274,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 0.1119102640070892,
+      "control_steps": 720,
+      "bilateral_steps": 0,
+      "max_bilateral_streak": 0,
+      "first_contact_step": 121,
+      "contact_steps_per_finger": [
+        0,
+        4
+      ],
+      "max_force_N": [
+        0.0,
+        8.971477269495434
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        392,
+        520,
+        404,
+        348,
+        512,
+        396,
+        484,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.08846739664444048,
+        0.08289989229021102,
+        0.020865046509941143,
+        0.03169279566367722,
+        0.03175529494257945,
+        0.03457704414933138,
+        0.14219738315554342,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_075_episode_274",
+      "source_sha256": "c1502ee0461c5b3b110250c4cf62ef3adb96fe2be9bb26f67bc465256e412604",
+      "closest_nominal_grasp_point_step": 78,
+      "closest_nominal_grasp_point_distance_mm": 45.4535678577162,
+      "closest_grasp_point_minus_handle_mm": [
+        -19.955014681008464,
+        40.79338373937102,
+        -1.929783192269996
+      ],
+      "closest_gripper_target_rad": -0.23889108838746398,
+      "closest_rotation_world": [
+        [
+          0.0006533866466821303,
+          0.29161899254622153,
+          -0.956534336170018
+        ],
+        [
+          -0.9999517455382294,
+          0.009566507679587777,
+          0.002233500809181832
+        ],
+        [
+          0.009802024328584624,
+          0.9564867197808569,
+          0.29161117125706737
+        ]
+      ]
+    },
+    {
+      "episode_id": 275,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.68152947676913,
+      "control_steps": 160,
+      "bilateral_steps": 41,
+      "max_bilateral_streak": 14,
+      "first_contact_step": 85,
+      "contact_steps_per_finger": [
+        59,
+        50
+      ],
+      "max_force_N": [
+        12.31621236025695,
+        13.018631479000788
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        47,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        37,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01604793898184176,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_076_episode_275",
+      "source_sha256": "3b9b8928733299146451762952623488fd2c8c96edda4d8063739e8dd956dd0e"
+    },
+    {
+      "episode_id": 276,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.0144801045684,
+      "control_steps": 174,
+      "bilateral_steps": 38,
+      "max_bilateral_streak": 11,
+      "first_contact_step": 93,
+      "contact_steps_per_finger": [
+        55,
+        50
+      ],
+      "max_force_N": [
+        13.831860706656304,
+        15.942197154513531
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.013240362211839107,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_077_episode_276",
+      "source_sha256": "8f77f3772c51d7ac130dd19a10b311975291889ba1708344e7358e76e0bb83e0"
+    },
+    {
+      "episode_id": 277,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.1447419686061,
+      "control_steps": 191,
+      "bilateral_steps": 46,
+      "max_bilateral_streak": 7,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        78,
+        66
+      ],
+      "max_force_N": [
+        30.58513796117022,
+        30.170972111683803
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        43,
+        22,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        18,
+        16,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01797778197619948,
+        0.013105543647669249,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_078_episode_277",
+      "source_sha256": "b5ccd0d9afcdacca2190f5f1f42ac446acea6555b3b9b7b68e07d7f08ecd0eb2"
+    },
+    {
+      "episode_id": 278,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.16559390507467,
+      "control_steps": 423,
+      "bilateral_steps": 59,
+      "max_bilateral_streak": 25,
+      "first_contact_step": 77,
+      "contact_steps_per_finger": [
+        77,
+        82
+      ],
+      "max_force_N": [
+        42.66320266859322,
+        62.27763875297033
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        244,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        58,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.013324924129836768,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_079_episode_278",
+      "source_sha256": "3d4e8bf1f5947845c155268031f9c148edb83a7f0099851c02dc9a5e8f1f4a60"
+    },
+    {
+      "episode_id": 279,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 0.33675462446928345,
+      "control_steps": 720,
+      "bilateral_steps": 1,
+      "max_bilateral_streak": 1,
+      "first_contact_step": 85,
+      "contact_steps_per_finger": [
+        3,
+        7
+      ],
+      "max_force_N": [
+        5.245928132212263,
+        10.230552956764395
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        523,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01606014688779367,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_080_episode_279",
+      "source_sha256": "7718dc7f707b9e0e84757409c0b4b25df840763fafd6388d72c928bf993d9ec9",
+      "closest_nominal_grasp_point_step": 447,
+      "closest_nominal_grasp_point_distance_mm": 16.02142630315531,
+      "closest_grasp_point_minus_handle_mm": [
+        -14.13711611201618,
+        4.354932239026943,
+        6.153260437873009
+      ],
+      "closest_gripper_target_rad": -0.132629599727786,
+      "closest_rotation_world": [
+        [
+          -0.013335830393019443,
+          0.2455677907808338,
+          -0.9692876847245866
+        ],
+        [
+          -0.9997162774141992,
+          0.01585902133846462,
+          0.017772341299955863
+        ],
+        [
+          0.019736268665191237,
+          0.9692496848455546,
+          0.24528662443347504
+        ]
+      ]
+    },
+    {
+      "episode_id": 280,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.97305794166428,
+      "control_steps": 149,
+      "bilateral_steps": 20,
+      "max_bilateral_streak": 11,
+      "first_contact_step": 81,
+      "contact_steps_per_finger": [
+        49,
+        32
+      ],
+      "max_force_N": [
+        33.34575565594236,
+        13.637605363557647
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        29,
+        9,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        29,
+        9,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0188226872172248,
+        0.008247762410841686,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_081_episode_280",
+      "source_sha256": "65df0f84581db8ec25c8ed941ee89b9065f28bba6005c89a75ae6222da534cd2"
+    },
+    {
+      "episode_id": 281,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 94.10629153829882,
+      "control_steps": 175,
+      "bilateral_steps": 72,
+      "max_bilateral_streak": 26,
+      "first_contact_step": 81,
+      "contact_steps_per_finger": [
+        74,
+        80
+      ],
+      "max_force_N": [
+        42.43370298283816,
+        68.09741787693315
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        49,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.016826192584836752,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_082_episode_281",
+      "source_sha256": "40377fdca14351d3aa2c209152adcc6d0b299358f20e75631a734be93877739e"
+    },
+    {
+      "episode_id": 282,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 85.2329410712794,
+      "control_steps": 504,
+      "bilateral_steps": 7,
+      "max_bilateral_streak": 5,
+      "first_contact_step": 99,
+      "contact_steps_per_finger": [
+        13,
+        8
+      ],
+      "max_force_N": [
+        6.865865786035959,
+        6.680556552727583
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        319,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.012007839103927553,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_083_episode_282",
+      "source_sha256": "c3a6ef59655795909ecd1fd27a74038563a80e3d95c9647ee4b96f3282de7903"
+    },
+    {
+      "episode_id": 283,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 8.070283491019298,
+      "control_steps": 720,
+      "bilateral_steps": 0,
+      "max_bilateral_streak": 0,
+      "first_contact_step": 91,
+      "contact_steps_per_finger": [
+        1,
+        1
+      ],
+      "max_force_N": [
+        2.3133702438270616,
+        1.360402369911101
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        539,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01880263253371517,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_084_episode_283",
+      "source_sha256": "74af8764987fe138ec85f344f04844df6d3ed9ab3d236f835419d06d88dbd2d7",
+      "closest_nominal_grasp_point_step": 76,
+      "closest_nominal_grasp_point_distance_mm": 37.39797214029042,
+      "closest_grasp_point_minus_handle_mm": [
+        -12.24907495020977,
+        -35.29038527108763,
+        1.7768484708277077
+      ],
+      "closest_gripper_target_rad": -0.23643966789240906,
+      "closest_rotation_world": [
+        [
+          0.010031066235120123,
+          0.2580645670011452,
+          -0.9660755958871428
+        ],
+        [
+          -0.999919489510555,
+          0.010097077892560868,
+          -0.0076852791089598305
+        ],
+        [
+          0.007771242316237992,
+          0.9660749082118545,
+          0.25814507455366903
+        ]
+      ]
+    },
+    {
+      "episode_id": 284,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 38.79319923958431,
+      "control_steps": 720,
+      "bilateral_steps": 1,
+      "max_bilateral_streak": 1,
+      "first_contact_step": 87,
+      "contact_steps_per_finger": [
+        2,
+        13
+      ],
+      "max_force_N": [
+        4.186905418943122,
+        7.196732237626335
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        512,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01663887856540547,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_085_episode_284",
+      "source_sha256": "a60e11c4f5fa5ad556b75350103d348f58a472819f236e2b6008f482965860bf",
+      "closest_nominal_grasp_point_step": 68,
+      "closest_nominal_grasp_point_distance_mm": 27.99308858015774,
+      "closest_grasp_point_minus_handle_mm": [
+        -1.9436714671615674,
+        -27.836945288932323,
+        -2.2225270448946732
+      ],
+      "closest_gripper_target_rad": -0.24776430910779398,
+      "closest_rotation_world": [
+        [
+          0.0032811253214829472,
+          0.2802508196974677,
+          -0.9599212010761731
+        ],
+        [
+          -0.9999829350772335,
+          -0.003720400942540558,
+          -0.004504239241966634
+        ],
+        [
+          -0.004833608480923179,
+          0.9599195990684453,
+          0.28023383013713554
+        ]
+      ]
+    },
+    {
+      "episode_id": 285,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.21201847383786,
+      "control_steps": 186,
+      "bilateral_steps": 76,
+      "max_bilateral_streak": 54,
+      "first_contact_step": 90,
+      "contact_steps_per_finger": [
+        79,
+        82
+      ],
+      "max_force_N": [
+        27.44725983157671,
+        26.79369763873878
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        63,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        27,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.015268385761441738,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_086_episode_285",
+      "source_sha256": "a76a86dd96680901fbf6fcd55bfdaeee9efc789ae2c5058445fd3d5331ec5f65"
+    },
+    {
+      "episode_id": 286,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.42312224652248,
+      "control_steps": 139,
+      "bilateral_steps": 46,
+      "max_bilateral_streak": 20,
+      "first_contact_step": 72,
+      "contact_steps_per_finger": [
+        57,
+        50
+      ],
+      "max_force_N": [
+        14.767986906280111,
+        13.17255725742403
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.015477568700183797,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_087_episode_286",
+      "source_sha256": "d4689033ba1c608362656788cc8adf9a1a8aaaf1d49ac64468e8ec5c74330a46"
+    },
+    {
+      "episode_id": 287,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.68875349758429,
+      "control_steps": 202,
+      "bilateral_steps": 14,
+      "max_bilateral_streak": 5,
+      "first_contact_step": 65,
+      "contact_steps_per_finger": [
+        29,
+        82
+      ],
+      "max_force_N": [
+        15.328568740512708,
+        30.128208205126715
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        18,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        18,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009667070119791177,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_088_episode_287",
+      "source_sha256": "eb5708025dd2b73cc29f2940c083a4ef4d761318ae5876456ae3d60eef34d404"
+    },
+    {
+      "episode_id": 288,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.74483647148794,
+      "control_steps": 170,
+      "bilateral_steps": 24,
+      "max_bilateral_streak": 8,
+      "first_contact_step": 97,
+      "contact_steps_per_finger": [
+        39,
+        38
+      ],
+      "max_force_N": [
+        14.374575954116334,
+        12.511903388237252
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.00621451048735433,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_089_episode_288",
+      "source_sha256": "1c9162b8ba9bf7c8ce08609a4d131478988d6f5c9d6388265e2a06a90eabd0d7"
+    },
+    {
+      "episode_id": 289,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.9631276889344,
+      "control_steps": 196,
+      "bilateral_steps": 35,
+      "max_bilateral_streak": 12,
+      "first_contact_step": 95,
+      "contact_steps_per_finger": [
+        57,
+        49
+      ],
+      "max_force_N": [
+        15.660533705571478,
+        40.62055219269111
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        37,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.007786550357065103,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_090_episode_289",
+      "source_sha256": "f5a0c8e39e734d8fd847fd44600f271a0e0ec1c715b68d11a360ea4a73cc99d4"
+    },
+    {
+      "episode_id": 290,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.82740943154157,
+      "control_steps": 151,
+      "bilateral_steps": 40,
+      "max_bilateral_streak": 8,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        60,
+        54
+      ],
+      "max_force_N": [
+        14.585812431284785,
+        15.765431916819157
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.015019716995025911,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_091_episode_290",
+      "source_sha256": "1ef9fe55f814af7246b8a6a0c27b992ed2de53ed12579d4e1f8c3dc612135b29"
+    },
+    {
+      "episode_id": 291,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 101.71960469116283,
+      "control_steps": 150,
+      "bilateral_steps": 51,
+      "max_bilateral_streak": 17,
+      "first_contact_step": 81,
+      "contact_steps_per_finger": [
+        60,
+        59
+      ],
+      "max_force_N": [
+        22.982635990921725,
+        31.644255703372043
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.010607084374159026,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_092_episode_291",
+      "source_sha256": "0b273ae6b99bc43c50e67fb872f5d2688d37846e2383d1563cb98ce7bec56b9b"
+    },
+    {
+      "episode_id": 292,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 100.73109480492887,
+      "control_steps": 151,
+      "bilateral_steps": 27,
+      "max_bilateral_streak": 6,
+      "first_contact_step": 73,
+      "contact_steps_per_finger": [
+        50,
+        38
+      ],
+      "max_force_N": [
+        16.073109030181005,
+        17.383825759957567
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        39,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.006735939496993026,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_093_episode_292",
+      "source_sha256": "617b556b2b24d8a19767bbcc5f4874140f50b68913f7539ae627949bfeb2e196"
+    },
+    {
+      "episode_id": 293,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 62.635783276303734,
+      "control_steps": 720,
+      "bilateral_steps": 0,
+      "max_bilateral_streak": 0,
+      "first_contact_step": 83,
+      "contact_steps_per_finger": [
+        5,
+        8
+      ],
+      "max_force_N": [
+        3.7894857494923286,
+        3.5179415482665526
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        430,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.014475354872686141,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_094_episode_293",
+      "source_sha256": "157bfb2c8bd8886f996d14f0cc2ff12f222cc398f9dabd0b1d79d55e0e63a1a5",
+      "closest_nominal_grasp_point_step": 68,
+      "closest_nominal_grasp_point_distance_mm": 31.36237369213333,
+      "closest_grasp_point_minus_handle_mm": [
+        -6.5898966991395636,
+        -30.577087859730874,
+        2.2832965462210586
+      ],
+      "closest_gripper_target_rad": -0.24153948228819325,
+      "closest_rotation_world": [
+        [
+          0.018659993064370772,
+          0.2671342459268442,
+          -0.9634786449693287
+        ],
+        [
+          -0.9997298039416627,
+          0.01834441783296681,
+          -0.01427590435432785
+        ],
+        [
+          0.013860871891840931,
+          0.9634847051134052,
+          0.2674043740160811
+        ]
+      ]
+    },
+    {
+      "episode_id": 294,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 100.747016486965,
+      "control_steps": 720,
+      "bilateral_steps": 24,
+      "max_bilateral_streak": 3,
+      "first_contact_step": 93,
+      "contact_steps_per_finger": [
+        66,
+        318
+      ],
+      "max_force_N": [
+        44.65551791077063,
+        54.73700021714924
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        56,
+        16,
+        0,
+        255,
+        110,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        21,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.08272736574162917,
+        0.07580743896437792,
+        0.0,
+        0.010035243827368978,
+        0.02221661914721118,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_095_episode_294",
+      "source_sha256": "2093bd02e3e91c2c5ec0a8bb487875d84bf20d891ae9fa79555c669b92da60c4",
+      "closest_nominal_grasp_point_step": 158,
+      "closest_nominal_grasp_point_distance_mm": 19.065636381219605,
+      "closest_grasp_point_minus_handle_mm": [
+        13.008350127654001,
+        13.907448277480194,
+        0.9296235724538526
+      ],
+      "closest_gripper_target_rad": -0.05609763760586467,
+      "closest_rotation_world": [
+        [
+          -0.014088133300052236,
+          0.11850836403887849,
+          -0.9928531070369616
+        ],
+        [
+          -0.9821644730140036,
+          0.18455209620313082,
+          0.0359648680819874
+        ],
+        [
+          0.18749525980473314,
+          0.9756517265089314,
+          0.11379471038188305
+        ]
+      ]
+    },
+    {
+      "episode_id": 295,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 16.789309332845665,
+      "control_steps": 720,
+      "bilateral_steps": 0,
+      "max_bilateral_streak": 0,
+      "first_contact_step": 90,
+      "contact_steps_per_finger": [
+        2,
+        4
+      ],
+      "max_force_N": [
+        4.649870070863128,
+        3.453859818416393
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        447,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        26,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.014174104183609204,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_096_episode_295",
+      "source_sha256": "b84adfa4a88f17edb578173ee8d0d0559fdfb0b27a55b3de9571f52c8a62fdf6",
+      "closest_nominal_grasp_point_step": 80,
+      "closest_nominal_grasp_point_distance_mm": 33.7030051646401,
+      "closest_grasp_point_minus_handle_mm": [
+        -4.517892607983464,
+        -33.37236391738835,
+        1.3291087524660572
+      ],
+      "closest_gripper_target_rad": -0.22712929167973617,
+      "closest_rotation_world": [
+        [
+          0.012193239379627518,
+          0.24764791095125405,
+          -0.9687733672613587
+        ],
+        [
+          -0.9999130549454197,
+          -0.001844830351031057,
+          -0.013056766471619907
+        ],
+        [
+          -0.005020703451669384,
+          0.9688483414871784,
+          0.24760388473203465
+        ]
+      ]
+    },
+    {
+      "episode_id": 296,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 100.17839019406371,
+      "control_steps": 720,
+      "bilateral_steps": 2,
+      "max_bilateral_streak": 2,
+      "first_contact_step": 84,
+      "contact_steps_per_finger": [
+        27,
+        18
+      ],
+      "max_force_N": [
+        11.847527751275724,
+        11.512636365997086
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        475,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        32,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.014769273695335094,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_097_episode_296",
+      "source_sha256": "b8c26ac26a95c44d094381d145b4ffe15b65755a7d8c6543e1c9e9aae21ce35d",
+      "closest_nominal_grasp_point_step": 64,
+      "closest_nominal_grasp_point_distance_mm": 25.659423601165507,
+      "closest_grasp_point_minus_handle_mm": [
+        2.585482881456491,
+        -24.69864954715112,
+        6.457399504503081
+      ],
+      "closest_gripper_target_rad": -0.2505574175640459,
+      "closest_rotation_world": [
+        [
+          -0.005379054726465049,
+          0.2565398932250166,
+          -0.9665186749123613
+        ],
+        [
+          -0.9999594284667422,
+          0.0056038125773578695,
+          0.007052567267604892
+        ],
+        [
+          0.0072254543605186905,
+          0.9665173979130923,
+          0.25649934179367617
+        ]
+      ]
+    },
+    {
+      "episode_id": 297,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 10.753503093536013,
+      "control_steps": 720,
+      "bilateral_steps": 7,
+      "max_bilateral_streak": 4,
+      "first_contact_step": 83,
+      "contact_steps_per_finger": [
+        8,
+        9
+      ],
+      "max_force_N": [
+        28.31466899947022,
+        29.267791656977902
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        530,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        31,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.017742966288395445,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_098_episode_297",
+      "source_sha256": "85958673ee9737d525945b0ff9ca537d9398f1e803e8618d4cab257b5c94aafe",
+      "closest_nominal_grasp_point_step": 72,
+      "closest_nominal_grasp_point_distance_mm": 42.199614386212836,
+      "closest_grasp_point_minus_handle_mm": [
+        -14.196581405322927,
+        -39.730487484506526,
+        -0.8676952175566965
+      ],
+      "closest_gripper_target_rad": -0.22969504401957053,
+      "closest_rotation_world": [
+        [
+          0.011125802285886277,
+          0.26669539265014647,
+          -0.963716651336211
+        ],
+        [
+          -0.9998518753074235,
+          -0.009689765593517141,
+          -0.01422448195793552
+        ],
+        [
+          -0.01313179225103378,
+          0.9637321598773838,
+          0.2665480820609085
+        ]
+      ]
+    },
+    {
+      "episode_id": 298,
+      "group": "expanded",
+      "success": false,
+      "failure_mode": "single_finger",
+      "peak_open_mm": 100.82474204721623,
+      "control_steps": 720,
+      "bilateral_steps": 11,
+      "max_bilateral_streak": 3,
+      "first_contact_step": 93,
+      "contact_steps_per_finger": [
+        43,
+        361
+      ],
+      "max_force_N": [
+        8.94319702351777,
+        74.09846704138566
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        427,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.00751324941185505,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_099_episode_298",
+      "source_sha256": "43ba4a0433995c2c3f9d7f89a9f16e8c3be290cf96812229ca4e1b3cebfda591",
+      "closest_nominal_grasp_point_step": 514,
+      "closest_nominal_grasp_point_distance_mm": 22.053888015771015,
+      "closest_grasp_point_minus_handle_mm": [
+        10.983173206894016,
+        19.07586745476103,
+        1.3620439669566053
+      ],
+      "closest_gripper_target_rad": -0.07124330872262048,
+      "closest_rotation_world": [
+        [
+          0.00723207154663863,
+          0.07682415965871187,
+          -0.9970184279309372
+        ],
+        [
+          -0.9787447600576797,
+          0.2048980273918677,
+          0.008688672542844167
+        ],
+        [
+          0.20495460912304375,
+          0.9757637249168747,
+          0.07667308090566194
+        ]
+      ]
+    },
+    {
+      "episode_id": 299,
+      "group": "expanded",
+      "success": true,
+      "failure_mode": null,
+      "peak_open_mm": 102.61257861665814,
+      "control_steps": 585,
+      "bilateral_steps": 70,
+      "max_bilateral_streak": 25,
+      "first_contact_step": 70,
+      "contact_steps_per_finger": [
+        85,
+        81
+      ],
+      "max_force_N": [
+        65.69790454433257,
+        39.51487025613056
+      ],
+      "clipped_steps_per_right_joint_and_gripper": [
+        0,
+        0,
+        0,
+        0,
+        409,
+        0,
+        0,
+        0
+      ],
+      "clip_steps_first150": [
+        0,
+        0,
+        0,
+        0,
+        54,
+        0,
+        0,
+        0
+      ],
+      "max_clip_magnitude_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.014981311141257558,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trial": "logs/a2_pi0/drawer_generalization_020_20261102/trial_100_episode_299",
+      "source_sha256": "67d560e56e21d83b55c7e5bcbb1c9a1bd330479a8c5d76605543c99226a72c5e"
+    }
+  ],
+  "failures": 16
+}

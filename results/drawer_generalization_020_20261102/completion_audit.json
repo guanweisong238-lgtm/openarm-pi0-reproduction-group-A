@@ -1,0 +1,24 @@
+{
+  "completed_at": "2026-11-02T12:56:30.188847+08:00",
+  "complete": true,
+  "trials": 100,
+  "success": 84,
+  "all_replay_evidence_valid": true,
+  "checkpoint_before_after_identical": true,
+  "locked_inputs_unchanged": true,
+  "checkpoint_inference_files": 21,
+  "max_replay_errors": {
+    "replay_max_qpos_error": 0.0,
+    "replay_max_qvel_error": 0.0,
+    "replay_max_contact_force_error": 0.0
+  },
+  "expert_actions": 0,
+  "intermediate_state_injections": 0,
+  "artifacts_sha256": {
+    "metrics.json": "b61a9708a19664584fb1cd0c22a72a208f34fe542c6bdb51ff763977c3b71b79",
+    "independent_replay.json": "d483c5e8eec50f1edb359f5f8ae3339a8a19a0c922a60074a8f604b38fc8a5b0",
+    "README.md": "e4054f051d1cbff526e22aee1a74198891c0fec01ea8f20c2ac789ed589fea39",
+    "start_distribution.png": "b16802ae6ce72e7d329bb1f81ed523bcd99a28001f3598d66b8d24da34a36f11",
+    "starts_and_outcomes.csv": "6aa0563d3629137c9350bae3f33d30076113d2f3ce570b9ff4a02a05e6f458da"
+  }
+}

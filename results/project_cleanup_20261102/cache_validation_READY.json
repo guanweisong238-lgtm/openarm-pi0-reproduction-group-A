@@ -1,0 +1,135 @@
+{
+  "identity": "45865b20503a36b52717bf9f8da37a51c7ec93a1e3e9c1c168de0dd3a4c6c3a4",
+  "split": "validation",
+  "episodes": [
+    {
+      "episode_id": 2,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_002",
+      "split": "validation",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/diverse_rgb/cabinet_y_pos005",
+      "source_episode_sha256": "fe3032cce6d87e362fc349a5e22cf5caffd49fb17adba19038c96588b8db0bf9",
+      "episode_sha256": "fe3032cce6d87e362fc349a5e22cf5caffd49fb17adba19038c96588b8db0bf9",
+      "action_sha256": "89959537693e4beac48eaeb31975bf0c4575fd41a6496b4364612470eecde2b6",
+      "condition_group": "3c15da2fc73de2011a32f4267766c5d57f2db566ade3dd810dba02bd838b37f1",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 3,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_003",
+      "split": "validation",
+      "frames": 462,
+      "source_path": "data/drawer_expansion/diverse_rgb/initial_seed108",
+      "source_episode_sha256": "d88b7a78aeff03b7bc480addfc90af6c41091a2265fbb5f345752c7efd52ade4",
+      "episode_sha256": "d88b7a78aeff03b7bc480addfc90af6c41091a2265fbb5f345752c7efd52ade4",
+      "action_sha256": "83199d10c5dedbea492df1fa024bf6eb04a17ac9fb0156a760835bdfd8750845",
+      "condition_group": "53fd720fce6315652167f18db371153d82a7204a9cd91570f4177b9a5e0dfa6a",
+      "human": false,
+      "warmup_frames": 0,
+      "initialization_group": "script_ready_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    },
+    {
+      "episode_id": 6,
+      "path": "data/processed/openarm_drawer_success_v003/episodes/episode_006",
+      "split": "validation",
+      "frames": 1144,
+      "source_path": "data/drawer_human/session_20261024_152741/episode_002",
+      "source_episode_sha256": "356eba21a02f98a07d5321b706a1739c20ac82f9c9a967177096628846d6dc27",
+      "episode_sha256": "356eba21a02f98a07d5321b706a1739c20ac82f9c9a967177096628846d6dc27",
+      "action_sha256": "a05bd95969fca23baf25e7dfb6dfd546cdd6d994aff5e2ff8bf14a88923f1b34",
+      "condition_group": "2f33e78bcc3916dfd3b0f46e3f6b28e8f950aa6fcdd2af649ff3cb31b9bccb7a",
+      "human": true,
+      "warmup_frames": 75,
+      "initialization_group": "human_warm_start",
+      "source_contact_scope": "bar-only; see quality_audit for recomputed assembly contacts",
+      "quality_contact_scope": "whole handle assembly (bar + stems)"
+    }
+  ],
+  "fields": [
+    {
+      "path": [
+        "state"
+      ],
+      "file": "field_00.npy",
+      "dtype": "float32"
+    },
+    {
+      "path": [
+        "image",
+        "base_0_rgb"
+      ],
+      "file": "field_01.npy",
+      "dtype": "uint8"
+    },
+    {
+      "path": [
+        "image",
+        "left_wrist_0_rgb"
+      ],
+      "file": "field_02.npy",
+      "dtype": "uint8"
+    },
+    {
+      "path": [
+        "image",
+        "right_wrist_0_rgb"
+      ],
+      "file": "field_03.npy",
+      "dtype": "uint8"
+    },
+    {
+      "path": [
+        "image_mask",
+        "base_0_rgb"
+      ],
+      "file": "field_04.npy",
+      "dtype": "bool"
+    },
+    {
+      "path": [
+        "image_mask",
+        "left_wrist_0_rgb"
+      ],
+      "file": "field_05.npy",
+      "dtype": "bool"
+    },
+    {
+      "path": [
+        "image_mask",
+        "right_wrist_0_rgb"
+      ],
+      "file": "field_06.npy",
+      "dtype": "bool"
+    },
+    {
+      "path": [
+        "actions"
+      ],
+      "file": "field_07.npy",
+      "dtype": "float32"
+    },
+    {
+      "path": [
+        "tokenized_prompt"
+      ],
+      "file": "field_08.npy",
+      "dtype": "int32"
+    },
+    {
+      "path": [
+        "tokenized_prompt_mask"
+      ],
+      "file": "field_09.npy",
+      "dtype": "bool"
+    }
+  ],
+  "frames": 2068,
+  "float_inputs": "float32",
+  "images": "uint8; no augmentation cached; training augmentation remains active"
+}

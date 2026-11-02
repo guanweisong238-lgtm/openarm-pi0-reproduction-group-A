@@ -1,0 +1,15 @@
+{
+  "trials": 33,
+  "success": 33,
+  "min_peak_open_mm": 96.18451518777508,
+  "max_peak_open_mm": 102.46140217671451,
+  "median_simulation_seconds": 4.733333333333333,
+  "max_simulation_seconds": 15.566666666666666,
+  "pooled_inference_latency_ms": {
+    "count": 1241,
+    "p50": 138.4011689988256,
+    "p95": 139.50926200050162
+  },
+  "native_demo_video_frames": 35,
+  "goal_achieved": true
+}

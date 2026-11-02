@@ -1,0 +1,259 @@
+{
+ "checkpoint": "checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+ "episode": 400,
+ "other_episode": 401,
+ "steps": [
+  40,
+  68
+ ],
+ "offset_mm": [
+  -20.0,
+  0.0,
+  20.0
+ ],
+ "dq_rad": 0.01,
+ "records": [
+  {
+   "probe": "offset_y",
+   "step": 40,
+   "offset_mm": -20.0,
+   "ee_delta_mm": [
+    -277.0998926833857,
+    27.87481539432696,
+    375.4567654346612
+   ]
+  },
+  {
+   "probe": "offset_y",
+   "step": 40,
+   "offset_mm": 0.0,
+   "ee_delta_mm": [
+    -277.1106453825497,
+    28.214930251221404,
+    375.4449098949932
+   ]
+  },
+  {
+   "probe": "offset_y",
+   "step": 40,
+   "offset_mm": 20.0,
+   "ee_delta_mm": [
+    -277.236965168322,
+    28.57821169720384,
+    376.2804708441757
+   ]
+  },
+  {
+   "probe": "offset_y",
+   "step": 68,
+   "offset_mm": -20.0,
+   "ee_delta_mm": [
+    -149.26548783824478,
+    -121.9526558475833,
+    363.1875384513696
+   ]
+  },
+  {
+   "probe": "offset_y",
+   "step": 68,
+   "offset_mm": 0.0,
+   "ee_delta_mm": [
+    -147.83775629154854,
+    -121.27197445104271,
+    363.87290176354355
+   ]
+  },
+  {
+   "probe": "offset_y",
+   "step": 68,
+   "offset_mm": 20.0,
+   "ee_delta_mm": [
+    -148.73463810114717,
+    -121.25728043590586,
+    363.7171287674603
+   ]
+  },
+  {
+   "probe": "offset_x",
+   "step": 40,
+   "offset_mm": -20.0,
+   "ee_delta_mm": [
+    -277.10239415287435,
+    28.694214753629876,
+    375.1573008913471
+   ]
+  },
+  {
+   "probe": "offset_x",
+   "step": 40,
+   "offset_mm": 0.0,
+   "ee_delta_mm": [
+    -277.25820675012403,
+    28.16966338825011,
+    375.69828091600374
+   ]
+  },
+  {
+   "probe": "offset_x",
+   "step": 40,
+   "offset_mm": 20.0,
+   "ee_delta_mm": [
+    -277.38492910545096,
+    28.0137192023507,
+    376.2792536811234
+   ]
+  },
+  {
+   "probe": "offset_x",
+   "step": 68,
+   "offset_mm": -20.0,
+   "ee_delta_mm": [
+    -148.4688251311506,
+    -121.40283765218577,
+    363.4921256891741
+   ]
+  },
+  {
+   "probe": "offset_x",
+   "step": 68,
+   "offset_mm": 0.0,
+   "ee_delta_mm": [
+    -147.79400855049636,
+    -121.18216580788885,
+    363.6521667929004
+   ]
+  },
+  {
+   "probe": "offset_x",
+   "step": 68,
+   "offset_mm": 20.0,
+   "ee_delta_mm": [
+    -149.35238565036445,
+    -120.81231252879729,
+    364.28809192774594
+   ]
+  },
+  {
+   "probe": "vision_ablation",
+   "step": 40,
+   "variant": "normal",
+   "first_ee_delta_mm": [
+    -277.13677603641963,
+    28.191993221477627,
+    375.4449911781707
+   ]
+  },
+  {
+   "probe": "vision_ablation",
+   "step": 40,
+   "variant": "black",
+   "first_ee_delta_mm": [
+    -276.7771714573462,
+    28.01494555929894,
+    373.0803775975783
+   ]
+  },
+  {
+   "probe": "vision_ablation",
+   "step": 40,
+   "variant": "other_start",
+   "first_ee_delta_mm": [
+    -277.60307336353253,
+    28.243108051776574,
+    376.2938900336583
+   ]
+  },
+  {
+   "probe": "vision_ablation_diff",
+   "step": 40,
+   "variant": "black",
+   "max_action_rad": 0.11870046868217005,
+   "first_ee_mm": 2.3983449946776565,
+   "max_ee_mm": 3.269956614425514
+  },
+  {
+   "probe": "vision_ablation_diff",
+   "step": 40,
+   "variant": "other_start",
+   "max_action_rad": 0.0073974146134072605,
+   "first_ee_mm": 0.9698841116325579,
+   "max_ee_mm": 1.5128493576119144
+  },
+  {
+   "probe": "vision_ablation",
+   "step": 68,
+   "variant": "normal",
+   "first_ee_delta_mm": [
+    -147.9243485670342,
+    -121.22938411856732,
+    363.7840503179703
+   ]
+  },
+  {
+   "probe": "vision_ablation",
+   "step": 68,
+   "variant": "black",
+   "first_ee_delta_mm": [
+    -149.09949361445672,
+    -109.83049587766291,
+    360.9574038140031
+   ]
+  },
+  {
+   "probe": "vision_ablation",
+   "step": 68,
+   "variant": "other_start",
+   "first_ee_delta_mm": [
+    -149.77478381990986,
+    -121.51379366805263,
+    363.1228145390289
+   ]
+  },
+  {
+   "probe": "vision_ablation_diff",
+   "step": 68,
+   "variant": "black",
+   "max_action_rad": 0.11250904007204568,
+   "first_ee_mm": 11.80277719308046,
+   "max_ee_mm": 16.811363099190526
+  },
+  {
+   "probe": "vision_ablation_diff",
+   "step": 68,
+   "variant": "other_start",
+   "max_action_rad": 0.013695401150917386,
+   "first_ee_mm": 1.9855055205855487,
+   "max_ee_mm": 3.2299603381950206
+  },
+  {
+   "probe": "proprio",
+   "step": 68,
+   "dq_rad": 0.0,
+   "arm_moved_mm": 0.0,
+   "ee_delta_mm": [
+    -147.86106255914774,
+    -121.02018156121706,
+    363.6973911362887
+   ]
+  },
+  {
+   "probe": "proprio",
+   "step": 68,
+   "dq_rad": 0.01,
+   "arm_moved_mm": 2.824524266847497,
+   "ee_delta_mm": [
+    -150.5681694094486,
+    -121.6145813236266,
+    364.5134622277024
+   ]
+  },
+  {
+   "probe": "proprio_diff",
+   "step": 68,
+   "dq_rad": 0.01,
+   "max_action_rad": 0.02448060472836841,
+   "first_ee_mm": 2.559959923532452,
+   "max_ee_mm": 2.559959923532452
+  }
+ ]
+}

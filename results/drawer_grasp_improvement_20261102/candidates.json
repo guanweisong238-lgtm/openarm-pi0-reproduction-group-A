@@ -1,0 +1,129 @@
+[
+  {
+    "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+    "selection": {
+      "stage": "baseline_selection16",
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_020_randomized_rehearsal/2000",
+      "trials": 16,
+      "success": 15,
+      "groups": {
+        "expanded": {
+          "trials": 8,
+          "success": 7
+        },
+        "near": {
+          "trials": 8,
+          "success": 8
+        }
+      },
+      "output": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/grasp_improvement_20261102/baseline_selection16"
+    },
+    "source": "baseline"
+  },
+  {
+    "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_021_contact_expanded/2000",
+    "gate": {
+      "stage": "feedback_endpoint_021_contact_expanded_2000_train_gate",
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_021_contact_expanded/2000",
+      "trials": 4,
+      "success": 2,
+      "groups": {
+        "original": {
+          "trials": 4,
+          "success": 2
+        }
+      },
+      "output": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_021_contact_expanded_2000_train_gate"
+    },
+    "source": "feedback_endpoint_021_contact_expanded",
+    "step": 2000
+  },
+  {
+    "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_021_contact_expanded/4000",
+    "gate": {
+      "stage": "feedback_endpoint_021_contact_expanded_4000_train_gate",
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_021_contact_expanded/4000",
+      "trials": 4,
+      "success": 0,
+      "groups": {
+        "original": {
+          "trials": 4,
+          "success": 0
+        }
+      },
+      "output": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_021_contact_expanded_4000_train_gate"
+    },
+    "source": "feedback_endpoint_021_contact_expanded",
+    "step": 4000
+  },
+  {
+    "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_022_contact_expanded/2000",
+    "gate": {
+      "stage": "feedback_endpoint_022_contact_expanded_2000_train_gate",
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_022_contact_expanded/2000",
+      "trials": 4,
+      "success": 4,
+      "groups": {
+        "original": {
+          "trials": 4,
+          "success": 4
+        }
+      },
+      "output": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_022_contact_expanded_2000_train_gate"
+    },
+    "source": "feedback_endpoint_022_contact_expanded",
+    "step": 2000,
+    "selection": {
+      "stage": "feedback_endpoint_022_contact_expanded_2000_selection16",
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_022_contact_expanded/2000",
+      "trials": 16,
+      "success": 11,
+      "groups": {
+        "expanded": {
+          "trials": 8,
+          "success": 6
+        },
+        "near": {
+          "trials": 8,
+          "success": 5
+        }
+      },
+      "output": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_022_contact_expanded_2000_selection16"
+    }
+  },
+  {
+    "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_022_contact_expanded/4000",
+    "gate": {
+      "stage": "feedback_endpoint_022_contact_expanded_4000_train_gate",
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_022_contact_expanded/4000",
+      "trials": 4,
+      "success": 4,
+      "groups": {
+        "original": {
+          "trials": 4,
+          "success": 4
+        }
+      },
+      "output": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_022_contact_expanded_4000_train_gate"
+    },
+    "source": "feedback_endpoint_022_contact_expanded",
+    "step": 4000,
+    "selection": {
+      "stage": "feedback_endpoint_022_contact_expanded_4000_selection16",
+      "checkpoint": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/pi0_openarm_drawer_endpoint_v001/feedback_endpoint_022_contact_expanded/4000",
+      "trials": 16,
+      "success": 13,
+      "groups": {
+        "expanded": {
+          "trials": 8,
+          "success": 6
+        },
+        "near": {
+          "trials": 8,
+          "success": 7
+        }
+      },
+      "output": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/logs/a2_pi0/grasp_improvement_20261102/feedback_endpoint_022_contact_expanded_4000_selection16"
+    }
+  }
+]

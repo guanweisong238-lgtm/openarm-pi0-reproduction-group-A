@@ -1,0 +1,152 @@
+{
+  "name": "openarm_drawer_eval_v003_selection",
+  "seed": 2026110206,
+  "episode_id_start": 300,
+  "starts": [
+    {
+      "name": "near_000",
+      "evaluation_group": "near",
+      "drawer_offset_x": 0.09074147273858506,
+      "drawer_offset_y": -0.017296236587991842,
+      "handle_radius": 0.005284736728896704,
+      "right_jitter": 0.029676885322597053,
+      "seed": 943666918
+    },
+    {
+      "name": "near_001",
+      "evaluation_group": "near",
+      "drawer_offset_x": 0.10517451041368304,
+      "drawer_offset_y": -0.023672422713883774,
+      "handle_radius": 0.009646145315023228,
+      "right_jitter": 0.035738571887092487,
+      "seed": 1399953139
+    },
+    {
+      "name": "near_002",
+      "evaluation_group": "near",
+      "drawer_offset_x": 0.10532762821206842,
+      "drawer_offset_y": 0.024854906719285967,
+      "handle_radius": 0.007784379663828641,
+      "right_jitter": 0.03732503356165931,
+      "seed": 363546117
+    },
+    {
+      "name": "near_003",
+      "evaluation_group": "near",
+      "drawer_offset_x": 0.09037467396163906,
+      "drawer_offset_y": 0.017018505903626704,
+      "handle_radius": 0.008217100168585272,
+      "right_jitter": 0.03439414667642814,
+      "seed": 1641231397
+    },
+    {
+      "name": "near_004",
+      "evaluation_group": "near",
+      "drawer_offset_x": 0.09256988935881817,
+      "drawer_offset_y": -0.017426143478932496,
+      "handle_radius": 0.010284081847398256,
+      "right_jitter": 0.025638476941718925,
+      "seed": 1732780346
+    },
+    {
+      "name": "near_005",
+      "evaluation_group": "near",
+      "drawer_offset_x": 0.09620851449070537,
+      "drawer_offset_y": -0.002969113406486236,
+      "handle_radius": 0.011059156455336755,
+      "right_jitter": 0.029347010553341407,
+      "seed": 1884347179
+    },
+    {
+      "name": "near_006",
+      "evaluation_group": "near",
+      "drawer_offset_x": 0.10556181211793048,
+      "drawer_offset_y": -0.019855525766099613,
+      "handle_radius": 0.006877679765768108,
+      "right_jitter": 0.036033907837041856,
+      "seed": 796145990
+    },
+    {
+      "name": "near_007",
+      "evaluation_group": "near",
+      "drawer_offset_x": 0.09538894502598752,
+      "drawer_offset_y": -0.017196313406432684,
+      "handle_radius": 0.0057172209465657965,
+      "right_jitter": 0.010349015334582658,
+      "seed": 105791332
+    },
+    {
+      "name": "expanded_000",
+      "evaluation_group": "expanded",
+      "drawer_offset_x": 0.09432337080400263,
+      "drawer_offset_y": -0.02647128101611238,
+      "handle_radius": 0.006407429481732689,
+      "right_jitter": 0.04572842209467484,
+      "seed": 977385140
+    },
+    {
+      "name": "expanded_001",
+      "evaluation_group": "expanded",
+      "drawer_offset_x": 0.08637581001287711,
+      "drawer_offset_y": 0.004798478545180673,
+      "handle_radius": 0.00700841434071525,
+      "right_jitter": 0.07356352559911238,
+      "seed": 128024903
+    },
+    {
+      "name": "expanded_002",
+      "evaluation_group": "expanded",
+      "drawer_offset_x": 0.08255160814303182,
+      "drawer_offset_y": -0.025276293424952346,
+      "handle_radius": 0.006200999524286816,
+      "right_jitter": 0.05407425376549182,
+      "seed": 1442805985
+    },
+    {
+      "name": "expanded_003",
+      "evaluation_group": "expanded",
+      "drawer_offset_x": 0.10649903564032584,
+      "drawer_offset_y": 0.028438258374067132,
+      "handle_radius": 0.011652069385075889,
+      "right_jitter": 0.042506752337273725,
+      "seed": 1923586930
+    },
+    {
+      "name": "expanded_004",
+      "evaluation_group": "expanded",
+      "drawer_offset_x": 0.08795490256328628,
+      "drawer_offset_y": -0.028392949346628907,
+      "handle_radius": 0.0068069832753078485,
+      "right_jitter": 0.0679041643887218,
+      "seed": 1179063322
+    },
+    {
+      "name": "expanded_005",
+      "evaluation_group": "expanded",
+      "drawer_offset_x": 0.08507980770881433,
+      "drawer_offset_y": 0.041942839606089785,
+      "handle_radius": 0.004259347457754023,
+      "right_jitter": 0.040671447738525664,
+      "seed": 485903316
+    },
+    {
+      "name": "expanded_006",
+      "evaluation_group": "expanded",
+      "drawer_offset_x": 0.09980365675007946,
+      "drawer_offset_y": 0.02300634235964613,
+      "handle_radius": 0.012750854154195556,
+      "right_jitter": 0.04732126467246653,
+      "seed": 669888912
+    },
+    {
+      "name": "expanded_007",
+      "evaluation_group": "expanded",
+      "drawer_offset_x": 0.1027152773718769,
+      "drawer_offset_y": 0.008347995471897782,
+      "handle_radius": 0.010401542058566342,
+      "right_jitter": 0.05672373616909361,
+      "seed": 417692792
+    }
+  ],
+  "purpose": "Selection only"
+}
