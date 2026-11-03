@@ -1,5 +1,26 @@
 # OpenArm v2 A1 仿真环境（WSL + uv）
 
+## 抽屉多形态与多高度参数化仿真（2026-11-03，供 A2 泛化扩采交接）
+
+针对 $\pi_0$ 抽屉模型泛化能力提升需求，新增统一参数化抽屉场景生成器 `simulation/drawer_scene_generator.py` 与 30Hz 真实接触闭环环境 `simulation/drawer_simulation.py`，支持：
+- **5 种抽屉外形预设**（`standard` / `wide_low` / `narrow_tall` / `deep_compact` / `large_modern`）与 **5 种材质配色预设**（`classic_wood_blue` / `light_oak_white` / `walnut_slate` / `industrial_steel` / `sage_green`）；
+- **柜体与抽屉宽（Y）、深（X）、高（Z）及把手尺寸联动缩放**（自动校验滑动间隙 $\ge 2\text{ mm}$）；
+- **柜体三维位置与高度可变**（`--drawer-offset-x/y/z`，调节高度 Z 时底座 `drawer_base` 自动伸缩，确保底面恒贴合桌面 `z = 0.40 m`，不悬空、不穿模）；
+- **100% 向后兼容**：默认参数下编译出的模型与改造前逐字节一致，完整参数规格与交接说明见 [抽屉多形态参数化仿真交接文档](docs/drawer_variation_handoff.md)。
+
+```bash
+# ① 场景几何与三路相机渲染验证（导出五款抽屉对比图至 outputs/drawer_variants_preview/）
+uv run --locked python -m scripts.a1_simulation.verify_drawer_variants --mode scene
+
+# ② 5 款抽屉变体真实接触专家（无 weld）拉取与零误差独立回放验证
+uv run --locked python -m scripts.a1_simulation.verify_drawer_variants --mode expert
+
+# ③ 使用已就位的模型检查点运行闭环推理验证（需同机配置好检查点与 GPU 环境）
+uv run --locked python -m scripts.a1_simulation.verify_drawer_variants --mode policy --seconds 18
+```
+
+---
+
 ## A2 模型接口适配（2026-10-23）
 
 新增 `OpenArmPolicyEnv`，提供右臂优先的16维状态/动作、顶部和双腕RGB、名义30Hz步进及限幅反馈。
@@ -12,6 +33,8 @@ MUJOCO_GL=egl uv run --locked python -m scripts.check_policy_interface
 ```
 
 顶部相机为可配置的初始位姿，仍需与公开数据对齐；当前没有完成抓方块场景或成功率评估。
+
+---
 
 ## 一、 系统与依赖环境规格
 
@@ -91,32 +114,51 @@ uv run --locked openarm-mujoco-launch openarm_mujoco/v2/pedestal/pedestal.xml --
 
 ```text
 openarm-a1/
-├── pyproject.toml              # 项目依赖与 uv workspace 配置
-├── uv.lock                     # 精确依赖锁文件（还需固定模型源码和系统依赖）
-├── .python-version             # Python 3.11 版本定义
-├── .gitignore                  # Git 忽略配置
-├── openarm_mujoco/             # OpenArm 官方模型源码与资产 (Submodule)
-├── simulation/                 # 仿真环境核心实现
+├── pyproject.toml                  # 项目依赖与 uv workspace 配置
+├── uv.lock                         # 精确依赖锁文件（还需固定模型源码和系统依赖）
+├── .python-version                 # Python 3.11 版本定义
+├── .gitignore                      # Git 忽略配置
+├── openarm_mujoco/                 # OpenArm 官方模型源码与资产 (Submodule)
+├── configs/                        # 环境与多变体采样配置
+│   ├── a2_interface.json           # A2 30Hz 策略接口与相机参数配置
+│   ├── a2_dataset_render.json      # 数据集重渲染相机配置
+│   └── drawer_variants_preset.json # 5 套代表性抽屉外形/配色/高度变体配置清单
+├── simulation/                     # 仿真环境核心实现
 │   ├── __init__.py
-│   └── env.py                  # OpenArmEnv 标准环境封装类 (reset, step, get_observation)
-├── scripts/                    # 验证与测试脚本
+│   ├── env.py                      # OpenArmEnv 标准 20Hz 环境封装类
+│   ├── policy_env.py               # OpenArmPolicyEnv 右臂优先 30Hz 策略包装环境
+│   ├── drawer_scene_generator.py   # 抽屉多外形、多配色、尺寸缩放与三维位姿统一生成器
+│   └── drawer_simulation.py        # DrawerSimulation 30Hz 抽屉真实接触闭环环境
+├── scripts/                        # 验证、采集与回放脚本
 │   ├── __init__.py
-│   ├── inspect_robot.py        # 机器人模型结构探测工具
-│   ├── test_control.py         # T1-T6 数值检查及可选交互演示
-│   ├── test_env.py             # 接口单元测试脚本
-│   ├── capture_camera.py       # 双腕相机截图工具
-│   ├── record_sample.py        # 5秒时序对齐示教采样工具
-│   └── validate_sample.py      # 样本元数据、时序与回放校验
-├── docs/                       # 架构与规格文档
-│   ├── robot_spec.md           # 16维关节/夹爪/相机详尽规格说明书 (必读!)
-│   ├── environment.txt         # 实际运行环境软硬件配置快照
-│   └── openarm-commit.txt      # 锁定的 OpenArm 模型 Commit 哈希
-├── outputs/                    # 产物输出目录
-│   ├── model_info.txt          # 原始模型探测报告
-│   ├── camera_wrist_left.png   # 左腕相机样张 (240x320 RGB)
-│   ├── camera_wrist_right.png  # 右腕相机样张 (240x320 RGB)
-│   └── sample_episode.npz      # 5秒 100 步示教数据样条
-└── README.md                  # 复现步骤和接口入口
+│   ├── inspect_robot.py            # 机器人模型结构探测工具
+│   ├── test_control.py             # T1-T6 数值检查及可选交互演示
+│   ├── test_env.py                 # 接口单元测试脚本
+│   ├── capture_camera.py           # 双腕相机截图工具
+│   ├── record_sample.py            # 5秒时序对齐示教采样工具
+│   ├── validate_sample.py          # 样本元数据、时序与回放校验
+│   ├── check_policy_interface.py   # A2 策略包装接口数值与渲染验收脚本
+│   └── a1_simulation/              # 抽屉泛化采集、回放与模型闭环脚本
+│       ├── contact_drawer_controller.py # 禁用 weld 的真实双指接触专家控制器
+│       ├── collect_drawer_trial.py      # 参数化抽屉变体示教采集入口
+│       ├── replay_drawer_trial.py       # 抽屉变体示教无头校验与 3D 窗口回放
+│       ├── verify_drawer_variants.py    # 抽屉变体三层递进式一键可控验证脚本
+│       ├── replay_episode.py            # LeRobot parquet 公开示教重渲染与回放
+│       ├── resident_policy_client.py    # 常驻策略进程通信客户端
+│       ├── run_model_closed_loop.py     # CELL 场景模型闭环推理运行脚本
+│       └── view_model_chunk.py          # 单块模型动作预测对比查看脚本
+├── docs/                           # 架构与交接规格文档
+│   ├── drawer_variation_handoff.md # 抽屉多形态与多高度参数化仿真交接文档 (A1->A2)
+│   ├── a2_model_interface.md       # A2 模型与公开数据接口适配说明
+│   ├── robot_spec.md               # 16维关节/夹爪/相机详尽规格说明书 (必读!)
+│   ├── environment.txt             # 实际运行环境软硬件配置快照
+│   └── openarm-commit.txt          # 锁定的 OpenArm 模型 Commit 哈希
+├── outputs/                        # 基础验收产物目录（大型衍生验证产物已 Git 忽略）
+│   ├── model_info.txt              # 原始模型探测报告
+│   ├── camera_wrist_left.png       # 左腕相机样张 (240x320 RGB)
+│   ├── camera_wrist_right.png      # 右腕相机样张 (240x320 RGB)
+│   └── sample_episode.npz          # 5秒 100 步示教数据样条
+└── README.md                       # 复现步骤和接口入口
 ```
 
 ---
@@ -158,6 +200,4 @@ obs = env.step(action)
 
 基础验收包括 v2 模型加载、双臂与夹爪控制、状态接口、双腕相机，以及具有终端状态和元数据的 5 秒采样。`step(action)` 返回一个观测字典，不是 Gymnasium 四元组。`get_observation()` 返回状态数据，RGB 图像由采集脚本渲染。
 
-
-
-控制脚本在 headless 和 GUI 模式均校验实际响应、回位和复位；测试期间关闭窗口会返回中断状态，不报告全部通过。正式 W2 示教任务、OpenPI 数据适配及团队接口确认仍需另行完成。
+控制脚本在 headless 和 GUI 模式均校验实际响应、回位和复位；测试期间关闭窗口会返回中断状态，不报告全部通过。抽屉多形态与多高度参数化仿真已通过场景几何、真实接触专家回放及模型闭环三级验证，详见 [`docs/drawer_variation_handoff.md`](docs/drawer_variation_handoff.md)。

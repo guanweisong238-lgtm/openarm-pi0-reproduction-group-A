@@ -5,11 +5,13 @@ __pycache__/
 *.so
 .pytest_cache/
 .uv-cache/
+.cache/
 
 codex/
 
 *.mp4
 *.tar.gz
+MUJOCO_LOG.TXT
 
 # Local credentials and build caches
 .env
@@ -19,3 +21,9 @@ codex/
 
 # A2接口检查生成的三路样张和验收结果，可由脚本重新生成。
 /outputs/a2_interface/
+
+# 抽屉多形态与多高度仿真的预览样张、回放日志与验证产物（可由 verify_drawer_variants.py 重新生成）
+/outputs/drawer_replay/
+/outputs/drawer_variants_preview/
+/outputs/drawer_variants_verify/
+/outputs/custom_drawer_demo/
