@@ -24,8 +24,8 @@ A2_PYTHON = A2_ROOT / ".venv/bin/python"
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from simulation.drawer_scene_generator import compile_drawer_scene, resolve_drawer_variation
-from simulation.drawer_simulation import UPSTREAM_COMMIT, resolve_upstream_source
+from simulation.drawer_scene_generator import OBJECT_CATALOG, compile_drawer_scene, resolve_drawer_variation
+from simulation.drawer_simulation import UPSTREAM_COMMIT, is_object_inside_drawer, resolve_upstream_source
 
 
 def main() -> None:
@@ -134,6 +134,11 @@ def main() -> None:
 
     def finish(max_error, cycle):
         max_error = max(max_error, float(np.max(np.abs(data.qpos - episode["terminal_qpos"]))))
+        target_obj = provenance.get("target_object")
+        obj_inside = None
+        if target_obj and target_obj in OBJECT_CATALOG:
+            drawer_body = "drawer_2" if provenance.get("target_drawer") == "secondary" else "drawer"
+            obj_inside, _ = is_object_inside_drawer(model, data, OBJECT_CATALOG[target_obj]["body_name"], drawer_body)
         report = {
             "episode": str(episode_path),
             "variant_preset": variation["variant_preset"],
@@ -146,6 +151,8 @@ def main() -> None:
             "max_qpos_error": max_error,
             "replay_verified": max_error < 1e-6,
             "final_open_m": -float(data.qpos[drawer_qpos]),
+            "target_object": target_obj,
+            "target_object_inside_drawer": obj_inside,
             "gui": not args.headless,
             "task_success_8cm_held_1s": provenance.get(
                 "opened_8cm_held_1s_during_episode", provenance["success_8cm_held_1s"]

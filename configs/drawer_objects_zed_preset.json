@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "description": "A1 语言指令桌面物体（方块/橡皮/胶棒/空塑料瓶）放入空心抽屉 + 头部 Stereolabs ZED Mini 双目相机预设配置清单",
+  "head_stereo_camera": {
+    "model_name": "Stereolabs ZED Mini",
+    "baseline_m": 0.063,
+    "mount_pos_world_m": [0.04, 0.0, 0.82],
+    "lookat_world_m": [0.35, -0.08, 0.44],
+    "fovy_degrees": 54.0,
+    "cameras": ["camera_head_left", "camera_head_right"]
+  },
+  "object_catalog": ["cube", "eraser", "glue_stick", "plastic_bottle"],
+  "variants": [
+    {
+      "name": "obj01_cube_into_standard_blue",
+      "description": "4物体同台（预开抽屉）：抓取红色方块放入蓝灰标准空心抽屉 + ZED Mini 头部双目",
+      "variant_preset": "standard",
+      "appearance_preset": "classic_wood_blue",
+      "hollow_drawer": true,
+      "initial_drawer_open_m": 0.09,
+      "drawer_layout": "single",
+      "objects": ["cube", "eraser", "glue_stick", "plastic_bottle"],
+      "target_object": "cube",
+      "enable_head_stereo": true,
+      "camera_preset": "zed_4cam"
+    },
+    {
+      "name": "obj02_eraser_into_wide_oak",
+      "description": "4物体同台（预开抽屉）：抓取美术橡皮放入浅橡木宽矮空心抽屉 + ZED Mini 头部双目",
+      "variant_preset": "wide_low",
+      "appearance_preset": "light_oak_white",
+      "hollow_drawer": true,
+      "initial_drawer_open_m": 0.09,
+      "drawer_layout": "single",
+      "objects": ["cube", "eraser", "glue_stick", "plastic_bottle"],
+      "target_object": "eraser",
+      "enable_head_stereo": true,
+      "camera_preset": "zed_4cam"
+    },
+    {
+      "name": "obj03_glue_stick_into_deep_steel",
+      "description": "4物体同台（预开抽屉）：抓取固体胶棒放入工业钢深匣空心抽屉 + ZED Mini 头部双目",
+      "variant_preset": "deep_compact",
+      "appearance_preset": "industrial_steel",
+      "hollow_drawer": true,
+      "initial_drawer_open_m": 0.09,
+      "drawer_layout": "single",
+      "objects": ["cube", "eraser", "glue_stick", "plastic_bottle"],
+      "target_object": "glue_stick",
+      "enable_head_stereo": true,
+      "camera_preset": "zed_4cam"
+    },
+    {
+      "name": "obj04_plastic_bottle_into_large_sage",
+      "description": "4物体同台（预开抽屉）：抓取空塑料瓶放入鼠尾草绿大号空心抽屉 + ZED Mini 头部双目",
+      "variant_preset": "large_modern",
+      "appearance_preset": "sage_green",
+      "hollow_drawer": true,
+      "initial_drawer_open_m": 0.09,
+      "drawer_layout": "single",
+      "objects": ["cube", "eraser", "glue_stick", "plastic_bottle"],
+      "target_object": "plastic_bottle",
+      "enable_head_stereo": true,
+      "camera_preset": "zed_4cam"
+    },
+    {
+      "name": "obj05_open_first_then_cube_dual_drawers",
+      "description": "双抽屉并排 + 起始关闭：先真实接触拉开蓝灰主抽屉，再抓取红色方块放入抽屉内 + ZED Mini 头部双目",
+      "variant_preset": "standard",
+      "appearance_preset": "classic_wood_blue",
+      "drawer_x": 0.10,
+      "pull_distance": 0.10,
+      "hollow_drawer": true,
+      "initial_drawer_open_m": 0.0,
+      "drawer_layout": "dual_side_by_side",
+      "secondary_variant_preset": "wide_low",
+      "secondary_appearance_preset": "light_oak_white",
+      "objects": ["cube", "eraser", "glue_stick", "plastic_bottle"],
+      "target_object": "cube",
+      "enable_head_stereo": true,
+      "camera_preset": "all_5cam"
+    }
+  ]
+}

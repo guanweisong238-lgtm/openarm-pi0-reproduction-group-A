@@ -46,9 +46,9 @@ CAMERAS = ("camera_ceiling", "camera_wrist_left", "camera_wrist_right")
 
 
 def _ensure_a2_python_for_mode(mode: str) -> None:
-    """当执行 expert 或 policy 模式且当前环境缺少 scipy/jax 时，自动切换到 A2 .venv 执行。"""
+    """当执行 expert / objects_zed / policy 模式且当前环境缺少 scipy/jax 时，自动切换到 A2 .venv 执行。"""
     needs_switch = False
-    if mode in ("expert", "all") and importlib.util.find_spec("scipy") is None:
+    if mode in ("expert", "objects_zed", "all") and importlib.util.find_spec("scipy") is None:
         needs_switch = True
     if mode in ("policy", "all") and importlib.util.find_spec("jax") is None:
         needs_switch = True
@@ -499,13 +499,234 @@ def verify_policy_mode(
     return report
 
 
+def verify_objects_zed_mode(
+    config_path: Path | None = None,
+    selected_names: list[str] | None = None,
+    with_images: bool = False,
+) -> dict:
+    """模式 4（objects_zed）：验证 4 种物体（方块/橡皮/胶棒/空塑料瓶）放入空心抽屉 + 头部 Stereolabs ZED Mini 双目相机。"""
+    import mujoco
+    import numpy as np
+    from PIL import Image, ImageDraw
+
+    if config_path is None or config_path.name == "drawer_variants_preset.json":
+        config_path = ROOT / "configs/drawer_objects_zed_preset.json"
+    config = json.loads(config_path.read_text())
+    variants = config.get("variants") or []
+    if selected_names:
+        variants = [v for v in variants if v["name"] in selected_names]
+
+    source_dir = resolve_upstream_source()
+    scene_xml = source_dir / "v2/openarm_mujoco_v2/articulated_scene.xml"
+    preview_dir = ROOT / "outputs/drawer_variants_preview"
+    preview_dir.mkdir(parents=True, exist_ok=True)
+    out_root = ROOT / "outputs/drawer_variants_verify/objects_zed_trials"
+    if out_root.exists():
+        shutil.rmtree(out_root)
+    out_root.mkdir(parents=True, exist_ok=True)
+
+    # 1. 渲染 ZED Mini 头部双目外观特写 + 左/右双目视野 + 顶视 4 物体同台 + 双抽屉总览图
+    overview_var = resolve_drawer_variation(
+        variant_preset="standard",
+        appearance_preset="classic_wood_blue",
+        hollow_drawer=True,
+        initial_drawer_open_m=0.09,
+        drawer_layout="dual_side_by_side",
+        secondary_variant_preset="wide_low",
+        secondary_appearance_preset="light_oak_white",
+        objects=["cube", "eraser", "glue_stick", "plastic_bottle"],
+        target_object="cube",
+        enable_head_stereo=True,
+    )
+    ov_model = compile_drawer_scene(str(scene_xml), overview_var, wrist_view="side", shadow_size=1024)
+    ov_data = mujoco.MjData(ov_model)
+    mujoco.mj_resetDataKeyframe(ov_model, ov_data, ov_model.key("ready").id)
+    mujoco.mj_forward(ov_model, ov_data)
+
+    left_pos = ov_data.cam_xpos[ov_model.camera("camera_head_left").id]
+    right_pos = ov_data.cam_xpos[ov_model.camera("camera_head_right").id]
+    stereo_baseline_mm = float(np.linalg.norm(left_pos - right_pos) * 1000.0)
+    assert abs(stereo_baseline_mm - 63.0) < 0.1, f"ZED Mini 双目基线偏离 63mm: {stereo_baseline_mm}"
+
+    renderer = mujoco.Renderer(ov_model, height=240, width=320)
+    try:
+        # 外部特写相机观察机器人头部安装的 ZED Mini 3D 双目实体
+        ext_cam = mujoco.MjvCamera()
+        ext_cam.lookat[:] = [0.10, 0.0, 0.72]
+        ext_cam.distance = 0.58
+        ext_cam.azimuth = 148.0
+        ext_cam.elevation = -16.0
+        renderer.update_scene(ov_data, camera=ext_cam)
+        img_zed_ext = renderer.render().copy()
+
+        renderer.update_scene(ov_data, camera="camera_head_left")
+        img_head_l = renderer.render().copy()
+
+        renderer.update_scene(ov_data, camera="camera_head_right")
+        img_head_r = renderer.render().copy()
+
+        renderer.update_scene(ov_data, camera="camera_ceiling")
+        img_ceil = renderer.render().copy()
+    finally:
+        renderer.close()
+
+    header_row = np.concatenate([img_zed_ext, img_head_l, img_head_r, img_ceil], axis=1)
+    header_pil = Image.fromarray(header_row)
+    h_draw = ImageDraw.Draw(header_pil)
+    for idx, title in enumerate(
+        (
+            "External View: Head ZED Mini (63mm)",
+            "ZED Mini Left (camera_head_left)",
+            "ZED Mini Right (camera_head_right)",
+            "Overhead: 4 Objects & Dual Hollow Drawers",
+        )
+    ):
+        h_draw.rectangle([320 * idx, 0, 320 * (idx + 1) - 1, 22], fill=(18, 22, 28))
+        h_draw.text((320 * idx + 6, 4), title, fill=(255, 255, 255))
+
+    rows_images = [np.asarray(header_pil)]
+    results = []
+
+    # 2. 对清单中的每个物体与抽屉变体执行真实接触抓取放入抽屉 + 独立回放校验
+    for item in variants:
+        variation = resolve_drawer_variation(overrides_dict=item)
+        ep_dir = out_root / item["name"]
+        cmd = [
+            sys.executable,
+            str(ROOT / "scripts/a1_simulation/collect_drawer_trial.py"),
+            "--mode",
+            "contact",
+            "--expert",
+            "contact",
+            "--variant-preset",
+            variation["variant_preset"],
+            "--appearance-preset",
+            variation["appearance_preset"],
+            "--drawer-offset-x",
+            str(variation["drawer_offset_x_m"]),
+            "--drawer-offset-y",
+            str(variation["drawer_offset_y_m"]),
+            "--drawer-offset-z",
+            str(variation["drawer_offset_z_m"]),
+            "--pull-distance",
+            str(item.get("pull_distance", 0.09)),
+            "--initial-drawer-open",
+            str(variation["initial_drawer_open_m"]),
+            "--drawer-layout",
+            variation["drawer_layout"],
+            "--camera-preset",
+            str(item.get("camera_preset", "zed_4cam")),
+            "--wrist-view",
+            "side",
+            "--output",
+            str(ep_dir),
+        ]
+        if variation.get("hollow_drawer"):
+            cmd.append("--hollow-drawer")
+        if variation["head_stereo_camera"]["enabled"]:
+            cmd.append("--enable-head-stereo")
+        if variation.get("objects"):
+            cmd.extend(["--objects", *[o["type"] for o in variation["objects"]]])
+        if variation.get("target_object"):
+            cmd.extend(["--target-object", variation["target_object"]])
+        if not with_images:
+            cmd.append("--no-images")
+        subprocess.run(cmd, check=True)
+
+        replay_cmd = [
+            sys.executable,
+            str(ROOT / "scripts/a1_simulation/replay_drawer_trial.py"),
+            "--episode",
+            str(ep_dir / "episode.npz"),
+            "--headless",
+        ]
+        subprocess.run(replay_cmd, check=True)
+
+        rep = json.loads((ep_dir / "report.json").read_text())
+        with np.load(ep_dir / "episode.npz", allow_pickle=False) as ep_npz:
+            term_qpos = ep_npz["terminal_qpos"].copy()
+
+        # 渲染该轨迹完成时刻的四视图（ZED 左目、ZED 右目、顶视、右腕）
+        v_model = compile_drawer_scene(str(scene_xml), variation, wrist_view="side", shadow_size=1024)
+        v_data = mujoco.MjData(v_model)
+        v_data.qpos[:] = term_qpos
+        mujoco.mj_forward(v_model, v_data)
+        v_renderer = mujoco.Renderer(v_model, height=240, width=320)
+        try:
+            row_views = []
+            for cname in ("camera_head_left", "camera_head_right", "camera_ceiling", "camera_wrist_right"):
+                v_renderer.update_scene(v_data, camera=cname)
+                row_views.append(v_renderer.render().copy())
+        finally:
+            v_renderer.close()
+
+        row_comp = np.concatenate(row_views, axis=1)
+        row_pil = Image.fromarray(row_comp)
+        r_draw = ImageDraw.Draw(row_pil)
+        banner = (
+            f"{item['name']} | prompt=\"{rep['prompt']}\" | "
+            f"inside_drawer={rep['target_object_inside_drawer']} | rel={rep['target_object_rel_to_drawer_m']}m"
+        )
+        r_draw.rectangle([0, 0, 1280, 22], fill=(20, 20, 20))
+        r_draw.text((8, 4), banner, fill=(255, 255, 255))
+        item_png = preview_dir / f"{item['name']}.png"
+        row_pil.save(item_png)
+        rows_images.append(np.asarray(row_pil))
+
+        summary = {
+            "name": item["name"],
+            "prompt": rep["prompt"],
+            "variant_preset": variation["variant_preset"],
+            "appearance_preset": variation["appearance_preset"],
+            "drawer_layout": variation["drawer_layout"],
+            "initial_drawer_open_m": variation["initial_drawer_open_m"],
+            "target_object": rep["target_object"],
+            "target_object_inside_drawer": rep["target_object_inside_drawer"],
+            "target_object_rel_to_drawer_m": rep["target_object_rel_to_drawer_m"],
+            "expert_returned_success": rep["expert_returned_success"],
+            "final_open_mm": round(rep["final_open_m"] * 1000, 2),
+            "weld_frames": rep["weld_frames"],
+            "replay_max_qpos_error": rep["replay_max_qpos_error"],
+            "replay_verified": rep["replay_verified"],
+            "preview_image": str(item_png.relative_to(ROOT)),
+        }
+        assert summary["expert_returned_success"] and summary["target_object_inside_drawer"], f"物体放入抽屉未达标: {summary}"
+        assert summary["weld_frames"] == 0, "出现了非法 weld 帧"
+        assert summary["replay_verified"], "独立回放误差超限"
+        results.append(summary)
+        print(
+            f"[OBJECTS+ZED PASS] {item['name']}: target={summary['target_object']} "
+            f"inside={summary['target_object_inside_drawer']} rel={summary['target_object_rel_to_drawer_m']} "
+            f"weld={summary['weld_frames']} replay_err={summary['replay_max_qpos_error']:.2e}",
+            flush=True,
+        )
+
+    overview_png = preview_dir / "zed_mini_and_objects_overview.png"
+    Image.fromarray(np.concatenate(rows_images, axis=0)).save(overview_png)
+    print(f"[OBJECTS+ZED OVERVIEW] ZED Mini 双目与四物体入抽屉总览图已保存至: {overview_png.relative_to(ROOT)}", flush=True)
+
+    report = {
+        "mode": "objects_zed",
+        "all_passed": True,
+        "zed_mini_stereo_baseline_mm": round(stereo_baseline_mm, 3),
+        "overview_image": str(overview_png.relative_to(ROOT)),
+        "variants": results,
+    }
+    verify_dir = ROOT / "outputs/drawer_variants_verify"
+    verify_dir.mkdir(parents=True, exist_ok=True)
+    (verify_dir / "objects_zed_verification_report.json").write_text(
+        json.dumps(report, indent=2, ensure_ascii=False) + "\n"
+    )
+    return report
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--mode",
-        choices=("scene", "expert", "policy", "all"),
+        choices=("scene", "expert", "objects_zed", "policy", "all"),
         default="scene",
-        help="验证层级：scene（几何与渲染）/ expert（真实接触专家与回放）/ policy（模型闭环推理）/ all（全部）",
+        help="验证层级：scene（几何与渲染）/ expert（抽屉开合专家）/ objects_zed（四物体入抽屉+ZED双目）/ policy（模型闭环推理）/ all（全部）",
     )
     parser.add_argument(
         "--config",
@@ -527,7 +748,7 @@ def main() -> None:
     )
     parser.add_argument("--seconds", type=float, default=16.0, help="policy 模式每条闭环推理时长（秒）")
     parser.add_argument("--gui", action="store_true", help="policy 模式下弹出 MuJoCo 实时 3D 窗口")
-    parser.add_argument("--with-images", action="store_true", help="expert 模式下同时渲染保存三路 RGB 与 MP4")
+    parser.add_argument("--with-images", action="store_true", help="expert/objects_zed 模式下同时渲染保存多路 RGB 与 MP4")
     args = parser.parse_args()
 
     _ensure_a2_python_for_mode(args.mode)
@@ -536,6 +757,8 @@ def main() -> None:
         verify_scene_mode(args.config, args.variants)
     if args.mode in ("expert", "all"):
         verify_expert_mode(args.config, args.variants, with_images=args.with_images)
+    if args.mode in ("objects_zed", "all"):
+        verify_objects_zed_mode(args.config, args.variants, with_images=args.with_images)
     if args.mode in ("policy", "all"):
         verify_policy_mode(args.checkpoint, args.config, args.variants, seconds=args.seconds, gui=args.gui)
 

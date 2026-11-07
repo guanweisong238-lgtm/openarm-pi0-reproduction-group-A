@@ -23,7 +23,11 @@ os.environ.setdefault("LIBGL_ALWAYS_SOFTWARE", "1")
 import mujoco
 import numpy as np
 
-from simulation.drawer_scene_generator import compile_drawer_scene, resolve_drawer_variation
+from simulation.drawer_scene_generator import (
+    OBJECT_CATALOG,
+    compile_drawer_scene,
+    resolve_drawer_variation,
+)
 
 A1_ROOT = Path(__file__).resolve().parents[1]
 A2_ROOT = A1_ROOT.parent / "openarm-pi0-reproduction-group-A"
@@ -65,6 +69,49 @@ def finger_handle_contacts(model: mujoco.MjModel, data: mujoco.MjData, *, includ
                 counts[side] += 1
                 forces[side] += max(0.0, wrench[0])
     return counts, forces
+
+
+def finger_object_contacts(model: mujoco.MjModel, data: mujoco.MjData, geom_name: str):
+    """统计右臂内/外指片与指定桌面物体碰撞几何体的接触点数与法向合力。"""
+    target_id = model.geom(geom_name).id
+    fingers = [
+        {model.geom(f"finger_{side}_right_collision_{i:02d}").id for i in range(3)}
+        for side in ("inner", "outer")
+    ]
+    counts, forces = np.zeros(2, dtype=int), np.zeros(2)
+    for index in range(data.ncon):
+        contact = data.contact[index]
+        if contact.geom1 == target_id:
+            other = contact.geom2
+        elif contact.geom2 == target_id:
+            other = contact.geom1
+        else:
+            continue
+        wrench = np.zeros(6)
+        mujoco.mj_contactForce(model, data, index, wrench)
+        for side, ids in enumerate(fingers):
+            if other in ids:
+                counts[side] += 1
+                forces[side] += max(0.0, wrench[0])
+    return counts, forces
+
+
+def is_object_inside_drawer(
+    model: mujoco.MjModel,
+    data: mujoco.MjData,
+    obj_body_name: str,
+    drawer_body_name: str = "drawer",
+) -> tuple[bool, np.ndarray]:
+    """判定指定物体刚体是否已落入空心抽屉槽内部，返回 (是否在内腔, 相对抽屉中心三维偏移)。"""
+    obj_pos = data.xpos[model.body(obj_body_name).id]
+    drawer_pos = data.xpos[model.body(drawer_body_name).id]
+    rel = obj_pos - drawer_pos
+    inside = bool(
+        -0.044 <= rel[0] <= 0.044
+        and -0.042 <= rel[1] <= 0.042
+        and -0.030 <= rel[2] <= 0.032
+    )
+    return inside, rel.copy()
 
 
 class DrawerSimulation:
@@ -152,6 +199,20 @@ class DrawerSimulation:
         if not np.isfinite(self.data.qpos).all():
             raise RuntimeError("仿真状态非有限")
         return applied
+
+    def is_target_object_inside_drawer(self) -> tuple[bool, np.ndarray]:
+        """判定当前 episode 的目标物体是否已落入目标抽屉内腔，返回 (是否在内腔, 相对抽屉中心三维偏移)。"""
+        target_obj = self.provenance.get("target_object") or self.variation.get("target_object")
+        if not target_obj:
+            raise ValueError("当前 episode 未定义 target_object")
+        target_drawer = self.provenance.get("target_drawer") or self.variation.get("target_drawer") or "primary"
+        drawer_body = "drawer_2" if target_drawer == "secondary" else "drawer"
+        return is_object_inside_drawer(
+            self.model,
+            self.data,
+            OBJECT_CATALOG[target_obj]["body_name"],
+            drawer_body,
+        )
 
     def close(self):
         if self.renderer is not None:

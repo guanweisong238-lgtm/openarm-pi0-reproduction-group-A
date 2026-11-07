@@ -1,8 +1,12 @@
-"""A1 抽屉多形态与多高度参数化轨迹采集脚本（位于 openarm-a1/scripts/a1_simulation/）。
+"""A1 抽屉与桌面物体多形态参数化轨迹采集脚本（位于 openarm-a1/scripts/a1_simulation/）。
 
 复用固定版本上游 IK/路径规划，以 30 Hz 零阶保持位置目标，物理子步仍为 2 ms；
 重力补偿每个物理步重算。--mode contact 禁用抓取绑定，用于真实接触采集。
-支持 5 种抽屉外形预设、5 种材质配色、宽/深/高独立缩放及 X/Y/Z 三维偏移。
+支持：
+1. 5 种抽屉外形预设 × 5 种材质配色、宽/深/高独立缩放及 X/Y/Z 三维偏移；
+2. 真实“空心抽屉槽”（--hollow-drawer）与双抽屉并排布局（--drawer-layout dual_side_by_side）；
+3. 4 种桌面可抓取物体（cube 方块、eraser 橡皮、glue_stick 胶棒、plastic_bottle 空塑料瓶）及语言指令放入抽屉；
+4. 机器人头部 Stereolabs ZED Mini 双目深度相机（--enable-head-stereo / --camera-preset）。
 """
 
 from __future__ import annotations
@@ -32,23 +36,27 @@ if str(ROOT) not in sys.path:
 
 from simulation.drawer_scene_generator import (
     APPEARANCE_PRESETS,
+    CAMERA_PRESETS,
+    OBJECT_CATALOG,
     SHAPE_PRESETS,
     build_scene_overrides_dict,
+    build_task_prompt,
     compile_drawer_scene,
     resolve_drawer_variation,
 )
-from simulation.drawer_simulation import UPSTREAM_COMMIT, finger_handle_contacts, resolve_upstream_source
+from simulation.drawer_simulation import (
+    UPSTREAM_COMMIT,
+    finger_handle_contacts,
+    is_object_inside_drawer,
+    resolve_upstream_source,
+)
 
 ACTUATORS = [
     name
     for side in ("right", "left")
     for name in (*(f"{side}_joint{i}_ctrl" for i in range(1, 8)), f"{side}_finger1_ctrl")
 ]
-CAMERAS = {
-    "ceiling": "camera_ceiling",
-    "wrist_left": "camera_wrist_left",
-    "wrist_right": "camera_wrist_right",
-}
+CAMERAS = CAMERA_PRESETS["legacy_3cam"]
 FPS = 30
 
 
@@ -56,15 +64,17 @@ def write_json(path: Path, value: dict) -> None:
     path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n")
 
 
-def write_preview(directory: Path) -> None:
-    """将已保存的三路原始 RGB 拼成诊断视频，并保存拉出最远一帧。"""
+def write_preview(directory: Path, camera_mapping: dict[str, str]) -> None:
+    """将已保存的多路原始 RGB 拼成诊断视频，并保存关键帧图像。"""
     import numpy as np
 
     with np.load(directory / "episode.npz", allow_pickle=False) as episode:
-        if "images_ceiling" not in episode:
+        keys = [k for k in camera_mapping if f"images_{k}" in episode]
+        if not keys:
             return
-        views = [episode[f"images_{key}"] for key in CAMERAS]
+        views = [episode[f"images_{key}"] for key in keys]
         peak = int(np.argmin(episode["drawer"]))
+        width = 320 * len(keys)
         if importlib.util.find_spec("cv2") is not None:
             import cv2
 
@@ -72,7 +82,7 @@ def write_preview(directory: Path) -> None:
                 str(directory / "preview.mp4"),
                 cv2.VideoWriter_fourcc(*"mp4v"),
                 FPS,
-                (960, 240),
+                (width, 240),
             )
             if not writer.isOpened():
                 raise RuntimeError("无法创建诊断视频")
@@ -80,7 +90,7 @@ def write_preview(directory: Path) -> None:
                 for index in range(len(views[0])):
                     rgb = np.concatenate([view[index] for view in views], axis=1)
                     frame = cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR)
-                    for slot, label in enumerate(CAMERAS):
+                    for slot, label in enumerate(keys):
                         cv2.putText(
                             frame, label, (320 * slot + 8, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1
                         )
@@ -138,6 +148,62 @@ def main() -> None:
         default=None,
         help="抽屉面板样式覆盖",
     )
+    parser.add_argument("--hollow-drawer", action="store_true", help="启用真实空心抽屉槽（底板+三面侧后壁）")
+    parser.add_argument(
+        "--initial-drawer-open",
+        type=float,
+        default=0.0,
+        help="抽屉起始拉开位移（米），如 0.09 表示抽屉起始已拉开 90mm",
+    )
+    parser.add_argument(
+        "--drawer-layout",
+        choices=("single", "dual_side_by_side"),
+        default="single",
+        help="桌面抽屉布局：single（单抽屉）或 dual_side_by_side（左右双抽屉）",
+    )
+    parser.add_argument(
+        "--secondary-variant-preset",
+        choices=tuple(SHAPE_PRESETS.keys()),
+        default="wide_low",
+        help="第二抽屉外形预设（仅 dual_side_by_side 生效）",
+    )
+    parser.add_argument(
+        "--secondary-appearance-preset",
+        choices=tuple(APPEARANCE_PRESETS.keys()),
+        default="light_oak_white",
+        help="第二抽屉材质配色预设（仅 dual_side_by_side 生效）",
+    )
+    parser.add_argument(
+        "--objects",
+        nargs="*",
+        choices=tuple(OBJECT_CATALOG.keys()),
+        default=None,
+        help="在桌面上生成的物体列表（可选：cube eraser glue_stick plastic_bottle）",
+    )
+    parser.add_argument(
+        "--target-object",
+        choices=tuple(OBJECT_CATALOG.keys()),
+        default=None,
+        help="指定要抓取并放入抽屉的目标物体（若指定则执行抓取放入抽屉任务）",
+    )
+    parser.add_argument(
+        "--target-drawer",
+        choices=("primary", "secondary"),
+        default="primary",
+        help="目标放入抽屉（primary 或 secondary）",
+    )
+    parser.add_argument(
+        "--enable-head-stereo",
+        action="store_true",
+        help="在机器人头部启用 Stereolabs ZED Mini 双目深度相机模型与双路光学镜头",
+    )
+    parser.add_argument(
+        "--camera-preset",
+        choices=tuple(CAMERA_PRESETS.keys()),
+        default="legacy_3cam",
+        help="采集相机组合：legacy_3cam（默认兼容三路）、zed_4cam（ZED双目+双腕）、all_5cam（全部五路）",
+    )
+    parser.add_argument("--prompt", type=str, default=None, help="自定义自然语言指令（默认根据任务自动生成）")
     parser.add_argument("--contact-pitch", type=float, default=15.0)
     parser.add_argument(
         "--approach-offset",
@@ -176,6 +242,9 @@ def main() -> None:
     ):
         parser.error("接近路点超出试采范围")
 
+    enable_head_stereo = bool(args.enable_head_stereo or args.camera_preset in ("zed_4cam", "all_5cam"))
+    active_cameras = CAMERA_PRESETS[args.camera_preset]
+
     variation = resolve_drawer_variation(
         variant_preset=args.variant_preset,
         appearance_preset=args.appearance_preset,
@@ -189,9 +258,30 @@ def main() -> None:
         handle_standoff_scale=args.handle_standoff_scale,
         handle_radius_m=args.handle_radius,
         panel_style=args.panel_style,
+        hollow_drawer=args.hollow_drawer,
+        initial_drawer_open_m=args.initial_drawer_open,
+        drawer_layout=args.drawer_layout,
+        secondary_variant_preset=args.secondary_variant_preset,
+        secondary_appearance_preset=args.secondary_appearance_preset,
+        objects=args.objects,
+        target_object=args.target_object,
+        target_drawer=args.target_drawer,
+        enable_head_stereo=enable_head_stereo,
     )
 
-    task_prompt = "Open the drawer, then close it." if args.return_drawer else "Open the drawer."
+    task_prompt = (
+        args.prompt
+        if args.prompt is not None
+        else build_task_prompt(
+            target_object=args.target_object,
+            drawer_layout=args.drawer_layout,
+            target_drawer=args.target_drawer,
+            primary_appearance=args.appearance_preset,
+            secondary_appearance=args.secondary_appearance_preset,
+            initial_drawer_open_m=args.initial_drawer_open,
+            return_drawer=args.return_drawer,
+        )
+    )
     source_dir = resolve_upstream_source(args.source)
     args.output = args.output.resolve()
     commit = subprocess.check_output(["git", "-C", str(source_dir), "rev-parse", "HEAD"], text=True).strip()
@@ -200,11 +290,13 @@ def main() -> None:
     if args.output.exists():
         raise FileExistsError(args.output)
     if args.export_lerobot and args.no_images:
-        raise ValueError("导出 LeRobot 需要三路图像")
+        raise ValueError("导出 LeRobot 需要图像")
     if args.expert == "contact" and args.mode != "contact":
         raise ValueError("真实接触专家只能使用 --mode contact")
     if args.return_drawer and args.expert != "contact":
         raise ValueError("往返示教需要使用 --expert contact")
+    if args.target_object and args.expert != "contact":
+        raise ValueError("抓取物体放入抽屉需要使用 --expert contact")
     if not 0 < args.pull_distance <= 0.1:
         raise ValueError("拉动行程超出试验范围")
 
@@ -237,6 +329,7 @@ def main() -> None:
     model = compile_model()
     data = mujoco.MjData(model)
     mujoco.mj_resetDataKeyframe(model, data, model.key("ready").id)
+    data.ctrl[np.array([model.actuator(f"right_joint{i}_ctrl").id for i in range(1, 8)])] = data.qpos[9:16]
     mujoco.mj_forward(model, data)
     actuator_ids = np.array([model.actuator(name).id for name in ACTUATORS])
     joint_ids = model.actuator_trnid[actuator_ids, 0]
@@ -269,7 +362,7 @@ def main() -> None:
 
     args.output.mkdir(parents=True)
     renderer = None if args.no_images else mujoco.Renderer(model, height=240, width=320)
-    records, images, stages = [], {key: [] for key in CAMERAS}, []
+    records, images, stages = [], {key: [] for key in active_cameras}, []
     state_spec = mujoco.mjtState.mjSTATE_INTEGRATION
     initial_state = None
     initial_eq_data = model.eq_data.copy()
@@ -343,7 +436,7 @@ def main() -> None:
                     counts, forces = finger_handle_contacts(model, data)
                     records[-1].update(finger_contact_counts=counts, finger_normal_forces=forces)
                 if renderer is not None:
-                    for key, camera in CAMERAS.items():
+                    for key, camera in active_cameras.items():
                         renderer.update_scene(data, camera=camera)
                         images[key].append(renderer.render().copy())
                 advance(model, data, applied, substeps)
@@ -358,7 +451,10 @@ def main() -> None:
             controller.free_pitch = args.free_pitch
             controller.return_drawer = args.return_drawer
             controller.approach_offset = np.asarray(args.approach_offset, dtype=float)
-        completed = controller.open_drawer()
+        if args.target_object:
+            completed = controller.put_object_in_drawer(args.target_object, target_drawer=args.target_drawer)
+        else:
+            completed = controller.open_drawer()
         hold = data.qpos[controller.right.king.qpos_indices].copy()
         controller._drive(
             controller.right,
@@ -386,7 +482,7 @@ def main() -> None:
         arrays["timestamp"], np.arange(len(records)) / FPS, atol=model.opt.timestep / 2 + 1e-8, rtol=0
     )
     np.savez_compressed(args.output / "episode.npz", **arrays)
-    write_preview(args.output)
+    write_preview(args.output, active_cameras)
 
     # 独立模型只重放动作与显式环境绑定事件，不回灌任何中间关节状态
     replay_model = compile_model()
@@ -401,16 +497,26 @@ def main() -> None:
         max_error = max(max_error, float(np.max(np.abs(replay_data.qpos - r["qpos"]))))
         advance(replay_model, replay_data, r["native_action"], int(r["substeps"]))
     max_error = max(max_error, float(np.max(np.abs(replay_data.qpos - data.qpos))))
-    final_open = initial_drawer - float(data.qpos[drawer_id])
-    held_open = bool(np.all(initial_drawer - arrays["drawer"][-FPS:] >= 0.08) and final_open >= 0.08)
-    open_mask = initial_drawer - arrays["drawer"] >= 0.08
+    final_open = -float(data.qpos[drawer_id])
+    held_open = bool(np.all(-arrays["drawer"][-FPS:] >= 0.08) and final_open >= 0.08)
+    open_mask = -arrays["drawer"] >= 0.08
     sustained_open = bool(
         len(open_mask) >= FPS
         and np.any(np.convolve(open_mask.astype(int), np.ones(FPS, dtype=int), mode="valid") == FPS)
     )
     final_closed = bool(
-        abs(final_open) <= 0.005 and np.all(np.abs(initial_drawer - arrays["drawer"][-FPS:]) <= 0.005)
+        abs(final_open) <= 0.005 and np.all(np.abs(-arrays["drawer"][-FPS:]) <= 0.005)
     )
+
+    obj_inside = None
+    obj_rel = None
+    if args.target_object:
+        drawer_body = "drawer_2" if args.target_drawer == "secondary" else "drawer"
+        obj_inside, rel_vec = is_object_inside_drawer(
+            model, data, OBJECT_CATALOG[args.target_object]["body_name"], drawer_body
+        )
+        obj_rel = [round(float(x), 4) for x in rel_vec]
+
     contact_ctrl_path = Path(__file__).resolve().parent / "contact_drawer_controller.py"
     report = {
         "source_repository": "https://github.com/Manas-arumalla/openarm-control",
@@ -427,6 +533,10 @@ def main() -> None:
         "frames": len(records),
         "seconds": float(data.time),
         "expert": args.expert,
+        "target_object": args.target_object,
+        "target_drawer": args.target_drawer,
+        "target_object_inside_drawer": obj_inside,
+        "target_object_rel_to_drawer_m": obj_rel,
         "grasp_diagnostics": getattr(controller, "grasp_diagnostics", []),
         "expert_parameters": (
             {
@@ -446,6 +556,7 @@ def main() -> None:
         "scene_overrides": build_scene_overrides_dict(variation),
         "image_shape": None if args.no_images else [240, 320, 3],
         "wrist_view": args.wrist_view,
+        "camera_preset": args.camera_preset,
         "shadow_map_size": 1024,
         "camera_local_poses": {
             name: {
@@ -453,9 +564,9 @@ def main() -> None:
                 "quaternion_wxyz": model.cam_quat[model.camera(name).id].tolist(),
                 "fovy_degrees": float(model.cam_fovy[model.camera(name).id]),
             }
-            for name in CAMERAS.values()
+            for name in active_cameras.values()
         },
-        "camera_mapping": CAMERAS,
+        "camera_mapping": active_cameras,
         "actuator_order": ACTUATORS,
         "action_representation": "16D absolute joint position targets, radians, right then left",
         "gravity_compensation": "qfrc_bias on 14 arm DOFs, recomputed each physical substep",
@@ -470,7 +581,7 @@ def main() -> None:
         "expert_returned_success": bool(completed),
         "upstream_returned_success": bool(completed) if args.expert == "upstream" else None,
         "final_open_m": final_open,
-        "peak_open_m": float(initial_drawer - arrays["drawer"].min()),
+        "peak_open_m": float(-arrays["drawer"].min()),
         "success_8cm_held_1s": held_open,
         "opened_8cm_held_1s_during_episode": sustained_open,
         "final_closed_5mm_held_1s": final_closed,

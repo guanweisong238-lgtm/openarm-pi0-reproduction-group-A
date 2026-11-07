@@ -1,12 +1,14 @@
 # OpenArm v2 A1 仿真环境（WSL + uv）
 
-## 抽屉多形态与多高度参数化仿真（2026-11-03，供 A2 泛化扩采交接）
+## 抽屉与桌面物体多形态仿真 + ZED Mini 头部双目相机（2026-11-07，供 A2 泛化与语言指令入抽屉交接）
 
-针对 $\pi_0$ 抽屉模型泛化能力提升需求，新增统一参数化抽屉场景生成器 `simulation/drawer_scene_generator.py` 与 30Hz 真实接触闭环环境 `simulation/drawer_simulation.py`，支持：
-- **5 种抽屉外形预设**（`standard` / `wide_low` / `narrow_tall` / `deep_compact` / `large_modern`）与 **5 种材质配色预设**（`classic_wood_blue` / `light_oak_white` / `walnut_slate` / `industrial_steel` / `sage_green`）；
-- **柜体与抽屉宽（Y）、深（X）、高（Z）及把手尺寸联动缩放**（自动校验滑动间隙 $\ge 2\text{ mm}$）；
+针对 $\pi_0$ 模型泛化能力提升及最终展示目标（**根据自然语言指令将不同物体放进不同抽屉 + 机器人头部双路深度相机**），统一参数化场景生成器 `simulation/drawer_scene_generator.py`（v2.0.0）与 30Hz 真实接触闭环环境 `simulation/drawer_simulation.py` 支持：
+- **5 种抽屉外形预设**（`standard` / `wide_low` / `narrow_tall` / `deep_compact` / `large_modern`）× **5 种材质配色预设**（`classic_wood_blue` / `light_oak_white` / `walnut_slate` / `industrial_steel` / `sage_green`）；
+- **真实“空心抽屉槽”（`--hollow-drawer`）与单/双抽屉布局（`--drawer-layout single|dual_side_by_side`）**：将实心块升级为底板+左右侧壁+后壁+前面板围成的真实开口容器，支持单抽屉或双抽屉并排摆放；
+- **4 种桌面可抓取物体（`--objects` / `--target-object`）**：**方块（`cube`）、橡皮（`eraser`）、胶棒（`glue_stick`）、空塑料瓶（`plastic_bottle`）**，支持真实接触（零 `weld`）抓取放入抽屉（兼容**抽屉预打开**与**先拉开抽屉再抓物体放入**两种流程）及自然语言指令自动生成；
+- **机器人头部 Stereolabs ZED Mini 双目深度相机（`--enable-head-stereo` / `--camera-preset`）**：按 ZED Mini 规格构建头部 3D 双目相机模型与 `camera_head_left` / `camera_head_right` 双路光学镜头（严格 **63.0 mm 水平双目基线**，支持 `legacy_3cam` / `zed_4cam` / `all_5cam` 预设）；
 - **柜体三维位置与高度可变**（`--drawer-offset-x/y/z`，调节高度 Z 时底座 `drawer_base` 自动伸缩，确保底面恒贴合桌面 `z = 0.40 m`，不悬空、不穿模）；
-- **100% 向后兼容**：默认参数下编译出的模型与改造前逐字节一致，完整参数规格与交接说明见 [抽屉多形态参数化仿真交接文档](docs/drawer_variation_handoff.md)。
+- **100% 向后兼容**：默认参数下编译出的模型与改造前逐字节一致，完整参数规格与交接说明见 [抽屉与桌面物体参数化仿真交接文档](docs/drawer_variation_handoff.md)。
 
 ```bash
 # ① 场景几何与三路相机渲染验证（导出五款抽屉对比图至 outputs/drawer_variants_preview/）
@@ -15,7 +17,10 @@ uv run --locked python -m scripts.a1_simulation.verify_drawer_variants --mode sc
 # ② 5 款抽屉变体真实接触专家（无 weld）拉取与零误差独立回放验证
 uv run --locked python -m scripts.a1_simulation.verify_drawer_variants --mode expert
 
-# ③ 使用已就位的模型检查点运行闭环推理验证（需同机配置好检查点与 GPU 环境）
+# ③ 头部 ZED Mini 双目相机（63mm基线）+ 4 种物体（方块/橡皮/胶棒/空塑料瓶）放入不同空心抽屉全流程验证
+uv run --locked python -m scripts.a1_simulation.verify_drawer_variants --mode objects_zed
+
+# ④ 使用已就位的模型检查点运行闭环推理验证（需同机配置好检查点与 GPU 环境）
 uv run --locked python -m scripts.a1_simulation.verify_drawer_variants --mode policy --seconds 18
 ```
 
@@ -122,7 +127,8 @@ openarm-a1/
 ├── configs/                        # 环境与多变体采样配置
 │   ├── a2_interface.json           # A2 30Hz 策略接口与相机参数配置
 │   ├── a2_dataset_render.json      # 数据集重渲染相机配置
-│   └── drawer_variants_preset.json # 5 套代表性抽屉外形/配色/高度变体配置清单
+│   ├── drawer_variants_preset.json # 5 套代表性抽屉外形/配色/高度变体配置清单
+│   └── drawer_objects_zed_preset.json # 4 种桌面物体入空心抽屉 + ZED Mini 头部双目配置清单
 ├── simulation/                     # 仿真环境核心实现
 │   ├── __init__.py
 │   ├── env.py                      # OpenArmEnv 标准 20Hz 环境封装类
