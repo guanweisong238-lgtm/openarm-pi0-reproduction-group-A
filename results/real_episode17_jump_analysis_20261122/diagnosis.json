@@ -1,0 +1,458 @@
+{
+  "episode_id": 17,
+  "sampling_frequency_hz": 30,
+  "replan_stride_frames": 15,
+  "boundary_count": 36,
+  "threshold_0_1rad": "descriptive diagnostic only, not safety limit",
+  "varying_noise": {
+    "all_boundary": {
+      "median_rad": 0.3353700041770935,
+      "p95_rad": 0.8798969984054565,
+      "max_rad": 1.029995083808899,
+      "count_over_0_1rad": 35,
+      "count": 36
+    },
+    "all_nonboundary": {
+      "median_rad": 0.014001309871673584,
+      "p95_rad": 0.03466234356164932,
+      "max_rad": 0.10736590623855591,
+      "count_over_0_1rad": 1,
+      "count": 553
+    },
+    "arm_boundary": {
+      "median_rad": 0.26389336585998535,
+      "p95_rad": 0.5810382962226868,
+      "max_rad": 0.8669017553329468,
+      "count_over_0_1rad": 35,
+      "count": 36
+    },
+    "arm_nonboundary": {
+      "median_rad": 0.009275078773498535,
+      "p95_rad": 0.02206100896000862,
+      "max_rad": 0.034628093242645264,
+      "count_over_0_1rad": 0,
+      "count": 553
+    },
+    "largest_changes": [
+      {
+        "frame": 450,
+        "time_seconds": 15.0,
+        "joint": "L gripper",
+        "delta_rad": 1.029995083808899,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 150,
+        "time_seconds": 5.0,
+        "joint": "L gripper",
+        "delta_rad": 0.9188828468322754,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 255,
+        "time_seconds": 8.5,
+        "joint": "L5",
+        "delta_rad": 0.8669017553329468,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 330,
+        "time_seconds": 11.0,
+        "joint": "R gripper",
+        "delta_rad": 0.7035534381866455,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 60,
+        "time_seconds": 2.0,
+        "joint": "L5",
+        "delta_rad": 0.6118015646934509,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 345,
+        "time_seconds": 11.5,
+        "joint": "R4",
+        "delta_rad": 0.5707838535308838,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 45,
+        "time_seconds": 1.5,
+        "joint": "L gripper",
+        "delta_rad": 0.5555003881454468,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 120,
+        "time_seconds": 4.0,
+        "joint": "L gripper",
+        "delta_rad": 0.5169334411621094,
+        "is_replan_boundary": true
+      }
+    ]
+  },
+  "fixed_noise": {
+    "all_boundary": {
+      "median_rad": 0.221452534198761,
+      "p95_rad": 0.8883687257766724,
+      "max_rad": 0.9483960270881653,
+      "count_over_0_1rad": 31,
+      "count": 36
+    },
+    "all_nonboundary": {
+      "median_rad": 0.009219884872436523,
+      "p95_rad": 0.02620563469827175,
+      "max_rad": 0.0543476939201355,
+      "count_over_0_1rad": 0,
+      "count": 553
+    },
+    "arm_boundary": {
+      "median_rad": 0.17190209031105042,
+      "p95_rad": 0.5188905000686646,
+      "max_rad": 0.7635465264320374,
+      "count_over_0_1rad": 29,
+      "count": 36
+    },
+    "arm_nonboundary": {
+      "median_rad": 0.005822658538818359,
+      "p95_rad": 0.012541260570287704,
+      "max_rad": 0.019316554069519043,
+      "count_over_0_1rad": 0,
+      "count": 553
+    },
+    "largest_changes": [
+      {
+        "frame": 330,
+        "time_seconds": 11.0,
+        "joint": "R gripper",
+        "delta_rad": 0.9483960270881653,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 450,
+        "time_seconds": 15.0,
+        "joint": "L gripper",
+        "delta_rad": 0.896180272102356,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 150,
+        "time_seconds": 5.0,
+        "joint": "L gripper",
+        "delta_rad": 0.8857648372650146,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 255,
+        "time_seconds": 8.5,
+        "joint": "L5",
+        "delta_rad": 0.7635465264320374,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 225,
+        "time_seconds": 7.5,
+        "joint": "L gripper",
+        "delta_rad": 0.5806446075439453,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 435,
+        "time_seconds": 14.5,
+        "joint": "R3",
+        "delta_rad": 0.5409188270568848,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 60,
+        "time_seconds": 2.0,
+        "joint": "L5",
+        "delta_rad": 0.5115477442741394,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 345,
+        "time_seconds": 11.5,
+        "joint": "R4",
+        "delta_rad": 0.49670493602752686,
+        "is_replan_boundary": true
+      }
+    ]
+  },
+  "recorded_ik": {
+    "all_boundary": {
+      "median_rad": 0.01776963472366333,
+      "p95_rad": 0.1169232577085495,
+      "max_rad": 0.2784855365753174,
+      "count_over_0_1rad": 2,
+      "count": 36
+    },
+    "all_nonboundary": {
+      "median_rad": 0.01545359194278717,
+      "p95_rad": 0.07235255837440491,
+      "max_rad": 0.7862293124198914,
+      "count_over_0_1rad": 16,
+      "count": 553
+    },
+    "arm_boundary": {
+      "median_rad": 0.014990419149398804,
+      "p95_rad": 0.05733146518468857,
+      "max_rad": 0.0651007667183876,
+      "count_over_0_1rad": 0,
+      "count": 36
+    },
+    "arm_nonboundary": {
+      "median_rad": 0.01419973373413086,
+      "p95_rad": 0.05942501500248909,
+      "max_rad": 0.08130710572004318,
+      "count_over_0_1rad": 0,
+      "count": 553
+    },
+    "largest_changes": [
+      {
+        "frame": 397,
+        "time_seconds": 13.233333333,
+        "joint": "R gripper",
+        "delta_rad": 0.7862293124198914,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 316,
+        "time_seconds": 10.533333333,
+        "joint": "R gripper",
+        "delta_rad": 0.66081702709198,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 439,
+        "time_seconds": 14.633333333,
+        "joint": "L gripper",
+        "delta_rad": 0.6380787491798401,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 140,
+        "time_seconds": 4.666666666,
+        "joint": "L gripper",
+        "delta_rad": 0.4505464434623718,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 211,
+        "time_seconds": 7.033333333,
+        "joint": "L gripper",
+        "delta_rad": 0.37436145544052124,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 315,
+        "time_seconds": 10.5,
+        "joint": "R gripper",
+        "delta_rad": 0.2784855365753174,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 210,
+        "time_seconds": 7.0,
+        "joint": "L gripper",
+        "delta_rad": 0.2723907232284546,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 212,
+        "time_seconds": 7.066666666,
+        "joint": "L gripper",
+        "delta_rad": 0.20816081762313843,
+        "is_replan_boundary": false
+      }
+    ]
+  },
+  "recorded_observation": {
+    "all_boundary": {
+      "median_rad": 0.015259027481079102,
+      "p95_rad": 0.06103614717721939,
+      "max_rad": 0.07743953913450241,
+      "count_over_0_1rad": 0,
+      "count": 36
+    },
+    "all_nonboundary": {
+      "median_rad": 0.01640346646308899,
+      "p95_rad": 0.07263292372226715,
+      "max_rad": 0.13847562670707703,
+      "count_over_0_1rad": 9,
+      "count": 553
+    },
+    "arm_boundary": {
+      "median_rad": 0.014114588499069214,
+      "p95_rad": 0.06103614717721939,
+      "max_rad": 0.07743953913450241,
+      "count_over_0_1rad": 0,
+      "count": 36
+    },
+    "arm_nonboundary": {
+      "median_rad": 0.013733148574829102,
+      "p95_rad": 0.059586454182863235,
+      "max_rad": 0.07782101631164551,
+      "count_over_0_1rad": 0,
+      "count": 553
+    },
+    "largest_changes": [
+      {
+        "frame": 318,
+        "time_seconds": 10.6,
+        "joint": "R gripper",
+        "delta_rad": 0.13847562670707703,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 317,
+        "time_seconds": 10.566666666,
+        "joint": "R gripper",
+        "delta_rad": 0.13199055194854736,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 441,
+        "time_seconds": 14.7,
+        "joint": "L gripper",
+        "delta_rad": 0.1281757950782776,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 442,
+        "time_seconds": 14.733333333,
+        "joint": "L gripper",
+        "delta_rad": 0.11711299419403076,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 142,
+        "time_seconds": 4.733333333,
+        "joint": "L gripper",
+        "delta_rad": 0.11635005474090576,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 440,
+        "time_seconds": 14.666666666,
+        "joint": "L gripper",
+        "delta_rad": 0.11062788963317871,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 141,
+        "time_seconds": 4.7,
+        "joint": "L gripper",
+        "delta_rad": 0.10719460248947144,
+        "is_replan_boundary": false
+      },
+      {
+        "frame": 319,
+        "time_seconds": 10.633333333,
+        "joint": "R gripper",
+        "delta_rad": 0.10414281487464905,
+        "is_replan_boundary": false
+      }
+    ]
+  },
+  "same_observation_noise_comparison": {
+    "first_anchor_same_seed_max_abs_rad": 0.0,
+    "different_seed_anchor_count": 36,
+    "first_action_max_joint_difference_median_rad": 0.14430171251296997,
+    "first_action_max_joint_difference_max_rad": 0.5157635807991028,
+    "limitation": "same observations, one fixed seed and 36 alternative seeds; two independent processes; not a complete noise ablation"
+  },
+  "as_displayed_gripper_clipped": {
+    "all_boundary": {
+      "median_rad": 0.3184429407119751,
+      "p95_rad": 0.5810382962226868,
+      "max_rad": 0.8669017553329468,
+      "count_over_0_1rad": 35,
+      "count": 36
+    },
+    "all_nonboundary": {
+      "median_rad": 0.01181359589099884,
+      "p95_rad": 0.03206135332584381,
+      "max_rad": 0.10736590623855591,
+      "count_over_0_1rad": 1,
+      "count": 553
+    },
+    "arm_boundary": {
+      "median_rad": 0.26389336585998535,
+      "p95_rad": 0.5810382962226868,
+      "max_rad": 0.8669017553329468,
+      "count_over_0_1rad": 35,
+      "count": 36
+    },
+    "arm_nonboundary": {
+      "median_rad": 0.009275078773498535,
+      "p95_rad": 0.02206100896000862,
+      "max_rad": 0.034628093242645264,
+      "count_over_0_1rad": 0,
+      "count": 553
+    },
+    "largest_changes": [
+      {
+        "frame": 255,
+        "time_seconds": 8.5,
+        "joint": "L5",
+        "delta_rad": 0.8669017553329468,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 60,
+        "time_seconds": 2.0,
+        "joint": "L5",
+        "delta_rad": 0.6118015646934509,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 345,
+        "time_seconds": 11.5,
+        "joint": "R4",
+        "delta_rad": 0.5707838535308838,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 150,
+        "time_seconds": 5.0,
+        "joint": "L gripper",
+        "delta_rad": 0.5480327606201172,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 450,
+        "time_seconds": 15.0,
+        "joint": "L gripper",
+        "delta_rad": 0.5473821759223938,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 120,
+        "time_seconds": 4.0,
+        "joint": "L gripper",
+        "delta_rad": 0.4805666208267212,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 360,
+        "time_seconds": 12.0,
+        "joint": "R6",
+        "delta_rad": 0.47757211327552795,
+        "is_replan_boundary": true
+      },
+      {
+        "frame": 390,
+        "time_seconds": 13.0,
+        "joint": "R gripper",
+        "delta_rad": 0.47462230920791626,
+        "is_replan_boundary": true
+      }
+    ]
+  },
+  "source_sha256": {
+    "results/real_full_episode_17_offline_20261121/full_episode.npz": "a2aa37bab45ad37bb66952f03afbd41611f4f3d0745594c3f9d76926ab7ba819",
+    "results/real_full_episode_17_fixed_noise_20261122/full_episode.npz": "6bd9e66e646ba0ced18e42f2242be252daf7c8bd4ff552279968f39a2ec8dbf5"
+  }
+}

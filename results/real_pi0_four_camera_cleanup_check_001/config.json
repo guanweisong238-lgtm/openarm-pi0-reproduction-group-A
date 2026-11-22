@@ -1,0 +1,66 @@
+{
+  "seed": 42,
+  "steps": 2,
+  "batch_size": 1,
+  "eval_every": 2,
+  "save_every": 2,
+  "model": "pi0_base + gemma_2b_lora + gemma_300m_lora",
+  "trainable": "LoRA only",
+  "frozen_dtype": "bfloat16",
+  "action_horizon": 50,
+  "action_semantics": "absolute IK target, right arm then left arm, rad",
+  "training_frequency_hz": 30,
+  "optimizer": "AdamW(b1=0.9, b2=0.95, eps=1e-08, weight_decay=1e-10, clip_gradient_norm=1.0)",
+  "schedule": "CosineDecaySchedule(warmup_steps=1, peak_lr=2.5e-05, decay_steps=2, decay_lr=2.5e-06)",
+  "image_mapping": {
+    "base_0_rgb": "global",
+    "chest_0_rgb": "chest",
+    "left_wrist_0_rgb": "wrist_left",
+    "right_wrist_0_rgb": "wrist_right"
+  },
+  "prompt": "用左手拉开抽屉，右手抓起方块并放入抽屉、释放，然后用左手推合抽屉。",
+  "image_resize": "OpenPI 224x224 resize-with-pad",
+  "normalization": "train split only z-score",
+  "train_samples": 11942,
+  "validation_samples": 2495,
+  "validation_probe_samples": [
+    {
+      "episode_id": 10,
+      "sample_index": 0
+    },
+    {
+      "episode_id": 10,
+      "sample_index": 389
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 0
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 348
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 0
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 270
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 0
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 239
+    }
+  ],
+  "validation_note": "8 fixed probes with fixed flow random keys, not task success or generalization estimate",
+  "candidate_manifest_sha256": "cc8a80f42c566c3d739e2924afac1f2c6f4b04163b5d5e5236279e9e25d77462",
+  "norm_stats_sha256": "4be16669c5bb8c4c9cf2f218f98d09151df7843d9f9539bce7799b8dd42b0ca9",
+  "review_decision_sha256": "fb6ad1508978cd2f17fb7f729a9b9d32cf7197754cbe706827824dab40e99150",
+  "base_checkpoint": "weights/openpi/openpi-assets/checkpoints/pi0_base/params",
+  "note": "exploratory; user instructed all episodes treated as reviewed; no resume support"
+}

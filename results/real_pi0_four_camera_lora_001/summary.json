@@ -1,0 +1,16 @@
+{
+  "steps_completed": 1000,
+  "initial_validation_flow_loss": 0.37042686343193054,
+  "final_validation_flow_loss": 0.10178336082026362,
+  "validation_scope": "8 fixed held-out samples; not a success-rate estimate",
+  "last_checkpoint": "checkpoints/real_pi0_four_camera_lora_001/step_1000",
+  "adapter_restore_check": {
+    "baseline_loss": 0.0671333596110344,
+    "restored_loss": 0.0671333596110344,
+    "absolute_difference": 0.0,
+    "arrays": 20
+  },
+  "gpu_peak_bytes": 8003545600,
+  "training_seconds": 640.2633066799972,
+  "task_success_verified": false
+}

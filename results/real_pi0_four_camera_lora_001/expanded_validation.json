@@ -1,0 +1,837 @@
+{
+  "protocol": "20 evenly spaced full-window starts per validation episode; fixed flow rng per paired probe; independent of gradients but same validation episodes used for monitoring",
+  "validation_episode_ids": [
+    10,
+    16,
+    17,
+    24
+  ],
+  "probe_count": 80,
+  "results": {
+    "500": {
+      "mean": 0.10843764268793166,
+      "episode_means": {
+        "10": 0.0850767469033599,
+        "16": 0.1067667281255126,
+        "17": 0.1201829306781292,
+        "24": 0.12172416504472494
+      },
+      "losses": [
+        {
+          "episode_id": 10,
+          "sample_index": 0,
+          "loss": 0.09729178994894028
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 40,
+          "loss": 0.12372737377882004
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 81,
+          "loss": 0.05748055502772331
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 122,
+          "loss": 0.04062791168689728
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 163,
+          "loss": 0.03210367634892464
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 204,
+          "loss": 0.06456750631332397
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 245,
+          "loss": 0.05407194793224335
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 286,
+          "loss": 0.11544425785541534
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 327,
+          "loss": 0.09716437757015228
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 368,
+          "loss": 0.06227410212159157
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 409,
+          "loss": 0.07615337520837784
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 450,
+          "loss": 0.08477719128131866
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 491,
+          "loss": 0.0772862657904625
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 532,
+          "loss": 0.1526564508676529
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 573,
+          "loss": 0.14101216197013855
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 614,
+          "loss": 0.04639874026179314
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 655,
+          "loss": 0.07685337215662003
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 696,
+          "loss": 0.14777584373950958
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 737,
+          "loss": 0.04810245707631111
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 778,
+          "loss": 0.10576558113098145
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 0,
+          "loss": 0.0576745979487896
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 36,
+          "loss": 0.14318251609802246
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 73,
+          "loss": 0.04076302796602249
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 109,
+          "loss": 0.13084372878074646
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 146,
+          "loss": 0.04378482699394226
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 182,
+          "loss": 0.08300908654928207
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 219,
+          "loss": 0.08005908876657486
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 256,
+          "loss": 0.14469221234321594
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 292,
+          "loss": 0.09807869046926498
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 329,
+          "loss": 0.1759531944990158
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 365,
+          "loss": 0.08336149156093597
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 402,
+          "loss": 0.0783245638012886
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 438,
+          "loss": 0.07636295258998871
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 475,
+          "loss": 0.1180361732840538
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 512,
+          "loss": 0.2508452832698822
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 548,
+          "loss": 0.10301846265792847
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 585,
+          "loss": 0.17436912655830383
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 621,
+          "loss": 0.0736878365278244
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 658,
+          "loss": 0.1119421198964119
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 695,
+          "loss": 0.06734558194875717
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 0,
+          "loss": 0.03643306344747543
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 28,
+          "loss": 0.03543420135974884
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 56,
+          "loss": 0.14549754559993744
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 85,
+          "loss": 0.04581174626946449
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 113,
+          "loss": 0.04573209583759308
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 142,
+          "loss": 0.09731730073690414
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 170,
+          "loss": 0.1398916244506836
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 198,
+          "loss": 0.11360497027635574
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 227,
+          "loss": 0.234572172164917
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 255,
+          "loss": 0.11173698306083679
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 284,
+          "loss": 0.2600446343421936
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 312,
+          "loss": 0.11451704055070877
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 341,
+          "loss": 0.05671834945678711
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 369,
+          "loss": 0.3608527183532715
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 397,
+          "loss": 0.17946921288967133
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 426,
+          "loss": 0.1163719892501831
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 454,
+          "loss": 0.05671257898211479
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 483,
+          "loss": 0.05892111733555794
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 511,
+          "loss": 0.056798409670591354
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 540,
+          "loss": 0.1372208595275879
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 0,
+          "loss": 0.09835634380578995
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 25,
+          "loss": 0.07174885272979736
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 50,
+          "loss": 0.13248498737812042
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 75,
+          "loss": 0.06311296671628952
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 100,
+          "loss": 0.07245748490095139
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 125,
+          "loss": 0.045871343463659286
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 150,
+          "loss": 0.05105274170637131
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 176,
+          "loss": 0.09444919973611832
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 201,
+          "loss": 0.16142785549163818
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 226,
+          "loss": 0.13526654243469238
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 251,
+          "loss": 0.1671045422554016
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 276,
+          "loss": 0.09771409630775452
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 301,
+          "loss": 0.16607578098773956
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 327,
+          "loss": 0.11771350353956223
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 352,
+          "loss": 0.450936496257782
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 377,
+          "loss": 0.21430085599422455
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 402,
+          "loss": 0.07240667939186096
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 427,
+          "loss": 0.03747838735580444
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 452,
+          "loss": 0.11317184567451477
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 478,
+          "loss": 0.07135279476642609
+        }
+      ],
+      "adapter_sha256": "e530616ee052971d33fec3a492bb64f07ad5ff3ca5c5cdb36813acc85cb772c6"
+    },
+    "1000": {
+      "mean": 0.0948870842345059,
+      "episode_means": {
+        "10": 0.07387925926595926,
+        "16": 0.09466586541384459,
+        "17": 0.10205128788948059,
+        "24": 0.10895192436873913
+      },
+      "losses": [
+        {
+          "episode_id": 10,
+          "sample_index": 0,
+          "loss": 0.0892501249909401
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 40,
+          "loss": 0.08637489378452301
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 81,
+          "loss": 0.05109315365552902
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 122,
+          "loss": 0.03381193429231644
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 163,
+          "loss": 0.025816049426794052
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 204,
+          "loss": 0.06438422203063965
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 245,
+          "loss": 0.050733111798763275
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 286,
+          "loss": 0.10086962580680847
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 327,
+          "loss": 0.09226102381944656
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 368,
+          "loss": 0.06053169071674347
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 409,
+          "loss": 0.06574243307113647
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 450,
+          "loss": 0.07919169962406158
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 491,
+          "loss": 0.07422032952308655
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 532,
+          "loss": 0.1310325413942337
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 573,
+          "loss": 0.12312217801809311
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 614,
+          "loss": 0.037711553275585175
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 655,
+          "loss": 0.06754998862743378
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 696,
+          "loss": 0.10809751600027084
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 737,
+          "loss": 0.04533921182155609
+        },
+        {
+          "episode_id": 10,
+          "sample_index": 778,
+          "loss": 0.09045190364122391
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 0,
+          "loss": 0.045292194932699203
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 36,
+          "loss": 0.11863753944635391
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 73,
+          "loss": 0.04457761347293854
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 109,
+          "loss": 0.11210853606462479
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 146,
+          "loss": 0.03955059498548508
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 182,
+          "loss": 0.06758176535367966
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 219,
+          "loss": 0.0664779394865036
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 256,
+          "loss": 0.12548895180225372
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 292,
+          "loss": 0.07706863433122635
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 329,
+          "loss": 0.168730691075325
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 365,
+          "loss": 0.07965867221355438
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 402,
+          "loss": 0.07042445987462997
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 438,
+          "loss": 0.07496186345815659
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 475,
+          "loss": 0.10510867834091187
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 512,
+          "loss": 0.1852608323097229
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 548,
+          "loss": 0.09245148301124573
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 585,
+          "loss": 0.175547793507576
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 621,
+          "loss": 0.06903879344463348
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 658,
+          "loss": 0.10243207961320877
+        },
+        {
+          "episode_id": 16,
+          "sample_index": 695,
+          "loss": 0.07291819155216217
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 0,
+          "loss": 0.02822483889758587
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 28,
+          "loss": 0.02759205736219883
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 56,
+          "loss": 0.11858660727739334
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 85,
+          "loss": 0.044933900237083435
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 113,
+          "loss": 0.04226303845643997
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 142,
+          "loss": 0.063650943338871
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 170,
+          "loss": 0.08763588964939117
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 198,
+          "loss": 0.10238465666770935
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 227,
+          "loss": 0.19756804406642914
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 255,
+          "loss": 0.10163351148366928
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 284,
+          "loss": 0.24705229699611664
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 312,
+          "loss": 0.1008935496211052
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 341,
+          "loss": 0.04853754863142967
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 369,
+          "loss": 0.26373445987701416
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 397,
+          "loss": 0.16736598312854767
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 426,
+          "loss": 0.11132693290710449
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 454,
+          "loss": 0.04977262020111084
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 483,
+          "loss": 0.053968627005815506
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 511,
+          "loss": 0.05375167727470398
+        },
+        {
+          "episode_id": 17,
+          "sample_index": 540,
+          "loss": 0.13014857470989227
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 0,
+          "loss": 0.09730800241231918
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 25,
+          "loss": 0.06925838440656662
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 50,
+          "loss": 0.11924239993095398
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 75,
+          "loss": 0.052296340465545654
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 100,
+          "loss": 0.06455789506435394
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 125,
+          "loss": 0.04047258943319321
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 150,
+          "loss": 0.05341944471001625
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 176,
+          "loss": 0.08629994839429855
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 201,
+          "loss": 0.15629249811172485
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 226,
+          "loss": 0.12957099080085754
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 251,
+          "loss": 0.1386733055114746
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 276,
+          "loss": 0.08789920806884766
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 301,
+          "loss": 0.1457052230834961
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 327,
+          "loss": 0.10173336416482925
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 352,
+          "loss": 0.379974365234375
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 377,
+          "loss": 0.1934276521205902
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 402,
+          "loss": 0.06057916581630707
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 427,
+          "loss": 0.038611289113759995
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 452,
+          "loss": 0.09828071296215057
+        },
+        {
+          "episode_id": 24,
+          "sample_index": 478,
+          "loss": 0.06543570756912231
+        }
+      ],
+      "adapter_sha256": "37b1bc554735c55aeb88a4b4eec858535d3f747207394792006ab98975642cb7"
+    }
+  },
+  "note": "offline flow-matching loss; not robot success, generalization guarantee, or independent final test"
+}

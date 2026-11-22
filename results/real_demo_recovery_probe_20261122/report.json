@@ -1,0 +1,61 @@
+{
+  "episode": 17,
+  "kind": "offline numeric illustration only; NOT correction demonstrations",
+  "reference": "recorded IK target at same time index, frozen during recovery",
+  "starting_state": "model-predicted target only, not observed robot state",
+  "maximum_arm_step_rad": 0.02,
+  "rate_hz": 30.0,
+  "cases": [
+    {
+      "frame": 100,
+      "initial_max_arm_error_rad": 1.25917387008667,
+      "initial_arm_mae_rad": 0.3068496584892273,
+      "steps_to_fixed_reference": 63,
+      "duration_seconds": 2.1,
+      "final_max_arm_error_rad": 0.0,
+      "grippers_unchanged": true
+    },
+    {
+      "frame": 200,
+      "initial_max_arm_error_rad": 1.7306758165359497,
+      "initial_arm_mae_rad": 0.6626587510108948,
+      "steps_to_fixed_reference": 87,
+      "duration_seconds": 2.9,
+      "final_max_arm_error_rad": 0.0,
+      "grippers_unchanged": true
+    },
+    {
+      "frame": 300,
+      "initial_max_arm_error_rad": 3.264962673187256,
+      "initial_arm_mae_rad": 1.2485764026641846,
+      "steps_to_fixed_reference": 164,
+      "duration_seconds": 5.466666666666667,
+      "final_max_arm_error_rad": 0.0,
+      "grippers_unchanged": true
+    },
+    {
+      "frame": 400,
+      "initial_max_arm_error_rad": 2.7630019187927246,
+      "initial_arm_mae_rad": 1.1446421146392822,
+      "steps_to_fixed_reference": 139,
+      "duration_seconds": 4.633333333333334,
+      "final_max_arm_error_rad": 0.0,
+      "grippers_unchanged": true
+    },
+    {
+      "frame": 500,
+      "initial_max_arm_error_rad": 2.0788028240203857,
+      "initial_arm_mae_rad": 1.187649130821228,
+      "steps_to_fixed_reference": 104,
+      "duration_seconds": 3.466666666666667,
+      "final_max_arm_error_rad": 0.0,
+      "grippers_unchanged": true
+    }
+  ],
+  "limitations": [
+    "No collision, joint-limit, acceleration, grasp or contact check.",
+    "No updated images, no object or drawer state, no physics and no expert task success validation.",
+    "Same-index correspondence is oracle information from a recorded episode and unavailable in novel online situations.",
+    "Outputs must not be used as training samples or robot commands."
+  ]
+}

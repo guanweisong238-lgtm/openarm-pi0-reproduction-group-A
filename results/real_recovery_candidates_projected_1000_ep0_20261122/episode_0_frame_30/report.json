@@ -1,0 +1,39 @@
+{
+  "status": "recovered",
+  "episode": 0,
+  "reference_split": "train",
+  "reference_frame": 30,
+  "frames": 31,
+  "sim_time_seconds": 1.0340000000000007,
+  "initial_max_error_rad": 0.104337677359581,
+  "final_max_error_rad": 0.023381525599449338,
+  "max_actual_speed_rad_s": 0.420586486776735,
+  "max_command_step_rad": 0.004912579611946771,
+  "cameras": [
+    "global",
+    "chest",
+    "wrist_left",
+    "wrist_right"
+  ],
+  "source": "MuJoCo rendered synthetic images, not real cameras",
+  "task_phase": "unknown: same-index recording is an offline oracle, not phase recognition",
+  "scene": "empty, no table, drawer or cube; not calibrated",
+  "reference_selection": "same frame index from offline recorded trajectory, not online phase recognition",
+  "initial_state_source": "offline model predicted arm targets injected as simulator initial state; grippers projected to simulator limits, not a closed-loop rollout",
+  "raw_predicted_grippers": [
+    -1.0332926511764526,
+    0.5355764031410217
+  ],
+  "initial_grippers_after_limit_projection": [
+    -0.7854,
+    0.5355764031410217
+  ],
+  "gripper_reference": [
+    -0.7854,
+    0.7852674126625061
+  ],
+  "recovery_method": "feedback proportional velocity, command speed and acceleration limited",
+  "safety_check": "initial and nominal path contact preflight; actual simulation contact and joint limits; does not prove path safety or hardware safety",
+  "training_use": "do not use for training until phase, camera mapping, recovery validity, trajectory length, and train/validation handling reviewed",
+  "robot_commands_sent": false
+}

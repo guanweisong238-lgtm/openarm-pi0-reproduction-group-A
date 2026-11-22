@@ -1,0 +1,16 @@
+{
+  "steps_completed": 1500,
+  "initial_validation_flow_loss": 0.06900099865160883,
+  "final_validation_flow_loss": 0.05983585990034044,
+  "validation_scope": "two fixed probes per held-out episode; not a success-rate estimate",
+  "last_checkpoint": "checkpoints/real_camera_adjusted_lora_phase_20261122_v001/step_1500",
+  "adapter_restore_check": {
+    "baseline_loss": 0.03732561692595482,
+    "restored_loss": 0.03732561692595482,
+    "absolute_difference": 0.0,
+    "arrays": 20
+  },
+  "gpu_peak_bytes": 8232500992,
+  "training_seconds": 949.7540287320007,
+  "task_success_verified": false
+}

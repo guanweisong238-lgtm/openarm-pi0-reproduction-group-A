@@ -1,0 +1,1496 @@
+{
+  "checkpoint": "real_camera_adjusted_lora_phase_20261122_v001/step_1500",
+  "scope": "Recorded observation replay, no physical contact or rollout metric.",
+  "phase_note": "Approximate phase intervals derived from sustained gripper commands and left arm motion.",
+  "ee_note": "Distances between predicted and demonstrated openarm control points under the same local kinematic model.",
+  "aggregation": "Equal weight per episode, phase score averaged only over episodes with that phase.",
+  "methods": {
+    "15+0": {
+      "all": {
+        "arm_mae_rad": 0.06277342885732651,
+        "right_ee_mm": 22.092216180333246,
+        "left_ee_mm": 29.174683732900803,
+        "peak_step_rad": 0.4263993352651596,
+        "joint_accel_p95_rad_s2": 118.07548239827145,
+        "joint_accel_p99_rad_s2": 299.026175558567,
+        "joint_accel_near_replan_p95_rad_s2": 209.40357618033875,
+        "demo_joint_accel_p95_rad_s2": 7.221183925867081,
+        "joint_accel_boundary_p95_rad_s2": 327.8462094068527,
+        "joint_accel_interior_p95_rad_s2": 14.197019487619396,
+        "raw_windows_joint_accel_p95_rad_s2": 12.193799614906307,
+        "raw_windows_early_arm_mae_rad": 0.05100470222532749,
+        "raw_windows_late_arm_mae_rad": 0.11360453441739082,
+        "speed_dips_boundary_per_1k_frames": 0.0,
+        "speed_dips_interior_per_1k_frames": 2.2641509433962264,
+        "clip_count": 2,
+        "grip_events_matched": 9,
+        "grip_events_total": 9,
+        "mean_matched_abs_grip_offset_frames": 11.88888888888889,
+        "extra_grip_event_count": 2,
+        "left_grasp_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 9.5
+        },
+        "left_regrasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 27.0
+        },
+        "left_release_handle_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 8.5
+        },
+        "right_grasp_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 1.5
+        },
+        "right_release_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 20.5
+        },
+        "phases": {
+          "open_drawer": {
+            "arm_mae_rad": 0.046742040663957596,
+            "right_ee_mm": 5.854507115420921,
+            "left_ee_mm": 23.74838998775786,
+            "right_grip_mae_rad": 0.027568821795284748,
+            "left_grip_mae_rad": 0.12967148423194885
+          },
+          "approach_cube": {
+            "arm_mae_rad": 0.052855150774121284,
+            "right_ee_mm": 14.514202129950625,
+            "left_ee_mm": 28.398219123284974,
+            "right_grip_mae_rad": 0.10350476950407028,
+            "left_grip_mae_rad": 0.10978787019848824
+          },
+          "grasp": {
+            "arm_mae_rad": 0.03796396590769291,
+            "right_ee_mm": 18.388878598004474,
+            "left_ee_mm": 10.073493718803812,
+            "right_grip_mae_rad": 0.18356315791606903,
+            "left_grip_mae_rad": 0.028685647062957287
+          },
+          "carry": {
+            "arm_mae_rad": 0.06115474924445152,
+            "right_ee_mm": 47.751755374196875,
+            "left_ee_mm": 10.826894006412328,
+            "right_grip_mae_rad": 0.1501140296459198,
+            "left_grip_mae_rad": 0.05445663072168827
+          },
+          "release": {
+            "arm_mae_rad": 0.08085868507623672,
+            "right_ee_mm": 71.73533568193042,
+            "left_ee_mm": 26.25781987552226,
+            "right_grip_mae_rad": 0.3826720118522644,
+            "left_grip_mae_rad": 0.03485814109444618
+          },
+          "after_release": {
+            "arm_mae_rad": 0.051252467557787895,
+            "right_ee_mm": 39.84727600985478,
+            "left_ee_mm": 7.828204736429388,
+            "right_grip_mae_rad": 0.09810149297118187,
+            "left_grip_mae_rad": 0.09148348867893219
+          },
+          "close_drawer": {
+            "arm_mae_rad": 0.07927817292511463,
+            "right_ee_mm": 21.26876517167608,
+            "left_ee_mm": 46.29468211793122,
+            "right_grip_mae_rad": 0.04602120444178581,
+            "left_grip_mae_rad": 0.21800734847784042
+          }
+        }
+      },
+      "hold_then_push": {
+        "arm_mae_rad": 0.07230143994092941,
+        "right_ee_mm": 26.53049357095782,
+        "left_ee_mm": 33.56518445164187,
+        "peak_step_rad": 0.4104362726211548,
+        "joint_accel_p95_rad_s2": 122.29529589414572,
+        "joint_accel_p99_rad_s2": 259.60578882694244,
+        "joint_accel_near_replan_p95_rad_s2": 195.99219381809212,
+        "demo_joint_accel_p95_rad_s2": 6.477816402912139,
+        "joint_accel_boundary_p95_rad_s2": 298.5608455538751,
+        "joint_accel_interior_p95_rad_s2": 14.177070558071136,
+        "raw_windows_joint_accel_p95_rad_s2": 12.863720208406448,
+        "raw_windows_early_arm_mae_rad": 0.05512123927474022,
+        "raw_windows_late_arm_mae_rad": 0.11497698724269867,
+        "speed_dips_boundary_per_1k_frames": 0.0,
+        "speed_dips_interior_per_1k_frames": 1.8050541516245486,
+        "clip_count": 1,
+        "grip_events_matched": 4,
+        "grip_events_total": 4,
+        "mean_matched_abs_grip_offset_frames": 8.75,
+        "extra_grip_event_count": 1,
+        "left_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 9.0
+        },
+        "left_release_handle_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 10.0
+        },
+        "right_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 1.0
+        },
+        "right_release_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 15.0
+        },
+        "phases": {
+          "open_drawer": {
+            "arm_mae_rad": 0.04957321286201477,
+            "right_ee_mm": 5.78205095785115,
+            "left_ee_mm": 27.40965144302153,
+            "right_grip_mae_rad": 0.031707748770713806,
+            "left_grip_mae_rad": 0.12716272473335266
+          },
+          "approach_cube": {
+            "arm_mae_rad": 0.04130537435412407,
+            "right_ee_mm": 19.106416920480907,
+            "left_ee_mm": 30.853921655758647,
+            "right_grip_mae_rad": 0.1394943743944168,
+            "left_grip_mae_rad": 0.06692185252904892
+          },
+          "grasp": {
+            "arm_mae_rad": 0.052235011011362076,
+            "right_ee_mm": 20.777184264525093,
+            "left_ee_mm": 12.414502630646266,
+            "right_grip_mae_rad": 0.22258874773979187,
+            "left_grip_mae_rad": 0.031044062227010727
+          },
+          "carry": {
+            "arm_mae_rad": 0.07906181365251541,
+            "right_ee_mm": 53.64026198659131,
+            "left_ee_mm": 12.793623927823786,
+            "right_grip_mae_rad": 0.15276311337947845,
+            "left_grip_mae_rad": 0.061508506536483765
+          },
+          "release": {
+            "arm_mae_rad": 0.06649990379810333,
+            "right_ee_mm": 36.762987910872155,
+            "left_ee_mm": 9.574302252190614,
+            "right_grip_mae_rad": 0.26425701379776,
+            "left_grip_mae_rad": 0.01869332790374756
+          },
+          "after_release": {
+            "arm_mae_rad": 0.05272158235311508,
+            "right_ee_mm": 34.43319293540992,
+            "left_ee_mm": 8.320068568764412,
+            "right_grip_mae_rad": 0.11958550661802292,
+            "left_grip_mae_rad": 0.11864281445741653
+          },
+          "close_drawer": {
+            "arm_mae_rad": 0.09828512370586395,
+            "right_ee_mm": 33.713205916647276,
+            "left_ee_mm": 53.33035592528614,
+            "right_grip_mae_rad": 0.06624149531126022,
+            "left_grip_mae_rad": 0.17668692767620087
+          }
+        }
+      },
+      "release_then_push": {
+        "arm_mae_rad": 0.0532454177737236,
+        "right_ee_mm": 17.65393878970867,
+        "left_ee_mm": 24.784183014159737,
+        "peak_step_rad": 0.44236239790916443,
+        "joint_accel_p95_rad_s2": 113.85566890239716,
+        "joint_accel_p99_rad_s2": 338.44656229019154,
+        "joint_accel_near_replan_p95_rad_s2": 222.81495854258537,
+        "demo_joint_accel_p95_rad_s2": 7.9645514488220215,
+        "joint_accel_boundary_p95_rad_s2": 357.1315732598304,
+        "joint_accel_interior_p95_rad_s2": 14.216968417167655,
+        "raw_windows_joint_accel_p95_rad_s2": 11.523879021406167,
+        "raw_windows_early_arm_mae_rad": 0.046888165175914764,
+        "raw_windows_late_arm_mae_rad": 0.11223208159208298,
+        "speed_dips_boundary_per_1k_frames": 0.0,
+        "speed_dips_interior_per_1k_frames": 2.594033722438392,
+        "clip_count": 1,
+        "grip_events_matched": 5,
+        "grip_events_total": 5,
+        "mean_matched_abs_grip_offset_frames": 14.4,
+        "extra_grip_event_count": 1,
+        "left_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 10.0
+        },
+        "left_regrasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 27.0
+        },
+        "left_release_handle_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 7.0
+        },
+        "right_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 2.0
+        },
+        "right_release_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 26.0
+        },
+        "phases": {
+          "open_drawer": {
+            "arm_mae_rad": 0.04391086846590042,
+            "right_ee_mm": 5.926963272990692,
+            "left_ee_mm": 20.087128532494187,
+            "right_grip_mae_rad": 0.02342989481985569,
+            "left_grip_mae_rad": 0.13218024373054504
+          },
+          "approach_cube": {
+            "arm_mae_rad": 0.0644049271941185,
+            "right_ee_mm": 9.921987339420342,
+            "left_ee_mm": 25.942516590811305,
+            "right_grip_mae_rad": 0.06751516461372375,
+            "left_grip_mae_rad": 0.15265388786792755
+          },
+          "grasp": {
+            "arm_mae_rad": 0.023692920804023743,
+            "right_ee_mm": 16.000572931483852,
+            "left_ee_mm": 7.732484806961357,
+            "right_grip_mae_rad": 0.1445375680923462,
+            "left_grip_mae_rad": 0.026327231898903847
+          },
+          "carry": {
+            "arm_mae_rad": 0.043247684836387634,
+            "right_ee_mm": 41.863248761802446,
+            "left_ee_mm": 8.860164085000871,
+            "right_grip_mae_rad": 0.14746494591236115,
+            "left_grip_mae_rad": 0.047404754906892776
+          },
+          "release": {
+            "arm_mae_rad": 0.09521746635437012,
+            "right_ee_mm": 106.70768345298868,
+            "left_ee_mm": 42.941337498853905,
+            "right_grip_mae_rad": 0.5010870099067688,
+            "left_grip_mae_rad": 0.051022954285144806
+          },
+          "after_release": {
+            "arm_mae_rad": 0.04978335276246071,
+            "right_ee_mm": 45.26135908429965,
+            "left_ee_mm": 7.336340904094364,
+            "right_grip_mae_rad": 0.07661747932434082,
+            "left_grip_mae_rad": 0.06432416290044785
+          },
+          "close_drawer": {
+            "arm_mae_rad": 0.06027122214436531,
+            "right_ee_mm": 8.824324426704884,
+            "left_ee_mm": 39.2590083105763,
+            "right_grip_mae_rad": 0.0258009135723114,
+            "left_grip_mae_rad": 0.25932776927948
+          }
+        }
+      }
+    },
+    "15+4": {
+      "all": {
+        "arm_mae_rad": 0.06520910933613777,
+        "right_ee_mm": 22.883928233039825,
+        "left_ee_mm": 30.580999192694815,
+        "peak_step_rad": 0.15426664054393768,
+        "joint_accel_p95_rad_s2": 34.57815617322921,
+        "joint_accel_p99_rad_s2": 58.283487863838644,
+        "joint_accel_near_replan_p95_rad_s2": 45.062364712357514,
+        "demo_joint_accel_p95_rad_s2": 7.221183925867081,
+        "joint_accel_boundary_p95_rad_s2": 50.397837515920386,
+        "joint_accel_interior_p95_rad_s2": 13.506617546081543,
+        "raw_windows_joint_accel_p95_rad_s2": 12.193799614906307,
+        "raw_windows_early_arm_mae_rad": 0.05100470222532749,
+        "raw_windows_late_arm_mae_rad": 0.11360453441739082,
+        "speed_dips_boundary_per_1k_frames": 2.840909090909091,
+        "speed_dips_interior_per_1k_frames": 6.597549481621112,
+        "clip_count": 2,
+        "grip_events_matched": 9,
+        "grip_events_total": 9,
+        "mean_matched_abs_grip_offset_frames": 11.88888888888889,
+        "extra_grip_event_count": 2,
+        "left_grasp_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 9.5
+        },
+        "left_regrasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 27.0
+        },
+        "left_release_handle_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 8.5
+        },
+        "right_grasp_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 1.5
+        },
+        "right_release_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 20.5
+        },
+        "phases": {
+          "open_drawer": {
+            "arm_mae_rad": 0.04934381693601608,
+            "right_ee_mm": 6.005078932744853,
+            "left_ee_mm": 25.686886370802213,
+            "right_grip_mae_rad": 0.027568821795284748,
+            "left_grip_mae_rad": 0.12967148423194885
+          },
+          "approach_cube": {
+            "arm_mae_rad": 0.05621982365846634,
+            "right_ee_mm": 15.692166230264998,
+            "left_ee_mm": 30.73829110277499,
+            "right_grip_mae_rad": 0.10350476950407028,
+            "left_grip_mae_rad": 0.10978787019848824
+          },
+          "grasp": {
+            "arm_mae_rad": 0.039004103280603886,
+            "right_ee_mm": 18.833931104653182,
+            "left_ee_mm": 10.177974666480235,
+            "right_grip_mae_rad": 0.18356315791606903,
+            "left_grip_mae_rad": 0.028685647062957287
+          },
+          "carry": {
+            "arm_mae_rad": 0.06282653473317623,
+            "right_ee_mm": 49.565316914170076,
+            "left_ee_mm": 10.984393869107912,
+            "right_grip_mae_rad": 0.1501140296459198,
+            "left_grip_mae_rad": 0.05445663072168827
+          },
+          "release": {
+            "arm_mae_rad": 0.08354998007416725,
+            "right_ee_mm": 73.13756924296376,
+            "left_ee_mm": 28.3923373232374,
+            "right_grip_mae_rad": 0.3826720118522644,
+            "left_grip_mae_rad": 0.03485814109444618
+          },
+          "after_release": {
+            "arm_mae_rad": 0.053367678076028824,
+            "right_ee_mm": 42.117901350493334,
+            "left_ee_mm": 8.11318976756204,
+            "right_grip_mae_rad": 0.09810149297118187,
+            "left_grip_mae_rad": 0.09148348867893219
+          },
+          "close_drawer": {
+            "arm_mae_rad": 0.08159005455672741,
+            "right_ee_mm": 21.76989231645667,
+            "left_ee_mm": 47.73882261241166,
+            "right_grip_mae_rad": 0.04602120444178581,
+            "left_grip_mae_rad": 0.21800734847784042
+          }
+        }
+      },
+      "hold_then_push": {
+        "arm_mae_rad": 0.07470272481441498,
+        "right_ee_mm": 27.448375561649108,
+        "left_ee_mm": 35.07391109430702,
+        "peak_step_rad": 0.13397932052612305,
+        "joint_accel_p95_rad_s2": 31.10767543315886,
+        "joint_accel_p99_rad_s2": 48.35653366148471,
+        "joint_accel_near_replan_p95_rad_s2": 39.409051984548555,
+        "demo_joint_accel_p95_rad_s2": 6.477816402912139,
+        "joint_accel_boundary_p95_rad_s2": 43.76475691795347,
+        "joint_accel_interior_p95_rad_s2": 13.299100399017334,
+        "raw_windows_joint_accel_p95_rad_s2": 12.863720208406448,
+        "raw_windows_early_arm_mae_rad": 0.05512123927474022,
+        "raw_windows_late_arm_mae_rad": 0.11497698724269867,
+        "speed_dips_boundary_per_1k_frames": 0.0,
+        "speed_dips_interior_per_1k_frames": 4.484304932735426,
+        "clip_count": 1,
+        "grip_events_matched": 4,
+        "grip_events_total": 4,
+        "mean_matched_abs_grip_offset_frames": 8.75,
+        "extra_grip_event_count": 1,
+        "left_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 9.0
+        },
+        "left_release_handle_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 10.0
+        },
+        "right_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 1.0
+        },
+        "right_release_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 15.0
+        },
+        "phases": {
+          "open_drawer": {
+            "arm_mae_rad": 0.05235843360424042,
+            "right_ee_mm": 5.8184429245988385,
+            "left_ee_mm": 29.6727289983729,
+            "right_grip_mae_rad": 0.031707748770713806,
+            "left_grip_mae_rad": 0.12716272473335266
+          },
+          "approach_cube": {
+            "arm_mae_rad": 0.04402611404657364,
+            "right_ee_mm": 21.08408019568556,
+            "left_ee_mm": 33.39052852708226,
+            "right_grip_mae_rad": 0.1394943743944168,
+            "left_grip_mae_rad": 0.06692185252904892
+          },
+          "grasp": {
+            "arm_mae_rad": 0.05303449556231499,
+            "right_ee_mm": 21.10500853338457,
+            "left_ee_mm": 12.15069421266912,
+            "right_grip_mae_rad": 0.22258874773979187,
+            "left_grip_mae_rad": 0.031044062227010727
+          },
+          "carry": {
+            "arm_mae_rad": 0.08129263669252396,
+            "right_ee_mm": 55.917549051945706,
+            "left_ee_mm": 13.031187069160987,
+            "right_grip_mae_rad": 0.15276311337947845,
+            "left_grip_mae_rad": 0.061508506536483765
+          },
+          "release": {
+            "arm_mae_rad": 0.0696914866566658,
+            "right_ee_mm": 38.29747580183051,
+            "left_ee_mm": 10.857856001536494,
+            "right_grip_mae_rad": 0.26425701379776,
+            "left_grip_mae_rad": 0.01869332790374756
+          },
+          "after_release": {
+            "arm_mae_rad": 0.05390916392207146,
+            "right_ee_mm": 35.43976253375329,
+            "left_ee_mm": 8.627798607591126,
+            "right_grip_mae_rad": 0.11958550661802292,
+            "left_grip_mae_rad": 0.11864281445741653
+          },
+          "close_drawer": {
+            "arm_mae_rad": 0.10068441182374954,
+            "right_ee_mm": 34.728215512648354,
+            "left_ee_mm": 54.864451955435904,
+            "right_grip_mae_rad": 0.06624149531126022,
+            "left_grip_mae_rad": 0.17668692767620087
+          }
+        }
+      },
+      "release_then_push": {
+        "arm_mae_rad": 0.055715493857860565,
+        "right_ee_mm": 18.31948090443054,
+        "left_ee_mm": 26.08808729108261,
+        "peak_step_rad": 0.17455396056175232,
+        "joint_accel_p95_rad_s2": 38.04863691329956,
+        "joint_accel_p99_rad_s2": 68.21044206619257,
+        "joint_accel_near_replan_p95_rad_s2": 50.71567744016647,
+        "demo_joint_accel_p95_rad_s2": 7.9645514488220215,
+        "joint_accel_boundary_p95_rad_s2": 57.030918113887296,
+        "joint_accel_interior_p95_rad_s2": 13.714134693145752,
+        "raw_windows_joint_accel_p95_rad_s2": 11.523879021406167,
+        "raw_windows_early_arm_mae_rad": 0.046888165175914764,
+        "raw_windows_late_arm_mae_rad": 0.11223208159208298,
+        "speed_dips_boundary_per_1k_frames": 4.8076923076923075,
+        "speed_dips_interior_per_1k_frames": 8.130081300813009,
+        "clip_count": 1,
+        "grip_events_matched": 5,
+        "grip_events_total": 5,
+        "mean_matched_abs_grip_offset_frames": 14.4,
+        "extra_grip_event_count": 1,
+        "left_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 10.0
+        },
+        "left_regrasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 27.0
+        },
+        "left_release_handle_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 7.0
+        },
+        "right_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 2.0
+        },
+        "right_release_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 26.0
+        },
+        "phases": {
+          "open_drawer": {
+            "arm_mae_rad": 0.04632920026779175,
+            "right_ee_mm": 6.191714940890868,
+            "left_ee_mm": 21.701043743231523,
+            "right_grip_mae_rad": 0.02342989481985569,
+            "left_grip_mae_rad": 0.13218024373054504
+          },
+          "approach_cube": {
+            "arm_mae_rad": 0.06841353327035904,
+            "right_ee_mm": 10.300252264844437,
+            "left_ee_mm": 28.08605367846772,
+            "right_grip_mae_rad": 0.06751516461372375,
+            "left_grip_mae_rad": 0.15265388786792755
+          },
+          "grasp": {
+            "arm_mae_rad": 0.024973710998892784,
+            "right_ee_mm": 16.56285367592179,
+            "left_ee_mm": 8.205255120291351,
+            "right_grip_mae_rad": 0.1445375680923462,
+            "left_grip_mae_rad": 0.026327231898903847
+          },
+          "carry": {
+            "arm_mae_rad": 0.044360432773828506,
+            "right_ee_mm": 43.213084776394446,
+            "left_ee_mm": 8.937600669054836,
+            "right_grip_mae_rad": 0.14746494591236115,
+            "left_grip_mae_rad": 0.047404754906892776
+          },
+          "release": {
+            "arm_mae_rad": 0.0974084734916687,
+            "right_ee_mm": 107.97766268409703,
+            "left_ee_mm": 45.9268186449383,
+            "right_grip_mae_rad": 0.5010870099067688,
+            "left_grip_mae_rad": 0.051022954285144806
+          },
+          "after_release": {
+            "arm_mae_rad": 0.05282619222998619,
+            "right_ee_mm": 48.79604016723338,
+            "left_ee_mm": 7.598580927532956,
+            "right_grip_mae_rad": 0.07661747932434082,
+            "left_grip_mae_rad": 0.06432416290044785
+          },
+          "close_drawer": {
+            "arm_mae_rad": 0.062495697289705276,
+            "right_ee_mm": 8.811569120264982,
+            "left_ee_mm": 40.613193269387416,
+            "right_grip_mae_rad": 0.0258009135723114,
+            "left_grip_mae_rad": 0.25932776927948
+          }
+        }
+      }
+    },
+    "15+8": {
+      "all": {
+        "arm_mae_rad": 0.06832464598119259,
+        "right_ee_mm": 23.911060190767667,
+        "left_ee_mm": 32.36801636987328,
+        "peak_step_rad": 0.12189643085002899,
+        "joint_accel_p95_rad_s2": 17.806368791498244,
+        "joint_accel_p99_rad_s2": 28.15048956871026,
+        "joint_accel_near_replan_p95_rad_s2": 20.47185469418764,
+        "demo_joint_accel_p95_rad_s2": 7.221183925867081,
+        "joint_accel_boundary_p95_rad_s2": 20.4712139815092,
+        "joint_accel_interior_p95_rad_s2": 14.124638065695756,
+        "raw_windows_joint_accel_p95_rad_s2": 12.193799614906307,
+        "raw_windows_early_arm_mae_rad": 0.05100470222532749,
+        "raw_windows_late_arm_mae_rad": 0.11360453441739082,
+        "speed_dips_boundary_per_1k_frames": 5.681818181818182,
+        "speed_dips_interior_per_1k_frames": 7.052186177715091,
+        "clip_count": 2,
+        "grip_events_matched": 9,
+        "grip_events_total": 9,
+        "mean_matched_abs_grip_offset_frames": 11.88888888888889,
+        "extra_grip_event_count": 2,
+        "left_grasp_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 9.5
+        },
+        "left_regrasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 27.0
+        },
+        "left_release_handle_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 8.5
+        },
+        "right_grasp_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 1.5
+        },
+        "right_release_timing": {
+          "matched": 2,
+          "total": 2,
+          "mean_abs_offset_frames": 20.5
+        },
+        "phases": {
+          "open_drawer": {
+            "arm_mae_rad": 0.05271914601325989,
+            "right_ee_mm": 6.2058402627472615,
+            "left_ee_mm": 28.1461772189604,
+            "right_grip_mae_rad": 0.027568821795284748,
+            "left_grip_mae_rad": 0.12967148423194885
+          },
+          "approach_cube": {
+            "arm_mae_rad": 0.060461120679974556,
+            "right_ee_mm": 16.945504962376575,
+            "left_ee_mm": 33.91164361664255,
+            "right_grip_mae_rad": 0.10350476950407028,
+            "left_grip_mae_rad": 0.10978787019848824
+          },
+          "grasp": {
+            "arm_mae_rad": 0.040796116925776005,
+            "right_ee_mm": 20.256108468466216,
+            "left_ee_mm": 10.329246618961154,
+            "right_grip_mae_rad": 0.18356315791606903,
+            "left_grip_mae_rad": 0.028685647062957287
+          },
+          "carry": {
+            "arm_mae_rad": 0.06472321227192879,
+            "right_ee_mm": 51.60305251368291,
+            "left_ee_mm": 11.127624482457223,
+            "right_grip_mae_rad": 0.1501140296459198,
+            "left_grip_mae_rad": 0.05445663072168827
+          },
+          "release": {
+            "arm_mae_rad": 0.0868852511048317,
+            "right_ee_mm": 75.46893119318531,
+            "left_ee_mm": 31.037346492868277,
+            "right_grip_mae_rad": 0.3826720118522644,
+            "left_grip_mae_rad": 0.03485814109444618
+          },
+          "after_release": {
+            "arm_mae_rad": 0.05589767172932625,
+            "right_ee_mm": 44.63817828180412,
+            "left_ee_mm": 8.64743510046042,
+            "right_grip_mae_rad": 0.09810149297118187,
+            "left_grip_mae_rad": 0.09148348867893219
+          },
+          "close_drawer": {
+            "arm_mae_rad": 0.08467545360326767,
+            "right_ee_mm": 22.59575300080059,
+            "left_ee_mm": 49.54350055426873,
+            "right_grip_mae_rad": 0.04602120444178581,
+            "left_grip_mae_rad": 0.21800734847784042
+          }
+        }
+      },
+      "hold_then_push": {
+        "arm_mae_rad": 0.07769913226366043,
+        "right_ee_mm": 28.623810040933357,
+        "left_ee_mm": 36.930325966062085,
+        "peak_step_rad": 0.11135703325271606,
+        "joint_accel_p95_rad_s2": 15.843817787244914,
+        "joint_accel_p99_rad_s2": 20.942737340927124,
+        "joint_accel_near_replan_p95_rad_s2": 17.74441860616207,
+        "demo_joint_accel_p95_rad_s2": 6.477816402912139,
+        "joint_accel_boundary_p95_rad_s2": 17.657766491174684,
+        "joint_accel_interior_p95_rad_s2": 13.697089254856106,
+        "raw_windows_joint_accel_p95_rad_s2": 12.863720208406448,
+        "raw_windows_early_arm_mae_rad": 0.05512123927474022,
+        "raw_windows_late_arm_mae_rad": 0.11497698724269867,
+        "speed_dips_boundary_per_1k_frames": 0.0,
+        "speed_dips_interior_per_1k_frames": 3.3112582781456954,
+        "clip_count": 1,
+        "grip_events_matched": 4,
+        "grip_events_total": 4,
+        "mean_matched_abs_grip_offset_frames": 8.75,
+        "extra_grip_event_count": 1,
+        "left_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 9.0
+        },
+        "left_release_handle_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 10.0
+        },
+        "right_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 1.0
+        },
+        "right_release_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 15.0
+        },
+        "phases": {
+          "open_drawer": {
+            "arm_mae_rad": 0.05593584105372429,
+            "right_ee_mm": 5.866486869486108,
+            "left_ee_mm": 32.51666307256306,
+            "right_grip_mae_rad": 0.031707748770713806,
+            "left_grip_mae_rad": 0.12716272473335266
+          },
+          "approach_cube": {
+            "arm_mae_rad": 0.04743136093020439,
+            "right_ee_mm": 23.02306785682927,
+            "left_ee_mm": 36.93390745629205,
+            "right_grip_mae_rad": 0.1394943743944168,
+            "left_grip_mae_rad": 0.06692185252904892
+          },
+          "grasp": {
+            "arm_mae_rad": 0.05443267524242401,
+            "right_ee_mm": 23.171732479089265,
+            "left_ee_mm": 11.265807417336125,
+            "right_grip_mae_rad": 0.22258874773979187,
+            "left_grip_mae_rad": 0.031044062227010727
+          },
+          "carry": {
+            "arm_mae_rad": 0.08377852290868759,
+            "right_ee_mm": 58.50361452973428,
+            "left_ee_mm": 13.288722804199265,
+            "right_grip_mae_rad": 0.15276311337947845,
+            "left_grip_mae_rad": 0.061508506536483765
+          },
+          "release": {
+            "arm_mae_rad": 0.07253077626228333,
+            "right_ee_mm": 40.17645901262368,
+            "left_ee_mm": 11.61580667635041,
+            "right_grip_mae_rad": 0.26425701379776,
+            "left_grip_mae_rad": 0.01869332790374756
+          },
+          "after_release": {
+            "arm_mae_rad": 0.055774495005607605,
+            "right_ee_mm": 36.88493923845045,
+            "left_ee_mm": 9.308891561556841,
+            "right_grip_mae_rad": 0.11958550661802292,
+            "left_grip_mae_rad": 0.11864281445741653
+          },
+          "close_drawer": {
+            "arm_mae_rad": 0.1036696583032608,
+            "right_ee_mm": 36.07009986221892,
+            "left_ee_mm": 56.698111405584235,
+            "right_grip_mae_rad": 0.06624149531126022,
+            "left_grip_mae_rad": 0.17668692767620087
+          }
+        }
+      },
+      "release_then_push": {
+        "arm_mae_rad": 0.05895015969872475,
+        "right_ee_mm": 19.198310340601978,
+        "left_ee_mm": 27.805706773684474,
+        "peak_step_rad": 0.13243582844734192,
+        "joint_accel_p95_rad_s2": 19.76891979575157,
+        "joint_accel_p99_rad_s2": 35.358241796493395,
+        "joint_accel_near_replan_p95_rad_s2": 23.19929078221321,
+        "demo_joint_accel_p95_rad_s2": 7.9645514488220215,
+        "joint_accel_boundary_p95_rad_s2": 23.28466147184372,
+        "joint_accel_interior_p95_rad_s2": 14.552186876535405,
+        "raw_windows_joint_accel_p95_rad_s2": 11.523879021406167,
+        "raw_windows_early_arm_mae_rad": 0.046888165175914764,
+        "raw_windows_late_arm_mae_rad": 0.11223208159208298,
+        "speed_dips_boundary_per_1k_frames": 9.615384615384615,
+        "speed_dips_interior_per_1k_frames": 9.828009828009828,
+        "clip_count": 1,
+        "grip_events_matched": 5,
+        "grip_events_total": 5,
+        "mean_matched_abs_grip_offset_frames": 14.4,
+        "extra_grip_event_count": 1,
+        "left_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 10.0
+        },
+        "left_regrasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 27.0
+        },
+        "left_release_handle_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 7.0
+        },
+        "right_grasp_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 2.0
+        },
+        "right_release_timing": {
+          "matched": 1,
+          "total": 1,
+          "mean_abs_offset_frames": 26.0
+        },
+        "phases": {
+          "open_drawer": {
+            "arm_mae_rad": 0.049502450972795486,
+            "right_ee_mm": 6.545193656008415,
+            "left_ee_mm": 23.775691365357737,
+            "right_grip_mae_rad": 0.02342989481985569,
+            "left_grip_mae_rad": 0.13218024373054504
+          },
+          "approach_cube": {
+            "arm_mae_rad": 0.07349088042974472,
+            "right_ee_mm": 10.867942067923874,
+            "left_ee_mm": 30.889379776993056,
+            "right_grip_mae_rad": 0.06751516461372375,
+            "left_grip_mae_rad": 0.15265388786792755
+          },
+          "grasp": {
+            "arm_mae_rad": 0.027159558609128,
+            "right_ee_mm": 17.340484457843168,
+            "left_ee_mm": 9.39268582058618,
+            "right_grip_mae_rad": 0.1445375680923462,
+            "left_grip_mae_rad": 0.026327231898903847
+          },
+          "carry": {
+            "arm_mae_rad": 0.04566790163516998,
+            "right_ee_mm": 44.702490497631544,
+            "left_ee_mm": 8.966526160715182,
+            "right_grip_mae_rad": 0.14746494591236115,
+            "left_grip_mae_rad": 0.047404754906892776
+          },
+          "release": {
+            "arm_mae_rad": 0.10123972594738007,
+            "right_ee_mm": 110.76140337374696,
+            "left_ee_mm": 50.458886309386145,
+            "right_grip_mae_rad": 0.5010870099067688,
+            "left_grip_mae_rad": 0.051022954285144806
+          },
+          "after_release": {
+            "arm_mae_rad": 0.05602084845304489,
+            "right_ee_mm": 52.391417325157796,
+            "left_ee_mm": 7.985978639363998,
+            "right_grip_mae_rad": 0.07661747932434082,
+            "left_grip_mae_rad": 0.06432416290044785
+          },
+          "close_drawer": {
+            "arm_mae_rad": 0.06568124890327454,
+            "right_ee_mm": 9.121406139382257,
+            "left_ee_mm": 42.38888970295323,
+            "right_grip_mae_rad": 0.0258009135723114,
+            "left_grip_mae_rad": 0.25932776927948
+          }
+        }
+      }
+    }
+  },
+  "episodes": [
+    {
+      "episode": 5,
+      "operation_style": "release_then_push",
+      "samples": 823,
+      "stride": 15,
+      "blend": 0,
+      "event_frames": {
+        "right_grasp": 358,
+        "right_release": 467,
+        "left_grasp": 155,
+        "left_release_handle": 233,
+        "left_regrasp": 573
+      },
+      "checkpoint": "real_camera_adjusted_lora_phase_20261122_v001/step_1500",
+      "arm_mae_rad": 0.0532454177737236,
+      "right_ee_mm": 17.65393878970867,
+      "left_ee_mm": 24.784183014159737,
+      "peak_step_rad": 0.44236239790916443,
+      "joint_accel_p95_rad_s2": 113.85566890239716,
+      "joint_accel_p99_rad_s2": 338.44656229019154,
+      "joint_accel_near_replan_p95_rad_s2": 222.81495854258537,
+      "demo_joint_accel_p95_rad_s2": 7.9645514488220215,
+      "joint_accel_boundary_p95_rad_s2": 357.1315732598304,
+      "joint_accel_interior_p95_rad_s2": 14.216968417167655,
+      "raw_windows_joint_accel_p95_rad_s2": 11.523879021406167,
+      "raw_windows_early_arm_mae_rad": 0.046888165175914764,
+      "raw_windows_late_arm_mae_rad": 0.11223208159208298,
+      "unsupported_speed_dips_boundary": 0,
+      "unsupported_speed_dips_interior": 2,
+      "transition_frames": 52,
+      "grip_offsets_frames": {
+        "right_grasp": 2,
+        "right_release": -26,
+        "left_grasp": 10,
+        "left_release_handle": 7,
+        "left_regrasp": 27
+      },
+      "extra_sustained_grip_events": [
+        [
+          "left",
+          "open",
+          773
+        ]
+      ],
+      "phases": {
+        "open_drawer": {
+          "frames": 233,
+          "arm_mae_rad": 0.04391086846590042,
+          "right_ee_mm": 5.926963272990692,
+          "left_ee_mm": 20.087128532494187,
+          "right_grip_mae_rad": 0.02342989481985569,
+          "left_grip_mae_rad": 0.13218024373054504
+        },
+        "approach_cube": {
+          "frames": 117,
+          "arm_mae_rad": 0.0644049271941185,
+          "right_ee_mm": 9.921987339420342,
+          "left_ee_mm": 25.942516590811305,
+          "right_grip_mae_rad": 0.06751516461372375,
+          "left_grip_mae_rad": 0.15265388786792755
+        },
+        "grasp": {
+          "frames": 17,
+          "arm_mae_rad": 0.023692920804023743,
+          "right_ee_mm": 16.000572931483852,
+          "left_ee_mm": 7.732484806961357,
+          "right_grip_mae_rad": 0.1445375680923462,
+          "left_grip_mae_rad": 0.026327231898903847
+        },
+        "carry": {
+          "frames": 92,
+          "arm_mae_rad": 0.043247684836387634,
+          "right_ee_mm": 41.863248761802446,
+          "left_ee_mm": 8.860164085000871,
+          "right_grip_mae_rad": 0.14746494591236115,
+          "left_grip_mae_rad": 0.047404754906892776
+        },
+        "release": {
+          "frames": 17,
+          "arm_mae_rad": 0.09521746635437012,
+          "right_ee_mm": 106.70768345298868,
+          "left_ee_mm": 42.941337498853905,
+          "right_grip_mae_rad": 0.5010870099067688,
+          "left_grip_mae_rad": 0.051022954285144806
+        },
+        "after_release": {
+          "frames": 82,
+          "arm_mae_rad": 0.04978335276246071,
+          "right_ee_mm": 45.26135908429965,
+          "left_ee_mm": 7.336340904094364,
+          "right_grip_mae_rad": 0.07661747932434082,
+          "left_grip_mae_rad": 0.06432416290044785
+        },
+        "close_drawer": {
+          "frames": 265,
+          "arm_mae_rad": 0.06027122214436531,
+          "right_ee_mm": 8.824324426704884,
+          "left_ee_mm": 39.2590083105763,
+          "right_grip_mae_rad": 0.0258009135723114,
+          "left_grip_mae_rad": 0.25932776927948
+        }
+      }
+    },
+    {
+      "episode": 5,
+      "operation_style": "release_then_push",
+      "samples": 823,
+      "stride": 15,
+      "blend": 4,
+      "event_frames": {
+        "right_grasp": 358,
+        "right_release": 467,
+        "left_grasp": 155,
+        "left_release_handle": 233,
+        "left_regrasp": 573
+      },
+      "checkpoint": "real_camera_adjusted_lora_phase_20261122_v001/step_1500",
+      "arm_mae_rad": 0.055715493857860565,
+      "right_ee_mm": 18.31948090443054,
+      "left_ee_mm": 26.08808729108261,
+      "peak_step_rad": 0.17455396056175232,
+      "joint_accel_p95_rad_s2": 38.04863691329956,
+      "joint_accel_p99_rad_s2": 68.21044206619257,
+      "joint_accel_near_replan_p95_rad_s2": 50.71567744016647,
+      "demo_joint_accel_p95_rad_s2": 7.9645514488220215,
+      "joint_accel_boundary_p95_rad_s2": 57.030918113887296,
+      "joint_accel_interior_p95_rad_s2": 13.714134693145752,
+      "raw_windows_joint_accel_p95_rad_s2": 11.523879021406167,
+      "raw_windows_early_arm_mae_rad": 0.046888165175914764,
+      "raw_windows_late_arm_mae_rad": 0.11223208159208298,
+      "unsupported_speed_dips_boundary": 1,
+      "unsupported_speed_dips_interior": 5,
+      "transition_frames": 208,
+      "grip_offsets_frames": {
+        "right_grasp": 2,
+        "right_release": -26,
+        "left_grasp": 10,
+        "left_release_handle": 7,
+        "left_regrasp": 27
+      },
+      "extra_sustained_grip_events": [
+        [
+          "left",
+          "open",
+          773
+        ]
+      ],
+      "phases": {
+        "open_drawer": {
+          "frames": 233,
+          "arm_mae_rad": 0.04632920026779175,
+          "right_ee_mm": 6.191714940890868,
+          "left_ee_mm": 21.701043743231523,
+          "right_grip_mae_rad": 0.02342989481985569,
+          "left_grip_mae_rad": 0.13218024373054504
+        },
+        "approach_cube": {
+          "frames": 117,
+          "arm_mae_rad": 0.06841353327035904,
+          "right_ee_mm": 10.300252264844437,
+          "left_ee_mm": 28.08605367846772,
+          "right_grip_mae_rad": 0.06751516461372375,
+          "left_grip_mae_rad": 0.15265388786792755
+        },
+        "grasp": {
+          "frames": 17,
+          "arm_mae_rad": 0.024973710998892784,
+          "right_ee_mm": 16.56285367592179,
+          "left_ee_mm": 8.205255120291351,
+          "right_grip_mae_rad": 0.1445375680923462,
+          "left_grip_mae_rad": 0.026327231898903847
+        },
+        "carry": {
+          "frames": 92,
+          "arm_mae_rad": 0.044360432773828506,
+          "right_ee_mm": 43.213084776394446,
+          "left_ee_mm": 8.937600669054836,
+          "right_grip_mae_rad": 0.14746494591236115,
+          "left_grip_mae_rad": 0.047404754906892776
+        },
+        "release": {
+          "frames": 17,
+          "arm_mae_rad": 0.0974084734916687,
+          "right_ee_mm": 107.97766268409703,
+          "left_ee_mm": 45.9268186449383,
+          "right_grip_mae_rad": 0.5010870099067688,
+          "left_grip_mae_rad": 0.051022954285144806
+        },
+        "after_release": {
+          "frames": 82,
+          "arm_mae_rad": 0.05282619222998619,
+          "right_ee_mm": 48.79604016723338,
+          "left_ee_mm": 7.598580927532956,
+          "right_grip_mae_rad": 0.07661747932434082,
+          "left_grip_mae_rad": 0.06432416290044785
+        },
+        "close_drawer": {
+          "frames": 265,
+          "arm_mae_rad": 0.062495697289705276,
+          "right_ee_mm": 8.811569120264982,
+          "left_ee_mm": 40.613193269387416,
+          "right_grip_mae_rad": 0.0258009135723114,
+          "left_grip_mae_rad": 0.25932776927948
+        }
+      }
+    },
+    {
+      "episode": 5,
+      "operation_style": "release_then_push",
+      "samples": 823,
+      "stride": 15,
+      "blend": 8,
+      "event_frames": {
+        "right_grasp": 358,
+        "right_release": 467,
+        "left_grasp": 155,
+        "left_release_handle": 233,
+        "left_regrasp": 573
+      },
+      "checkpoint": "real_camera_adjusted_lora_phase_20261122_v001/step_1500",
+      "arm_mae_rad": 0.05895015969872475,
+      "right_ee_mm": 19.198310340601978,
+      "left_ee_mm": 27.805706773684474,
+      "peak_step_rad": 0.13243582844734192,
+      "joint_accel_p95_rad_s2": 19.76891979575157,
+      "joint_accel_p99_rad_s2": 35.358241796493395,
+      "joint_accel_near_replan_p95_rad_s2": 23.19929078221321,
+      "demo_joint_accel_p95_rad_s2": 7.9645514488220215,
+      "joint_accel_boundary_p95_rad_s2": 23.28466147184372,
+      "joint_accel_interior_p95_rad_s2": 14.552186876535405,
+      "raw_windows_joint_accel_p95_rad_s2": 11.523879021406167,
+      "raw_windows_early_arm_mae_rad": 0.046888165175914764,
+      "raw_windows_late_arm_mae_rad": 0.11223208159208298,
+      "unsupported_speed_dips_boundary": 4,
+      "unsupported_speed_dips_interior": 4,
+      "transition_frames": 416,
+      "grip_offsets_frames": {
+        "right_grasp": 2,
+        "right_release": -26,
+        "left_grasp": 10,
+        "left_release_handle": 7,
+        "left_regrasp": 27
+      },
+      "extra_sustained_grip_events": [
+        [
+          "left",
+          "open",
+          773
+        ]
+      ],
+      "phases": {
+        "open_drawer": {
+          "frames": 233,
+          "arm_mae_rad": 0.049502450972795486,
+          "right_ee_mm": 6.545193656008415,
+          "left_ee_mm": 23.775691365357737,
+          "right_grip_mae_rad": 0.02342989481985569,
+          "left_grip_mae_rad": 0.13218024373054504
+        },
+        "approach_cube": {
+          "frames": 117,
+          "arm_mae_rad": 0.07349088042974472,
+          "right_ee_mm": 10.867942067923874,
+          "left_ee_mm": 30.889379776993056,
+          "right_grip_mae_rad": 0.06751516461372375,
+          "left_grip_mae_rad": 0.15265388786792755
+        },
+        "grasp": {
+          "frames": 17,
+          "arm_mae_rad": 0.027159558609128,
+          "right_ee_mm": 17.340484457843168,
+          "left_ee_mm": 9.39268582058618,
+          "right_grip_mae_rad": 0.1445375680923462,
+          "left_grip_mae_rad": 0.026327231898903847
+        },
+        "carry": {
+          "frames": 92,
+          "arm_mae_rad": 0.04566790163516998,
+          "right_ee_mm": 44.702490497631544,
+          "left_ee_mm": 8.966526160715182,
+          "right_grip_mae_rad": 0.14746494591236115,
+          "left_grip_mae_rad": 0.047404754906892776
+        },
+        "release": {
+          "frames": 17,
+          "arm_mae_rad": 0.10123972594738007,
+          "right_ee_mm": 110.76140337374696,
+          "left_ee_mm": 50.458886309386145,
+          "right_grip_mae_rad": 0.5010870099067688,
+          "left_grip_mae_rad": 0.051022954285144806
+        },
+        "after_release": {
+          "frames": 82,
+          "arm_mae_rad": 0.05602084845304489,
+          "right_ee_mm": 52.391417325157796,
+          "left_ee_mm": 7.985978639363998,
+          "right_grip_mae_rad": 0.07661747932434082,
+          "left_grip_mae_rad": 0.06432416290044785
+        },
+        "close_drawer": {
+          "frames": 265,
+          "arm_mae_rad": 0.06568124890327454,
+          "right_ee_mm": 9.121406139382257,
+          "left_ee_mm": 42.38888970295323,
+          "right_grip_mae_rad": 0.0258009135723114,
+          "left_grip_mae_rad": 0.25932776927948
+        }
+      }
+    },
+    {
+      "episode": 38,
+      "operation_style": "hold_then_push",
+      "samples": 590,
+      "stride": 15,
+      "blend": 0,
+      "event_frames": {
+        "right_grasp": 221,
+        "right_release": 308,
+        "left_grasp": 126,
+        "left_release_handle": 440
+      },
+      "checkpoint": "real_camera_adjusted_lora_phase_20261122_v001/step_1500",
+      "arm_mae_rad": 0.07230143994092941,
+      "right_ee_mm": 26.53049357095782,
+      "left_ee_mm": 33.56518445164187,
+      "peak_step_rad": 0.4104362726211548,
+      "joint_accel_p95_rad_s2": 122.29529589414572,
+      "joint_accel_p99_rad_s2": 259.60578882694244,
+      "joint_accel_near_replan_p95_rad_s2": 195.99219381809212,
+      "demo_joint_accel_p95_rad_s2": 6.477816402912139,
+      "joint_accel_boundary_p95_rad_s2": 298.5608455538751,
+      "joint_accel_interior_p95_rad_s2": 14.177070558071136,
+      "raw_windows_joint_accel_p95_rad_s2": 12.863720208406448,
+      "raw_windows_early_arm_mae_rad": 0.05512123927474022,
+      "raw_windows_late_arm_mae_rad": 0.11497698724269867,
+      "unsupported_speed_dips_boundary": 0,
+      "unsupported_speed_dips_interior": 1,
+      "transition_frames": 36,
+      "grip_offsets_frames": {
+        "right_grasp": -1,
+        "right_release": -15,
+        "left_grasp": 9,
+        "left_release_handle": 10
+      },
+      "extra_sustained_grip_events": [
+        [
+          "left",
+          "close",
+          574
+        ]
+      ],
+      "phases": {
+        "open_drawer": {
+          "frames": 179,
+          "arm_mae_rad": 0.04957321286201477,
+          "right_ee_mm": 5.78205095785115,
+          "left_ee_mm": 27.40965144302153,
+          "right_grip_mae_rad": 0.031707748770713806,
+          "left_grip_mae_rad": 0.12716272473335266
+        },
+        "approach_cube": {
+          "frames": 34,
+          "arm_mae_rad": 0.04130537435412407,
+          "right_ee_mm": 19.106416920480907,
+          "left_ee_mm": 30.853921655758647,
+          "right_grip_mae_rad": 0.1394943743944168,
+          "left_grip_mae_rad": 0.06692185252904892
+        },
+        "grasp": {
+          "frames": 17,
+          "arm_mae_rad": 0.052235011011362076,
+          "right_ee_mm": 20.777184264525093,
+          "left_ee_mm": 12.414502630646266,
+          "right_grip_mae_rad": 0.22258874773979187,
+          "left_grip_mae_rad": 0.031044062227010727
+        },
+        "carry": {
+          "frames": 70,
+          "arm_mae_rad": 0.07906181365251541,
+          "right_ee_mm": 53.64026198659131,
+          "left_ee_mm": 12.793623927823786,
+          "right_grip_mae_rad": 0.15276311337947845,
+          "left_grip_mae_rad": 0.061508506536483765
+        },
+        "release": {
+          "frames": 17,
+          "arm_mae_rad": 0.06649990379810333,
+          "right_ee_mm": 36.762987910872155,
+          "left_ee_mm": 9.574302252190614,
+          "right_grip_mae_rad": 0.26425701379776,
+          "left_grip_mae_rad": 0.01869332790374756
+        },
+        "after_release": {
+          "frames": 44,
+          "arm_mae_rad": 0.05272158235311508,
+          "right_ee_mm": 34.43319293540992,
+          "left_ee_mm": 8.320068568764412,
+          "right_grip_mae_rad": 0.11958550661802292,
+          "left_grip_mae_rad": 0.11864281445741653
+        },
+        "close_drawer": {
+          "frames": 229,
+          "arm_mae_rad": 0.09828512370586395,
+          "right_ee_mm": 33.713205916647276,
+          "left_ee_mm": 53.33035592528614,
+          "right_grip_mae_rad": 0.06624149531126022,
+          "left_grip_mae_rad": 0.17668692767620087
+        }
+      }
+    },
+    {
+      "episode": 38,
+      "operation_style": "hold_then_push",
+      "samples": 590,
+      "stride": 15,
+      "blend": 4,
+      "event_frames": {
+        "right_grasp": 221,
+        "right_release": 308,
+        "left_grasp": 126,
+        "left_release_handle": 440
+      },
+      "checkpoint": "real_camera_adjusted_lora_phase_20261122_v001/step_1500",
+      "arm_mae_rad": 0.07470272481441498,
+      "right_ee_mm": 27.448375561649108,
+      "left_ee_mm": 35.07391109430702,
+      "peak_step_rad": 0.13397932052612305,
+      "joint_accel_p95_rad_s2": 31.10767543315886,
+      "joint_accel_p99_rad_s2": 48.35653366148471,
+      "joint_accel_near_replan_p95_rad_s2": 39.409051984548555,
+      "demo_joint_accel_p95_rad_s2": 6.477816402912139,
+      "joint_accel_boundary_p95_rad_s2": 43.76475691795347,
+      "joint_accel_interior_p95_rad_s2": 13.299100399017334,
+      "raw_windows_joint_accel_p95_rad_s2": 12.863720208406448,
+      "raw_windows_early_arm_mae_rad": 0.05512123927474022,
+      "raw_windows_late_arm_mae_rad": 0.11497698724269867,
+      "unsupported_speed_dips_boundary": 0,
+      "unsupported_speed_dips_interior": 2,
+      "transition_frames": 144,
+      "grip_offsets_frames": {
+        "right_grasp": -1,
+        "right_release": -15,
+        "left_grasp": 9,
+        "left_release_handle": 10
+      },
+      "extra_sustained_grip_events": [
+        [
+          "left",
+          "close",
+          574
+        ]
+      ],
+      "phases": {
+        "open_drawer": {
+          "frames": 179,
+          "arm_mae_rad": 0.05235843360424042,
+          "right_ee_mm": 5.8184429245988385,
+          "left_ee_mm": 29.6727289983729,
+          "right_grip_mae_rad": 0.031707748770713806,
+          "left_grip_mae_rad": 0.12716272473335266
+        },
+        "approach_cube": {
+          "frames": 34,
+          "arm_mae_rad": 0.04402611404657364,
+          "right_ee_mm": 21.08408019568556,
+          "left_ee_mm": 33.39052852708226,
+          "right_grip_mae_rad": 0.1394943743944168,
+          "left_grip_mae_rad": 0.06692185252904892
+        },
+        "grasp": {
+          "frames": 17,
+          "arm_mae_rad": 0.05303449556231499,
+          "right_ee_mm": 21.10500853338457,
+          "left_ee_mm": 12.15069421266912,
+          "right_grip_mae_rad": 0.22258874773979187,
+          "left_grip_mae_rad": 0.031044062227010727
+        },
+        "carry": {
+          "frames": 70,
+          "arm_mae_rad": 0.08129263669252396,
+          "right_ee_mm": 55.917549051945706,
+          "left_ee_mm": 13.031187069160987,
+          "right_grip_mae_rad": 0.15276311337947845,
+          "left_grip_mae_rad": 0.061508506536483765
+        },
+        "release": {
+          "frames": 17,
+          "arm_mae_rad": 0.0696914866566658,
+          "right_ee_mm": 38.29747580183051,
+          "left_ee_mm": 10.857856001536494,
+          "right_grip_mae_rad": 0.26425701379776,
+          "left_grip_mae_rad": 0.01869332790374756
+        },
+        "after_release": {
+          "frames": 44,
+          "arm_mae_rad": 0.05390916392207146,
+          "right_ee_mm": 35.43976253375329,
+          "left_ee_mm": 8.627798607591126,
+          "right_grip_mae_rad": 0.11958550661802292,
+          "left_grip_mae_rad": 0.11864281445741653
+        },
+        "close_drawer": {
+          "frames": 229,
+          "arm_mae_rad": 0.10068441182374954,
+          "right_ee_mm": 34.728215512648354,
+          "left_ee_mm": 54.864451955435904,
+          "right_grip_mae_rad": 0.06624149531126022,
+          "left_grip_mae_rad": 0.17668692767620087
+        }
+      }
+    },
+    {
+      "episode": 38,
+      "operation_style": "hold_then_push",
+      "samples": 590,
+      "stride": 15,
+      "blend": 8,
+      "event_frames": {
+        "right_grasp": 221,
+        "right_release": 308,
+        "left_grasp": 126,
+        "left_release_handle": 440
+      },
+      "checkpoint": "real_camera_adjusted_lora_phase_20261122_v001/step_1500",
+      "arm_mae_rad": 0.07769913226366043,
+      "right_ee_mm": 28.623810040933357,
+      "left_ee_mm": 36.930325966062085,
+      "peak_step_rad": 0.11135703325271606,
+      "joint_accel_p95_rad_s2": 15.843817787244914,
+      "joint_accel_p99_rad_s2": 20.942737340927124,
+      "joint_accel_near_replan_p95_rad_s2": 17.74441860616207,
+      "demo_joint_accel_p95_rad_s2": 6.477816402912139,
+      "joint_accel_boundary_p95_rad_s2": 17.657766491174684,
+      "joint_accel_interior_p95_rad_s2": 13.697089254856106,
+      "raw_windows_joint_accel_p95_rad_s2": 12.863720208406448,
+      "raw_windows_early_arm_mae_rad": 0.05512123927474022,
+      "raw_windows_late_arm_mae_rad": 0.11497698724269867,
+      "unsupported_speed_dips_boundary": 0,
+      "unsupported_speed_dips_interior": 1,
+      "transition_frames": 288,
+      "grip_offsets_frames": {
+        "right_grasp": -1,
+        "right_release": -15,
+        "left_grasp": 9,
+        "left_release_handle": 10
+      },
+      "extra_sustained_grip_events": [
+        [
+          "left",
+          "close",
+          574
+        ]
+      ],
+      "phases": {
+        "open_drawer": {
+          "frames": 179,
+          "arm_mae_rad": 0.05593584105372429,
+          "right_ee_mm": 5.866486869486108,
+          "left_ee_mm": 32.51666307256306,
+          "right_grip_mae_rad": 0.031707748770713806,
+          "left_grip_mae_rad": 0.12716272473335266
+        },
+        "approach_cube": {
+          "frames": 34,
+          "arm_mae_rad": 0.04743136093020439,
+          "right_ee_mm": 23.02306785682927,
+          "left_ee_mm": 36.93390745629205,
+          "right_grip_mae_rad": 0.1394943743944168,
+          "left_grip_mae_rad": 0.06692185252904892
+        },
+        "grasp": {
+          "frames": 17,
+          "arm_mae_rad": 0.05443267524242401,
+          "right_ee_mm": 23.171732479089265,
+          "left_ee_mm": 11.265807417336125,
+          "right_grip_mae_rad": 0.22258874773979187,
+          "left_grip_mae_rad": 0.031044062227010727
+        },
+        "carry": {
+          "frames": 70,
+          "arm_mae_rad": 0.08377852290868759,
+          "right_ee_mm": 58.50361452973428,
+          "left_ee_mm": 13.288722804199265,
+          "right_grip_mae_rad": 0.15276311337947845,
+          "left_grip_mae_rad": 0.061508506536483765
+        },
+        "release": {
+          "frames": 17,
+          "arm_mae_rad": 0.07253077626228333,
+          "right_ee_mm": 40.17645901262368,
+          "left_ee_mm": 11.61580667635041,
+          "right_grip_mae_rad": 0.26425701379776,
+          "left_grip_mae_rad": 0.01869332790374756
+        },
+        "after_release": {
+          "frames": 44,
+          "arm_mae_rad": 0.055774495005607605,
+          "right_ee_mm": 36.88493923845045,
+          "left_ee_mm": 9.308891561556841,
+          "right_grip_mae_rad": 0.11958550661802292,
+          "left_grip_mae_rad": 0.11864281445741653
+        },
+        "close_drawer": {
+          "frames": 229,
+          "arm_mae_rad": 0.1036696583032608,
+          "right_ee_mm": 36.07009986221892,
+          "left_ee_mm": 56.698111405584235,
+          "right_grip_mae_rad": 0.06624149531126022,
+          "left_grip_mae_rad": 0.17668692767620087
+        }
+      }
+    }
+  ]
+}

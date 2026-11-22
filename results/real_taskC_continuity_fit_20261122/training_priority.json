@@ -1,0 +1,15 @@
+{
+  "baseline_schedule": "15+8",
+  "mean_active_control_point_error_mm": {
+    "open_drawer": 25.608240380580487,
+    "approach_cube": 14.301792454082548,
+    "grasp": 16.221413548637635,
+    "carry": 45.907841626098694,
+    "release": 34.6829719536795,
+    "close_drawer": 43.74560103929197
+  },
+  "priority": [
+    "carry",
+    "close_drawer"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "goal_provided_to_controller": true,
+  "trials": [
+    {
+      "episode": 10,
+      "reference_frame": 0,
+      "status": "completed",
+      "initial_error_rad": 0.1589863018180536,
+      "best_error_rad": 0.019578763376104202,
+      "final_error_rad": 0.02274423323896335,
+      "first_recovery_seconds": 0.43400000000000033,
+      "relapsed": false,
+      "sim_seconds": 4.999999999999671,
+      "recovered_and_held": true,
+      "frames_with_projected_target": 0
+    },
+    {
+      "episode": 10,
+      "reference_frame": 25,
+      "status": "completed",
+      "initial_error_rad": 0.20411789680585357,
+      "best_error_rad": 0.017078380741832183,
+      "final_error_rad": 0.02277060939320119,
+      "first_recovery_seconds": 0.43400000000000033,
+      "relapsed": false,
+      "sim_seconds": 4.999999999999671,
+      "recovered_and_held": true,
+      "frames_with_projected_target": 0
+    },
+    {
+      "episode": 16,
+      "reference_frame": 0,
+      "status": "completed",
+      "initial_error_rad": 0.20963511456426942,
+      "best_error_rad": 0.019550708736226108,
+      "final_error_rad": 0.022531589746785707,
+      "first_recovery_seconds": 0.46800000000000036,
+      "relapsed": false,
+      "sim_seconds": 4.999999999999671,
+      "recovered_and_held": true,
+      "frames_with_projected_target": 0
+    },
+    {
+      "episode": 16,
+      "reference_frame": 25,
+      "status": "completed",
+      "initial_error_rad": 0.2059002921104458,
+      "best_error_rad": 0.02072170982565602,
+      "final_error_rad": 0.022549934121176785,
+      "first_recovery_seconds": 0.46800000000000036,
+      "relapsed": false,
+      "sim_seconds": 4.999999999999671,
+      "recovered_and_held": true,
+      "frames_with_projected_target": 0
+    },
+    {
+      "episode": 17,
+      "reference_frame": 0,
+      "status": "completed",
+      "initial_error_rad": 0.16119847152799904,
+      "best_error_rad": 0.020058194358056225,
+      "final_error_rad": 0.022728243007219984,
+      "first_recovery_seconds": 0.43400000000000033,
+      "relapsed": false,
+      "sim_seconds": 4.999999999999671,
+      "recovered_and_held": true,
+      "frames_with_projected_target": 0
+    },
+    {
+      "episode": 17,
+      "reference_frame": 25,
+      "status": "completed",
+      "initial_error_rad": 0.19497522488258934,
+      "best_error_rad": 0.02273477449384509,
+      "final_error_rad": 0.02273477449384509,
+      "first_recovery_seconds": 0.46800000000000036,
+      "relapsed": false,
+      "sim_seconds": 4.999999999999671,
+      "recovered_and_held": true,
+      "frames_with_projected_target": 0
+    },
+    {
+      "episode": 24,
+      "reference_frame": 0,
+      "status": "completed",
+      "initial_error_rad": 0.1810469732516099,
+      "best_error_rad": 0.01582612649574794,
+      "final_error_rad": 0.022702744833240196,
+      "first_recovery_seconds": 0.5000000000000003,
+      "relapsed": false,
+      "sim_seconds": 4.999999999999671,
+      "recovered_and_held": true,
+      "frames_with_projected_target": 0
+    },
+    {
+      "episode": 24,
+      "reference_frame": 25,
+      "status": "completed",
+      "initial_error_rad": 0.17898739765868454,
+      "best_error_rad": 0.022101044940070272,
+      "final_error_rad": 0.02270780214290946,
+      "first_recovery_seconds": 0.43400000000000033,
+      "relapsed": false,
+      "sim_seconds": 4.999999999999671,
+      "recovered_and_held": true,
+      "frames_with_projected_target": 0
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "seed": 42,
+  "steps": 2,
+  "batch_size": 1,
+  "eval_every": 2,
+  "save_every": 2,
+  "model": "pi0_base + gemma_2b_lora + gemma_300m_lora",
+  "trainable": "LoRA only",
+  "frozen_dtype": "bfloat16",
+  "action_horizon": 50,
+  "action_semantics": "absolute IK target, right arm then left arm, rad",
+  "training_frequency_hz": 30,
+  "optimizer": "AdamW(b1=0.9, b2=0.95, eps=1e-08, weight_decay=1e-10, clip_gradient_norm=1.0)",
+  "schedule": "CosineDecaySchedule(warmup_steps=1, peak_lr=2.5e-05, decay_steps=2, decay_lr=2.5e-06)",
+  "image_mapping": {
+    "base_0_rgb": "global",
+    "chest_0_rgb": "chest",
+    "left_wrist_0_rgb": "wrist_left",
+    "right_wrist_0_rgb": "wrist_right"
+  },
+  "prompt": "用左手拉开抽屉，右手抓起方块并放入抽屉、释放，然后用左手推合抽屉。",
+  "image_resize": "OpenPI 224x224 resize-with-pad",
+  "normalization": "train split only z-score",
+  "train_samples": 28621,
+  "validation_samples": 7197,
+  "validation_probe_samples": [
+    {
+      "episode_id": 5,
+      "sample_index": 0,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 5,
+      "sample_index": 387,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 0,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 409,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 20,
+      "sample_index": 0,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 20,
+      "sample_index": 394,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 0,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 550,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 25,
+      "sample_index": 0,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 25,
+      "sample_index": 454,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 30,
+      "sample_index": 0,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 30,
+      "sample_index": 265,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 34,
+      "sample_index": 0,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 34,
+      "sample_index": 334,
+      "operation_style": "release_then_push"
+    },
+    {
+      "episode_id": 38,
+      "sample_index": 0,
+      "operation_style": "hold_then_push"
+    },
+    {
+      "episode_id": 38,
+      "sample_index": 270,
+      "operation_style": "hold_then_push"
+    },
+    {
+      "episode_id": 41,
+      "sample_index": 0,
+      "operation_style": "hold_then_push"
+    },
+    {
+      "episode_id": 41,
+      "sample_index": 261,
+      "operation_style": "hold_then_push"
+    },
+    {
+      "episode_id": 43,
+      "sample_index": 0,
+      "operation_style": "hold_then_push"
+    },
+    {
+      "episode_id": 43,
+      "sample_index": 272,
+      "operation_style": "hold_then_push"
+    }
+  ],
+  "validation_note": "two fixed probes per held-out episode with fixed flow random keys, not task success or generalization estimate",
+  "candidate": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/data/processed/real_camera_adjusted_candidate_v001",
+  "candidate_manifest_sha256": "59a24d3fa29561be129042fc3b69dd297bc54999d09b25d3ac84827e49272164",
+  "norm_stats_sha256": "c3e7c26c1a16a0b20451dc513c194f0a7c245592c85465584c13c81b84cb0678",
+  "review_decision_sha256": "f5801c1c770a5ab49dd01ea21868e12a3254c1380b45e751545b23e95df4b57e",
+  "base_checkpoint": "weights/openpi/openpi-assets/checkpoints/pi0_base/params",
+  "note": "exploratory; consult review_decision.json; no resume support"
+}

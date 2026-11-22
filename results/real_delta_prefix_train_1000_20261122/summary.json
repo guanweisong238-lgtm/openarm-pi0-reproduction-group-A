@@ -1,0 +1,19 @@
+{
+  "steps": 1000,
+  "training_windows": 1000,
+  "initial_suffix_flow_loss": 0.39733152091503143,
+  "final_suffix_flow_loss": 0.2783822678029537,
+  "prefix_max_abs_error_before": 0.0,
+  "prefix_max_abs_error_after": 0.0,
+  "checkpoint": "checkpoints/real_delta_prefix_train_1000_20261122/step_1000",
+  "restore_check": {
+    "baseline_loss": 0.29825541377067566,
+    "restored_loss": 0.29825541377067566,
+    "absolute_difference": 0.0,
+    "arrays": 20
+  },
+  "peak_gpu_bytes": 8203497472,
+  "training_seconds": 634.2225652120001,
+  "trained_prefix_source": "recorded teacher actions only; online uses previous predicted actions",
+  "robot_executed": false
+}

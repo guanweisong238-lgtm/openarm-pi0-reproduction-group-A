@@ -249,6 +249,7 @@ datasets/
 !/assets/**/provenance.json
 
 # 3. Pretrained model weights and checkpoints
+# 基座权重和本地 LoRA 检查点都留在本机，包括每步的归一化文件。
 /checkpoints/*
 !/checkpoints/README.md
 weights/
@@ -275,6 +276,10 @@ outputs/
 logs/
 mujoco_logs/
 simulation_outputs/
+
+# 训练脚本生成的逐步指标和源码副本。验证记录与汇总保留。
+/results/**/metrics.jsonl
+/results/**/source_snapshot/
 
 # 项目内模型下载、Hugging Face、JAX 编译及依赖缓存。
 /.cache/

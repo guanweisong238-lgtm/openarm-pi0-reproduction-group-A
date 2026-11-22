@@ -1,0 +1,15 @@
+{
+  "arm_mae_rad": 0.29026374220848083,
+  "gripper_mae_rad": 1.388025164604187,
+  "gripper_outside_sim_range_frames": 583,
+  "frames": 583,
+  "arm_mae_per_100_frames": [
+    0.1187123954296112,
+    0.3035031259059906,
+    0.2908119559288025,
+    0.27214163541793823,
+    0.3654080033302307,
+    0.411639004945755
+  ],
+  "limitations": "teacher-forced recorded observations; not closed-loop physics; simulator limits not certified hardware limits"
+}

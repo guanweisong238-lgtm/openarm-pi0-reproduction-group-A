@@ -1,0 +1,26 @@
+{
+  "status": "recovered",
+  "episode": 0,
+  "reference_split": "train",
+  "reference_frame": 0,
+  "frames": 11,
+  "sim_time_seconds": 0.36800000000000027,
+  "initial_max_error_rad": 0.059901133807808565,
+  "final_max_error_rad": 0.03698339929786016,
+  "max_actual_speed_rad_s": 0.40828421773662904,
+  "max_command_step_rad": 0.002846521871861244,
+  "cameras": [
+    "global",
+    "chest",
+    "wrist_left",
+    "wrist_right"
+  ],
+  "source": "MuJoCo rendered synthetic images, not real cameras",
+  "task_phase": "assumed early noncontact; not manually certified",
+  "scene": "drawer and table retained; unrelated valve and door disabled; not calibrated; no cube",
+  "reference_selection": "fixed demonstration frame for controlled test, not online phase recognition",
+  "recovery_method": "feedback proportional velocity, command speed and acceleration limited",
+  "safety_check": "initial and nominal path contact preflight; actual simulation contact and joint limits; does not prove path safety or hardware safety",
+  "training_use": "do not use for training until phase, camera mapping, recovery validity, trajectory length, and train/validation handling reviewed",
+  "robot_commands_sent": false
+}

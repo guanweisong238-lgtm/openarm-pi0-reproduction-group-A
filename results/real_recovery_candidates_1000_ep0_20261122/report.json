@@ -1,0 +1,14 @@
+{
+  "source_split": "train",
+  "episode": 0,
+  "candidates_considered": 0,
+  "selected_frames": [],
+  "cases": [],
+  "limitations": [
+    "simulator starts from an offline model-predicted target, not a model-controlled sim state",
+    "same-index recorded state supplies oracle reference; task phase not inferred",
+    "gripper simulator initialized to recorded feedback rather than model output; candidates limited to <0.1rad gripper difference",
+    "four simulated cameras and task-free empty scene differ from real training images; not suitable as real correction data",
+    "a candidate is not a validated task recovery demonstration"
+  ]
+}

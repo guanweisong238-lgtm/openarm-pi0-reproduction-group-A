@@ -1,0 +1,16 @@
+{
+  "steps_completed": 2,
+  "initial_validation_flow_loss": 0.37042686343193054,
+  "final_validation_flow_loss": 0.36376857571303844,
+  "validation_scope": "8 fixed held-out samples; not a success-rate estimate",
+  "last_checkpoint": "checkpoints/real_pi0_four_camera_cleanup_check_001/step_0002",
+  "adapter_restore_check": {
+    "baseline_loss": 0.2564407289028168,
+    "restored_loss": 0.2564407289028168,
+    "absolute_difference": 0.0,
+    "arrays": 20
+  },
+  "gpu_peak_bytes": 8003532544,
+  "training_seconds": 9.781658344996686,
+  "task_success_verified": false
+}

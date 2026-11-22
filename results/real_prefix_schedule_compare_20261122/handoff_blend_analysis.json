@@ -1,0 +1,95 @@
+{
+  "episode": 17,
+  "frames": 583,
+  "switches": 27,
+  "simulated_delay_cycles": 9,
+  "inherited_flow_steps": 10,
+  "recorded_observation": {
+    "handoff_median_rad": 0.012970209121704102,
+    "handoff_max_rad": 0.07553219795227051,
+    "handoff_over_0_1_rad": 0,
+    "worst_handoff": {
+      "frame_one_based": 344,
+      "elapsed_seconds": 11.433333333,
+      "joint": "right J4",
+      "from_rad": 1.561570167541504,
+      "to_rad": 1.6371023654937744
+    },
+    "outside_handoff_median_rad": 0.014114588499069214,
+    "first_8_frames_after_handoff_max_rad": 0.07553219795227051,
+    "whole_trace_max_rad": 0.07782101631164551,
+    "whole_trace_over_0_1_rad": 0,
+    "arm_mae_to_recorded_ik_rad": 0.030823076143860817
+  },
+  "raw_prediction": {
+    "handoff_median_rad": 0.23770204186439514,
+    "handoff_max_rad": 0.6279587745666504,
+    "handoff_over_0_1_rad": 26,
+    "worst_handoff": {
+      "frame_one_based": 64,
+      "elapsed_seconds": 2.1,
+      "joint": "left J5",
+      "from_rad": 0.055510371923446655,
+      "to_rad": 0.6834691762924194
+    },
+    "outside_handoff_median_rad": 0.013140082359313965,
+    "first_8_frames_after_handoff_max_rad": 0.6279587745666504,
+    "whole_trace_max_rad": 0.6279587745666504,
+    "whole_trace_over_0_1_rad": 26,
+    "arm_mae_to_recorded_ik_rad": 0.0966680645942688
+  },
+  "blend_4": {
+    "handoff_median_rad": 0.034810662269592285,
+    "handoff_max_rad": 0.09196245670318604,
+    "handoff_over_0_1_rad": 0,
+    "worst_handoff": {
+      "frame_one_based": 64,
+      "elapsed_seconds": 2.1,
+      "joint": "left J5",
+      "from_rad": 0.055510371923446655,
+      "to_rad": 0.1474728286266327
+    },
+    "outside_handoff_median_rad": 0.01425778865814209,
+    "first_8_frames_after_handoff_max_rad": 0.2655995190143585,
+    "whole_trace_max_rad": 0.2655995190143585,
+    "whole_trace_over_0_1_rad": 25,
+    "arm_mae_to_recorded_ik_rad": 0.09813973307609558,
+    "transition_max_rad": 0.2655995190143585
+  },
+  "blend_8": {
+    "handoff_median_rad": 0.009046971797943115,
+    "handoff_max_rad": 0.023900285363197327,
+    "handoff_over_0_1_rad": 0,
+    "worst_handoff": {
+      "frame_one_based": 64,
+      "elapsed_seconds": 2.1,
+      "joint": "left J5",
+      "from_rad": 0.055510371923446655,
+      "to_rad": 0.07941065728664398
+    },
+    "outside_handoff_median_rad": 0.017061948776245117,
+    "first_8_frames_after_handoff_max_rad": 0.1448049247264862,
+    "whole_trace_max_rad": 0.1448049247264862,
+    "whole_trace_over_0_1_rad": 14,
+    "arm_mae_to_recorded_ik_rad": 0.10010778903961182,
+    "transition_max_rad": 0.1448049247264862
+  },
+  "blend_12": {
+    "handoff_median_rad": 0.004049777984619141,
+    "handoff_max_rad": 0.01069861650466919,
+    "handoff_over_0_1_rad": 0,
+    "worst_handoff": {
+      "frame_one_based": 64,
+      "elapsed_seconds": 2.1,
+      "joint": "left J5",
+      "from_rad": 0.055510371923446655,
+      "to_rad": 0.06620898842811584
+    },
+    "outside_handoff_median_rad": 0.01908564567565918,
+    "first_8_frames_after_handoff_max_rad": 0.11973300576210022,
+    "whole_trace_max_rad": 0.11973300576210022,
+    "whole_trace_over_0_1_rad": 6,
+    "arm_mae_to_recorded_ik_rad": 0.10197179764509201,
+    "transition_max_rad": 0.11973300576210022
+  }
+}

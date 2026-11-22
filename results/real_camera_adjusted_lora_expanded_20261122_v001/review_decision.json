@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-22",
+  "decision": "assume_all_episodes_human_reviewed_for_this_exploratory_run",
+  "source": "User video review documented in data/README.md and user authorization to train this batch",
+  "scope": "49 consolidated episodes 0–48",
+  "interpretation": "User reported no other issues on video review and identified two drawer closing styles; this authorizes exploratory training, not independently verified per-episode task success or image quality.",
+  "operation_styles": "0–34 release then push; 35–48 hold handle then push",
+  "limitations": "Capture log reports success; no full JPEG decode, exposure synchronization or physical policy success validation."
+}

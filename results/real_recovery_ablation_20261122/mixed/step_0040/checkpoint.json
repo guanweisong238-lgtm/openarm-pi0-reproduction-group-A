@@ -1,0 +1,7 @@
+{
+  "step": 40,
+  "base_checkpoint": "weights/openpi/openpi-assets/checkpoints/pi0_base/params",
+  "lora_sha256": "da908f4efcfbdf6a8570d0bfd0cf719d5fd4209490e76ab5f4139e59d68025a9",
+  "normalization_sha256": "4be16669c5bb8c4c9cf2f218f98d09151df7843d9f9539bce7799b8dd42b0ca9",
+  "note": "LoRA adapter only; requires exact base weights, local four-camera model and run protocol; optimizer not saved and resume is not implemented"
+}

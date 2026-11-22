@@ -1,43 +1,11 @@
-# 实验结果索引
+# 任务 C 结果
 
-更新：2026-11-01。完整教学复盘见[optimization_log.md](../optimization_log.md)，当前运行命令见[项目交接](../docs/project-handoff.md)。
+- [14/20 窗口与七步前缀离线对照](real_prefix_schedule_compare_20261122/README.md)
 
-## 当前结果
-
-- **2026-11-02 冲突样本阶段0：方案未通过**：[报告](drawer_conflict_stage0_20261102/README.md)。3锚点×5抽屉位置验证发现：关节空间专家(`FeedbackOracle`)完全不看场景，标签差异恰为0；换几何伺服专家后整条轨迹差24—27°，但**前4步(0.133s=当前动作窗口)的末端指令差仅0.00—0.01mm**，30步才到9—20mm。结论：不是模型不愿看图，而是训练标签的时域太短、本身不含场景信息。判定停止，不进入阶段1；修正方向为加长`action_horizon`(部署仍每4步重观测)后重验。
-- **2026-11-02 视觉依赖度探测（关键发现）**：[报告](drawer_vision_reliance_20261102/README.md)。固定关节状态、只改一个输入通道的四组探针：抽屉移动40mm只让首步末端预测变1.0—1.3mm（视觉增益0.026—0.033 mm/mm），而右臂joint1转0.01rad（末端2.82mm）让输出变2.56mm（本体感觉增益0.906 mm/mm），**本体感觉单位敏感度是视觉的27—34倍**。全黑图像引起6.4—6.8°变化（视觉通路有效），但换成另一起点画面只引起0.4—0.8°（对具体内容不敏感）。结论：模型视觉主要用于场景存在性检测而非位置定位，这解释了expanded组失败与021/022补数据无效。入口`scripts/a2_pi0/probe_drawer_vision_reliance.py`。
-- **2026-11-02 失败偏差分类（第一步诊断）**：[对齐诊断](drawer_alignment_diagnosis_20261102/README.md)。对400—499批15条失败做逐帧正向运动学分解：角度可排除（失败88.5° vs 成功88.0°）；主因是11条「全程从未把夹持点送到把手2mm以内」（成功组81/85在2mm内），其中9条同时沿把手长度方向偏出29—53mm；另4条已贴近亚毫米却只单指接触。成功组有18条闭合时轴向也超20mm但都贴近到2.2mm内，说明轴向偏出本身不致命。同批完成观测检查：左腕相机对抽屉把手0像素、天花板视角把手全长仅10.5px（沿长度20mm≈5px）、图文同步误差<1e-12。本表只读诊断，不改变85/100结论。
-- **2026-11-02 扩范围抓取训练与再验收完成**：[本轮报告](drawer_grasp_improvement_20261102/README.md)、[最终审计](drawer_grasp_improvement_20261102/completion_audit.json)。清理释放9.70GiB；021的原train四起点筛查2/4、0/4，022均4/4但新筛选16只有11/16、13/16，低于020的15/16，本轮未升级模型。保留的同一020在另一个训练前锁定的新100起点400—499上为85/100（66/70、19/30），独立重放100/100有效且位置/速度/接触力最大误差0。上一组200—299为84/100；权重未变，不能把两批差异当作训练提升。
-- **2026-11-02 全新100起点评估完成**：[完整报告](drawer_generalization_020_20261102/README.md)。冻结020/2000，原范围随机组合66/70（94.3%），扩大范围18/30（60.0%），合计84/100；100条独立重放有效，权重前后指纹一致。此次起点全部在评估前锁定，没有训练或按结果筛选。原33/33是固定开发基准成绩，新测试显示扩大扰动后的抓取稳定性仍需改进。
-- **2026-11-02 目标达成：020/2000完整33/33**：[正式验收报告](drawer_eval_020_20261102/README.md)、[逐条结果](drawer_eval_020_20261102/metrics.md)、[实际原生模型录像](drawer_eval_020_20261102/native_demo_id12.mp4)。同一权重train 10/10、validation 3/3、eval_only 20/20，独立重放33/33通过，训练/评估数据隔离审计通过。原生展示ID12也通过。修复过程和017/018/019失败保留在[过程报告](drawer_repair_20261101/README.md)。
-- **2026-11-01 全量评估与定向补数据**：33条隔离评估完成，train 6/10、validation 0/3、eval_only 7/20，见[结果表](../logs/a2_pi0/drawer_eval_isolated_full_20261101/metrics.md)。[ID9/10/11失败诊断及恢复监督](drawer_train_failure_diagnosis_20261101/README.md)：10条带图像专家尝试中8条合格，新增568个查询，与原1200个合为1768；输入准备校验通过，尚未训练017。成功判据与运行条件见[评估协议](../docs/drawer-eval-protocol.md)，操作见[运行手册](../docs/eval-runbook.md)。
-- [最终模型报告与原始证据路径](drawer_pull_success_20261025/README.md)：π0骨干一步确定性改造版，标准起点及Y+5mm场景通过，warm-start失败。
-- [初次标准起点评分](feedback_endpoint_016_nominal_score.json)、[冻结模型复测及验证评分](feedback_endpoint_016_frozen_physical_scores.json)。
-- [现场展示评分](drawer_pull_success_20261025/live_showcase_095417_score.json)：开度101.56mm、17.07秒仿真，独立重放位置/速度/力误差0。
-- 小型MLP成功基线：`drawer_goal_mlp_close0_v003/`、`drawer_goal_mlp_frozen_validation_v004/`，明确不属于π0。
-
-成功依据是真实双指接触、接触拉动与>=80mm保持1秒；离线误差、专家成功或瞬时开度不替代该判据。未完成原多步flow复现、关闭往返或广泛泛化验证。
-
-## 历史排查
-
-| 阶段 | 报告 |
-| --- | --- |
-| 原13条训练的起步诊断 | [深入诊断](drawer_deep_diagnosis_20261024/README.md)、[早期采样对照](early_sampling_control_20261024/README.md) |
-| 残差与首9帧拟合 | [工作流](start9_workflow_20261024/README.md)、[增强与动作权重](start9_aug_objective_20261024/README.md)、[时间采样](start9_time_sampling_20261024/README.md) |
-| 局部物理起步011 | [报告](start9_lowmix_refine_011/README.md) |
-| 扩大到接近012 | [报告与漂移诊断](approach13_delta_012/README.md) |
-| 完整路径集中拟合013b | [报告](pull12_fit_013b/README.md) |
-| 恢复数据014 | [报告](pull12_recovery_014/README.md) |
-| 速度输入015 | [报告](pull12_velocity_015/README.md)，该文件部分叙述是训练时快照，最终闭环未通过 |
-
-历史报告与日志保留，但部分权重已清理，旧路径不保证能加载。未将失败改写为成功。
-
-## 清理审计
-
-- [2026-10-25本次整理](project_cleanup_20261025_103927/README.md)：删除11份旧检查点及可重建恢复缓存，约57.26GiB；保留4份完整权重。
-- [2026-10-25上一轮](project_cleanup_20261025_recovery_014/README.md)。
-- [2026-10-24清理](project_cleanup_20261024_213130/README.md)。
-
-清理元数据不含已删除权重的备份，精确重新运行旧模型需要重训。原始示教、反馈查询、物理轨迹、评估JSON和视频继续保留。
-
-- **2026-11-02晚间空间清理**：[清理报告](project_cleanup_failed_candidates_20261102/README.md)。删除8份已失败候选权重，释放约41.43GiB，推荐020和其余6份完整检查点保留；全部数据及评估证据保留。被删候选无完整权重备份，重新推理需重训。
+- [1,000 步探索性训练与验证](real_pi0_four_camera_lora_001/README.md)
+- [验证轨迹的 50 步动作预测评估](real_action_eval_20261121/README.md)
+- [四路模型合成样本测试](real_four_camera_smoke_20261121/README.md)
+- [真实训练样本链路测试](real_four_camera_real_batch_20261121/README.md)
+- `real_data_review_20261121/`：逐条人工审核表；用户后来指示本轮默认全部通过，见数据目录的 `review_decision.json`。
+- `real_task_c_cleanup_20261121/cleanup.json`：任务 A、B 工作区清理清单及保留文件哈希。
+- `real_pi0_four_camera_smoke_*`、`real_pi0_four_camera_cleanup_check_001`：任务 C 的短程链路验证；`smoke_001` 的检查点保存曾失败。

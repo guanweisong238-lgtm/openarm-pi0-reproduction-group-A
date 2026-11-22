@@ -1,0 +1,174 @@
+{
+  "hardware": "cuda:0",
+  "sampling_steps": 10,
+  "prefix_conditioned": true,
+  "warmup_compile_and_first_ms": 25480.682581997826,
+  "total_process_seconds": 49.038873660996614,
+  "count": 20,
+  "summary_ms": {
+    "prepare_ms": {
+      "median": 35.3229399988777,
+      "p95": 41.49544375104597,
+      "max": 45.83492500387365
+    },
+    "device_transfer_ms": {
+      "median": 1.3597124961961526,
+      "p95": 1.5421595500811236,
+      "max": 1.5454189997399226
+    },
+    "model_ms": {
+      "median": 247.28128550123074,
+      "p95": 248.25468735252798,
+      "max": 249.46364499919582
+    },
+    "total_ms": {
+      "median": 283.29669150480186,
+      "p95": 290.4279572507221,
+      "max": 294.5622289989842
+    }
+  },
+  "fraction_over_200ms": 1.0,
+  "records": [
+    {
+      "index": 0,
+      "prepare_ms": 35.556431001168676,
+      "device_transfer_ms": 1.4053039994905703,
+      "model_ms": 245.65602700022282,
+      "total_ms": 282.61776200088207
+    },
+    {
+      "index": 131,
+      "prepare_ms": 35.85522799403407,
+      "device_transfer_ms": 1.4301760020316578,
+      "model_ms": 247.34822299797088,
+      "total_ms": 284.6336269940366
+    },
+    {
+      "index": 262,
+      "prepare_ms": 34.09909200127004,
+      "device_transfer_ms": 1.5454189997399226,
+      "model_ms": 247.22358800499933,
+      "total_ms": 282.8680990060093
+    },
+    {
+      "index": 393,
+      "prepare_ms": 33.705407004163135,
+      "device_transfer_ms": 1.3833729972247966,
+      "model_ms": 247.69772600120632,
+      "total_ms": 282.78650600259425
+    },
+    {
+      "index": 525,
+      "prepare_ms": 34.396913993987255,
+      "device_transfer_ms": 1.255123999726493,
+      "model_ms": 248.10008100030245,
+      "total_ms": 283.7521189940162
+    },
+    {
+      "index": 656,
+      "prepare_ms": 36.983587000577245,
+      "device_transfer_ms": 1.5419880000990815,
+      "model_ms": 247.42310200235806,
+      "total_ms": 285.9486770030344
+    },
+    {
+      "index": 787,
+      "prepare_ms": 45.83492500387365,
+      "device_transfer_ms": 1.3883209976484068,
+      "model_ms": 247.33898299746215,
+      "total_ms": 294.5622289989842
+    },
+    {
+      "index": 918,
+      "prepare_ms": 35.53229799581459,
+      "device_transfer_ms": 1.1892629991052672,
+      "model_ms": 246.2405559999752,
+      "total_ms": 282.96211699489504
+    },
+    {
+      "index": 1050,
+      "prepare_ms": 38.71838100167224,
+      "device_transfer_ms": 1.2784310019924305,
+      "model_ms": 249.46364499919582,
+      "total_ms": 289.4604570028605
+    },
+    {
+      "index": 1181,
+      "prepare_ms": 33.63647399964975,
+      "device_transfer_ms": 1.4532600034726784,
+      "model_ms": 246.00534199998947,
+      "total_ms": 281.0950760031119
+    },
+    {
+      "index": 1312,
+      "prepare_ms": 33.09330799675081,
+      "device_transfer_ms": 1.281722004932817,
+      "model_ms": 245.1019459986128,
+      "total_ms": 279.4769760002964
+    },
+    {
+      "index": 1443,
+      "prepare_ms": 35.457100995699875,
+      "device_transfer_ms": 1.2916220002807677,
+      "model_ms": 244.60454100335483,
+      "total_ms": 281.35326399933547
+    },
+    {
+      "index": 1575,
+      "prepare_ms": 41.26705000089714,
+      "device_transfer_ms": 1.4030480015208013,
+      "model_ms": 247.54026599839563,
+      "total_ms": 290.21036400081357
+    },
+    {
+      "index": 1706,
+      "prepare_ms": 35.188779002055526,
+      "device_transfer_ms": 1.4312620041891932,
+      "model_ms": 246.62294799782103,
+      "total_ms": 283.24298900406575
+    },
+    {
+      "index": 1837,
+      "prepare_ms": 34.39740799512947,
+      "device_transfer_ms": 1.3897050012019463,
+      "model_ms": 246.0138110036496,
+      "total_ms": 281.800923999981
+    },
+    {
+      "index": 1968,
+      "prepare_ms": 37.78745300223818,
+      "device_transfer_ms": 1.3308039997355081,
+      "model_ms": 245.18563300080132,
+      "total_ms": 284.303890002775
+    },
+    {
+      "index": 2100,
+      "prepare_ms": 40.95305300143082,
+      "device_transfer_ms": 1.2426260000211187,
+      "model_ms": 246.15676499524852,
+      "total_ms": 288.35244399670046
+    },
+    {
+      "index": 2231,
+      "prepare_ms": 34.30823300004704,
+      "device_transfer_ms": 1.2191010027891025,
+      "model_ms": 247.82306000270182,
+      "total_ms": 283.35039400553796
+    },
+    {
+      "index": 2362,
+      "prepare_ms": 33.348775999911595,
+      "device_transfer_ms": 1.3360519951675087,
+      "model_ms": 247.75614499958465,
+      "total_ms": 282.44097299466375
+    },
+    {
+      "index": 2494,
+      "prepare_ms": 34.30551400379045,
+      "device_transfer_ms": 1.3259589977678843,
+      "model_ms": 248.19105800270336,
+      "total_ms": 283.8225310042617
+    }
+  ],
+  "note": "offline JPEG decode/resize + observation assembly + model; cached process, no real camera capture, no IPC/driver/network, not deployment latency or deadline guarantee; benchmark prefix comes from recorded targets"
+}

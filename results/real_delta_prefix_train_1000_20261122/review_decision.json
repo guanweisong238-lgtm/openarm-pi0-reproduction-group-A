@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-21",
+  "decision": "assume_all_episodes_human_reviewed_for_this_exploratory_run",
+  "source": "user instruction in project conversation",
+  "scope": "all 22 episodes in this candidate manifest",
+  "interpretation": "Use all episodes as approved for the exploratory run per user instruction; do not infer individually observed outcomes or fabricate per-episode review evidence.",
+  "historical_audit": "Prior per-episode review records and manifest review-status fields are historical records and remain unchanged."
+}

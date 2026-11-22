@@ -1,0 +1,57 @@
+{
+  "checkpoint": "checkpoints/real_delta_prefix_train_1000_20261122/step_1000",
+  "checkpoint_sha256": "bf8ac2693f3dec633502c2a18f0175054615103aadc5eb7d1102f5e551a1076a",
+  "probe_metrics": [
+    "flow_loss",
+    "arm_mae_rad_steps_8_to_20",
+    "gripper_mae_rad_steps_8_to_20"
+  ],
+  "real_probe_indices": [
+    1,
+    389,
+    780,
+    1127,
+    1476,
+    1745,
+    2017,
+    2255
+  ],
+  "recovery_windows_checked": 48,
+  "real_only": {
+    "before": [
+      0.29976511001586914,
+      0.025450484827160835,
+      0.046543464064598083
+    ],
+    "after": [
+      0.2994912564754486,
+      0.025344062596559525,
+      0.0426216796040535
+    ],
+    "synthetic_indices": [],
+    "checkpoint": "results/real_recovery_ablation_20261122/real_only/step_0040"
+  },
+  "mixed": {
+    "before": [
+      0.29976511001586914,
+      0.025450484827160835,
+      0.046543464064598083
+    ],
+    "after": [
+      0.2996407747268677,
+      0.025156568735837936,
+      0.042540762573480606
+    ],
+    "synthetic_indices": [
+      3,
+      21,
+      26,
+      42,
+      16,
+      22,
+      30,
+      11
+    ],
+    "checkpoint": "results/real_recovery_ablation_20261122/mixed/step_0040"
+  }
+}

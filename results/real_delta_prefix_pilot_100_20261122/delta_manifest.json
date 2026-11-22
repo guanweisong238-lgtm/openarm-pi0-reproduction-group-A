@@ -1,0 +1,205 @@
+{
+  "description": "at observation i, first delta is absolute action i-1 minus observed state i; remaining 49 deltas are successive absolute target differences; indices are episode local",
+  "stats": "train split only, all 50 deltas of eligible windows",
+  "count": 596200,
+  "entries": [
+    {
+      "episode_id": 0,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 836,
+      "reconstruction_max_abs_rad": 2.980232238769531e-07,
+      "file": "episode_0.npz",
+      "sha256": "b450550a903fdc5fb72af9f667988efb5d7a5af3b62298944ec3eac5dd3a3db9"
+    },
+    {
+      "episode_id": 1,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 1101,
+      "reconstruction_max_abs_rad": 2.3096799850463867e-07,
+      "file": "episode_1.npz",
+      "sha256": "e9411aa21ef381779cf4450cdb097ff9d33b22800fcfa045c7d617d70fb57593"
+    },
+    {
+      "episode_id": 2,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 946,
+      "reconstruction_max_abs_rad": 4.470348358154297e-07,
+      "file": "episode_2.npz",
+      "sha256": "635f382129c8aa5b885225c8b9d19a3c011fb05290ab60d0311f53ebe1cb5550"
+    },
+    {
+      "episode_id": 3,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 700,
+      "reconstruction_max_abs_rad": 2.1606683731079102e-07,
+      "file": "episode_3.npz",
+      "sha256": "3b6398f8f4dc83fdfae7456aa921b93f6f453e72b8be78263e89dc2a5622beba"
+    },
+    {
+      "episode_id": 4,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 640,
+      "reconstruction_max_abs_rad": 2.384185791015625e-07,
+      "file": "episode_4.npz",
+      "sha256": "de3e639905b5c611e17de8ef319a7d714e9ffd1851c990f7f6e568dd1a6d8087"
+    },
+    {
+      "episode_id": 5,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 587,
+      "reconstruction_max_abs_rad": 3.725290298461914e-07,
+      "file": "episode_5.npz",
+      "sha256": "8a0697dc95d6ed5a0b6d4d34faeb03cc8d3646ed1c04c4e826ae9bd6d67a927d"
+    },
+    {
+      "episode_id": 6,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 495,
+      "reconstruction_max_abs_rad": 3.8743019104003906e-07,
+      "file": "episode_6.npz",
+      "sha256": "a0106fe08d526a30c1fb27a403c38379462c1b9f64eb5942bad0caacfdce2dc4"
+    },
+    {
+      "episode_id": 7,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 796,
+      "reconstruction_max_abs_rad": 2.980232238769531e-07,
+      "file": "episode_7.npz",
+      "sha256": "964183f958aa39fc9bf75361738230a5a53f8e7f2bc31306d117823895f01f37"
+    },
+    {
+      "episode_id": 8,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 685,
+      "reconstruction_max_abs_rad": 2.682209014892578e-07,
+      "file": "episode_8.npz",
+      "sha256": "ae9b1edc7adf697fdd5c491f48b4d0a574de0c94e46b88a0a9bb4def40537e9a"
+    },
+    {
+      "episode_id": 9,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 703,
+      "reconstruction_max_abs_rad": 4.172325134277344e-07,
+      "file": "episode_9.npz",
+      "sha256": "c2378354d9545db7f20155f0302a0e2814186e1aa734aa98bcf69a630caeb664"
+    },
+    {
+      "episode_id": 11,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 636,
+      "reconstruction_max_abs_rad": 1.7881393432617188e-07,
+      "file": "episode_11.npz",
+      "sha256": "40afc0b715783d3ea281700919adaf2664b7523b280addc67a241e2c8da82d89"
+    },
+    {
+      "episode_id": 12,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 562,
+      "reconstruction_max_abs_rad": 3.2782554626464844e-07,
+      "file": "episode_12.npz",
+      "sha256": "383ed834cb7c7a759d5a9be7410989254fea1c10f4cfbc33aa2348330401433c"
+    },
+    {
+      "episode_id": 13,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 585,
+      "reconstruction_max_abs_rad": 2.384185791015625e-07,
+      "file": "episode_13.npz",
+      "sha256": "0bf5a9e4ba574600991fa56aabc2364521aaa665241d2043a5c6cfc8cb9c8696"
+    },
+    {
+      "episode_id": 14,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 574,
+      "reconstruction_max_abs_rad": 2.980232238769531e-07,
+      "file": "episode_14.npz",
+      "sha256": "dc9649fb580632a775ee5149e57ceb8935627ec220916d444556ee011828e58f"
+    },
+    {
+      "episode_id": 15,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 554,
+      "reconstruction_max_abs_rad": 3.2782554626464844e-07,
+      "file": "episode_15.npz",
+      "sha256": "a4ba05ef998a463ec1df459dd3e9552a4fad5d44beb9acc7d9feab0385dceb26"
+    },
+    {
+      "episode_id": 21,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 516,
+      "reconstruction_max_abs_rad": 2.980232238769531e-07,
+      "file": "episode_21.npz",
+      "sha256": "c0ea0583c5ce4a7f2551263258426fa09dfeef4467e6b74a8c4aab03a73d8dbc"
+    },
+    {
+      "episode_id": 22,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 492,
+      "reconstruction_max_abs_rad": 3.5762786865234375e-07,
+      "file": "episode_22.npz",
+      "sha256": "e1e30f93c011b608c2fdd00d4b1b89975787d2081ce8df3eae102641c7edf73d"
+    },
+    {
+      "episode_id": 23,
+      "split": "train",
+      "observation_start_index": 1,
+      "windows": 516,
+      "reconstruction_max_abs_rad": 2.682209014892578e-07,
+      "file": "episode_23.npz",
+      "sha256": "4ae6d04b6d0a471081fce8fc179d30450498e4aba617c31a8fb5bab0899f2b71"
+    },
+    {
+      "episode_id": 10,
+      "split": "validation",
+      "observation_start_index": 1,
+      "windows": 778,
+      "reconstruction_max_abs_rad": 1.9371509552001953e-07,
+      "file": "episode_10.npz",
+      "sha256": "0b1502876de2734dafcc83abc500e996a2260d724bad0dd35f08bf0aa1e9a2ca"
+    },
+    {
+      "episode_id": 16,
+      "split": "validation",
+      "observation_start_index": 1,
+      "windows": 695,
+      "reconstruction_max_abs_rad": 3.5390257835388184e-07,
+      "file": "episode_16.npz",
+      "sha256": "12ea18d724ec4fe9edb27796e04d3833b3fc744d45eadbc84a6500d372188d46"
+    },
+    {
+      "episode_id": 17,
+      "split": "validation",
+      "observation_start_index": 1,
+      "windows": 540,
+      "reconstruction_max_abs_rad": 4.172325134277344e-07,
+      "file": "episode_17.npz",
+      "sha256": "39974fe3a7a3fefe54c14919b7e153609e9b15fc56992a8e0c38119d6f136866"
+    },
+    {
+      "episode_id": 24,
+      "split": "validation",
+      "observation_start_index": 1,
+      "windows": 478,
+      "reconstruction_max_abs_rad": 2.682209014892578e-07,
+      "file": "episode_24.npz",
+      "sha256": "e016f50bda1cca825bfe0139cd099fee42c7b7ec635a88d9a190ca27fcfd26bf"
+    }
+  ]
+}

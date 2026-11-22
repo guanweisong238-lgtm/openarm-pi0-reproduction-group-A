@@ -1,0 +1,19 @@
+{
+  "steps": 100,
+  "training_windows": 100,
+  "initial_suffix_flow_loss": 0.09447636874392629,
+  "final_suffix_flow_loss": 0.09034864022396505,
+  "prefix_max_abs_error_before": 0.0,
+  "prefix_max_abs_error_after": 0.0,
+  "checkpoint": "checkpoints/real_prefix_prevframe_pilot_100_20261122/step_0100",
+  "restore_check": {
+    "baseline_loss": 0.06360770761966705,
+    "restored_loss": 0.06360770761966705,
+    "absolute_difference": 0.0,
+    "arrays": 20
+  },
+  "peak_gpu_bytes": 8203497984,
+  "training_seconds": 109.437201009001,
+  "trained_prefix_source": "recorded teacher actions only; online uses previous predicted actions",
+  "robot_executed": false
+}

@@ -1,0 +1,70 @@
+{
+  "source_split": "train",
+  "episode": 0,
+  "candidates_considered": 68,
+  "selected_frames": [
+    30,
+    328
+  ],
+  "cases": [
+    {
+      "frame": 30,
+      "initial_max_arm_deviation_rad": 0.104337677359581,
+      "initial_max_gripper_deviation_rad": 0.24969100952148438,
+      "exit_code": 0,
+      "result": {
+        "status": "recovered",
+        "episode": 0,
+        "reference_split": "train",
+        "reference_frame": 30,
+        "frames": 31,
+        "sim_time_seconds": 1.0340000000000007,
+        "initial_max_error_rad": 0.104337677359581,
+        "final_max_error_rad": 0.023381525599449338,
+        "max_actual_speed_rad_s": 0.420586486776735,
+        "max_command_step_rad": 0.004912579611946771,
+        "cameras": [
+          "global",
+          "chest",
+          "wrist_left",
+          "wrist_right"
+        ],
+        "source": "MuJoCo rendered synthetic images, not real cameras",
+        "task_phase": "unknown: same-index recording is an offline oracle, not phase recognition",
+        "scene": "empty, no table, drawer or cube; not calibrated",
+        "reference_selection": "same frame index from offline recorded trajectory, not online phase recognition",
+        "initial_state_source": "offline model predicted arm targets injected as simulator initial state; grippers projected to simulator limits, not a closed-loop rollout",
+        "raw_predicted_grippers": [
+          -1.0332926511764526,
+          0.5355764031410217
+        ],
+        "initial_grippers_after_limit_projection": [
+          -0.7854,
+          0.5355764031410217
+        ],
+        "gripper_reference": [
+          -0.7854,
+          0.7852674126625061
+        ],
+        "recovery_method": "feedback proportional velocity, command speed and acceleration limited",
+        "safety_check": "initial and nominal path contact preflight; actual simulation contact and joint limits; does not prove path safety or hardware safety",
+        "training_use": "do not use for training until phase, camera mapping, recovery validity, trajectory length, and train/validation handling reviewed",
+        "robot_commands_sent": false
+      }
+    },
+    {
+      "frame": 328,
+      "initial_max_arm_deviation_rad": 0.5604195594787598,
+      "initial_max_gripper_deviation_rad": 2.7226333618164062,
+      "exit_code": 1,
+      "failure": "oup-A/scripts/a2_pi0/run_model_deviation_recovery_sim.py\", line 90, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/home/song03/scientific_research/openarm-pi0-reproduction-group-A/scripts/a2_pi0/run_model_deviation_recovery_sim.py\", line 50, in main\n    if initial:raise RuntimeError(f'unsafe initial pose in simulation: {initial}')\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: unsafe initial pose in simulation: [{'bodies': ['world', 'openarm_left_link4'], 'penetration_m': 0.04118896025376044}, {'bodies': ['world', 'openarm_left_link5'], 'penetration_m': 0.107743215574456}, {'bodies': ['world', 'openarm_left_link5'], 'penetration_m': 0.0541353874153672}, {'bodies': ['world', 'openarm_left_link5'], 'penetration_m': 0.07237407203811803}, {'bodies': ['world', 'openarm_left_link6'], 'penetration_m': 0.07399925123207031}, {'bodies': ['world', 'openarm_left_ee_base_link'], 'penetration_m': 0.01685442509883597}, {'bodies': ['world', 'openarm_left_ee_inner_finger'], 'penetration_m': 0.007260979304323849}, {'bodies': ['world', 'openarm_left_ee_outer_finger'], 'penetration_m': 0.002071533921555579}]\n"
+    }
+  ],
+  "limitations": [
+    "simulator starts from an offline model-predicted target, not a model-controlled sim state",
+    "same-index recorded state supplies oracle reference; task phase not inferred",
+    "model gripper initial target is projected onto simulator range, so this is an assumed limited state, not measured actual feedback",
+    "four simulated cameras and task-free empty scene differ from real training images; not suitable as real correction data",
+    "a candidate is not a validated task recovery demonstration"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "episode": 17,
+  "frames": 583,
+  "delay_cycles": 9,
+  "flow_steps": 10,
+  "results": {
+    "absolute_prefix_raw": {
+      "arm_target_mae_rad": 0.0966680645942688,
+      "boundary_median_rad": 0.23770204186439514,
+      "boundary_max_rad": 0.6279587745666504,
+      "whole_max_step_rad": 0.6279587745666504,
+      "second_diff_max_joint_median_rad_per_frame": 0.006966829299926758,
+      "second_diff_max_joint_p95_rad_per_frame": 0.2281656265258789,
+      "finite": true
+    },
+    "absolute_prefix_blend8": {
+      "arm_target_mae_rad": 0.10010778903961182,
+      "boundary_median_rad": 0.009046971797943115,
+      "boundary_max_rad": 0.023900285363197327,
+      "whole_max_step_rad": 0.1448049247264862,
+      "second_diff_max_joint_median_rad_per_frame": 0.008412539958953857,
+      "second_diff_max_joint_p95_rad_per_frame": 0.03207176923751831,
+      "finite": true
+    },
+    "delta_prefix_raw": {
+      "arm_target_mae_rad": 0.8480833768844604,
+      "boundary_median_rad": 0.04680657386779785,
+      "boundary_max_rad": 0.12405210733413696,
+      "whole_max_step_rad": 0.12405210733413696,
+      "second_diff_max_joint_median_rad_per_frame": 0.0009125471115112305,
+      "second_diff_max_joint_p95_rad_per_frame": 0.029922008514404297,
+      "finite": true
+    },
+    "delta_prefix_blend8": {
+      "arm_target_mae_rad": 0.8478270769119263,
+      "boundary_median_rad": 0.001781463623046875,
+      "boundary_max_rad": 0.004721462726593018,
+      "whole_max_step_rad": 0.059593915939331055,
+      "second_diff_max_joint_median_rad_per_frame": 0.001282334327697754,
+      "second_diff_max_joint_p95_rad_per_frame": 0.017524898052215576,
+      "finite": true
+    }
+  },
+  "limitations": [
+    "teacher-forced recorded observations; no physics or closed-loop task success",
+    "delta pilot trained only 100 windows from absolute-model adapter; not a converged comparison",
+    "first window from absolute baseline; predicted deltas are accumulated and may drift",
+    "8-step blending applied offline to arm joints only"
+  ]
+}

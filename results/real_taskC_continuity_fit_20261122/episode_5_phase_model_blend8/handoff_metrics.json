@@ -1,0 +1,55 @@
+{
+  "episode_id": 5,
+  "checkpoint": "real_camera_adjusted_lora_phase_20261122_v001/step_1500",
+  "handoffs": 52,
+  "old_to_measured_median_rad": 0.18677762150764465,
+  "new_to_measured_median_rad": 0.09651347994804382,
+  "same_time_disagreement_median_rad": 0.20863962173461914,
+  "methods": {
+    "0": {
+      "shortened_transitions": 0,
+      "boundary_median_rad": 0.20686140656471252,
+      "peak_single_step_rad": 0.7264956831932068,
+      "steps_over_0_1_rad": 46,
+      "arm_mae_rad": 0.040218811482191086,
+      "arm_mae_near_gripper_events_rad": {
+        "358": 0.02516230382025242,
+        "468": 0.030550019815564156
+      }
+    },
+    "4": {
+      "shortened_transitions": 0,
+      "boundary_median_rad": 0.026484623551368713,
+      "peak_single_step_rad": 0.2755323052406311,
+      "steps_over_0_1_rad": 31,
+      "arm_mae_rad": 0.04322528466582298,
+      "arm_mae_near_gripper_events_rad": {
+        "358": 0.025545092299580574,
+        "468": 0.036867428570985794
+      }
+    },
+    "8": {
+      "shortened_transitions": 0,
+      "boundary_median_rad": 0.012081891298294067,
+      "peak_single_step_rad": 0.15882501006126404,
+      "steps_over_0_1_rad": 17,
+      "arm_mae_rad": 0.04733600467443466,
+      "arm_mae_near_gripper_events_rad": {
+        "358": 0.02649058774113655,
+        "468": 0.04603836312890053
+      }
+    },
+    "12": {
+      "shortened_transitions": 1,
+      "boundary_median_rad": 0.010486781597137451,
+      "peak_single_step_rad": 0.12075689435005188,
+      "steps_over_0_1_rad": 5,
+      "arm_mae_rad": 0.05123651772737503,
+      "arm_mae_near_gripper_events_rad": {
+        "358": 0.029412314295768738,
+        "468": 0.055591776967048645
+      }
+    }
+  },
+  "gripper_events_note": "Largest positive and negative right-gripper target changes are timing proxies, not verified contact events."
+}

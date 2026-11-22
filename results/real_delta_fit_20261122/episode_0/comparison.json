@@ -1,0 +1,13 @@
+{
+  "frames": 883,
+  "simulated_delay_ms": 300,
+  "recorded_inputs": true,
+  "before": {
+    "arm_mae_rad": 0.2605877220630646,
+    "gripper_mae_rad": 2.632065534591675
+  },
+  "after": {
+    "arm_mae_rad": 0.2979763448238373,
+    "gripper_mae_rad": 2.320502281188965
+  }
+}

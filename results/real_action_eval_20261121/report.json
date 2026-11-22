@@ -1,0 +1,409 @@
+{
+  "protocol": "equally spaced full-window starts per validation episode; 10-step pi0 flow sampler; all 50 future targets evaluated",
+  "num_samples": 40,
+  "num_steps": 10,
+  "seed_rule": "50000 + probe index, same noise for both checkpoints",
+  "samples_per_episode": 10,
+  "probes": [
+    {
+      "episode_id": 10,
+      "sample_index": 0,
+      "dataset_index": 0,
+      "relative_position": 0.0,
+      "repeat_max_abs_rad_500": 0.0,
+      "repeat_max_abs_rad_1000": 0.0
+    },
+    {
+      "episode_id": 10,
+      "sample_index": 86,
+      "dataset_index": 86,
+      "relative_position": 0.11053984575835475
+    },
+    {
+      "episode_id": 10,
+      "sample_index": 172,
+      "dataset_index": 172,
+      "relative_position": 0.2210796915167095
+    },
+    {
+      "episode_id": 10,
+      "sample_index": 259,
+      "dataset_index": 259,
+      "relative_position": 0.3329048843187661
+    },
+    {
+      "episode_id": 10,
+      "sample_index": 345,
+      "dataset_index": 345,
+      "relative_position": 0.4434447300771208
+    },
+    {
+      "episode_id": 10,
+      "sample_index": 432,
+      "dataset_index": 432,
+      "relative_position": 0.5552699228791774
+    },
+    {
+      "episode_id": 10,
+      "sample_index": 518,
+      "dataset_index": 518,
+      "relative_position": 0.6658097686375322
+    },
+    {
+      "episode_id": 10,
+      "sample_index": 605,
+      "dataset_index": 605,
+      "relative_position": 0.7776349614395887
+    },
+    {
+      "episode_id": 10,
+      "sample_index": 691,
+      "dataset_index": 691,
+      "relative_position": 0.8881748071979434
+    },
+    {
+      "episode_id": 10,
+      "sample_index": 778,
+      "dataset_index": 778,
+      "relative_position": 1.0
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 0,
+      "dataset_index": 779,
+      "relative_position": 0.0
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 77,
+      "dataset_index": 856,
+      "relative_position": 0.11079136690647481
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 154,
+      "dataset_index": 933,
+      "relative_position": 0.22158273381294963
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 231,
+      "dataset_index": 1010,
+      "relative_position": 0.33237410071942447
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 308,
+      "dataset_index": 1087,
+      "relative_position": 0.44316546762589926
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 386,
+      "dataset_index": 1165,
+      "relative_position": 0.5553956834532374
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 463,
+      "dataset_index": 1242,
+      "relative_position": 0.6661870503597123
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 540,
+      "dataset_index": 1319,
+      "relative_position": 0.7769784172661871
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 617,
+      "dataset_index": 1396,
+      "relative_position": 0.8877697841726618
+    },
+    {
+      "episode_id": 16,
+      "sample_index": 695,
+      "dataset_index": 1474,
+      "relative_position": 1.0
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 0,
+      "dataset_index": 1475,
+      "relative_position": 0.0
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 60,
+      "dataset_index": 1535,
+      "relative_position": 0.1111111111111111
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 120,
+      "dataset_index": 1595,
+      "relative_position": 0.2222222222222222
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 180,
+      "dataset_index": 1655,
+      "relative_position": 0.3333333333333333
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 240,
+      "dataset_index": 1715,
+      "relative_position": 0.4444444444444444
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 300,
+      "dataset_index": 1775,
+      "relative_position": 0.5555555555555556
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 360,
+      "dataset_index": 1835,
+      "relative_position": 0.6666666666666666
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 420,
+      "dataset_index": 1895,
+      "relative_position": 0.7777777777777778
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 480,
+      "dataset_index": 1955,
+      "relative_position": 0.8888888888888888
+    },
+    {
+      "episode_id": 17,
+      "sample_index": 540,
+      "dataset_index": 2015,
+      "relative_position": 1.0
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 0,
+      "dataset_index": 2016,
+      "relative_position": 0.0
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 53,
+      "dataset_index": 2069,
+      "relative_position": 0.1108786610878661
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 106,
+      "dataset_index": 2122,
+      "relative_position": 0.2217573221757322
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 159,
+      "dataset_index": 2175,
+      "relative_position": 0.33263598326359833
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 212,
+      "dataset_index": 2228,
+      "relative_position": 0.4435146443514644
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 265,
+      "dataset_index": 2281,
+      "relative_position": 0.5543933054393305
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 318,
+      "dataset_index": 2334,
+      "relative_position": 0.6652719665271967
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 371,
+      "dataset_index": 2387,
+      "relative_position": 0.7761506276150628
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 424,
+      "dataset_index": 2440,
+      "relative_position": 0.8870292887029289
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 478,
+      "dataset_index": 2494,
+      "relative_position": 1.0
+    }
+  ],
+  "checkpoint_sha256": {
+    "500": "e530616ee052971d33fec3a492bb64f07ad5ff3ca5c5cdb36813acc85cb772c6",
+    "1000": "37b1bc554735c55aeb88a4b4eec858535d3f747207394792006ab98975642cb7"
+  },
+  "metrics": {
+    "500": {
+      "mean_absolute_error_rad": 0.1329287886619568,
+      "root_mean_square_error_rad": 0.2233869582414627,
+      "mean_error_joints_rad": 0.11965059489011765,
+      "right_gripper_mae_rad": 0.14916689693927765,
+      "left_gripper_mae_rad": 0.3025851547718048,
+      "first_step_mae_rad": 0.06240503862500191,
+      "last_step_mae_rad": 0.1893741339445114,
+      "per_joint_mae_rad": [
+        0.054150234907865524,
+        0.03312973305583,
+        0.1003933995962143,
+        0.14667335152626038,
+        0.05047672241926193,
+        0.07156237959861755,
+        0.03394905477762222,
+        0.14916692674160004,
+        0.1449139565229416,
+        0.07941092550754547,
+        0.1746782809495926,
+        0.1332317292690277,
+        0.33056944608688354,
+        0.14754122495651245,
+        0.17442788183689117,
+        0.3025851845741272
+      ],
+      "per_episode_mae_rad": {
+        "10": 0.12879541516304016,
+        "16": 0.13581842184066772,
+        "17": 0.13121850788593292,
+        "24": 0.13588276505470276
+      },
+      "relative_time_thirds": {
+        "early": {
+          "n": 15,
+          "mae_rad": 0.11075620353221893
+        },
+        "middle": {
+          "n": 12,
+          "mae_rad": 0.1424044370651245
+        },
+        "late": {
+          "n": 13,
+          "mae_rad": 0.1497657597064972
+        }
+      },
+      "hold_current_baseline_mae_rad": 0.11124324053525925,
+      "repeat_max_abs_rad": 0.0
+    },
+    "1000": {
+      "mean_absolute_error_rad": 0.11765483021736145,
+      "root_mean_square_error_rad": 0.20468783378601074,
+      "mean_error_joints_rad": 0.1062343567609787,
+      "right_gripper_mae_rad": 0.12036234885454178,
+      "left_gripper_mae_rad": 0.2748338580131531,
+      "first_step_mae_rad": 0.04771481454372406,
+      "last_step_mae_rad": 0.17327266931533813,
+      "per_joint_mae_rad": [
+        0.0455142967402935,
+        0.03156773000955582,
+        0.08812084794044495,
+        0.11397576332092285,
+        0.04466361179947853,
+        0.06192609667778015,
+        0.026619136333465576,
+        0.12036242336034775,
+        0.13251188397407532,
+        0.0741279348731041,
+        0.15601268410682678,
+        0.13034960627555847,
+        0.29265689849853516,
+        0.13270127773284912,
+        0.15653355419635773,
+        0.27483364939689636
+      ],
+      "per_episode_mae_rad": {
+        "10": 0.1069173738360405,
+        "16": 0.12311942875385284,
+        "17": 0.11471043527126312,
+        "24": 0.12587210536003113
+      },
+      "relative_time_thirds": {
+        "early": {
+          "n": 15,
+          "mae_rad": 0.09544743597507477
+        },
+        "middle": {
+          "n": 12,
+          "mae_rad": 0.12334787845611572
+        },
+        "late": {
+          "n": 13,
+          "mae_rad": 0.13802361488342285
+        }
+      },
+      "hold_current_baseline_mae_rad": 0.11124324053525925,
+      "repeat_max_abs_rad": 0.0
+    }
+  },
+  "notes": [
+    "Four previously monitored validation episodes; no new independent test set.",
+    "Targets are recorded IK targets before driver limits, not executed CAN commands.",
+    "Early/middle/late are equal relative time thirds, not annotated task phases.",
+    "No robot control, success rate or safety judgment.",
+    "Same process same-key repetition; cross-process comparison requires separate repeated run."
+  ],
+  "repeatability": {
+    "same_process_max_abs_rad_500": 0.0,
+    "same_process_max_abs_rad_1000": 0.0,
+    "cross_process_probe": {
+      "episode_id": 10,
+      "sample_index": 0,
+      "dataset_index": 0,
+      "relative_position": 0.0,
+      "repeat_max_abs_rad_500": 0.0,
+      "repeat_max_abs_rad_1000": 0.0
+    },
+    "cross_process_max_abs_rad": 0.002615123987197876,
+    "cross_process_mean_abs_rad": 0.0005466925795190036,
+    "cross_process_note": "same recorded observation, checkpoint and random seed; one probe only; source of difference not established",
+    "repeat_result": "results/real_action_eval_repeat_20261121"
+  },
+  "gripper_target_change_diagnostic": {
+    "right": {
+      "threshold_rad": 0.1,
+      "moving_windows": 5,
+      "static_windows": 35,
+      "model_moving_mae_rad": 0.3317550718784332,
+      "model_static_mae_rad": 0.09016338735818863,
+      "hold_moving_mae_rad": 0.5806987881660461,
+      "hold_static_mae_rad": 0.032006099820137024
+    },
+    "left": {
+      "threshold_rad": 0.1,
+      "moving_windows": 15,
+      "static_windows": 25,
+      "model_moving_mae_rad": 0.433197945356369,
+      "model_static_mae_rad": 0.17981548607349396,
+      "hold_moving_mae_rad": 0.5212560892105103,
+      "hold_static_mae_rad": 0.04670822620391846
+    }
+  },
+  "paired_1000_vs_500": {
+    "lower_mae_windows": 35,
+    "total_windows": 40,
+    "relative_mean_mae_reduction": 0.1149032711982727,
+    "warning": "correlated windows and single noise seed; not independent trials"
+  },
+  "provenance": {
+    "evaluation_script_sha256": "60ecdc7a6fc6b90cb70a347067a2f10d61f9c51fcbbd929af33b5ed950de3522",
+    "plot_script_sha256": "f33ad37ffab16c5b502593bbae432584076112d040090f65eb32d4f26f43461f",
+    "source_check": "all 40 target windows and observed states exactly matched source; all predicted actions finite"
+  }
+}
