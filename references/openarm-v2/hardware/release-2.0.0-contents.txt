@@ -1,0 +1,74 @@
+openarm-hardware-2.0.0/
+openarm-hardware-2.0.0/OpenArm KER/
+openarm-hardware-2.0.0/OpenArm KER/README.pdf
+openarm-hardware-2.0.0/OpenArm KER/Elec/
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/M5Stack/
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/M5Stack/Gerber_M5_485Bus_21_2026-08-13.zip
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/M5Stack/3d.png
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/M5Stack/BOM_M5_485Bus_21_M5_485Bus_21_2026-06-26.xlsx
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/M5Stack/Gerber_M5_485Bus_21_2026-06-26.zip
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/M5Stack/M5_485Bus_SCH.pdf
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/M5Stack/PickAndPlace_M5_485Bus_21_2026-08-13.xlsx
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/M5Stack/2d.png
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/Encoder/
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/Encoder/PickAndPlace_PCB2_5_2026_07_08.xlsx
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/Encoder/TLE_BOM.xlsx
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/Encoder/Gerber_PCB2_5_2026-05-26.zip
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/Encoder/TLE_V3_PCB.pdf
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/Encoder/TLE_V3_BOM.csv
+openarm-hardware-2.0.0/OpenArm KER/Elec/PCB/Encoder/TLE_V3_SCH.pdf
+openarm-hardware-2.0.0/OpenArm KER/Elec/Cable/
+openarm-hardware-2.0.0/OpenArm KER/Elec/Cable/KER_CABLE_E.png
+openarm-hardware-2.0.0/OpenArm KER/Elec/Cable/KER_CABLE_TOPO.png
+openarm-hardware-2.0.0/OpenArm KER/Elec/Cable/XL2605270113-1.pdf
+openarm-hardware-2.0.0/OpenArm KER/Elec/Cable/KER_System_Cable_Documentation_GoogleDocs.docx
+openarm-hardware-2.0.0/OpenArm KER/Elec/Cable/XL2605270113-2.pdf
+openarm-hardware-2.0.0/OpenArm KER/Elec/Cable/XL2605270113-4.pdf
+openarm-hardware-2.0.0/OpenArm KER/Elec/Cable/XL2605270113-3.pdf
+openarm-hardware-2.0.0/OpenArm KER/OpenArm KER.STEP
+openarm-hardware-2.0.0/OpenArm KER/OpenArm KER BOM.xlsx
+openarm-hardware-2.0.0/OpenArm KER/OpenArm KER JIG BASE.STEP
+openarm-hardware-2.0.0/dev/
+openarm-hardware-2.0.0/dev/google-drive-files/
+openarm-hardware-2.0.0/dev/google-drive-files/file-ids.tsv
+openarm-hardware-2.0.0/dev/google-drive-files/generate-file-ids.rb
+openarm-hardware-2.0.0/dev/google-drive-files/Gemfile
+openarm-hardware-2.0.0/dev/google-drive-files/README.md
+openarm-hardware-2.0.0/dev/release.sh
+openarm-hardware-2.0.0/dev/README.md
+openarm-hardware-2.0.0/OpenArm Cell/
+openarm-hardware-2.0.0/OpenArm Cell/README.docx
+openarm-hardware-2.0.0/OpenArm Cell/JIG/
+openarm-hardware-2.0.0/OpenArm Cell/JIG/OpenArmJIG_BOM.xlsx
+openarm-hardware-2.0.0/OpenArm Cell/JIG/OpenArmJIG.STEP
+openarm-hardware-2.0.0/OpenArm Cell/Integration with OpenArm/
+openarm-hardware-2.0.0/OpenArm Cell/Integration with OpenArm/OpenArm_Cell_cover_a.STEP
+openarm-hardware-2.0.0/OpenArm Cell/Integration with OpenArm/OpenArm_Cell+OpenArm_2.0.STEP
+openarm-hardware-2.0.0/OpenArm Cell/Integration with OpenArm/OpenArm_Cell_cover_b.STEP
+openarm-hardware-2.0.0/OpenArm Cell/Elec/
+openarm-hardware-2.0.0/OpenArm Cell/Elec/CELL_WIRING.xlsx
+openarm-hardware-2.0.0/OpenArm Cell/Elec/CELL_WIRING.pdf
+openarm-hardware-2.0.0/OpenArm Cell/Elec/PWR-CIRCUIT-DIN-RAIL-BUS_2.zip
+openarm-hardware-2.0.0/OpenArm Cell/OpenArm Cell BOM.xlsx
+openarm-hardware-2.0.0/OpenArm Cell/OpenEvalCell_defeature.STEP
+openarm-hardware-2.0.0/OpenArm Cell/OpenEvalCell_defeature.SLDPRT
+openarm-hardware-2.0.0/LICENSE.txt
+openarm-hardware-2.0.0/CODE_OF_CONDUCT.md
+openarm-hardware-2.0.0/CONTRIBUTING.md
+openarm-hardware-2.0.0/OpenArm 2.0/
+openarm-hardware-2.0.0/OpenArm 2.0/README.docx
+openarm-hardware-2.0.0/OpenArm 2.0/OpenArm_2.0.STEP
+openarm-hardware-2.0.0/OpenArm 2.0/Options/
+openarm-hardware-2.0.0/OpenArm 2.0/Options/OpenArm_2.0_w_Head_Camera.STEP
+openarm-hardware-2.0.0/OpenArm 2.0/OpenArm 2.0 BOM.xlsx
+openarm-hardware-2.0.0/README.md
+openarm-hardware-2.0.0/.github/
+openarm-hardware-2.0.0/.github/workflows/
+openarm-hardware-2.0.0/.github/workflows/release.yaml
+openarm-hardware-2.0.0/.github/release.yml
+openarm-hardware-2.0.0/.github/dependabot.yml
+openarm-hardware-2.0.0/.github/ISSUE_TEMPLATE/
+openarm-hardware-2.0.0/.github/ISSUE_TEMPLATE/2-feature-request.yml
+openarm-hardware-2.0.0/.github/ISSUE_TEMPLATE/1-bug-report.yml
+openarm-hardware-2.0.0/.github/ISSUE_TEMPLATE/config.yml

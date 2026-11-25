@@ -195,12 +195,21 @@ class Pi0(_model.BaseModel):
     def compute_loss(
         self, rng: at.KeyArrayLike, observation: _model.Observation, actions: _model.Actions, *, train: bool = False
     ) -> at.Float[at.Array, "*b ah"]:
+        loss, _ = self._flow_loss_and_estimate(rng, observation, actions, train=train)
+        return loss
+
+    def _flow_loss_and_estimate(self, rng, observation, actions, *, train, paired=False):
         preprocess_rng, noise_rng, time_rng = jax.random.split(rng, 3)
         observation = _model.preprocess_observation(preprocess_rng, observation, train=train, image_keys=FOUR_CAMERA_KEYS)
 
         batch_shape = actions.shape[:-2]
-        noise = jax.random.normal(noise_rng, actions.shape)
-        time = jax.random.beta(time_rng, 1.5, 1, batch_shape) * 0.999 + 0.001
+        # Deployment starts every replan with the same seed. Hold the noise
+        # and flow time fixed within the pair to compare the two observations.
+        noise_shape = (1, *actions.shape[1:]) if paired else actions.shape
+        time_shape = (1,) if paired else batch_shape
+        noise = jax.random.normal(noise_rng, noise_shape)
+        time = jax.random.beta(time_rng, 1.5, 1, time_shape) * 0.999 + 0.001
+        time = jnp.broadcast_to(time, batch_shape)
         time_expanded = time[..., None, None]
         x_t = time_expanded * noise + (1 - time_expanded) * actions
         u_t = noise - actions
@@ -217,7 +226,14 @@ class Pi0(_model.BaseModel):
         )
         v_t = self.action_out_proj(suffix_out[:, -self.action_horizon :])
 
-        return jnp.mean(jnp.square(v_t - u_t), axis=-1)
+        # Under the linear flow path, x_t - t * v_t estimates the clean target.
+        return jnp.mean(jnp.square(v_t - u_t), axis=-1), x_t - time_expanded * v_t
+
+    def compute_paired_loss(self, rng, observation, actions, *, stride, overlap):
+        flow, clean = self._flow_loss_and_estimate(rng, observation, actions, train=True, paired=True)
+        diff = clean[0, stride:stride + overlap] - clean[1, :overlap]
+        arm_diff = jnp.concatenate((diff[:, :7], diff[:, 8:15]), axis=-1)
+        return jnp.mean(flow), jnp.mean(jnp.square(arm_diff))
 
     @override
     def sample_actions(

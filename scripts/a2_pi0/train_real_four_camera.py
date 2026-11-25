@@ -99,6 +99,8 @@ def main():
  p.add_argument('--name',default='real_pi0_four_camera_lora_001');p.add_argument('--seed',type=int,default=42)
  p.add_argument('--candidate',type=Path,default=DEFAULT)
  p.add_argument('--init-run',help='Warm start from the final adapter of this run, excluding its sampled windows')
+ p.add_argument('--init-step',type=int,help='Select an intermediate checkpoint from --init-run')
+ p.add_argument('--continuity-weight',type=float,default=0.0,help='Weight for same-time arm agreement on paired observations')
  p.add_argument('--phase-balanced',action='store_true',help='Spread fresh windows across Task C episodes and operation stages')
  p.add_argument('--priority-phases',nargs='+',choices=PHASES,default=[],help='Allocate every third phase-balanced draw to these stages')
  p.add_argument('--peak-lr',type=float,default=2.5e-5)
@@ -107,6 +109,9 @@ def main():
  if args.steps<2 or min(args.eval_every,args.save_every)<1 or not args.name.replace('_','').replace('-','').isalnum():p.error('invalid steps, intervals, or experiment name')
  if args.priority_phases and not args.phase_balanced:p.error('--priority-phases requires --phase-balanced')
  if not np.isfinite(args.peak_lr) or args.peak_lr<=0:p.error('--peak-lr must be finite and positive')
+ if args.init_step is not None and (not args.init_run or args.init_step<1):p.error('--init-step requires --init-run and a positive step')
+ if not np.isfinite(args.continuity_weight) or args.continuity_weight<0:p.error('--continuity-weight must be finite and nonnegative')
+ pair_stride,pair_overlap=20,8
  if jax.default_backend()!='gpu':raise RuntimeError('GPU required')
  output=ROOT/'results'/args.name;checkpoints=ROOT/'checkpoints'/args.name
  if output.exists() or checkpoints.exists():raise FileExistsError(f'experiment already exists: {output} / {checkpoints}')
@@ -133,7 +138,9 @@ def main():
    rows=[json.loads(line) for line in (previous/'metrics.jsonl').read_text().splitlines()]
    if len(rows)!=previous_summary['steps_completed']:raise ValueError('incomplete prior training log')
    previous_indices.update(row['sample_index'] for row in rows)
-   if initial_adapter is None:initial_adapter=ROOT/previous_summary['last_checkpoint']
+   if initial_adapter is None:
+    initial_adapter=(ROOT/'checkpoints'/previous_name/f'step_{args.init_step:04d}'
+                     if args.init_step is not None else ROOT/previous_summary['last_checkpoint'])
    previous_name=previous_config.get('init_run')
   if args.steps>len(train)-len(previous_indices):raise ValueError('not enough fresh training windows')
   metadata=json.loads((initial_adapter/'checkpoint.json').read_text())
@@ -143,7 +150,7 @@ def main():
   start=0 if e==0 else int(val.ends[e-1]);count=row['full_window_samples']
   for offset in (0,count//2):
    index=start+offset; samples.append(jax.device_put(batch_samples([val[index]])));selected.append({'episode_id':row['episode_id'],'sample_index':offset,'operation_style':row.get('operation_style','unspecified')})
- run_config={'seed':args.seed,'steps':args.steps,'batch_size':1,'eval_every':args.eval_every,'save_every':args.save_every,
+ run_config={'seed':args.seed,'steps':args.steps,'batch_size':2 if args.continuity_weight else 1,'eval_every':args.eval_every,'save_every':args.save_every,
   'model':'pi0_base + gemma_2b_lora + gemma_300m_lora','trainable':'LoRA only','frozen_dtype':'bfloat16',
   'action_horizon':50,'action_semantics':'absolute IK target, right arm then left arm, rad','training_frequency_hz':30,
   'optimizer':repr(cfg.optimizer),'schedule':repr(schedule),'image_mapping':CAMERA_MAPPING,'prompt':PROMPT,
@@ -152,6 +159,7 @@ def main():
   'validation_note':'two fixed probes per held-out episode with fixed flow random keys, not task success or generalization estimate',
   'candidate':str(candidate),'candidate_manifest_sha256':sha(candidate/'manifest.json'),'norm_stats_sha256':sha(candidate/'norm_stats.json'),'review_decision_sha256':sha(candidate/'review_decision.json'),
   'init_run':args.init_run,'initial_adapter':str(initial_adapter) if initial_adapter else None,'excluded_previous_windows':len(previous_indices),
+  'continuity_weight':args.continuity_weight,'pair_stride':pair_stride,'pair_overlap':pair_overlap,
   'phase_balanced':args.phase_balanced,'priority_phases':args.priority_phases,
   'base_checkpoint':str(BASE_PARAMS.relative_to(ROOT)), 'note':'exploratory; consult review_decision.json; no resume support'}
  (output/'config.json').write_text(json.dumps(run_config,ensure_ascii=False,indent=2)+'\n')
@@ -173,7 +181,8 @@ def main():
   state.replace_by_pure_dict(traverse_util.unflatten_dict(flat,sep='/'))
   nnx.update(model,state)
   params=nnx.state(model)
- tx=optimizer_lib.create_optimizer(cfg.optimizer,cfg.lr_schedule,weight_decay_mask=None);opt_state=tx.init(params.filter(cfg.trainable_filter));step_fn=make_train_step(cfg,graphdef,tx)
+ tx=optimizer_lib.create_optimizer(cfg.optimizer,cfg.lr_schedule,weight_decay_mask=None);opt_state=tx.init(params.filter(cfg.trainable_filter))
+ step_fn=make_train_step(cfg,graphdef,tx,continuity_weight=args.continuity_weight,pair_stride=pair_stride,pair_overlap=pair_overlap)
  @jax.jit
  def evaluate(params,observation,actions,key):
   model=nnx.merge(graphdef,params)
@@ -195,11 +204,20 @@ def main():
   rng=jax.random.fold_in(rng,len(previous_indices))
  for step in range(1,args.steps+1):
   if cursor==len(indices):indices=order_rng.permutation(len(train));cursor=0
-  index=int(indices[cursor]);cursor+=1;batch=jax.device_put(batch_samples([train[index]]));rng,key=jax.random.split(rng);before=time.monotonic()
+  index=int(indices[cursor]);cursor+=1
+  episode,offset=train.locate(index)
+  sample_indices=[index]
+  if args.continuity_weight:
+   count=train.entries[episode]['full_window_samples']
+   if count<=pair_stride:raise ValueError('episode is too short for paired training')
+   if offset+pair_stride<count:sample_indices.append(index+pair_stride)
+   else:sample_indices.insert(0,index-pair_stride)
+  batch=jax.device_put(batch_samples([train[i] for i in sample_indices]));rng,key=jax.random.split(rng);before=time.monotonic()
   params,opt_state,metrics=step_fn(params,opt_state,key,*batch);metrics={k:float(v) for k,v in jax.device_get(metrics).items()}
   if not np.isfinite(list(metrics.values())).all():raise RuntimeError(f'nonfinite at step {step}: {metrics}')
   updates+=metrics['update_norm']>0
-  record={'step':step,'sample_index':index,'episode_id':train.entries[train.locate(index)[0]]['episode_id'],**metrics,'step_seconds':time.monotonic()-before}
+  record={'step':step,'sample_index':index,'episode_id':train.entries[episode]['episode_id'],**metrics,'step_seconds':time.monotonic()-before}
+  if args.continuity_weight:record['paired_sample_indices']=sample_indices
   if args.phase_balanced:record['phase_at_forecast_frame_8']=PHASES[phase_labels[index]]
   with (output/'metrics.jsonl').open('a') as f:f.write(json.dumps(record)+'\n')
   if step==1 or step%25==0:logging.info('step=%d/%d loss=%.6f grad=%.5f elapsed=%.1fs',step,args.steps,metrics['loss'],metrics['grad_norm'],time.monotonic()-started)

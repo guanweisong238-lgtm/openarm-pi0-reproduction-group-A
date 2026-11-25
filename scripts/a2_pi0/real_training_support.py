@@ -45,12 +45,16 @@ def load_parameters(cfg):
  params=jax.jit(lambda key,weights:initialize_parameters(cfg,key,weights),donate_argnums=(1,))(rng,partial)
  jax.block_until_ready(params);check_freeze_rules(cfg,params);return params
 
-def make_train_step(cfg,graphdef,tx):
+def make_train_step(cfg,graphdef,tx,*,continuity_weight=0.0,pair_stride=20,pair_overlap=8):
  def step(params,opt_state,rng,observation,actions):
   model=nnx.merge(graphdef,params);model.train()
-  def loss_fn(current_model):return jnp.mean(current_model.compute_loss(rng,observation,actions,train=True))
-  loss,grads=nnx.value_and_grad(loss_fn,argnums=nnx.DiffState(0,cfg.trainable_filter))(model)
+  def loss_fn(current_model):
+   if continuity_weight:
+    flow,continuity=current_model.compute_paired_loss(rng,observation,actions,stride=pair_stride,overlap=pair_overlap)
+    return flow+continuity_weight*continuity,{'flow_loss':flow,'continuity_loss':continuity}
+   return jnp.mean(current_model.compute_loss(rng,observation,actions,train=True)),{}
+  (loss,components),grads=nnx.value_and_grad(loss_fn,has_aux=True,argnums=nnx.DiffState(0,cfg.trainable_filter))(model)
   trainable=params.filter(cfg.trainable_filter);updates,next_opt_state=tx.update(grads,opt_state,trainable);updated=optax.apply_updates(trainable,updates)
   actual_delta=jax.tree.map(lambda new,old:new-old,updated,trainable);nnx.update(model,updated)
-  return nnx.state(model),next_opt_state,{'loss':loss,'grad_norm':optax.global_norm(grads),'update_norm':optax.global_norm(actual_delta)}
+  return nnx.state(model),next_opt_state,{'loss':loss,'grad_norm':optax.global_norm(grads),'update_norm':optax.global_norm(actual_delta),**components}
  return jax.jit(step,donate_argnums=(0,1))

@@ -1,0 +1,171 @@
+{
+  "checkpoint": "checkpoints/real_camera_adjusted_lora_continue5000_20261122_v002/step_3000",
+  "bounds_rad": {
+    "right": [
+      -0.7853982,
+      0.174533
+    ],
+    "left": [
+      -0.174533,
+      0.7853982
+    ]
+  },
+  "raw": {
+    "action": {
+      "right": {
+        "n": 321996,
+        "min_rad": -0.7853981852531433,
+        "max_rad": 0.1745329201221466,
+        "below": 0,
+        "above": 0
+      },
+      "left": {
+        "n": 321997,
+        "min_rad": -0.1745329201221466,
+        "max_rad": 0.7853981852531433,
+        "below": 0,
+        "above": 0
+      }
+    },
+    "obs": {
+      "right": {
+        "n": 322006,
+        "min_rad": -0.7928969264030457,
+        "max_rad": 0.010872052982449532,
+        "below": 242609,
+        "above": 0
+      },
+      "left": {
+        "n": 322006,
+        "min_rad": -0.008201723918318748,
+        "max_rad": 0.8237964510917664,
+        "below": 0,
+        "above": 6881
+      }
+    }
+  },
+  "validation_frames": {
+    "5": 823,
+    "16": 867,
+    "20": 837,
+    "24": 1150,
+    "25": 957,
+    "30": 579,
+    "34": 718,
+    "38": 590,
+    "41": 572,
+    "43": 594
+  },
+  "cache_sha256": {
+    "seed1001/episode_5.npz": "e648a6aeabf340c2857617ab24a51c11817fd4056c0a39b983b28356d22aaf22",
+    "seed1001/episode_16.npz": "20bb0667611f70b3ed1ad46a910cb84eee67124de1316751a914db68d063ff48",
+    "seed1001/episode_20.npz": "920b20ac1d6627e4417628ae2ef57b606a1e68e35da4aedcf03a679d030f67cc",
+    "seed1001/episode_24.npz": "4155f0d052a75d9818ad58c4815e07f329d479484b9530704fbc93d1d0d19d84",
+    "seed1001/episode_25.npz": "88dd418a1ae93c47c498fd3853b0f9d7a11ee8c840f85aebedeb84a0fbd10cd4",
+    "seed1001/episode_30.npz": "e387826a0aad5dbb7432ae345585d846d23ed5e42f2908a2b2300051b4c16f2a",
+    "seed1001/episode_34.npz": "e557757a69ef9e81df91236df84d19d44e1c7a9d41785e3996e7cfd1ce409e5c",
+    "seed1001/episode_38.npz": "b010c18c9fba30110cd1aa8fa9e15683b6118600e3f3a35776894b5b5e8539e8",
+    "seed1001/episode_41.npz": "ec47115203a976f1f9cfa18585619593e1c7bb5dc122ca55224aa99617bd36f9",
+    "seed1001/episode_43.npz": "85f6e56b6014cb5385b96ca1cbb55a4b0691a09ed556d3e955d0b3d3a7d1c8aa",
+    "seed1002/episode_5.npz": "900cc5bdbe8d5d1031c7b4d1b80252c1433925863e582f49f8b46193898383bf",
+    "seed1002/episode_16.npz": "37066853fad6324ebc7e4054c241aae2d02977f6b8dcee9a9e1ee208de71bbde",
+    "seed1002/episode_20.npz": "680e12104a4c90381d3d8f365619658fd8630e17a0072a7535790a6ba20c3610",
+    "seed1002/episode_24.npz": "60fe75098950fa23ed17f65cff3fe6cb369ebf668e44e870e40983b5f97f3dff",
+    "seed1002/episode_25.npz": "a5a45b1955d006f7ac676aec554c38bfb0b6ec8ad1e9181206e03849271c29a5",
+    "seed1002/episode_30.npz": "18a87869b741e25d6d333699a307b8546d198076a9f1277ee8ae5e7f67e2125f",
+    "seed1002/episode_34.npz": "0028dc02aa625cee1878bf1e728675305d7e45e5013762d4ce174d486d05a898",
+    "seed1002/episode_38.npz": "b666b24bcb98594d0a6a393f667f41f967674c669802953baabc3cedecf13a3f",
+    "seed1002/episode_41.npz": "6bb567bc3228ccf7a67ac89aef2d81a858137c95cce26a4eafb975fb4fe7afc8",
+    "seed1002/episode_43.npz": "b8cc4f7c726959cbdb40f6b6c0252c228139b826e5e4706ce52b9dd2cff335fa",
+    "seed1003/episode_5.npz": "ca47c857b4d5d418b28628106c2bbe26fcbf8c9200f2279d7f1d691f298a9194",
+    "seed1003/episode_16.npz": "eb1b6aa035e422d2fc7d02099a36c17b348faddda55699e1cf9aba22c188cbce",
+    "seed1003/episode_20.npz": "03742dbfc19d2d00e57cba830fb36e15123417ed3ce1055a81022c7ce24936f4",
+    "seed1003/episode_24.npz": "3d31b8d8003cd4f24c902d91866e111ddf9eb784e36f0e1fccda0b2fcc547e5a",
+    "seed1003/episode_25.npz": "61a8ce92a400191cafe3b1a77178bfe376c1c0e324231c1ee1c2f1fb04925f1d",
+    "seed1003/episode_30.npz": "efbc89cbf1f6e4f35ae844f214e1d881d1b4faae2170a6356fefc5593fc71701",
+    "seed1003/episode_34.npz": "1c99d95b92934dfb502565adf564e5631bf1b478a1dfa33ff789f6c443848652",
+    "seed1003/episode_38.npz": "24b45ca2d155e9c352fde54e8aada59ef4dfcc1b563a8d1a8967419db6b4ce65",
+    "seed1003/episode_41.npz": "4a4bf767a1f934f827e1da4e259a874c79c74888fa5babf0801d66aaeb2cdfeb",
+    "seed1003/episode_43.npz": "719ccc638a1a377b084dba4e65ca0d6f8d288c2042f10aacaa23b92adc1c0636"
+  },
+  "prediction": {
+    "full50": {
+      "right": {
+        "n": 58200,
+        "min_rad": -0.923602819442749,
+        "max_rad": 0.5738344788551331,
+        "below": 18341,
+        "above": 5494,
+        "plans": 1164,
+        "bad_plans": 740,
+        "clip_changed": 23835,
+        "post_clip_oob": 0,
+        "max_clip_rad": 0.3993014842271805
+      },
+      "left": {
+        "n": 58200,
+        "min_rad": -0.5988496541976929,
+        "max_rad": 1.126213788986206,
+        "below": 6601,
+        "above": 10307,
+        "plans": 1164,
+        "bad_plans": 618,
+        "clip_changed": 16908,
+        "post_clip_oob": 0,
+        "max_clip_rad": 0.4243166595697403
+      }
+    },
+    "prefix20": {
+      "right": {
+        "n": 23280,
+        "min_rad": -0.8944993019104004,
+        "max_rad": 0.47432011365890503,
+        "below": 7113,
+        "above": 1821,
+        "plans": 1164,
+        "bad_plans": 651,
+        "clip_changed": 8934,
+        "post_clip_oob": 0,
+        "max_clip_rad": 0.29978711903095245
+      },
+      "left": {
+        "n": 23280,
+        "min_rad": -0.5988496541976929,
+        "max_rad": 1.126213788986206,
+        "below": 2455,
+        "above": 6152,
+        "plans": 1164,
+        "bad_plans": 589,
+        "clip_changed": 8607,
+        "post_clip_oob": 0,
+        "max_clip_rad": 0.4243166595697403
+      }
+    },
+    "prefix20_recorded": {
+      "right": {
+        "n": 23061,
+        "min_rad": -0.8944993019104004,
+        "max_rad": 0.47432011365890503,
+        "below": 7047,
+        "above": 1821,
+        "plans": 1164,
+        "bad_plans": 651,
+        "clip_changed": 8868,
+        "post_clip_oob": 0,
+        "max_clip_rad": 0.29978711903095245
+      },
+      "left": {
+        "n": 23061,
+        "min_rad": -0.5988496541976929,
+        "max_rad": 1.126213788986206,
+        "below": 2455,
+        "above": 6033,
+        "plans": 1164,
+        "bad_plans": 586,
+        "clip_changed": 8488,
+        "post_clip_oob": 0,
+        "max_clip_rad": 0.4243166595697403
+      }
+    }
+  }
+}

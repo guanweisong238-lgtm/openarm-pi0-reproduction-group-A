@@ -1,0 +1,24 @@
+Offline Task C early-close review packet, 2026-11-25
+
+Source: data/processed/real_camera_adjusted_candidate_v001/manifest.json
+SHA256: 59a24d3fa29561be129042fc3b69dd297bc54999d09b25d3ac84827e49272164
+39 train episodes; 10 validation episodes excluded before episode file access.
+11 candidate times per episode; 429 unique episode/frame pairs; 1716 views.
+The sheet rows are time-ordered, not uniformly spaced. The signed number
+is the frame offset from the demonstrated sustained close (30 Hz).
+Columns: global, right wrist, chest, left wrist. See review.jsonl for exact
+source paths, timestamps, and zero-based sheet row. Host receive timestamps
+are causal (image age 0.084 to 35.954 ms), not synchronized exposures.
+
+Review procedure: use the sheets to navigate, then inspect full-resolution
+source frames and adjacent frames in the original recording. Check that the
+cube is between the right fingertips in plan view and that another useful
+view supports height/depth alignment before closure. Record visible evidence,
+episode, first and last supported frames, reviewer and uncertainty separately.
+Do not interpolate a boundary across sparse samples. Mark obscured fingers,
+ambiguous depth, or conflicting views unknown, not negative. Demonstrated
+close, subsequent lift, and automatic overhead geometry alone are not labels.
+
+Validation: train ID set and unique frame keys checked; all sheet JPEGs
+decoded and dimensions checked. All 429 labels null; no human review,
+model fitting, timing improvement measurement, or deployment performed.

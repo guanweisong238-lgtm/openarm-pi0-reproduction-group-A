@@ -275,7 +275,14 @@ tensorboard/
 outputs/
 logs/
 mujoco_logs/
+/scripts/a2_pi0/deploy/out/
 simulation_outputs/
+
+# 本地导出包不入库；保留单独的校验和与说明。
+/exports/*.zip
+/exports/*.tar
+/exports/*.tar.gz
+/exports/*.tar.zst
 
 # 训练脚本生成的逐步指标和源码副本。验证记录与汇总保留。
 /results/**/metrics.jsonl
@@ -333,3 +340,8 @@ MUJOCO_LOG.TXT
 *.temp
 /.tmp/
 /tmp/
+
+# 本机助手记忆、缓存与临时截图。
+/.workbuddy/memory/
+/.workbuddy/mplcache/
+/.workbuddy/tmp_frames/

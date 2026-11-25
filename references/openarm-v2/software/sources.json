@@ -1,0 +1,341 @@
+[
+  {
+    "repository": "https://github.com/enactic/openarm",
+    "role": "官方仓库默认分支快照",
+    "commit": "36b3d49f87ccfe19d3b4c975867ef91b348c8142",
+    "source": "https://github.com/enactic/openarm.git",
+    "file": "openarm-36b3d49f87cc.tar.gz",
+    "method": "git archive from verified shallow clone",
+    "bytes": 263845485
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_hardware",
+    "role": "官方仓库默认分支快照",
+    "commit": "eefc9fa5509562e5e4d630db9a52027afdbc6af1",
+    "source": "https://codeload.github.com/enactic/openarm_hardware/tar.gz/eefc9fa5509562e5e4d630db9a52027afdbc6af1",
+    "file": "openarm_hardware-eefc9fa55095.tar.gz",
+    "bytes": 14462
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_driver",
+    "role": "官方仓库默认分支快照",
+    "commit": "5c73d835b31875057695f1b8688e0bf9c0bf87b0",
+    "source": "https://codeload.github.com/enactic/openarm_driver/tar.gz/5c73d835b31875057695f1b8688e0bf9c0bf87b0",
+    "file": "openarm_driver-5c73d835b318.tar.gz",
+    "bytes": 31976
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_can",
+    "role": "官方仓库默认分支快照",
+    "commit": "20d66f096d75373d70cee3ba9a8257f56d0bb6cb",
+    "source": "https://codeload.github.com/enactic/openarm_can/tar.gz/20d66f096d75373d70cee3ba9a8257f56d0bb6cb",
+    "file": "openarm_can-20d66f096d75.tar.gz",
+    "bytes": 101011
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_description",
+    "role": "官方仓库默认分支快照",
+    "commit": "9c22506b70a56742c7d52b5e09410276c7b96ed9",
+    "source": "https://codeload.github.com/enactic/openarm_description/tar.gz/9c22506b70a56742c7d52b5e09410276c7b96ed9",
+    "file": "openarm_description-9c22506b70a5.tar.gz",
+    "bytes": 27552185
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_calibration",
+    "role": "官方仓库默认分支快照",
+    "status": "没有公开独立仓库。官方零位标定脚本随 openarm_can 快照归档。"
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_ros2",
+    "role": "官方仓库默认分支快照",
+    "commit": "5fd1268ba4b50758c90affbc36f847e8178c141f",
+    "source": "https://codeload.github.com/enactic/openarm_ros2/tar.gz/5fd1268ba4b50758c90affbc36f847e8178c141f",
+    "file": "openarm_ros2-5fd1268ba4b5.tar.gz",
+    "bytes": 42378
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_mujoco",
+    "role": "官方仓库默认分支快照",
+    "commit": "36ce7ab00ea9ae5cd70b39385956786ee00423e3",
+    "source": "https://codeload.github.com/enactic/openarm_mujoco/tar.gz/36ce7ab00ea9ae5cd70b39385956786ee00423e3",
+    "file": "openarm_mujoco-36ce7ab00ea9.tar.gz",
+    "bytes": 20624344
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_isaac_lab",
+    "role": "官方仓库默认分支快照",
+    "commit": "cb7ff7547bdb81f290591edb9302b4845b1d49a7",
+    "source": "https://codeload.github.com/enactic/openarm_isaac_lab/tar.gz/cb7ff7547bdb81f290591edb9302b4845b1d49a7",
+    "file": "openarm_isaac_lab-cb7ff7547bdb.tar.gz",
+    "bytes": 66472395
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_dataset",
+    "role": "官方仓库默认分支快照",
+    "commit": "3d291fe8a71153de03d76ca9a70c4fdb88fc1929",
+    "source": "https://codeload.github.com/enactic/openarm_dataset/tar.gz/3d291fe8a71153de03d76ca9a70c4fdb88fc1929",
+    "file": "openarm_dataset-3d291fe8a711.tar.gz",
+    "bytes": 80974498
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_teleop",
+    "role": "官方仓库默认分支快照",
+    "commit": "c0e3521fe920694a3c7020ce4936a52ac87a99bc",
+    "source": "https://codeload.github.com/enactic/openarm_teleop/tar.gz/c0e3521fe920694a3c7020ce4936a52ac87a99bc",
+    "file": "openarm_teleop-c0e3521fe920.tar.gz",
+    "bytes": 34339
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_ker",
+    "role": "官方仓库默认分支快照",
+    "commit": "829fa89ae9656178880ae79a103e8049696cd6be",
+    "source": "https://codeload.github.com/enactic/openarm_ker/tar.gz/829fa89ae9656178880ae79a103e8049696cd6be",
+    "file": "openarm_ker-829fa89ae965.tar.gz",
+    "bytes": 24249
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_ker_firmware",
+    "role": "官方仓库默认分支快照",
+    "commit": "e572a16eb204122b44eef5d45bcf6ff1abb9247d",
+    "source": "https://codeload.github.com/enactic/openarm_ker_firmware/tar.gz/e572a16eb204122b44eef5d45bcf6ff1abb9247d",
+    "file": "openarm_ker_firmware-e572a16eb204.tar.gz",
+    "bytes": 41707
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm",
+    "role": "官方仓库默认分支快照",
+    "commit": "1663ee50509142c8cabdc3019d797874a2907e97",
+    "source": "https://codeload.github.com/enactic/dora-openarm/tar.gz/1663ee50509142c8cabdc3019d797874a2907e97",
+    "file": "dora-openarm-1663ee505091.tar.gz",
+    "bytes": 18159
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-actions-executor",
+    "role": "官方仓库默认分支快照",
+    "commit": "d2b58ef6ea68b6f02438c9be7b3e02bccfc010a3",
+    "source": "https://codeload.github.com/enactic/dora-openarm-actions-executor/tar.gz/d2b58ef6ea68b6f02438c9be7b3e02bccfc010a3",
+    "file": "dora-openarm-actions-executor-d2b58ef6ea68.tar.gz",
+    "bytes": 13342
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-cell-lifter",
+    "role": "官方仓库默认分支快照",
+    "commit": "61a16251609109c68f17b0556f4727ff840877a8",
+    "source": "https://codeload.github.com/enactic/dora-openarm-cell-lifter/tar.gz/61a16251609109c68f17b0556f4727ff840877a8",
+    "file": "dora-openarm-cell-lifter-61a162516091.tar.gz",
+    "bytes": 15067
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-data-collection",
+    "role": "官方仓库默认分支快照",
+    "commit": "361773287450ddac29b781eb96ce1a56183d5b0c",
+    "source": "https://codeload.github.com/enactic/dora-openarm-data-collection/tar.gz/361773287450ddac29b781eb96ce1a56183d5b0c",
+    "file": "dora-openarm-data-collection-361773287450.tar.gz",
+    "bytes": 69608
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-data-collection-ui",
+    "role": "官方仓库默认分支快照",
+    "commit": "a53e1486976153f7b37401dba46d85cc5e980598",
+    "source": "https://codeload.github.com/enactic/dora-openarm-data-collection-ui/tar.gz/a53e1486976153f7b37401dba46d85cc5e980598",
+    "file": "dora-openarm-data-collection-ui-a53e14869761.tar.gz",
+    "bytes": 22667
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-dataset-recorder",
+    "role": "官方仓库默认分支快照",
+    "commit": "b8681801c0b920d4303c502a9e41cd7e27c22327",
+    "source": "https://codeload.github.com/enactic/dora-openarm-dataset-recorder/tar.gz/b8681801c0b920d4303c502a9e41cd7e27c22327",
+    "file": "dora-openarm-dataset-recorder-b8681801c0b9.tar.gz",
+    "bytes": 19006
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-docker-policy-server",
+    "role": "官方仓库默认分支快照",
+    "commit": "3c59a916a515f7b5178d17f8fba66e757a50571e",
+    "source": "https://codeload.github.com/enactic/dora-openarm-docker-policy-server/tar.gz/3c59a916a515f7b5178d17f8fba66e757a50571e",
+    "file": "dora-openarm-docker-policy-server-3c59a916a515.tar.gz",
+    "bytes": 12431
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-dummy",
+    "role": "官方仓库默认分支快照",
+    "commit": "f3140fc247f6a01e5c207803526402753df0276c",
+    "source": "https://codeload.github.com/enactic/dora-openarm-dummy/tar.gz/f3140fc247f6a01e5c207803526402753df0276c",
+    "file": "dora-openarm-dummy-f3140fc247f6.tar.gz",
+    "bytes": 10171
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-dummy-camera",
+    "role": "官方仓库默认分支快照",
+    "commit": "fef1e5234e9595179560f013944f8f4e9b30cc66",
+    "source": "https://codeload.github.com/enactic/dora-openarm-dummy-camera/tar.gz/fef1e5234e9595179560f013944f8f4e9b30cc66",
+    "file": "dora-openarm-dummy-camera-fef1e5234e95.tar.gz",
+    "bytes": 11351
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-dummy-cell-lifter",
+    "role": "官方仓库默认分支快照",
+    "status": "官方 GitHub 仓库页面标记为空，没有公开提交可归档。"
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-dummy-ker",
+    "role": "官方仓库默认分支快照",
+    "commit": "0c6bb28813790a44aafdcf6fd3457530dbd0b08e",
+    "source": "https://codeload.github.com/enactic/dora-openarm-dummy-ker/tar.gz/0c6bb28813790a44aafdcf6fd3457530dbd0b08e",
+    "file": "dora-openarm-dummy-ker-0c6bb2881379.tar.gz",
+    "bytes": 10604
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-dummy-policy-server",
+    "role": "官方仓库默认分支快照",
+    "commit": "beac768f37d1a5effa2b07c9d810e6db3574332d",
+    "source": "https://codeload.github.com/enactic/dora-openarm-dummy-policy-server/tar.gz/beac768f37d1a5effa2b07c9d810e6db3574332d",
+    "file": "dora-openarm-dummy-policy-server-beac768f37d1.tar.gz",
+    "bytes": 10217
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-evaluation",
+    "role": "官方仓库默认分支快照",
+    "commit": "1a02839da6b41fbb8dc1bb4c6b6370e0c1480dba",
+    "source": "https://codeload.github.com/enactic/dora-openarm-evaluation/tar.gz/1a02839da6b41fbb8dc1bb4c6b6370e0c1480dba",
+    "file": "dora-openarm-evaluation-1a02839da6b4.tar.gz",
+    "bytes": 14540
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-inference-controller",
+    "role": "官方仓库默认分支快照",
+    "commit": "2ade59857f9872e837ea2d69300e5a1a38a2ece8",
+    "source": "https://codeload.github.com/enactic/dora-openarm-inference-controller/tar.gz/2ade59857f9872e837ea2d69300e5a1a38a2ece8",
+    "file": "dora-openarm-inference-controller-2ade59857f98.tar.gz",
+    "bytes": 10758
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-ker",
+    "role": "官方仓库默认分支快照",
+    "commit": "a971dd7b3f3d73e77f15f0ed2b4d45a48a8a0b1b",
+    "source": "https://codeload.github.com/enactic/dora-openarm-ker/tar.gz/a971dd7b3f3d73e77f15f0ed2b4d45a48a8a0b1b",
+    "file": "dora-openarm-ker-a971dd7b3f3d.tar.gz",
+    "bytes": 16415
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-kinematics",
+    "role": "官方仓库默认分支快照",
+    "commit": "e40dd559d07e3defdc438f459b636a87ddd39684",
+    "source": "https://codeload.github.com/enactic/dora-openarm-kinematics/tar.gz/e40dd559d07e3defdc438f459b636a87ddd39684",
+    "file": "dora-openarm-kinematics-e40dd559d07e.tar.gz",
+    "bytes": 15200
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-local-policy-server",
+    "role": "官方仓库默认分支快照",
+    "commit": "de9b58cfda38e841e4bd9156965325ad06ef857e",
+    "source": "https://codeload.github.com/enactic/dora-openarm-local-policy-server/tar.gz/de9b58cfda38e841e4bd9156965325ad06ef857e",
+    "file": "dora-openarm-local-policy-server-de9b58cfda38.tar.gz",
+    "bytes": 11843
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-mujoco",
+    "role": "官方仓库默认分支快照",
+    "commit": "cbe672b08bfe7e95b58708f21360d774b1db1a91",
+    "source": "https://codeload.github.com/enactic/dora-openarm-mujoco/tar.gz/cbe672b08bfe7e95b58708f21360d774b1db1a91",
+    "file": "dora-openarm-mujoco-cbe672b08bfe.tar.gz",
+    "bytes": 418999
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-observer",
+    "role": "官方仓库默认分支快照",
+    "commit": "b3952c93bc6a07691a1ccacb6eb95e74f6cc60b7",
+    "source": "https://codeload.github.com/enactic/dora-openarm-observer/tar.gz/b3952c93bc6a07691a1ccacb6eb95e74f6cc60b7",
+    "file": "dora-openarm-observer-b3952c93bc6a.tar.gz",
+    "bytes": 12908
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-quitter",
+    "role": "官方仓库默认分支快照",
+    "commit": "0100ca96aea37b3988c1400f2409c94e5cae4b58",
+    "source": "https://codeload.github.com/enactic/dora-openarm-quitter/tar.gz/0100ca96aea37b3988c1400f2409c94e5cae4b58",
+    "file": "dora-openarm-quitter-0100ca96aea3.tar.gz",
+    "bytes": 10761
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-ros2",
+    "role": "官方仓库默认分支快照",
+    "commit": "8eb366369d33f9d420b3d10c3af021ca781c308a",
+    "source": "https://codeload.github.com/enactic/dora-openarm-ros2/tar.gz/8eb366369d33f9d420b3d10c3af021ca781c308a",
+    "file": "dora-openarm-ros2-8eb366369d33.tar.gz",
+    "bytes": 13401
+  },
+  {
+    "repository": "https://github.com/enactic/dora-opencv-image-splitter",
+    "role": "官方仓库默认分支快照",
+    "commit": "6ea7d9523af751daeca5662a7ceec12a1d315bc2",
+    "source": "https://codeload.github.com/enactic/dora-opencv-image-splitter/tar.gz/6ea7d9523af751daeca5662a7ceec12a1d315bc2",
+    "file": "dora-opencv-image-splitter-6ea7d9523af7.tar.gz",
+    "bytes": 13158
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_driver",
+    "role": "本项目已用固定版本",
+    "commit": "5c73d835b31875057695f1b8688e0bf9c0bf87b0",
+    "source": "https://codeload.github.com/enactic/openarm_driver/tar.gz/5c73d835b31875057695f1b8688e0bf9c0bf87b0",
+    "file": "openarm_driver-5c73d835b318.tar.gz",
+    "bytes": 31976
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_can",
+    "role": "本项目已用固定版本",
+    "commit": "f340d4b808fb177e1f297af54eb55fd51c6c7c10",
+    "source": "https://codeload.github.com/enactic/openarm_can/tar.gz/f340d4b808fb177e1f297af54eb55fd51c6c7c10",
+    "file": "openarm_can-f340d4b808fb.tar.gz",
+    "bytes": 93174
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm",
+    "role": "本项目已用固定版本",
+    "commit": "1a6b29f41923fdc940959a60e24dfbe3467fbca1",
+    "source": "https://codeload.github.com/enactic/dora-openarm/tar.gz/1a6b29f41923fdc940959a60e24dfbe3467fbca1",
+    "file": "dora-openarm-1a6b29f41923.tar.gz",
+    "bytes": 15171
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-data-collection",
+    "role": "本项目已用固定版本",
+    "commit": "5be94fe9873b02d5123bedc96e07272ac0112c2d",
+    "source": "https://codeload.github.com/enactic/dora-openarm-data-collection/tar.gz/5be94fe9873b02d5123bedc96e07272ac0112c2d",
+    "file": "dora-openarm-data-collection-5be94fe9873b.tar.gz",
+    "bytes": 69448
+  },
+  {
+    "repository": "https://github.com/dmBots/motor-firmware",
+    "role": "OpenArm 2.0 官方固件更新页指定版本",
+    "commit": "77a7c91cd5263cde42d931fe7f84619c7fc9e1f0",
+    "source": "https://codeload.github.com/dmBots/motor-firmware/tar.gz/77a7c91cd5263cde42d931fe7f84619c7fc9e1f0",
+    "file": "motor-firmware-77a7c91cd526.tar.gz",
+    "bytes": 4290309
+  },
+  {
+    "repository": "https://github.com/enactic/dora-openarm-webxr",
+    "role": "OpenArm 2.0 官网页面引用的补充官方源码",
+    "source": "https://codeload.github.com/enactic/dora-openarm-webxr/tar.gz/f661a600743360d99158dbadbbe15891d8a55d8d",
+    "commit": "f661a600743360d99158dbadbbe15891d8a55d8d",
+    "file": "dora-openarm-webxr-f661a6007433.tar.gz",
+    "bytes": 70071
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_control",
+    "role": "OpenArm 2.0 官网页面引用的补充官方源码",
+    "source": "https://codeload.github.com/enactic/openarm_control/tar.gz/31b6b4449c8b206d61cdd42b03689332808c314e",
+    "commit": "31b6b4449c8b206d61cdd42b03689332808c314e",
+    "file": "openarm_control-31b6b4449c8b.tar.gz",
+    "bytes": 41002
+  },
+  {
+    "repository": "https://github.com/enactic/openarm_lerobot_policy_server",
+    "role": "OpenArm 2.0 官网页面引用的补充官方源码",
+    "source": "https://codeload.github.com/enactic/openarm_lerobot_policy_server/tar.gz/df6998304b14ff31d9403b5225a2ef49fbdcd852",
+    "commit": "df6998304b14ff31d9403b5225a2ef49fbdcd852",
+    "file": "openarm_lerobot_policy_server-df6998304b14.tar.gz",
+    "bytes": 15898
+  }
+]

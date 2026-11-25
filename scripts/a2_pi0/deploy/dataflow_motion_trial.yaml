@@ -1,0 +1,19 @@
+# One J7 at a time. The trial authorization selects the side and direction.
+nodes:
+  - id: trial
+    path: feedback_trial.py
+    args: --motion
+    inputs:
+      tick: dora/timer/millis/25
+      status: arm/status
+      state: arm/state
+    outputs: [command, request, target]
+  - id: arm
+    path: ../../../.cache/openarm-policy-driver/bin/python
+    args: feedback_trial.py --driver --motion
+    inputs:
+      tick: dora/timer/millis/25
+      command: trial/command
+      request_state: {source: trial/request, queue_size: 1}
+      move_position: {source: trial/target, queue_size: 1}
+    outputs: [state, status]

@@ -1,0 +1,260 @@
+{
+  "checkpoint": "checkpoints/real_camera_adjusted_lora_continue5000_20261122_v002/step_3000",
+  "seed": 1002,
+  "stride": 20,
+  "guidance_steps": 8,
+  "method": "Recorded observations; previous predicted steps 20-27 at same timestamps guide new steps 0-7 with decaying weight; no blending, hardware, or guard changes. Recurses through each variant independently, even if a plan would be rejected.",
+  "visual_limit": "No camera calibration or tracked object. Pose distance is estimated by forward kinematics from recorded joint feedback relative to the demonstrator pose at close, not distance to cube or proof of alignment. Clip is four recorded views at half speed.",
+  "results": {
+    "5": {
+      "grasp_proxy": {
+        "predicted_close_frame": 329,
+        "demo_close_frame": 358,
+        "model_based_distance_to_demo_grasp_pose_mm": 32.26582384877209,
+        "min_distance_next_ten_frames_mm": 23.29500563667396,
+        "demo_previous_ten_frames_max_distance_mm": 14.258199829442981,
+        "clip_frame_range": [
+          305,
+          389
+        ]
+      },
+      "variants": {
+        "independent": {
+          "handoff_violations": 33,
+          "handoff_max_rad": 1.005234956741333,
+          "handoff_p95_rad": 0.7028545141220093,
+          "all_window_position_violations": 29,
+          "all_window_speed_violations": 0,
+          "right_gripper_high_windows": 5,
+          "right_gripper_max_rad": 0.3936840891838074,
+          "first_step_feedback_gap_above_point1": 22,
+          "arm_mae_rad": 0.03632577508687973,
+          "right_gripper_mae_rad": 0.08854953199625015,
+          "left_gripper_mae_rad": 0.11815707385540009,
+          "demo_close_release_frames": [
+            358,
+            467
+          ],
+          "first_close_frame": 329,
+          "main_close_release_frames": [
+            347,
+            458
+          ],
+          "sustained_closures": [
+            [
+              329,
+              340
+            ],
+            [
+              347,
+              458
+            ],
+            [
+              460,
+              473
+            ]
+          ],
+          "pre_grasp_frames_above_closing_threshold": 25
+        },
+        "guide_arms_8": {
+          "handoff_violations": 22,
+          "handoff_max_rad": 1.0265742540359497,
+          "handoff_p95_rad": 0.6801581382751465,
+          "all_window_position_violations": 30,
+          "all_window_speed_violations": 0,
+          "right_gripper_high_windows": 5,
+          "right_gripper_max_rad": 0.3887891173362732,
+          "first_step_feedback_gap_above_point1": 31,
+          "arm_mae_rad": 0.05183184891939163,
+          "right_gripper_mae_rad": 0.08512528240680695,
+          "left_gripper_mae_rad": 0.12064588814973831,
+          "demo_close_release_frames": [
+            358,
+            467
+          ],
+          "first_close_frame": 329,
+          "main_close_release_frames": [
+            346,
+            458
+          ],
+          "sustained_closures": [
+            [
+              329,
+              340
+            ],
+            [
+              346,
+              458
+            ],
+            [
+              460,
+              472
+            ]
+          ],
+          "pre_grasp_frames_above_closing_threshold": 26,
+          "guided_sampling_ms_p95": 344.199457400191
+        },
+        "guide_all_8": {
+          "handoff_violations": 21,
+          "handoff_max_rad": 0.5196236968040466,
+          "handoff_p95_rad": 0.33270180225372314,
+          "all_window_position_violations": 26,
+          "all_window_speed_violations": 0,
+          "right_gripper_high_windows": 5,
+          "right_gripper_max_rad": 0.3986608386039734,
+          "first_step_feedback_gap_above_point1": 36,
+          "arm_mae_rad": 0.052427131682634354,
+          "right_gripper_mae_rad": 0.12395274639129639,
+          "left_gripper_mae_rad": 0.1661716252565384,
+          "demo_close_release_frames": [
+            358,
+            467
+          ],
+          "first_close_frame": 21,
+          "main_close_release_frames": [
+            327,
+            458
+          ],
+          "sustained_closures": [
+            [
+              21,
+              40
+            ],
+            [
+              327,
+              458
+            ]
+          ],
+          "pre_grasp_frames_above_closing_threshold": 52,
+          "guided_sampling_ms_p95": 344.0749022984164
+        }
+      },
+      "baseline_max_difference_from_previous_run_rad": 0.08633127808570862
+    },
+    "38": {
+      "grasp_proxy": {
+        "predicted_close_frame": 188,
+        "demo_close_frame": 221,
+        "model_based_distance_to_demo_grasp_pose_mm": 55.98257584742625,
+        "min_distance_next_ten_frames_mm": 42.69743926576138,
+        "demo_previous_ten_frames_max_distance_mm": 9.951337737726014,
+        "clip_frame_range": [
+          164,
+          252
+        ]
+      },
+      "variants": {
+        "independent": {
+          "handoff_violations": 20,
+          "handoff_max_rad": 0.9230100512504578,
+          "handoff_p95_rad": 0.8825608730316162,
+          "all_window_position_violations": 20,
+          "all_window_speed_violations": 0,
+          "right_gripper_high_windows": 8,
+          "right_gripper_max_rad": 0.3538413643836975,
+          "first_step_feedback_gap_above_point1": 18,
+          "arm_mae_rad": 0.0433223582804203,
+          "right_gripper_mae_rad": 0.1394672840833664,
+          "left_gripper_mae_rad": 0.11817585676908493,
+          "demo_close_release_frames": [
+            221,
+            308
+          ],
+          "first_close_frame": 188,
+          "main_close_release_frames": [
+            225,
+            320
+          ],
+          "sustained_closures": [
+            [
+              188,
+              200
+            ],
+            [
+              206,
+              220
+            ],
+            [
+              225,
+              320
+            ]
+          ],
+          "pre_grasp_frames_above_closing_threshold": 42
+        },
+        "guide_arms_8": {
+          "handoff_violations": 16,
+          "handoff_max_rad": 0.8787233233451843,
+          "handoff_p95_rad": 0.8781816124916076,
+          "all_window_position_violations": 20,
+          "all_window_speed_violations": 0,
+          "right_gripper_high_windows": 8,
+          "right_gripper_max_rad": 0.3552085757255554,
+          "first_step_feedback_gap_above_point1": 25,
+          "arm_mae_rad": 0.054073136299848557,
+          "right_gripper_mae_rad": 0.13660122454166412,
+          "left_gripper_mae_rad": 0.11487962305545807,
+          "demo_close_release_frames": [
+            221,
+            308
+          ],
+          "first_close_frame": 187,
+          "main_close_release_frames": [
+            225,
+            320
+          ],
+          "sustained_closures": [
+            [
+              187,
+              200
+            ],
+            [
+              206,
+              220
+            ],
+            [
+              225,
+              320
+            ]
+          ],
+          "pre_grasp_frames_above_closing_threshold": 42,
+          "guided_sampling_ms_p95": 346.6325975504333
+        },
+        "guide_all_8": {
+          "handoff_violations": 14,
+          "handoff_max_rad": 0.7735822200775146,
+          "handoff_p95_rad": 0.49425057172775266,
+          "all_window_position_violations": 17,
+          "all_window_speed_violations": 0,
+          "right_gripper_high_windows": 8,
+          "right_gripper_max_rad": 0.46643728017807007,
+          "first_step_feedback_gap_above_point1": 28,
+          "arm_mae_rad": 0.05535665899515152,
+          "right_gripper_mae_rad": 0.2348872274160385,
+          "left_gripper_mae_rad": 0.1579858660697937,
+          "demo_close_release_frames": [
+            221,
+            308
+          ],
+          "first_close_frame": 22,
+          "main_close_release_frames": [
+            161,
+            320
+          ],
+          "sustained_closures": [
+            [
+              22,
+              40
+            ],
+            [
+              161,
+              320
+            ]
+          ],
+          "pre_grasp_frames_above_closing_threshold": 87,
+          "guided_sampling_ms_p95": 346.515645099862
+        }
+      },
+      "baseline_max_difference_from_previous_run_rad": 0.052381694316864014
+    }
+  }
+}

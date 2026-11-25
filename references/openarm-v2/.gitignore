@@ -1,0 +1,7 @@
+# Downloaded reference payloads live on disk. Keep the index and manifests visible to Git.
+/official-docs/
+/official-drive-v2/
+/vendor/
+/hardware/*.tar.gz
+/software/*.tar.gz
+*.part

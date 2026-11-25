@@ -1,0 +1,2049 @@
+{
+  "method": "All 49 raw action/feedback episodes checked. Exact timestamp alignment verified against original parquet values. Validation replay uses recorded images and measured feedback, computes predictions every 20 frames with a constant seed, and evaluates the first 20 steps at each anchor for timing. Bounds are from the unchanged mock configuration, measured separately on all 50 outputs. Replay continues gathering predictions even past any hypothetical rejection.",
+  "raw_episode_count": 49,
+  "fps": 30,
+  "model_checkpoint": "checkpoints/real_camera_adjusted_lora_continue5000_20261122_v002/step_3000",
+  "seed": 1002,
+  "replan_stride": 20,
+  "right_close_threshold_rad": -0.305,
+  "consecutive_frames": 10,
+  "gripper_limits_rad": {
+    "right": [
+      -0.7853982,
+      0.174533
+    ],
+    "left": [
+      -0.174533,
+      0.7853982
+    ]
+  },
+  "raw_totals": {
+    "action": {
+      "right": {
+        "min": -0.7853981852531433,
+        "max": 0.1745329201221466,
+        "below": 0,
+        "above": 0,
+        "over_01_rad": 0,
+        "max_below_rad": 0.0,
+        "max_above_rad": 0.0
+      },
+      "left": {
+        "min": -0.1745329201221466,
+        "max": 0.7853981852531433,
+        "below": 0,
+        "above": 0,
+        "over_01_rad": 0,
+        "max_below_rad": 0.0,
+        "max_above_rad": 0.0
+      }
+    },
+    "obs": {
+      "right": {
+        "min": -0.7928969264030457,
+        "max": 0.010872052982449532,
+        "below": 242609,
+        "above": 0,
+        "over_01_rad": 0,
+        "max_below_rad": 0.007498726403045608,
+        "max_above_rad": 0.0
+      },
+      "left": {
+        "min": -0.008201723918318748,
+        "max": 0.8237964510917664,
+        "below": 0,
+        "above": 6881,
+        "over_01_rad": 165,
+        "max_below_rad": 0.0,
+        "max_above_rad": 0.03839825109176631
+      }
+    }
+  },
+  "episodes": [
+    {
+      "episode": 5,
+      "style": "release_then_push",
+      "frames": 823,
+      "plans": 42,
+      "raw": {
+        "right_action": {
+          "min": -0.7853981852531433,
+          "max": 0.1745329201221466,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "right_obs": {
+          "min": -0.7879377603530884,
+          "max": -0.2454795092344284,
+          "below": 5427,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0025395603530883326,
+          "max_above_rad": 0.0
+        },
+        "left_action": {
+          "min": -0.1745329201221466,
+          "max": 0.7853981852531433,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "left_obs": {
+          "min": -0.007438773289322853,
+          "max": 0.7852674126625061,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        }
+      },
+      "close": {
+        "model": {
+          "close_frame": 329,
+          "close_s": 10.967,
+          "small_move_frame": 5,
+          "small_move_s": 0.167
+        },
+        "demo": {
+          "close_frame": 358,
+          "close_s": 11.933,
+          "small_move_frame": 357,
+          "small_move_s": 11.9
+        },
+        "observed": {
+          "close_frame": 362,
+          "close_s": 12.067,
+          "small_move_frame": 359,
+          "small_move_s": 11.967
+        }
+      },
+      "model_minus_demo_s": -0.967,
+      "observed_at_model_close_rad": -0.7856488823890686,
+      "first_left_out_of_bounds": {
+        "anchor": 20,
+        "step": 2,
+        "frame": 22,
+        "time_s": 0.733,
+        "model_rad": 0.7854599952697754,
+        "demo_rad": 0.7853981852531433,
+        "observed_rad": 0.7852674126625061,
+        "overshoot_rad": 6.179526977534433e-05
+      },
+      "right_windows_out_of_bounds": 8,
+      "left_windows_out_of_bounds": 22,
+      "left_windows_over_open_by_01_rad": 8,
+      "left_windows_past_either_limit_by_01_rad": 21,
+      "right_predicted_window_angle": {
+        "min": -0.8644523620605469,
+        "max": 0.39968329668045044,
+        "below": 94,
+        "above": 204,
+        "over_01_rad": 263,
+        "max_below_rad": 0.07905416206054683,
+        "max_above_rad": 0.22515029668045045
+      },
+      "left_predicted_window_angle": {
+        "min": -0.48270538449287415,
+        "max": 0.8857318758964539,
+        "below": 613,
+        "above": 118,
+        "over_01_rad": 677,
+        "max_below_rad": 0.30817238449287415,
+        "max_above_rad": 0.10033367589645381
+      }
+    },
+    {
+      "episode": 16,
+      "style": "release_then_push",
+      "frames": 867,
+      "plans": 44,
+      "raw": {
+        "right_action": {
+          "min": -0.7853981852531433,
+          "max": 0.1745329201221466,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "right_obs": {
+          "min": -0.7879377603530884,
+          "max": -0.24929426610469818,
+          "below": 5864,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0025395603530883326,
+          "max_above_rad": 0.0
+        },
+        "left_action": {
+          "min": -0.1745329201221466,
+          "max": 0.7853981852531433,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "left_obs": {
+          "min": -0.007438773289322853,
+          "max": 0.7852674126625061,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        }
+      },
+      "close": {
+        "model": {
+          "close_frame": 367,
+          "close_s": 12.233,
+          "small_move_frame": 344,
+          "small_move_s": 11.467
+        },
+        "demo": {
+          "close_frame": 441,
+          "close_s": 14.7,
+          "small_move_frame": 440,
+          "small_move_s": 14.667
+        },
+        "observed": {
+          "close_frame": 446,
+          "close_s": 14.867,
+          "small_move_frame": 442,
+          "small_move_s": 14.733
+        }
+      },
+      "model_minus_demo_s": -2.467,
+      "observed_at_model_close_rad": -0.7856488823890686,
+      "first_left_out_of_bounds": {
+        "anchor": 0,
+        "step": 0,
+        "frame": 0,
+        "time_s": 0.0,
+        "model_rad": 0.7977484464645386,
+        "demo_rad": 0.7853981852531433,
+        "observed_rad": 0.7852674126625061,
+        "overshoot_rad": 0.012350246464538528
+      },
+      "right_windows_out_of_bounds": 24,
+      "left_windows_out_of_bounds": 19,
+      "left_windows_over_open_by_01_rad": 4,
+      "left_windows_past_either_limit_by_01_rad": 14,
+      "right_predicted_window_angle": {
+        "min": -0.8506359457969666,
+        "max": 0.4317358136177063,
+        "below": 122,
+        "above": 383,
+        "over_01_rad": 455,
+        "max_below_rad": 0.0652377457969665,
+        "max_above_rad": 0.2572028136177063
+      },
+      "left_predicted_window_angle": {
+        "min": -0.4896641671657562,
+        "max": 0.829133152961731,
+        "below": 492,
+        "above": 32,
+        "over_01_rad": 501,
+        "max_below_rad": 0.31513116716575623,
+        "max_above_rad": 0.04373495296173091
+      }
+    },
+    {
+      "episode": 20,
+      "style": "release_then_push",
+      "frames": 837,
+      "plans": 42,
+      "raw": {
+        "right_action": {
+          "min": -0.7853981852531433,
+          "max": 0.1745329201221466,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "right_obs": {
+          "min": -0.7879377603530884,
+          "max": -0.24242770671844482,
+          "below": 5828,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0025395603530883326,
+          "max_above_rad": 0.0
+        },
+        "left_action": {
+          "min": -0.1745329201221466,
+          "max": 0.7853981852531433,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "left_obs": {
+          "min": -0.007057297509163618,
+          "max": 0.8062485456466675,
+          "below": 0,
+          "above": 682,
+          "over_01_rad": 66,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.020850345646667434
+        }
+      },
+      "close": {
+        "model": {
+          "close_frame": 366,
+          "close_s": 12.2,
+          "small_move_frame": 362,
+          "small_move_s": 12.067
+        },
+        "demo": {
+          "close_frame": 437,
+          "close_s": 14.567,
+          "small_move_frame": 436,
+          "small_move_s": 14.533
+        },
+        "observed": {
+          "close_frame": 441,
+          "close_s": 14.7,
+          "small_move_frame": 438,
+          "small_move_s": 14.6
+        }
+      },
+      "model_minus_demo_s": -2.367,
+      "observed_at_model_close_rad": -0.7856488823890686,
+      "first_left_out_of_bounds": {
+        "anchor": 160,
+        "step": 5,
+        "frame": 165,
+        "time_s": 5.5,
+        "model_rad": -0.1799117624759674,
+        "demo_rad": -0.1745329201221466,
+        "observed_rad": 0.08182650804519653,
+        "overshoot_rad": 0.0053787624759674135
+      },
+      "right_windows_out_of_bounds": 21,
+      "left_windows_out_of_bounds": 15,
+      "left_windows_over_open_by_01_rad": 1,
+      "left_windows_past_either_limit_by_01_rad": 11,
+      "right_predicted_window_angle": {
+        "min": -0.8695422410964966,
+        "max": 0.45834141969680786,
+        "below": 111,
+        "above": 308,
+        "over_01_rad": 351,
+        "max_below_rad": 0.08414404109649654,
+        "max_above_rad": 0.28380841969680787
+      },
+      "left_predicted_window_angle": {
+        "min": -0.47971925139427185,
+        "max": 0.7970914840698242,
+        "below": 496,
+        "above": 26,
+        "over_01_rad": 477,
+        "max_below_rad": 0.30518625139427186,
+        "max_above_rad": 0.011693284069824172
+      }
+    },
+    {
+      "episode": 24,
+      "style": "release_then_push",
+      "frames": 1150,
+      "plans": 58,
+      "raw": {
+        "right_action": {
+          "min": -0.7853981852531433,
+          "max": 0.1745329201221466,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "right_obs": {
+          "min": -0.7879377603530884,
+          "max": -0.20351719856262207,
+          "below": 7276,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0025395603530883326,
+          "max_above_rad": 0.0
+        },
+        "left_action": {
+          "min": -0.1745329201221466,
+          "max": 0.7853981852531433,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "left_obs": {
+          "min": -0.0078202486038208,
+          "max": 0.7852674126625061,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        }
+      },
+      "close": {
+        "model": {
+          "close_frame": 448,
+          "close_s": 14.933,
+          "small_move_frame": 7,
+          "small_move_s": 0.233
+        },
+        "demo": {
+          "close_frame": 460,
+          "close_s": 15.333,
+          "small_move_frame": 452,
+          "small_move_s": 15.067
+        },
+        "observed": {
+          "close_frame": 465,
+          "close_s": 15.5,
+          "small_move_frame": 455,
+          "small_move_s": 15.167
+        }
+      },
+      "model_minus_demo_s": -0.4,
+      "observed_at_model_close_rad": -0.7856488823890686,
+      "first_left_out_of_bounds": {
+        "anchor": 0,
+        "step": 0,
+        "frame": 0,
+        "time_s": 0.0,
+        "model_rad": 0.8270567655563354,
+        "demo_rad": 0.7853981852531433,
+        "observed_rad": 0.7852674126625061,
+        "overshoot_rad": 0.0416585655563354
+      },
+      "right_windows_out_of_bounds": 12,
+      "left_windows_out_of_bounds": 29,
+      "left_windows_over_open_by_01_rad": 2,
+      "left_windows_past_either_limit_by_01_rad": 24,
+      "right_predicted_window_angle": {
+        "min": -0.7861617803573608,
+        "max": 0.5034478306770325,
+        "below": 1,
+        "above": 470,
+        "over_01_rad": 467,
+        "max_below_rad": 0.0007635803573607935,
+        "max_above_rad": 0.3289148306770325
+      },
+      "left_predicted_window_angle": {
+        "min": -0.5804426670074463,
+        "max": 0.8270567655563354,
+        "below": 961,
+        "above": 13,
+        "over_01_rad": 953,
+        "max_below_rad": 0.4059096670074463,
+        "max_above_rad": 0.0416585655563354
+      }
+    },
+    {
+      "episode": 25,
+      "style": "release_then_push",
+      "frames": 957,
+      "plans": 48,
+      "raw": {
+        "right_action": {
+          "min": -0.7853981852531433,
+          "max": 0.1745329201221466,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "right_obs": {
+          "min": -0.7883192300796509,
+          "max": -0.24128328263759613,
+          "below": 5685,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0029210300796508326,
+          "max_above_rad": 0.0
+        },
+        "left_action": {
+          "min": -0.1745329201221466,
+          "max": 0.7853981852531433,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "left_obs": {
+          "min": -0.0078202486038208,
+          "max": 0.7852674126625061,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        }
+      },
+      "close": {
+        "model": {
+          "close_frame": 329,
+          "close_s": 10.967,
+          "small_move_frame": 2,
+          "small_move_s": 0.067
+        },
+        "demo": {
+          "close_frame": 388,
+          "close_s": 12.933,
+          "small_move_frame": 338,
+          "small_move_s": 11.267
+        },
+        "observed": {
+          "close_frame": 393,
+          "close_s": 13.1,
+          "small_move_frame": 341,
+          "small_move_s": 11.367
+        }
+      },
+      "model_minus_demo_s": -1.967,
+      "observed_at_model_close_rad": -0.7856488823890686,
+      "first_left_out_of_bounds": {
+        "anchor": 0,
+        "step": 0,
+        "frame": 0,
+        "time_s": 0.0,
+        "model_rad": 0.8109925985336304,
+        "demo_rad": 0.7853981852531433,
+        "observed_rad": 0.7852674126625061,
+        "overshoot_rad": 0.025594398533630325
+      },
+      "right_windows_out_of_bounds": 7,
+      "left_windows_out_of_bounds": 20,
+      "left_windows_over_open_by_01_rad": 3,
+      "left_windows_past_either_limit_by_01_rad": 19,
+      "right_predicted_window_angle": {
+        "min": -0.8056312799453735,
+        "max": 0.44032353162765503,
+        "below": 1,
+        "above": 254,
+        "over_01_rad": 239,
+        "max_below_rad": 0.02023307994537349,
+        "max_above_rad": 0.26579053162765504
+      },
+      "left_predicted_window_angle": {
+        "min": -0.5829013586044312,
+        "max": 0.8109925985336304,
+        "below": 735,
+        "above": 8,
+        "over_01_rad": 723,
+        "max_below_rad": 0.40836835860443116,
+        "max_above_rad": 0.025594398533630325
+      }
+    },
+    {
+      "episode": 30,
+      "style": "release_then_push",
+      "frames": 579,
+      "plans": 29,
+      "raw": {
+        "right_action": {
+          "min": -0.7853981852531433,
+          "max": 0.1745329201221466,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "right_obs": {
+          "min": -0.7879377603530884,
+          "max": -0.0020981156267225742,
+          "below": 3657,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0025395603530883326,
+          "max_above_rad": 0.0
+        },
+        "left_action": {
+          "min": -0.1745329201221466,
+          "max": 0.7853981852531433,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "left_obs": {
+          "min": -0.0078202486038208,
+          "max": 0.7856488823890686,
+          "below": 0,
+          "above": 427,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0002506823890685572
+        }
+      },
+      "close": {
+        "model": {
+          "close_frame": 307,
+          "close_s": 10.233,
+          "small_move_frame": 7,
+          "small_move_s": 0.233
+        },
+        "demo": {
+          "close_frame": 317,
+          "close_s": 10.567,
+          "small_move_frame": 316,
+          "small_move_s": 10.533
+        },
+        "observed": {
+          "close_frame": 322,
+          "close_s": 10.733,
+          "small_move_frame": 318,
+          "small_move_s": 10.6
+        }
+      },
+      "model_minus_demo_s": -0.333,
+      "observed_at_model_close_rad": -0.7856488823890686,
+      "first_left_out_of_bounds": {
+        "anchor": 80,
+        "step": 0,
+        "frame": 80,
+        "time_s": 2.667,
+        "model_rad": 0.8053666353225708,
+        "demo_rad": 0.7853981852531433,
+        "observed_rad": 0.7852674126625061,
+        "overshoot_rad": 0.019968435322570754
+      },
+      "right_windows_out_of_bounds": 14,
+      "left_windows_out_of_bounds": 17,
+      "left_windows_over_open_by_01_rad": 4,
+      "left_windows_past_either_limit_by_01_rad": 16,
+      "right_predicted_window_angle": {
+        "min": -0.8067257404327393,
+        "max": 0.512330949306488,
+        "below": 53,
+        "above": 189,
+        "over_01_rad": 199,
+        "max_below_rad": 0.02132754043273921,
+        "max_above_rad": 0.33779794930648804
+      },
+      "left_predicted_window_angle": {
+        "min": -0.41760697960853577,
+        "max": 0.822847843170166,
+        "below": 440,
+        "above": 25,
+        "over_01_rad": 449,
+        "max_below_rad": 0.24307397960853577,
+        "max_above_rad": 0.03744964317016597
+      }
+    },
+    {
+      "episode": 34,
+      "style": "release_then_push",
+      "frames": 718,
+      "plans": 36,
+      "raw": {
+        "right_action": {
+          "min": -0.7853981852531433,
+          "max": 0.1745329201221466,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "right_obs": {
+          "min": -0.7879377603530884,
+          "max": -0.16117341816425323,
+          "below": 4729,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0025395603530883326,
+          "max_above_rad": 0.0
+        },
+        "left_action": {
+          "min": -0.1745329201221466,
+          "max": 0.7853981852531433,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "left_obs": {
+          "min": -0.0078202486038208,
+          "max": 0.7852674126625061,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        }
+      },
+      "close": {
+        "model": {
+          "close_frame": 9,
+          "close_s": 0.3,
+          "small_move_frame": 2,
+          "small_move_s": 0.067
+        },
+        "demo": {
+          "close_frame": 340,
+          "close_s": 11.333,
+          "small_move_frame": 338,
+          "small_move_s": 11.267
+        },
+        "observed": {
+          "close_frame": 344,
+          "close_s": 11.467,
+          "small_move_frame": 340,
+          "small_move_s": 11.333
+        }
+      },
+      "model_minus_demo_s": -11.033,
+      "observed_at_model_close_rad": -0.7856488823890686,
+      "first_left_out_of_bounds": {
+        "anchor": 0,
+        "step": 0,
+        "frame": 0,
+        "time_s": 0.0,
+        "model_rad": 0.7861896753311157,
+        "demo_rad": 0.7853981852531433,
+        "observed_rad": 0.7852674126625061,
+        "overshoot_rad": 0.0007914753311156764
+      },
+      "right_windows_out_of_bounds": 22,
+      "left_windows_out_of_bounds": 16,
+      "left_windows_over_open_by_01_rad": 2,
+      "left_windows_past_either_limit_by_01_rad": 15,
+      "right_predicted_window_angle": {
+        "min": -0.827862024307251,
+        "max": 0.534467875957489,
+        "below": 8,
+        "above": 701,
+        "over_01_rad": 689,
+        "max_below_rad": 0.04246382430725093,
+        "max_above_rad": 0.359934875957489
+      },
+      "left_predicted_window_angle": {
+        "min": -0.5988496541976929,
+        "max": 0.8119606971740723,
+        "below": 580,
+        "above": 11,
+        "over_01_rad": 580,
+        "max_below_rad": 0.4243166541976929,
+        "max_above_rad": 0.02656249717407222
+      }
+    },
+    {
+      "episode": 38,
+      "style": "hold_then_push",
+      "frames": 590,
+      "plans": 30,
+      "raw": {
+        "right_action": {
+          "min": -0.7853981852531433,
+          "max": 0.1745329201221466,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "right_obs": {
+          "min": -0.7879377603530884,
+          "max": -0.23403525352478027,
+          "below": 3682,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0025395603530883326,
+          "max_above_rad": 0.0
+        },
+        "left_action": {
+          "min": -0.1745329201221466,
+          "max": 0.7853981852531433,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "left_obs": {
+          "min": 0.10090028494596481,
+          "max": 0.7951858043670654,
+          "below": 0,
+          "above": 301,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.009787604367065383
+        }
+      },
+      "close": {
+        "model": {
+          "close_frame": 188,
+          "close_s": 6.267,
+          "small_move_frame": 2,
+          "small_move_s": 0.067
+        },
+        "demo": {
+          "close_frame": 221,
+          "close_s": 7.367,
+          "small_move_frame": 219,
+          "small_move_s": 7.3
+        },
+        "observed": {
+          "close_frame": 226,
+          "close_s": 7.533,
+          "small_move_frame": 222,
+          "small_move_s": 7.4
+        }
+      },
+      "model_minus_demo_s": -1.1,
+      "observed_at_model_close_rad": -0.7856488823890686,
+      "first_left_out_of_bounds": {
+        "anchor": 0,
+        "step": 0,
+        "frame": 0,
+        "time_s": 0.0,
+        "model_rad": 0.7873111367225647,
+        "demo_rad": 0.7853981852531433,
+        "observed_rad": 0.7852674126625061,
+        "overshoot_rad": 0.001912936722564651
+      },
+      "right_windows_out_of_bounds": 10,
+      "left_windows_out_of_bounds": 18,
+      "left_windows_over_open_by_01_rad": 5,
+      "left_windows_past_either_limit_by_01_rad": 15,
+      "right_predicted_window_angle": {
+        "min": -0.8144762516021729,
+        "max": 0.3538413643836975,
+        "below": 50,
+        "above": 232,
+        "over_01_rad": 254,
+        "max_below_rad": 0.029078051602172805,
+        "max_above_rad": 0.17930836438369752
+      },
+      "left_predicted_window_angle": {
+        "min": -0.3548656404018402,
+        "max": 0.8664735555648804,
+        "below": 388,
+        "above": 19,
+        "over_01_rad": 362,
+        "max_below_rad": 0.18033264040184022,
+        "max_above_rad": 0.08107535556488032
+      }
+    },
+    {
+      "episode": 41,
+      "style": "hold_then_push",
+      "frames": 572,
+      "plans": 29,
+      "raw": {
+        "right_action": {
+          "min": -0.7853981852531433,
+          "max": 0.1745329201221466,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "right_obs": {
+          "min": -0.7879377603530884,
+          "max": -0.1653696447610855,
+          "below": 3434,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0025395603530883326,
+          "max_above_rad": 0.0
+        },
+        "left_action": {
+          "min": -0.1745329201221466,
+          "max": 0.7853981852531433,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "left_obs": {
+          "min": 0.09555962681770325,
+          "max": 0.7852674126625061,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        }
+      },
+      "close": {
+        "model": {
+          "close_frame": 10,
+          "close_s": 0.333,
+          "small_move_frame": 2,
+          "small_move_s": 0.067
+        },
+        "demo": {
+          "close_frame": 240,
+          "close_s": 8.0,
+          "small_move_frame": 237,
+          "small_move_s": 7.9
+        },
+        "observed": {
+          "close_frame": 244,
+          "close_s": 8.133,
+          "small_move_frame": 239,
+          "small_move_s": 7.967
+        }
+      },
+      "model_minus_demo_s": -7.667,
+      "observed_at_model_close_rad": -0.7856488823890686,
+      "first_left_out_of_bounds": {
+        "anchor": 120,
+        "step": 0,
+        "frame": 120,
+        "time_s": 4.0,
+        "model_rad": 0.7968716025352478,
+        "demo_rad": 0.7853981852531433,
+        "observed_rad": 0.7852674126625061,
+        "overshoot_rad": 0.011473402535247756
+      },
+      "right_windows_out_of_bounds": 23,
+      "left_windows_out_of_bounds": 18,
+      "left_windows_over_open_by_01_rad": 1,
+      "left_windows_past_either_limit_by_01_rad": 15,
+      "right_predicted_window_angle": {
+        "min": -0.8256363272666931,
+        "max": 0.5738344788551331,
+        "below": 56,
+        "above": 503,
+        "over_01_rad": 507,
+        "max_below_rad": 0.04023812726669307,
+        "max_above_rad": 0.39930147885513306
+      },
+      "left_predicted_window_angle": {
+        "min": -0.3883127272129059,
+        "max": 0.7968716025352478,
+        "below": 621,
+        "above": 4,
+        "over_01_rad": 574,
+        "max_below_rad": 0.2137797272129059,
+        "max_above_rad": 0.011473402535247756
+      }
+    },
+    {
+      "episode": 43,
+      "style": "hold_then_push",
+      "frames": 594,
+      "plans": 30,
+      "raw": {
+        "right_action": {
+          "min": -0.7853981852531433,
+          "max": 0.16937579214572906,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "right_obs": {
+          "min": -0.7879377603530884,
+          "max": -0.21801327168941498,
+          "below": 3460,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0025395603530883326,
+          "max_above_rad": 0.0
+        },
+        "left_action": {
+          "min": -0.1745329201221466,
+          "max": 0.7853981852531433,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        },
+        "left_obs": {
+          "min": 0.10471503436565399,
+          "max": 0.7852674126625061,
+          "below": 0,
+          "above": 0,
+          "over_01_rad": 0,
+          "max_below_rad": 0.0,
+          "max_above_rad": 0.0
+        }
+      },
+      "close": {
+        "model": {
+          "close_frame": 48,
+          "close_s": 1.6,
+          "small_move_frame": 4,
+          "small_move_s": 0.133
+        },
+        "demo": {
+          "close_frame": 253,
+          "close_s": 8.433,
+          "small_move_frame": 250,
+          "small_move_s": 8.333
+        },
+        "observed": {
+          "close_frame": 257,
+          "close_s": 8.567,
+          "small_move_frame": 252,
+          "small_move_s": 8.4
+        }
+      },
+      "model_minus_demo_s": -6.833,
+      "observed_at_model_close_rad": -0.7856488823890686,
+      "first_left_out_of_bounds": {
+        "anchor": 140,
+        "step": 2,
+        "frame": 142,
+        "time_s": 4.733,
+        "model_rad": -0.1829344928264618,
+        "demo_rad": -0.1745329201221466,
+        "observed_rad": 0.10471503436565399,
+        "overshoot_rad": 0.008401492826461798
+      },
+      "right_windows_out_of_bounds": 9,
+      "left_windows_out_of_bounds": 16,
+      "left_windows_over_open_by_01_rad": 0,
+      "left_windows_past_either_limit_by_01_rad": 15,
+      "right_predicted_window_angle": {
+        "min": -0.8456177115440369,
+        "max": 0.3031805157661438,
+        "below": 60,
+        "above": 177,
+        "over_01_rad": 217,
+        "max_below_rad": 0.06021951154403682,
+        "max_above_rad": 0.1286475157661438
+      },
+      "left_predicted_window_angle": {
+        "min": -0.31046316027641296,
+        "max": 0.7818683385848999,
+        "below": 597,
+        "above": 0,
+        "over_01_rad": 547,
+        "max_below_rad": 0.13593016027641297,
+        "max_above_rad": 0.0
+      }
+    }
+  ],
+  "alternative_seed_full_replay": {
+    "seed": 1001,
+    "episodes": [
+      {
+        "episode": 5,
+        "style": "release_then_push",
+        "frames": 823,
+        "plans": 42,
+        "raw": {
+          "right_action": {
+            "min": -0.7853981852531433,
+            "max": 0.1745329201221466,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "right_obs": {
+            "min": -0.7879377603530884,
+            "max": -0.2454795092344284,
+            "below": 5427,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0025395603530883326,
+            "max_above_rad": 0.0
+          },
+          "left_action": {
+            "min": -0.1745329201221466,
+            "max": 0.7853981852531433,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "left_obs": {
+            "min": -0.007438773289322853,
+            "max": 0.7852674126625061,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          }
+        },
+        "close": {
+          "model": {
+            "close_frame": 360,
+            "close_s": 12.0,
+            "small_move_frame": 352,
+            "small_move_s": 11.733
+          },
+          "demo": {
+            "close_frame": 358,
+            "close_s": 11.933,
+            "small_move_frame": 357,
+            "small_move_s": 11.9
+          },
+          "observed": {
+            "close_frame": 362,
+            "close_s": 12.067,
+            "small_move_frame": 359,
+            "small_move_s": 11.967
+          }
+        },
+        "model_minus_demo_s": 0.067,
+        "observed_at_model_close_rad": -0.4865720570087433,
+        "first_left_out_of_bounds": {
+          "anchor": 0,
+          "step": 3,
+          "frame": 3,
+          "time_s": 0.1,
+          "model_rad": 0.7881141304969788,
+          "demo_rad": 0.7853981852531433,
+          "observed_rad": 0.7852674126625061,
+          "overshoot_rad": 0.0027159304969787135
+        },
+        "right_windows_out_of_bounds": 24,
+        "left_windows_out_of_bounds": 24,
+        "left_windows_over_open_by_01_rad": 20,
+        "left_windows_past_either_limit_by_01_rad": 22,
+        "right_predicted_window_angle": {
+          "min": -0.8749436736106873,
+          "max": 0.3223244547843933,
+          "below": 426,
+          "above": 105,
+          "over_01_rad": 271,
+          "max_below_rad": 0.08954547361068721,
+          "max_above_rad": 0.14779145478439332
+        },
+        "left_predicted_window_angle": {
+          "min": -0.23472800850868225,
+          "max": 1.1011221408843994,
+          "below": 34,
+          "above": 652,
+          "over_01_rad": 569,
+          "max_below_rad": 0.06019500850868226,
+          "max_above_rad": 0.31572394088439937
+        }
+      },
+      {
+        "episode": 16,
+        "style": "release_then_push",
+        "frames": 867,
+        "plans": 44,
+        "raw": {
+          "right_action": {
+            "min": -0.7853981852531433,
+            "max": 0.1745329201221466,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "right_obs": {
+            "min": -0.7879377603530884,
+            "max": -0.24929426610469818,
+            "below": 5864,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0025395603530883326,
+            "max_above_rad": 0.0
+          },
+          "left_action": {
+            "min": -0.1745329201221466,
+            "max": 0.7853981852531433,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "left_obs": {
+            "min": -0.007438773289322853,
+            "max": 0.7852674126625061,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          }
+        },
+        "close": {
+          "model": {
+            "close_frame": 428,
+            "close_s": 14.267,
+            "small_move_frame": 383,
+            "small_move_s": 12.767
+          },
+          "demo": {
+            "close_frame": 441,
+            "close_s": 14.7,
+            "small_move_frame": 440,
+            "small_move_s": 14.667
+          },
+          "observed": {
+            "close_frame": 446,
+            "close_s": 14.867,
+            "small_move_frame": 442,
+            "small_move_s": 14.733
+          }
+        },
+        "model_minus_demo_s": -0.433,
+        "observed_at_model_close_rad": -0.7856488823890686,
+        "first_left_out_of_bounds": {
+          "anchor": 0,
+          "step": 0,
+          "frame": 0,
+          "time_s": 0.0,
+          "model_rad": 0.7937309741973877,
+          "demo_rad": 0.7853981852531433,
+          "observed_rad": 0.7852674126625061,
+          "overshoot_rad": 0.008332774197387649
+        },
+        "right_windows_out_of_bounds": 34,
+        "left_windows_out_of_bounds": 27,
+        "left_windows_over_open_by_01_rad": 18,
+        "left_windows_past_either_limit_by_01_rad": 26,
+        "right_predicted_window_angle": {
+          "min": -0.84870445728302,
+          "max": 0.3088293671607971,
+          "below": 880,
+          "above": 187,
+          "over_01_rad": 607,
+          "max_below_rad": 0.06330625728301997,
+          "max_above_rad": 0.13429636716079713
+        },
+        "left_predicted_window_angle": {
+          "min": -0.4396938979625702,
+          "max": 1.0240850448608398,
+          "below": 249,
+          "above": 453,
+          "over_01_rad": 612,
+          "max_below_rad": 0.2651608979625702,
+          "max_above_rad": 0.2386868448608398
+        }
+      },
+      {
+        "episode": 20,
+        "style": "release_then_push",
+        "frames": 837,
+        "plans": 42,
+        "raw": {
+          "right_action": {
+            "min": -0.7853981852531433,
+            "max": 0.1745329201221466,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "right_obs": {
+            "min": -0.7879377603530884,
+            "max": -0.24242770671844482,
+            "below": 5828,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0025395603530883326,
+            "max_above_rad": 0.0
+          },
+          "left_action": {
+            "min": -0.1745329201221466,
+            "max": 0.7853981852531433,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "left_obs": {
+            "min": -0.007057297509163618,
+            "max": 0.8062485456466675,
+            "below": 0,
+            "above": 682,
+            "over_01_rad": 66,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.020850345646667434
+          }
+        },
+        "close": {
+          "model": {
+            "close_frame": 428,
+            "close_s": 14.267,
+            "small_move_frame": 369,
+            "small_move_s": 12.3
+          },
+          "demo": {
+            "close_frame": 437,
+            "close_s": 14.567,
+            "small_move_frame": 436,
+            "small_move_s": 14.533
+          },
+          "observed": {
+            "close_frame": 441,
+            "close_s": 14.7,
+            "small_move_frame": 438,
+            "small_move_s": 14.6
+          }
+        },
+        "model_minus_demo_s": -0.3,
+        "observed_at_model_close_rad": -0.7856488823890686,
+        "first_left_out_of_bounds": {
+          "anchor": 0,
+          "step": 6,
+          "frame": 6,
+          "time_s": 0.2,
+          "model_rad": 0.7887301445007324,
+          "demo_rad": 0.7853981852531433,
+          "observed_rad": 0.7852674126625061,
+          "overshoot_rad": 0.0033319445007323756
+        },
+        "right_windows_out_of_bounds": 39,
+        "left_windows_out_of_bounds": 25,
+        "left_windows_over_open_by_01_rad": 18,
+        "left_windows_past_either_limit_by_01_rad": 20,
+        "right_predicted_window_angle": {
+          "min": -0.8096449375152588,
+          "max": 0.3332490921020508,
+          "below": 745,
+          "above": 175,
+          "over_01_rad": 415,
+          "max_below_rad": 0.024246737515258743,
+          "max_above_rad": 0.1587160921020508
+        },
+        "left_predicted_window_angle": {
+          "min": -0.21335354447364807,
+          "max": 0.9358655214309692,
+          "below": 23,
+          "above": 485,
+          "over_01_rad": 410,
+          "max_below_rad": 0.03882054447364808,
+          "max_above_rad": 0.1504673214309692
+        }
+      },
+      {
+        "episode": 24,
+        "style": "release_then_push",
+        "frames": 1150,
+        "plans": 58,
+        "raw": {
+          "right_action": {
+            "min": -0.7853981852531433,
+            "max": 0.1745329201221466,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "right_obs": {
+            "min": -0.7879377603530884,
+            "max": -0.20351719856262207,
+            "below": 7276,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0025395603530883326,
+            "max_above_rad": 0.0
+          },
+          "left_action": {
+            "min": -0.1745329201221466,
+            "max": 0.7853981852531433,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "left_obs": {
+            "min": -0.0078202486038208,
+            "max": 0.7852674126625061,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          }
+        },
+        "close": {
+          "model": {
+            "close_frame": 477,
+            "close_s": 15.9,
+            "small_move_frame": 460,
+            "small_move_s": 15.333
+          },
+          "demo": {
+            "close_frame": 460,
+            "close_s": 15.333,
+            "small_move_frame": 452,
+            "small_move_s": 15.067
+          },
+          "observed": {
+            "close_frame": 465,
+            "close_s": 15.5,
+            "small_move_frame": 455,
+            "small_move_s": 15.167
+          }
+        },
+        "model_minus_demo_s": 0.567,
+        "observed_at_model_close_rad": -0.21152819693088531,
+        "first_left_out_of_bounds": {
+          "anchor": 0,
+          "step": 0,
+          "frame": 0,
+          "time_s": 0.0,
+          "model_rad": 0.7953022718429565,
+          "demo_rad": 0.7853981852531433,
+          "observed_rad": 0.7852674126625061,
+          "overshoot_rad": 0.009904071842956497
+        },
+        "right_windows_out_of_bounds": 32,
+        "left_windows_out_of_bounds": 37,
+        "left_windows_over_open_by_01_rad": 24,
+        "left_windows_past_either_limit_by_01_rad": 34,
+        "right_predicted_window_angle": {
+          "min": -0.8381845951080322,
+          "max": 0.4171244502067566,
+          "below": 469,
+          "above": 308,
+          "over_01_rad": 548,
+          "max_below_rad": 0.05278639510803218,
+          "max_above_rad": 0.2425914502067566
+        },
+        "left_predicted_window_angle": {
+          "min": -0.3146699368953705,
+          "max": 0.9056993722915649,
+          "below": 71,
+          "above": 335,
+          "over_01_rad": 321,
+          "max_below_rad": 0.1401369368953705,
+          "max_above_rad": 0.1203011722915649
+        }
+      },
+      {
+        "episode": 25,
+        "style": "release_then_push",
+        "frames": 957,
+        "plans": 48,
+        "raw": {
+          "right_action": {
+            "min": -0.7853981852531433,
+            "max": 0.1745329201221466,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "right_obs": {
+            "min": -0.7883192300796509,
+            "max": -0.24128328263759613,
+            "below": 5685,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0029210300796508326,
+            "max_above_rad": 0.0
+          },
+          "left_action": {
+            "min": -0.1745329201221466,
+            "max": 0.7853981852531433,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "left_obs": {
+            "min": -0.0078202486038208,
+            "max": 0.7852674126625061,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          }
+        },
+        "close": {
+          "model": {
+            "close_frame": 400,
+            "close_s": 13.333,
+            "small_move_frame": 340,
+            "small_move_s": 11.333
+          },
+          "demo": {
+            "close_frame": 388,
+            "close_s": 12.933,
+            "small_move_frame": 338,
+            "small_move_s": 11.267
+          },
+          "observed": {
+            "close_frame": 393,
+            "close_s": 13.1,
+            "small_move_frame": 341,
+            "small_move_s": 11.367
+          }
+        },
+        "model_minus_demo_s": 0.4,
+        "observed_at_model_close_rad": -0.2447165697813034,
+        "first_left_out_of_bounds": {
+          "anchor": 0,
+          "step": 0,
+          "frame": 0,
+          "time_s": 0.0,
+          "model_rad": 0.8098932504653931,
+          "demo_rad": 0.7853981852531433,
+          "observed_rad": 0.7852674126625061,
+          "overshoot_rad": 0.02449505046539302
+        },
+        "right_windows_out_of_bounds": 15,
+        "left_windows_out_of_bounds": 26,
+        "left_windows_over_open_by_01_rad": 17,
+        "left_windows_past_either_limit_by_01_rad": 25,
+        "right_predicted_window_angle": {
+          "min": -0.8424414396286011,
+          "max": 0.3947933316230774,
+          "below": 212,
+          "above": 126,
+          "over_01_rad": 213,
+          "max_below_rad": 0.05704323962860103,
+          "max_above_rad": 0.2202603316230774
+        },
+        "left_predicted_window_angle": {
+          "min": -0.2588382661342621,
+          "max": 0.9556454420089722,
+          "below": 55,
+          "above": 264,
+          "over_01_rad": 282,
+          "max_below_rad": 0.08430526613426209,
+          "max_above_rad": 0.17024724200897212
+        }
+      },
+      {
+        "episode": 30,
+        "style": "release_then_push",
+        "frames": 579,
+        "plans": 29,
+        "raw": {
+          "right_action": {
+            "min": -0.7853981852531433,
+            "max": 0.1745329201221466,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "right_obs": {
+            "min": -0.7879377603530884,
+            "max": -0.0020981156267225742,
+            "below": 3657,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0025395603530883326,
+            "max_above_rad": 0.0
+          },
+          "left_action": {
+            "min": -0.1745329201221466,
+            "max": 0.7853981852531433,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "left_obs": {
+            "min": -0.0078202486038208,
+            "max": 0.7856488823890686,
+            "below": 0,
+            "above": 427,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0002506823890685572
+          }
+        },
+        "close": {
+          "model": {
+            "close_frame": 320,
+            "close_s": 10.667,
+            "small_move_frame": 309,
+            "small_move_s": 10.3
+          },
+          "demo": {
+            "close_frame": 317,
+            "close_s": 10.567,
+            "small_move_frame": 316,
+            "small_move_s": 10.533
+          },
+          "observed": {
+            "close_frame": 322,
+            "close_s": 10.733,
+            "small_move_frame": 318,
+            "small_move_s": 10.6
+          }
+        },
+        "model_minus_demo_s": 0.1,
+        "observed_at_model_close_rad": -0.4404135048389435,
+        "first_left_out_of_bounds": {
+          "anchor": 40,
+          "step": 0,
+          "frame": 40,
+          "time_s": 1.333,
+          "model_rad": 0.807873010635376,
+          "demo_rad": 0.7853981852531433,
+          "observed_rad": 0.7852674126625061,
+          "overshoot_rad": 0.02247481063537593
+        },
+        "right_windows_out_of_bounds": 28,
+        "left_windows_out_of_bounds": 17,
+        "left_windows_over_open_by_01_rad": 13,
+        "left_windows_past_either_limit_by_01_rad": 16,
+        "right_predicted_window_angle": {
+          "min": -0.8156542778015137,
+          "max": 0.44421011209487915,
+          "below": 648,
+          "above": 127,
+          "over_01_rad": 466,
+          "max_below_rad": 0.030256077801513626,
+          "max_above_rad": 0.26967711209487916
+        },
+        "left_predicted_window_angle": {
+          "min": -0.21970626711845398,
+          "max": 1.0050045251846313,
+          "below": 11,
+          "above": 302,
+          "over_01_rad": 266,
+          "max_below_rad": 0.045173267118453986,
+          "max_above_rad": 0.2196063251846313
+        }
+      },
+      {
+        "episode": 34,
+        "style": "release_then_push",
+        "frames": 718,
+        "plans": 36,
+        "raw": {
+          "right_action": {
+            "min": -0.7853981852531433,
+            "max": 0.1745329201221466,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "right_obs": {
+            "min": -0.7879377603530884,
+            "max": -0.16117341816425323,
+            "below": 4729,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0025395603530883326,
+            "max_above_rad": 0.0
+          },
+          "left_action": {
+            "min": -0.1745329201221466,
+            "max": 0.7853981852531433,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "left_obs": {
+            "min": -0.0078202486038208,
+            "max": 0.7852674126625061,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          }
+        },
+        "close": {
+          "model": {
+            "close_frame": 360,
+            "close_s": 12.0,
+            "small_move_frame": 66,
+            "small_move_s": 2.2
+          },
+          "demo": {
+            "close_frame": 340,
+            "close_s": 11.333,
+            "small_move_frame": 338,
+            "small_move_s": 11.267
+          },
+          "observed": {
+            "close_frame": 344,
+            "close_s": 11.467,
+            "small_move_frame": 340,
+            "small_move_s": 11.333
+          }
+        },
+        "model_minus_demo_s": 0.667,
+        "observed_at_model_close_rad": -0.1657511293888092,
+        "first_left_out_of_bounds": {
+          "anchor": 0,
+          "step": 0,
+          "frame": 0,
+          "time_s": 0.0,
+          "model_rad": 0.786996603012085,
+          "demo_rad": 0.7853981852531433,
+          "observed_rad": 0.7852674126625061,
+          "overshoot_rad": 0.0015984030120849146
+        },
+        "right_windows_out_of_bounds": 28,
+        "left_windows_out_of_bounds": 20,
+        "left_windows_over_open_by_01_rad": 15,
+        "left_windows_past_either_limit_by_01_rad": 19,
+        "right_predicted_window_angle": {
+          "min": -0.819548487663269,
+          "max": 0.540943443775177,
+          "below": 214,
+          "above": 325,
+          "over_01_rad": 460,
+          "max_below_rad": 0.034150287663269,
+          "max_above_rad": 0.366410443775177
+        },
+        "left_predicted_window_angle": {
+          "min": -0.2749094069004059,
+          "max": 0.90474534034729,
+          "below": 43,
+          "above": 361,
+          "over_01_rad": 359,
+          "max_below_rad": 0.10037640690040589,
+          "max_above_rad": 0.11934714034728999
+        }
+      },
+      {
+        "episode": 38,
+        "style": "hold_then_push",
+        "frames": 590,
+        "plans": 30,
+        "raw": {
+          "right_action": {
+            "min": -0.7853981852531433,
+            "max": 0.1745329201221466,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "right_obs": {
+            "min": -0.7879377603530884,
+            "max": -0.23403525352478027,
+            "below": 3682,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0025395603530883326,
+            "max_above_rad": 0.0
+          },
+          "left_action": {
+            "min": -0.1745329201221466,
+            "max": 0.7853981852531433,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "left_obs": {
+            "min": 0.10090028494596481,
+            "max": 0.7951858043670654,
+            "below": 0,
+            "above": 301,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.009787604367065383
+          }
+        },
+        "close": {
+          "model": {
+            "close_frame": 232,
+            "close_s": 7.733,
+            "small_move_frame": 206,
+            "small_move_s": 6.867
+          },
+          "demo": {
+            "close_frame": 221,
+            "close_s": 7.367,
+            "small_move_frame": 219,
+            "small_move_s": 7.3
+          },
+          "observed": {
+            "close_frame": 226,
+            "close_s": 7.533,
+            "small_move_frame": 222,
+            "small_move_s": 7.4
+          }
+        },
+        "model_minus_demo_s": 0.367,
+        "observed_at_model_close_rad": -0.23823148012161255,
+        "first_left_out_of_bounds": {
+          "anchor": 0,
+          "step": 0,
+          "frame": 0,
+          "time_s": 0.0,
+          "model_rad": 0.7946288585662842,
+          "demo_rad": 0.7853981852531433,
+          "observed_rad": 0.7852674126625061,
+          "overshoot_rad": 0.009230658566284133
+        },
+        "right_windows_out_of_bounds": 13,
+        "left_windows_out_of_bounds": 15,
+        "left_windows_over_open_by_01_rad": 11,
+        "left_windows_past_either_limit_by_01_rad": 12,
+        "right_predicted_window_angle": {
+          "min": -0.8405632972717285,
+          "max": 0.30754411220550537,
+          "below": 220,
+          "above": 78,
+          "over_01_rad": 197,
+          "max_below_rad": 0.05516509727172847,
+          "max_above_rad": 0.13301111220550538
+        },
+        "left_predicted_window_angle": {
+          "min": -0.2538268268108368,
+          "max": 1.0117696523666382,
+          "below": 24,
+          "above": 252,
+          "over_01_rad": 254,
+          "max_below_rad": 0.0792938268108368,
+          "max_above_rad": 0.22637145236663814
+        }
+      },
+      {
+        "episode": 41,
+        "style": "hold_then_push",
+        "frames": 572,
+        "plans": 29,
+        "raw": {
+          "right_action": {
+            "min": -0.7853981852531433,
+            "max": 0.1745329201221466,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "right_obs": {
+            "min": -0.7879377603530884,
+            "max": -0.1653696447610855,
+            "below": 3434,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0025395603530883326,
+            "max_above_rad": 0.0
+          },
+          "left_action": {
+            "min": -0.1745329201221466,
+            "max": 0.7853981852531433,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "left_obs": {
+            "min": 0.09555962681770325,
+            "max": 0.7852674126625061,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          }
+        },
+        "close": {
+          "model": {
+            "close_frame": 246,
+            "close_s": 8.2,
+            "small_move_frame": 50,
+            "small_move_s": 1.667
+          },
+          "demo": {
+            "close_frame": 240,
+            "close_s": 8.0,
+            "small_move_frame": 237,
+            "small_move_s": 7.9
+          },
+          "observed": {
+            "close_frame": 244,
+            "close_s": 8.133,
+            "small_move_frame": 239,
+            "small_move_s": 7.967
+          }
+        },
+        "model_minus_demo_s": 0.2,
+        "observed_at_model_close_rad": -0.18635080754756927,
+        "first_left_out_of_bounds": {
+          "anchor": 0,
+          "step": 6,
+          "frame": 6,
+          "time_s": 0.2,
+          "model_rad": 0.7923919558525085,
+          "demo_rad": 0.7853981852531433,
+          "observed_rad": 0.7852674126625061,
+          "overshoot_rad": 0.006993755852508499
+        },
+        "right_windows_out_of_bounds": 29,
+        "left_windows_out_of_bounds": 18,
+        "left_windows_over_open_by_01_rad": 10,
+        "left_windows_past_either_limit_by_01_rad": 15,
+        "right_predicted_window_angle": {
+          "min": -0.8550102710723877,
+          "max": 0.5270131230354309,
+          "below": 553,
+          "above": 210,
+          "over_01_rad": 510,
+          "max_below_rad": 0.06961207107238765,
+          "max_above_rad": 0.3524801230354309
+        },
+        "left_predicted_window_angle": {
+          "min": -0.2574184238910675,
+          "max": 0.9698766469955444,
+          "below": 76,
+          "above": 172,
+          "over_01_rad": 172,
+          "max_below_rad": 0.08288542389106751,
+          "max_above_rad": 0.1844784469955444
+        }
+      },
+      {
+        "episode": 43,
+        "style": "hold_then_push",
+        "frames": 594,
+        "plans": 30,
+        "raw": {
+          "right_action": {
+            "min": -0.7853981852531433,
+            "max": 0.16937579214572906,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "right_obs": {
+            "min": -0.7879377603530884,
+            "max": -0.21801327168941498,
+            "below": 3460,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0025395603530883326,
+            "max_above_rad": 0.0
+          },
+          "left_action": {
+            "min": -0.1745329201221466,
+            "max": 0.7853981852531433,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          },
+          "left_obs": {
+            "min": 0.10471503436565399,
+            "max": 0.7852674126625061,
+            "below": 0,
+            "above": 0,
+            "over_01_rad": 0,
+            "max_below_rad": 0.0,
+            "max_above_rad": 0.0
+          }
+        },
+        "close": {
+          "model": {
+            "close_frame": 260,
+            "close_s": 8.667,
+            "small_move_frame": 260,
+            "small_move_s": 8.667
+          },
+          "demo": {
+            "close_frame": 253,
+            "close_s": 8.433,
+            "small_move_frame": 250,
+            "small_move_s": 8.333
+          },
+          "observed": {
+            "close_frame": 257,
+            "close_s": 8.567,
+            "small_move_frame": 252,
+            "small_move_s": 8.4
+          }
+        },
+        "model_minus_demo_s": 0.233,
+        "observed_at_model_close_rad": -0.22640573978424072,
+        "first_left_out_of_bounds": {
+          "anchor": 0,
+          "step": 0,
+          "frame": 0,
+          "time_s": 0.0,
+          "model_rad": 0.7881190180778503,
+          "demo_rad": 0.7853981852531433,
+          "observed_rad": 0.7852674126625061,
+          "overshoot_rad": 0.0027208180778502955
+        },
+        "right_windows_out_of_bounds": 17,
+        "left_windows_out_of_bounds": 11,
+        "left_windows_over_open_by_01_rad": 9,
+        "left_windows_past_either_limit_by_01_rad": 10,
+        "right_predicted_window_angle": {
+          "min": -0.8825060129165649,
+          "max": 0.16622048616409302,
+          "below": 313,
+          "above": 0,
+          "over_01_rad": 117,
+          "max_below_rad": 0.0971078129165649,
+          "max_above_rad": 0.0
+        },
+        "left_predicted_window_angle": {
+          "min": -0.22329792380332947,
+          "max": 0.9112038612365723,
+          "below": 21,
+          "above": 191,
+          "over_01_rad": 172,
+          "max_below_rad": 0.048764923803329474,
+          "max_above_rad": 0.12580566123657222
+        }
+      }
+    ]
+  },
+  "alternative_seeds_opening_check": {
+    "frames": 80,
+    "first_consecutive_close_seconds_by_episode_and_seed": {
+      "34": {
+        "1001": null,
+        "1002": 0.3,
+        "1003": null
+      },
+      "41": {
+        "1001": null,
+        "1002": 0.333,
+        "1003": null
+      },
+      "43": {
+        "1001": null,
+        "1002": 1.6,
+        "1003": null
+      }
+    }
+  }
+}

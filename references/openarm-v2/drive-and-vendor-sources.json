@@ -1,0 +1,265 @@
+{
+  "drive_files_found": 39,
+  "folder_errors": [],
+  "files": [
+    {
+      "source": "https://drive.google.com/file/d/1lLDuoQAcl3YBKPE77F_1Z-8RzXEOFxpm/view",
+      "download": "https://drive.usercontent.google.com/download?id=1lLDuoQAcl3YBKPE77F_1Z-8RzXEOFxpm&export=download&confirm=t",
+      "file": "official-drive-v2/Software/openarm_vr_apk-v0.1.0.zip",
+      "bytes": 79336415
+    },
+    {
+      "source": "https://drive.google.com/file/d/15p1PYmEKcDmnYQ5Hy_trM8gIoFCADF5a/view",
+      "download": "https://drive.usercontent.google.com/download?id=15p1PYmEKcDmnYQ5Hy_trM8gIoFCADF5a&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm 2.0/OpenArm 2.0 BOM.xlsx",
+      "bytes": 15731
+    },
+    {
+      "source": "https://drive.google.com/file/d/1aU-V3lt_aPrZoRM8FFx6dMQu2f28Ws0I/view",
+      "download": "https://drive.usercontent.google.com/download?id=1aU-V3lt_aPrZoRM8FFx6dMQu2f28Ws0I&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm 2.0/OpenArm_2.0.STEP",
+      "bytes": 47788783
+    },
+    {
+      "source": "https://drive.google.com/file/d/1xHMssSOp9RfZD1K6H80Yyl4uTlpU3lTc/view",
+      "download": "https://drive.usercontent.google.com/download?id=1xHMssSOp9RfZD1K6H80Yyl4uTlpU3lTc&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm 2.0/README.docx",
+      "bytes": 7450
+    },
+    {
+      "source": "https://drive.google.com/file/d/1KojBKJe4hC0Oqus8LIUvfkKwnr3xQx3F/view",
+      "download": "https://drive.usercontent.google.com/download?id=1KojBKJe4hC0Oqus8LIUvfkKwnr3xQx3F&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/OpenArm Cell BOM.xlsx",
+      "bytes": 8295
+    },
+    {
+      "source": "https://drive.google.com/file/d/1il0ruNigmZ_AfcUPyRAz_hEbmok7gWX4/view",
+      "download": "https://drive.usercontent.google.com/download?id=1il0ruNigmZ_AfcUPyRAz_hEbmok7gWX4&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/OpenEvalCell_defeature.SLDPRT",
+      "bytes": 39108956
+    },
+    {
+      "source": "https://drive.google.com/file/d/1CBgghd7gDeWnKbbH2SOlk3yypSj0Dy5a/view",
+      "download": "https://drive.usercontent.google.com/download?id=1CBgghd7gDeWnKbbH2SOlk3yypSj0Dy5a&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/OpenEvalCell_defeature.STEP",
+      "bytes": 142832114
+    },
+    {
+      "source": "https://drive.google.com/file/d/1SmF1Q4BQa-QwytB2GYu1YTOXWrtz8T__/view",
+      "download": "https://drive.usercontent.google.com/download?id=1SmF1Q4BQa-QwytB2GYu1YTOXWrtz8T__&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/README.docx",
+      "bytes": 7429
+    },
+    {
+      "source": "https://drive.google.com/file/d/1Su7q0tcZzUQrelV_wr5NAbwXlM4AE8qW/view",
+      "download": "https://drive.usercontent.google.com/download?id=1Su7q0tcZzUQrelV_wr5NAbwXlM4AE8qW&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/OpenArm KER BOM.xlsx",
+      "bytes": 15803
+    },
+    {
+      "source": "https://drive.google.com/file/d/1DWNSQFINY0sE20X86_kdmCDp1YGyWVNy/view",
+      "download": "https://drive.usercontent.google.com/download?id=1DWNSQFINY0sE20X86_kdmCDp1YGyWVNy&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/OpenArm KER JIG BASE.STEP",
+      "bytes": 3687501
+    },
+    {
+      "source": "https://drive.google.com/file/d/1zlIPie9CycH_r2pLIHclKAHzV2yRIn3l/view",
+      "download": "https://drive.usercontent.google.com/download?id=1zlIPie9CycH_r2pLIHclKAHzV2yRIn3l&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/OpenArm KER.STEP",
+      "bytes": 26645206
+    },
+    {
+      "source": "https://drive.google.com/file/d/1QCt_oB05_1-gnUoWseIl-wp4ZzqyQDysYyS23wMWsIw/view",
+      "download": "https://docs.google.com/document/d/1QCt_oB05_1-gnUoWseIl-wp4ZzqyQDysYyS23wMWsIw/export?format=pdf",
+      "file": "official-drive-v2/Hardware/OpenArm KER/README.pdf",
+      "bytes": 61267
+    },
+    {
+      "source": "https://drive.google.com/file/d/18o7mJFN_W9kx9557TxaUIPYqmbgg887x/view",
+      "download": "https://drive.usercontent.google.com/download?id=18o7mJFN_W9kx9557TxaUIPYqmbgg887x&export=download&confirm=t",
+      "file": "official-drive-v2/Vendor/ArduCam/Arducam UVC Config Tool.zip",
+      "bytes": 119526459
+    },
+    {
+      "source": "https://drive.google.com/file/d/1dkaKUnIXCqX4eZXXzU1lzCb_DGHRIaNT/view",
+      "download": "https://drive.usercontent.google.com/download?id=1dkaKUnIXCqX4eZXXzU1lzCb_DGHRIaNT&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm 2.0/Options/OpenArm_2.0_Chest_Cover.STEP",
+      "bytes": 2250838
+    },
+    {
+      "source": "https://drive.google.com/file/d/1qnq6731sh7i0lWTN5P3hcjpUrkMuAwjh/view",
+      "download": "https://drive.usercontent.google.com/download?id=1qnq6731sh7i0lWTN5P3hcjpUrkMuAwjh&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm 2.0/Options/OpenArm_2.0_Head_Cover.STEP",
+      "bytes": 1729155
+    },
+    {
+      "source": "https://drive.google.com/file/d/1mP0gDFgGaX6Ufobr8ocyg71ccsYgfBDw/view",
+      "download": "https://drive.usercontent.google.com/download?id=1mP0gDFgGaX6Ufobr8ocyg71ccsYgfBDw&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm 2.0/Options/OpenArm_2.0_w_Head_Camera.STEP",
+      "bytes": 50200547
+    },
+    {
+      "source": "https://drive.google.com/file/d/1dZNUfoNDauqLoxLAgfdjrjm5wZEi3KGA/view",
+      "download": "https://drive.usercontent.google.com/download?id=1dZNUfoNDauqLoxLAgfdjrjm5wZEi3KGA&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/Elec/CELL_WIRING.pdf",
+      "bytes": 49690
+    },
+    {
+      "source": "https://drive.google.com/file/d/1BpHJtbkg-uVoz8ZZrl4nGJyacPUTmq8F/view",
+      "download": "https://drive.usercontent.google.com/download?id=1BpHJtbkg-uVoz8ZZrl4nGJyacPUTmq8F&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/Elec/CELL_WIRING.xlsx",
+      "bytes": 11086
+    },
+    {
+      "source": "https://drive.google.com/file/d/1-R55Idf_G9TvjUsMl-cZ8esXmvPLjKyC/view",
+      "download": "https://drive.usercontent.google.com/download?id=1-R55Idf_G9TvjUsMl-cZ8esXmvPLjKyC&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/Elec/PWR-CIRCUIT-DIN-RAIL-BUS_2.zip",
+      "bytes": 123429
+    },
+    {
+      "source": "https://drive.google.com/file/d/1qOt1T4XzuH-iukmT8rXmuCF_NDZwrPSZ/view",
+      "download": "https://drive.usercontent.google.com/download?id=1qOt1T4XzuH-iukmT8rXmuCF_NDZwrPSZ&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/Integration with OpenArm/OpenArm_Cell_cover_a.STEP",
+      "bytes": 223989
+    },
+    {
+      "source": "https://drive.google.com/file/d/1lne22UpsztWr2t0TdqJxpJoMEt5Z6LGA/view",
+      "download": "https://drive.usercontent.google.com/download?id=1lne22UpsztWr2t0TdqJxpJoMEt5Z6LGA&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/Integration with OpenArm/OpenArm_Cell_cover_b.STEP",
+      "bytes": 977299
+    },
+    {
+      "source": "https://drive.google.com/file/d/1o3eUXLWWgTuWCb5OTmLyBQvEH0nXxT0w/view",
+      "download": "https://drive.usercontent.google.com/download?id=1o3eUXLWWgTuWCb5OTmLyBQvEH0nXxT0w&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/Integration with OpenArm/OpenArm_Cell+OpenArm_2.0.STEP",
+      "bytes": 194761438
+    },
+    {
+      "source": "https://drive.google.com/file/d/1Ak9ZRbhdeep9R8xsPZbKWIEbY99sg-Am/view",
+      "download": "https://drive.usercontent.google.com/download?id=1Ak9ZRbhdeep9R8xsPZbKWIEbY99sg-Am&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/JIG/OpenArmJIG_BOM.xlsx",
+      "bytes": 3833050
+    },
+    {
+      "source": "https://drive.google.com/file/d/1V3CDlTN64f95u9gtATIn5wNTBGyUE3tx/view",
+      "download": "https://drive.usercontent.google.com/download?id=1V3CDlTN64f95u9gtATIn5wNTBGyUE3tx&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm Cell/JIG/OpenArmJIG.STEP",
+      "bytes": 855178
+    },
+    {
+      "source": "https://drive.google.com/file/d/1lFlYdutOH_qJoYCRDOVx_52406vT6uQZ/view",
+      "download": "https://drive.usercontent.google.com/download?id=1lFlYdutOH_qJoYCRDOVx_52406vT6uQZ&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/Cable/KER_CABLE_E.png",
+      "bytes": 559650
+    },
+    {
+      "source": "https://drive.google.com/file/d/10UM2Gz6qYCFwZwsiwa-YFEEOoj03MdE8/view",
+      "download": "https://drive.usercontent.google.com/download?id=10UM2Gz6qYCFwZwsiwa-YFEEOoj03MdE8&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/Cable/OpenArm_KER_Cable_Document.docx",
+      "bytes": 40978,
+      "source_filename": "OpenArm_KER_Cable_Document"
+    },
+    {
+      "source": "https://drive.google.com/file/d/116fQx4wdkW6PI5701_fPMBiE-dL3jFkN/view",
+      "download": "https://drive.usercontent.google.com/download?id=116fQx4wdkW6PI5701_fPMBiE-dL3jFkN&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/Encoder/Gerber_PCB2_5_2026-05-26.zip",
+      "bytes": 25931
+    },
+    {
+      "source": "https://drive.google.com/file/d/1AsExdG6gjag34Bm5OCkV7l06xHI7n0JB/view",
+      "download": "https://drive.usercontent.google.com/download?id=1AsExdG6gjag34Bm5OCkV7l06xHI7n0JB&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/Encoder/PickAndPlace_PCB2_5_2026_07_08.xlsx",
+      "bytes": 8078
+    },
+    {
+      "source": "https://drive.google.com/file/d/1OUSSkXK_eH8Nuj2jC9KFM96A7DayR_nk/view",
+      "download": "https://drive.usercontent.google.com/download?id=1OUSSkXK_eH8Nuj2jC9KFM96A7DayR_nk&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/Encoder/TLE_BOM.xlsx",
+      "bytes": 9214
+    },
+    {
+      "source": "https://drive.google.com/file/d/1VBS0nRoqaKCasUxytcFdmCmuggOyAgJh/view",
+      "download": "https://drive.usercontent.google.com/download?id=1VBS0nRoqaKCasUxytcFdmCmuggOyAgJh&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/Encoder/TLE_V3_BOM.csv",
+      "bytes": 2056
+    },
+    {
+      "source": "https://drive.google.com/file/d/1PGFMlxTwNVaEApsOMtOu2dyte7oK4i2V/view",
+      "download": "https://drive.usercontent.google.com/download?id=1PGFMlxTwNVaEApsOMtOu2dyte7oK4i2V&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/Encoder/TLE_V3_PCB.pdf",
+      "bytes": 135174
+    },
+    {
+      "source": "https://drive.google.com/file/d/1ZouTQ7XP46yTY4zb7zyZIrBTyxrGcYup/view",
+      "download": "https://drive.usercontent.google.com/download?id=1ZouTQ7XP46yTY4zb7zyZIrBTyxrGcYup&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/Encoder/TLE_V3_SCH.pdf",
+      "bytes": 104919
+    },
+    {
+      "source": "https://drive.google.com/file/d/1DT6S8nH_uEVGQ8Oq0kWuCKNv25_usvLO/view",
+      "download": "https://drive.usercontent.google.com/download?id=1DT6S8nH_uEVGQ8Oq0kWuCKNv25_usvLO&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/M5Stack/2d.png",
+      "bytes": 159706
+    },
+    {
+      "source": "https://drive.google.com/file/d/1wuVkOq1jqacCah-n8RlzZopptEpdE6o-/view",
+      "download": "https://drive.usercontent.google.com/download?id=1wuVkOq1jqacCah-n8RlzZopptEpdE6o-&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/M5Stack/3d.png",
+      "bytes": 106581
+    },
+    {
+      "source": "https://drive.google.com/file/d/1TnuaKxUKv-6MaXFQ8sizg6GM8fwEnZcw/view",
+      "download": "https://drive.usercontent.google.com/download?id=1TnuaKxUKv-6MaXFQ8sizg6GM8fwEnZcw&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/M5Stack/BOM_M5_485Bus_21_M5_485Bus_21_2026-06-26.xlsx",
+      "bytes": 9096
+    },
+    {
+      "source": "https://drive.google.com/file/d/1QFaPZBisLbQaFaUZuOU9ElYhD3Se32CZ/view",
+      "download": "https://drive.usercontent.google.com/download?id=1QFaPZBisLbQaFaUZuOU9ElYhD3Se32CZ&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/M5Stack/Gerber_M5_485Bus_21_2026-06-26.zip",
+      "bytes": 44369
+    },
+    {
+      "source": "https://drive.google.com/file/d/1LS12aoe2XvksNp-gO-gARmlSx9lr3p3y/view",
+      "download": "https://drive.usercontent.google.com/download?id=1LS12aoe2XvksNp-gO-gARmlSx9lr3p3y&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/M5Stack/Gerber_M5_485Bus_21_2026-08-13.zip",
+      "bytes": 44363
+    },
+    {
+      "source": "https://drive.google.com/file/d/1RWZfWAQ--UOX6SdjN2S5AEbvBdpRBnC9/view",
+      "download": "https://drive.usercontent.google.com/download?id=1RWZfWAQ--UOX6SdjN2S5AEbvBdpRBnC9&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/M5Stack/M5_485Bus_SCH.pdf",
+      "bytes": 125928
+    },
+    {
+      "source": "https://drive.google.com/file/d/1NcvvQLV0GuhD0qJMuC_5LPs-KvzLs3BN/view",
+      "download": "https://drive.usercontent.google.com/download?id=1NcvvQLV0GuhD0qJMuC_5LPs-KvzLs3BN&export=download&confirm=t",
+      "file": "official-drive-v2/Hardware/OpenArm KER/Elec/PCB/M5Stack/PickAndPlace_M5_485Bus_21_2026-08-13.xlsx",
+      "bytes": 7974
+    },
+    {
+      "source": "https://www.arducam.com/downloads/datasheet/B0495_AR0234_Global_Shutter_USB3.0_Camera_Module_Datasheet.pdf",
+      "download": "https://www.arducam.com/downloads/datasheet/B0495_AR0234_Global_Shutter_USB3.0_Camera_Module_Datasheet.pdf",
+      "file": "vendor/B0495_AR0234_Global_Shutter_USB3.0_Camera_Module_Datasheet.pdf",
+      "bytes": 443862
+    },
+    {
+      "source": "https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/Debugging_Tools_v.1.6.8.8.exe",
+      "download": "https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/Debugging_Tools_v.1.6.8.8.exe",
+      "file": "vendor/Debugging_Tools_v.1.6.8.8.exe",
+      "bytes": 8624008
+    },
+    {
+      "source": "https://docs.openarm.dev/assets/files/dm4310-5d089e0b013d8e2fc203c5b670008a66.pdf",
+      "download": "https://docs.openarm.dev/assets/files/dm4310-5d089e0b013d8e2fc203c5b670008a66.pdf",
+      "file": "vendor/DM-J4310-2EC-V1.1-zh.pdf",
+      "bytes": 555223
+    },
+    {
+      "source": "https://docs.openarm.dev/assets/files/dm8009-90ee7f15d06666e15afd49e5d5417150.pdf",
+      "download": "https://docs.openarm.dev/assets/files/dm8009-90ee7f15d06666e15afd49e5d5417150.pdf",
+      "file": "vendor/DM-J8009-2EC-zh.pdf",
+      "bytes": 706061
+    }
+  ]
+}

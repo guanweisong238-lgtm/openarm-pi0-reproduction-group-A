@@ -1,0 +1,195 @@
+{
+  "source": "results/real_taskC_step6500_guidance_comparison_20261125",
+  "stride": 20,
+  "recorded_fps": 30,
+  "scope": "Offline replay, no hardware or on-robot validation. After each switch, blend only arm targets from the two plans at the same recorded timestamp, with the nose of the new plan ramped in using cosine weights. Gripper targets never change. Raw model windows are not modified, so original whole-window range checks are unchanged. Speed comparisons assume fixed 30 Hz.",
+  "image_scope": "Frames were decoded and extracted; no verified visual or calibrated object alignment measurement.",
+  "episodes": {
+    "5": {
+      "keyframe_times": {
+        "model_close": {
+          "recorded_frame": 329,
+          "recording_s": 10.966666666666667,
+          "video_s": 1.6
+        },
+        "demo_close": {
+          "recorded_frame": 358,
+          "recording_s": 11.933333333333334,
+          "video_s": 3.533333333333333
+        }
+      },
+      "grasp_distance_proxy_mm": 32.26582384877209,
+      "variants": {
+        "0": {
+          "switches": 41,
+          "switch_arm_speed_fail": 32,
+          "switch_gripper_speed_fail": 3,
+          "switch_any_speed_fail": 33,
+          "full_arm_speed_fail": 32,
+          "full_gripper_speed_fail": 3,
+          "full_any_speed_fail": 33,
+          "arm_max_step_rad": 0.5627381801605225,
+          "arm_accel_near_switch_p95_rad_s2": 190.73886413574218,
+          "arm_tracking_demo_mae_rad": 0.03632577508687973,
+          "arm_demo_mae_near_grasp_rad": 0.025443492457270622,
+          "arm_demo_mae_in_model_early_closure_rad": 0.040159083902835846,
+          "emitted_arm_range_fail_frames": 0,
+          "emitted_grip_range_fail_frames": 416,
+          "joint_target_to_recorded_feedback_gap_fail_at_switch": 22,
+          "shorter_transitions": 0,
+          "grippers_exactly_unchanged": true
+        },
+        "4": {
+          "switches": 41,
+          "switch_arm_speed_fail": 0,
+          "switch_gripper_speed_fail": 3,
+          "switch_any_speed_fail": 3,
+          "full_arm_speed_fail": 8,
+          "full_gripper_speed_fail": 3,
+          "full_any_speed_fail": 11,
+          "arm_max_step_rad": 0.1967228353023529,
+          "arm_accel_near_switch_p95_rad_s2": 59.93367042541502,
+          "arm_tracking_demo_mae_rad": 0.039057228714227676,
+          "arm_demo_mae_near_grasp_rad": 0.02650626003742218,
+          "arm_demo_mae_in_model_early_closure_rad": 0.040159083902835846,
+          "emitted_arm_range_fail_frames": 0,
+          "emitted_grip_range_fail_frames": 416,
+          "joint_target_to_recorded_feedback_gap_fail_at_switch": 38,
+          "shorter_transitions": 1,
+          "grippers_exactly_unchanged": true
+        },
+        "8": {
+          "switches": 41,
+          "switch_arm_speed_fail": 0,
+          "switch_gripper_speed_fail": 3,
+          "switch_any_speed_fail": 3,
+          "full_arm_speed_fail": 1,
+          "full_gripper_speed_fail": 3,
+          "full_any_speed_fail": 4,
+          "arm_max_step_rad": 0.14315760135650635,
+          "arm_accel_near_switch_p95_rad_s2": 25.1114065170288,
+          "arm_tracking_demo_mae_rad": 0.042550068348646164,
+          "arm_demo_mae_near_grasp_rad": 0.028031405061483383,
+          "arm_demo_mae_in_model_early_closure_rad": 0.040159083902835846,
+          "emitted_arm_range_fail_frames": 0,
+          "emitted_grip_range_fail_frames": 416,
+          "joint_target_to_recorded_feedback_gap_fail_at_switch": 38,
+          "shorter_transitions": 1,
+          "grippers_exactly_unchanged": true
+        },
+        "12": {
+          "switches": 41,
+          "switch_arm_speed_fail": 0,
+          "switch_gripper_speed_fail": 3,
+          "switch_any_speed_fail": 3,
+          "full_arm_speed_fail": 1,
+          "full_gripper_speed_fail": 3,
+          "full_any_speed_fail": 4,
+          "arm_max_step_rad": 0.14315760135650635,
+          "arm_accel_near_switch_p95_rad_s2": 14.806625270843503,
+          "arm_tracking_demo_mae_rad": 0.04591653123497963,
+          "arm_demo_mae_near_grasp_rad": 0.029908793047070503,
+          "arm_demo_mae_in_model_early_closure_rad": 0.04058609902858734,
+          "emitted_arm_range_fail_frames": 0,
+          "emitted_grip_range_fail_frames": 416,
+          "joint_target_to_recorded_feedback_gap_fail_at_switch": 38,
+          "shorter_transitions": 1,
+          "grippers_exactly_unchanged": true
+        }
+      }
+    },
+    "38": {
+      "keyframe_times": {
+        "model_close": {
+          "recorded_frame": 188,
+          "recording_s": 6.266666666666667,
+          "video_s": 1.6
+        },
+        "demo_close": {
+          "recorded_frame": 221,
+          "recording_s": 7.366666666666666,
+          "video_s": 3.8
+        }
+      },
+      "grasp_distance_proxy_mm": 55.98257584742625,
+      "variants": {
+        "0": {
+          "switches": 29,
+          "switch_arm_speed_fail": 19,
+          "switch_gripper_speed_fail": 5,
+          "switch_any_speed_fail": 20,
+          "full_arm_speed_fail": 19,
+          "full_gripper_speed_fail": 5,
+          "full_any_speed_fail": 20,
+          "arm_max_step_rad": 0.702142596244812,
+          "arm_accel_near_switch_p95_rad_s2": 185.72735137939452,
+          "arm_tracking_demo_mae_rad": 0.0433223582804203,
+          "arm_demo_mae_near_grasp_rad": 0.047001637518405914,
+          "arm_demo_mae_in_model_early_closure_rad": 0.03229936957359314,
+          "emitted_arm_range_fail_frames": 0,
+          "emitted_grip_range_fail_frames": 225,
+          "joint_target_to_recorded_feedback_gap_fail_at_switch": 18,
+          "shorter_transitions": 0,
+          "grippers_exactly_unchanged": true
+        },
+        "4": {
+          "switches": 29,
+          "switch_arm_speed_fail": 1,
+          "switch_gripper_speed_fail": 5,
+          "switch_any_speed_fail": 6,
+          "full_arm_speed_fail": 17,
+          "full_gripper_speed_fail": 5,
+          "full_any_speed_fail": 22,
+          "arm_max_step_rad": 0.25133180618286133,
+          "arm_accel_near_switch_p95_rad_s2": 57.02044811248778,
+          "arm_tracking_demo_mae_rad": 0.04603855684399605,
+          "arm_demo_mae_near_grasp_rad": 0.04986774921417236,
+          "arm_demo_mae_in_model_early_closure_rad": 0.03229936957359314,
+          "emitted_arm_range_fail_frames": 0,
+          "emitted_grip_range_fail_frames": 225,
+          "joint_target_to_recorded_feedback_gap_fail_at_switch": 28,
+          "shorter_transitions": 0,
+          "grippers_exactly_unchanged": true
+        },
+        "8": {
+          "switches": 29,
+          "switch_arm_speed_fail": 0,
+          "switch_gripper_speed_fail": 5,
+          "switch_any_speed_fail": 5,
+          "full_arm_speed_fail": 4,
+          "full_gripper_speed_fail": 5,
+          "full_any_speed_fail": 9,
+          "arm_max_step_rad": 0.14192411303520203,
+          "arm_accel_near_switch_p95_rad_s2": 23.367435836791987,
+          "arm_tracking_demo_mae_rad": 0.04952765628695488,
+          "arm_demo_mae_near_grasp_rad": 0.05376661196351051,
+          "arm_demo_mae_in_model_early_closure_rad": 0.03229936957359314,
+          "emitted_arm_range_fail_frames": 0,
+          "emitted_grip_range_fail_frames": 225,
+          "joint_target_to_recorded_feedback_gap_fail_at_switch": 28,
+          "shorter_transitions": 0,
+          "grippers_exactly_unchanged": true
+        },
+        "12": {
+          "switches": 29,
+          "switch_arm_speed_fail": 0,
+          "switch_gripper_speed_fail": 5,
+          "switch_any_speed_fail": 5,
+          "full_arm_speed_fail": 0,
+          "full_gripper_speed_fail": 5,
+          "full_any_speed_fail": 5,
+          "arm_max_step_rad": 0.0993453711271286,
+          "arm_accel_near_switch_p95_rad_s2": 13.93011665344238,
+          "arm_tracking_demo_mae_rad": 0.05256684869527817,
+          "arm_demo_mae_near_grasp_rad": 0.0575544536113739,
+          "arm_demo_mae_in_model_early_closure_rad": 0.03249647840857506,
+          "emitted_arm_range_fail_frames": 0,
+          "emitted_grip_range_fail_frames": 225,
+          "joint_target_to_recorded_feedback_gap_fail_at_switch": 28,
+          "shorter_transitions": 1,
+          "grippers_exactly_unchanged": true
+        }
+      }
+    }
+  }
+}

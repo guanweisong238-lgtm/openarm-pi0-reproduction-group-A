@@ -1,0 +1,3254 @@
+[
+  {
+    "source": "https://docs.openarm.dev/blog",
+    "final_url": "https://docs.openarm.dev/blog/",
+    "file": "official-docs/blog/index.html",
+    "title": "Blog | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/search",
+    "final_url": "https://docs.openarm.dev/search/",
+    "file": "official-docs/search/index.html",
+    "title": "Search the documentation | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/",
+    "final_url": "https://docs.openarm.dev/1.0/",
+    "file": "official-docs/1.0/index.html",
+    "title": "Discover OpenArm | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/category/getting-started",
+    "final_url": "https://docs.openarm.dev/1.0/category/getting-started/",
+    "file": "official-docs/1.0/category/getting-started/index.html",
+    "title": "Getting started | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/category/hardware",
+    "final_url": "https://docs.openarm.dev/1.0/category/hardware/",
+    "file": "official-docs/1.0/category/hardware/index.html",
+    "title": "Hardware | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/faq/",
+    "final_url": "https://docs.openarm.dev/1.0/faq/",
+    "file": "official-docs/1.0/faq/index.html",
+    "title": "Questions | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/getting-started/contribute",
+    "final_url": "https://docs.openarm.dev/1.0/getting-started/contribute/",
+    "file": "official-docs/1.0/getting-started/contribute/index.html",
+    "title": "Contribution Guide | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/getting-started/project-overview",
+    "final_url": "https://docs.openarm.dev/1.0/getting-started/project-overview/",
+    "file": "official-docs/1.0/getting-started/project-overview/index.html",
+    "title": "Project Overview | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/getting-started/safety-guide",
+    "final_url": "https://docs.openarm.dev/1.0/getting-started/safety-guide/",
+    "file": "official-docs/1.0/getting-started/safety-guide/index.html",
+    "title": "Safety Guide | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/",
+    "file": "official-docs/1.0/hardware/index.html",
+    "title": "General | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/assembly-guide/final-assembly",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/assembly-guide/final-assembly/",
+    "file": "official-docs/1.0/hardware/assembly-guide/final-assembly/index.html",
+    "title": "8. Final assembly | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/assembly-guide/find-cad-files",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/assembly-guide/find-cad-files/",
+    "file": "official-docs/1.0/hardware/assembly-guide/find-cad-files/index.html",
+    "title": "0. Find CAD Files | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/assembly-guide/gripper-sub-assembly",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/assembly-guide/gripper-sub-assembly/",
+    "file": "official-docs/1.0/hardware/assembly-guide/gripper-sub-assembly/index.html",
+    "title": "7.1 Gripper (Follower) | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/assembly-guide/j1-j2-sub-assembly",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/assembly-guide/j1-j2-sub-assembly/",
+    "file": "official-docs/1.0/hardware/assembly-guide/j1-j2-sub-assembly/index.html",
+    "title": "2. J1-J2 | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/assembly-guide/j2-j3-sub-assembly",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/assembly-guide/j2-j3-sub-assembly/",
+    "file": "official-docs/1.0/hardware/assembly-guide/j2-j3-sub-assembly/index.html",
+    "title": "3. J2-J3 | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/assembly-guide/j3-j4-sub-assembly",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/assembly-guide/j3-j4-sub-assembly/",
+    "file": "official-docs/1.0/hardware/assembly-guide/j3-j4-sub-assembly/index.html",
+    "title": "4. J3-J4 | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/assembly-guide/j4-j5-sub-assembly",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/assembly-guide/j4-j5-sub-assembly/",
+    "file": "official-docs/1.0/hardware/assembly-guide/j4-j5-sub-assembly/index.html",
+    "title": "5. J4-J5 | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/assembly-guide/j5-j6-j7-sub-assembly",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/assembly-guide/j5-j6-j7-sub-assembly/",
+    "file": "official-docs/1.0/hardware/assembly-guide/j5-j6-j7-sub-assembly/index.html",
+    "title": "6. J5-J6-J7 | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/assembly-guide/leader-end-effector-sub-assembly",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/assembly-guide/leader-end-effector-sub-assembly/",
+    "file": "official-docs/1.0/hardware/assembly-guide/leader-end-effector-sub-assembly/index.html",
+    "title": "7.2 End-Effector (Leader) | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/assembly-guide/pedestal-assembly",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/assembly-guide/pedestal-assembly/",
+    "file": "official-docs/1.0/hardware/assembly-guide/pedestal-assembly/index.html",
+    "title": "1. Pedestal | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/arm-manufactured",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/arm-manufactured/",
+    "file": "official-docs/1.0/hardware/bill-of-materials/arm-manufactured/index.html",
+    "title": "Arm (Manufacturing) | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/arm-off-the-shelf",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/arm-off-the-shelf/",
+    "file": "official-docs/1.0/hardware/bill-of-materials/arm-off-the-shelf/index.html",
+    "title": "Arm (Off-The-Shelf) | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/electrical",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/electrical/",
+    "file": "official-docs/1.0/hardware/bill-of-materials/electrical/index.html",
+    "title": "Electronics | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/end-effector-leader",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/end-effector-leader/",
+    "file": "official-docs/1.0/hardware/bill-of-materials/end-effector-leader/index.html",
+    "title": "End-Effector (Leader) | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/gripper",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/gripper/",
+    "file": "official-docs/1.0/hardware/bill-of-materials/gripper/index.html",
+    "title": "Gripper (Follower) | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/pedestal",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/pedestal/",
+    "file": "official-docs/1.0/hardware/bill-of-materials/pedestal/index.html",
+    "title": "Pedestal | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/procuring-components",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/bill-of-materials/procuring-components/",
+    "file": "official-docs/1.0/hardware/bill-of-materials/procuring-components/index.html",
+    "title": "Procuring Components | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/specifications/gripper",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/specifications/gripper/",
+    "file": "official-docs/1.0/hardware/specifications/gripper/index.html",
+    "title": "Gripper | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/specifications/motor",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/specifications/motor/",
+    "file": "official-docs/1.0/hardware/specifications/motor/index.html",
+    "title": "Motor | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/wiring-and-casing-guide/arm-casing",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/wiring-and-casing-guide/arm-casing/",
+    "file": "official-docs/1.0/hardware/wiring-and-casing-guide/arm-casing/index.html",
+    "title": "2. Arm Casing | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/wiring-and-casing-guide/arm-wiring",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/wiring-and-casing-guide/arm-wiring/",
+    "file": "official-docs/1.0/hardware/wiring-and-casing-guide/arm-wiring/index.html",
+    "title": "1. Arm Wiring | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/wiring-and-casing-guide/chest",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/wiring-and-casing-guide/chest/",
+    "file": "official-docs/1.0/hardware/wiring-and-casing-guide/chest/index.html",
+    "title": "3. Chest Wiring & Casing | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/wiring-and-casing-guide/components",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/wiring-and-casing-guide/components/",
+    "file": "official-docs/1.0/hardware/wiring-and-casing-guide/components/index.html",
+    "title": "0. Components | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/hardware/wiring-and-casing-guide/power-can",
+    "final_url": "https://docs.openarm.dev/1.0/hardware/wiring-and-casing-guide/power-can/",
+    "file": "official-docs/1.0/hardware/wiring-and-casing-guide/power-can/index.html",
+    "title": "4. Power & CAN | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/simulation/",
+    "final_url": "https://docs.openarm.dev/1.0/simulation/",
+    "file": "official-docs/1.0/simulation/index.html",
+    "title": "Isaac Lab | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/simulation/mujoco",
+    "final_url": "https://docs.openarm.dev/1.0/simulation/mujoco/",
+    "file": "official-docs/1.0/simulation/mujoco/index.html",
+    "title": "MuJoCo | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/",
+    "final_url": "https://docs.openarm.dev/1.0/software/",
+    "file": "official-docs/1.0/software/index.html",
+    "title": "OpenArm Software Guide | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/can",
+    "final_url": "https://docs.openarm.dev/1.0/software/can/",
+    "file": "official-docs/1.0/software/can/index.html",
+    "title": "CAN Library | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/controls",
+    "final_url": "https://docs.openarm.dev/1.0/software/controls/",
+    "file": "official-docs/1.0/software/controls/index.html",
+    "title": "Controls | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/description",
+    "final_url": "https://docs.openarm.dev/1.0/software/description/",
+    "file": "official-docs/1.0/software/description/index.html",
+    "title": "Robot Description | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/ros2/control",
+    "final_url": "https://docs.openarm.dev/1.0/software/ros2/control/",
+    "file": "official-docs/1.0/software/ros2/control/index.html",
+    "title": "Control | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/ros2/install",
+    "final_url": "https://docs.openarm.dev/1.0/software/ros2/install/",
+    "file": "official-docs/1.0/software/ros2/install/index.html",
+    "title": "Installation | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/setup/",
+    "final_url": "https://docs.openarm.dev/1.0/software/setup/",
+    "file": "official-docs/1.0/software/setup/index.html",
+    "title": "OpenArm Setup Guide | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/setup/can-setup",
+    "final_url": "https://docs.openarm.dev/1.0/software/setup/can-setup/",
+    "file": "official-docs/1.0/software/setup/can-setup/index.html",
+    "title": "2. Setup CAN Interface | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/setup/configure-test",
+    "final_url": "https://docs.openarm.dev/1.0/software/setup/configure-test/",
+    "file": "official-docs/1.0/software/setup/configure-test/index.html",
+    "title": "3. Motor Test | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/setup/motor-config",
+    "final_url": "https://docs.openarm.dev/1.0/software/setup/motor-config/",
+    "file": "official-docs/1.0/software/setup/motor-config/index.html",
+    "title": "4. Motor Configuration | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/setup/motor-id",
+    "final_url": "https://docs.openarm.dev/1.0/software/setup/motor-id/",
+    "file": "official-docs/1.0/software/setup/motor-id/index.html",
+    "title": "1. Motor ID Configuration | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/setup/run-demo",
+    "final_url": "https://docs.openarm.dev/1.0/software/setup/run-demo/",
+    "file": "official-docs/1.0/software/setup/run-demo/index.html",
+    "title": "5. Hands-On: Demo Run | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/ubuntu/",
+    "final_url": "https://docs.openarm.dev/1.0/software/ubuntu/",
+    "file": "official-docs/1.0/software/ubuntu/index.html",
+    "title": "Installing Ubuntu (Quick Guide) | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/ubuntu/docker",
+    "final_url": "https://docs.openarm.dev/1.0/software/ubuntu/docker/",
+    "file": "official-docs/1.0/software/ubuntu/docker/index.html",
+    "title": "Docker | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/software/ubuntu/dual-boot",
+    "final_url": "https://docs.openarm.dev/1.0/software/ubuntu/dual-boot/",
+    "file": "official-docs/1.0/software/ubuntu/dual-boot/index.html",
+    "title": "Windows Dual Boot | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/teleop/",
+    "final_url": "https://docs.openarm.dev/1.0/teleop/",
+    "file": "official-docs/1.0/teleop/index.html",
+    "title": "Leader-Follower Teleoperation | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/teleop/leader-follower/bilateral-control",
+    "final_url": "https://docs.openarm.dev/1.0/teleop/leader-follower/bilateral-control/",
+    "file": "official-docs/1.0/teleop/leader-follower/bilateral-control/index.html",
+    "title": "Bilateral Force Feedback Control | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/teleop/leader-follower/setup-guide",
+    "final_url": "https://docs.openarm.dev/1.0/teleop/leader-follower/setup-guide/",
+    "file": "official-docs/1.0/teleop/leader-follower/setup-guide/index.html",
+    "title": "Setup Guide | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/teleop/leader-follower/unilateral-control",
+    "final_url": "https://docs.openarm.dev/1.0/teleop/leader-follower/unilateral-control/",
+    "file": "official-docs/1.0/teleop/leader-follower/unilateral-control/index.html",
+    "title": "Unilateral Control | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/1.0/teleop/vr",
+    "final_url": "https://docs.openarm.dev/1.0/teleop/vr/",
+    "file": "official-docs/1.0/teleop/vr/index.html",
+    "title": "VR | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/api-reference/",
+    "final_url": "https://docs.openarm.dev/api-reference/",
+    "file": "official-docs/api-reference/index.html",
+    "title": "OpenArm Software Guide | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/api-reference/can/",
+    "final_url": "https://docs.openarm.dev/api-reference/can/",
+    "file": "official-docs/api-reference/can/index.html",
+    "title": "CAN Library | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/api-reference/can/cli",
+    "final_url": "https://docs.openarm.dev/api-reference/can/cli/",
+    "file": "official-docs/api-reference/can/cli/index.html",
+    "title": "OpenArm CAN CLI | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/api-reference/description",
+    "final_url": "https://docs.openarm.dev/api-reference/description/",
+    "file": "official-docs/api-reference/description/index.html",
+    "title": "Robot Description | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/api-reference/dora",
+    "final_url": "https://docs.openarm.dev/api-reference/dora/",
+    "file": "official-docs/api-reference/dora/index.html",
+    "title": "Dora | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/api-reference/ros2/control",
+    "final_url": "https://docs.openarm.dev/api-reference/ros2/control/",
+    "file": "official-docs/api-reference/ros2/control/index.html",
+    "title": "Control | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/api-reference/ros2/install",
+    "final_url": "https://docs.openarm.dev/api-reference/ros2/install/",
+    "file": "official-docs/api-reference/ros2/install/index.html",
+    "title": "Installation | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/category/dataset",
+    "final_url": "https://docs.openarm.dev/category/dataset/",
+    "file": "official-docs/category/dataset/index.html",
+    "title": "Dataset | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/category/overview",
+    "final_url": "https://docs.openarm.dev/category/overview/",
+    "file": "official-docs/category/overview/index.html",
+    "title": "Overview | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/category/tutorial",
+    "final_url": "https://docs.openarm.dev/category/tutorial/",
+    "file": "official-docs/category/tutorial/index.html",
+    "title": "Tutorial | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/dataset/",
+    "final_url": "https://docs.openarm.dev/dataset/",
+    "file": "official-docs/dataset/index.html",
+    "title": "OpenArm Dataset | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/dataset/api",
+    "final_url": "https://docs.openarm.dev/dataset/api/",
+    "file": "official-docs/dataset/api/index.html",
+    "title": "OpenArm Dataset API | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/faq/",
+    "final_url": "https://docs.openarm.dev/faq/",
+    "file": "official-docs/faq/index.html",
+    "title": "Questions | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/hardware",
+    "final_url": "https://docs.openarm.dev/hardware/",
+    "file": "official-docs/hardware/index.html",
+    "title": "Hardware | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/hardware/openarm-2.0/general",
+    "final_url": "https://docs.openarm.dev/hardware/openarm-2.0/general/",
+    "file": "official-docs/hardware/openarm-2.0/general/index.html",
+    "title": "General | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/hardware/openarm-2.0/gripper",
+    "final_url": "https://docs.openarm.dev/hardware/openarm-2.0/gripper/",
+    "file": "official-docs/hardware/openarm-2.0/gripper/index.html",
+    "title": "Gripper | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/hardware/openarm-2.0/motor",
+    "final_url": "https://docs.openarm.dev/hardware/openarm-2.0/motor/",
+    "file": "official-docs/hardware/openarm-2.0/motor/index.html",
+    "title": "Motor | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/hardware/openarm-2.0/upgrade-from-1.0",
+    "final_url": "https://docs.openarm.dev/hardware/openarm-2.0/upgrade-from-1.0/",
+    "file": "official-docs/hardware/openarm-2.0/upgrade-from-1.0/index.html",
+    "title": "Upgrade from 1.0 | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/hardware/openarm-cell/general",
+    "final_url": "https://docs.openarm.dev/hardware/openarm-cell/general/",
+    "file": "official-docs/hardware/openarm-cell/general/index.html",
+    "title": "General | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/hardware/openarm-ker/calibration-workflow",
+    "final_url": "https://docs.openarm.dev/hardware/openarm-ker/calibration-workflow/",
+    "file": "official-docs/hardware/openarm-ker/calibration-workflow/index.html",
+    "title": "Calibration Workflow | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/hardware/openarm-ker/encoder-module",
+    "final_url": "https://docs.openarm.dev/hardware/openarm-ker/encoder-module/",
+    "file": "official-docs/hardware/openarm-ker/encoder-module/index.html",
+    "title": "Encoder Module | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/hardware/openarm-ker/general",
+    "final_url": "https://docs.openarm.dev/hardware/openarm-ker/general/",
+    "file": "official-docs/hardware/openarm-ker/general/index.html",
+    "title": "General | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/overview/contribute",
+    "final_url": "https://docs.openarm.dev/overview/contribute/",
+    "file": "official-docs/overview/contribute/index.html",
+    "title": "Contribution Guide | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/overview/safety-guide",
+    "final_url": "https://docs.openarm.dev/overview/safety-guide/",
+    "file": "official-docs/overview/safety-guide/index.html",
+    "title": "Safety Guide | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/overview/whats-new-in-2.0",
+    "final_url": "https://docs.openarm.dev/overview/whats-new-in-2.0/",
+    "file": "official-docs/overview/whats-new-in-2.0/index.html",
+    "title": "What's New in 2.0 | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/purchase/",
+    "final_url": "https://docs.openarm.dev/purchase/",
+    "file": "official-docs/purchase/index.html",
+    "title": "Buying OpenArm | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/setup",
+    "final_url": "https://docs.openarm.dev/setup/",
+    "file": "official-docs/setup/index.html",
+    "title": "Setup | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/setup/ker-setup/",
+    "final_url": "https://docs.openarm.dev/setup/ker-setup/",
+    "file": "official-docs/setup/ker-setup/index.html",
+    "title": "OpenArm KER Setup | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/setup/openarm-setup/",
+    "final_url": "https://docs.openarm.dev/setup/openarm-setup/",
+    "file": "official-docs/setup/openarm-setup/index.html",
+    "title": "OpenArm Setup Guide | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/setup/openarm-setup/can-setup",
+    "final_url": "https://docs.openarm.dev/setup/openarm-setup/can-setup/",
+    "file": "official-docs/setup/openarm-setup/can-setup/index.html",
+    "title": "2. Setup CAN Interface | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/setup/openarm-setup/configure-test",
+    "final_url": "https://docs.openarm.dev/setup/openarm-setup/configure-test/",
+    "file": "official-docs/setup/openarm-setup/configure-test/index.html",
+    "title": "3. Motor Test | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/setup/openarm-setup/motor-config",
+    "final_url": "https://docs.openarm.dev/setup/openarm-setup/motor-config/",
+    "file": "official-docs/setup/openarm-setup/motor-config/index.html",
+    "title": "4. Motor Configuration | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/setup/openarm-setup/motor-firmware-update",
+    "final_url": "https://docs.openarm.dev/setup/openarm-setup/motor-firmware-update/",
+    "file": "official-docs/setup/openarm-setup/motor-firmware-update/index.html",
+    "title": "6. Motor Firmware Update | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/setup/openarm-setup/motor-id",
+    "final_url": "https://docs.openarm.dev/setup/openarm-setup/motor-id/",
+    "file": "official-docs/setup/openarm-setup/motor-id/index.html",
+    "title": "1. Motor ID Configuration | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/setup/openarm-setup/run-demo",
+    "final_url": "https://docs.openarm.dev/setup/openarm-setup/run-demo/",
+    "file": "official-docs/setup/openarm-setup/run-demo/index.html",
+    "title": "5. Hands-On: Demo Run | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/simulation/",
+    "final_url": "https://docs.openarm.dev/simulation/",
+    "file": "official-docs/simulation/index.html",
+    "title": "Isaac Lab | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/simulation/mujoco",
+    "final_url": "https://docs.openarm.dev/simulation/mujoco/",
+    "file": "official-docs/simulation/mujoco/index.html",
+    "title": "MuJoCo | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/teleop/",
+    "final_url": "https://docs.openarm.dev/teleop/",
+    "file": "official-docs/teleop/index.html",
+    "title": "Leader-Follower Teleoperation | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/teleop/leader-follower/bilateral-control",
+    "final_url": "https://docs.openarm.dev/teleop/leader-follower/bilateral-control/",
+    "file": "official-docs/teleop/leader-follower/bilateral-control/index.html",
+    "title": "Bilateral Force Feedback Control | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/teleop/leader-follower/setup-guide",
+    "final_url": "https://docs.openarm.dev/teleop/leader-follower/setup-guide/",
+    "file": "official-docs/teleop/leader-follower/setup-guide/index.html",
+    "title": "Setup Guide | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/teleop/leader-follower/unilateral-control",
+    "final_url": "https://docs.openarm.dev/teleop/leader-follower/unilateral-control/",
+    "file": "official-docs/teleop/leader-follower/unilateral-control/index.html",
+    "title": "Unilateral Control | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/teleop/vr",
+    "final_url": "https://docs.openarm.dev/teleop/vr/",
+    "file": "official-docs/teleop/vr/index.html",
+    "title": "VR | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/tutorial/data-collection-ker",
+    "final_url": "https://docs.openarm.dev/tutorial/data-collection-ker/",
+    "file": "official-docs/tutorial/data-collection-ker/index.html",
+    "title": "Data collection (KER) | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/tutorial/data-collection-vr",
+    "final_url": "https://docs.openarm.dev/tutorial/data-collection-vr/",
+    "file": "official-docs/tutorial/data-collection-vr/index.html",
+    "title": "Data collection (VR) | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/tutorial/data-collection-webxr",
+    "final_url": "https://docs.openarm.dev/tutorial/data-collection-webxr/",
+    "file": "official-docs/tutorial/data-collection-webxr/index.html",
+    "title": "Data collection (WebXR) | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/tutorial/inference",
+    "final_url": "https://docs.openarm.dev/tutorial/inference/",
+    "file": "official-docs/tutorial/inference/index.html",
+    "title": "Inference | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/tutorial/setup",
+    "final_url": "https://docs.openarm.dev/tutorial/setup/",
+    "file": "official-docs/tutorial/setup/index.html",
+    "title": "Setup | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/tutorial/training",
+    "final_url": "https://docs.openarm.dev/tutorial/training/",
+    "file": "official-docs/tutorial/training/index.html",
+    "title": "Training | OpenArm"
+  },
+  {
+    "source": "https://docs.openarm.dev/",
+    "final_url": "https://docs.openarm.dev/",
+    "file": "official-docs/index.html",
+    "title": "Project Overview | OpenArm"
+  },
+  {
+    "source": "https://damiao.enactic.ai/blog",
+    "final_url": "https://damiao.enactic.ai/blog/",
+    "file": "vendor/damiao-docs/blog/index.html",
+    "title": "Blog | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/products/hardware/",
+    "final_url": "https://damiao.enactic.ai/products/hardware/",
+    "file": "vendor/damiao-docs/products/hardware/index.html",
+    "title": "製品 | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/products/hardware/dm-j4310-2ec-v1.1",
+    "final_url": "https://damiao.enactic.ai/products/hardware/dm-j4310-2ec-v1.1/",
+    "file": "vendor/damiao-docs/products/hardware/dm-j4310-2ec-v1.1/index.html",
+    "title": "DM-J4310-2EC V1.1 減速モーター | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/products/hardware/dm-j4340-2ec-v1.0",
+    "final_url": "https://damiao.enactic.ai/products/hardware/dm-j4340-2ec-v1.0/",
+    "file": "vendor/damiao-docs/products/hardware/dm-j4340-2ec-v1.0/index.html",
+    "title": "DM-J4340-2EC 減速モーター | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/products/hardware/dm-j4340p-2ec-v1.0",
+    "final_url": "https://damiao.enactic.ai/products/hardware/dm-j4340p-2ec-v1.0/",
+    "file": "vendor/damiao-docs/products/hardware/dm-j4340p-2ec-v1.0/index.html",
+    "title": "DM-J4340P-2EC 減速モーター | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/products/hardware/dm-j8009p-2ec-v1.0",
+    "final_url": "https://damiao.enactic.ai/products/hardware/dm-j8009p-2ec-v1.0/",
+    "file": "vendor/damiao-docs/products/hardware/dm-j8009p-2ec-v1.0/index.html",
+    "title": "DM-J8009P-2EC 減速モーター（クロスローラーベアリング） | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/products/hardware/dm-usbcu1",
+    "final_url": "https://damiao.enactic.ai/products/hardware/dm-usbcu1/",
+    "file": "vendor/damiao-docs/products/hardware/dm-usbcu1/index.html",
+    "title": "DM-USBCU1 USB-CAN変換モジュール | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/products/software/",
+    "final_url": "https://damiao.enactic.ai/products/software/",
+    "file": "vendor/damiao-docs/products/software/index.html",
+    "title": "ソフトウェア | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/products/software/dm-debugging-tool",
+    "final_url": "https://damiao.enactic.ai/products/software/dm-debugging-tool/",
+    "file": "vendor/damiao-docs/products/software/dm-debugging-tool/index.html",
+    "title": "DAMIAOデバッグツール | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/products/software/usb-can-conversion-software",
+    "final_url": "https://damiao.enactic.ai/products/software/usb-can-conversion-software/",
+    "file": "vendor/damiao-docs/products/software/usb-can-conversion-software/index.html",
+    "title": "USB-CAN変換ソフトウェア | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/recycling/",
+    "final_url": "https://damiao.enactic.ai/recycling/",
+    "file": "vendor/damiao-docs/recycling/index.html",
+    "title": "モーターリサイクル事業について | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/",
+    "final_url": "https://damiao.enactic.ai/",
+    "file": "vendor/damiao-docs/index.html",
+    "title": "DAMIAOモーター | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/products/hardware/",
+    "final_url": "https://damiao.enactic.ai/en/products/hardware/",
+    "file": "vendor/damiao-docs/en/products/hardware/index.html",
+    "title": "Products | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/products/hardware/dm-j4310-2ec-v1.1",
+    "final_url": "https://damiao.enactic.ai/en/products/hardware/dm-j4310-2ec-v1.1/",
+    "file": "vendor/damiao-docs/en/products/hardware/dm-j4310-2ec-v1.1/index.html",
+    "title": "DM-J4310-2EC V1.1 geared motor | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/products/hardware/dm-j4340-2ec-v1.0",
+    "final_url": "https://damiao.enactic.ai/en/products/hardware/dm-j4340-2ec-v1.0/",
+    "file": "vendor/damiao-docs/en/products/hardware/dm-j4340-2ec-v1.0/index.html",
+    "title": "DM-J4340-2EC geared motor | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/products/hardware/dm-j4340p-2ec-v1.0",
+    "final_url": "https://damiao.enactic.ai/en/products/hardware/dm-j4340p-2ec-v1.0/",
+    "file": "vendor/damiao-docs/en/products/hardware/dm-j4340p-2ec-v1.0/index.html",
+    "title": "DM-J4340P-2EC geared motor (Cross roller bearing) | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/products/hardware/dm-j8009p-2ec-v1.0",
+    "final_url": "https://damiao.enactic.ai/en/products/hardware/dm-j8009p-2ec-v1.0/",
+    "file": "vendor/damiao-docs/en/products/hardware/dm-j8009p-2ec-v1.0/index.html",
+    "title": "DM-J8009P-2EC geared motor (Cross roller bearing) | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/products/hardware/dm-usbcu1",
+    "final_url": "https://damiao.enactic.ai/en/products/hardware/dm-usbcu1/",
+    "file": "vendor/damiao-docs/en/products/hardware/dm-usbcu1/index.html",
+    "title": "DM-USBCU1 USB-CAN converter module | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/products/software/",
+    "final_url": "https://damiao.enactic.ai/en/products/software/",
+    "file": "vendor/damiao-docs/en/products/software/index.html",
+    "title": "Software | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/products/software/dm-debugging-tool",
+    "final_url": "https://damiao.enactic.ai/en/products/software/dm-debugging-tool/",
+    "file": "vendor/damiao-docs/en/products/software/dm-debugging-tool/index.html",
+    "title": "DAMIAO debugging tools | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/products/software/usb-can-conversion-software",
+    "final_url": "https://damiao.enactic.ai/en/products/software/usb-can-conversion-software/",
+    "file": "vendor/damiao-docs/en/products/software/usb-can-conversion-software/index.html",
+    "title": "USB-CAN converter software | DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/",
+    "final_url": "https://damiao.enactic.ai/en/",
+    "file": "vendor/damiao-docs/en/index.html",
+    "title": "DAMIAO Motor"
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/css/styles.9900a24f.css",
+    "file": "vendor/damiao-docs/assets/css/styles.9900a24f.css",
+    "bytes": 77670
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/files/dm-debugging-tool-014ee5b6f4a3dcb1260e0f5a97f83c72.pdf",
+    "file": "vendor/damiao-docs/assets/files/dm-debugging-tool-014ee5b6f4a3dcb1260e0f5a97f83c72.pdf",
+    "bytes": 3472850
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/files/dm-j4310-2ec-v1.1-zh-5d089e0b013d8e2fc203c5b670008a66.pdf",
+    "file": "vendor/damiao-docs/assets/files/dm-j4310-2ec-v1.1-zh-5d089e0b013d8e2fc203c5b670008a66.pdf",
+    "bytes": 555223
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/files/dm-j4340-2ec-v1.0-zh-0bb4aee8130412e17b4354e79a67d347.pdf",
+    "file": "vendor/damiao-docs/assets/files/dm-j4340-2ec-v1.0-zh-0bb4aee8130412e17b4354e79a67d347.pdf",
+    "bytes": 429309
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/files/dm-j4340p-2ec-v1.0-zh-8460bcc658b2f0e8830a63d4dffc18df.pdf",
+    "file": "vendor/damiao-docs/assets/files/dm-j4340p-2ec-v1.0-zh-8460bcc658b2f0e8830a63d4dffc18df.pdf",
+    "bytes": 751034
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/files/dm-j8009p-2ec-v1.0-zh-976b6fed966540041c0378bef48fb178.pdf",
+    "file": "vendor/damiao-docs/assets/files/dm-j8009p-2ec-v1.0-zh-976b6fed966540041c0378bef48fb178.pdf",
+    "bytes": 646688
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/files/dm-usbcu1-80763091bcedc7a10403b0579f4fba47.pdf",
+    "file": "vendor/damiao-docs/assets/files/dm-usbcu1-80763091bcedc7a10403b0579f4fba47.pdf",
+    "bytes": 101174
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/files/usb-can-conversion-software-c9b6c6574df380e2c249be0e5a307da6.pdf",
+    "file": "vendor/damiao-docs/assets/files/usb-can-conversion-software-c9b6c6574df380e2c249be0e5a307da6.pdf",
+    "bytes": 4938670
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image1-3532f0d681bebff3237783a5b8f9d31e.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image1-3532f0d681bebff3237783a5b8f9d31e.jpeg",
+    "bytes": 292486
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image1-3b8cb33229b6a8239a56246ac4195bb9.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image1-3b8cb33229b6a8239a56246ac4195bb9.jpeg",
+    "bytes": 21073
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image1-92abab8c417ec1ae38d4468cfae0250f.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image1-92abab8c417ec1ae38d4468cfae0250f.jpeg",
+    "bytes": 55251
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image1-ba3aff98518b216419ac6eb8d67e0126.jpg",
+    "file": "vendor/damiao-docs/assets/images/image1-ba3aff98518b216419ac6eb8d67e0126.jpg",
+    "bytes": 56839
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image1-d811ce95891424d913cfc4b313b36557.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image1-d811ce95891424d913cfc4b313b36557.jpeg",
+    "bytes": 115444
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image1-f2d5a829b11b51d115a6c5aef800e6ef.png",
+    "file": "vendor/damiao-docs/assets/images/image1-f2d5a829b11b51d115a6c5aef800e6ef.png",
+    "bytes": 26873
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image11-6be7908d131fe4679df6acdb08d3c3a6.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image11-6be7908d131fe4679df6acdb08d3c3a6.jpeg",
+    "bytes": 41568
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image12-7eca085d344648b904f905c36151ec23.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image12-7eca085d344648b904f905c36151ec23.jpeg",
+    "bytes": 92514
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image13-d879a24866421a5988b3b18daa1aed1a.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image13-d879a24866421a5988b3b18daa1aed1a.jpeg",
+    "bytes": 49271
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image14-cca35f2502cafea3e46c0186feba7b10.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image14-cca35f2502cafea3e46c0186feba7b10.jpeg",
+    "bytes": 74679
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image2-1b47b112f6df7b138bbe577fb4065baa.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image2-1b47b112f6df7b138bbe577fb4065baa.jpeg",
+    "bytes": 39487
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image2-cd0c146d367a055c50a91d4a18bc35d4.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image2-cd0c146d367a055c50a91d4a18bc35d4.jpeg",
+    "bytes": 10698
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image2-db6c271936b6f4775f9b705bef5109e5.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image2-db6c271936b6f4775f9b705bef5109e5.jpeg",
+    "bytes": 39480
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image20-a725b074f6139305e13a2b967bc9127b.jpg",
+    "file": "vendor/damiao-docs/assets/images/image20-a725b074f6139305e13a2b967bc9127b.jpg",
+    "bytes": 60643
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image23-1147acdf843c79b595f646893dfcdb24.jpg",
+    "file": "vendor/damiao-docs/assets/images/image23-1147acdf843c79b595f646893dfcdb24.jpg",
+    "bytes": 109809
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image27-5627db7355b7c91b17929aeb2d1f3c72.jpg",
+    "file": "vendor/damiao-docs/assets/images/image27-5627db7355b7c91b17929aeb2d1f3c72.jpg",
+    "bytes": 10728
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image28-84a9005c05edd51a2d94e0c7115809c8.jpg",
+    "file": "vendor/damiao-docs/assets/images/image28-84a9005c05edd51a2d94e0c7115809c8.jpg",
+    "bytes": 16325
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image3-018ffc1bdbdfcdf80ec756891af3a5fc.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image3-018ffc1bdbdfcdf80ec756891af3a5fc.jpeg",
+    "bytes": 82138
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image3-366c2e2bb7b063cc45b1717bf19d3462.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image3-366c2e2bb7b063cc45b1717bf19d3462.jpeg",
+    "bytes": 12471
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image3-f593dbaec0dadf165cb0d806b0faac75.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image3-f593dbaec0dadf165cb0d806b0faac75.jpeg",
+    "bytes": 12484
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image33-e93f591833eb106a2df372c1901d1817.jpg",
+    "file": "vendor/damiao-docs/assets/images/image33-e93f591833eb106a2df372c1901d1817.jpg",
+    "bytes": 92978
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image36-6394b932566608a9ad84c8cb134ec729.jpg",
+    "file": "vendor/damiao-docs/assets/images/image36-6394b932566608a9ad84c8cb134ec729.jpg",
+    "bytes": 124526
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image4-4a80bea849cf5eeaefcfa3c297fa2e3a.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image4-4a80bea849cf5eeaefcfa3c297fa2e3a.jpeg",
+    "bytes": 213716
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image4-594b6bd45c1d24fe9a8e5f71efd4c56d.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image4-594b6bd45c1d24fe9a8e5f71efd4c56d.jpeg",
+    "bytes": 95820
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image4-7854410246711e34a6b6c0c8b7fe1c1f.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image4-7854410246711e34a6b6c0c8b7fe1c1f.jpeg",
+    "bytes": 121969
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image4-90624d74bb036d72204cc5fa8d3aea1b.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image4-90624d74bb036d72204cc5fa8d3aea1b.jpeg",
+    "bytes": 59048
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image4-f593dbaec0dadf165cb0d806b0faac75.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image4-f593dbaec0dadf165cb0d806b0faac75.jpeg",
+    "bytes": 12484
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image5-14512b971a68c971da965a912f9692a0.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image5-14512b971a68c971da965a912f9692a0.jpeg",
+    "bytes": 295172
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image5-84b9458921f55af1bd31a39777d31b6d.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image5-84b9458921f55af1bd31a39777d31b6d.jpeg",
+    "bytes": 131316
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image5-b502b873093fa2bd5eac49cefc0238b0.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image5-b502b873093fa2bd5eac49cefc0238b0.jpeg",
+    "bytes": 41330
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image5-c4a2de2ac6fa42f8f594b2d95da85034.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image5-c4a2de2ac6fa42f8f594b2d95da85034.jpeg",
+    "bytes": 32502
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image5-e4ee3686a9da3892748621f604ab5d1b.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image5-e4ee3686a9da3892748621f604ab5d1b.jpeg",
+    "bytes": 89942
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image57-d7b5be68b1379821ba421bca04ef41e7.jpg",
+    "file": "vendor/damiao-docs/assets/images/image57-d7b5be68b1379821ba421bca04ef41e7.jpg",
+    "bytes": 103270
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image59-b1df7e51fbf729f354d684783bb69af7.jpg",
+    "file": "vendor/damiao-docs/assets/images/image59-b1df7e51fbf729f354d684783bb69af7.jpg",
+    "bytes": 91685
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image6-a32ccdb738e673fbe7178f9c769a572a.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image6-a32ccdb738e673fbe7178f9c769a572a.jpeg",
+    "bytes": 32499
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image6-a404b118b8a9a62a042aeeacea20664a.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image6-a404b118b8a9a62a042aeeacea20664a.jpeg",
+    "bytes": 25081
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image6-c2c4ad47e790be33cdf4289012bfa8bd.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image6-c2c4ad47e790be33cdf4289012bfa8bd.jpeg",
+    "bytes": 84800
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image6-c4a2de2ac6fa42f8f594b2d95da85034.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image6-c4a2de2ac6fa42f8f594b2d95da85034.jpeg",
+    "bytes": 32502
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image62-c784223495eeef98ec547c375d1c659d.jpg",
+    "file": "vendor/damiao-docs/assets/images/image62-c784223495eeef98ec547c375d1c659d.jpg",
+    "bytes": 94514
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image65-b92b1feeabb61a820ca389e32363b4fc.jpg",
+    "file": "vendor/damiao-docs/assets/images/image65-b92b1feeabb61a820ca389e32363b4fc.jpg",
+    "bytes": 146837
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image67-9b269abb2015abf84c58db78fda46201.jpg",
+    "file": "vendor/damiao-docs/assets/images/image67-9b269abb2015abf84c58db78fda46201.jpg",
+    "bytes": 149542
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image69-e2894c93b2d9d5f2c33314bd82206aaa.jpg",
+    "file": "vendor/damiao-docs/assets/images/image69-e2894c93b2d9d5f2c33314bd82206aaa.jpg",
+    "bytes": 155000
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image7-797a792764d8b5e818c1648e026ccb29.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image7-797a792764d8b5e818c1648e026ccb29.jpeg",
+    "bytes": 18085
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image7-a404b118b8a9a62a042aeeacea20664a.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image7-a404b118b8a9a62a042aeeacea20664a.jpeg",
+    "bytes": 25081
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image7-df1a3e0a85dbfbcdf02726acff2a0918.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image7-df1a3e0a85dbfbcdf02726acff2a0918.jpeg",
+    "bytes": 85881
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image7-eb72833bb0eb16283e98fc4ddebba8d7.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image7-eb72833bb0eb16283e98fc4ddebba8d7.jpeg",
+    "bytes": 24961
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image72-52f2690f76ddc41a832391c820728176.jpg",
+    "file": "vendor/damiao-docs/assets/images/image72-52f2690f76ddc41a832391c820728176.jpg",
+    "bytes": 44437
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image73-ce82d394ae3f8e888c5cfda4886c184a.jpg",
+    "file": "vendor/damiao-docs/assets/images/image73-ce82d394ae3f8e888c5cfda4886c184a.jpg",
+    "bytes": 111537
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image74-47ac3234261ca2b380d38d8739bb7bc3.jpg",
+    "file": "vendor/damiao-docs/assets/images/image74-47ac3234261ca2b380d38d8739bb7bc3.jpg",
+    "bytes": 13496
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image75-5715e6e99044e4395e32dcbbde8b2f41.jpg",
+    "file": "vendor/damiao-docs/assets/images/image75-5715e6e99044e4395e32dcbbde8b2f41.jpg",
+    "bytes": 121499
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image77-78a3aeb88b1ae17ca1e1913fde226126.jpg",
+    "file": "vendor/damiao-docs/assets/images/image77-78a3aeb88b1ae17ca1e1913fde226126.jpg",
+    "bytes": 187041
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image78-e3a97f72f551e611bc6a60227e99e30c.jpg",
+    "file": "vendor/damiao-docs/assets/images/image78-e3a97f72f551e611bc6a60227e99e30c.jpg",
+    "bytes": 121453
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image79-9ee0e4444a2c46cb1b0f2d4a8f070d67.jpg",
+    "file": "vendor/damiao-docs/assets/images/image79-9ee0e4444a2c46cb1b0f2d4a8f070d67.jpg",
+    "bytes": 69299
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image8-359d25e5b8d82e8b0c6e34dd0d08fb56.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image8-359d25e5b8d82e8b0c6e34dd0d08fb56.jpeg",
+    "bytes": 18790
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image8-797a792764d8b5e818c1648e026ccb29.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image8-797a792764d8b5e818c1648e026ccb29.jpeg",
+    "bytes": 18085
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image80-a3a48e67d44aca4e4dc20006c6b21ed3.jpg",
+    "file": "vendor/damiao-docs/assets/images/image80-a3a48e67d44aca4e4dc20006c6b21ed3.jpg",
+    "bytes": 114167
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image82-5ab526be3c4fea37a6da8fb1404711cc.jpg",
+    "file": "vendor/damiao-docs/assets/images/image82-5ab526be3c4fea37a6da8fb1404711cc.jpg",
+    "bytes": 118748
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image83-108956175aea76e064ed962426a87464.jpg",
+    "file": "vendor/damiao-docs/assets/images/image83-108956175aea76e064ed962426a87464.jpg",
+    "bytes": 106983
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image84-82fc4b91272430559a8d6653d439a45e.jpg",
+    "file": "vendor/damiao-docs/assets/images/image84-82fc4b91272430559a8d6653d439a45e.jpg",
+    "bytes": 117689
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image85-e6a723e4edf376da38349ec72a6eca18.jpg",
+    "file": "vendor/damiao-docs/assets/images/image85-e6a723e4edf376da38349ec72a6eca18.jpg",
+    "bytes": 166300
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image9-438dcbb0f74f2750bdaa1233cd967944.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image9-438dcbb0f74f2750bdaa1233cd967944.jpeg",
+    "bytes": 45774
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image9-98825803e1b23aaa7041b707ab816631.jpeg",
+    "file": "vendor/damiao-docs/assets/images/image9-98825803e1b23aaa7041b707ab816631.jpeg",
+    "bytes": 128976
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image9-a82668b6744ee077aac85be2ee24b2c9.png",
+    "file": "vendor/damiao-docs/assets/images/image9-a82668b6744ee077aac85be2ee24b2c9.png",
+    "bytes": 106110
+  },
+  {
+    "source": "https://damiao.enactic.ai/assets/images/image90-ef4501085f2c89230e30caaf0117f493.jpg",
+    "file": "vendor/damiao-docs/assets/images/image90-ef4501085f2c89230e30caaf0117f493.jpg",
+    "bytes": 44909
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/css/styles.9900a24f.css",
+    "file": "vendor/damiao-docs/en/assets/css/styles.9900a24f.css",
+    "bytes": 77670
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/files/dm-debugging-tool-014ee5b6f4a3dcb1260e0f5a97f83c72.pdf",
+    "file": "vendor/damiao-docs/en/assets/files/dm-debugging-tool-014ee5b6f4a3dcb1260e0f5a97f83c72.pdf",
+    "bytes": 3472850
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/files/dm-j4310-2ec-v1.1-zh-5d089e0b013d8e2fc203c5b670008a66.pdf",
+    "file": "vendor/damiao-docs/en/assets/files/dm-j4310-2ec-v1.1-zh-5d089e0b013d8e2fc203c5b670008a66.pdf",
+    "bytes": 555223
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/files/dm-j4340-2ec-v1.0-zh-0bb4aee8130412e17b4354e79a67d347.pdf",
+    "file": "vendor/damiao-docs/en/assets/files/dm-j4340-2ec-v1.0-zh-0bb4aee8130412e17b4354e79a67d347.pdf",
+    "bytes": 429309
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/files/dm-j4340p-2ec-v1.0-zh-8460bcc658b2f0e8830a63d4dffc18df.pdf",
+    "file": "vendor/damiao-docs/en/assets/files/dm-j4340p-2ec-v1.0-zh-8460bcc658b2f0e8830a63d4dffc18df.pdf",
+    "bytes": 751034
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/files/dm-j8009p-2ec-v1.0-zh-976b6fed966540041c0378bef48fb178.pdf",
+    "file": "vendor/damiao-docs/en/assets/files/dm-j8009p-2ec-v1.0-zh-976b6fed966540041c0378bef48fb178.pdf",
+    "bytes": 646688
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/files/dm-usbcu1-80763091bcedc7a10403b0579f4fba47.pdf",
+    "file": "vendor/damiao-docs/en/assets/files/dm-usbcu1-80763091bcedc7a10403b0579f4fba47.pdf",
+    "bytes": 101174
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/files/usb-can-conversion-software-c9b6c6574df380e2c249be0e5a307da6.pdf",
+    "file": "vendor/damiao-docs/en/assets/files/usb-can-conversion-software-c9b6c6574df380e2c249be0e5a307da6.pdf",
+    "bytes": 4938670
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image1-3532f0d681bebff3237783a5b8f9d31e.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image1-3532f0d681bebff3237783a5b8f9d31e.jpeg",
+    "bytes": 292486
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image1-3b8cb33229b6a8239a56246ac4195bb9.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image1-3b8cb33229b6a8239a56246ac4195bb9.jpeg",
+    "bytes": 21073
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image1-92abab8c417ec1ae38d4468cfae0250f.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image1-92abab8c417ec1ae38d4468cfae0250f.jpeg",
+    "bytes": 55251
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image1-ba3aff98518b216419ac6eb8d67e0126.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image1-ba3aff98518b216419ac6eb8d67e0126.jpg",
+    "bytes": 56839
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image1-d811ce95891424d913cfc4b313b36557.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image1-d811ce95891424d913cfc4b313b36557.jpeg",
+    "bytes": 115444
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image1-f2d5a829b11b51d115a6c5aef800e6ef.png",
+    "file": "vendor/damiao-docs/en/assets/images/image1-f2d5a829b11b51d115a6c5aef800e6ef.png",
+    "bytes": 26873
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image11-6be7908d131fe4679df6acdb08d3c3a6.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image11-6be7908d131fe4679df6acdb08d3c3a6.jpeg",
+    "bytes": 41568
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image12-7eca085d344648b904f905c36151ec23.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image12-7eca085d344648b904f905c36151ec23.jpeg",
+    "bytes": 92514
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image13-d879a24866421a5988b3b18daa1aed1a.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image13-d879a24866421a5988b3b18daa1aed1a.jpeg",
+    "bytes": 49271
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image14-cca35f2502cafea3e46c0186feba7b10.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image14-cca35f2502cafea3e46c0186feba7b10.jpeg",
+    "bytes": 74679
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image2-1b47b112f6df7b138bbe577fb4065baa.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image2-1b47b112f6df7b138bbe577fb4065baa.jpeg",
+    "bytes": 39487
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image2-cd0c146d367a055c50a91d4a18bc35d4.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image2-cd0c146d367a055c50a91d4a18bc35d4.jpeg",
+    "bytes": 10698
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image2-db6c271936b6f4775f9b705bef5109e5.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image2-db6c271936b6f4775f9b705bef5109e5.jpeg",
+    "bytes": 39480
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image20-a725b074f6139305e13a2b967bc9127b.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image20-a725b074f6139305e13a2b967bc9127b.jpg",
+    "bytes": 60643
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image23-1147acdf843c79b595f646893dfcdb24.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image23-1147acdf843c79b595f646893dfcdb24.jpg",
+    "bytes": 109809
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image27-5627db7355b7c91b17929aeb2d1f3c72.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image27-5627db7355b7c91b17929aeb2d1f3c72.jpg",
+    "bytes": 10728
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image28-84a9005c05edd51a2d94e0c7115809c8.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image28-84a9005c05edd51a2d94e0c7115809c8.jpg",
+    "bytes": 16325
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image3-018ffc1bdbdfcdf80ec756891af3a5fc.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image3-018ffc1bdbdfcdf80ec756891af3a5fc.jpeg",
+    "bytes": 82138
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image3-366c2e2bb7b063cc45b1717bf19d3462.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image3-366c2e2bb7b063cc45b1717bf19d3462.jpeg",
+    "bytes": 12471
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image3-f593dbaec0dadf165cb0d806b0faac75.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image3-f593dbaec0dadf165cb0d806b0faac75.jpeg",
+    "bytes": 12484
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image33-e93f591833eb106a2df372c1901d1817.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image33-e93f591833eb106a2df372c1901d1817.jpg",
+    "bytes": 92978
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image36-6394b932566608a9ad84c8cb134ec729.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image36-6394b932566608a9ad84c8cb134ec729.jpg",
+    "bytes": 124526
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image4-4a80bea849cf5eeaefcfa3c297fa2e3a.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image4-4a80bea849cf5eeaefcfa3c297fa2e3a.jpeg",
+    "bytes": 213716
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image4-594b6bd45c1d24fe9a8e5f71efd4c56d.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image4-594b6bd45c1d24fe9a8e5f71efd4c56d.jpeg",
+    "bytes": 95820
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image4-7854410246711e34a6b6c0c8b7fe1c1f.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image4-7854410246711e34a6b6c0c8b7fe1c1f.jpeg",
+    "bytes": 121969
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image4-90624d74bb036d72204cc5fa8d3aea1b.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image4-90624d74bb036d72204cc5fa8d3aea1b.jpeg",
+    "bytes": 59048
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image4-f593dbaec0dadf165cb0d806b0faac75.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image4-f593dbaec0dadf165cb0d806b0faac75.jpeg",
+    "bytes": 12484
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image5-14512b971a68c971da965a912f9692a0.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image5-14512b971a68c971da965a912f9692a0.jpeg",
+    "bytes": 295172
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image5-84b9458921f55af1bd31a39777d31b6d.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image5-84b9458921f55af1bd31a39777d31b6d.jpeg",
+    "bytes": 131316
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image5-b502b873093fa2bd5eac49cefc0238b0.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image5-b502b873093fa2bd5eac49cefc0238b0.jpeg",
+    "bytes": 41330
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image5-c4a2de2ac6fa42f8f594b2d95da85034.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image5-c4a2de2ac6fa42f8f594b2d95da85034.jpeg",
+    "bytes": 32502
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image5-e4ee3686a9da3892748621f604ab5d1b.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image5-e4ee3686a9da3892748621f604ab5d1b.jpeg",
+    "bytes": 89942
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image57-d7b5be68b1379821ba421bca04ef41e7.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image57-d7b5be68b1379821ba421bca04ef41e7.jpg",
+    "bytes": 103270
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image59-b1df7e51fbf729f354d684783bb69af7.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image59-b1df7e51fbf729f354d684783bb69af7.jpg",
+    "bytes": 91685
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image6-a32ccdb738e673fbe7178f9c769a572a.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image6-a32ccdb738e673fbe7178f9c769a572a.jpeg",
+    "bytes": 32499
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image6-a404b118b8a9a62a042aeeacea20664a.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image6-a404b118b8a9a62a042aeeacea20664a.jpeg",
+    "bytes": 25081
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image6-c2c4ad47e790be33cdf4289012bfa8bd.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image6-c2c4ad47e790be33cdf4289012bfa8bd.jpeg",
+    "bytes": 84800
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image6-c4a2de2ac6fa42f8f594b2d95da85034.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image6-c4a2de2ac6fa42f8f594b2d95da85034.jpeg",
+    "bytes": 32502
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image62-c784223495eeef98ec547c375d1c659d.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image62-c784223495eeef98ec547c375d1c659d.jpg",
+    "bytes": 94514
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image65-b92b1feeabb61a820ca389e32363b4fc.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image65-b92b1feeabb61a820ca389e32363b4fc.jpg",
+    "bytes": 146837
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image67-9b269abb2015abf84c58db78fda46201.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image67-9b269abb2015abf84c58db78fda46201.jpg",
+    "bytes": 149542
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image69-e2894c93b2d9d5f2c33314bd82206aaa.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image69-e2894c93b2d9d5f2c33314bd82206aaa.jpg",
+    "bytes": 155000
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image7-797a792764d8b5e818c1648e026ccb29.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image7-797a792764d8b5e818c1648e026ccb29.jpeg",
+    "bytes": 18085
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image7-a404b118b8a9a62a042aeeacea20664a.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image7-a404b118b8a9a62a042aeeacea20664a.jpeg",
+    "bytes": 25081
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image7-df1a3e0a85dbfbcdf02726acff2a0918.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image7-df1a3e0a85dbfbcdf02726acff2a0918.jpeg",
+    "bytes": 85881
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image7-eb72833bb0eb16283e98fc4ddebba8d7.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image7-eb72833bb0eb16283e98fc4ddebba8d7.jpeg",
+    "bytes": 24961
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image72-52f2690f76ddc41a832391c820728176.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image72-52f2690f76ddc41a832391c820728176.jpg",
+    "bytes": 44437
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image73-ce82d394ae3f8e888c5cfda4886c184a.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image73-ce82d394ae3f8e888c5cfda4886c184a.jpg",
+    "bytes": 111537
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image74-47ac3234261ca2b380d38d8739bb7bc3.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image74-47ac3234261ca2b380d38d8739bb7bc3.jpg",
+    "bytes": 13496
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image75-5715e6e99044e4395e32dcbbde8b2f41.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image75-5715e6e99044e4395e32dcbbde8b2f41.jpg",
+    "bytes": 121499
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image77-78a3aeb88b1ae17ca1e1913fde226126.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image77-78a3aeb88b1ae17ca1e1913fde226126.jpg",
+    "bytes": 187041
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image78-e3a97f72f551e611bc6a60227e99e30c.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image78-e3a97f72f551e611bc6a60227e99e30c.jpg",
+    "bytes": 121453
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image79-9ee0e4444a2c46cb1b0f2d4a8f070d67.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image79-9ee0e4444a2c46cb1b0f2d4a8f070d67.jpg",
+    "bytes": 69299
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image8-359d25e5b8d82e8b0c6e34dd0d08fb56.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image8-359d25e5b8d82e8b0c6e34dd0d08fb56.jpeg",
+    "bytes": 18790
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image8-797a792764d8b5e818c1648e026ccb29.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image8-797a792764d8b5e818c1648e026ccb29.jpeg",
+    "bytes": 18085
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image80-a3a48e67d44aca4e4dc20006c6b21ed3.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image80-a3a48e67d44aca4e4dc20006c6b21ed3.jpg",
+    "bytes": 114167
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image82-5ab526be3c4fea37a6da8fb1404711cc.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image82-5ab526be3c4fea37a6da8fb1404711cc.jpg",
+    "bytes": 118748
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image83-108956175aea76e064ed962426a87464.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image83-108956175aea76e064ed962426a87464.jpg",
+    "bytes": 106983
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image84-82fc4b91272430559a8d6653d439a45e.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image84-82fc4b91272430559a8d6653d439a45e.jpg",
+    "bytes": 117689
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image85-e6a723e4edf376da38349ec72a6eca18.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image85-e6a723e4edf376da38349ec72a6eca18.jpg",
+    "bytes": 166300
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image9-438dcbb0f74f2750bdaa1233cd967944.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image9-438dcbb0f74f2750bdaa1233cd967944.jpeg",
+    "bytes": 45774
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image9-98825803e1b23aaa7041b707ab816631.jpeg",
+    "file": "vendor/damiao-docs/en/assets/images/image9-98825803e1b23aaa7041b707ab816631.jpeg",
+    "bytes": 128976
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image9-a82668b6744ee077aac85be2ee24b2c9.png",
+    "file": "vendor/damiao-docs/en/assets/images/image9-a82668b6744ee077aac85be2ee24b2c9.png",
+    "bytes": 106110
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/assets/images/image90-ef4501085f2c89230e30caaf0117f493.jpg",
+    "file": "vendor/damiao-docs/en/assets/images/image90-ef4501085f2c89230e30caaf0117f493.jpg",
+    "bytes": 44909
+  },
+  {
+    "source": "https://damiao.enactic.ai/en/img/logo.svg",
+    "file": "vendor/damiao-docs/en/img/logo.svg",
+    "bytes": 4061
+  },
+  {
+    "source": "https://damiao.enactic.ai/img/logo.svg",
+    "file": "vendor/damiao-docs/img/logo.svg",
+    "bytes": 4061
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/css/styles.82e8d9ef.css",
+    "file": "official-docs/assets/css/styles.82e8d9ef.css",
+    "bytes": 110494
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/bom-for-hub-ba4b6e3b34b16b5241a3dc6a5b6292ca.csv",
+    "file": "official-docs/assets/files/bom-for-hub-ba4b6e3b34b16b5241a3dc6a5b6292ca.csv",
+    "bytes": 422
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/communication-282b9ab6cc905d7925c42de2cb61fa1b.pdf",
+    "file": "official-docs/assets/files/communication-282b9ab6cc905d7925c42de2cb61fa1b.pdf",
+    "bytes": 321371
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/cpl-for-hub-947392a7bd03aad12d8e1fbe2bc3988a.xlsx",
+    "file": "official-docs/assets/files/cpl-for-hub-947392a7bd03aad12d8e1fbe2bc3988a.xlsx",
+    "bytes": 7118
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/dm4310-5d089e0b013d8e2fc203c5b670008a66.pdf",
+    "file": "official-docs/assets/files/dm4310-5d089e0b013d8e2fc203c5b670008a66.pdf",
+    "bytes": 555223
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/dm4340-0bb4aee8130412e17b4354e79a67d347.pdf",
+    "file": "official-docs/assets/files/dm4340-0bb4aee8130412e17b4354e79a67d347.pdf",
+    "bytes": 429309
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/dm4340p-724c1dccdd53947e7b9377fe0cab0aa6.pdf",
+    "file": "official-docs/assets/files/dm4340p-724c1dccdd53947e7b9377fe0cab0aa6.pdf",
+    "bytes": 258928
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/dm8009-90ee7f15d06666e15afd49e5d5417150.pdf",
+    "file": "official-docs/assets/files/dm8009-90ee7f15d06666e15afd49e5d5417150.pdf",
+    "bytes": 706061
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/gerber-for-hub-b80a25852cad80a556c186b4b81aeea1.zip",
+    "file": "official-docs/assets/files/gerber-for-hub-b80a25852cad80a556c186b4b81aeea1.zip",
+    "bytes": 8676
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/j1-j2-649f22c58850a116dde7cc258a016a74.pdf",
+    "file": "official-docs/assets/files/j1-j2-649f22c58850a116dde7cc258a016a74.pdf",
+    "bytes": 1872990
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/j3-j4-829b25a93d1100e749d7f981a33b88ac.pdf",
+    "file": "official-docs/assets/files/j3-j4-829b25a93d1100e749d7f981a33b88ac.pdf",
+    "bytes": 334706
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/j4-j7-179f85cbbe65438dab0dd60e27131356.pdf",
+    "file": "official-docs/assets/files/j4-j7-179f85cbbe65438dab0dd60e27131356.pdf",
+    "bytes": 336335
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/j7-j8-e258f736270e1db80a36a0a2ddfc77f6.pdf",
+    "file": "official-docs/assets/files/j7-j8-e258f736270e1db80a36a0a2ddfc77f6.pdf",
+    "bytes": 320660
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/files/power-extension-e94d95c804c78847488cd77919082559.pdf",
+    "file": "official-docs/assets/files/power-extension-e94d95c804c78847488cd77919082559.pdf",
+    "bytes": 536087
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/alert1-c26734ef8fa4b0ae3bdfbec9a2eb027c.png",
+    "file": "official-docs/assets/images/alert1-c26734ef8fa4b0ae3bdfbec9a2eb027c.png",
+    "bytes": 145701
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/alert2-6ea8279620f145e6d1e82348a4878798.png",
+    "file": "official-docs/assets/images/alert2-6ea8279620f145e6d1e82348a4878798.png",
+    "bytes": 203515
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/architecture-290b626163f4349197f99f79adb228d2.png",
+    "file": "official-docs/assets/images/architecture-290b626163f4349197f99f79adb228d2.png",
+    "bytes": 194602
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/architecture-37225cde1cf89d2469882a4b178f46c8.png",
+    "file": "official-docs/assets/images/architecture-37225cde1cf89d2469882a4b178f46c8.png",
+    "bytes": 286671
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/arducam-config-tool-open-0e6d9ab3512b3951f3b22bb441a0ada4.png",
+    "file": "official-docs/assets/images/arducam-config-tool-open-0e6d9ab3512b3951f3b22bb441a0ada4.png",
+    "bytes": 234560
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/arducam-config-tool-set-serial-79e48795ca36a79be64419ba2bbd9352.png",
+    "file": "official-docs/assets/images/arducam-config-tool-set-serial-79e48795ca36a79be64419ba2bbd9352.png",
+    "bytes": 103819
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/assembly-e712d5e919f7a03c58d840840c8471a2.png",
+    "file": "official-docs/assets/images/assembly-e712d5e919f7a03c58d840840c8471a2.png",
+    "bytes": 264755
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/base-plate-373a47efa57267b82d13774b038d7271.png",
+    "file": "official-docs/assets/images/base-plate-373a47efa57267b82d13774b038d7271.png",
+    "bytes": 54558
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/base-plate-57b599a8d3e7bff703625cda421b96e0.png",
+    "file": "official-docs/assets/images/base-plate-57b599a8d3e7bff703625cda421b96e0.png",
+    "bytes": 40346
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/bearings-d19599cb40e8d099a954c7d1371513c4.png",
+    "file": "official-docs/assets/images/bearings-d19599cb40e8d099a954c7d1371513c4.png",
+    "bytes": 23579
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/bimanual-moveit2-39a4afec831b8093f4150f88c0c3cf8e.png",
+    "file": "official-docs/assets/images/bimanual-moveit2-39a4afec831b8093f4150f88c0c3cf8e.png",
+    "bytes": 928756
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/bimanual-moveit2-planning-6612cd846945908037b7577378b33910.png",
+    "file": "official-docs/assets/images/bimanual-moveit2-planning-6612cd846945908037b7577378b33910.png",
+    "bytes": 1011191
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/bimanual-urdf-rviz-7cbaa500ce6049c7f5f59fe64c944d2d.png",
+    "file": "official-docs/assets/images/bimanual-urdf-rviz-7cbaa500ce6049c7f5f59fe64c944d2d.png",
+    "bytes": 490070
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/bimanual_v1.0-2ea67e014c16b88d41ea00b512288fff.png",
+    "file": "official-docs/assets/images/bimanual_v1.0-2ea67e014c16b88d41ea00b512288fff.png",
+    "bytes": 179095
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/bimanual_v2.0-a4f4f1c36fe5b10e7bdce18af74c1798.png",
+    "file": "official-docs/assets/images/bimanual_v2.0-a4f4f1c36fe5b10e7bdce18af74c1798.png",
+    "bytes": 198142
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/bom-summary-39a44c2d69126a8a10bdec8d48db0708.png",
+    "file": "official-docs/assets/images/bom-summary-39a44c2d69126a8a10bdec8d48db0708.png",
+    "bytes": 239505
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/bracket-7700c99f63d22a85afaa64994f714b49.png",
+    "file": "official-docs/assets/images/bracket-7700c99f63d22a85afaa64994f714b49.png",
+    "bytes": 52094
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/cable-connection-eb20af28200fa626f54a133283669048.jpg",
+    "file": "official-docs/assets/images/cable-connection-eb20af28200fa626f54a133283669048.jpg",
+    "bytes": 5615716
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/casing-complete-fc023911bd346a99c578e75d04872053.png",
+    "file": "official-docs/assets/images/casing-complete-fc023911bd346a99c578e75d04872053.png",
+    "bytes": 1307889
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/cereboto-44ea0620dd389a215d755b6446e29127.png",
+    "file": "official-docs/assets/images/cereboto-44ea0620dd389a215d755b6446e29127.png",
+    "bytes": 1324350
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/chest-cover-closing-back-308b53010f513b2bfc8390c91fe1986d.png",
+    "file": "official-docs/assets/images/chest-cover-closing-back-308b53010f513b2bfc8390c91fe1986d.png",
+    "bytes": 1237589
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/chest-cover-closing-front-33856bb4817c1b030902f4e1763936f5.png",
+    "file": "official-docs/assets/images/chest-cover-closing-front-33856bb4817c1b030902f4e1763936f5.png",
+    "bytes": 1133764
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/chest-cover-screw-99952f82fd7acc4a75ff94a55028bef8.png",
+    "file": "official-docs/assets/images/chest-cover-screw-99952f82fd7acc4a75ff94a55028bef8.png",
+    "bytes": 1270688
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/commu-cable-8586931dde3e442df80dc827f77d364a.png",
+    "file": "official-docs/assets/images/commu-cable-8586931dde3e442df80dc827f77d364a.png",
+    "bytes": 266930
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/communication-f11af07f6223be19624cb8a7e340ed70.png",
+    "file": "official-docs/assets/images/communication-f11af07f6223be19624cb8a7e340ed70.png",
+    "bytes": 11690
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/conclusion-09d9e6b0c53ae33f1c848017cee78e97.png",
+    "file": "official-docs/assets/images/conclusion-09d9e6b0c53ae33f1c848017cee78e97.png",
+    "bytes": 45328
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/conclusion-3f9e1d3eaff97384d3f241dd80800199.png",
+    "file": "official-docs/assets/images/conclusion-3f9e1d3eaff97384d3f241dd80800199.png",
+    "bytes": 62312
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/conclusion-4316a8e34d750848793f24a4c1b54dd2.png",
+    "file": "official-docs/assets/images/conclusion-4316a8e34d750848793f24a4c1b54dd2.png",
+    "bytes": 190602
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/conclusion-4f22efb4047a0fe89c6e6fb25e9dc129.png",
+    "file": "official-docs/assets/images/conclusion-4f22efb4047a0fe89c6e6fb25e9dc129.png",
+    "bytes": 133219
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/conclusion-507447bdd491d4531149043a608574e0.png",
+    "file": "official-docs/assets/images/conclusion-507447bdd491d4531149043a608574e0.png",
+    "bytes": 42989
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/conclusion-80ea98248993b5addea68b01f5f18ae2.png",
+    "file": "official-docs/assets/images/conclusion-80ea98248993b5addea68b01f5f18ae2.png",
+    "bytes": 69731
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/conclusion-e58dfb2695b7133a4317fa589c921993.png",
+    "file": "official-docs/assets/images/conclusion-e58dfb2695b7133a4317fa589c921993.png",
+    "bytes": 145753
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/connector-f22aa65806750568988b8172b16fa2f7.jpg",
+    "file": "official-docs/assets/images/connector-f22aa65806750568988b8172b16fa2f7.jpg",
+    "bytes": 31979
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/custom-configurations-7f5bc0520a14c816dff57de59d330663.png",
+    "file": "official-docs/assets/images/custom-configurations-7f5bc0520a14c816dff57de59d330663.png",
+    "bytes": 329146
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/daisy-chain-dd908a3271db41ba91268504f3898d17.png",
+    "file": "official-docs/assets/images/daisy-chain-dd908a3271db41ba91268504f3898d17.png",
+    "bytes": 53463
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/damiao-debugging-tools-config-7eaf8fdbe49a344d636be1640b7c0500.png",
+    "file": "official-docs/assets/images/damiao-debugging-tools-config-7eaf8fdbe49a344d636be1640b7c0500.png",
+    "bytes": 24744
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/damiao-debugging-tools-motor-info-25f73a95310f0c304b61e8b56a52c74e.png",
+    "file": "official-docs/assets/images/damiao-debugging-tools-motor-info-25f73a95310f0c304b61e8b56a52c74e.png",
+    "bytes": 13600
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/damiao-debugging-tools-start-b6711d1b41a196e45e50c3f366c1ce5d.png",
+    "file": "official-docs/assets/images/damiao-debugging-tools-start-b6711d1b41a196e45e50c3f366c1ce5d.png",
+    "bytes": 47171
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/data-collection-start-4a694b8007b4da80f12a3dcc1f43e1de.jpg",
+    "file": "official-docs/assets/images/data-collection-start-4a694b8007b4da80f12a3dcc1f43e1de.jpg",
+    "bytes": 99857
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/data-collection-start-quit-db45f75dd3abe32cd34a093861fc5958.png",
+    "file": "official-docs/assets/images/data-collection-start-quit-db45f75dd3abe32cd34a093861fc5958.png",
+    "bytes": 323101
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/data-collection-success-fail-2d886e3c897a719ebff4acfcdab0b38a.jpg",
+    "file": "official-docs/assets/images/data-collection-success-fail-2d886e3c897a719ebff4acfcdab0b38a.jpg",
+    "bytes": 106745
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/data-collection-success-fail-6f2b81c1e96592e5a1a94003a81eb7b3.png",
+    "file": "official-docs/assets/images/data-collection-success-fail-6f2b81c1e96592e5a1a94003a81eb7b3.png",
+    "bytes": 353886
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/dbsy4-5-4-eb0e83a5aaf2c83289fc90df0b897f93.png",
+    "file": "official-docs/assets/images/dbsy4-5-4-eb0e83a5aaf2c83289fc90df0b897f93.png",
+    "bytes": 13193
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/dbsy465-1e6af6190bb8fcc1771d53b280c3a28b.png",
+    "file": "official-docs/assets/images/dbsy465-1e6af6190bb8fcc1771d53b280c3a28b.png",
+    "bytes": 24321
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/dimensions-39b064a836ada5a70b3f3f75cc2b825e.png",
+    "file": "official-docs/assets/images/dimensions-39b064a836ada5a70b3f3f75cc2b825e.png",
+    "bytes": 315672
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/dimensions-40b1aa1878e31331984c8304c1c01925.png",
+    "file": "official-docs/assets/images/dimensions-40b1aa1878e31331984c8304c1c01925.png",
+    "bytes": 355773
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/distance-ee0cc25d37dac9b4fdeba8cfe4b9100f.png",
+    "file": "official-docs/assets/images/distance-ee0cc25d37dac9b4fdeba8cfe4b9100f.png",
+    "bytes": 49577
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/emergency-stop-3d16eec1f22049a419600237dce37a44.png",
+    "file": "official-docs/assets/images/emergency-stop-3d16eec1f22049a419600237dce37a44.png",
+    "bytes": 57129
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step1-1-9dc3afe4b56fdb84477ecb766abc4159.jpg",
+    "file": "official-docs/assets/images/enactic-method-step1-1-9dc3afe4b56fdb84477ecb766abc4159.jpg",
+    "bytes": 673243
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step1-2-f8348886fee73a160c9d8bee98ca531a.jpg",
+    "file": "official-docs/assets/images/enactic-method-step1-2-f8348886fee73a160c9d8bee98ca531a.jpg",
+    "bytes": 644771
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step10-740bb683c40ed0e7f32b1215868de2dd.jpg",
+    "file": "official-docs/assets/images/enactic-method-step10-740bb683c40ed0e7f32b1215868de2dd.jpg",
+    "bytes": 635173
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step11-1-22fe431be976a73709b97ba566c73a74.jpg",
+    "file": "official-docs/assets/images/enactic-method-step11-1-22fe431be976a73709b97ba566c73a74.jpg",
+    "bytes": 689020
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step11-2-160c71aec4c7555b1d7c4f9589d449b2.jpg",
+    "file": "official-docs/assets/images/enactic-method-step11-2-160c71aec4c7555b1d7c4f9589d449b2.jpg",
+    "bytes": 665185
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step12-971bf70178c586923162b31ab5c85a19.jpg",
+    "file": "official-docs/assets/images/enactic-method-step12-971bf70178c586923162b31ab5c85a19.jpg",
+    "bytes": 664012
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step2-4440127692f1514147190c57d140ca87.jpg",
+    "file": "official-docs/assets/images/enactic-method-step2-4440127692f1514147190c57d140ca87.jpg",
+    "bytes": 744350
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step3-45fa3ed8a4687c7fdb1ce63bf6f5c802.jpg",
+    "file": "official-docs/assets/images/enactic-method-step3-45fa3ed8a4687c7fdb1ce63bf6f5c802.jpg",
+    "bytes": 590468
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step4-1-ff89d71b713cabe0c4e08c8a34f8884e.jpg",
+    "file": "official-docs/assets/images/enactic-method-step4-1-ff89d71b713cabe0c4e08c8a34f8884e.jpg",
+    "bytes": 775140
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step4-2-4946ee19d7756af91e22b335528522af.jpg",
+    "file": "official-docs/assets/images/enactic-method-step4-2-4946ee19d7756af91e22b335528522af.jpg",
+    "bytes": 727077
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step5-89af3634aee5139ab08459294289f88d.jpg",
+    "file": "official-docs/assets/images/enactic-method-step5-89af3634aee5139ab08459294289f88d.jpg",
+    "bytes": 669703
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step6-1f7988df8dab29c843aa3ac93c50b389.jpg",
+    "file": "official-docs/assets/images/enactic-method-step6-1f7988df8dab29c843aa3ac93c50b389.jpg",
+    "bytes": 622056
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step7-1-b666f017b37577e52f8021cecd34b21b.jpg",
+    "file": "official-docs/assets/images/enactic-method-step7-1-b666f017b37577e52f8021cecd34b21b.jpg",
+    "bytes": 798610
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step7-2-bf287fc424e31129c65d17f917b8c863.jpg",
+    "file": "official-docs/assets/images/enactic-method-step7-2-bf287fc424e31129c65d17f917b8c863.jpg",
+    "bytes": 803818
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step8-634fbbd372cb465de97905f0b5da7a6c.jpg",
+    "file": "official-docs/assets/images/enactic-method-step8-634fbbd372cb465de97905f0b5da7a6c.jpg",
+    "bytes": 695909
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/enactic-method-step9-274f703455f0ea23d79d023479f4acd2.jpg",
+    "file": "official-docs/assets/images/enactic-method-step9-274f703455f0ea23d79d023479f4acd2.jpg",
+    "bytes": 793307
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/encoder-id-459f026f443f30da0e766f57f544e3ed.png",
+    "file": "official-docs/assets/images/encoder-id-459f026f443f30da0e766f57f544e3ed.png",
+    "bytes": 729586
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/encoder-write-63730bd80bce210c85f1f6cdb62d0fd1.jpg",
+    "file": "official-docs/assets/images/encoder-write-63730bd80bce210c85f1f6cdb62d0fd1.jpg",
+    "bytes": 5153017
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/estop-b7d6833a50202834349fedf83f5c6f52.jpg",
+    "file": "official-docs/assets/images/estop-b7d6833a50202834349fedf83f5c6f52.jpg",
+    "bytes": 185472
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/extension-78389dec03271d5b5e988f36d76590e1.png",
+    "file": "official-docs/assets/images/extension-78389dec03271d5b5e988f36d76590e1.png",
+    "bytes": 26207
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/extrusion-164d7b57b2882cdeece7804c220af108.png",
+    "file": "official-docs/assets/images/extrusion-164d7b57b2882cdeece7804c220af108.png",
+    "bytes": 14682
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/fl6700zz-141da2d66eaed55384b125900b5a22d7.png",
+    "file": "official-docs/assets/images/fl6700zz-141da2d66eaed55384b125900b5a22d7.png",
+    "bytes": 39157
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/fl6803zz-f8dee65ebbdd21ebff943028648f9239.png",
+    "file": "official-docs/assets/images/fl6803zz-f8dee65ebbdd21ebff943028648f9239.png",
+    "bytes": 37384
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/follower-skeleton-render-76dfa6f86f2f5582daf937252365951d.png",
+    "file": "official-docs/assets/images/follower-skeleton-render-76dfa6f86f2f5582daf937252365951d.png",
+    "bytes": 375243
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/footpedal-d2c72922beae86a75f62d680d98b6ba4.jpg",
+    "file": "official-docs/assets/images/footpedal-d2c72922beae86a75f62d680d98b6ba4.jpg",
+    "bytes": 849545
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/fully-closed-6e8bb8d3d6303863b72a085e7ef6a939.png",
+    "file": "official-docs/assets/images/fully-closed-6e8bb8d3d6303863b72a085e7ef6a939.png",
+    "bytes": 71846
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/fully-opened-187c3c72ce585e6ae9593af311b28f4e.png",
+    "file": "official-docs/assets/images/fully-opened-187c3c72ce585e6ae9593af311b28f4e.png",
+    "bytes": 86726
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/general-dimensions-17492d12aa0e58cc11c31c58bf3c291b.png",
+    "file": "official-docs/assets/images/general-dimensions-17492d12aa0e58cc11c31c58bf3c291b.png",
+    "bytes": 239537
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/gripper-30db908892823843532f6aa0094de173.png",
+    "file": "official-docs/assets/images/gripper-30db908892823843532f6aa0094de173.png",
+    "bytes": 2454717
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hardware-setup-120r-termination-75547c463788078ce6d5c4538cec6171.jpg",
+    "file": "official-docs/assets/images/hardware-setup-120r-termination-75547c463788078ce6d5c4538cec6171.jpg",
+    "bytes": 1157795
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hardware-setup-c74aa85602babbfe93100aeb0ac062b3.png",
+    "file": "official-docs/assets/images/hardware-setup-c74aa85602babbfe93100aeb0ac062b3.png",
+    "bytes": 2174468
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hardware-setup-can-wire-171dc841db289c9a4e61b365f7e3ea8d.png",
+    "file": "official-docs/assets/images/hardware-setup-can-wire-171dc841db289c9a4e61b365f7e3ea8d.png",
+    "bytes": 1529046
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hardware-setup-motor-0cf266ed27c7748afc677d538eb50d15.png",
+    "file": "official-docs/assets/images/hardware-setup-motor-0cf266ed27c7748afc677d538eb50d15.png",
+    "bytes": 460188
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hardware-setup-power-11bdb3710e3e3d2316f8b079105cd951.png",
+    "file": "official-docs/assets/images/hardware-setup-power-11bdb3710e3e3d2316f8b079105cd951.png",
+    "bytes": 479322
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/headset-covered-cd35b5e9afdfb71d70d7e5046c9be1c5.png",
+    "file": "official-docs/assets/images/headset-covered-cd35b5e9afdfb71d70d7e5046c9be1c5.png",
+    "bytes": 11097785
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/headset-uncover-e12b3a9b2e26e88a149a682cae8b6581.png",
+    "file": "official-docs/assets/images/headset-uncover-e12b3a9b2e26e88a149a682cae8b6581.png",
+    "bytes": 11136440
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hntp6-6-ec099928671664293191549a8b3914ff.png",
+    "file": "official-docs/assets/images/hntp6-6-ec099928671664293191549a8b3914ff.png",
+    "bytes": 14667
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/how-to-wear-headset-881478766b033271dd2848a0dbad4d6d.png",
+    "file": "official-docs/assets/images/how-to-wear-headset-881478766b033271dd2848a0dbad4d6d.png",
+    "bytes": 13430734
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hubboard-attaching-d64eb3a3e0e3321179b2baedac6a02b2.png",
+    "file": "official-docs/assets/images/hubboard-attaching-d64eb3a3e0e3321179b2baedac6a02b2.png",
+    "bytes": 817560
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hubboard-commu-connection-4a71e7fa1aa68b14f82170beb8ed8d24.png",
+    "file": "official-docs/assets/images/hubboard-commu-connection-4a71e7fa1aa68b14f82170beb8ed8d24.png",
+    "bytes": 1280233
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hubboard-components-chest-cover-49db2cc1989afb6cd963db84c3b1e6f7.png",
+    "file": "official-docs/assets/images/hubboard-components-chest-cover-49db2cc1989afb6cd963db84c3b1e6f7.png",
+    "bytes": 286082
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hubboard-components-f895727776b8b3903a48dc7c32011276.png",
+    "file": "official-docs/assets/images/hubboard-components-f895727776b8b3903a48dc7c32011276.png",
+    "bytes": 290283
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hubboard-extension-connection-babaf44bbe32813ad9fe240d70b7eea1.png",
+    "file": "official-docs/assets/images/hubboard-extension-connection-babaf44bbe32813ad9fe240d70b7eea1.png",
+    "bytes": 1227025
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hubboard-motor-connection-93023d4b4dbcaace972b4c48dc70b5df.png",
+    "file": "official-docs/assets/images/hubboard-motor-connection-93023d4b4dbcaace972b4c48dc70b5df.png",
+    "bytes": 1262204
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/hubboard-wiring-cf0d17329648fd5b4b6ace65acf7ea2b.png",
+    "file": "official-docs/assets/images/hubboard-wiring-cf0d17329648fd5b4b6ace65acf7ea2b.png",
+    "bytes": 1143428
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/in-vr-default-cbeb26fe3a9d34a1d4043e72e7c501a8.jpg",
+    "file": "official-docs/assets/images/in-vr-default-cbeb26fe3a9d34a1d4043e72e7c501a8.jpg",
+    "bytes": 788575
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/in-vr-setting-25878a62b133ae1b2dd93df429a221c6.png",
+    "file": "official-docs/assets/images/in-vr-setting-25878a62b133ae1b2dd93df429a221c6.png",
+    "bytes": 94530
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1-61d38be64e9a1287990e9491aaa61b97.png",
+    "file": "official-docs/assets/images/j1-61d38be64e9a1287990e9491aaa61b97.png",
+    "bytes": 74266
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1-a-de96b3e7f9e869941d2d1fb1fff9738a.png",
+    "file": "official-docs/assets/images/j1-a-de96b3e7f9e869941d2d1fb1fff9738a.png",
+    "bytes": 29917
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1-b-693b6b352f53ae735e7a63cc1d79d7c7.png",
+    "file": "official-docs/assets/images/j1-b-693b6b352f53ae735e7a63cc1d79d7c7.png",
+    "bytes": 21693
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1-c-24073d8368b62d938061e1ee18a380e1.png",
+    "file": "official-docs/assets/images/j1-c-24073d8368b62d938061e1ee18a380e1.png",
+    "bytes": 56864
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1-d-190b5b50ebb6458830dbbc6946f3a89d.png",
+    "file": "official-docs/assets/images/j1-d-190b5b50ebb6458830dbbc6946f3a89d.png",
+    "bytes": 22781
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1-e-dcabb46e616e8947f1d1c951c91a6c49.png",
+    "file": "official-docs/assets/images/j1-e-dcabb46e616e8947f1d1c951c91a6c49.png",
+    "bytes": 22612
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1-j2-cable-237e87abe4af542c4b4ff715475ba2a9.png",
+    "file": "official-docs/assets/images/j1-j2-cable-237e87abe4af542c4b4ff715475ba2a9.png",
+    "bytes": 256903
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1-j2-casing-abd532f5a9f7c120ff54869ab572f02c.png",
+    "file": "official-docs/assets/images/j1-j2-casing-abd532f5a9f7c120ff54869ab572f02c.png",
+    "bytes": 317930
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1-j2-process1-bd529ade75c3efd92bf784592c4945c7.png",
+    "file": "official-docs/assets/images/j1-j2-process1-bd529ade75c3efd92bf784592c4945c7.png",
+    "bytes": 1112503
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1-j2-process2-22c103bcd1042cc06f243257e6da7661.png",
+    "file": "official-docs/assets/images/j1-j2-process2-22c103bcd1042cc06f243257e6da7661.png",
+    "bytes": 1336106
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j1j2-connection-480a83ea4e1e06dff3220a3c29ab8abd.png",
+    "file": "official-docs/assets/images/j1j2-connection-480a83ea4e1e06dff3220a3c29ab8abd.png",
+    "bytes": 454194
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j2-a-7a015473335c50169cfe49a9624e653e.png",
+    "file": "official-docs/assets/images/j2-a-7a015473335c50169cfe49a9624e653e.png",
+    "bytes": 27284
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j2-b-3ee1c451bd5fad86c47358a392df6e07.png",
+    "file": "official-docs/assets/images/j2-b-3ee1c451bd5fad86c47358a392df6e07.png",
+    "bytes": 29578
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j2-c-2c3c110f2ea03f48dccc515a6019c2b6.png",
+    "file": "official-docs/assets/images/j2-c-2c3c110f2ea03f48dccc515a6019c2b6.png",
+    "bytes": 24902
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j2-j3-casing-ef91dc7aa76f9a5b244ad649fff24748.png",
+    "file": "official-docs/assets/images/j2-j3-casing-ef91dc7aa76f9a5b244ad649fff24748.png",
+    "bytes": 354000
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j2-j3-process1-bf7dbb6ddc50df727fdad0183dcf1152.png",
+    "file": "official-docs/assets/images/j2-j3-process1-bf7dbb6ddc50df727fdad0183dcf1152.png",
+    "bytes": 1113116
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j2-j3-process2-c289d7a31ae0a47af122cc3b6507419c.png",
+    "file": "official-docs/assets/images/j2-j3-process2-c289d7a31ae0a47af122cc3b6507419c.png",
+    "bytes": 1418261
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j3-j4-1e529a911293e73ac45924412fc1a0ac.jpg",
+    "file": "official-docs/assets/images/j3-j4-1e529a911293e73ac45924412fc1a0ac.jpg",
+    "bytes": 2819458
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j3-j4-cable-150bb1837731658a26163f4be0a55f9a.png",
+    "file": "official-docs/assets/images/j3-j4-cable-150bb1837731658a26163f4be0a55f9a.png",
+    "bytes": 140747
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j3-j4-cable-assign-ff1ddbd793e512974362c5a5a10faac6.png",
+    "file": "official-docs/assets/images/j3-j4-cable-assign-ff1ddbd793e512974362c5a5a10faac6.png",
+    "bytes": 63272
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j3-j4-casing-84bf7b02fbfd059f22a8f736d1874036.png",
+    "file": "official-docs/assets/images/j3-j4-casing-84bf7b02fbfd059f22a8f736d1874036.png",
+    "bytes": 485700
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j3-j4-dfd2631088128b2f451b9d861c5c9958.png",
+    "file": "official-docs/assets/images/j3-j4-dfd2631088128b2f451b9d861c5c9958.png",
+    "bytes": 69909
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j3-j4-process1-6dfb7732d3607df36e5770c713227b31.png",
+    "file": "official-docs/assets/images/j3-j4-process1-6dfb7732d3607df36e5770c713227b31.png",
+    "bytes": 643742
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j3j4-connection-892e2d87791ef9346b9e97364809f634.png",
+    "file": "official-docs/assets/images/j3j4-connection-892e2d87791ef9346b9e97364809f634.png",
+    "bytes": 335241
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j3j4-j4j7-wiring-7ee14638e0bf40b0d47106b008df1a6f.png",
+    "file": "official-docs/assets/images/j3j4-j4j7-wiring-7ee14638e0bf40b0d47106b008df1a6f.png",
+    "bytes": 95733
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-a-78598525113f958b444e4885f49ce2da.png",
+    "file": "official-docs/assets/images/j4-a-78598525113f958b444e4885f49ce2da.png",
+    "bytes": 35419
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-b-9856397fb36bba1212b7b7f9cece8540.png",
+    "file": "official-docs/assets/images/j4-b-9856397fb36bba1212b7b7f9cece8540.png",
+    "bytes": 32327
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-c-8a3bfdc9faa0dd7598bb970563ba7eb9.png",
+    "file": "official-docs/assets/images/j4-c-8a3bfdc9faa0dd7598bb970563ba7eb9.png",
+    "bytes": 26186
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-d-78000208ff0f4db0aa04196f18a5cd55.png",
+    "file": "official-docs/assets/images/j4-d-78000208ff0f4db0aa04196f18a5cd55.png",
+    "bytes": 38517
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-e-adb1d46ac090f7f49cc70ee28d269d02.png",
+    "file": "official-docs/assets/images/j4-e-adb1d46ac090f7f49cc70ee28d269d02.png",
+    "bytes": 47273
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-j5-casing-0ad92de156ea2fdf237b6fa07ef95a13.png",
+    "file": "official-docs/assets/images/j4-j5-casing-0ad92de156ea2fdf237b6fa07ef95a13.png",
+    "bytes": 515345
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-j5-process1-37102c5562ade2ef46d4c0c7bd97a6d9.png",
+    "file": "official-docs/assets/images/j4-j5-process1-37102c5562ade2ef46d4c0c7bd97a6d9.png",
+    "bytes": 756929
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-j5-process2-57cf7e6f0eb35a3da4d5b48aea5599cd.png",
+    "file": "official-docs/assets/images/j4-j5-process2-57cf7e6f0eb35a3da4d5b48aea5599cd.png",
+    "bytes": 1038318
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-j7-0dd86e7e21c53def42ef499c25b197ec.png",
+    "file": "official-docs/assets/images/j4-j7-0dd86e7e21c53def42ef499c25b197ec.png",
+    "bytes": 51951
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-j7-83d277296171bbd5ee394a7769a56f26.jpg",
+    "file": "official-docs/assets/images/j4-j7-83d277296171bbd5ee394a7769a56f26.jpg",
+    "bytes": 2398274
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-j7-cable-40f6d5ebb7f1378f997bb0a0133860a9.png",
+    "file": "official-docs/assets/images/j4-j7-cable-40f6d5ebb7f1378f997bb0a0133860a9.png",
+    "bytes": 215839
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4-j7-cable-assign-a531ebb76b5ec2932a7ca20a57a37596.png",
+    "file": "official-docs/assets/images/j4-j7-cable-assign-a531ebb76b5ec2932a7ca20a57a37596.png",
+    "bytes": 103824
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4j7-connection1-e53de91909ddeab67443dd6ec7e7c3c3.png",
+    "file": "official-docs/assets/images/j4j7-connection1-e53de91909ddeab67443dd6ec7e7c3c3.png",
+    "bytes": 419054
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j4j7-connection2-eaa799ac060b2b809391c4dd01f989a5.png",
+    "file": "official-docs/assets/images/j4j7-connection2-eaa799ac060b2b809391c4dd01f989a5.png",
+    "bytes": 304668
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j5-a-27a6960c6d7950f1c16739c9798a4485.png",
+    "file": "official-docs/assets/images/j5-a-27a6960c6d7950f1c16739c9798a4485.png",
+    "bytes": 28055
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j6-a-35665237b3becf252fa47b58d6137f27.png",
+    "file": "official-docs/assets/images/j6-a-35665237b3becf252fa47b58d6137f27.png",
+    "bytes": 20894
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j6-b-97450aaa9f22247c73411940e107cb4b.png",
+    "file": "official-docs/assets/images/j6-b-97450aaa9f22247c73411940e107cb4b.png",
+    "bytes": 12150
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j6-c-left-331c902a36833572235e30c48f2781a0.png",
+    "file": "official-docs/assets/images/j6-c-left-331c902a36833572235e30c48f2781a0.png",
+    "bytes": 14013
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j6-c-right-2794f4f376769077ebf6cf572855f7ed.png",
+    "file": "official-docs/assets/images/j6-c-right-2794f4f376769077ebf6cf572855f7ed.png",
+    "bytes": 11646
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j6-d-744d9e83320451ec37561f255cf8fd04.png",
+    "file": "official-docs/assets/images/j6-d-744d9e83320451ec37561f255cf8fd04.png",
+    "bytes": 16357
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j6-j7-casing-a6eedac7688ee7e3c54994f26eafc554.png",
+    "file": "official-docs/assets/images/j6-j7-casing-a6eedac7688ee7e3c54994f26eafc554.png",
+    "bytes": 443810
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j6-j7-process1-289d3b9ac3ebb42847ae1ba90242897b.png",
+    "file": "official-docs/assets/images/j6-j7-process1-289d3b9ac3ebb42847ae1ba90242897b.png",
+    "bytes": 810159
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j6-j7-process2-172deb22ff63347c8e59c7c383d139ed.png",
+    "file": "official-docs/assets/images/j6-j7-process2-172deb22ff63347c8e59c7c383d139ed.png",
+    "bytes": 968226
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j7-a-04ffb22a11ee5ae3bf61c5a62c3354d2.png",
+    "file": "official-docs/assets/images/j7-a-04ffb22a11ee5ae3bf61c5a62c3354d2.png",
+    "bytes": 44577
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j7-b-6322212c762763bac10d214931068712.png",
+    "file": "official-docs/assets/images/j7-b-6322212c762763bac10d214931068712.png",
+    "bytes": 13682
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j7-c-4daf71e9cd69850a485dd44b717d2f8d.png",
+    "file": "official-docs/assets/images/j7-c-4daf71e9cd69850a485dd44b717d2f8d.png",
+    "bytes": 17215
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j7-d-left-139b061239a34092736de8e4d3b1f640.png",
+    "file": "official-docs/assets/images/j7-d-left-139b061239a34092736de8e4d3b1f640.png",
+    "bytes": 20256
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j7-d-right-1d81961158d8c20e03b31d6441c708dc.png",
+    "file": "official-docs/assets/images/j7-d-right-1d81961158d8c20e03b31d6441c708dc.png",
+    "bytes": 19284
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j7-e-3a6a4a19c0ea9a4352fc099be480e0a5.png",
+    "file": "official-docs/assets/images/j7-e-3a6a4a19c0ea9a4352fc099be480e0a5.png",
+    "bytes": 38093
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j7-j8-6c18f9b7cbd7ccd9ad40674e05a1c397.png",
+    "file": "official-docs/assets/images/j7-j8-6c18f9b7cbd7ccd9ad40674e05a1c397.png",
+    "bytes": 24626
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j7-j8-cable-821b5f5bb343c3635faf66a1b5ab4eea.png",
+    "file": "official-docs/assets/images/j7-j8-cable-821b5f5bb343c3635faf66a1b5ab4eea.png",
+    "bytes": 111061
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j7-j8-process1-8aa66c4025b4e115ba663c321730d4a3.png",
+    "file": "official-docs/assets/images/j7-j8-process1-8aa66c4025b4e115ba663c321730d4a3.png",
+    "bytes": 962853
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j7-j8-process2-be447ca65f2c1eb9942de908352afb15.png",
+    "file": "official-docs/assets/images/j7-j8-process2-be447ca65f2c1eb9942de908352afb15.png",
+    "bytes": 904393
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j8-a-06f24254dac177ce047ed292c88af1eb.png",
+    "file": "official-docs/assets/images/j8-a-06f24254dac177ce047ed292c88af1eb.png",
+    "bytes": 39242
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/j8-b-80d657a82735a99a91c86e77958eabcd.png",
+    "file": "official-docs/assets/images/j8-b-80d657a82735a99a91c86e77958eabcd.png",
+    "bytes": 35679
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/jlcpcb-step1-67bb7f973de0656d35ad780178766157.png",
+    "file": "official-docs/assets/images/jlcpcb-step1-67bb7f973de0656d35ad780178766157.png",
+    "bytes": 40013
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/jlcpcb-step2-fdb346ad0cae109f7c257fd5fade9244.png",
+    "file": "official-docs/assets/images/jlcpcb-step2-fdb346ad0cae109f7c257fd5fade9244.png",
+    "bytes": 11642
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/jlcpcb-step3-388952c825c7bae621232006272f9ad0.png",
+    "file": "official-docs/assets/images/jlcpcb-step3-388952c825c7bae621232006272f9ad0.png",
+    "bytes": 81571
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/jlcpcb-step4-112abc9994834d34243d0a03532ced40.png",
+    "file": "official-docs/assets/images/jlcpcb-step4-112abc9994834d34243d0a03532ced40.png",
+    "bytes": 18896
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/jlcpcb-step5-7090b0b6720b778ceb6f895afec21988.png",
+    "file": "official-docs/assets/images/jlcpcb-step5-7090b0b6720b778ceb6f895afec21988.png",
+    "bytes": 87383
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/jlcpcb-step6-0e54d28660e1df885b173acc6f9fa072.png",
+    "file": "official-docs/assets/images/jlcpcb-step6-0e54d28660e1df885b173acc6f9fa072.png",
+    "bytes": 55039
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/jlcpcb-step7-b62205e7441039c24d95df7ccfa4f52a.png",
+    "file": "official-docs/assets/images/jlcpcb-step7-b62205e7441039c24d95df7ccfa4f52a.png",
+    "bytes": 50993
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/jump-detect-streaming-stop-0dc6de3c6840f27fcc17030bdd28bf65.jpg",
+    "file": "official-docs/assets/images/jump-detect-streaming-stop-0dc6de3c6840f27fcc17030bdd28bf65.jpg",
+    "bytes": 4704288
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/jump-detect-zero-position-b649878248c9d4d11af0f7cf6dbc3882.jpg",
+    "file": "official-docs/assets/images/jump-detect-zero-position-b649878248c9d4d11af0f7cf6dbc3882.jpg",
+    "bytes": 5357107
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/kbbs3-6-9803af33f9b64239f0785203c1ec3558.png",
+    "file": "official-docs/assets/images/kbbs3-6-9803af33f9b64239f0785203c1ec3558.png",
+    "bytes": 15978
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/ker-attach-ca200a84a545e2eb436a293776f20a16.jpg",
+    "file": "official-docs/assets/images/ker-attach-ca200a84a545e2eb436a293776f20a16.jpg",
+    "bytes": 5462973
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/ker-calib-93f8e7d116cb0cc2788056c61160c2fe.jpg",
+    "file": "official-docs/assets/images/ker-calib-93f8e7d116cb0cc2788056c61160c2fe.jpg",
+    "bytes": 4490798
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/ker-display-b04e2021164488b73256328953844a11.jpg",
+    "file": "official-docs/assets/images/ker-display-b04e2021164488b73256328953844a11.jpg",
+    "bytes": 4676591
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/ker-how-to-wear-44b3106420dcc44635d9c005fe31a251.jpg",
+    "file": "official-docs/assets/images/ker-how-to-wear-44b3106420dcc44635d9c005fe31a251.jpg",
+    "bytes": 5185689
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/ker-mapping-44160abc8afed7a6818229fd8a475635.png",
+    "file": "official-docs/assets/images/ker-mapping-44160abc8afed7a6818229fd8a475635.png",
+    "bytes": 238730
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/ker-mount-29ece7b34f9e236d8878909958374199.jpg",
+    "file": "official-docs/assets/images/ker-mount-29ece7b34f9e236d8878909958374199.jpg",
+    "bytes": 5740828
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/ker-zero-pose-f88f848f76f4c17af2723654bcefcb9b.jpg",
+    "file": "official-docs/assets/images/ker-zero-pose-f88f848f76f4c17af2723654bcefcb9b.jpg",
+    "bytes": 2915994
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/key-features-35c879a1d8e364508cf10f96751f7cf2.png",
+    "file": "official-docs/assets/images/key-features-35c879a1d8e364508cf10f96751f7cf2.png",
+    "bytes": 2208995
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/lcsc-step1-f13b17961ac48800d4c9a8a44d515e5d.png",
+    "file": "official-docs/assets/images/lcsc-step1-f13b17961ac48800d4c9a8a44d515e5d.png",
+    "bytes": 63203
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/lcsc-step2-b82cd0374727587fe74c032c557a4a79.png",
+    "file": "official-docs/assets/images/lcsc-step2-b82cd0374727587fe74c032c557a4a79.png",
+    "bytes": 64069
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/lcsc-step3-11cea70d0e21c0014fe2782b455f553b.png",
+    "file": "official-docs/assets/images/lcsc-step3-11cea70d0e21c0014fe2782b455f553b.png",
+    "bytes": 17029
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/lcsc-step4-59a3eb6e263e3c5e2f4371c9ab9f24ec.png",
+    "file": "official-docs/assets/images/lcsc-step4-59a3eb6e263e3c5e2f4371c9ab9f24ec.png",
+    "bytes": 26724
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/lcsc-step5-916a233f032939f609c0e461a801d075.png",
+    "file": "official-docs/assets/images/lcsc-step5-916a233f032939f609c0e461a801d075.png",
+    "bytes": 43879
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/left-pincer-527944c640cbf96d162a56411ce3943f.png",
+    "file": "official-docs/assets/images/left-pincer-527944c640cbf96d162a56411ce3943f.png",
+    "bytes": 38991
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/limitation-7a9b02faf20ed935ced563422baf85c1.png",
+    "file": "official-docs/assets/images/limitation-7a9b02faf20ed935ced563422baf85c1.png",
+    "bytes": 46919
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/location-8d65a990963b6e3bc8d0f5e23bb9c689.png",
+    "file": "official-docs/assets/images/location-8d65a990963b6e3bc8d0f5e23bb9c689.png",
+    "bytes": 168679
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/location-b2078c1b330c4f15da7ef35751ec6f58.png",
+    "file": "official-docs/assets/images/location-b2078c1b330c4f15da7ef35751ec6f58.png",
+    "bytes": 69729
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m3-12-66d3fe9c64b834a87116be89824b6697.png",
+    "file": "official-docs/assets/images/m3-12-66d3fe9c64b834a87116be89824b6697.png",
+    "bytes": 11757
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m3-15-dc5b98b371ae365d1b0ed3e5c0684aaa.png",
+    "file": "official-docs/assets/images/m3-15-dc5b98b371ae365d1b0ed3e5c0684aaa.png",
+    "bytes": 12137
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m3-18-c848fccab3d50d8a29da3034d3420775.png",
+    "file": "official-docs/assets/images/m3-18-c848fccab3d50d8a29da3034d3420775.png",
+    "bytes": 13431
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m3-6-95f27c75ef5dc8c38554722e702d5d29.png",
+    "file": "official-docs/assets/images/m3-6-95f27c75ef5dc8c38554722e702d5d29.png",
+    "bytes": 23312
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m3-6-heat-set-insert-f2d2c5284361ca813d2ca57c7e1f2205.png",
+    "file": "official-docs/assets/images/m3-6-heat-set-insert-f2d2c5284361ca813d2ca57c7e1f2205.png",
+    "bytes": 79074
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m3-8-3097353a0acae1448cd4ff4d3b14f77b.png",
+    "file": "official-docs/assets/images/m3-8-3097353a0acae1448cd4ff4d3b14f77b.png",
+    "bytes": 14264
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m3-8-ef40352faebb35e445aa5ed5f90936b9.png",
+    "file": "official-docs/assets/images/m3-8-ef40352faebb35e445aa5ed5f90936b9.png",
+    "bytes": 20947
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m4-10-72542ee0c692bddcbdb7cd98e64608d3.png",
+    "file": "official-docs/assets/images/m4-10-72542ee0c692bddcbdb7cd98e64608d3.png",
+    "bytes": 21320
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m4-4-heat-set-insert-fd8562bc1492a4fbdb835fa5950d0c0e.png",
+    "file": "official-docs/assets/images/m4-4-heat-set-insert-fd8562bc1492a4fbdb835fa5950d0c0e.png",
+    "bytes": 55652
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m4-6-c4278ab0f2a5d40e5d542e23b6661491.png",
+    "file": "official-docs/assets/images/m4-6-c4278ab0f2a5d40e5d542e23b6661491.png",
+    "bytes": 29604
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m4-8-4f874a435cceda3380a04834e020527d.png",
+    "file": "official-docs/assets/images/m4-8-4f874a435cceda3380a04834e020527d.png",
+    "bytes": 23162
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m5-10-4aca22ae073a1b9f8516afc069b4f685.png",
+    "file": "official-docs/assets/images/m5-10-4aca22ae073a1b9f8516afc069b4f685.png",
+    "bytes": 17332
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/m5-turn-on-b04e2021164488b73256328953844a11.jpg",
+    "file": "official-docs/assets/images/m5-turn-on-b04e2021164488b73256328953844a11.jpg",
+    "bytes": 4676591
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/mjcf-bimanual-e640a2f6e1709a7b985a9b3d354a354e.png",
+    "file": "official-docs/assets/images/mjcf-bimanual-e640a2f6e1709a7b985a9b3d354a354e.png",
+    "bytes": 275963
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/moveit_v1.0-b227bd3761da26def283564b8922bb20.png",
+    "file": "official-docs/assets/images/moveit_v1.0-b227bd3761da26def283564b8922bb20.png",
+    "bytes": 311130
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/moveit_v2.0-76c0faa992c9cffe5387bced17096e0b.png",
+    "file": "official-docs/assets/images/moveit_v2.0-76c0faa992c9cffe5387bced17096e0b.png",
+    "bytes": 314296
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/mr106zz1-c6c45262dc950164ca0e77a7c57995c5.png",
+    "file": "official-docs/assets/images/mr106zz1-c6c45262dc950164ca0e77a7c57995c5.png",
+    "bytes": 27920
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/mr126zz-6fdcb3096f276f42da269d6cb3a9ee96.png",
+    "file": "official-docs/assets/images/mr126zz-6fdcb3096f276f42da269d6cb3a9ee96.png",
+    "bytes": 13219
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/mujoco-datacollection-2280e14989e9e620b46720e4c6d766d6.gif",
+    "file": "official-docs/assets/images/mujoco-datacollection-2280e14989e9e620b46720e4c6d766d6.gif",
+    "bytes": 859900
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/nomal-config-6935dbddefcc1aa613144e5254cea08d.png",
+    "file": "official-docs/assets/images/nomal-config-6935dbddefcc1aa613144e5254cea08d.png",
+    "bytes": 67405
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/nominal-payload-0db2ae9fb70239402e8a255545f47a81.png",
+    "file": "official-docs/assets/images/nominal-payload-0db2ae9fb70239402e8a255545f47a81.png",
+    "bytes": 64805
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/nominal-payload-79ca4127e2f516b9152df8b02076057f.png",
+    "file": "official-docs/assets/images/nominal-payload-79ca4127e2f516b9152df8b02076057f.png",
+    "bytes": 66529
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/openarm-2.0-204d2c840e8094cb2a8152d065040902.png",
+    "file": "official-docs/assets/images/openarm-2.0-204d2c840e8094cb2a8152d065040902.png",
+    "bytes": 2891417
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/openarm-cell-c6123e2908beb46567fb2cfab52c54bb.png",
+    "file": "official-docs/assets/images/openarm-cell-c6123e2908beb46567fb2cfab52c54bb.png",
+    "bytes": 1947336
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/openarm-ker-4cc8f7e80484702d6c9f4d2e4990fd62.png",
+    "file": "official-docs/assets/images/openarm-ker-4cc8f7e80484702d6c9f4d2e4990fd62.png",
+    "bytes": 2714431
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/openarm-specs-66ea85c3f73cac32f7560d0fc26339bb.png",
+    "file": "official-docs/assets/images/openarm-specs-66ea85c3f73cac32f7560d0fc26339bb.png",
+    "bytes": 967117
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/pcb-fd93d20364b763ffdc80f520f24a34ac.png",
+    "file": "official-docs/assets/images/pcb-fd93d20364b763ffdc80f520f24a34ac.png",
+    "bytes": 232746
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/peak-payload-42d0346d7c012b42338ab2379136802d.png",
+    "file": "official-docs/assets/images/peak-payload-42d0346d7c012b42338ab2379136802d.png",
+    "bytes": 131312
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/peak-payload-98b244bdd251027ae540477d53b93dad.png",
+    "file": "official-docs/assets/images/peak-payload-98b244bdd251027ae540477d53b93dad.png",
+    "bytes": 129788
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/perspective-cable-back-6701d6a0dab6cbbfa38f7d382bc8478b.png",
+    "file": "official-docs/assets/images/perspective-cable-back-6701d6a0dab6cbbfa38f7d382bc8478b.png",
+    "bytes": 565267
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/perspective-cable-front-720cc4c1ba38ac1b1e5ca05857282390.png",
+    "file": "official-docs/assets/images/perspective-cable-front-720cc4c1ba38ac1b1e5ca05857282390.png",
+    "bytes": 561496
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/pincer-heat-set-insert-982b22fa08f01e375d6ec6ea806b03f3.png",
+    "file": "official-docs/assets/images/pincer-heat-set-insert-982b22fa08f01e375d6ec6ea806b03f3.png",
+    "bytes": 50471
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/power-config-394f038b2cc8201b79459d2a61a8c5ae.png",
+    "file": "official-docs/assets/images/power-config-394f038b2cc8201b79459d2a61a8c5ae.png",
+    "bytes": 34681
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/power-extension-cable-e44f6e7919c5231ef5a8f2f443383088.png",
+    "file": "official-docs/assets/images/power-extension-cable-e44f6e7919c5231ef5a8f2f443383088.png",
+    "bytes": 325548
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/power-supply-fb608df5551ab617cee18b8d09c34889.jpg",
+    "file": "official-docs/assets/images/power-supply-fb608df5551ab617cee18b8d09c34889.jpg",
+    "bytes": 701378
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/ppe-4bc5ee9f2e4973deab7f8acaad8198cd.png",
+    "file": "official-docs/assets/images/ppe-4bc5ee9f2e4973deab7f8acaad8198cd.png",
+    "bytes": 50710
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/prep-step1-d48cf9cc80c93674eeb2f7678396825b.png",
+    "file": "official-docs/assets/images/prep-step1-d48cf9cc80c93674eeb2f7678396825b.png",
+    "bytes": 43828
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/prep-step2-3d33c29b03300c0e09e8aa656b8c3826.png",
+    "file": "official-docs/assets/images/prep-step2-3d33c29b03300c0e09e8aa656b8c3826.png",
+    "bytes": 26075
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/procurement-meviy-3642fc7a8615215ab8cf0a1eb6a0c6b6.png",
+    "file": "official-docs/assets/images/procurement-meviy-3642fc7a8615215ab8cf0a1eb6a0c6b6.png",
+    "bytes": 76520
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/quest-controller-right-cbe437fce97407819ecc6343059214e3.jpg",
+    "file": "official-docs/assets/images/quest-controller-right-cbe437fce97407819ecc6343059214e3.jpg",
+    "bytes": 2148037
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/rail-cnc-attachment-ad223fae1e922f8ebd0147fd7fac3478.png",
+    "file": "official-docs/assets/images/rail-cnc-attachment-ad223fae1e922f8ebd0147fd7fac3478.png",
+    "bytes": 18305
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/rail-connector-faddba6f7d9709be1b17774e78743e35.png",
+    "file": "official-docs/assets/images/rail-connector-faddba6f7d9709be1b17774e78743e35.png",
+    "bytes": 37443
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/rail-connector-heat-set-insert-dc06fd95b8b1fa87dd438988c8657762.png",
+    "file": "official-docs/assets/images/rail-connector-heat-set-insert-dc06fd95b8b1fa87dd438988c8657762.png",
+    "bytes": 231368
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/rail-connector-leader-8996009dc70dd7dfe86c5ce84b6329d0.png",
+    "file": "official-docs/assets/images/rail-connector-leader-8996009dc70dd7dfe86c5ce84b6329d0.png",
+    "bytes": 41926
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/reach-in-stop-6beb63c3e15882f653554ac209b3418b.gif",
+    "file": "official-docs/assets/images/reach-in-stop-6beb63c3e15882f653554ac209b3418b.gif",
+    "bytes": 13125121
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/reinforcement-469f94d6189cb264ce52777c7fa4b766.png",
+    "file": "official-docs/assets/images/reinforcement-469f94d6189cb264ce52777c7fa4b766.png",
+    "bytes": 62225
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/reinforcement-4f6bf5bf3dc419ef09b3f18c190f0874.png",
+    "file": "official-docs/assets/images/reinforcement-4f6bf5bf3dc419ef09b3f18c190f0874.png",
+    "bytes": 61639
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/right-pincer-4ad647bb7d091057b0e91ed75512e80c.png",
+    "file": "official-docs/assets/images/right-pincer-4ad647bb7d091057b0e91ed75512e80c.png",
+    "bytes": 42315
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/risk-2aca87e6204c79965af93252ea3234c1.png",
+    "file": "official-docs/assets/images/risk-2aca87e6204c79965af93252ea3234c1.png",
+    "bytes": 52635
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/side-brackets-f4e71ba62b7302445cc39f8a41db91b1.png",
+    "file": "official-docs/assets/images/side-brackets-f4e71ba62b7302445cc39f8a41db91b1.png",
+    "bytes": 63177
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/single-arm-urdf-rviz-2ed7b0f59550a4d00d2b45745fd5bfd4.png",
+    "file": "official-docs/assets/images/single-arm-urdf-rviz-2ed7b0f59550a4d00d2b45745fd5bfd4.png",
+    "bytes": 398436
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/sse2bsz-mx10-135-ecd5a7bfe5d3bd2c16736d584c25b716.png",
+    "file": "official-docs/assets/images/sse2bsz-mx10-135-ecd5a7bfe5d3bd2c16736d584c25b716.png",
+    "bytes": 16219
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step1-1391f43b83d9b3e5d5664a192cc00481.png",
+    "file": "official-docs/assets/images/step1-1391f43b83d9b3e5d5664a192cc00481.png",
+    "bytes": 123287
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step1-2cde7453b3444f99e77999a303a58d7b.png",
+    "file": "official-docs/assets/images/step1-2cde7453b3444f99e77999a303a58d7b.png",
+    "bytes": 62975
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step1-494bb8078331042521cf081e2ec99210.png",
+    "file": "official-docs/assets/images/step1-494bb8078331042521cf081e2ec99210.png",
+    "bytes": 70382
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step1-4e3cc7db0d4d6704bc7d6f582c25380b.png",
+    "file": "official-docs/assets/images/step1-4e3cc7db0d4d6704bc7d6f582c25380b.png",
+    "bytes": 35653
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step1-701bf838790509eb3a3037ad9413925f.png",
+    "file": "official-docs/assets/images/step1-701bf838790509eb3a3037ad9413925f.png",
+    "bytes": 70696
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step1-bde1347031d8e83a9914b556a0cb09a7.png",
+    "file": "official-docs/assets/images/step1-bde1347031d8e83a9914b556a0cb09a7.png",
+    "bytes": 74334
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step1-e5d833d3f083793d9a972a9389ba9385.png",
+    "file": "official-docs/assets/images/step1-e5d833d3f083793d9a972a9389ba9385.png",
+    "bytes": 385666
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step1-ec308c16e08a13ba47337244b069c066.png",
+    "file": "official-docs/assets/images/step1-ec308c16e08a13ba47337244b069c066.png",
+    "bytes": 29152
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step1-tip-fe1a1a32d44b9a5cb437f6a0208d68a2.png",
+    "file": "official-docs/assets/images/step1-tip-fe1a1a32d44b9a5cb437f6a0208d68a2.png",
+    "bytes": 781310
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step10-6f459b719be65b5d1028d59e07fe21a8.png",
+    "file": "official-docs/assets/images/step10-6f459b719be65b5d1028d59e07fe21a8.png",
+    "bytes": 89349
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step10-7e790d2b39e39f9e8415f6fd50fb5e02.png",
+    "file": "official-docs/assets/images/step10-7e790d2b39e39f9e8415f6fd50fb5e02.png",
+    "bytes": 329621
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step10-9cad6bc320458d5f7217c1bb8d6f66ec.png",
+    "file": "official-docs/assets/images/step10-9cad6bc320458d5f7217c1bb8d6f66ec.png",
+    "bytes": 73749
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step10-tip-bed5c01358b036cec302742ab341e357.png",
+    "file": "official-docs/assets/images/step10-tip-bed5c01358b036cec302742ab341e357.png",
+    "bytes": 75060
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step11-a36e48c2d4aa4a742efa0c4bcac81f3d.png",
+    "file": "official-docs/assets/images/step11-a36e48c2d4aa4a742efa0c4bcac81f3d.png",
+    "bytes": 112489
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step11-cdf168379dad75b0bfa5b65b8247a78f.png",
+    "file": "official-docs/assets/images/step11-cdf168379dad75b0bfa5b65b8247a78f.png",
+    "bytes": 355956
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step11-tip-771306b35cd383b24709c52e15e3b3ce.png",
+    "file": "official-docs/assets/images/step11-tip-771306b35cd383b24709c52e15e3b3ce.png",
+    "bytes": 63204
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step12-392096ae64c1e2e051dbc3d01d1c26d8.png",
+    "file": "official-docs/assets/images/step12-392096ae64c1e2e051dbc3d01d1c26d8.png",
+    "bytes": 40408
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step12-46030578a8e19975357370f4d2b66585.png",
+    "file": "official-docs/assets/images/step12-46030578a8e19975357370f4d2b66585.png",
+    "bytes": 106710
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step12-tip-55c8941ebd43f2d3c1aff3b77d9537d1.png",
+    "file": "official-docs/assets/images/step12-tip-55c8941ebd43f2d3c1aff3b77d9537d1.png",
+    "bytes": 85888
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step13-8b87b5704f3cdcc82e7e5fa084fa5c4d.png",
+    "file": "official-docs/assets/images/step13-8b87b5704f3cdcc82e7e5fa084fa5c4d.png",
+    "bytes": 115983
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step2-1fc1a17ee09fae733f3271dff88304f4.png",
+    "file": "official-docs/assets/images/step2-1fc1a17ee09fae733f3271dff88304f4.png",
+    "bytes": 72597
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step2-2487692ea3318da097c32d2ed371d1a3.png",
+    "file": "official-docs/assets/images/step2-2487692ea3318da097c32d2ed371d1a3.png",
+    "bytes": 50402
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step2-2a9ed01a0907d634bfac3626d8cb79b2.png",
+    "file": "official-docs/assets/images/step2-2a9ed01a0907d634bfac3626d8cb79b2.png",
+    "bytes": 45165
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step2-30d79fa22b42afb6d673a8cf8c849d75.png",
+    "file": "official-docs/assets/images/step2-30d79fa22b42afb6d673a8cf8c849d75.png",
+    "bytes": 68684
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step2-4e5069992be57100d6c294253cbb711a.png",
+    "file": "official-docs/assets/images/step2-4e5069992be57100d6c294253cbb711a.png",
+    "bytes": 447390
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step2-74a903aa5c6f92175b26615d5c5aca12.png",
+    "file": "official-docs/assets/images/step2-74a903aa5c6f92175b26615d5c5aca12.png",
+    "bytes": 110473
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step2-766ce7803747765a24d8f585d3407e86.png",
+    "file": "official-docs/assets/images/step2-766ce7803747765a24d8f585d3407e86.png",
+    "bytes": 75877
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step2-c89e16491a4017fbcb61f2bee28dddf6.png",
+    "file": "official-docs/assets/images/step2-c89e16491a4017fbcb61f2bee28dddf6.png",
+    "bytes": 194787
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step3-0124d944686cbdfbba5aca325024b308.png",
+    "file": "official-docs/assets/images/step3-0124d944686cbdfbba5aca325024b308.png",
+    "bytes": 110373
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step3-4237e45cf2cb4cb15c3720e021ce1cba.png",
+    "file": "official-docs/assets/images/step3-4237e45cf2cb4cb15c3720e021ce1cba.png",
+    "bytes": 84259
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step3-629bf02cd31f602887d70c471db0bcad.png",
+    "file": "official-docs/assets/images/step3-629bf02cd31f602887d70c471db0bcad.png",
+    "bytes": 83337
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step3-67fc7a8d29b9af51dae9cec9f222c407.png",
+    "file": "official-docs/assets/images/step3-67fc7a8d29b9af51dae9cec9f222c407.png",
+    "bytes": 39654
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step3-9b32d21cce4af8a070bd08bfc3802735.png",
+    "file": "official-docs/assets/images/step3-9b32d21cce4af8a070bd08bfc3802735.png",
+    "bytes": 117526
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step3-c9ef900e64a05288bc2d07150b06fe06.png",
+    "file": "official-docs/assets/images/step3-c9ef900e64a05288bc2d07150b06fe06.png",
+    "bytes": 97035
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step3-d19599cb40e8d099a954c7d1371513c4.png",
+    "file": "official-docs/assets/images/step3-d19599cb40e8d099a954c7d1371513c4.png",
+    "bytes": 23579
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step3-fb1d458a7dff73e8e54f2a098d57a70e.png",
+    "file": "official-docs/assets/images/step3-fb1d458a7dff73e8e54f2a098d57a70e.png",
+    "bytes": 100916
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step4-4aef90e98396613472be6db2e5bfe9cc.png",
+    "file": "official-docs/assets/images/step4-4aef90e98396613472be6db2e5bfe9cc.png",
+    "bytes": 132673
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step4-5d42d11a2edbdd81a3e5467524378db1.png",
+    "file": "official-docs/assets/images/step4-5d42d11a2edbdd81a3e5467524378db1.png",
+    "bytes": 59894
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step4-660613bf0549fcd408bcb09827ffa1b4.png",
+    "file": "official-docs/assets/images/step4-660613bf0549fcd408bcb09827ffa1b4.png",
+    "bytes": 333436
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step4-903c90e341317b9a55728b84783a21bf.png",
+    "file": "official-docs/assets/images/step4-903c90e341317b9a55728b84783a21bf.png",
+    "bytes": 113704
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step4-b8b055a95404a41fcff95bd89de026b7.png",
+    "file": "official-docs/assets/images/step4-b8b055a95404a41fcff95bd89de026b7.png",
+    "bytes": 66947
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step4-ccc668ce6a040b6509c8e8e6e0e65c73.png",
+    "file": "official-docs/assets/images/step4-ccc668ce6a040b6509c8e8e6e0e65c73.png",
+    "bytes": 74550
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step4-tip-00a2ff6745f298821399c737a4e6ad79.png",
+    "file": "official-docs/assets/images/step4-tip-00a2ff6745f298821399c737a4e6ad79.png",
+    "bytes": 67664
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step5-17dd6ad20abfd0dec4e11e34ae27d5ea.png",
+    "file": "official-docs/assets/images/step5-17dd6ad20abfd0dec4e11e34ae27d5ea.png",
+    "bytes": 132923
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step5-44d4d2923b7fe791e4186ee70181ff7a.png",
+    "file": "official-docs/assets/images/step5-44d4d2923b7fe791e4186ee70181ff7a.png",
+    "bytes": 466364
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step5-455f73cdc1ff0073f0be1d1970cb92d6.png",
+    "file": "official-docs/assets/images/step5-455f73cdc1ff0073f0be1d1970cb92d6.png",
+    "bytes": 131581
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step5-83b28629c2485730606962847731b5ca.png",
+    "file": "official-docs/assets/images/step5-83b28629c2485730606962847731b5ca.png",
+    "bytes": 76340
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step5-ea2e3aed3adec651fb771207d7190d30.png",
+    "file": "official-docs/assets/images/step5-ea2e3aed3adec651fb771207d7190d30.png",
+    "bytes": 15463
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step5-f6ae99e8e1f487cf2fc57dde5ca110c6.png",
+    "file": "official-docs/assets/images/step5-f6ae99e8e1f487cf2fc57dde5ca110c6.png",
+    "bytes": 79003
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step6-24786c64c1e92f0d207764141b6e7630.png",
+    "file": "official-docs/assets/images/step6-24786c64c1e92f0d207764141b6e7630.png",
+    "bytes": 78721
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step6-3b54e69a53b2d45284aefdd5dcdc6956.png",
+    "file": "official-docs/assets/images/step6-3b54e69a53b2d45284aefdd5dcdc6956.png",
+    "bytes": 167090
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step6-666e2173108f22aae0d2a5ae0cf856a9.png",
+    "file": "official-docs/assets/images/step6-666e2173108f22aae0d2a5ae0cf856a9.png",
+    "bytes": 196768
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step6-791c4641c82727bb8d2d9e7e2be2064e.png",
+    "file": "official-docs/assets/images/step6-791c4641c82727bb8d2d9e7e2be2064e.png",
+    "bytes": 119874
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step6-7e3d13ba715ffde6c13b46777cd3a1d3.png",
+    "file": "official-docs/assets/images/step6-7e3d13ba715ffde6c13b46777cd3a1d3.png",
+    "bytes": 587569
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step6-bbe33f818a08703ac7d13dd519481cde.png",
+    "file": "official-docs/assets/images/step6-bbe33f818a08703ac7d13dd519481cde.png",
+    "bytes": 74327
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step6-tip-491bf77b010673fe7f82a4db1f606f6f.png",
+    "file": "official-docs/assets/images/step6-tip-491bf77b010673fe7f82a4db1f606f6f.png",
+    "bytes": 32686
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step7-042481e9e8df6f9ab7738fa0a30d101d.png",
+    "file": "official-docs/assets/images/step7-042481e9e8df6f9ab7738fa0a30d101d.png",
+    "bytes": 69114
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step7-0aaaa54f34a964ac64ae9ff2d7a9dc99.png",
+    "file": "official-docs/assets/images/step7-0aaaa54f34a964ac64ae9ff2d7a9dc99.png",
+    "bytes": 115806
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step7-a1bf1d6278e5ea19f1a53bb501002fe7.png",
+    "file": "official-docs/assets/images/step7-a1bf1d6278e5ea19f1a53bb501002fe7.png",
+    "bytes": 44280
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step7-cc9127d517918ff312a8956eacb5b9c0.png",
+    "file": "official-docs/assets/images/step7-cc9127d517918ff312a8956eacb5b9c0.png",
+    "bytes": 177988
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step7-ffae343ee9311ac67f18e278a6e50c88.png",
+    "file": "official-docs/assets/images/step7-ffae343ee9311ac67f18e278a6e50c88.png",
+    "bytes": 125851
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step7-ffdfcb0a0146d5418e8f326ca26a08da.png",
+    "file": "official-docs/assets/images/step7-ffdfcb0a0146d5418e8f326ca26a08da.png",
+    "bytes": 573347
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step8-1ab7dde0bd737bb4fdd04f4f3f836fc4.png",
+    "file": "official-docs/assets/images/step8-1ab7dde0bd737bb4fdd04f4f3f836fc4.png",
+    "bytes": 61788
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step8-703f4bda3055c4391cd9f5320713fd1f.png",
+    "file": "official-docs/assets/images/step8-703f4bda3055c4391cd9f5320713fd1f.png",
+    "bytes": 89076
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step8-97c2729c9cebc88c9104f76d7e3a4272.png",
+    "file": "official-docs/assets/images/step8-97c2729c9cebc88c9104f76d7e3a4272.png",
+    "bytes": 306360
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step8-fd45b56646c703095bad0ed624dc1820.png",
+    "file": "official-docs/assets/images/step8-fd45b56646c703095bad0ed624dc1820.png",
+    "bytes": 318913
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step8-tip-31e37b4a115c0e820bcd20219fa80a09.png",
+    "file": "official-docs/assets/images/step8-tip-31e37b4a115c0e820bcd20219fa80a09.png",
+    "bytes": 113851
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step9-3ef1137d53589a3f137a1ec0b90e7cb2.png",
+    "file": "official-docs/assets/images/step9-3ef1137d53589a3f137a1ec0b90e7cb2.png",
+    "bytes": 147971
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step9-91ba6295a175495bd6046d56ae8db2a1.png",
+    "file": "official-docs/assets/images/step9-91ba6295a175495bd6046d56ae8db2a1.png",
+    "bytes": 29781
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/step9-c8bccf1591c8dc6c862696488bd1d88d.png",
+    "file": "official-docs/assets/images/step9-c8bccf1591c8dc6c862696488bd1d88d.png",
+    "bytes": 289722
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/swivel-link-aff757862617eed2bfc25bfe1d1257bc.png",
+    "file": "official-docs/assets/images/swivel-link-aff757862617eed2bfc25bfe1d1257bc.png",
+    "bytes": 29941
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/swivel-link-leader-81577d7fb66c81db48fdce850163bbaa.png",
+    "file": "official-docs/assets/images/swivel-link-leader-81577d7fb66c81db48fdce850163bbaa.png",
+    "bytes": 25784
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/swivel-rotor-34e13910da51662e8f3c7671e69cd0e6.png",
+    "file": "official-docs/assets/images/swivel-rotor-34e13910da51662e8f3c7671e69cd0e6.png",
+    "bytes": 31579
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/swivel-rotor-heat-set-insert-c62b93d62d82759dfe4c419e3082385e.png",
+    "file": "official-docs/assets/images/swivel-rotor-heat-set-insert-c62b93d62d82759dfe4c419e3082385e.png",
+    "bytes": 58848
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/swivel-rotor-leader-2af01f20371135896a767d056dd52fd8.png",
+    "file": "official-docs/assets/images/swivel-rotor-leader-2af01f20371135896a767d056dd52fd8.png",
+    "bytes": 45775
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/tip-5de827973d117403fb1b30ed9b221ac0.png",
+    "file": "official-docs/assets/images/tip-5de827973d117403fb1b30ed9b221ac0.png",
+    "bytes": 43891
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/unilateral-5be9e9854e26320a9719ce31cbede1e8.png",
+    "file": "official-docs/assets/images/unilateral-5be9e9854e26320a9719ce31cbede1e8.png",
+    "bytes": 1195232
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/unique-43e0de022290a0ca6ed656fd5e7c58c1.png",
+    "file": "official-docs/assets/images/unique-43e0de022290a0ca6ed656fd5e7c58c1.png",
+    "bytes": 967091
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/update_firm_1-fa0b7c5ac4b8bf176e89f00ce0a4ef78.png",
+    "file": "official-docs/assets/images/update_firm_1-fa0b7c5ac4b8bf176e89f00ce0a4ef78.png",
+    "bytes": 112957
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/update_firm_2-83f95eae60cedf659e027f7cae361800.png",
+    "file": "official-docs/assets/images/update_firm_2-83f95eae60cedf659e027f7cae361800.png",
+    "bytes": 34991
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/update_firm_3-ee44e1b53589a4f441dd35f5cda5ef4e.png",
+    "file": "official-docs/assets/images/update_firm_3-ee44e1b53589a4f441dd35f5cda5ef4e.png",
+    "bytes": 26697
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/usb2canfd-21f4853a879bcb516b2731fa191068b3.jpg",
+    "file": "official-docs/assets/images/usb2canfd-21f4853a879bcb516b2731fa191068b3.jpg",
+    "bytes": 381336
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/v2_mech_stop_conf-e4e76fb19fb6c5e2c01f5d8fc7639325.png",
+    "file": "official-docs/assets/images/v2_mech_stop_conf-e4e76fb19fb6c5e2c01f5d8fc7639325.png",
+    "bytes": 304215
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/washer-7204783c94ccefd4999824ef8a8c1352.png",
+    "file": "official-docs/assets/images/washer-7204783c94ccefd4999824ef8a8c1352.png",
+    "bytes": 25747
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/wowrobo-0e8bae1b3e0bf7a5b0f6d4f9e2eda104.png",
+    "file": "official-docs/assets/images/wowrobo-0e8bae1b3e0bf7a5b0f6d4f9e2eda104.png",
+    "bytes": 13269
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/wowrobo-a-18b06c6bff58a96bfab9fc503f6e4bb4.png",
+    "file": "official-docs/assets/images/wowrobo-a-18b06c6bff58a96bfab9fc503f6e4bb4.png",
+    "bytes": 1148191
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/wowrobo-b-66c0c0ddb89d424e11dfc16628c54ea3.png",
+    "file": "official-docs/assets/images/wowrobo-b-66c0c0ddb89d424e11dfc16628c54ea3.png",
+    "bytes": 1035845
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/wowrobo-openarm-2-94352134e53e4116971d617a8ddb56fa.png",
+    "file": "official-docs/assets/images/wowrobo-openarm-2-94352134e53e4116971d617a8ddb56fa.png",
+    "bytes": 835562
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/wowrobo-openarm-cell-c2137e05cd842a0fa84a3da2cfbfc519.png",
+    "file": "official-docs/assets/images/wowrobo-openarm-cell-c2137e05cd842a0fa84a3da2cfbfc519.png",
+    "bytes": 489755
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/wowrobo-openarm-ker-38b437b2c834025bd95332a389c58895.png",
+    "file": "official-docs/assets/images/wowrobo-openarm-ker-38b437b2c834025bd95332a389c58895.png",
+    "bytes": 279983
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/images/zeropos-ee86758a0667ec88408c917ae6699109.jpg",
+    "file": "official-docs/assets/images/zeropos-ee86758a0667ec88408c917ae6699109.jpg",
+    "bytes": 3003342
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/medias/inference-mujoco-e63ed06663d6713873374357369fe172.mp4",
+    "file": "official-docs/assets/medias/inference-mujoco-e63ed06663d6713873374357369fe172.mp4",
+    "bytes": 262340
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/medias/lifting-cube-412a661d29f87b34d3131193f9fc8642.mp4",
+    "file": "official-docs/assets/medias/lifting-cube-412a661d29f87b34d3131193f9fc8642.mp4",
+    "bytes": 1937906
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/medias/openarm-bi-reach-demo-6e4dbf692ff841ba2292286c94e1e755.mp4",
+    "file": "official-docs/assets/medias/openarm-bi-reach-demo-6e4dbf692ff841ba2292286c94e1e755.mp4",
+    "bytes": 121445
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/medias/opening-drawer-31cfa5da358e6348af85c000445a1490.mp4",
+    "file": "official-docs/assets/medias/opening-drawer-31cfa5da358e6348af85c000445a1490.mp4",
+    "bytes": 2646476
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/medias/reaching-task-ba9df8ba6b161cd566630b53bb7986cc.mp4",
+    "file": "official-docs/assets/medias/reaching-task-ba9df8ba6b161cd566630b53bb7986cc.mp4",
+    "bytes": 8707055
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/medias/simulation-bf413139993f653f0645a90a68cd3f61.mp4",
+    "file": "official-docs/assets/medias/simulation-bf413139993f653f0645a90a68cd3f61.mp4",
+    "bytes": 4664703
+  },
+  {
+    "source": "https://docs.openarm.dev/assets/medias/tutorial-5b5002b9005a577802c0db1992cc68e2.mp4",
+    "file": "official-docs/assets/medias/tutorial-5b5002b9005a577802c0db1992cc68e2.mp4",
+    "bytes": 14217601
+  },
+  {
+    "source": "https://docs.openarm.dev/img/logo-white.svg",
+    "file": "official-docs/img/logo-white.svg",
+    "bytes": 3127
+  },
+  {
+    "source": "https://docs.openarm.dev/img/logo.svg",
+    "file": "official-docs/img/logo.svg",
+    "bytes": 3127
+  },
+  {
+    "source": "https://docs.openarm.dev/software/can/",
+    "redirect_target": "/1.0/software/can",
+    "file": "official-docs/1.0/software/can/index.html"
+  },
+  {
+    "source": "https://docs.openarm.dev/software/description",
+    "redirect_target": "/1.0/software/description",
+    "file": "official-docs/1.0/software/description/index.html"
+  },
+  {
+    "source": "https://docs.openarm.dev/software/ros2/install",
+    "redirect_target": "/1.0/software/ros2/install",
+    "file": "official-docs/1.0/software/ros2/install/index.html"
+  },
+  {
+    "source": "https://docs.openarm.dev/ba4b6e3b34b16b5241a3dc6a5b6292ca.csv",
+    "file": "official-docs/ba4b6e3b34b16b5241a3dc6a5b6292ca.csv",
+    "bytes": 422
+  }
+]

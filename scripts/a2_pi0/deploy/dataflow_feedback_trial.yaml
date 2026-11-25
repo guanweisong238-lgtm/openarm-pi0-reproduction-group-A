@@ -1,0 +1,16 @@
+# First hardware commissioning step. There is no position command connection.
+nodes:
+  - id: trial
+    path: feedback_trial.py
+    inputs:
+      tick: dora/timer/millis/25
+      status: arm/status
+      state: arm/state
+    outputs: [command, request]
+  - id: arm
+    path: ../../../.cache/openarm-policy-driver/bin/python
+    args: feedback_trial.py --driver
+    inputs:
+      command: trial/command
+      request_state: {source: trial/request, queue_size: 1}
+    outputs: [state, status]

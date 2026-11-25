@@ -1,0 +1,17 @@
+{
+  "checkpoint": "checkpoints/real_camera_adjusted_lora_continue5000_20261122_v002/step_3000",
+  "run": "results/real_camera_adjusted_lora_continue5000_20261122_v002",
+  "replay_index": 0,
+  "seed": 1002,
+  "inference_timeout_ms": 650,
+  "observation_max_age_ms": 120,
+  "observation_skew_ms": 65,
+  "replan_steps": 20,
+  "max_plan_age_ms": 1350,
+  "feedback_max_gap_rad": [0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10],
+  "joint_velocity_rad_s": [2, 2, 3.3, 3.3, 6.3, 6.3, 6.3, 20],
+  "target_limits_rad": {
+    "right": [[-1.3963, 3.4907], [-0.17453, 3.3161], [-1.5708, 1.5708], [0, 2.4435], [-1.5708, 1.5708], [-0.7854, 0.7854], [-1.5708, 1.5708], [-0.7853982, 0.174533]],
+    "left": [[-3.4907, 1.3963], [-3.3161, 0.17453], [-1.5708, 1.5708], [0, 2.4435], [-1.5708, 1.5708], [-0.7854, 0.7854], [-1.5708, 1.5708], [-0.174533, 0.7853982]]
+  }
+}

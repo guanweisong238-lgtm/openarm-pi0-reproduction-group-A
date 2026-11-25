@@ -1,3 +1,4 @@
+# 历史接线草稿，当前入口见同目录 README.md。相机载荷、代次和停机逻辑须重新核对。
 # 策略接入补丁（片段，不是可直接 dora run 的完整图）
 #
 # 目标：把 policy_client_node 的 position_left/right 与 leader 的 IK 目标

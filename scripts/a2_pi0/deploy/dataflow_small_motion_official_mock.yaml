@@ -1,0 +1,19 @@
+# Runs the official Dora node with a mocked driver. No CAN or hardware access.
+nodes:
+  - id: controller
+    path: small_motion_dora_mock.py
+    args: controller
+    env:
+      SMALL_MOTION_OFFICIAL_MOCK: "1"
+    inputs:
+      tick: dora/timer/millis/5
+      state: arm/state
+      status: arm/status
+    outputs: [target, request, command]
+  - id: arm
+    path: official_driver_mock.py
+    inputs:
+      request_state: controller/request
+      move_position: {source: controller/target, queue_size: 1}
+      command: controller/command
+    outputs: [state, status]

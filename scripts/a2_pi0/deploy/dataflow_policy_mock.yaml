@@ -1,0 +1,37 @@
+# Hardware-free graph. The two official driver interfaces are emulated by mock-openarm.
+nodes:
+  - id: policy
+    path: dora_policy_node.py
+    inputs:
+      tick: dora/timer/millis/5
+      camera_global: mock-openarm/camera_global
+      camera_chest: mock-openarm/camera_chest
+      camera_wrist_left: mock-openarm/camera_wrist_left
+      camera_wrist_right: mock-openarm/camera_wrist_right
+      state_right: mock-openarm/state_right
+      state_left: mock-openarm/state_left
+      status_right: mock-openarm/status_right
+      status_left: mock-openarm/status_left
+    outputs:
+      - request_right
+      - request_left
+      - target_right
+      - target_left
+
+  - id: mock-openarm
+    path: mock_openarm_node.py
+    inputs:
+      camera_tick: dora/timer/millis/33
+      request_right: policy/request_right
+      request_left: policy/request_left
+      target_right: policy/target_right
+      target_left: policy/target_left
+    outputs:
+      - camera_global
+      - camera_chest
+      - camera_wrist_left
+      - camera_wrist_right
+      - state_right
+      - state_left
+      - status_right
+      - status_left

@@ -118,14 +118,20 @@ class PolicyService:
         self.jax, self.nnx, self.traverse_util = jax, nnx, traverse_util
         run_dir = run_dir or (ROOT / "results/real_pi0_four_camera_lora_001")
         run = json.loads((run_dir / "config.json").read_text())
-        # 不同 run 记录统计量哈希的字段名不统一，找到哪个用哪个；找不到就比对检查点内的副本。
         recorded = next((run[k] for k in ("norm_stats_sha256", "norm_sha256", "stats_sha256") if k in run), None)
-        dataset_sha = sha256(DEFAULT / "norm_stats.json")
-        ckpt_stats = ckpt / "norm_stats.json"
-        if recorded is not None and recorded != dataset_sha:
-            raise ValueError("norm_stats.json 与训练 run 不一致，拒绝加载")
-        if ckpt_stats.is_file() and sha256(ckpt_stats) != dataset_sha:
-            raise ValueError("检查点内 norm_stats.json 与数据集不一致，拒绝加载")
+        self.ckpt = ckpt
+        self.candidate = Path(run.get("candidate", DEFAULT))
+        self.candidate = ROOT / self.candidate
+        self.stats_root = ckpt if (ckpt / "norm_stats.json").is_file() else self.candidate
+        dataset_sha = sha256(self.stats_root / "norm_stats.json")
+        meta = json.loads((ckpt / "checkpoint.json").read_text())
+        if recorded != dataset_sha or meta.get("normalization_sha256", dataset_sha) != dataset_sha:
+            raise ValueError("归一化统计与训练配置或检查点不一致")
+        if not prefix:
+            if run.get("action_semantics") != "absolute IK target, right arm then left arm, rad":
+                raise ValueError("缺少受支持的绝对关节动作语义")
+            if run.get("action_horizon") != horizon or run.get("training_frequency_hz") != 30:
+                raise ValueError("训练动作窗口或时间间隔不匹配")
 
         model_class = FourCameraPi0Config
         if prefix:
@@ -146,7 +152,7 @@ class PolicyService:
         self._load_adapter(model, ckpt)
         self.params = nnx.state(model)
 
-        self.pre = Preprocessor()
+        self.pre = Preprocessor(self.stats_root)
         self.num_steps = num_steps
         self.prefix = prefix
         self._lock = threading.Lock()
@@ -176,7 +182,8 @@ class PolicyService:
         started = time.perf_counter()
         dummy = np.zeros((IMAGE_SIZE, IMAGE_SIZE, 3), dtype=np.uint8)
         obs = self._make_obs(self.pre({k: dummy for k in CAM_ORDER}, np.zeros(16, np.float32)))
-        self._sample(self.params, obs, np.zeros((1, 7, MODEL_ACTION_DIM), np.float32), self.jax.random.key(0))
+        out = self._sample(self.params, obs, np.zeros((1, 7, MODEL_ACTION_DIM), np.float32), self.jax.random.key(0))
+        self.jax.block_until_ready(out)
         return time.perf_counter() - started
 
     def _make_obs(self, data: dict):
@@ -184,7 +191,11 @@ class PolicyService:
         batch.pop("actions", None)
         return model_lib.Observation.from_dict(batch)
 
-    def infer(self, images: dict[str, np.ndarray], state16: np.ndarray, *, known_prefix=None, seed=None):
+    def infer(self, images: dict[str, np.ndarray], state16: np.ndarray, *, known_prefix=None, seed=None,
+              include_raw=False):
+        state16 = np.asarray(state16, dtype=np.float32)
+        if state16.shape != (16,) or not np.isfinite(state16).all():
+            raise ValueError("state 必须是有限的 16 维反馈")
         data = self.pre(images, state16)
         obs = self._make_obs(data)
         key = self.jax.random.key(int(seed if seed is not None else np.random.randint(0, 2**31)))
@@ -199,7 +210,14 @@ class PolicyService:
             out = self._sample(self.params, obs, prefix, key)
             self.jax.block_until_ready(out)
             infer_ms = (time.perf_counter() - t0) * 1000
-        actions = self.pre.unnormalize(np.asarray(out, dtype=np.float32)[0, :, :16])
+        raw = np.asarray(out, dtype=np.float32)
+        if raw.shape != (1, self.cfg.model.action_horizon, MODEL_ACTION_DIM) or not np.isfinite(raw).all():
+            raise ValueError("模型输出维度或数值异常")
+        actions = self.pre.unnormalize(raw[0, :, :16])
+        if not np.isfinite(actions).all():
+            raise ValueError("反归一化产生非有限动作")
+        if include_raw:
+            return actions, infer_ms, raw[0]
         return actions, infer_ms
 
 
@@ -280,11 +298,10 @@ def serve(service: PolicyService, bind: str, port: int) -> None:
 
 
 # ---------------------------------------------------------------- 自检
-def self_test(service_free: bool = True) -> None:
+def self_test(candidate: Path = DEFAULT, stats_root: Path | None = None) -> None:
     """证明推理侧预处理与训练侧 __getitem__ 逐元素一致，不需要加载模型。"""
-    pre = Preprocessor()
-    ds = RealFourCameraDataset("validation", cache_episodes=4)
-    import jax
+    pre = Preprocessor(stats_root or candidate)
+    ds = RealFourCameraDataset("validation", root=candidate, cache_episodes=4)
 
     for index in (0, 7, len(ds) // 2, len(ds) - 1):
         raw = ds.get_raw(index)
@@ -302,23 +319,31 @@ def self_test(service_free: bool = True) -> None:
     print("[self-test] 预处理与训练管线逐元素一致")
 
 
-def probe(service: PolicyService) -> None:
-    ds = RealFourCameraDataset("validation", cache_episodes=1)
+def probe(service: PolicyService, log: Path | None = None) -> None:
+    ds = RealFourCameraDataset("validation", root=service.candidate, cache_episodes=1)
     raw = ds.get_raw(0)
-    print("[probe] warm-up 编译中（约 25 s）...", flush=True)
+    print("[probe] warm-up 编译中", flush=True)
     print(f"[probe] 编译耗时 {service.warmup():.1f}s", flush=True)
     rows = []
     for i in range(5):
         t0 = time.perf_counter()
-        actions, infer_ms = service.infer(raw["images"], raw["state"], seed=1000 + i)
+        actions, infer_ms, normalized = service.infer(raw["images"], raw["state"], seed=1000 + i,
+                                                       include_raw=True)
         total = (time.perf_counter() - t0) * 1000
         ref = np.asarray(raw["actions"], dtype=np.float32)
         err = np.abs(actions - ref)
         rows.append({"total_ms": total, "infer_ms": infer_ms,
                      "mae_vs_recorded": float(err.mean()), "max_vs_recorded": float(err.max())})
+        if log is not None:
+            record = dict(rows[-1], obs_timestamp_ns=raw["timestamp_ns"], episode=raw["episode_id"],
+                          seed=1000 + i, feedback_rad=raw["state"].tolist(),
+                          model_normalized=normalized.tolist(), target_right_rad=actions[:, :8].tolist(),
+                          target_left_rad=actions[:, 8:].tolist(), sent_target=None)
+            with log.open("a", encoding="utf-8") as file:
+                file.write(json.dumps(record, allow_nan=False) + "\n")
         print(f"[probe] {i+1}/5 total={total:.0f}ms infer={infer_ms:.0f}ms "
               f"MAE={err.mean():.3f}rad max={err.max():.3f}rad", flush=True)
-    print(json.dumps({"checkpoint": str(DEFAULT_CKPT), "rows": rows,
+    print(json.dumps({"checkpoint": str(service.ckpt), "rows": rows,
                       "note": "单样本开口环对比；不是闭环成功率，也不代表真机行为"}, ensure_ascii=False, indent=2))
 
 
@@ -333,14 +358,16 @@ def main() -> None:
     ap.add_argument("--serve", action="store_true")
     ap.add_argument("--bind", default="0.0.0.0")
     ap.add_argument("--port", type=int, default=5555)
+    ap.add_argument("--log", type=Path, help="保存离线探针的模型原始输出、目标和反馈")
     args = ap.parse_args()
 
     if args.self_test:
-        self_test()
+        run = json.loads((args.run_dir / "config.json").read_text())
+        self_test(ROOT / Path(run.get("candidate", DEFAULT)))
         return
     service = PolicyService(args.ckpt, args.run_dir, args.num_steps, args.prefix)
     if args.probe:
-        probe(service)
+        probe(service, args.log)
     elif args.serve:
         serve(service, args.bind, args.port)
     else:

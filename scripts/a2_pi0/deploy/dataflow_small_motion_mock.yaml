@@ -1,0 +1,16 @@
+# Synthetic feedback and simulated targets only. No official driver or CAN access.
+nodes:
+  - id: controller
+    path: small_motion_dora_mock.py
+    args: controller
+    inputs:
+      tick: dora/timer/millis/5
+      state: receiver/state
+    outputs: [target]
+  - id: receiver
+    path: small_motion_dora_mock.py
+    args: receiver
+    inputs:
+      tick: dora/timer/millis/20
+      target: controller/target
+    outputs: [state]
