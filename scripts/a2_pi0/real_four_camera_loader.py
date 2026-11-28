@@ -28,7 +28,17 @@ class RealFourCameraDataset:
   if split not in ('train','validation') or cache_episodes<1:raise ValueError('bad split/cache size')
   self.root=Path(root);self.manifest=json.loads((self.root/'manifest.json').read_text())
   decision=json.loads((self.root/'review_decision.json').read_text())
-  if decision['decision']!='assume_all_episodes_human_reviewed_for_this_exploratory_run':raise ValueError('missing review decision')
+  if decision['decision']=='use_capture_labeled_success_for_exploratory_training':
+   metadata=self.manifest['metadata_selection']
+   ids=sorted(row['episode_id'] for row in self.manifest['entries'])
+   if (ids!=sorted(metadata['selected_episode_ids']) or ids!=decision['episode_ids']
+       or decision['source']!=metadata['raw_dataset'] or decision['metadata_sha256']!=metadata['metadata_sha256']
+       or self.manifest['prompt']!=metadata['prompt']):
+    raise ValueError('capture-label decision does not match candidate')
+  elif decision['decision']!='assume_all_episodes_human_reviewed_for_this_exploratory_run':
+   raise ValueError('missing review decision')
+  self.prompt=self.manifest.get('prompt',PROMPT)
+  if not isinstance(self.prompt,str) or not self.prompt.strip():raise ValueError('invalid training prompt')
   self.entries=[x for x in self.manifest['entries'] if x['split']==split]
   if not self.entries:raise ValueError('empty split')
   self.ends=np.cumsum([x['full_window_samples'] for x in self.entries]);self.cache=OrderedDict();self.cache_size=cache_episodes
@@ -36,9 +46,9 @@ class RealFourCameraDataset:
   self.resize=transforms.ResizeImages(224,224);self.pad=transforms.PadStatesAndActions(32)
   self.norm=transforms.Normalize(self.stats,strict=True)
   self.tokenizer=PaligemmaTokenizer(48)
-  tokens=self.tokenizer._tokenizer.encode(PROMPT,add_bos=True)+self.tokenizer._tokenizer.encode('\n')
+  tokens=self.tokenizer._tokenizer.encode(self.prompt,add_bos=True)+self.tokenizer._tokenizer.encode('\n')
   if len(tokens)>48:raise ValueError(f'prompt would be truncated: {len(tokens)} tokens')
-  self.prompt_tokens,self.prompt_mask=self.tokenizer.tokenize(PROMPT)
+  self.prompt_tokens,self.prompt_mask=self.tokenizer.tokenize(self.prompt)
   self.prompt_tokens=np.asarray(self.prompt_tokens,dtype=np.int32)
   self.prompt_mask=np.asarray(self.prompt_mask,dtype=bool)
  def __len__(self):return int(self.ends[-1])
@@ -60,7 +70,7 @@ class RealFourCameraDataset:
   for cam in CAMERA_MAPPING.values():
    path=ROOT/str(z['image_path_'+cam][i])
    with Image.open(path) as im:images[cam]=np.asarray(im.convert('RGB'))
-  return {'episode_id':row['episode_id'],'sample_index':i,'timestamp_ns':int(z['timestamp_ns'][i]),'images':images,'state':z['state'][i].copy(),'actions':z['actions'][i].copy(),'prompt':PROMPT}
+  return {'episode_id':row['episode_id'],'sample_index':i,'timestamp_ns':int(z['timestamp_ns'][i]),'images':images,'state':z['state'][i].copy(),'actions':z['actions'][i].copy(),'prompt':self.prompt}
  def __getitem__(self,index):
   raw=self.get_raw(index);data=self.adapter(raw);data=self.norm(data)
   data['state']=np.asarray(data['state'],dtype=np.float32);data['actions']=np.asarray(data['actions'],dtype=np.float32)

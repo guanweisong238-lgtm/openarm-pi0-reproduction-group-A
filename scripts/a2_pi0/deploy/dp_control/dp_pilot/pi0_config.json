@@ -1,0 +1,9 @@
+{
+  "checkpoint": "checkpoints/real_20261128_202032_pi0_lora_phase_continue2000_v001/step_2000",
+  "run": "results/real_20261128_202032_pi0_lora_phase_continue2000_v001",
+  "seed": 1002,
+  "inference_timeout_ms": 650,
+  "observation_skew_ms": 65,
+  "max_plan_age_ms": 1350,
+  "replan_steps": 20
+}

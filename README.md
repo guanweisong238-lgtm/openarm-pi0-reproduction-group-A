@@ -2,16 +2,20 @@
 
 任务依次是左臂拉开抽屉，右臂抓取方块、放入并释放，最后左臂推合抽屉。策略目标为真机自主完成。
 
-相机调整和更换方块后的批次包含 49 条实采轨迹，已生成 30 Hz、50 步动作窗口，并用于四相机绝对关节目标模型的训练。从 episode 35 起，示教改为左夹爪全程夹住把手，待右臂放入物块后直接推合。 [数据与审核记录](data/README.md#2026-11-22-新采集批次)
+本轮 π0 仅使用 `data/real_20261128_202032/`，从底座完成 1,000 步 LoRA 重训。新采集任务为左臂拉开抽屉，右臂将方块放入并释放。数据划分为 18 条训练、4 条验证。 [数据与审核记录](data/README.md#2026-11-28-重训批次) · [重训结果](results/real_20261128_202032_pi0_lora_1000_v001/summary.json)
 
-当前联调使用累计 6500 步的模型。**真机目前卡在示教起点：两侧 J4 保持时仍差约 5°，超过 2.86° 的到位判据，完整示教回放尚未开始。** 无补偿保持已复测；重力补偿只做了离线验证，尚未下发。模型换段跳变、夹爪早合仍未解决；夹爪限幅只在离线消除了越界。**模型目标尚未下发真机。** [最新交接](docs/project-handoff.md#2026-11-25-j4-保持偏差与重力补偿) · [现场放行条件](docs/on-site-verification.md#j4-补偿试验放行)
+已完成 2,000 步续训（累计 3,000 步），最终检查点的固定验证损失为 0.0645。 [续训结果与验证](results/README.md#2026-11-28-关键阶段续训)
+
+**11 月 28 日批次的第 0 条已在真机完成首帧摆位。** 双臂到位后，独立读回确认 16 轴失能。短段与整条关节轨迹均已离线生成，真机播放待验证。 [真机结果与待办](docs/project-handoff.md#2026-11-28-第-0-条示范首帧真机摆位) · [示范回放说明](results/real_20261128_demo0_replay_preflight/README.md)
+
+π0 工作台入口为 `scripts/a2_pi0/deploy/run_pi0.sh`，可加 `--check` 做离线检查。默认配置已切换至新批次续训第 2,000 步模型和第 0 条示范起点，π0 真机闭环待验收。 [部署说明](scripts/a2_pi0/deploy/README.md) · [电脑端核验](docs/on-site-verification.md#2026-11-28-电脑端连接检查)
 
 ## 项目入口
 
 - [任务定义与当前状态](docs/task-real-cube-to-drawer.md)
 - [数据说明](data/README.md)、[视觉缺陷](data/real_data_20261121_193807_数据缺陷与审核.md)、[动作语义](data/real_data_20261121_193807_动作语义核验.md)
 - [训练样本协议](docs/real-training-sample-contract.md)与[脚本使用说明](scripts/a2_pi0/README.md)
-- [真机部署接线与联调](scripts/a2_pi0/deploy/README.md)包含相机端口、双臂摆位、右 J7 双编码器实测和模拟复现命令。
+- [真机部署接线与联调](scripts/a2_pi0/deploy/README.md)包含新工作台入口、运行环境及历史真机联调记录。
 - [项目交接](docs/project-handoff.md)、[检查点](checkpoints/README.md)、[结果索引](results/README.md)
 - [OpenArm V2 官方资料本地归档](references/openarm-v2/index.html)
 - [任务 C 优化记录](optimization_log_taskC.md)

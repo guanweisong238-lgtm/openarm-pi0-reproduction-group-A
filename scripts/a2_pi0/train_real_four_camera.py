@@ -5,9 +5,9 @@ from pathlib import Path
 from datetime import datetime
 from real_training_support import ROOT,get_train_config,BASE_PARAMS
 from real_four_camera_config import FourCameraPi0Config,FOUR_CAMERA_KEYS,CAMERA_MAPPING
-from real_four_camera_loader import RealFourCameraDataset,batch_samples,DEFAULT,PROMPT
+from real_four_camera_loader import RealFourCameraDataset,batch_samples,DEFAULT
 from real_training_support import load_parameters,make_train_step
-from real_task_c_phases import PHASES,phase_frames
+from real_task_c_phases import PHASES,grip_intervals,phase_frames
 import flax.nnx as nnx
 from flax import traverse_util
 import jax
@@ -24,21 +24,34 @@ def sha(p):
 
 
 def phase_balanced_order(train, previous_indices, steps, rng, priority):
+ gripper_transitions=bool({'left_close','left_release'}.intersection(priority))
  labels=np.empty(len(train),dtype=np.int8)
+ selected_stages=np.empty(len(train),dtype='<U20') if gripper_transitions else None
  buckets={}
  start=0
  for row in train.entries:
   source=ROOT/row['samples_path']
   if sha(source)!=row['samples_sha256']:raise ValueError(f'source hash mismatch: {source}')
   with np.load(source,allow_pickle=False) as z:
-   phase,_=phase_frames(z['actions'][:,0],row['operation_style'])
+   actions=z['actions'][:,0]
+   phase,_=phase_frames(actions,row['operation_style'])
   count=row['full_window_samples']
   # Favor observations leading into the phase, while the event is still ahead.
   labels[start:start+count]=phase[8:count+8]
   fresh=np.arange(start,start+count)
   fresh=fresh[~np.isin(fresh,list(previous_indices))]
-  for stage in np.unique(labels[fresh]):
-   buckets[(row['episode_id'],PHASES[stage])]=rng.permutation(fresh[labels[fresh]==stage]).tolist()
+  stages=np.asarray(PHASES)[labels[fresh]].astype('<U20')
+  if gripper_transitions:
+   for close,release in grip_intervals(actions[:,15],False):
+    distance=close-(fresh-start)
+    stages[(distance>=0)&(distance<=30)]='left_close'
+    distance=release-(fresh-start)
+    if release+10<=len(actions) and np.all(actions[release:release+10,15]>=.305):
+     stages[(distance>=-7)&(distance<=30)]='left_release'
+  stage_order=np.unique(stages) if gripper_transitions else [PHASES[i] for i in np.unique(labels[fresh])]
+  for stage in stage_order:
+   buckets[(row['episode_id'],stage)]=rng.permutation(fresh[stages==stage]).tolist()
+  if selected_stages is not None:selected_stages[fresh]=stages
   start+=count
  if start!=len(train) or steps>sum(map(len,buckets.values())):raise ValueError('insufficient fresh phase windows')
 
@@ -61,7 +74,7 @@ def phase_balanced_order(train, previous_indices, steps, rng, priority):
    del buckets[key]
    if key in general_round:general_round.remove(key)
    if key in priority_round:priority_round.remove(key)
- return np.asarray(selected),labels
+ return np.asarray(selected),labels,selected_stages
 
 
 def save_adapter(root,step,params,opt_state,cfg,candidate):
@@ -101,8 +114,11 @@ def main():
  p.add_argument('--init-run',help='Warm start from the final adapter of this run, excluding its sampled windows')
  p.add_argument('--init-step',type=int,help='Select an intermediate checkpoint from --init-run')
  p.add_argument('--continuity-weight',type=float,default=0.0,help='Weight for same-time arm agreement on paired observations')
+ p.add_argument('--directed-handoff',action='store_true',help='Pair observations 12 frames apart, even at zero continuity weight; selectively teach the old arm prediction')
+ p.add_argument('--old-forecast-weight',type=float,default=1.0,help='Extra supervised weight for old-arm frames 12 through 17 in 12-frame pairs')
  p.add_argument('--phase-balanced',action='store_true',help='Spread fresh windows across Task C episodes and operation stages')
- p.add_argument('--priority-phases',nargs='+',choices=PHASES,default=[],help='Allocate every third phase-balanced draw to these stages')
+ p.add_argument('--priority-phases',nargs='+',choices=(*PHASES,'left_close','left_release'),default=[],help='Allocate every third phase-balanced draw to these stages')
+ p.add_argument('--left-gripper-weight',type=float,default=1.0,help='Weight the left gripper velocity error during training only')
  p.add_argument('--peak-lr',type=float,default=2.5e-5)
  args=p.parse_args()
  candidate=args.candidate.resolve()
@@ -111,7 +127,12 @@ def main():
  if not np.isfinite(args.peak_lr) or args.peak_lr<=0:p.error('--peak-lr must be finite and positive')
  if args.init_step is not None and (not args.init_run or args.init_step<1):p.error('--init-step requires --init-run and a positive step')
  if not np.isfinite(args.continuity_weight) or args.continuity_weight<0:p.error('--continuity-weight must be finite and nonnegative')
- pair_stride,pair_overlap=20,8
+ if not np.isfinite(args.left_gripper_weight) or args.left_gripper_weight<1:p.error('--left-gripper-weight must be finite and at least one')
+ paired=args.directed_handoff or bool(args.continuity_weight)
+ if not np.isfinite(args.old_forecast_weight) or args.old_forecast_weight<1:p.error('--old-forecast-weight must be finite and at least one')
+ if args.old_forecast_weight!=1 and (not args.directed_handoff or args.continuity_weight):p.error('--old-forecast-weight requires 12-frame pairs and zero continuity weight')
+ if paired and args.left_gripper_weight!=1:p.error('Use gripper weighting separately from paired continuity training')
+ pair_stride,pair_overlap=(12,6) if args.directed_handoff else (20,8)
  if jax.default_backend()!='gpu':raise RuntimeError('GPU required')
  output=ROOT/'results'/args.name;checkpoints=ROOT/'checkpoints'/args.name
  if output.exists() or checkpoints.exists():raise FileExistsError(f'experiment already exists: {output} / {checkpoints}')
@@ -121,6 +142,7 @@ def main():
  schedule=optimizer_lib.CosineDecaySchedule(warmup_steps=min(100,max(1,args.steps//10)),peak_lr=args.peak_lr,decay_steps=args.steps,decay_lr=args.peak_lr/10)
  cfg=dataclasses.replace(cfg0,model=model_cfg,num_train_steps=args.steps,lr_schedule=schedule,seed=args.seed)
  train=RealFourCameraDataset('train',root=candidate,cache_episodes=18);val=RealFourCameraDataset('validation',root=candidate,cache_episodes=4)
+ handoff_scale=np.asarray(train.stats['actions'].std,dtype=np.float32)+1e-6 if args.directed_handoff else None
  previous_indices=set()
  initial_adapter=None
  if args.init_run:
@@ -137,7 +159,8 @@ def main():
     if sha(candidate/filename)!=previous_config[key]:raise ValueError(f'initial run uses different {filename}')
    rows=[json.loads(line) for line in (previous/'metrics.jsonl').read_text().splitlines()]
    if len(rows)!=previous_summary['steps_completed']:raise ValueError('incomplete prior training log')
-   previous_indices.update(row['sample_index'] for row in rows)
+   for row in rows:
+    previous_indices.update(row.get('paired_sample_indices',[row['sample_index']]))
    if initial_adapter is None:
     initial_adapter=(ROOT/'checkpoints'/previous_name/f'step_{args.init_step:04d}'
                      if args.init_step is not None else ROOT/previous_summary['last_checkpoint'])
@@ -150,17 +173,18 @@ def main():
   start=0 if e==0 else int(val.ends[e-1]);count=row['full_window_samples']
   for offset in (0,count//2):
    index=start+offset; samples.append(jax.device_put(batch_samples([val[index]])));selected.append({'episode_id':row['episode_id'],'sample_index':offset,'operation_style':row.get('operation_style','unspecified')})
- run_config={'seed':args.seed,'steps':args.steps,'batch_size':2 if args.continuity_weight else 1,'eval_every':args.eval_every,'save_every':args.save_every,
+ run_config={'seed':args.seed,'steps':args.steps,'batch_size':2 if paired else 1,'eval_every':args.eval_every,'save_every':args.save_every,
   'model':'pi0_base + gemma_2b_lora + gemma_300m_lora','trainable':'LoRA only','frozen_dtype':'bfloat16',
   'action_horizon':50,'action_semantics':'absolute IK target, right arm then left arm, rad','training_frequency_hz':30,
-  'optimizer':repr(cfg.optimizer),'schedule':repr(schedule),'image_mapping':CAMERA_MAPPING,'prompt':PROMPT,
+  'optimizer':repr(cfg.optimizer),'schedule':repr(schedule),'image_mapping':CAMERA_MAPPING,'prompt':train.prompt,
   'image_resize':'OpenPI 224x224 resize-with-pad','normalization':'train split only z-score',
   'train_samples':len(train),'validation_samples':len(val),'validation_probe_samples':selected,
   'validation_note':'two fixed probes per held-out episode with fixed flow random keys, not task success or generalization estimate',
   'candidate':str(candidate),'candidate_manifest_sha256':sha(candidate/'manifest.json'),'norm_stats_sha256':sha(candidate/'norm_stats.json'),'review_decision_sha256':sha(candidate/'review_decision.json'),
   'init_run':args.init_run,'initial_adapter':str(initial_adapter) if initial_adapter else None,'excluded_previous_windows':len(previous_indices),
-  'continuity_weight':args.continuity_weight,'pair_stride':pair_stride,'pair_overlap':pair_overlap,
-  'phase_balanced':args.phase_balanced,'priority_phases':args.priority_phases,
+  'continuity_weight':args.continuity_weight,'pair_stride':pair_stride,'pair_overlap':pair_overlap,'directed_handoff':args.directed_handoff,
+  'old_forecast_weight':args.old_forecast_weight,
+  'phase_balanced':args.phase_balanced,'priority_phases':args.priority_phases,'left_gripper_weight':args.left_gripper_weight,
   'base_checkpoint':str(BASE_PARAMS.relative_to(ROOT)), 'note':'exploratory; consult review_decision.json; no resume support'}
  (output/'config.json').write_text(json.dumps(run_config,ensure_ascii=False,indent=2)+'\n')
  snapshot=output/'source_snapshot';snapshot.mkdir()
@@ -182,7 +206,7 @@ def main():
   nnx.update(model,state)
   params=nnx.state(model)
  tx=optimizer_lib.create_optimizer(cfg.optimizer,cfg.lr_schedule,weight_decay_mask=None);opt_state=tx.init(params.filter(cfg.trainable_filter))
- step_fn=make_train_step(cfg,graphdef,tx,continuity_weight=args.continuity_weight,pair_stride=pair_stride,pair_overlap=pair_overlap)
+ step_fn=make_train_step(cfg,graphdef,tx,continuity_weight=args.continuity_weight,pair_stride=pair_stride,pair_overlap=pair_overlap,left_gripper_weight=args.left_gripper_weight,handoff_action_scale=handoff_scale,old_forecast_weight=args.old_forecast_weight)
  @jax.jit
  def evaluate(params,observation,actions,key):
   model=nnx.merge(graphdef,params)
@@ -195,11 +219,18 @@ def main():
   with (output/'validation.jsonl').open('a') as f:f.write(json.dumps(record)+'\n')
   logging.info('validation step=%d loss=%.6f',step,record['mean_flow_loss']);return record
  initial=validate(0);rng=jax.random.key(args.seed+1);order_rng=np.random.default_rng(args.seed);cursor=0;started=time.monotonic();updates=0
+ excluded=previous_indices
+ if args.directed_handoff:
+  # Both observations must be new to the warm-start lineage and in the same episode.
+  starts=np.r_[0,train.ends[:-1]]
+  eligible=np.concatenate([np.arange(start,end-pair_stride) for start,end in zip(starts,train.ends,strict=True)])
+  excluded=previous_indices | {i-pair_stride for i in previous_indices} | (set(range(len(train)))-set(eligible))
+  if len(train)-sum(0<=i<len(train) for i in excluded)<args.steps:raise ValueError('not enough fresh paired windows')
  if args.phase_balanced:
-  indices,phase_labels=phase_balanced_order(train,previous_indices,args.steps,order_rng,args.priority_phases)
+  indices,phase_labels,gripper_stages=phase_balanced_order(train,excluded,args.steps,order_rng,args.priority_phases)
  else:
   indices=order_rng.permutation(len(train))
-  if initial_adapter:indices=indices[~np.isin(indices,list(previous_indices))]
+  indices=indices[~np.isin(indices,list(excluded))]
  if initial_adapter:
   rng=jax.random.fold_in(rng,len(previous_indices))
  for step in range(1,args.steps+1):
@@ -207,7 +238,7 @@ def main():
   index=int(indices[cursor]);cursor+=1
   episode,offset=train.locate(index)
   sample_indices=[index]
-  if args.continuity_weight:
+  if paired:
    count=train.entries[episode]['full_window_samples']
    if count<=pair_stride:raise ValueError('episode is too short for paired training')
    if offset+pair_stride<count:sample_indices.append(index+pair_stride)
@@ -217,8 +248,9 @@ def main():
   if not np.isfinite(list(metrics.values())).all():raise RuntimeError(f'nonfinite at step {step}: {metrics}')
   updates+=metrics['update_norm']>0
   record={'step':step,'sample_index':index,'episode_id':train.entries[episode]['episode_id'],**metrics,'step_seconds':time.monotonic()-before}
-  if args.continuity_weight:record['paired_sample_indices']=sample_indices
+  if paired:record['paired_sample_indices']=sample_indices
   if args.phase_balanced:record['phase_at_forecast_frame_8']=PHASES[phase_labels[index]]
+  if args.phase_balanced and gripper_stages is not None:record['sampling_stage']=str(gripper_stages[index])
   with (output/'metrics.jsonl').open('a') as f:f.write(json.dumps(record)+'\n')
   if step==1 or step%25==0:logging.info('step=%d/%d loss=%.6f grad=%.5f elapsed=%.1fs',step,args.steps,metrics['loss'],metrics['grad_norm'],time.monotonic()-started)
   if step%args.eval_every==0 or step==args.steps:final=validate(step)

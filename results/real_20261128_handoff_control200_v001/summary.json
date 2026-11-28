@@ -1,0 +1,16 @@
+{
+  "steps_completed": 200,
+  "initial_validation_flow_loss": 0.06449250178411603,
+  "final_validation_flow_loss": 0.0698733376339078,
+  "validation_scope": "two fixed probes per held-out episode; not a success-rate estimate",
+  "last_checkpoint": "checkpoints/real_20261128_handoff_control200_v001/step_0200",
+  "adapter_restore_check": {
+    "baseline_loss": 0.0934629812836647,
+    "restored_loss": 0.0934629812836647,
+    "absolute_difference": 0.0,
+    "arrays": 20
+  },
+  "gpu_peak_bytes": 8621391872,
+  "training_seconds": 310.79508191700006,
+  "task_success_verified": false
+}

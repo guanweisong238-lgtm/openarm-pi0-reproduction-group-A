@@ -22,7 +22,12 @@ def main():
  args=parser.parse_args();SOURCE=args.source.resolve();DEST=args.output.resolve()
  if DEST.exists():raise SystemExit(f'{DEST} already exists; never overwrite a candidate')
  audit_path=SOURCE/'batch_audit.json';audit=json.loads(audit_path.read_text())
- ids=sorted(audit['verified_episodes']);assert not audit['errors'] and ids==sorted(audit['episodes_present']) and len(ids)>=5
+ ids=sorted(audit['verified_episodes'])
+ selected=audit.get('episodes_selected',audit['episodes_present'])
+ assert not audit['errors'] and ids==sorted(selected) and len(ids)>=5
+ metadata=audit.get('metadata_selection')
+ if metadata and ids!=sorted(metadata['selected_episode_ids']):
+  raise ValueError('batch audit and metadata selection disagree')
  # Repeatable episode-level split, not evidence of independent initial conditions.
  rng=np.random.default_rng(42)
  if args.stratify_at is None:
@@ -59,6 +64,16 @@ def main():
   'sample_selection':'only complete 50-step windows; discard all 49 padded starts per episode',
   'normalization':'population mean and std on train only; each selected state once and each of 50 targets for every selected action window (overlap counted)',
   'normalization_counts':counts,'entries':entries,'generator_sha256':sha(Path(__file__))}
+ if metadata:
+  manifest.update(prompt=metadata['prompt'],metadata_selection=metadata,
+                  dataset_status='exploratory_capture_labeled_success')
+  for entry in entries:entry['human_task_review']='capture_label_only'
  DEST.mkdir(parents=True,exist_ok=False);(DEST/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');normalize.save(DEST,stats)
+ if metadata:
+  review={'decision':'use_capture_labeled_success_for_exploratory_training',
+          'episode_ids':ids,'source':metadata['raw_dataset'],'metadata_sha256':metadata['metadata_sha256'],
+          'scope':'Present episodes labeled successful for the sole recorded task, with alignment audit passed.',
+          'limitations':'Capture labels are not an independent review of task success, image quality or exposure synchronization.'}
+  (DEST/'review_decision.json').write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({'train_ids':sorted(train),'validation_ids':sorted(val),'train_samples':sum(e['full_window_samples'] for e in entries if e['split']=='train'),'validation_samples':sum(e['full_window_samples'] for e in entries if e['split']=='validation'),'excluded_padded_samples':sum(e['excluded_padded_samples'] for e in entries),'normalization_counts':counts,'minimum_std':{k:float(v.std.min()) for k,v in stats.items()}},indent=2))
 if __name__=='__main__':main()

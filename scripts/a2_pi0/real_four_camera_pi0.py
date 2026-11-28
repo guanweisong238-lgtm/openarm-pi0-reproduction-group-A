@@ -116,8 +116,13 @@ class Pi0(_model.BaseModel):
         ar_mask = []
         tokens = []
         # embed images
-        for name in obs.images:
+        for name in sorted(obs.images, key=lambda name: name.startswith('past_')):
             image_tokens, _ = self.PaliGemma.img(obs.images[name], train=False)
+
+            if name.startswith('past_'):
+                # Keep a 4x4 spatial summary of each historical 16x16 patch grid.
+                image_tokens = einops.reduce(image_tokens, 'b (h dh w dw) d -> b (h w) d',
+                                              'mean', h=4, w=4, dh=4, dw=4)
 
             tokens.append(image_tokens)
             input_mask.append(
@@ -193,14 +198,18 @@ class Pi0(_model.BaseModel):
 
     @override
     def compute_loss(
-        self, rng: at.KeyArrayLike, observation: _model.Observation, actions: _model.Actions, *, train: bool = False
+        self, rng: at.KeyArrayLike, observation: _model.Observation, actions: _model.Actions, *,
+        train: bool = False, left_gripper_weight: float = 1.0
     ) -> at.Float[at.Array, "*b ah"]:
-        loss, _ = self._flow_loss_and_estimate(rng, observation, actions, train=train)
+        loss, _ = self._flow_loss_and_estimate(
+            rng, observation, actions, train=train, left_gripper_weight=left_gripper_weight
+        )
         return loss
 
-    def _flow_loss_and_estimate(self, rng, observation, actions, *, train, paired=False):
+    def _flow_loss_and_estimate(self, rng, observation, actions, *, train, paired=False, left_gripper_weight=1.0,
+                                old_forecast_weight=1.0):
         preprocess_rng, noise_rng, time_rng = jax.random.split(rng, 3)
-        observation = _model.preprocess_observation(preprocess_rng, observation, train=train, image_keys=FOUR_CAMERA_KEYS)
+        observation = _model.preprocess_observation(preprocess_rng, observation, train=train, image_keys=tuple(observation.images))
 
         batch_shape = actions.shape[:-2]
         # Deployment starts every replan with the same seed. Hold the noise
@@ -227,13 +236,41 @@ class Pi0(_model.BaseModel):
         v_t = self.action_out_proj(suffix_out[:, -self.action_horizon :])
 
         # Under the linear flow path, x_t - t * v_t estimates the clean target.
-        return jnp.mean(jnp.square(v_t - u_t), axis=-1), x_t - time_expanded * v_t
+        error = jnp.square(v_t - u_t)
+        if left_gripper_weight != 1.0:
+            error = error.at[..., 15].multiply(left_gripper_weight)
+        if old_forecast_weight != 1.0:
+            arms = jnp.r_[0:7, 8:15]
+            error = error.at[0, 12:18, arms].multiply(old_forecast_weight)
+            error = error * (error.size / (error.size + 6 * 14 * (old_forecast_weight - 1.0)))
+        return jnp.mean(error, axis=-1), x_t - time_expanded * v_t
+
+    def compute_weighted_forecast_loss(self, rng, observation, actions, *, weight):
+        flow, _ = self._flow_loss_and_estimate(
+            rng, observation, actions, train=True, paired=True, old_forecast_weight=weight
+        )
+        return jnp.mean(flow)
 
     def compute_paired_loss(self, rng, observation, actions, *, stride, overlap):
         flow, clean = self._flow_loss_and_estimate(rng, observation, actions, train=True, paired=True)
         diff = clean[0, stride:stride + overlap] - clean[1, :overlap]
         arm_diff = jnp.concatenate((diff[:, :7], diff[:, 8:15]), axis=-1)
         return jnp.mean(flow), jnp.mean(jnp.square(arm_diff))
+
+    def compute_handoff_loss(self, rng, observation, actions, *, stride, overlap, action_scale):
+        flow, clean = self._flow_loss_and_estimate(rng, observation, actions, train=True, paired=True)
+        arms = jnp.r_[0:7, 8:15]
+        old = clean[0, stride:stride + overlap, :][:, arms]
+        new = jax.lax.stop_gradient(clean[1, :overlap, :][:, arms])
+        demo = actions[1, :overlap, :][:, arms]
+        # The z-score mean cancels in an error; only the scale is needed.
+        scale = jnp.asarray(action_scale)[arms]
+        old_error = jnp.abs(old - demo) * scale
+        new_error = jnp.abs(new - demo) * scale
+        eligible = (new_error <= jnp.deg2rad(5.0)) & (old_error - new_error >= jnp.deg2rad(3.0))
+        count = jnp.sum(eligible)
+        loss = jnp.sum(jnp.where(eligible, jnp.square(old - new), 0.0)) / jnp.maximum(count, 1)
+        return jnp.mean(flow), loss, count
 
     @override
     def sample_actions(
@@ -246,7 +283,7 @@ class Pi0(_model.BaseModel):
         previous_actions: at.Float[at.Array, "b ah ad"] | None = None,
         guidance_mask: at.Float[at.Array, "b ah ad"] | None = None,
     ) -> _model.Actions:
-        observation = _model.preprocess_observation(None, observation, train=False, image_keys=FOUR_CAMERA_KEYS)
+        observation = _model.preprocess_observation(None, observation, train=False, image_keys=tuple(observation.images))
         # note that we use the convention more common in diffusion literature, where t=1 is noise and t=0 is the target
         # distribution. yes, this is the opposite of the pi0 paper, and I'm sorry.
         dt = -1.0 / num_steps

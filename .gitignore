@@ -288,6 +288,12 @@ simulation_outputs/
 /results/**/metrics.jsonl
 /results/**/source_snapshot/
 
+# Local per-tick handoff replay data; keep replay_comparison.json and plots.
+/results/real_*_handoff_*/replay_original.json
+/results/real_*_handoff_*/replay_control.json
+/results/real_*_handoff_*/replay_directed.json
+/results/real_*_handoff_*/replay_weighted.json
+
 # 项目内模型下载、Hugging Face、JAX 编译及依赖缓存。
 /.cache/
 /.hf_cache/

@@ -1,0 +1,67 @@
+{
+  "recorded_commands_episode_13": {
+    "drawer_max_mm": 111.26854947647679,
+    "cube_max_lift_mm": 7.904284490168112,
+    "final_cube_inside": false,
+    "contact_frames": {
+      "right_cube": 9,
+      "left_handle": 228,
+      "right_both_fingers_cube": 0,
+      "left_both_fingers_handle": 0
+    }
+  },
+  "model_commands_cached_reexecution": {
+    "drawer_max_mm": 1.0510482024444299,
+    "cube_max_lift_mm": 0.7977187411334907,
+    "final_cube_inside": false,
+    "contact_frames": {
+      "right_cube": 34,
+      "left_handle": 0,
+      "right_both_fingers_cube": 0,
+      "left_both_fingers_handle": 0
+    }
+  },
+  "demo_command_close_intervals": {
+    "right": [
+      [
+        215,
+        286
+      ]
+    ],
+    "left": [
+      [
+        138,
+        355
+      ]
+    ]
+  },
+  "simulation_model_raw_close_intervals": {
+    "right": [
+      [
+        80,
+        450
+      ]
+    ],
+    "left": [
+      [
+        40,
+        450
+      ]
+    ]
+  },
+  "simulation_feedback_close_intervals": {
+    "right": [
+      [
+        88,
+        450
+      ]
+    ],
+    "left": [
+      [
+        47,
+        450
+      ]
+    ]
+  },
+  "units": "frame index at 30 Hz; threshold right > -0.305 rad, left < +0.305 rad for >= 10 frames"
+}

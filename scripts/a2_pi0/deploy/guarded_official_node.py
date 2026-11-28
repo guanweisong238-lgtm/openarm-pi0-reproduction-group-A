@@ -4,6 +4,9 @@
 This module is not a complete robot dataflow. Running it with a start command
 can enable hardware, and must only follow the separately approved motion plan.
 """
+if __name__ == "__main__":
+    raise SystemExit("旧真机入口已停用，请运行 scripts/a2_pi0/deploy/run_pi0.sh")
+
 import json
 import os
 import time
@@ -85,7 +88,3 @@ def run():
         finally:
             dora.Node = original_node
             openarm_driver.SingleArmDriver = original_driver
-
-
-if __name__ == "__main__":
-    run()

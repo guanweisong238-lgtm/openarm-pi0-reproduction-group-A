@@ -1,0 +1,32 @@
+{
+  "step": 1000,
+  "samples": 8,
+  "recorded_mean": 0.08960620686411858,
+  "restored_mean": 0.08962355181574821,
+  "max_absolute_difference": 0.0005606785416603088,
+  "recorded_losses": [
+    0.06552796810865402,
+    0.05796177685260773,
+    0.04668711870908737,
+    0.13152338564395905,
+    0.1468869000673294,
+    0.12459586560726166,
+    0.06916725635528564,
+    0.07449938356876373
+  ],
+  "restored_losses": [
+    0.06539558619260788,
+    0.05802161991596222,
+    0.04663816839456558,
+    0.1314803808927536,
+    0.14665713906288147,
+    0.12480004876852036,
+    0.06972793489694595,
+    0.07426753640174866
+  ],
+  "checkpoint_sha256": "cfee24508a6a022806a2551180bf3c7a72fc98cf9f6bc8f772b664f0076a6d3b",
+  "exact_match": false,
+  "diagnostic_tolerance": 0.001,
+  "within_diagnostic_tolerance": true,
+  "note": "The tolerance is a practical diagnostic, not a verified numerical reproducibility guarantee; cause of nonzero difference is not established."
+}

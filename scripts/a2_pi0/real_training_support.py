@@ -45,14 +45,21 @@ def load_parameters(cfg):
  params=jax.jit(lambda key,weights:initialize_parameters(cfg,key,weights),donate_argnums=(1,))(rng,partial)
  jax.block_until_ready(params);check_freeze_rules(cfg,params);return params
 
-def make_train_step(cfg,graphdef,tx,*,continuity_weight=0.0,pair_stride=20,pair_overlap=8):
+def make_train_step(cfg,graphdef,tx,*,continuity_weight=0.0,pair_stride=20,pair_overlap=8,left_gripper_weight=1.0,handoff_action_scale=None,old_forecast_weight=1.0):
  def step(params,opt_state,rng,observation,actions):
   model=nnx.merge(graphdef,params);model.train()
   def loss_fn(current_model):
+   if old_forecast_weight!=1.0:
+    flow=current_model.compute_weighted_forecast_loss(rng,observation,actions,weight=old_forecast_weight)
+    return flow,{'flow_loss':flow}
+   if handoff_action_scale is not None:
+    flow,continuity,count=current_model.compute_handoff_loss(rng,observation,actions,stride=pair_stride,overlap=pair_overlap,action_scale=handoff_action_scale)
+    return (flow+continuity_weight*continuity if continuity_weight else flow),{'flow_loss':flow,'continuity_loss':continuity,'eligible_arm_targets':count}
    if continuity_weight:
     flow,continuity=current_model.compute_paired_loss(rng,observation,actions,stride=pair_stride,overlap=pair_overlap)
     return flow+continuity_weight*continuity,{'flow_loss':flow,'continuity_loss':continuity}
-   return jnp.mean(current_model.compute_loss(rng,observation,actions,train=True)),{}
+   kwargs={'left_gripper_weight':left_gripper_weight} if left_gripper_weight!=1.0 else {}
+   return jnp.mean(current_model.compute_loss(rng,observation,actions,train=True,**kwargs)),{}
   (loss,components),grads=nnx.value_and_grad(loss_fn,has_aux=True,argnums=nnx.DiffState(0,cfg.trainable_filter))(model)
   trainable=params.filter(cfg.trainable_filter);updates,next_opt_state=tx.update(grads,opt_state,trainable);updated=optax.apply_updates(trainable,updates)
   actual_delta=jax.tree.map(lambda new,old:new-old,updated,trainable);nnx.update(model,updated)

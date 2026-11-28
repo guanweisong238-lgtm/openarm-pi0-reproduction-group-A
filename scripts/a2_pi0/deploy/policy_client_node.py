@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """机械臂侧 dora 节点：把网络策略输出变成 position_left/position_right 目标流。
 
-三种模式，默认最保守：
+历史 Dora 客户端，仅保留离线和影子运行：
   observe  只统计输入是否到齐，不发请求、不发指令
   shadow   正常请求策略并记录预测动作，但绝不发布到机械臂（影子对比用）
-  publish  真正发布关节目标，需要 --publish 且 OPENARM_POLICY_PUBLISH=1
 
 它不发送 Arm Start / Arm Stop，不打开 CAN；使能、急停、断使能仍由 UI 与 VR B 键负责。
 动作语义与训练一致：30 Hz、50 步、16 维绝对 IK 目标 [右 J1..J7, 右夹爪, 左 J1..J7, 左夹爪]（rad）。
@@ -19,7 +18,6 @@ from __future__ import annotations
 import argparse
 import base64
 import json
-import os
 import socket
 import struct
 import sys
@@ -146,7 +144,7 @@ class Controller:
         self.last_request_step = -10**9
         self._last_fault_ns = 0
         self.log = open(args.log, "a", buffering=1) if args.log else None
-        self.publish = bool(args.publish and os.environ.get("OPENARM_POLICY_PUBLISH") == "1")
+        self.publish = False
 
     # -- 输入 ----------------------------------------------------------
     def on_event(self, ident, value, metadata):
@@ -386,8 +384,8 @@ def main():
     ap.add_argument("--offline", action="store_true")
     ap.add_argument("--offline-fake", action="store_true")
     args = ap.parse_args()
-    if args.publish and os.environ.get("OPENARM_POLICY_PUBLISH") != "1":
-        print("[policy] 未设置 OPENARM_POLICY_PUBLISH=1，本次降级为 shadow 模式", file=sys.stderr, flush=True)
+    if args.publish:
+        ap.error("旧真机入口已停用，请运行 scripts/a2_pi0/deploy/run_pi0.sh")
     if args.offline:
         run_offline(args)
     else:

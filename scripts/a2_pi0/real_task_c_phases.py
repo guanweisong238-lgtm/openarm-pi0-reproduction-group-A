@@ -1,7 +1,7 @@
 """Infer placement and drawer-operation intervals from recorded Task C commands."""
 import numpy as np
 
-PHASES = ('open_drawer', 'approach_cube', 'grasp', 'carry', 'release', 'after_release', 'close_drawer')
+PHASES = ('open_drawer', 'approach_cube', 'grasp', 'carry', 'release', 'after_release', 'close_drawer', 'pull_drawer')
 
 
 def grip_intervals(values, closed_above):
@@ -31,7 +31,7 @@ def phase_frames(actions, style):
         limits['left_regrasp'] = regrasp[0]
         opening_end = left_release
         closing_start = regrasp[0] - 15
-    elif style == 'hold_then_push':
+    elif style in ('hold_then_push', 'unspecified'):
         # Use left arm movement after the initial grip and after the right release.
         joints = actions[:, 8:15]
         motion = np.linalg.norm(np.diff(joints, axis=0), axis=1)
@@ -39,18 +39,27 @@ def phase_frames(actions, style):
         early = motion[left_grasp:grasp - 8]
         moving = np.flatnonzero(early >= max(0.007, 0.3 * early.max()))
         opening_end = left_grasp + int(moving[-1]) + 1 if moving.size else left_grasp + 20
-        late = motion[release:left_release]
-        moving = np.flatnonzero(late >= max(0.007, 0.3 * late.max())) if late.size else []
-        closing_start = release + int(moving[0]) if len(moving) else release + 9
+        if style == 'hold_then_push':
+            late = motion[release:left_release]
+            moving = np.flatnonzero(late >= max(0.007, 0.3 * late.max())) if late.size else []
+            closing_start = release + int(moving[0]) if len(moving) else release + 9
+        else:
+            # The batch has no annotated closing styles. Group the remainder after release.
+            closing_start = len(actions)
     else:
         raise ValueError(f'Unsupported Task C operation style: {style}')
     # Leave a short right-arm approach interval even if the arms move concurrently.
     approach_start = max(left_grasp, min(opening_end, grasp - 24))
-    close = min(len(actions) - 1, max(release + 9, closing_start))
+    close = min(len(actions), max(release + 9, closing_start)) if style == 'unspecified' else min(
+        len(actions) - 1, max(release + 9, closing_start)
+    )
     edges = [0, approach_start, grasp - 8, grasp + 9, release - 8, release + 9, close, len(actions)]
     if any(a > b for a, b in zip(edges, edges[1:])):
         raise ValueError(f'Phase timestamps out of order: {edges}')
     labels = np.empty(len(actions), dtype=np.int8)
     for i, (a, b) in enumerate(zip(edges, edges[1:])):
         labels[a:b] = i
+    if style == 'unspecified':
+        labels[left_grasp:approach_start] = PHASES.index('pull_drawer')
+        limits['pull_end'] = approach_start
     return labels, limits

@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """Run a right-arm feedback trial or a separately authorized J7 trial."""
+if __name__ == "__main__":
+    raise SystemExit("旧真机入口已停用，请运行 scripts/a2_pi0/deploy/run_pi0.sh")
+
 import json
 import math
 import os
@@ -552,32 +555,3 @@ def driver(motion=False, *, travel=TEST_TRAVEL, encoders=False, side="right", j7
         guarded_official_node.run()
     finally:
         openarm_driver.SingleArmDriver = base
-
-
-if __name__ == "__main__":
-    motion = "--motion" in sys.argv[1:]
-    requested = os.environ.get("OPENARM_FEEDBACK_TRIAL_AUTHORIZATION")
-    authorization = "RIGHT_J7_POSITIVE_005_RAD" if motion else "RIGHT_FEEDBACK_ENABLE_DISABLE"
-    travel = TEST_TRAVEL
-    side = "right"
-    encoders = motion and requested in (
-        ENCODER_TRIAL_AUTHORIZATION, ENCODER_KP15_AUTHORIZATION, ENCODER_KP20_AUTHORIZATION,
-        ENCODER_KP20_RECOVERY_AUTHORIZATION, LEFT_ENCODER_TRIAL_AUTHORIZATION,
-    )
-    if encoders:
-        authorization = requested
-        if requested == LEFT_ENCODER_TRIAL_AUTHORIZATION:
-            side = "left"
-        travel = ENCODER_TRIAL_TRAVEL
-    if motion and requested == "RIGHT_J7_START_0095_RAD":
-        authorization = "RIGHT_J7_START_0095_RAD"
-        travel = START_TEST_TRAVEL
-    if requested != authorization:
-        raise SystemExit("This trial requires separate on-site authorization for enable and disable")
-    if "--driver" in sys.argv[1:]:
-        j7_kp = {ENCODER_KP15_AUTHORIZATION: 15.0, ENCODER_KP20_AUTHORIZATION: 20.0,
-                 ENCODER_KP20_RECOVERY_AUTHORIZATION: 20.0}.get(requested)
-        driver(motion, travel=travel, encoders=encoders, side=side, j7_kp=j7_kp,
-               record_recovery=requested == ENCODER_KP20_RECOVERY_AUTHORIZATION)
-    else:
-        controller(motion, travel=travel, encoders=encoders, side=side)

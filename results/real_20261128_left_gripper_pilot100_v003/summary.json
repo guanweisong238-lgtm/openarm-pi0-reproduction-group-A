@@ -1,0 +1,16 @@
+{
+  "steps_completed": 100,
+  "initial_validation_flow_loss": 0.06449250178411603,
+  "final_validation_flow_loss": 0.06495393114164472,
+  "validation_scope": "two fixed probes per held-out episode; not a success-rate estimate",
+  "last_checkpoint": "checkpoints/real_20261128_left_gripper_pilot100_v003/step_0100",
+  "adapter_restore_check": {
+    "baseline_loss": 0.09353223443031311,
+    "restored_loss": 0.09353223443031311,
+    "absolute_difference": 0.0,
+    "arrays": 20
+  },
+  "gpu_peak_bytes": 8203497472,
+  "training_seconds": 88.48363783700006,
+  "task_success_verified": false
+}

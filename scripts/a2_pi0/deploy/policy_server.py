@@ -71,7 +71,10 @@ def decode_jpeg(blob: bytes) -> np.ndarray:
 class Preprocessor:
     """与 RealFourCameraDataset.__getitem__ 完全同序的推理侧预处理。"""
 
-    def __init__(self, stats_root: Path = DEFAULT):
+    def __init__(self, stats_root: Path = DEFAULT, *, prompt: str = PROMPT):
+        if not isinstance(prompt, str) or not prompt.strip():
+            raise ValueError("训练提示词无效")
+        self.prompt = prompt
         self.stats = normalize.load(str(stats_root))
         self.adapter = FourCameraInputs()
         self.resize = transforms.ResizeImages(IMAGE_SIZE, IMAGE_SIZE)
@@ -79,19 +82,19 @@ class Preprocessor:
         # 推理时没有 actions，用非 strict；state 仍按训练统计归一化，数值与训练一致。
         self.norm = transforms.Normalize(self.stats, strict=False)
         self.tokenizer = PaligemmaTokenizer(48)
-        tokens = self.tokenizer._tokenizer.encode(PROMPT, add_bos=True) + self.tokenizer._tokenizer.encode("\n")
+        tokens = self.tokenizer._tokenizer.encode(prompt, add_bos=True) + self.tokenizer._tokenizer.encode("\n")
         if len(tokens) > 48:
             raise ValueError(f"prompt would be truncated: {len(tokens)} tokens")
-        self.prompt_tokens = np.asarray(self.tokenizer.tokenize(PROMPT)[0], dtype=np.int32)
-        self.prompt_mask = np.asarray(self.tokenizer.tokenize(PROMPT)[1], dtype=bool)
+        self.prompt_tokens = np.asarray(self.tokenizer.tokenize(prompt)[0], dtype=np.int32)
+        self.prompt_mask = np.asarray(self.tokenizer.tokenize(prompt)[1], dtype=bool)
         self.action_mean = np.asarray(self.stats["actions"].mean, dtype=np.float32)
         self.action_std = np.asarray(self.stats["actions"].std, dtype=np.float32)
 
-    def __call__(self, images: dict[str, np.ndarray], state16, prompt: str = PROMPT) -> dict:
+    def __call__(self, images: dict[str, np.ndarray], state16) -> dict:
         sample = {
             "images": {k: images[k] for k in CAM_ORDER},
             "state": np.asarray(state16, dtype=np.float32),
-            "prompt": prompt,
+            "prompt": self.prompt,
         }
         data = self.adapter(sample)
         data = self.norm(data)
@@ -152,7 +155,7 @@ class PolicyService:
         self._load_adapter(model, ckpt)
         self.params = nnx.state(model)
 
-        self.pre = Preprocessor(self.stats_root)
+        self.pre = Preprocessor(self.stats_root, prompt=run.get("prompt", PROMPT))
         self.num_steps = num_steps
         self.prefix = prefix
         self._lock = threading.Lock()
@@ -300,8 +303,8 @@ def serve(service: PolicyService, bind: str, port: int) -> None:
 # ---------------------------------------------------------------- 自检
 def self_test(candidate: Path = DEFAULT, stats_root: Path | None = None) -> None:
     """证明推理侧预处理与训练侧 __getitem__ 逐元素一致，不需要加载模型。"""
-    pre = Preprocessor(stats_root or candidate)
     ds = RealFourCameraDataset("validation", root=candidate, cache_episodes=4)
+    pre = Preprocessor(stats_root or candidate, prompt=ds.prompt)
 
     for index in (0, 7, len(ds) // 2, len(ds) - 1):
         raw = ds.get_raw(index)

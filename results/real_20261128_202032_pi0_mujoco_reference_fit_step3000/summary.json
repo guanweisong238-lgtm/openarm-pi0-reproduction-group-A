@@ -1,0 +1,140 @@
+{
+  "checkpoint": "checkpoints/real_20261128_202032_pi0_lora_phase_continue2000_v001/step_2000",
+  "episode_for_initial_joints": 13,
+  "simulated_seconds": 15.000000000001679,
+  "plans": [
+    {
+      "step": 0,
+      "inference_ms": 246.0738540003149
+    },
+    {
+      "step": 20,
+      "inference_ms": 248.39702999997826
+    },
+    {
+      "step": 40,
+      "inference_ms": 247.32262899942725
+    },
+    {
+      "step": 60,
+      "inference_ms": 248.73174700042
+    },
+    {
+      "step": 80,
+      "inference_ms": 246.754927999973
+    },
+    {
+      "step": 100,
+      "inference_ms": 247.18991999998252
+    },
+    {
+      "step": 120,
+      "inference_ms": 248.24733100012963
+    },
+    {
+      "step": 140,
+      "inference_ms": 246.89208099971438
+    },
+    {
+      "step": 160,
+      "inference_ms": 245.82076800015784
+    },
+    {
+      "step": 180,
+      "inference_ms": 245.29742800041276
+    },
+    {
+      "step": 200,
+      "inference_ms": 245.59296299958078
+    },
+    {
+      "step": 220,
+      "inference_ms": 247.87763500080473
+    },
+    {
+      "step": 240,
+      "inference_ms": 245.54578399965976
+    },
+    {
+      "step": 260,
+      "inference_ms": 245.6431459995656
+    },
+    {
+      "step": 280,
+      "inference_ms": 246.01486400024442
+    },
+    {
+      "step": 300,
+      "inference_ms": 245.45040500015602
+    },
+    {
+      "step": 320,
+      "inference_ms": 245.3438870006721
+    },
+    {
+      "step": 340,
+      "inference_ms": 245.8120079991204
+    },
+    {
+      "step": 360,
+      "inference_ms": 246.98513000021194
+    },
+    {
+      "step": 380,
+      "inference_ms": 252.26800099972024
+    },
+    {
+      "step": 400,
+      "inference_ms": 245.02567899980932
+    },
+    {
+      "step": 420,
+      "inference_ms": 244.79613499988773
+    },
+    {
+      "step": 440,
+      "inference_ms": 244.99038899921288
+    }
+  ],
+  "seed": 1002,
+  "initial_joint_projection_max_rad": 0.0002488823890686165,
+  "initial_max_penetration_mm": 0.9999999999999896,
+  "applied_target_clips_per_axis": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    340,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    378
+  ],
+  "drawer_max_open_mm": 1.0510482024444299,
+  "drawer_final_open_mm": 1.0510482024444299,
+  "cube_max_lift_mm": 3.0107246764495277,
+  "cube_final_displacement_mm": 6.126156765723134,
+  "cube_final_inside_drawer": false,
+  "cube_inside_drawer_for_final_half_second": false,
+  "scene": "episode13_reference_fit",
+  "simulation": "MuJoCo position actuators and contacts; approximate object layout and camera poses.",
+  "input": "Simulated images and feedback, initialized at the first measured joint sample",
+  "sim_arm_and_gripper_slew_rad_s": [
+    1.83,
+    1.83,
+    1.83,
+    1.83,
+    1.83,
+    1.83,
+    1.83,
+    4.31
+  ],
+  "scheduling": "30 Hz, with replanning every 20 steps without inference delay in model mode."
+}

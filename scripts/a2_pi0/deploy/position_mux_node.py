@@ -17,6 +17,9 @@
 """
 from __future__ import annotations
 
+if __name__ == "__main__":
+    raise SystemExit("旧真机入口已停用，请运行 scripts/a2_pi0/deploy/run_pi0.sh")
+
 import argparse
 import time
 
@@ -141,7 +144,3 @@ def main() -> None:
             mode = "leader"
             if leader[side] is not None:
                 forward(side, leader[side], leader[side])
-
-
-if __name__ == "__main__":
-    main()

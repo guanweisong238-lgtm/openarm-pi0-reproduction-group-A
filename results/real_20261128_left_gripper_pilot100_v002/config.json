@@ -1,0 +1,87 @@
+{
+  "seed": 42,
+  "steps": 100,
+  "batch_size": 1,
+  "eval_every": 50,
+  "save_every": 100,
+  "model": "pi0_base + gemma_2b_lora + gemma_300m_lora",
+  "trainable": "LoRA only",
+  "frozen_dtype": "bfloat16",
+  "action_horizon": 50,
+  "action_semantics": "absolute IK target, right arm then left arm, rad",
+  "training_frequency_hz": 30,
+  "optimizer": "AdamW(b1=0.9, b2=0.95, eps=1e-08, weight_decay=1e-10, clip_gradient_norm=1.0)",
+  "schedule": "CosineDecaySchedule(warmup_steps=10, peak_lr=1e-05, decay_steps=100, decay_lr=1.0000000000000002e-06)",
+  "image_mapping": {
+    "base_0_rgb": "global",
+    "chest_0_rgb": "chest",
+    "left_wrist_0_rgb": "wrist_left",
+    "right_wrist_0_rgb": "wrist_right"
+  },
+  "prompt": "用左手拉开抽屉，右手抓起方块并放入抽屉。",
+  "image_resize": "OpenPI 224x224 resize-with-pad",
+  "normalization": "train split only z-score",
+  "train_samples": 8314,
+  "validation_samples": 1963,
+  "validation_probe_samples": [
+    {
+      "episode_id": 13,
+      "sample_index": 0,
+      "operation_style": "unspecified"
+    },
+    {
+      "episode_id": 13,
+      "sample_index": 186,
+      "operation_style": "unspecified"
+    },
+    {
+      "episode_id": 19,
+      "sample_index": 0,
+      "operation_style": "unspecified"
+    },
+    {
+      "episode_id": 19,
+      "sample_index": 219,
+      "operation_style": "unspecified"
+    },
+    {
+      "episode_id": 20,
+      "sample_index": 0,
+      "operation_style": "unspecified"
+    },
+    {
+      "episode_id": 20,
+      "sample_index": 207,
+      "operation_style": "unspecified"
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 0,
+      "operation_style": "unspecified"
+    },
+    {
+      "episode_id": 24,
+      "sample_index": 369,
+      "operation_style": "unspecified"
+    }
+  ],
+  "validation_note": "two fixed probes per held-out episode with fixed flow random keys, not task success or generalization estimate",
+  "candidate": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/data/processed/real_20261128_202032_candidate_v001",
+  "candidate_manifest_sha256": "fb01fb22452aef9ef61e7e94b67361e40e3fccfff75c1373014c9644bd436405",
+  "norm_stats_sha256": "ef2f8c16932efe28787a56a2d7e08feb75ba0122616baac4c478455866f768d3",
+  "review_decision_sha256": "6ea01b991ee34151dea37c69af2666fc7a33f4688cb557db42d8bcccd3266f1b",
+  "init_run": "real_20261128_202032_pi0_lora_phase_continue2000_v001",
+  "initial_adapter": "/home/song03/scientific_research/openarm-pi0-reproduction-group-A/checkpoints/real_20261128_202032_pi0_lora_phase_continue2000_v001/step_2000",
+  "excluded_previous_windows": 3000,
+  "continuity_weight": 0.0,
+  "pair_stride": 20,
+  "pair_overlap": 8,
+  "phase_balanced": true,
+  "priority_phases": [
+    "left_close",
+    "left_release"
+  ],
+  "left_gripper_weight": 4.0,
+  "base_checkpoint": "weights/openpi/openpi-assets/checkpoints/pi0_base/params",
+  "note": "exploratory; consult review_decision.json; no resume support"
+}

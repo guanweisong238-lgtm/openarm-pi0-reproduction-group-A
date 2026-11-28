@@ -1,0 +1,31 @@
+{
+  "decision": "use_capture_labeled_success_for_exploratory_training",
+  "episode_ids": [
+    0,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "source": "data/real_20261128_202032",
+  "metadata_sha256": "69490a5b9c485d0a6c2b7c99b7ea64336939828042c2d8558d0b78406e22d3fc",
+  "scope": "Present episodes labeled successful for the sole recorded task, with alignment audit passed.",
+  "limitations": "Capture labels are not an independent review of task success, image quality or exposure synchronization."
+}

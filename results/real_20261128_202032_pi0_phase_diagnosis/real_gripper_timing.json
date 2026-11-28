@@ -1,0 +1,197 @@
+{
+  "episode_results": [
+    {
+      "episode": 13,
+      "replans": 20,
+      "left": {
+        "demo_closed_intervals_frames": [
+          [
+            138,
+            355
+          ]
+        ],
+        "predicted_closed_intervals_frames": [
+          [
+            140,
+            371
+          ]
+        ],
+        "first_close_lag_s": 0.06666666666666667,
+        "reference_closed_recall": 0.9907834101382489,
+        "angle_mae_rad": 0.19989456236362457,
+        "hold_feedback_angle_mae_rad": 0.15006159245967865,
+        "prediction_closed_run_fragments_overlapping_ref": 1,
+        "demo_tip_x_delta_after_close_1s_mm": -42.481159343866096,
+        "model_tip_x_delta_same_time_mm": -8.619957090115927
+      },
+      "right": {
+        "demo_closed_intervals_frames": [
+          [
+            215,
+            286
+          ]
+        ],
+        "predicted_closed_intervals_frames": [
+          [
+            220,
+            293
+          ]
+        ],
+        "first_close_lag_s": 0.16666666666666666,
+        "reference_closed_recall": 0.9295774647887324,
+        "angle_mae_rad": 0.0751686543226242,
+        "hold_feedback_angle_mae_rad": 0.08327750861644745,
+        "prediction_closed_run_fragments_overlapping_ref": 1,
+        "predicted_grasp_point_error_mm_vs_demonstrated_closing_pose": 44.37159607146845
+      }
+    },
+    {
+      "episode": 19,
+      "replans": 23,
+      "left": {
+        "demo_closed_intervals_frames": [
+          [
+            157,
+            416
+          ]
+        ],
+        "predicted_closed_intervals_frames": [
+          [
+            160,
+            437
+          ]
+        ],
+        "first_close_lag_s": 0.1,
+        "reference_closed_recall": 0.9884169884169884,
+        "angle_mae_rad": 0.20192183554172516,
+        "hold_feedback_angle_mae_rad": 0.1624411791563034,
+        "prediction_closed_run_fragments_overlapping_ref": 1,
+        "demo_tip_x_delta_after_close_1s_mm": -54.81180123397278,
+        "model_tip_x_delta_same_time_mm": -5.801177037579208
+      },
+      "right": {
+        "demo_closed_intervals_frames": [
+          [
+            238,
+            331
+          ]
+        ],
+        "predicted_closed_intervals_frames": [
+          [
+            260,
+            335
+          ]
+        ],
+        "first_close_lag_s": 0.7333333333333333,
+        "reference_closed_recall": 0.7634408602150538,
+        "angle_mae_rad": 0.07819940149784088,
+        "hold_feedback_angle_mae_rad": 0.08577870577573776,
+        "prediction_closed_run_fragments_overlapping_ref": 1,
+        "predicted_grasp_point_error_mm_vs_demonstrated_closing_pose": 41.85587147950096
+      }
+    },
+    {
+      "episode": 20,
+      "replans": 22,
+      "left": {
+        "demo_closed_intervals_frames": [
+          [
+            119,
+            399
+          ]
+        ],
+        "predicted_closed_intervals_frames": [
+          [
+            120,
+            414
+          ]
+        ],
+        "first_close_lag_s": 0.03333333333333333,
+        "reference_closed_recall": 0.9964285714285714,
+        "angle_mae_rad": 0.19512441754341125,
+        "hold_feedback_angle_mae_rad": 0.18251557648181915,
+        "prediction_closed_run_fragments_overlapping_ref": 1,
+        "demo_tip_x_delta_after_close_1s_mm": -77.06002544201091,
+        "model_tip_x_delta_same_time_mm": -9.732255120790567
+      },
+      "right": {
+        "demo_closed_intervals_frames": [
+          [
+            193,
+            308
+          ]
+        ],
+        "predicted_closed_intervals_frames": [
+          [
+            200,
+            274
+          ],
+          [
+            280,
+            293
+          ],
+          [
+            300,
+            312
+          ]
+        ],
+        "first_close_lag_s": 0.23333333333333334,
+        "reference_closed_recall": 0.8260869565217391,
+        "angle_mae_rad": 0.08106214553117752,
+        "hold_feedback_angle_mae_rad": 0.10865580290555954,
+        "prediction_closed_run_fragments_overlapping_ref": 3,
+        "predicted_grasp_point_error_mm_vs_demonstrated_closing_pose": 33.520157005937804
+      }
+    },
+    {
+      "episode": 24,
+      "replans": 38,
+      "left": {
+        "demo_closed_intervals_frames": [
+          [
+            154,
+            533
+          ]
+        ],
+        "predicted_closed_intervals_frames": [
+          [
+            160,
+            560
+          ]
+        ],
+        "first_close_lag_s": 0.2,
+        "reference_closed_recall": 0.9841688654353562,
+        "angle_mae_rad": 0.24196693301200867,
+        "hold_feedback_angle_mae_rad": 0.09095293283462524,
+        "prediction_closed_run_fragments_overlapping_ref": 1,
+        "demo_tip_x_delta_after_close_1s_mm": -58.0382528690121,
+        "model_tip_x_delta_same_time_mm": -23.9319797039268
+      },
+      "right": {
+        "demo_closed_intervals_frames": [
+          [
+            249,
+            326
+          ]
+        ],
+        "predicted_closed_intervals_frames": [
+          [
+            260,
+            314
+          ],
+          [
+            320,
+            332
+          ]
+        ],
+        "first_close_lag_s": 0.36666666666666664,
+        "reference_closed_recall": 0.7792207792207793,
+        "angle_mae_rad": 0.058462075889110565,
+        "hold_feedback_angle_mae_rad": 0.04544689133763313,
+        "prediction_closed_run_fragments_overlapping_ref": 2,
+        "predicted_grasp_point_error_mm_vs_demonstrated_closing_pose": 46.950721041463694
+      }
+    }
+  ],
+  "protocol": "Recorded real images and feedback every 20 frames, fixed model seed 70000. Gripper thresholds require 10 consecutive frames. Approximate FK uses the same nominal point on the OpenArm gripper, without camera or contact calibration."
+}

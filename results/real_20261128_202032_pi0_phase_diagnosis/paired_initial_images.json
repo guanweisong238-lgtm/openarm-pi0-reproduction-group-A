@@ -1,0 +1,70 @@
+{
+  "episode": 13,
+  "sample": 0,
+  "control": "Identical simulator-initial q, weights, prompt and random seed within each pair. Replace all four images as a group.",
+  "pairs": [
+    {
+      "seed": 1001,
+      "whole_block_mean_abs_difference_rad": 0.021912668738514184,
+      "first_20_max_abs_difference_rad": 0.07442048192024231,
+      "real_left_gripper_range_first_20_rad": [
+        0.8467896580696106,
+        0.9307272434234619
+      ],
+      "sim_left_gripper_range_first_20_rad": [
+        0.8946120142936707,
+        0.9795573353767395
+      ],
+      "real_right_gripper_range_first_20_rad": [
+        -0.7803438901901245,
+        -0.7682138681411743
+      ],
+      "sim_right_gripper_range_first_20_rad": [
+        -0.7747642993927002,
+        -0.7674436569213867
+      ]
+    },
+    {
+      "seed": 1002,
+      "whole_block_mean_abs_difference_rad": 0.02173847297206521,
+      "first_20_max_abs_difference_rad": 0.0680549144744873,
+      "real_left_gripper_range_first_20_rad": [
+        0.513393759727478,
+        0.8985573053359985
+      ],
+      "sim_left_gripper_range_first_20_rad": [
+        0.5671939253807068,
+        0.9627036452293396
+      ],
+      "real_right_gripper_range_first_20_rad": [
+        -0.7457993030548096,
+        -0.6822964549064636
+      ],
+      "sim_right_gripper_range_first_20_rad": [
+        -0.7766087651252747,
+        -0.7105812430381775
+      ]
+    },
+    {
+      "seed": 1003,
+      "whole_block_mean_abs_difference_rad": 0.018542922204360365,
+      "first_20_max_abs_difference_rad": 0.051737844944000244,
+      "real_left_gripper_range_first_20_rad": [
+        0.9536257386207581,
+        1.1156854629516602
+      ],
+      "sim_left_gripper_range_first_20_rad": [
+        0.9733984470367432,
+        1.1516088247299194
+      ],
+      "real_right_gripper_range_first_20_rad": [
+        -0.8513807058334351,
+        -0.7872315049171448
+      ],
+      "sim_right_gripper_range_first_20_rad": [
+        -0.8392280340194702,
+        -0.7932742238044739
+      ]
+    }
+  ]
+}

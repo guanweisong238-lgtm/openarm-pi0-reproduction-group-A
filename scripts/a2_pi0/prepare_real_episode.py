@@ -27,6 +27,7 @@ def main():
     parser.add_argument('--episode',type=int,default=0)
     parser.add_argument('--dataset',type=Path,default=RAW)
     parser.add_argument('--output',type=Path,help='New output directory; defaults to episode-specific prototype directory')
+    parser.add_argument('--prompt', default=PROMPT)
     args=parser.parse_args(); RAW_PATH=args.dataset.resolve(); ep=RAW_PATH/'episodes'/str(args.episode); out=args.output or ROOT/'data/processed/real_alignment_prototype_v001'/f'episode_{args.episode}'
     if out.exists(): raise SystemExit(f'Output already exists: {out}; choose a new path to avoid overwriting.')
     cams={}
@@ -68,6 +69,6 @@ def main():
     result['actions']=np.concatenate(chunks,axis=2);result['action_valid']=valid
     out.mkdir(parents=True,exist_ok=False); np.savez_compressed(out/'samples.npz',**result)
     timing=RAW_PATH/'camera_timing'/f'episode_{args.episode}.jsonl';meta=RAW_PATH/'metadata.yaml';source_hashes[str(timing.relative_to(ROOT))]=sha(timing);source_hashes[str(meta.relative_to(ROOT))]=sha(meta)
-    report={'episode_id':str(args.episode),'sample_count':int(count),'fps':30,'horizon':50,'prompt':PROMPT,'anchor':'first global frame at or after all streams start','selection':'latest source timestamp <= grid time (causal zero-order hold); images are references to raw jpeg; no exposure sync claim','camera_order':CAMERAS,'vector_order':'right J1..J7, right gripper, left J1..J7, left gripper','tail':'repeat final in-episode action; action_valid=false for padding; do not train padded steps unless loss applies mask','full_windows':int(valid.all(axis=1).sum()),'padded_windows':int((~valid.all(axis=1)).sum()),'source_age_ms':source_ages,'source_sha256':source_hashes,'note':'prototype, no rejection threshold, not an approved training dataset; check camera freshness and label before training'}
+    report={'episode_id':str(args.episode),'sample_count':int(count),'fps':30,'horizon':50,'prompt':args.prompt,'anchor':'first global frame at or after all streams start','selection':'latest source timestamp <= grid time (causal zero-order hold); images are references to raw jpeg; no exposure sync claim','camera_order':CAMERAS,'vector_order':'right J1..J7, right gripper, left J1..J7, left gripper','tail':'repeat final in-episode action; action_valid=false for padding; do not train padded steps unless loss applies mask','full_windows':int(valid.all(axis=1).sum()),'padded_windows':int((~valid.all(axis=1)).sum()),'source_age_ms':source_ages,'source_sha256':source_hashes,'note':'prototype, no rejection threshold, not an approved training dataset; check camera freshness and label before training'}
     (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__': main()

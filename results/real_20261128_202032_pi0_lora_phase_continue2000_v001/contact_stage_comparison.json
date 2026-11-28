@@ -1,0 +1,159 @@
+{
+  "baseline_replay": "results/real_20261128_202032_pi0_phase_diagnosis",
+  "candidate_replay": "results/real_20261128_202032_pi0_lora_phase_continue2000_v001/real_replay",
+  "baseline_checkpoint": "real_20261128_202032_pi0_lora_1000_v001/step_1000",
+  "candidate_checkpoint": "real_20261128_202032_pi0_lora_phase_continue2000_v001/step_2000",
+  "protocol": "Matched real recorded images and feedback; identical fixed seed and 20-frame replan stride.",
+  "gripper_events": "At least 10 continuous frames beyond the closure threshold (left < 0.305, right > -0.305 rad).",
+  "geometry": "Approximate OpenArm grasp point from FK of pre-driver IK commands. Positive left distance is along nominal drawer pull (-x).",
+  "episodes": [
+    {
+      "episode": 13,
+      "replans": 20,
+      "baseline": {
+        "left_close_delay_s": 0.06666666666666667,
+        "demo_left_pull_mm_first_second": 42.481159343866096,
+        "model_left_pull_mm_first_second": 8.619957090115872,
+        "right_close_delay_s": 0.16666666666666666,
+        "right_grasp_point_error_mm": 44.37159607146846,
+        "right_closed_fraction_during_demo_hold": 0.9295774647887324,
+        "right_sustained_closed_intervals_overlapping_demo_hold": 1
+      },
+      "candidate": {
+        "left_close_delay_s": -1.8,
+        "demo_left_pull_mm_first_second": 42.481159343866096,
+        "model_left_pull_mm_first_second": 3.6728107939756893,
+        "right_close_delay_s": 0.16666666666666666,
+        "right_grasp_point_error_mm": 12.16265909230395,
+        "right_closed_fraction_during_demo_hold": 0.9295774647887324,
+        "right_sustained_closed_intervals_overlapping_demo_hold": 1
+      }
+    },
+    {
+      "episode": 19,
+      "replans": 23,
+      "baseline": {
+        "left_close_delay_s": 0.1,
+        "demo_left_pull_mm_first_second": 54.81180123397278,
+        "model_left_pull_mm_first_second": 5.801177037579153,
+        "right_close_delay_s": 0.7333333333333333,
+        "right_grasp_point_error_mm": 41.85587147950096,
+        "right_closed_fraction_during_demo_hold": 0.7634408602150538,
+        "right_sustained_closed_intervals_overlapping_demo_hold": 1
+      },
+      "candidate": {
+        "left_close_delay_s": -1.7333333333333334,
+        "demo_left_pull_mm_first_second": 54.81180123397278,
+        "model_left_pull_mm_first_second": 7.788239853426193,
+        "right_close_delay_s": 0.26666666666666666,
+        "right_grasp_point_error_mm": 36.53841043740164,
+        "right_closed_fraction_during_demo_hold": 0.8387096774193549,
+        "right_sustained_closed_intervals_overlapping_demo_hold": 2
+      }
+    },
+    {
+      "episode": 20,
+      "replans": 22,
+      "baseline": {
+        "left_close_delay_s": 0.03333333333333333,
+        "demo_left_pull_mm_first_second": 77.06002544201091,
+        "model_left_pull_mm_first_second": 9.732255120790567,
+        "right_close_delay_s": 0.23333333333333334,
+        "right_grasp_point_error_mm": 33.520157005937804,
+        "right_closed_fraction_during_demo_hold": 0.8260869565217391,
+        "right_sustained_closed_intervals_overlapping_demo_hold": 3
+      },
+      "candidate": {
+        "left_close_delay_s": -1.0666666666666667,
+        "demo_left_pull_mm_first_second": 77.06002544201091,
+        "model_left_pull_mm_first_second": 13.055369286485984,
+        "right_close_delay_s": 0.23333333333333334,
+        "right_grasp_point_error_mm": 4.733367585859201,
+        "right_closed_fraction_during_demo_hold": 0.7565217391304347,
+        "right_sustained_closed_intervals_overlapping_demo_hold": 4
+      }
+    },
+    {
+      "episode": 24,
+      "replans": 38,
+      "baseline": {
+        "left_close_delay_s": 0.2,
+        "demo_left_pull_mm_first_second": 58.0382528690121,
+        "model_left_pull_mm_first_second": 23.9319797039268,
+        "right_close_delay_s": 0.36666666666666664,
+        "right_grasp_point_error_mm": 46.95072104146369,
+        "right_closed_fraction_during_demo_hold": 0.7792207792207793,
+        "right_sustained_closed_intervals_overlapping_demo_hold": 2
+      },
+      "candidate": {
+        "left_close_delay_s": -1.6666666666666667,
+        "demo_left_pull_mm_first_second": 58.0382528690121,
+        "model_left_pull_mm_first_second": 19.123716403249226,
+        "right_close_delay_s": 0.3333333333333333,
+        "right_grasp_point_error_mm": 28.659720867905644,
+        "right_closed_fraction_during_demo_hold": 0.7402597402597403,
+        "right_sustained_closed_intervals_overlapping_demo_hold": 1
+      }
+    }
+  ],
+  "baseline": {
+    "left_close_delay_s": {
+      "median": 0.08333333333333334,
+      "episode_count": 4
+    },
+    "demo_left_pull_mm_first_second": {
+      "median": 56.425027051492435,
+      "episode_count": 4
+    },
+    "model_left_pull_mm_first_second": {
+      "median": 9.176106105453218,
+      "episode_count": 4
+    },
+    "right_close_delay_s": {
+      "median": 0.3,
+      "episode_count": 4
+    },
+    "right_grasp_point_error_mm": {
+      "median": 43.11373377548471,
+      "episode_count": 4
+    },
+    "right_closed_fraction_during_demo_hold": {
+      "median": 0.8026538678712591,
+      "episode_count": 4
+    },
+    "right_sustained_closed_intervals_overlapping_demo_hold": {
+      "median": 1.5,
+      "episode_count": 4
+    }
+  },
+  "candidate": {
+    "left_close_delay_s": {
+      "median": -1.7000000000000002,
+      "episode_count": 4
+    },
+    "demo_left_pull_mm_first_second": {
+      "median": 56.425027051492435,
+      "episode_count": 4
+    },
+    "model_left_pull_mm_first_second": {
+      "median": 10.421804569956088,
+      "episode_count": 4
+    },
+    "right_close_delay_s": {
+      "median": 0.25,
+      "episode_count": 4
+    },
+    "right_grasp_point_error_mm": {
+      "median": 20.411189980104798,
+      "episode_count": 4
+    },
+    "right_closed_fraction_during_demo_hold": {
+      "median": 0.7976157082748948,
+      "episode_count": 4
+    },
+    "right_sustained_closed_intervals_overlapping_demo_hold": {
+      "median": 1.5,
+      "episode_count": 4
+    }
+  }
+}
